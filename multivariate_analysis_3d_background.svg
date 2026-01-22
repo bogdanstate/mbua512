@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020617"/>
+      <stop offset="50%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    
+    <linearGradient id="xAxisGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.3"/>
+    </linearGradient>
+    
+    <linearGradient id="yAxisGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.3"/>
+    </linearGradient>
+    
+    <linearGradient id="zAxisGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.3"/>
+    </linearGradient>
+    
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </radialGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="pointGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Gradient for the XZ plane (floor) -->
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.05"/>
+    </linearGradient>
+    
+    <!-- Gradient for the XY plane (back wall) -->
+    <linearGradient id="backWallGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.04"/>
+    </linearGradient>
+    
+    <!-- Gradient for the YZ plane (side wall) -->
+    <linearGradient id="sideWallGrad" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.04"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  
+  <!-- Ambient glow -->
+  <ellipse cx="960" cy="600" rx="800" ry="600" fill="url(#glowCenter)"/>
+  
+  <!-- 3D Plot Container - Origin at (960, 700) -->
+  <g transform="translate(960, 680)">
+    
+    <!-- Reference planes (semi-transparent) -->
+    <!-- XZ Plane (floor) - using isometric projection -->
+    <path d="M -500,100 L 200,250 L 700,100 L 0,-50 Z" fill="url(#floorGrad)" opacity="0.6"/>
+    
+    <!-- XY Plane (back wall) -->
+    <path d="M -500,100 L -500,-400 L 0,-550 L 0,-50 Z" fill="url(#backWallGrad)" opacity="0.5"/>
+    
+    <!-- YZ Plane (side wall) -->
+    <path d="M 0,-50 L 0,-550 L 500,-400 L 700,100 L 200,250 Z" fill="url(#sideWallGrad)" opacity="0.4"/>
+    
+    <!-- Grid lines on XZ plane (floor) -->
+    <g stroke="#64748b" stroke-width="0.5" opacity="0.3">
+      <line x1="-400,120" y1="120" x2="100" y2="230"/>
+      <line x1="-300,140" y1="140" x2="200" y2="210"/>
+      <line x1="-200,160" y1="160" x2="300" y2="190"/>
+      <line x1="-100,180" y1="180" x2="400" y2="170"/>
+      <line x1="0,200" y1="200" x2="500" y2="150"/>
+      
+      <line x1="-350,50" y1="50" x2="-150" y2="200"/>
+      <line x1="-200,0" y1="0" x2="0" y2="200"/>
+      <line x1="-50,-50" y1="-50" x2="150" y2="200"/>
+      <line x1="100,0" y1="0" x2="350" y2="175"/>
+      <line x1="250,50" y1="50" x2="550" y2="125"/>
+    </g>
+    
+    <!-- Grid lines on XY plane (back wall) -->
+    <g stroke="#64748b" stroke-width="0.5" opacity="0.25">
+      <line x1="-500,-25" y1="-25" x2="0" y2="-175"/>
+      <line x1="-500,-150" y1="-150" x2="0" y2="-300"/>
+      <line x1="-500,-275" y1="-275" x2="0" y2="-425"/>
+      
+      <line x1="-400,60" y1="60" x2="-400" y2="-440"/>
+      <line x1="-300,20" y1="20" x2="-300" y2="-480"/>
+      <line x1="-200,-20" y1="-20" x2="-200" y2="-520"/>
+      <line x1="-100,-60" y1="-60" x2="-100" y2="-560"/>
+    </g>
+    
+    <!-- Main 3D Axes -->
+    <g filter="url(#strongGlow)">
+      <!-- X Axis (red) - going right-back -->
+      <line x1="0" y1="0" x2="-520" y2="130" stroke="url(#xAxisGrad)" stroke-width="4"/>
+      <polygon points="-520,130 -490,115 -495,140" fill="#ef4444"/>
+      
+      <!-- Y Axis (green) - going up -->
+      <line x1="0" y1="0" x2="0" y2="-520" stroke="url(#yAxisGrad)" stroke-width="4"/>
+      <polygon points="0,-520 -12,-490 12,-490" fill="#22c55e"/>
+      
+      <!-- Z Axis (blue) - going right-forward -->
+      <line x1="0" y1="0" x2="520" y2="130" stroke="url(#zAxisGrad)" stroke-width="4"/>
+      <polygon points="520,130 490,115 495,140" fill="#3b82f6"/>
+    </g>
+    
+
+    
+    <!-- Tick marks on axes -->
+    <g stroke="#94a3b8" stroke-width="1.5" opacity="0.4">
+      <!-- X axis ticks -->
+      <line x1="-130" y1="32" x2="-130" y2="45"/>
+      <line x1="-260" y1="65" x2="-260" y2="78"/>
+      <line x1="-390" y1="97" x2="-390" y2="110"/>
+      
+      <!-- Y axis ticks -->
+      <line x1="-8" y1="-130" x2="8" y2="-130"/>
+      <line x1="-8" y1="-260" x2="8" y2="-260"/>
+      <line x1="-8" y1="-390" x2="8" y2="-390"/>
+      
+      <!-- Z axis ticks -->
+      <line x1="130" y1="32" x2="130" y2="45"/>
+      <line x1="260" y1="65" x2="260" y2="78"/>
+      <line x1="390" y1="97" x2="390" y2="110"/>
+    </g>
+    
+    <!-- 3D Data Points with drop lines -->
+    <g filter="url(#pointGlow)">
+      
+      <!-- Point cluster 1 - lower region -->
+      <g>
+        <line x1="-180" y1="-80" x2="-180" y2="95" stroke="#a855f7" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="-180" cy="-80" r="12" fill="#a855f7"/>
+      </g>
+      <g>
+        <line x1="-120" y1="-120" x2="-120" y2="75" stroke="#a855f7" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="-120" cy="-120" r="10" fill="#a855f7"/>
+      </g>
+      <g>
+        <line x1="-220" y1="-60" x2="-220" y2="108" stroke="#a855f7" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="-220" cy="-60" r="9" fill="#a855f7"/>
+      </g>
+      
+      <!-- Point cluster 2 - mid region -->
+      <g>
+        <line x1="-50" y1="-200" x2="-50" y2="45" stroke="#22d3ee" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="-50" cy="-200" r="14" fill="#22d3ee"/>
+      </g>
+      <g>
+        <line x1="30" y1="-180" x2="30" y2="60" stroke="#22d3ee" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="30" cy="-180" r="11" fill="#22d3ee"/>
+      </g>
+      <g>
+        <line x1="-80" y1="-240" x2="-80" y2="35" stroke="#22d3ee" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="-80" cy="-240" r="13" fill="#22d3ee"/>
+      </g>
+      <g>
+        <line x1="80" y1="-160" x2="80" y2="70" stroke="#22d3ee" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="80" cy="-160" r="10" fill="#22d3ee"/>
+      </g>
+      
+      <!-- Point cluster 3 - upper region -->
+      <g>
+        <line x1="150" y1="-320" x2="150" y2="90" stroke="#f472b6" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="150" cy="-320" r="15" fill="#f472b6"/>
+      </g>
+      <g>
+        <line x1="220" y1="-280" x2="220" y2="105" stroke="#f472b6" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="220" cy="-280" r="12" fill="#f472b6"/>
+      </g>
+      <g>
+        <line x1="100" y1="-350" x2="100" y2="75" stroke="#f472b6" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="100" cy="-350" r="11" fill="#f472b6"/>
+      </g>
+      <g>
+        <line x1="280" y1="-260" x2="280" y2="120" stroke="#f472b6" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="280" cy="-260" r="10" fill="#f472b6"/>
+      </g>
+      
+      <!-- Point cluster 4 - highest region -->
+      <g>
+        <line x1="180" y1="-420" x2="180" y2="95" stroke="#fbbf24" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="180" cy="-420" r="13" fill="#fbbf24"/>
+      </g>
+      <g>
+        <line x1="250" y1="-380" x2="250" y2="112" stroke="#fbbf24" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="250" cy="-380" r="11" fill="#fbbf24"/>
+      </g>
+      <g>
+        <line x1="320" y1="-340" x2="320" y2="130" stroke="#fbbf24" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+        <circle cx="320" cy="-340" r="9" fill="#fbbf24"/>
+      </g>
+      
+      <!-- Scattered additional points -->
+      <circle cx="-300" cy="-30" r="7" fill="#a855f7" opacity="0.7"/>
+      <circle cx="-150" cy="-150" r="8" fill="#22d3ee" opacity="0.8"/>
+      <circle cx="50" cy="-280" r="9" fill="#f472b6" opacity="0.8"/>
+      <circle cx="-20" cy="-100" r="6" fill="#a855f7" opacity="0.6"/>
+      <circle cx="350" cy="-300" r="8" fill="#fbbf24" opacity="0.7"/>
+      <circle cx="-250" cy="-100" r="7" fill="#22d3ee" opacity="0.6"/>
+      <circle cx="400" cy="-250" r="7" fill="#f472b6" opacity="0.6"/>
+      
+    </g>
+    
+    <!-- Optional: Regression plane hint (semi-transparent tilted plane) -->
+    <path d="M -350,50 L -150,-380 L 400,-280 L 350,100 Z" 
+          fill="#6366f1" opacity="0.08" stroke="#6366f1" stroke-width="1" stroke-opacity="0.2"/>
+    
+  </g>
+  
+  <!-- Decorative elements -->
+  
+  <!-- Corner accent - top left -->
+  <g transform="translate(60, 60)" opacity="0.15">
+    <rect x="0" y="0" width="100" height="3" fill="#ef4444"/>
+    <rect x="0" y="0" width="3" height="100" fill="#ef4444"/>
+  </g>
+  
+  <!-- Corner accent - bottom right -->
+  <g transform="translate(1760, 920)" opacity="0.15">
+    <rect x="0" y="0" width="100" height="3" fill="#3b82f6"/>
+    <rect x="97" y="0" width="3" height="100" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Subtle dimension labels in corner -->
+  <g transform="translate(80, 950)" opacity="0.2" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#94a3b8">
+    <text x="0" y="0">n-dimensional space</text>
+  </g>
+  
+  <!-- Legend hint -->
+  <g transform="translate(1650, 80)" opacity="0.25" font-family="system-ui" font-size="14">
+    <circle cx="0" cy="0" r="6" fill="#a855f7"/>
+    <text x="15" y="5" fill="#94a3b8">Cluster 1</text>
+    <circle cx="0" cy="25" r="6" fill="#22d3ee"/>
+    <text x="15" y="30" fill="#94a3b8">Cluster 2</text>
+    <circle cx="0" cy="50" r="6" fill="#f472b6"/>
+    <text x="15" y="55" fill="#94a3b8">Cluster 3</text>
+    <circle cx="0" cy="75" r="6" fill="#fbbf24"/>
+    <text x="15" y="80" fill="#94a3b8">Cluster 4</text>
+  </g>
+  
+</svg>

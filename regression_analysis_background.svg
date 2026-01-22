@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="bgGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="40%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#334155"/>
+    </linearGradient>
+    
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.1"/>
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.3"/>
+    </linearGradient>
+    
+    <radialGradient id="glowOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="glowSlate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:0"/>
+    </radialGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle graph paper pattern -->
+  <g opacity="0.06">
+    <pattern id="smallGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#94a3b8" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="largeGrid" width="150" height="150" patternUnits="userSpaceOnUse">
+      <rect width="150" height="150" fill="url(#smallGrid)"/>
+      <path d="M 150 0 L 0 0 0 150" fill="none" stroke="#94a3b8" stroke-width="1"/>
+    </pattern>
+    <rect width="1920" height="1080" fill="url(#largeGrid)"/>
+  </g>
+  
+  <!-- Ambient glows -->
+  <ellipse cx="960" cy="540" rx="700" ry="500" fill="url(#glowOrange)" opacity="0.15"/>
+  <ellipse cx="400" cy="800" rx="400" ry="300" fill="url(#glowSlate)" opacity="0.2"/>
+  <ellipse cx="1500" cy="300" rx="350" ry="250" fill="url(#glowSlate)" opacity="0.15"/>
+  
+  <!-- Main coordinate system hint (faded) -->
+  <g transform="translate(200, 850)" opacity="0.15">
+    <!-- X axis -->
+    <line x1="0" y1="0" x2="1500" y2="0" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Y axis -->
+    <line x1="0" y1="0" x2="0" y2="-700" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Tick marks -->
+    <g stroke="#94a3b8" stroke-width="1">
+      <line x1="300" y1="0" x2="300" y2="10"/>
+      <line x1="600" y1="0" x2="600" y2="10"/>
+      <line x1="900" y1="0" x2="900" y2="10"/>
+      <line x1="1200" y1="0" x2="1200" y2="10"/>
+      <line x1="0" y1="-175" x2="-10" y2="-175"/>
+      <line x1="0" y1="-350" x2="-10" y2="-350"/>
+      <line x1="0" y1="-525" x2="-10" y2="-525"/>
+    </g>
+  </g>
+  
+  <!-- The regression line - main visual element -->
+  <g filter="url(#strongGlow)">
+    <line x1="180" y1="820" x2="1720" y2="200" stroke="#f97316" stroke-width="4" opacity="0.9"/>
+  </g>
+  
+  <!-- Confidence band (shaded area around regression line) -->
+  <path d="M 180,770 L 1720,100 L 1720,300 L 180,870 Z" fill="#f97316" opacity="0.06"/>
+  <path d="M 180,795 L 1720,150 L 1720,250 L 180,845 Z" fill="#f97316" opacity="0.08"/>
+  
+  <!-- Scatter plot points -->
+  <g filter="url(#softGlow)">
+    <!-- Points roughly following the regression line with some scatter -->
+    <!-- Cluster 1 - lower left -->
+    <circle cx="220" cy="780" r="8" fill="#60a5fa"/>
+    <circle cx="280" cy="820" r="7" fill="#60a5fa"/>
+    <circle cx="320" cy="750" r="9" fill="#60a5fa"/>
+    <circle cx="250" cy="700" r="6" fill="#60a5fa"/>
+    <circle cx="380" cy="770" r="8" fill="#60a5fa"/>
+    <circle cx="350" cy="690" r="7" fill="#60a5fa"/>
+    
+    <!-- Cluster 2 -->
+    <circle cx="450" cy="720" r="10" fill="#60a5fa"/>
+    <circle cx="520" cy="680" r="8" fill="#60a5fa"/>
+    <circle cx="480" cy="640" r="7" fill="#60a5fa"/>
+    <circle cx="560" cy="700" r="9" fill="#60a5fa"/>
+    <circle cx="420" cy="650" r="6" fill="#60a5fa"/>
+    
+    <!-- Cluster 3 - middle -->
+    <circle cx="650" cy="620" r="11" fill="#60a5fa"/>
+    <circle cx="720" cy="580" r="9" fill="#60a5fa"/>
+    <circle cx="680" cy="540" r="8" fill="#60a5fa"/>
+    <circle cx="780" cy="600" r="10" fill="#60a5fa"/>
+    <circle cx="750" cy="520" r="7" fill="#60a5fa"/>
+    <circle cx="620" cy="560" r="8" fill="#60a5fa"/>
+    
+    <!-- Cluster 4 -->
+    <circle cx="880" cy="500" r="12" fill="#60a5fa"/>
+    <circle cx="950" cy="480" r="9" fill="#60a5fa"/>
+    <circle cx="920" cy="420" r="8" fill="#60a5fa"/>
+    <circle cx="850" cy="460" r="10" fill="#60a5fa"/>
+    <circle cx="1000" cy="520" r="8" fill="#60a5fa"/>
+    <circle cx="980" cy="440" r="7" fill="#60a5fa"/>
+    
+    <!-- Cluster 5 -->
+    <circle cx="1100" cy="420" r="11" fill="#60a5fa"/>
+    <circle cx="1150" cy="380" r="9" fill="#60a5fa"/>
+    <circle cx="1080" cy="350" r="8" fill="#60a5fa"/>
+    <circle cx="1200" cy="400" r="10" fill="#60a5fa"/>
+    <circle cx="1180" cy="320" r="7" fill="#60a5fa"/>
+    
+    <!-- Cluster 6 - upper right -->
+    <circle cx="1320" cy="340" r="10" fill="#60a5fa"/>
+    <circle cx="1380" cy="280" r="9" fill="#60a5fa"/>
+    <circle cx="1350" cy="230" r="8" fill="#60a5fa"/>
+    <circle cx="1420" cy="310" r="11" fill="#60a5fa"/>
+    <circle cx="1280" cy="260" r="7" fill="#60a5fa"/>
+    
+    <!-- Cluster 7 - far right -->
+    <circle cx="1520" cy="250" r="9" fill="#60a5fa"/>
+    <circle cx="1580" cy="200" r="10" fill="#60a5fa"/>
+    <circle cx="1550" cy="160" r="8" fill="#60a5fa"/>
+    <circle cx="1620" cy="230" r="8" fill="#60a5fa"/>
+    <circle cx="1680" cy="180" r="7" fill="#60a5fa"/>
+    <circle cx="1640" cy="130" r="9" fill="#60a5fa"/>
+    
+    <!-- A few outliers for realism -->
+    <circle cx="600" cy="480" r="6" fill="#60a5fa" opacity="0.7"/>
+    <circle cx="1050" cy="550" r="6" fill="#60a5fa" opacity="0.7"/>
+    <circle cx="1400" cy="200" r="5" fill="#60a5fa" opacity="0.7"/>
+  </g>
+  
+  <!-- Residual lines (showing some vertical distances to regression line) -->
+  <g stroke="#f97316" stroke-width="1" stroke-dasharray="4,4" opacity="0.25">
+    <line x1="320" y1="750" x2="320" y2="778"/>
+    <line x1="520" y1="680" x2="520" y2="702"/>
+    <line x1="720" y1="580" x2="720" y2="618"/>
+    <line x1="950" y1="480" x2="950" y2="530"/>
+    <line x1="1150" y1="380" x2="1150" y2="446"/>
+    <line x1="1380" y1="280" x2="1380" y2="358"/>
+    <line x1="1580" y1="200" x2="1580" y2="282"/>
+  </g>
+  
+  <!-- Equation hint in corner -->
+  <g transform="translate(1550, 900)" opacity="0.2">
+    <text x="0" y="0" fill="#f8fafc" font-family="Georgia, serif" font-style="italic" font-size="28">ŷ = β₀ + β₁x</text>
+  </g>
+  
+  <!-- R² hint -->
+  <g transform="translate(1600, 950)" opacity="0.15">
+    <text x="0" y="0" fill="#f8fafc" font-family="Georgia, serif" font-style="italic" font-size="20">R² = 0.87</text>
+  </g>
+  
+  <!-- Decorative corner elements -->
+  <g transform="translate(50, 100)" opacity="0.12">
+    <path d="M 0,0 L 80,0 L 80,10 L 10,10 L 10,80 L 0,80 Z" fill="#94a3b8"/>
+  </g>
+  <g transform="translate(1870, 980)" opacity="0.12">
+    <path d="M 0,0 L -80,0 L -80,-10 L -10,-10 L -10,-80 L 0,-80 Z" fill="#94a3b8"/>
+  </g>
+  
+  <!-- Subtle data flow lines in background -->
+  <g stroke="#475569" stroke-width="0.5" opacity="0.2">
+    <path d="M 0,200 Q 500,180 960,250 T 1920,200" fill="none"/>
+    <path d="M 0,400 Q 600,380 960,450 T 1920,400" fill="none"/>
+    <path d="M 0,600 Q 700,580 960,650 T 1920,600" fill="none"/>
+    <path d="M 0,800 Q 800,780 960,850 T 1920,800" fill="none"/>
+  </g>
+</svg>
