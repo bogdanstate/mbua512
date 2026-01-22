@@ -4360,16 +4360,16 @@ boxplot(diabetes ~ class, pima, col = c("#3498db88", "#e74c3c88"),
         <!-- Slide: How to Win at Statistics -->
         <div class="slide" style="padding: 25px 40px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
             <h1 style="font-size: 2.2em; color: #fff; font-weight: 400; margin-bottom: 15px; text-align: center;">How to Win at Statistics</h1>
-            <div style="display: flex; gap: 30px; align-items: flex-start;">
-                <div style="flex: 1;">
-                    <div id="equationBox" style="background: #0f0f23; border: 2px solid #00d4ff; border-radius: 12px; padding: 25px; font-family: 'SF Mono', Monaco, monospace; font-size: 18px; color: #00ff88; min-height: 120px; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);">
+            <div style="display: flex; gap: 30px; align-items: flex-start; width: 100%;">
+                <div style="flex: 1; min-width: 0;">
+                    <div id="equationBox" style="background: #0f0f23; border: 2px solid #00d4ff; border-radius: 12px; padding: 25px; font-family: 'SF Mono', Monaco, monospace; font-size: 18px; color: #00ff88; min-height: 120px; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); overflow-x: auto;">
                         <span id="equationText"></span><span id="cursor" style="animation: blink 1s infinite;">|</span>
                     </div>
                     <div style="margin-top: 20px;">
-                        <canvas id="stonksChart" width="1350" height="480" style="background: #0f0f23; border-radius: 12px; border: 2px solid #00d4ff;"></canvas>
+                        <canvas id="stonksChart" style="width: 100%; height: auto; background: #0f0f23; border-radius: 12px; border: 2px solid #00d4ff;"></canvas>
                     </div>
                 </div>
-                <div style="width: 280px; text-align: center;">
+                <div style="width: 280px; flex-shrink: 0; text-align: center;">
                     <img src="https://i.kym-cdn.com/entries/icons/original/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg" alt="STONKS" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
                     <div id="stonksR2Display" style="margin-top: 15px; font-size: 2.5em; font-weight: bold; color: #00ff88; text-shadow: 0 0 10px #00ff88;">
                         R² = 0.00
@@ -4393,7 +4393,22 @@ boxplot(diabetes ~ class, pima, col = c("#3498db88", "#e74c3c88"),
             if (!equationText || !canvas || !r2Display) return;
 
             const ctx = canvas.getContext('2d');
-            const w = canvas.width, h = canvas.height;
+            let w, h;
+
+            // Dynamic canvas sizing
+            function resizeCanvas() {
+                const container = canvas.parentElement;
+                const rect = container.getBoundingClientRect();
+                const dpr = window.devicePixelRatio || 1;
+                canvas.width = rect.width * dpr;
+                canvas.height = (rect.width * 0.35) * dpr; // Maintain aspect ratio
+                canvas.style.height = (rect.width * 0.35) + 'px';
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // Reset and set scale
+                w = rect.width;
+                h = rect.width * 0.35;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', () => { resizeCanvas(); drawChart(); });
 
             const variables = [
                 { text: "PRICE", r2: 0 },
