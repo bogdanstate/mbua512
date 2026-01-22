@@ -4394,21 +4394,33 @@ boxplot(diabetes ~ class, pima, col = c("#3498db88", "#e74c3c88"),
             if (!equationText || !canvas || !r2Display) return;
 
             const ctx = canvas.getContext('2d');
-            let w, h;
+            let w = 800, h = 280; // Default fallback dimensions
 
             // Dynamic canvas sizing
             function resizeCanvas() {
                 const container = canvas.parentElement;
                 const rect = container.getBoundingClientRect();
+                if (rect.width < 100) return false; // Slide not visible yet
                 const dpr = window.devicePixelRatio || 1;
                 canvas.width = rect.width * dpr;
-                canvas.height = (rect.width * 0.35) * dpr; // Maintain aspect ratio
+                canvas.height = (rect.width * 0.35) * dpr;
                 canvas.style.height = (rect.width * 0.35) + 'px';
-                ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // Reset and set scale
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
                 w = rect.width;
                 h = rect.width * 0.35;
+                return true;
             }
-            resizeCanvas();
+
+            // Try to resize, retry when slide becomes visible
+            if (!resizeCanvas()) {
+                const observer = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting && resizeCanvas()) {
+                        drawChart();
+                        observer.disconnect();
+                    }
+                });
+                observer.observe(canvas);
+            }
             window.addEventListener('resize', () => { resizeCanvas(); drawChart(); });
 
             const variables = [
