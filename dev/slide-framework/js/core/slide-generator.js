@@ -348,9 +348,12 @@ export class SlideGenerator {
     // If this is a transcription slide but transcription mode is not enabled,
     // render the ported version instead
     if (type === 'transcription' && !hasTranscriptionParam) {
+      console.log(`Transcription mode disabled - rendering ported slide instead (type: ${slideConfig.ported?.type})`);
       if (slideConfig.ported && slideConfig.ported.type) {
         return this.renderSlide(slideConfig.ported);
       }
+    } else if (type === 'transcription' && hasTranscriptionParam) {
+      console.log('Transcription mode enabled - showing side-by-side comparison');
     }
 
     // Check custom templates first
