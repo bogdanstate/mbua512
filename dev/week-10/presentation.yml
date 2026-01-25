@@ -42,14 +42,20 @@ slides:
   slideNum: 3
   original: assets/original-slides/slide-03.png
   ported:
-    type: content
+    type: two-col
     title: Goals for today
-    bullets:
-    - What is cluster analysis?
-    - What can cluster analysis be used for?
-    - How to apply cluster analysis?
-    - The most common methods
-    - Interpreting cluster analysis results
+    left:
+      type: content
+      bullets:
+      - What is cluster analysis?
+      - What can cluster analysis be used for?
+      - How to apply cluster analysis?
+      - The most common methods
+      - Interpreting cluster analysis results
+    right:
+      type: image
+      src: assets/images/image10.gif
+      alt: Grumpy cat meme
 - type: transcription
   title: What you need
   slideNum: 4
