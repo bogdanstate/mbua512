@@ -348,6 +348,8 @@
   flex-direction: column;
   padding: 30px;
   background: var(--sf-color-bg-light);
+  z-index: 1; /* Ensure nav buttons (z-index: 100) stay on top */
+  position: relative;
 }
 
 .sf-transcription-header {
