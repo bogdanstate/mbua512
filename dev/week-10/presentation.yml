@@ -11,227 +11,377 @@ config:
     packages: []
   datasets: {}
 slides:
-- type: title
+- type: transcription
   title: MBUA512 – Databases and Analytics
-  subtitle: 'Week 10: Cluster Analysis'
-  authors:
-  - Markus Luczak-Roesch
-  background: https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80
-  overlay: 0.4
-  attribution: Photo by Unsplash
-- type: content
+  slideNum: 1
+  original: assets/original-slides/slide-01.png
+  ported:
+    type: title
+    title: MBUA512 – Databases and Analytics
+    subtitle: 'Week 10: Cluster Analysis'
+    authors:
+    - Markus Luczak-Roesch
+    background: https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80
+    overlay: 0.4
+    attribution: Photo by Unsplash
+- type: transcription
   title: Goals for today
-  bullets:
-  - What is cluster analysis?
-  - What can cluster analysis be used for?
-  - How to apply cluster analysis?
-  - The most common methods
-  - Interpreting cluster analysis results
-- type: content
+  slideNum: 2
+  original: assets/original-slides/slide-02.png
+  ported:
+    type: content
+    title: Goals for today
+    bullets:
+    - What is cluster analysis?
+    - What can cluster analysis be used for?
+    - How to apply cluster analysis?
+    - The most common methods
+    - Interpreting cluster analysis results
+- type: transcription
   title: Goals for today
-  bullets:
-  - What is cluster analysis?
-  - What can cluster analysis be used for?
-  - How to apply cluster analysis?
-  - The most common methods
-  - Interpreting cluster analysis results
-- type: content
+  slideNum: 3
+  original: assets/original-slides/slide-03.png
+  ported:
+    type: content
+    title: Goals for today
+    bullets:
+    - What is cluster analysis?
+    - What can cluster analysis be used for?
+    - How to apply cluster analysis?
+    - The most common methods
+    - Interpreting cluster analysis results
+- type: transcription
   title: What you need
-  bullets:
-  - RStudio
-  - Code for this lecture
-  - https://github.com/m-l-r/teaching/tree/main/data-analytics/clustering
-  - The example data
-  - https://www.kaggle.com/datasets/shashwatwork/injury-prediction-for-competitive-runners
-- type: section
+  slideNum: 4
+  original: assets/original-slides/slide-04.png
+  ported:
+    type: content
+    title: What you need
+    bullets:
+    - RStudio
+    - Code for this lecture
+    - https://github.com/m-l-r/teaching/tree/main/data-analytics/clustering
+    - The example data
+    - https://www.kaggle.com/datasets/shashwatwork/injury-prediction-for-competitive-runners
+- type: transcription
   title: Cluster analysis fundamentals
-- type: content
+  slideNum: 5
+  original: assets/original-slides/slide-05.png
+  ported:
+    type: section
+    title: Cluster analysis fundamentals
+- type: transcription
   title: Cluster analysis within the analytical context
-  bullets:
-  - Exploratory method
-  - No statistical inference (no p–value)
-  - No dependent variable
-  - Unsupervised
-  - For numerical data
-  - Methods for categorical data exist but are beyond this lecture
-  - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
-    analysis: basic concepts and algorithms.'
-- type: content
+  slideNum: 6
+  original: assets/original-slides/slide-06.png
+  ported:
+    type: content
+    title: Cluster analysis within the analytical context
+    bullets:
+    - Exploratory method
+    - No statistical inference (no p–value)
+    - No dependent variable
+    - Unsupervised
+    - For numerical data
+    - Methods for categorical data exist but are beyond this lecture
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+- type: transcription
   title: What is a cluster?
-  bullets:
-  - A grouping of data points, learned on the basis of the data itself
-  - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
-    analysis: basic concepts and algorithms.'
-  - Introduction to data mining
-  - '487'
-  - ', 533.'
-- type: content
+  slideNum: 7
+  original: assets/original-slides/slide-07.png
+  ported:
+    type: content
+    title: What is a cluster?
+    bullets:
+    - A grouping of data points, learned on the basis of the data itself
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+    - Introduction to data mining
+    - '487'
+    - ', 533.'
+- type: transcription
   title: What are the most common methods?
-  bullets:
-  - Prototype-based (aka center-based)
-  - Points are more common to the prototype of the cluster they belong to than to
-    any other cluster prototype
-  - 'Example prototype: Cluster centroid'
-  - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
-    analysis: basic concepts and algorithms.'
-  - Introduction to data mining
-  - '487'
-  - ', 533.'
-- type: content
+  slideNum: 8
+  original: assets/original-slides/slide-08.png
+  ported:
+    type: content
+    title: What are the most common methods?
+    bullets:
+    - Prototype-based (aka center-based)
+    - Points are more common to the prototype of the cluster they belong to than to
+      any other cluster prototype
+    - 'Example prototype: Cluster centroid'
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+    - Introduction to data mining
+    - '487'
+    - ', 533.'
+- type: transcription
   title: What are the most common methods?
-  bullets:
-  - Prototype-based (aka center-based)
-  - Points are more common to the prototype of the cluster they belong to than to
-    any other cluster prototype
-  - 'Example prototype: Cluster centroid'
-  - Graph-based
-  - Cluster is a connected component in a graph representation of a data set (e.g.,
-    a social network)
-  - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
-    analysis: basic concepts and algorithms.'
-  - Introduction to data mining
-- type: content
+  slideNum: 9
+  original: assets/original-slides/slide-09.png
+  ported:
+    type: content
+    title: What are the most common methods?
+    bullets:
+    - Prototype-based (aka center-based)
+    - Points are more common to the prototype of the cluster they belong to than to
+      any other cluster prototype
+    - 'Example prototype: Cluster centroid'
+    - Graph-based
+    - Cluster is a connected component in a graph representation of a data set (e.g.,
+      a social network)
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+    - Introduction to data mining
+- type: transcription
   title: What are the most common methods?
-  bullets:
-  - Prototype-based (aka center-based)
-  - Points are more common to the prototype of the cluster they belong to than to
-    any other cluster prototype
-  - 'Example prototype: Cluster centroid'
-  - Graph-based
-  - Cluster is a connected component in a graph representation of a data set (e.g.,
-    a social network)
-  - Density-based
-  - Cluster is a region of a certain density, surrounded by a region of different
-    density
-- type: content
+  slideNum: 10
+  original: assets/original-slides/slide-10.png
+  ported:
+    type: content
+    title: What are the most common methods?
+    bullets:
+    - Prototype-based (aka center-based)
+    - Points are more common to the prototype of the cluster they belong to than to
+      any other cluster prototype
+    - 'Example prototype: Cluster centroid'
+    - Graph-based
+    - Cluster is a connected component in a graph representation of a data set (e.g.,
+      a social network)
+    - Density-based
+    - Cluster is a region of a certain density, surrounded by a region of different
+      density
+- type: transcription
   title: Cluster Analysis for Data Mining
-  bullets:
-  - How many clusters?
-  - Most cluster analysis methods use a distance measure to calculate the closeness
-    between pairs of items
-  - The quality of a clustering result depends on the
-  - algorithm
-  - ', the'
-  - distance
-  - function, and the application.
-- type: content
+  slideNum: 11
+  original: assets/original-slides/slide-11.png
+  ported:
+    type: content
+    title: Cluster Analysis for Data Mining
+    bullets:
+    - How many clusters?
+    - Most cluster analysis methods use a distance measure to calculate the closeness
+      between pairs of items
+    - The quality of a clustering result depends on the
+    - algorithm
+    - ', the'
+    - distance
+    - function, and the application.
+- type: transcription
   title: Distances
-  bullets:
-  - Euclidian distance
-  - Manhattan distance
-  - Jaccard
-  - similarity
-  - Hamming distance
-  - Cosine similarity
-- type: content
+  slideNum: 12
+  original: assets/original-slides/slide-12.png
+  ported:
+    type: content
+    title: Distances
+    bullets:
+    - Euclidian distance
+    - Manhattan distance
+    - Jaccard
+    - similarity
+    - Hamming distance
+    - Cosine similarity
+- type: transcription
   title: Applications of cluster analysis (in business)
-  bullets:
-  - Identify customer or market segments on the basis of purchasing behavior, preferences,
-    financial data,…
-  - What else can you think of?
-- type: section
+  slideNum: 13
+  original: assets/original-slides/slide-13.png
+  ported:
+    type: content
+    title: Applications of cluster analysis (in business)
+    bullets:
+    - Identify customer or market segments on the basis of purchasing behavior, preferences,
+      financial data,…
+    - What else can you think of?
+- type: transcription
   title: Cluster analysis example
-- type: content
+  slideNum: 14
+  original: assets/original-slides/slide-14.png
+  ported:
+    type: section
+    title: Cluster analysis example
+- type: transcription
   title: Our data
-  bullets:
-  - https://
-  - www.kaggle.com
-  - /datasets/
-  - shashwatwork
-  - /injury-prediction-for-competitive-runners
-- type: content
+  slideNum: 15
+  original: assets/original-slides/slide-15.png
+  ported:
+    type: content
+    title: Our data
+    bullets:
+    - https://
+    - www.kaggle.com
+    - /datasets/
+    - shashwatwork
+    - /injury-prediction-for-competitive-runners
+- type: transcription
   title: Data preparation (1/3)
-  bullets:
-  - The current “Unit of Analysis” is training per week per athlete (with many variables)
-  - What could we cluster?
-  - Typical training weeks
-  - Athletes
-- type: content
+  slideNum: 16
+  original: assets/original-slides/slide-16.png
+  ported:
+    type: content
+    title: Data preparation (1/3)
+    bullets:
+    - The current “Unit of Analysis” is training per week per athlete (with many variables)
+    - What could we cluster?
+    - Typical training weeks
+    - Athletes
+- type: transcription
   title: Data preparation (2/3)
-  bullets:
-  - The current “Unit of Analysis” is training per week per athlete (with many variables)
-  - What could we cluster?
-  - Typical training weeks
-  - Athletes
-  - We want to focus these
-- type: content
+  slideNum: 17
+  original: assets/original-slides/slide-17.png
+  ported:
+    type: content
+    title: Data preparation (2/3)
+    bullets:
+    - The current “Unit of Analysis” is training per week per athlete (with many variables)
+    - What could we cluster?
+    - Typical training weeks
+    - Athletes
+    - We want to focus these
+- type: transcription
   title: Data preparation (3/3)
-  bullets:
-  - training_timeseries
-  - read_csv
-  - ("data/
-  - week_approach_maskedID_timeseries.csv
-  - athelete_data_means
-  - <- aggregate(.~`Athlete ID`,
-  - training_timeseries,mean
-- type: content
+  slideNum: 18
+  original: assets/original-slides/slide-18.png
+  ported:
+    type: content
+    title: Data preparation (3/3)
+    bullets:
+    - training_timeseries
+    - read_csv
+    - ("data/
+    - week_approach_maskedID_timeseries.csv
+    - athelete_data_means
+    - <- aggregate(.~`Athlete ID`,
+    - training_timeseries,mean
+- type: transcription
   title: Which variables to use?
-  bullets:
-  - Perform exploratory data analysis first to make that decision
-  - What variables exist in the data set?
-  - What are the distributions, means, standard deviations…?
-  - “summary(
-  - athlete_data_means
-  - Are variables significantly correlated?
-  - “pairs(
-- type: content
+  slideNum: 19
+  original: assets/original-slides/slide-19.png
+  ported:
+    type: content
+    title: Which variables to use?
+    bullets:
+    - Perform exploratory data analysis first to make that decision
+    - What variables exist in the data set?
+    - What are the distributions, means, standard deviations…?
+    - “summary(
+    - athlete_data_means
+    - Are variables significantly correlated?
+    - “pairs(
+- type: transcription
   title: Normalisation
-  bullets:
-  - If data are not at the same scale
-  - min-max normalization to [0,1] or
-  - z-score
-  - standardisation
-  - (better if outliers are present)
-  - z <-
-  - mydata
-- type: content
+  slideNum: 20
+  original: assets/original-slides/slide-20.png
+  ported:
+    type: content
+    title: Normalisation
+    bullets:
+    - If data are not at the same scale
+    - min-max normalization to [0,1] or
+    - z-score
+    - standardisation
+    - (better if outliers are present)
+    - z <-
+    - mydata
+- type: transcription
   title: Hirarchical
-  bullets:
-  - clustering
-  - '# Calculate distance matrix'
-  - distance =
-  - dist
-  - (nor)
-  - '# Hierarchical agglomerative clustering'
-  - mydata.hclust
-- type: content
+  slideNum: 21
+  original: assets/original-slides/slide-21.png
+  ported:
+    type: content
+    title: Hirarchical
+    bullets:
+    - clustering
+    - '# Calculate distance matrix'
+    - distance =
+    - dist
+    - (nor)
+    - '# Hierarchical agglomerative clustering'
+    - mydata.hclust
+- type: transcription
   title: k-means Clustering
-  bullets:
-  - Pick k centroids
-  - Assign each data point to its closest centroid
-  - Move the k centroids from their initial position, so that they are the centroids
-    of the k clusters
-  - Repeat 2 & 3 until centroids
-  - stabilise
-  - '# K-means clustering'
-  - set.seed
-- type: section
+  slideNum: 22
+  original: assets/original-slides/slide-22.png
+  ported:
+    type: content
+    title: k-means Clustering
+    bullets:
+    - Pick k centroids
+    - Assign each data point to its closest centroid
+    - Move the k centroids from their initial position, so that they are the centroids
+      of the k clusters
+    - Repeat 2 & 3 until centroids
+    - stabilise
+    - '# K-means clustering'
+    - set.seed
+- type: transcription
   title: k-means clustering
-- type: section
+  slideNum: 23
+  original: assets/original-slides/slide-23.png
+  ported:
+    type: section
+    title: k-means clustering
+- type: transcription
   title: k-means clustering
-- type: section
+  slideNum: 24
+  original: assets/original-slides/slide-24.png
+  ported:
+    type: section
+    title: k-means clustering
+- type: transcription
   title: k-means clustering
-- type: section
+  slideNum: 25
+  original: assets/original-slides/slide-25.png
+  ported:
+    type: section
+    title: k-means clustering
+- type: transcription
   title: k-means clustering
-- type: section
+  slideNum: 26
+  original: assets/original-slides/slide-26.png
+  ported:
+    type: section
+    title: k-means clustering
+- type: transcription
   title: k-means clustering
-- type: content
+  slideNum: 27
+  original: assets/original-slides/slide-27.png
+  ported:
+    type: section
+    title: k-means clustering
+- type: transcription
   title: Now I am going to teach something “wrong”!
-  bullets:
-  - k-means clustering – Which k?
-  - “Elbow method”
-  - Try different k, looking at the change in the average distance to centroid as
-    k increases
-  - Average falls rapidly until right k, then changes little
-- type: content
+  slideNum: 28
+  original: assets/original-slides/slide-28.png
+  ported:
+    type: content
+    title: Now I am going to teach something “wrong”!
+    bullets:
+    - k-means clustering – Which k?
+    - “Elbow method”
+    - Try different k, looking at the change in the average distance to centroid as
+      k increases
+    - Average falls rapidly until right k, then changes little
+- type: transcription
   title: A word of caution
-  bullets:
-  - Elbow method is intuitive
-  - but mathematically flawed
-  - 'The right way:'
-  - Gap statistic
-  - Average Silhouette width (“
-  - asw
-  - options(digits=3)
-- type: section
+  slideNum: 29
+  original: assets/original-slides/slide-29.png
+  ported:
+    type: content
+    title: A word of caution
+    bullets:
+    - Elbow method is intuitive
+    - but mathematically flawed
+    - 'The right way:'
+    - Gap statistic
+    - Average Silhouette width (“
+    - asw
+    - options(digits=3)
+- type: transcription
   title: How many clusters?
+  slideNum: 30
+  original: assets/original-slides/slide-30.png
+  ported:
+    type: section
+    title: How many clusters?

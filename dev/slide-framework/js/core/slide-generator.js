@@ -177,6 +177,48 @@ export class SlideGenerator {
         </div>
       `;
     });
+
+    // Transcription slide (side-by-side comparison)
+    this.templates.set('transcription', (slide) => {
+      const originalImg = slide.original || '';
+      const slideNum = slide.slideNum || '';
+
+      // Render the ported slide based on its type
+      let portedContent = '';
+      if (slide.ported && slide.ported.type) {
+        const portedTemplate = this.templates.get(slide.ported.type);
+        if (portedTemplate) {
+          // Create a temporary div to extract just the content
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = portedTemplate(slide.ported);
+          const slideContent = tempDiv.querySelector('.sf-slide');
+          portedContent = slideContent ? slideContent.innerHTML : '';
+        }
+      }
+
+      return `
+        <div class="sf-slide sf-slide--transcription">
+          <div class="sf-transcription-header">
+            <h2>${slide.title || `Slide ${slideNum}`}</h2>
+            <span class="sf-transcription-badge">Transcription Mode</span>
+          </div>
+          <div class="sf-transcription-compare">
+            <div class="sf-transcription-pane">
+              <h3>Original (PowerPoint)</h3>
+              <div class="sf-transcription-original">
+                <img src="${originalImg}" alt="Original slide ${slideNum}" style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px;">
+              </div>
+            </div>
+            <div class="sf-transcription-pane">
+              <h3>Ported (Slide Framework)</h3>
+              <div class="sf-transcription-ported">
+                ${portedContent}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
   }
 
   /**
