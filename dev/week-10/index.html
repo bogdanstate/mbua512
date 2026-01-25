@@ -25,9 +25,10 @@
   <script type="module">
     import { initPresentation } from '../slide-framework/js/index.js';
     import { initDebugConsole } from '../slide-framework/js/utils/debug-console.js';
+    import { initAllInteractives } from './js/interactives.js';
 
     async function main() {
-      // Initialize debug console for mobile
+      // Initialize debug console
       initDebugConsole();
 
       try {
@@ -38,6 +39,11 @@
 
         console.log('MBUA512 Week 10 presentation loaded!');
         console.log(`Total slides: ${app.generator.config.slides.length}`);
+
+        // Initialize interactive components
+        const slidesContainer = document.querySelector('.sf-slides');
+        await initAllInteractives(slidesContainer);
+        console.log('Interactive components initialized');
 
       } catch (error) {
         console.error('Failed to load presentation:', error);
