@@ -77,6 +77,12 @@
   <!-- Slide Container -->
   <div class="sf-slides"></div>
 
+  <!-- Loading indicator -->
+  <div id="loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 1.5em; color: #333;">
+    <p>Loading presentation...</p>
+    <p style="font-size: 0.8em; color: #666;">Please wait</p>
+  </div>
+
   <!-- Framework + Presentation Scripts -->
   <script type="module">
     import { initPresentation } from './slide-framework/js/index.js';
@@ -84,6 +90,8 @@
 
     async function main() {
       try {
+        console.log('Starting presentation initialization...');
+
         // Initialize from YAML
         const app = await initPresentation({
           yamlUrl: 'presentation.yml'
@@ -98,13 +106,27 @@
 
         console.log('Interactive components initialized!');
 
+        // Hide loading indicator
+        const loadingEl = document.getElementById('loading');
+        if (loadingEl) loadingEl.style.display = 'none';
+
       } catch (error) {
         console.error('Failed to load presentation:', error);
+        console.error('Error stack:', error.stack);
+
+        // Hide loading indicator
+        const loadingEl = document.getElementById('loading');
+        if (loadingEl) loadingEl.style.display = 'none';
+
         document.querySelector('.sf-slides').innerHTML = `
-          <div class="sf-slide sf-slide--content active">
+          <div class="sf-slide sf-slide--content active" style="padding: 40px;">
             <h1>Error Loading Presentation</h1>
-            <p style="color: var(--sf-color-error);">${error.message}</p>
-            <p>Check the console for details.</p>
+            <p style="color: #e74c3c; font-size: 1.2em; margin: 20px 0;">${error.message}</p>
+            <p style="margin: 20px 0;">Please check the browser console for details.</p>
+            <details style="margin: 20px 0; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+              <summary style="cursor: pointer; font-weight: bold;">Error Details</summary>
+              <pre style="margin: 10px 0; font-size: 0.9em; overflow: auto;">${error.stack || 'No stack trace available'}</pre>
+            </details>
           </div>
         `;
       }
