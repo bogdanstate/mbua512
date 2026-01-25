@@ -7,8 +7,8 @@
 
 export function init(container, config = {}) {
   const {
-    leftImage = 'assets/fun-during.svg',
-    rightImage = 'assets/fun-after.svg',
+    leftImage = 'assets/remapstudio-JWn5aBvSNSU-unsplash.svg',
+    rightImage = 'assets/public-domain-vectors-weoy0jlwQcU-unsplash.svg',
     leftTitle = 'Fun During',
     rightTitle = 'Fun After'
   } = config;

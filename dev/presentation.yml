@@ -564,20 +564,29 @@ slides:
       - "<strong>Causal inference:</strong> (with appropriate design)"
 
   # Regression examples
-  - type: image
-    src: "assets/child_height_example.png"
-    alt: "Child Height Prediction Example"
-    caption: "Predicting child's height from parents' heights"
+  - type: content
+    title: "Regression Example: Predicting Height"
+    bullets:
+      - "<strong>Question:</strong> Can we predict a child's height?"
+      - "<strong>Variables:</strong> Mother's height, Father's height → Child's height"
+      - "<strong>Method:</strong> Linear regression"
+      - "<strong>Use case:</strong> Understanding genetic inheritance"
 
-  - type: image
-    src: "assets/crop_yield_example.png"
-    alt: "Crop Yield Example"
-    caption: "Predicting crop yield from rainfall and fertilizer"
+  - type: content
+    title: "Regression Example: Crop Yield"
+    bullets:
+      - "<strong>Question:</strong> What affects crop yield?"
+      - "<strong>Variables:</strong> Rainfall, Fertilizer, Temperature → Yield"
+      - "<strong>Method:</strong> Multiple regression"
+      - "<strong>Use case:</strong> Agricultural optimization"
 
-  - type: image
-    src: "assets/income_example.png"
-    alt: "Income Prediction Example"
-    caption: "Predicting income from education and experience"
+  - type: content
+    title: "Regression Example: Income Prediction"
+    bullets:
+      - "<strong>Question:</strong> What predicts income?"
+      - "<strong>Variables:</strong> Education level, Years of experience → Income"
+      - "<strong>Method:</strong> Linear regression"
+      - "<strong>Use case:</strong> Labor economics, career planning"
 
   # Simple regression formula
   - type: content
@@ -732,9 +741,41 @@ slides:
       - "Confounding variables can create spurious correlations"
       - "Experimental design needed for causal claims"
 
-  # Chocolate consumption slide - custom
-  - type: interactive
-    id: chocolate
+  # Chocolate consumption slide - R code with WebR
+  - type: code
+    id: sp-chocolate
+    title: "R Code - Nobel Laureates vs Chocolate Consumption"
+    code: |
+      # Data from kustats::ds16_Nobel_Laureates_and_Chocolate
+      # Source: Messerli (2012) NEJM; Triola (2018) Elementary Statistics
+
+      data <- data.frame(
+        Country = c("Australia", "Austria", "Belgium", "Brazil", "Canada", "China",
+                    "Denmark", "Finland", "France", "Germany", "Greece", "Ireland",
+                    "Italy", "Japan", "Netherlands", "Norway", "Poland", "Portugal",
+                    "Spain", "Sweden", "Switzerland", "United Kingdom", "United States"),
+        CHOCOLATE = c(4.8, 8.5, 5.7, 2.9, 3.9, 0.7, 8.5, 7.3, 6.3, 11.6, 2.5, 9.0,
+                      3.7, 2.0, 4.5, 9.4, 3.2, 2.0, 3.6, 6.4, 11.9, 9.7, 5.3),
+        NOBEL = c(5.2, 24.7, 8.7, 0.1, 6.0, 0.1, 25.3, 7.6, 9.0, 12.8, 1.5, 12.7,
+                  3.3, 1.3, 8.0, 23.4, 3.1, 1.4, 1.8, 31.0, 31.5, 18.9, 10.5)
+      )
+
+      library(ggplot2)
+
+      ggplot(data, aes(x = CHOCOLATE, y = NOBEL)) +
+        geom_point(size = 4, alpha = 0.7, color = "#8B4513") +
+        geom_smooth(method = "lm", se = TRUE, color = "#D2691E") +
+        labs(
+          title = "Nobel Laureates vs Chocolate Consumption",
+          x = "Chocolate Consumption (kg/capita/year)",
+          y = "Nobel Laureates per 10M Population",
+          caption = "Messerli (2012) NEJM"
+        ) +
+        theme_minimal(base_size = 16) +
+        theme(
+          plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
+          plot.caption = element_text(size = 10, hjust = 0.5, color = "gray30")
+        )
 
   # ===== CONCLUSION =====
   - type: section
