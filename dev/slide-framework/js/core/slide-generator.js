@@ -340,7 +340,18 @@ export class SlideGenerator {
    * @returns {string} HTML string
    */
   renderSlide(slideConfig) {
-    const type = slideConfig.type || 'content';
+    let type = slideConfig.type || 'content';
+
+    // Check if transcription mode should be enabled
+    const hasTranscriptionParam = window.location.search.includes('transcription');
+
+    // If this is a transcription slide but transcription mode is not enabled,
+    // render the ported version instead
+    if (type === 'transcription' && !hasTranscriptionParam) {
+      if (slideConfig.ported && slideConfig.ported.type) {
+        return this.renderSlide(slideConfig.ported);
+      }
+    }
 
     // Check custom templates first
     if (this.customTemplates.has(type)) {
