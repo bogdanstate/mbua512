@@ -183,6 +183,8 @@ export class SlideGenerator {
       const originalImg = slide.original || '';
       const slideNum = slide.slideNum || '';
 
+      console.log(`Transcription slide ${slideNum}: original image = "${originalImg}"`);
+
       // Render the ported slide based on its type
       let portedContent = '';
       if (slide.ported && slide.ported.type) {

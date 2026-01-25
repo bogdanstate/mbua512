@@ -413,6 +413,13 @@
   padding: 10px;
   background: #f8f9fa;
   border-radius: 8px;
+  min-height: 300px;
+}
+
+.sf-transcription-original img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .sf-transcription-ported {
