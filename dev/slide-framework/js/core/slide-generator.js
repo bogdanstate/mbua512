@@ -206,7 +206,9 @@ export class SlideGenerator {
             <div class="sf-transcription-pane">
               <h3>Original (PowerPoint)</h3>
               <div class="sf-transcription-original">
-                <img src="${originalImg}" alt="Original slide ${slideNum}" style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px;">
+                <img src="${originalImg}" alt="Original slide ${slideNum}"
+                     style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px;"
+                     onerror="console.error('Failed to load image: ${originalImg}'); this.style.border='2px solid red'; this.alt='Image failed to load: ${originalImg}';">
               </div>
             </div>
             <div class="sf-transcription-pane">
