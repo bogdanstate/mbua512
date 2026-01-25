@@ -24,8 +24,12 @@
   <!-- Framework + Presentation Scripts -->
   <script type="module">
     import { initPresentation } from '../slide-framework/js/index.js';
+    import { initDebugConsole } from '../slide-framework/js/utils/debug-console.js';
 
     async function main() {
+      // Initialize debug console for mobile
+      initDebugConsole();
+
       try {
         // Initialize from YAML
         const app = await initPresentation({
