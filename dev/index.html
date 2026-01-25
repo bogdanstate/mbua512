@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MBUA512 – Week 9: Correlation & Regression</title>
+
+  <!-- Slide Framework CSS -->
+  <link rel="stylesheet" href="slide-framework/css/variables.css">
+  <link rel="stylesheet" href="slide-framework/css/base.css">
+  <link rel="stylesheet" href="slide-framework/css/slides.css">
+  <link rel="stylesheet" href="slide-framework/css/smart-plot.css">
+
+  <!-- Presentation-specific styles -->
+  <style>
+    /* Custom styles for this presentation */
+    .slide-image-full {
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide-image-full img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    /* Interactive component containers */
+    .interactive-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Correlation animation canvas */
+    #correlationCanvas {
+      max-width: 100%;
+      max-height: 80vh;
+    }
+
+    /* Rho slider styles */
+    .rho-display {
+      font-size: 1.4em;
+      font-weight: 500;
+      margin-top: 15px;
+    }
+
+    /* Data table styles */
+    .data-table {
+      border-collapse: collapse;
+      font-size: 1.1em;
+      margin: 20px auto;
+    }
+    .data-table th {
+      background: linear-gradient(135deg, var(--sf-color-dark-bg), var(--sf-color-dark-bg-end));
+      color: white;
+      padding: 12px 20px;
+    }
+    .data-table td {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .data-table tr:nth-child(even) {
+      background: #f8f9fa;
+    }
+  </style>
+
+  <!-- js-yaml for YAML parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+  <!-- Slide Container -->
+  <div class="sf-slides"></div>
+
+  <!-- Framework + Presentation Scripts -->
+  <script type="module">
+    import { initPresentation } from 'slide-framework/js/index.js';
+    import { initAllInteractives } from './js/interactives.js';
+
+    async function main() {
+      try {
+        // Initialize from YAML
+        const app = await initPresentation({
+          yamlUrl: 'presentation.yml'
+        });
+
+        console.log('MBUA512 presentation loaded!');
+        console.log(`Total slides: ${app.generator.config.slides.length}`);
+
+        // Initialize custom interactive components
+        const slidesContainer = document.querySelector('.sf-slides');
+        await initAllInteractives(slidesContainer);
+
+        console.log('Interactive components initialized!');
+
+      } catch (error) {
+        console.error('Failed to load presentation:', error);
+        document.querySelector('.sf-slides').innerHTML = `
+          <div class="sf-slide sf-slide--content active">
+            <h1>Error Loading Presentation</h1>
+            <p style="color: var(--sf-color-error);">${error.message}</p>
+            <p>Check the console for details.</p>
+          </div>
+        `;
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

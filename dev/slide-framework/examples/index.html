@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Framework - Example Presentation</title>
+
+  <!-- Framework CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/slides.css">
+  <link rel="stylesheet" href="../css/smart-plot.css">
+
+  <!-- js-yaml for YAML parsing (from CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+  <!-- Slide Container -->
+  <div class="sf-slides"></div>
+
+  <!-- Framework JavaScript -->
+  <script type="module">
+    import { initPresentation } from '../js/index.js';
+
+    // Initialize presentation from YAML
+    async function main() {
+      try {
+        const app = await initPresentation({
+          yamlUrl: 'presentation.yml'
+        });
+
+        console.log('Presentation initialized!');
+        console.log('Slides:', app.generator.config.slides.length);
+
+        // You can access components:
+        // app.nav - SlideNavigation instance
+        // app.generator - SlideGenerator instance
+        // app.webRManager - WebRManager instance (if WebR enabled)
+        // app.smartPlots - Map of SmartPlot instances (if WebR enabled)
+
+      } catch (error) {
+        console.error('Failed to initialize presentation:', error);
+        document.body.innerHTML = `
+          <div style="padding: 40px; color: #d63031;">
+            <h1>Error Loading Presentation</h1>
+            <p>${error.message}</p>
+          </div>
+        `;
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

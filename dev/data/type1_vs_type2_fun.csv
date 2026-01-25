@@ -1,0 +1,101 @@
+Person,ActivityType,FunCategory,FunDuring,FunAfter
+Reese,Cleaning the house,Neutral (Meh during & after),3.6,5.1
+Morgan,Home renovation project,"Type 2 (Miserable during, great after)",4.6,4.8
+Lane,Marathon running,"Type 2 (Miserable during, great after)",3.0,6.5
+Alex,Moving apartments,"Type 2 (Miserable during, great after)",3.0,6.5
+Riley,Overnight backpacking,"Type 2 (Miserable during, great after)",3.6,5.6
+Charlie,Cooking class,Type 1 (Fun during & after),6.6,7.0
+Quinn,Concert,Type 1 (Fun during & after),8.4,8.2
+Kit,Waiting in line,Neutral (Meh during & after),4.7,3.6
+Devon,Road trip with music,Type 1 (Fun during & after),7.4,6.8
+Quinn,Picnic in the park,Type 1 (Fun during & after),9.4,10.0
+Parker,Concert,Type 1 (Fun during & after),7.4,6.9
+Taylor,Video game session,Type 1 (Fun during & after),7.4,6.9
+Jordan,Training for certification exam,"Type 2 (Miserable during, great after)",4.6,6.2
+Lane,Concert,Type 1 (Fun during & after),7.5,6.9
+Rowan,Cleaning the house,Neutral (Meh during & after),4.2,3.7
+Riley,Playing board games,Type 1 (Fun during & after),7.0,6.6
+Nico,Training for certification exam,"Type 2 (Miserable during, great after)",2.0,8.6
+Hayden,Marathon running,"Type 2 (Miserable during, great after)",2.2,7.8
+Casey,Beach day with friends,Type 1 (Fun during & after),7.3,7.8
+Jordan,Road trip with music,Type 1 (Fun during & after),8.9,9.4
+Hayden,Tough obstacle course,"Type 2 (Miserable during, great after)",3.2,8.0
+Lane,Long commute,Neutral (Meh during & after),4.2,4.0
+Morgan,Road trip with music,Type 1 (Fun during & after),7.2,6.9
+Riley,Public speaking event,"Type 2 (Miserable during, great after)",4.0,6.9
+Casey,Marathon running,"Type 2 (Miserable during, great after)",2.2,7.5
+Taylor,Cooking class,Type 1 (Fun during & after),8.2,8.5
+Jordan,Overnight backpacking,"Type 2 (Miserable during, great after)",2.1,7.8
+Rowan,Cleaning the house,Neutral (Meh during & after),3.7,3.4
+Quinn,Playing board games,Type 1 (Fun during & after),9.3,10.0
+Nico,Mountain summit hike,"Type 2 (Miserable during, great after)",3.8,7.6
+Hayden,Video game session,Type 1 (Fun during & after),8.3,9.2
+Casey,Cold plunge / ice bath,"Type 2 (Miserable during, great after)",3.0,6.2
+Hayden,Assembling flat-pack furniture,Neutral (Meh during & after),4.9,4.3
+Quinn,Beach day with friends,Type 1 (Fun during & after),7.4,7.7
+Rowan,Long commute,Neutral (Meh during & after),4.4,3.0
+Reese,Road trip with music,Type 1 (Fun during & after),8.1,8.1
+Taylor,Cold plunge / ice bath,"Type 2 (Miserable during, great after)",4.3,4.8
+Alex,Home renovation project,"Type 2 (Miserable during, great after)",2.7,7.6
+Sam,Karaoke night,Type 1 (Fun during & after),8.6,8.3
+Avery,Karaoke night,Type 1 (Fun during & after),7.7,7.4
+Avery,Marathon running,"Type 2 (Miserable during, great after)",4.0,6.8
+Hayden,Concert,Type 1 (Fun during & after),7.4,6.9
+Finley,Movie marathon,Type 1 (Fun during & after),7.6,8.8
+Skyler,Waiting in line,Neutral (Meh during & after),4.3,4.2
+Sam,Road trip with music,Type 1 (Fun during & after),6.6,6.0
+Quinn,Concert,Type 1 (Fun during & after),8.8,8.4
+Drew,Waiting in line,Neutral (Meh during & after),3.3,4.3
+Casey,Karaoke night,Type 1 (Fun during & after),9.4,10.0
+Emery,Overnight backpacking,"Type 2 (Miserable during, great after)",2.8,6.8
+Jordan,Amusement park visit,Type 1 (Fun during & after),7.1,7.5
+Casey,Cooking class,Type 1 (Fun during & after),7.3,7.6
+Casey,Amusement park visit,Type 1 (Fun during & after),6.7,7.3
+Jules,Cooking class,Type 1 (Fun during & after),7.6,7.3
+Reese,Video game session,Type 1 (Fun during & after),8.0,7.8
+Casey,Karaoke night,Type 1 (Fun during & after),8.3,7.9
+Skyler,Cold plunge / ice bath,"Type 2 (Miserable during, great after)",3.0,6.9
+Charlie,Road trip with music,Type 1 (Fun during & after),6.6,7.8
+Jordan,Home renovation project,"Type 2 (Miserable during, great after)",3.5,6.9
+Nico,Amusement park visit,Type 1 (Fun during & after),7.2,7.5
+Alex,Long commute,Neutral (Meh during & after),3.1,4.4
+Hayden,Marathon running,"Type 2 (Miserable during, great after)",2.5,8.8
+Emery,Waiting in line,Neutral (Meh during & after),3.8,4.3
+Sam,Cold plunge / ice bath,"Type 2 (Miserable during, great after)",4.1,7.0
+Charlie,Overnight backpacking,"Type 2 (Miserable during, great after)",3.1,7.5
+Devon,Public speaking event,"Type 2 (Miserable during, great after)",3.6,7.1
+Reese,Home renovation project,"Type 2 (Miserable during, great after)",4.7,6.2
+Casey,Learning a new language,"Type 2 (Miserable during, great after)",3.0,6.6
+Morgan,Tough obstacle course,"Type 2 (Miserable during, great after)",3.0,7.4
+Casey,Marathon running,"Type 2 (Miserable during, great after)",2.9,7.4
+Morgan,Long commute,Neutral (Meh during & after),2.6,5.4
+Jordan,Public speaking event,"Type 2 (Miserable during, great after)",4.0,5.8
+Alex,Cold plunge / ice bath,"Type 2 (Miserable during, great after)",4.0,6.3
+Devon,Mountain summit hike,"Type 2 (Miserable during, great after)",3.5,6.7
+Sam,Marathon running,"Type 2 (Miserable during, great after)",3.2,7.1
+Taylor,Waiting in line,Neutral (Meh during & after),3.2,3.0
+Hayden,Cold plunge / ice bath,"Type 2 (Miserable during, great after)",3.1,8.2
+Drew,Public speaking event,"Type 2 (Miserable during, great after)",3.3,6.4
+Riley,Picnic in the park,Type 1 (Fun during & after),9.2,9.5
+Skyler,Assembling flat-pack furniture,Neutral (Meh during & after),2.6,3.1
+Sam,Learning a new language,"Type 2 (Miserable during, great after)",4.1,5.5
+Riley,Overnight backpacking,"Type 2 (Miserable during, great after)",3.2,8.1
+Hayden,Waiting in line,Neutral (Meh during & after),3.9,4.6
+Hayden,Beach day with friends,Type 1 (Fun during & after),6.7,6.4
+Morgan,Video game session,Type 1 (Fun during & after),8.3,8.6
+Jules,Video game session,Type 1 (Fun during & after),7.8,7.2
+Charlie,Mountain summit hike,"Type 2 (Miserable during, great after)",5.0,6.4
+Alex,Karaoke night,Type 1 (Fun during & after),9.3,9.8
+Jamie,Cooking class,Type 1 (Fun during & after),7.5,7.0
+Rowan,Video game session,Type 1 (Fun during & after),7.4,7.3
+Lane,Waiting in line,Neutral (Meh during & after),2.6,5.4
+Rowan,Cleaning the house,Neutral (Meh during & after),4.3,4.4
+Alex,Moving apartments,"Type 2 (Miserable during, great after)",4.1,5.8
+Emery,Cleaning the house,Neutral (Meh during & after),3.5,4.1
+Morgan,Cleaning the house,Neutral (Meh during & after),4.6,3.7
+Nico,Movie marathon,Type 1 (Fun during & after),8.6,9.3
+Jules,Learning a new language,"Type 2 (Miserable during, great after)",3.1,7.8
+Drew,Overnight backpacking,"Type 2 (Miserable during, great after)",4.1,6.3
+Devon,Road trip with music,Type 1 (Fun during & after),7.8,7.8
+Kit,Cleaning the house,Neutral (Meh during & after),3.5,3.6
+Quinn,Training for certification exam,"Type 2 (Miserable during, great after)",4.9,5.3
