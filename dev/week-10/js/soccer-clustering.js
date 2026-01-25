@@ -90,7 +90,7 @@ export async function initSoccerClustering(containerId) {
   const slider = document.createElement('input');
   slider.type = 'range';
   slider.min = '1';
-  slider.max = '8';
+  slider.max = '11';
   slider.value = '2';
   slider.style.cssText = 'width: 200px; vertical-align: middle; margin-right: 10px;';
 
@@ -180,7 +180,7 @@ export async function initSoccerClustering(containerId) {
   }
 
   function drawPlayers(assignments) {
-    const colors = ['#FF6B6B', '#4ECDC4', '#FFD93D', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#A8D8EA'];
+    const colors = ['#FF6B6B', '#4ECDC4', '#FFD93D', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#A8D8EA', '#FFA07A', '#98D8C8', '#F7DC6F'];
 
     playerGroup.innerHTML = '';
 
@@ -201,9 +201,33 @@ export async function initSoccerClustering(containerId) {
 
     if (!result) return;
 
-    const colors = ['#FF6B6B', '#4ECDC4', '#FFD93D', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#A8D8EA'];
+    const colors = ['#FF6B6B', '#4ECDC4', '#FFD93D', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#A8D8EA', '#FFA07A', '#98D8C8', '#F7DC6F'];
 
     result.centroids.forEach((centroid, idx) => {
+      // Calculate cluster radius (distance to farthest point in cluster)
+      const clusterPoints = players.filter((_, pIdx) => result.assignments[pIdx] === idx);
+      let maxRadius = 30; // Minimum radius
+
+      clusterPoints.forEach(point => {
+        const dist = Math.sqrt((point.x - centroid.x) ** 2 + (point.y - centroid.y) ** 2);
+        if (dist > maxRadius) maxRadius = dist;
+      });
+
+      // Add some padding to the radius
+      maxRadius += 15;
+
+      // Draw cluster circle
+      const clusterCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      clusterCircle.setAttribute('cx', centroid.x);
+      clusterCircle.setAttribute('cy', centroid.y);
+      clusterCircle.setAttribute('r', maxRadius);
+      clusterCircle.setAttribute('fill', 'none');
+      clusterCircle.setAttribute('stroke', colors[idx % colors.length]);
+      clusterCircle.setAttribute('stroke-width', '2');
+      clusterCircle.setAttribute('stroke-dasharray', '5,5');
+      clusterCircle.setAttribute('opacity', '0.6');
+      clustersGroup.appendChild(clusterCircle);
+
       // Draw centroid
       const cross = document.createElementNS('http://www.w3.org/2000/svg', 'g');
 
