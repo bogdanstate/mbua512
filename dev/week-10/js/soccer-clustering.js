@@ -1,14 +1,27 @@
 /**
  * Soccer Formation Clustering Interactive
  *
- * Shows two teams in 4-4-3 formation and demonstrates k-means clustering
+ * Loads real match data and demonstrates k-means clustering
  * with adjustable k from 1 to 8 clusters.
+ * Data: Barcelona vs Manchester United, 2011 Champions League Final (kickoff positions)
  */
 
-export function initSoccerClustering(containerId) {
+export async function initSoccerClustering(containerId) {
   const container = document.getElementById(containerId);
   if (!container) {
     console.error(`Container ${containerId} not found`);
+    return;
+  }
+
+  // Load match data
+  let matchData;
+  try {
+    const response = await fetch('data/soccer-positions.json');
+    matchData = await response.json();
+    console.log(`Loaded match data: ${matchData.metadata.description}`);
+  } catch (err) {
+    console.error('Failed to load match data:', err);
+    container.innerHTML = '<p style="color: red;">Failed to load match data</p>';
     return;
   }
 
@@ -31,56 +44,25 @@ export function initSoccerClustering(containerId) {
   // Draw field markings
   drawField(svg, fieldWidth, fieldHeight);
 
-  // Define 4-4-3 formation positions (normalized 0-1, then scaled)
-  const team1Formation = [
-    // Goalkeeper
-    { x: 0.05, y: 0.5 },
-    // Defenders (4)
-    { x: 0.20, y: 0.2 },
-    { x: 0.20, y: 0.4 },
-    { x: 0.20, y: 0.6 },
-    { x: 0.20, y: 0.8 },
-    // Midfielders (4)
-    { x: 0.40, y: 0.2 },
-    { x: 0.40, y: 0.4 },
-    { x: 0.40, y: 0.6 },
-    { x: 0.40, y: 0.8 },
-    // Forwards (3)
-    { x: 0.65, y: 0.3 },
-    { x: 0.65, y: 0.5 },
-    { x: 0.65, y: 0.7 }
-  ];
+  // Extract player positions from loaded data
+  const team1Players = matchData.teams[0].players.map(p => ({ ...p, teamIdx: 0 }));
+  const team2Players = matchData.teams[1].players.map(p => ({ ...p, teamIdx: 1 }));
 
-  const team2Formation = [
-    // Goalkeeper
-    { x: 0.95, y: 0.5 },
-    // Defenders (4)
-    { x: 0.80, y: 0.2 },
-    { x: 0.80, y: 0.4 },
-    { x: 0.80, y: 0.6 },
-    { x: 0.80, y: 0.8 },
-    // Midfielders (4)
-    { x: 0.60, y: 0.2 },
-    { x: 0.60, y: 0.4 },
-    { x: 0.60, y: 0.6 },
-    { x: 0.60, y: 0.8 },
-    // Forwards (3)
-    { x: 0.35, y: 0.3 },
-    { x: 0.35, y: 0.5 },
-    { x: 0.35, y: 0.7 }
-  ];
-
-  // Scale positions to field
+  // Scale positions to field (data is normalized 0-1)
   const players = [
-    ...team1Formation.map(p => ({
+    ...team1Players.map(p => ({
       x: p.x * (fieldWidth - 2 * padding) + padding,
       y: p.y * (fieldHeight - 2 * padding) + padding,
-      team: 1
+      team: 1,
+      position: p.position,
+      id: p.id
     })),
-    ...team2Formation.map(p => ({
+    ...team2Players.map(p => ({
       x: p.x * (fieldWidth - 2 * padding) + padding,
       y: p.y * (fieldHeight - 2 * padding) + padding,
-      team: 2
+      team: 2,
+      position: p.position,
+      id: p.id
     }))
   ];
 
@@ -130,7 +112,8 @@ export function initSoccerClustering(containerId) {
   const info = document.createElement('div');
   info.style.cssText = 'margin-top: 15px; text-align: center; color: #ddd; font-size: 14px;';
   info.innerHTML = `
-    <p><strong>4-4-3 Formation:</strong> 2 teams × 11 players = 22 data points</p>
+    <p><strong>${matchData.metadata.description}</strong></p>
+    <p><strong>Formations:</strong> ${matchData.teams[0].formation} vs ${matchData.teams[1].formation} &nbsp;|&nbsp; <strong>Data points:</strong> ${players.length} players</p>
     <p>Adjust k to see how clustering groups players based on field position</p>
   `;
   container.appendChild(info);
