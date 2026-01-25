@@ -205,11 +205,12 @@ export class SlideGenerator {
             <span class="sf-transcription-badge">Transcription Mode</span>
           </div>
           <div class="sf-transcription-compare">
-            <div class="sf-transcription-pane">
+            <div class="sf-transcription-pane" style="min-height: 300px;">
               <h3>Original (PowerPoint)</h3>
-              <div class="sf-transcription-original">
+              <div class="sf-transcription-original" style="min-height: 300px; background: #f0f0f0; padding: 10px; border-radius: 8px; display: flex; align-items: flex-start; justify-content: center;">
                 <img src="${originalImg}" alt="Original slide ${slideNum}"
-                     style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px;"
+                     style="width: 100%; max-width: 100%; height: auto; display: block; border: 2px solid #ddd; border-radius: 8px;"
+                     onload="console.log('Image loaded successfully: ${originalImg}');"
                      onerror="console.error('Failed to load image: ${originalImg}'); this.style.border='2px solid red'; this.alt='Image failed to load: ${originalImg}';">
               </div>
             </div>
