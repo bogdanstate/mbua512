@@ -1,0 +1,108 @@
+/**
+ * Slide Framework - CSS Custom Properties
+ *
+ * All customizable values are defined here as CSS variables.
+ * Override these in your presentation's CSS to customize the theme.
+ */
+
+:root {
+  /* ========== Colors - Primary ========== */
+  --sf-color-primary: #0984e3;
+  --sf-color-primary-dark: #0773c7;
+  --sf-color-primary-light: #74b9ff;
+
+  /* ========== Colors - Dark Theme (code editors, interstitials) ========== */
+  --sf-color-dark-bg: #1a1a2e;
+  --sf-color-dark-bg-end: #16213e;
+  --sf-color-dark-surface: #1e1e1e;
+  --sf-color-dark-surface-hover: #1a1a1a;
+  --sf-color-dark-border: #2d3436;
+
+  /* ========== Colors - Semantic ========== */
+  --sf-color-success: #00b894;
+  --sf-color-error: #d63031;
+  --sf-color-warning: #e17055;
+  --sf-color-info: #74b9ff;
+
+  /* ========== Colors - Text ========== */
+  --sf-color-text-primary: #333;
+  --sf-color-text-secondary: #444;
+  --sf-color-text-body: #555;
+  --sf-color-text-muted: #636e72;
+  --sf-color-text-light: #b2bec3;
+  --sf-color-text-inverse: #fff;
+  --sf-color-text-code: #d4d4d4;
+
+  /* ========== Colors - Backgrounds ========== */
+  --sf-color-bg-body: #000;
+  --sf-color-bg-slide: #fff;
+  --sf-color-bg-subtle: #fafafa;
+  --sf-color-bg-code: #f1f2f6;
+  --sf-color-bg-status: #dfe6e9;
+
+  /* ========== Colors - Interactive ========== */
+  --sf-color-nav-bg: rgba(0, 0, 0, 0.6);
+  --sf-color-nav-bg-hover: rgba(0, 0, 0, 0.8);
+  --sf-color-overlay: rgba(0, 0, 0, 0.4);
+
+  /* ========== Typography - Fonts ========== */
+  --sf-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --sf-font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', Consolas, 'Courier New', monospace;
+
+  /* ========== Typography - Sizes ========== */
+  --sf-font-size-base: 16px;
+  --sf-font-size-h1: 2.2em;
+  --sf-font-size-h1-lead: 3em;
+  --sf-font-size-h2: 1.6em;
+  --sf-font-size-body: 1.3em;
+  --sf-font-size-small: 0.9em;
+  --sf-font-size-nav: 14px;
+  --sf-font-size-code: 13px;
+  --sf-font-size-status: 11px;
+
+  /* ========== Typography - Line Heights ========== */
+  --sf-line-height-base: 1.6;
+  --sf-line-height-code: 1.5;
+
+  /* ========== Spacing ========== */
+  --sf-spacing-slide-x: 80px;
+  --sf-spacing-slide-y: 60px;
+  --sf-spacing-slide-compact-x: 50px;
+  --sf-spacing-slide-compact-y: 30px;
+  --sf-spacing-nav-bottom: 20px;
+  --sf-spacing-gap: 30px;
+  --sf-spacing-gap-sm: 10px;
+
+  /* ========== Borders ========== */
+  --sf-border-radius: 4px;
+  --sf-border-radius-md: 5px;
+  --sf-border-radius-lg: 8px;
+  --sf-border-color: #ddd;
+  --sf-border-accent: 3px solid var(--sf-color-primary);
+
+  /* ========== Shadows ========== */
+  --sf-shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --sf-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  /* ========== Transitions ========== */
+  --sf-transition-fast: 0.2s ease;
+  --sf-transition-normal: 0.3s ease;
+
+  /* ========== Z-Index Layers ========== */
+  --sf-z-nav: 100;
+  --sf-z-overlay: 50;
+  --sf-z-content: 10;
+
+  /* ========== Smart Plot Specific ========== */
+  --sf-sp-min-height: 500px;
+  --sf-sp-header-bg: #2d3436;
+  --sf-sp-editor-bg: var(--sf-color-dark-surface);
+  --sf-sp-output-bg: var(--sf-color-bg-subtle);
+}
+
+/* Dark theme override example */
+[data-theme="dark"] {
+  --sf-color-bg-slide: #1a1a2e;
+  --sf-color-text-primary: #fff;
+  --sf-color-text-body: #ddd;
+}

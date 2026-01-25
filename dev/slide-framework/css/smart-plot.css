@@ -1,0 +1,345 @@
+/**
+ * Slide Framework - Smart Plot Widget
+ *
+ * Interactive R code editor with output display.
+ * Import after base.css
+ */
+
+/* ========== Container ========== */
+.sf-smart-plot {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--sf-border-color);
+  border-radius: var(--sf-border-radius-lg);
+  overflow: hidden;
+  margin-top: 20px;
+  max-height: calc(100vh - 200px);
+}
+
+/* Variant: Full height (for code slides) */
+.sf-smart-plot--full {
+  margin-top: 0;
+  max-height: calc(100vh - 20px);
+}
+
+/* ========== Header ========== */
+.sf-smart-plot__header {
+  background: var(--sf-sp-header-bg);
+  color: var(--sf-color-text-inverse);
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sf-smart-plot__title {
+  font-size: 12px;
+  color: var(--sf-color-text-light);
+}
+
+/* ========== Run Button ========== */
+.sf-smart-plot__btn {
+  background: var(--sf-color-primary);
+  border: none;
+  color: var(--sf-color-text-inverse);
+  padding: 6px 16px;
+  border-radius: var(--sf-border-radius);
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--sf-transition-fast);
+}
+
+.sf-smart-plot__btn:hover:not(:disabled) {
+  background: var(--sf-color-primary-dark);
+}
+
+.sf-smart-plot__btn:disabled {
+  background: var(--sf-color-text-muted);
+  cursor: not-allowed;
+}
+
+.sf-smart-plot__btn .icon {
+  font-size: 10px;
+}
+
+/* ========== Content Area ========== */
+.sf-smart-plot__content {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+/* ========== Code Editor ========== */
+.sf-smart-plot__editor {
+  width: 100%;
+  height: 100%;
+  min-height: var(--sf-sp-min-height);
+  background: var(--sf-sp-editor-bg);
+  color: var(--sf-color-text-code);
+  border: none;
+  padding: 16px;
+  font-family: var(--sf-font-family-mono);
+  font-size: var(--sf-font-size-code);
+  line-height: var(--sf-line-height-code);
+  resize: none;
+  tab-size: 2;
+}
+
+.sf-smart-plot__editor:focus {
+  outline: none;
+  background: var(--sf-color-dark-surface-hover);
+}
+
+.sf-smart-plot__editor.hidden {
+  display: none;
+}
+
+/* Editor with larger font (configurable) */
+.sf-smart-plot__editor--lg {
+  font-size: 18px;
+}
+
+/* ========== Output Area ========== */
+.sf-smart-plot__output {
+  display: none;
+  background: var(--sf-sp-output-bg);
+  height: 100%;
+  min-height: var(--sf-sp-min-height);
+  padding: 20px;
+  overflow: auto;
+}
+
+.sf-smart-plot__output.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sf-smart-plot__output.active.text-output {
+  display: block;
+}
+
+/* Output Canvas (for plots) */
+.sf-smart-plot__output canvas {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--sf-border-radius);
+  box-shadow: var(--sf-shadow-sm);
+}
+
+/* Output Text (for console output) */
+.sf-smart-plot__output pre {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+  overflow: auto;
+  font-family: var(--sf-font-family-mono);
+  font-size: 12px;
+  line-height: var(--sf-line-height-code);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #f5f5f5;
+  border-radius: var(--sf-border-radius-lg);
+  text-align: left;
+}
+
+/* R Text Output (dark theme) */
+.sf-smart-plot__output pre.r-text-output {
+  background: var(--sf-color-dark-surface);
+  color: var(--sf-color-text-code);
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre;
+  min-height: 100%;
+}
+
+/* ========== Status Bar ========== */
+.sf-smart-plot__status {
+  background: var(--sf-color-bg-status);
+  padding: 6px 12px;
+  font-size: var(--sf-font-size-status);
+  color: var(--sf-color-text-muted);
+  flex-shrink: 0;
+}
+
+.sf-smart-plot__status.loading {
+  color: var(--sf-color-warning);
+}
+
+.sf-smart-plot__status.error {
+  color: var(--sf-color-error);
+}
+
+.sf-smart-plot__status.success {
+  color: var(--sf-color-success);
+}
+
+/* ========== Loader Spinner ========== */
+.sf-loader {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: sf-spin 1s linear infinite;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+@keyframes sf-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========== Back to Code Button ========== */
+.sf-smart-plot__back-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--sf-color-nav-bg);
+  color: var(--sf-color-text-inverse);
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--sf-border-radius);
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--sf-transition-fast);
+}
+
+.sf-smart-plot__back-btn:hover {
+  background: var(--sf-color-nav-bg-hover);
+}
+
+/* ========== Mobile Responsive Styles ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .sf-smart-plot {
+    max-height: calc(100vh - 150px);
+  }
+
+  .sf-smart-plot--full {
+    max-height: calc(100vh - 10px);
+  }
+
+  .sf-smart-plot__editor {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .sf-smart-plot {
+    margin-top: 10px;
+    max-height: calc(100vh - 100px);
+  }
+
+  .sf-smart-plot--full {
+    max-height: calc(100vh - 5px);
+  }
+
+  .sf-smart-plot__header {
+    padding: 6px 10px;
+    flex-wrap: wrap;
+  }
+
+  .sf-smart-plot__title {
+    font-size: 11px;
+    flex: 1 0 100%;
+    margin-bottom: 4px;
+  }
+
+  .sf-smart-plot__btn {
+    padding: 8px 14px;
+    font-size: 11px;
+    width: 100%;
+    justify-content: center;
+    /* Larger tap target for mobile */
+    min-height: 44px;
+  }
+
+  .sf-smart-plot__editor {
+    font-size: 11px;
+    padding: 10px;
+    min-height: 300px;
+  }
+
+  .sf-smart-plot__output {
+    min-height: 300px;
+    padding: 10px;
+  }
+
+  .sf-smart-plot__output pre {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .sf-smart-plot__output pre.r-text-output {
+    font-size: 11px;
+    padding: 12px;
+  }
+
+  .sf-smart-plot__back-btn {
+    padding: 10px 14px;
+    font-size: 11px;
+    /* Larger tap target for mobile */
+    min-height: 44px;
+    min-width: 80px;
+  }
+
+  .sf-smart-plot__status {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .sf-smart-plot {
+    max-height: calc(100vh - 80px);
+  }
+
+  .sf-smart-plot__editor {
+    font-size: 10px;
+    padding: 8px;
+    min-height: 250px;
+  }
+
+  .sf-smart-plot__output {
+    min-height: 250px;
+    padding: 8px;
+  }
+
+  .sf-smart-plot__output pre {
+    font-size: 9px;
+    padding: 8px;
+  }
+
+  .sf-smart-plot__output pre.r-text-output {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+/* Landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sf-smart-plot {
+    max-height: calc(100vh - 50px);
+  }
+
+  .sf-smart-plot__editor,
+  .sf-smart-plot__output {
+    min-height: 200px;
+  }
+}

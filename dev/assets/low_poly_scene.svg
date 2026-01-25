@@ -1,0 +1,411 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="50%" style="stop-color:#2d1b4e"/>
+      <stop offset="100%" style="stop-color:#0d0d1a"/>
+    </linearGradient>
+    
+    <linearGradient id="floorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1f3d"/>
+      <stop offset="100%" style="stop-color:#1a1028"/>
+    </linearGradient>
+    
+    <linearGradient id="shelfGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5c4033"/>
+      <stop offset="100%" style="stop-color:#3d2817"/>
+    </linearGradient>
+    
+    <linearGradient id="magicGlow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d"/>
+      <stop offset="100%" style="stop-color:#c44569"/>
+    </linearGradient>
+    
+    <linearGradient id="magicGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a18cd1"/>
+      <stop offset="100%" style="stop-color:#6a5acd"/>
+    </linearGradient>
+    
+    <linearGradient id="magicGlow3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffa500"/>
+    </linearGradient>
+    
+    <linearGradient id="carGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90d9"/>
+      <stop offset="100%" style="stop-color:#2d5a8a"/>
+    </linearGradient>
+    
+    <linearGradient id="carGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d94a4a"/>
+      <stop offset="100%" style="stop-color:#8a2d2d"/>
+    </linearGradient>
+    
+    <linearGradient id="jewelryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5a8"/>
+      <stop offset="100%" style="stop-color:#c9a84c"/>
+    </linearGradient>
+    
+    <linearGradient id="transitionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d1b4e;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#0d0d1a;stop-opacity:0"/>
+    </linearGradient>
+    
+    <!-- Filters for glow effects -->
+    <filter id="magicFilter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="sparkleFilter" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="jewelryFilter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="700" fill="url(#skyGradient)"/>
+  
+  <!-- Floor -->
+  <polygon points="0,500 1400,500 1400,700 0,700" fill="url(#floorGradient)"/>
+  <polygon points="0,500 700,480 1400,500 700,520" fill="#251840" opacity="0.5"/>
+  
+  <!-- ==================== SCENE 1: MAGICAL MOVIES AND CARS ==================== -->
+  
+  <!-- Window frame (left side) -->
+  <rect x="50" y="100" width="350" height="280" fill="#1a1a2e" stroke="#4a3f5f" stroke-width="8"/>
+  <line x1="225" y1="100" x2="225" y2="380" stroke="#4a3f5f" stroke-width="4"/>
+  <line x1="50" y1="240" x2="400" y2="240" stroke="#4a3f5f" stroke-width="4"/>
+  
+  <!-- Outside scene through window - parking lot -->
+  <rect x="58" y="108" width="334" height="264" fill="#0a0a15"/>
+  
+  <!-- Low poly mountains in distance -->
+  <polygon points="58,280 120,200 180,260 230,180 290,250 350,190 392,280" fill="#1a1530"/>
+  <polygon points="58,300 100,250 150,280 200,230 260,270 320,220 392,300" fill="#251840"/>
+  
+  <!-- Ground outside -->
+  <rect x="58" y="300" width="334" height="72" fill="#1f1a30"/>
+  
+  <!-- Car 1 (blue, magical) - more visible -->
+  <g filter="url(#magicFilter)">
+    <!-- Car body -->
+    <polygon points="80,320 90,295 140,295 160,310 160,340 80,340" fill="url(#carGradient1)"/>
+    <polygon points="95,295 100,280 130,280 140,295" fill="#6ab0f5"/>
+    <!-- Wheels -->
+    <circle cx="100" cy="340" r="12" fill="#2a2a3a"/>
+    <circle cx="145" cy="340" r="12" fill="#2a2a3a"/>
+    <!-- Eyes (car character) -->
+    <ellipse cx="105" cy="285" rx="8" ry="5" fill="#fff"/>
+    <ellipse cx="125" cy="285" rx="8" ry="5" fill="#fff"/>
+    <circle cx="107" cy="286" r="3" fill="#333"/>
+    <circle cx="127" cy="286" r="3" fill="#333"/>
+    <!-- Magical sparkles from car -->
+    <circle cx="170" cy="290" r="3" fill="#ffd700" filter="url(#sparkleFilter)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="275" r="2" fill="#ff6b9d" filter="url(#sparkleFilter)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="165" cy="260" r="2.5" fill="#a18cd1" filter="url(#sparkleFilter)">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Car 2 (red, magical but fading) -->
+  <g opacity="0.7" filter="url(#magicFilter)">
+    <polygon points="200,325 210,305 250,305 265,315 265,345 200,345" fill="url(#carGradient2)"/>
+    <polygon points="212,305 217,292 243,292 250,305" fill="#f56a6a"/>
+    <circle cx="215" cy="345" r="10" fill="#2a2a3a"/>
+    <circle cx="252" cy="345" r="10" fill="#2a2a3a"/>
+    <!-- Eyes -->
+    <ellipse cx="222" cy="298" rx="6" ry="4" fill="#fff"/>
+    <ellipse cx="238" cy="298" rx="6" ry="4" fill="#fff"/>
+    <circle cx="223" cy="299" r="2" fill="#333"/>
+    <circle cx="239" cy="299" r="2" fill="#333"/>
+    <!-- Fading sparkles -->
+    <circle cx="275" cy="300" r="2" fill="#ffd700" opacity="0.5" filter="url(#sparkleFilter)">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="285" r="1.5" fill="#ff6b9d" opacity="0.4" filter="url(#sparkleFilter)">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Car 3 (almost faded, barely visible) -->
+  <g opacity="0.3">
+    <polygon points="310,330 318,315 345,315 355,325 355,350 310,350" fill="#4a4a5a"/>
+    <polygon points="320,315 323,305 340,305 345,315" fill="#5a5a6a"/>
+    <circle cx="322" cy="350" r="8" fill="#2a2a3a"/>
+    <circle cx="345" cy="350" r="8" fill="#2a2a3a"/>
+  </g>
+  
+  <!-- Shelf (foreground) -->
+  <g>
+    <!-- Shelf back panel -->
+    <polygon points="30,400 450,400 450,650 30,650" fill="#2a1f3d"/>
+    
+    <!-- Shelf surfaces -->
+    <polygon points="40,420 440,420 430,440 50,440" fill="url(#shelfGradient)"/>
+    <polygon points="40,500 440,500 430,520 50,520" fill="url(#shelfGradient)"/>
+    <polygon points="40,580 440,580 430,600 50,600" fill="url(#shelfGradient)"/>
+    
+    <!-- Magical Movie 1 (brightest, full glow) -->
+    <g filter="url(#magicFilter)">
+      <rect x="60" y="445" width="35" height="50" fill="url(#magicGlow1)" rx="2"/>
+      <rect x="65" y="450" width="25" height="30" fill="#ff8ab5" opacity="0.6"/>
+      <polygon points="70,465 85,475 70,485" fill="#fff" opacity="0.8"/>
+      <!-- Sparkles -->
+      <circle cx="95" cy="450" r="3" fill="#fff" filter="url(#sparkleFilter)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="55" cy="460" r="2" fill="#ffd700" filter="url(#sparkleFilter)">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Magical Movie 2 (bright) -->
+    <g filter="url(#magicFilter)">
+      <rect x="110" y="445" width="35" height="50" fill="url(#magicGlow2)" rx="2"/>
+      <rect x="115" y="450" width="25" height="30" fill="#b8a8e8" opacity="0.6"/>
+      <ellipse cx="127" cy="465" rx="8" ry="10" fill="#fff" opacity="0.5"/>
+      <circle cx="145" cy="448" r="2.5" fill="#a18cd1" filter="url(#sparkleFilter)">
+        <animate attributeName="opacity" values="1;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Magical Movie 3 (medium glow) -->
+    <g filter="url(#magicFilter)" opacity="0.8">
+      <rect x="160" y="445" width="35" height="50" fill="url(#magicGlow3)" rx="2"/>
+      <rect x="165" y="450" width="25" height="30" fill="#ffe066" opacity="0.5"/>
+      <polygon points="172,460 182,470 172,480 177,470" fill="#fff" opacity="0.6"/>
+      <circle cx="190" cy="455" r="2" fill="#ffd700" opacity="0.7" filter="url(#sparkleFilter)">
+        <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Fading Movie 4 -->
+    <g opacity="0.5">
+      <rect x="210" y="445" width="35" height="50" fill="#6a5acd" rx="2" opacity="0.6"/>
+      <rect x="215" y="450" width="25" height="30" fill="#8a7aed" opacity="0.3"/>
+    </g>
+    
+    <!-- Fading Movie 5 -->
+    <g opacity="0.3">
+      <rect x="260" y="445" width="35" height="50" fill="#5a4a9d" rx="2" opacity="0.5"/>
+    </g>
+    
+    <!-- Ghost outline of vanished movie -->
+    <rect x="310" y="445" width="35" height="50" fill="none" stroke="#4a3a6d" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+    
+    <!-- More movies on second shelf -->
+    <g filter="url(#magicFilter)">
+      <rect x="60" y="525" width="35" height="50" fill="url(#magicGlow3)" rx="2"/>
+      <circle cx="77" cy="550" r="10" fill="#fff" opacity="0.4"/>
+    </g>
+    <g filter="url(#magicFilter)" opacity="0.7">
+      <rect x="110" y="525" width="35" height="50" fill="url(#magicGlow1)" rx="2"/>
+    </g>
+    <g opacity="0.4">
+      <rect x="160" y="525" width="35" height="50" fill="#c44569" rx="2" opacity="0.5"/>
+    </g>
+    <rect x="210" y="525" width="35" height="50" fill="none" stroke="#4a3a6d" stroke-width="1" stroke-dasharray="3,3" opacity="0.2"/>
+  </g>
+  
+  <!-- ==================== TRANSITION AREA ==================== -->
+  <rect x="450" y="0" width="200" height="700" fill="url(#transitionGradient)"/>
+  
+  <!-- Transition sparkles fading -->
+  <circle cx="480" cy="300" r="2" fill="#ffd700" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="520" cy="250" r="1.5" fill="#a18cd1" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.05;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="560" cy="320" r="1" fill="#ff6b9d" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.02;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- ==================== SCENE 2: JEWELRY HEIST PLANNING ==================== -->
+  
+  <!-- Jewelry Store Building -->
+  <g>
+    <!-- Building structure -->
+    <polygon points="750,150 1100,150 1100,480 750,480" fill="#1a1a2e"/>
+    <polygon points="750,150 780,130 1130,130 1100,150" fill="#252540"/>
+    <polygon points="1100,150 1130,130 1130,460 1100,480" fill="#151528"/>
+    
+    <!-- Store window with jewelry display -->
+    <rect x="780" y="200" width="280" height="200" fill="#0f0f1a" stroke="#c9a84c" stroke-width="4"/>
+    
+    <!-- Jewelry display shelves inside -->
+    <rect x="790" y="280" width="260" height="4" fill="#3a3a5a"/>
+    <rect x="790" y="340" width="260" height="4" fill="#3a3a5a"/>
+    
+    <!-- Jewelry items with glow -->
+    <g filter="url(#jewelryFilter)">
+      <!-- Diamond necklace -->
+      <path d="M820,260 Q850,280 880,260" stroke="#e8e8ff" stroke-width="2" fill="none"/>
+      <polygon points="850,280 845,270 855,270" fill="#fff"/>
+      <circle cx="850" cy="285" r="8" fill="#e8d5ff" opacity="0.9"/>
+      <circle cx="850" cy="285" r="4" fill="#fff"/>
+      
+      <!-- Gold ring -->
+      <ellipse cx="920" cy="270" rx="12" ry="8" fill="none" stroke="url(#jewelryGlow)" stroke-width="4"/>
+      <polygon points="920,260 915,250 925,250" fill="#ffd700"/>
+      
+      <!-- Ruby pendant -->
+      <circle cx="990" cy="265" r="10" fill="#cc3333"/>
+      <circle cx="990" cy="265" r="5" fill="#ff6666" opacity="0.7"/>
+      <circle cx="987" cy="262" r="2" fill="#fff" opacity="0.8"/>
+      
+      <!-- Pearl strand -->
+      <circle cx="810" cy="320" r="5" fill="#f5f5f0"/>
+      <circle cx="825" cy="318" r="5" fill="#f0f0e8"/>
+      <circle cx="840" cy="320" r="5" fill="#f5f5f0"/>
+      <circle cx="855" cy="318" r="5" fill="#f0f0e8"/>
+      <circle cx="870" cy="320" r="5" fill="#f5f5f0"/>
+      
+      <!-- Emerald bracelet -->
+      <rect x="900" y="315" width="50" height="12" fill="#2d8a4e" rx="2"/>
+      <rect x="905" y="318" width="8" height="6" fill="#4ade80"/>
+      <rect x="920" y="318" width="8" height="6" fill="#4ade80"/>
+      <rect x="935" y="318" width="8" height="6" fill="#4ade80"/>
+      
+      <!-- Diamond tiara -->
+      <path d="M970,315 L980,295 L990,315 L1000,300 L1010,315 L1020,290 L1030,315" 
+            stroke="#c0c0c0" stroke-width="2" fill="none"/>
+      <circle cx="980" cy="295" r="3" fill="#fff"/>
+      <circle cx="1000" cy="300" r="3" fill="#e8e8ff"/>
+      <circle cx="1020" cy="290" r="4" fill="#fff"/>
+      
+      <!-- Gold bars on bottom shelf -->
+      <rect x="800" y="360" width="40" height="25" fill="#c9a84c"/>
+      <rect x="803" y="363" width="34" height="8" fill="#e8d5a8"/>
+      <rect x="850" y="360" width="40" height="25" fill="#c9a84c"/>
+      <rect x="900" y="360" width="40" height="25" fill="#c9a84c"/>
+    </g>
+    
+    <!-- Subtle glow from jewelry -->
+    <ellipse cx="900" cy="300" rx="120" ry="80" fill="#ffd700" opacity="0.05"/>
+    
+    <!-- Awning -->
+    <polygon points="750,200 1100,200 1120,180 730,180" fill="#8b0000"/>
+    <polygon points="750,200 755,195 755,180 750,185" fill="#5a0000"/>
+  </g>
+  
+  <!-- Low Poly Thief 1 (wearing black, cat-like features for 'purr-suasion') -->
+  <g>
+    <!-- Body -->
+    <polygon points="1150,380 1180,320 1210,380 1210,480 1150,480" fill="#1a1a2a"/>
+    <!-- Head -->
+    <polygon points="1160,320 1180,280 1200,320" fill="#d4a574"/>
+    <!-- Cat ears (subtle, like a hat) -->
+    <polygon points="1162,290 1168,270 1175,290" fill="#1a1a2a"/>
+    <polygon points="1185,290 1192,270 1198,290" fill="#1a1a2a"/>
+    <!-- Eyes (scheming) -->
+    <ellipse cx="1172" cy="298" rx="4" ry="3" fill="#fff"/>
+    <ellipse cx="1188" cy="298" rx="4" ry="3" fill="#fff"/>
+    <circle cx="1173" cy="299" r="2" fill="#2a5a2a"/>
+    <circle cx="1189" cy="299" r="2" fill="#2a5a2a"/>
+    <!-- Smirk -->
+    <path d="M1175,308 Q1180,312 1185,308" stroke="#8b5a3c" stroke-width="1.5" fill="none"/>
+    <!-- Arm pointing at store -->
+    <polygon points="1150,360 1100,340 1095,350 1145,375" fill="#1a1a2a"/>
+    <!-- Hand -->
+    <polygon points="1095,340 1085,335 1090,345 1095,350" fill="#d4a574"/>
+    <!-- Legs -->
+    <polygon points="1160,480 1155,550 1170,550 1175,480" fill="#2a2a3a"/>
+    <polygon points="1185,480 1190,550 1205,550 1200,480" fill="#2a2a3a"/>
+    <!-- Feet -->
+    <polygon points="1150,545 1175,545 1175,555 1145,555" fill="#1a1a2a"/>
+    <polygon points="1185,545 1210,545 1215,555 1185,555" fill="#1a1a2a"/>
+  </g>
+  
+  <!-- Low Poly Thief 2 (shorter, also with cat motif) -->
+  <g>
+    <!-- Body -->
+    <polygon points="1250,400 1275,350 1300,400 1300,490 1250,490" fill="#2a2a3a"/>
+    <!-- Head -->
+    <polygon points="1258,350 1275,315 1292,350" fill="#c49a6c"/>
+    <!-- Cat ears hat -->
+    <polygon points="1260,325 1265,308 1272,325" fill="#2a2a3a"/>
+    <polygon points="1278,325 1285,308 1290,325" fill="#2a2a3a"/>
+    <!-- Eyes (mischievous) -->
+    <ellipse cx="1268" cy="332" rx="3.5" ry="2.5" fill="#fff"/>
+    <ellipse cx="1282" cy="332" rx="3.5" ry="2.5" fill="#fff"/>
+    <circle cx="1269" cy="333" r="1.5" fill="#4a3a2a"/>
+    <circle cx="1283" cy="333" r="1.5" fill="#4a3a2a"/>
+    <!-- Grin -->
+    <path d="M1270,340 Q1275,345 1280,340" stroke="#8b5a3c" stroke-width="1.5" fill="none"/>
+    <!-- Arms crossed -->
+    <polygon points="1250,420 1240,410 1270,400 1275,410" fill="#2a2a3a"/>
+    <polygon points="1300,420 1310,410 1280,400 1275,410" fill="#2a2a3a"/>
+    <!-- Hands visible -->
+    <polygon points="1238,405 1245,415 1250,408" fill="#c49a6c"/>
+    <polygon points="1312,405 1305,415 1300,408" fill="#c49a6c"/>
+    <!-- Legs -->
+    <polygon points="1260,490 1257,545 1270,545 1273,490" fill="#3a3a4a"/>
+    <polygon points="1277,490 1280,545 1293,545 1290,490" fill="#3a3a4a"/>
+    <!-- Feet -->
+    <polygon points="1252,540 1275,540 1275,550 1248,550" fill="#2a2a3a"/>
+    <polygon points="1275,540 1298,540 1302,550 1275,550" fill="#2a2a3a"/>
+  </g>
+  
+  <!-- Cat silhouette near thieves (the 'purr-suasion' element) -->
+  <g>
+    <!-- Cat body -->
+    <ellipse cx="1320" cy="540" rx="25" ry="15" fill="#1a1a1a"/>
+    <!-- Cat head -->
+    <circle cx="1345" cy="530" r="12" fill="#1a1a1a"/>
+    <!-- Cat ears -->
+    <polygon points="1338,520 1342,508 1348,520" fill="#1a1a1a"/>
+    <polygon points="1348,518 1355,508 1358,522" fill="#1a1a1a"/>
+    <!-- Cat eyes (glowing, mischievous) -->
+    <ellipse cx="1342" cy="528" rx="3" ry="4" fill="#4ade80"/>
+    <ellipse cx="1352" cy="528" rx="3" ry="4" fill="#4ade80"/>
+    <ellipse cx="1342" cy="528" rx="1" ry="3" fill="#000"/>
+    <ellipse cx="1352" cy="528" rx="1" ry="3" fill="#000"/>
+    <!-- Cat tail -->
+    <path d="M1295,540 Q1280,520 1290,500" stroke="#1a1a1a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Shadow on ground -->
+  <ellipse cx="1180" cy="555" rx="40" ry="8" fill="#0a0a15" opacity="0.5"/>
+  <ellipse cx="1275" cy="552" rx="35" ry="7" fill="#0a0a15" opacity="0.5"/>
+  <ellipse cx="1320" cy="555" rx="30" ry="5" fill="#0a0a15" opacity="0.4"/>
+  
+  <!-- Street lamp -->
+  <rect x="1120" y="300" width="8" height="250" fill="#3a3a4a"/>
+  <polygon points="1110,300 1140,300 1135,320 1115,320" fill="#4a4a5a"/>
+  <ellipse cx="1124" cy="295" rx="15" ry="8" fill="#ffd700" opacity="0.3"/>
+  <circle cx="1124" cy="295" r="6" fill="#ffe066"/>
+  
+  <!-- Ambient particles -->
+  <circle cx="700" cy="200" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="750" cy="400" r="1" fill="#fff" opacity="0.2"/>
+  <circle cx="1200" cy="250" r="1" fill="#ffd700" opacity="0.3"/>
+  <circle cx="1050" cy="450" r="1" fill="#fff" opacity="0.2"/>
+  
+  <!-- Very faint last magical sparkle in transition (magic disappearing) -->
+  <circle cx="600" cy="400" r="1.5" fill="#a18cd1" opacity="0.15">
+    <animate attributeName="opacity" values="0.15;0;0.15" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Framework - Minimal Example</title>
+
+  <!-- Framework CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/slides.css">
+</head>
+<body>
+  <!-- Slides defined directly in HTML -->
+  <div class="sf-slides">
+
+    <!-- Title Slide -->
+    <div class="sf-slide sf-slide--lead active">
+      <h1>Welcome to Slide Framework</h1>
+      <p>A minimal example with no YAML</p>
+    </div>
+
+    <!-- Content Slide -->
+    <div class="sf-slide sf-slide--content">
+      <h1>Features</h1>
+      <ul>
+        <li>Simple, modular CSS</li>
+        <li>ES Module JavaScript</li>
+        <li>Keyboard navigation (arrow keys, space)</li>
+        <li>Touch/swipe support</li>
+        <li>No build step required</li>
+      </ul>
+    </div>
+
+    <!-- Section Slide -->
+    <div class="sf-slide sf-slide--section">
+      <h1>2. Getting Started</h1>
+    </div>
+
+    <!-- Two-Column Slide (manual) -->
+    <div class="sf-slide sf-slide--two-col">
+      <div class="sf-columns">
+        <div class="sf-col" style="background: #f8f9fa;">
+          <h2>Left Column</h2>
+          <p>Content goes here</p>
+        </div>
+        <div class="sf-col" style="background: #e9ecef;">
+          <h2>Right Column</h2>
+          <p>More content here</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Slide -->
+    <div class="sf-slide sf-slide--lead">
+      <h1>Thank You!</h1>
+      <p>Press arrow keys or swipe to navigate</p>
+    </div>
+
+  </div>
+
+  <!-- Navigation JavaScript -->
+  <script type="module">
+    import { SlideNavigation, createNavButtons, createPageNumber } from '../js/core/navigation.js';
+
+    // Initialize navigation
+    const nav = new SlideNavigation({
+      container: '.sf-slides',
+      onSlideChange: (current, total) => {
+        console.log(`Slide ${current + 1} of ${total}`);
+      }
+    });
+
+    // Create navigation buttons
+    createNavButtons(nav);
+
+    // Create page number display
+    createPageNumber(nav);
+  </script>
+</body>
+</html>

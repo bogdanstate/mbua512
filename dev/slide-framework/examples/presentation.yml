@@ -1,0 +1,134 @@
+# Example Presentation Configuration
+# This demonstrates all available slide types
+
+meta:
+  title: "Introduction to Data Analysis"
+  subtitle: "A Framework Demo"
+  authors:
+    - "Your Name"
+  date: "2026-01-23"
+
+config:
+  theme: "default"
+  webr:
+    enabled: true
+    packages:
+      - ggplot2
+  # datasets are optional - mtcars is built into R
+  datasets: {}
+
+# Custom template definitions (optional)
+templates:
+  callout:
+    html: |
+      <div class="sf-slide sf-slide--content">
+        <div style="background: #e3f2fd; padding: 30px; border-radius: 12px; border-left: 5px solid #1976d2;">
+          <h2>{{title}}</h2>
+          <p>{{message}}</p>
+        </div>
+      </div>
+
+slides:
+  # Title slide with background image
+  - type: title
+    title: "Introduction to Data Analysis"
+    subtitle: "A Framework Demo"
+    authors:
+      - "Your Name"
+    background: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+    overlay: 0.5
+    attribution: "Photo by NASA on Unsplash"
+
+  # Section divider
+  - type: section
+    number: 1
+    title: "Getting Started"
+
+  # Content slide with bullet points
+  - type: content
+    title: "What We'll Cover"
+    bullets:
+      - "Loading and exploring data"
+      - "Creating visualizations with ggplot2"
+      - "Understanding correlation"
+      - "Building regression models"
+
+  # Quote slide
+  - type: quote
+    text: "The goal is to turn data into information, and information into insight."
+    author: "Carly Fiorina"
+
+  # Two-column layout
+  - type: two-column
+    left:
+      type: image
+      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+      alt: "Data visualization"
+    right:
+      type: content
+      title: "Why Visualize?"
+      bullets:
+        - "Patterns become visible"
+        - "Outliers are easier to spot"
+        - "Communicate findings effectively"
+
+  # Section divider
+  - type: section
+    number: 2
+    title: "R Code Examples"
+
+  # Code slide - basic plot
+  - type: code
+    id: plot1
+    title: "R Code - Basic Scatterplot"
+    code: |
+      # Create a simple scatterplot
+      library(ggplot2)
+
+      ggplot(mtcars, aes(x = wt, y = mpg)) +
+        geom_point(color = "#0984e3", size = 3) +
+        labs(
+          title = "Miles per Gallon vs Weight",
+          x = "Weight (1000 lbs)",
+          y = "Miles per Gallon"
+        ) +
+        theme_minimal()
+
+  # Code slide - with regression line
+  - type: code
+    id: plot2
+    title: "R Code - Adding a Trend Line"
+    code: |
+      # Scatterplot with regression line
+      library(ggplot2)
+
+      ggplot(mtcars, aes(x = wt, y = mpg)) +
+        geom_point(color = "#0984e3", size = 3, alpha = 0.7) +
+        geom_smooth(method = "lm", color = "#e74c3c", se = TRUE) +
+        labs(
+          title = "MPG vs Weight with Linear Fit",
+          x = "Weight (1000 lbs)",
+          y = "Miles per Gallon"
+        ) +
+        theme_minimal()
+
+  # Content slide
+  - type: content
+    title: "Key Takeaways"
+    bullets:
+      - "Heavier cars tend to have lower fuel efficiency"
+      - "The relationship appears linear"
+      - "R² tells us how much variance is explained"
+
+  # Section divider
+  - type: section
+    number: 3
+    title: "Summary"
+
+  # Final slide
+  - type: content
+    title: "Thank You!"
+    bullets:
+      - "Questions?"
+      - "Resources available online"
+      - "Practice with real datasets"

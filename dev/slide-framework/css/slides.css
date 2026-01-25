@@ -1,0 +1,343 @@
+/**
+ * Slide Framework - Slide Container & Navigation
+ *
+ * Core slide system styles including container, slide types, and navigation.
+ * Import after base.css
+ */
+
+/* ========== Slide Container ========== */
+.sf-slides {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* ========== Base Slide ========== */
+.sf-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: var(--sf-color-bg-slide);
+  padding: var(--sf-spacing-slide-y) var(--sf-spacing-slide-x);
+  overflow: auto;
+}
+
+.sf-slide.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== Slide Types ========== */
+
+/* Title/Lead Slide */
+.sf-slide.sf-slide--lead {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--sf-color-dark-bg) 0%, var(--sf-color-dark-bg-end) 100%);
+  color: var(--sf-color-text-inverse);
+}
+
+.sf-slide.sf-slide--lead h1 {
+  font-size: var(--sf-font-size-h1-lead);
+  color: var(--sf-color-text-inverse);
+  border-bottom: none;
+  margin-bottom: 0.3em;
+}
+
+.sf-slide.sf-slide--lead p {
+  font-size: var(--sf-font-size-body);
+  color: var(--sf-color-text-light);
+}
+
+/* Section Interstitial */
+.sf-slide.sf-slide--section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--sf-color-dark-bg) 0%, var(--sf-color-dark-bg-end) 100%);
+}
+
+.sf-slide.sf-slide--section h1 {
+  font-size: 4em;
+  color: var(--sf-color-text-inverse);
+  border-bottom: none;
+  font-weight: 300;
+}
+
+/* Content Slide */
+.sf-slide.sf-slide--content h1 {
+  border-bottom: var(--sf-border-accent);
+}
+
+/* Compact Padding Variant */
+.sf-slide.sf-slide--compact {
+  padding: var(--sf-spacing-slide-compact-y) var(--sf-spacing-slide-compact-x);
+}
+
+/* Full-bleed (no padding) */
+.sf-slide.sf-slide--full {
+  padding: 0;
+}
+
+/* Background Image Support */
+.sf-slide.sf-slide--bg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.sf-slide.sf-slide--bg .sf-slide__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--sf-color-overlay);
+  z-index: var(--sf-z-overlay);
+}
+
+.sf-slide.sf-slide--bg .sf-slide__content {
+  position: relative;
+  z-index: var(--sf-z-content);
+}
+
+/* Two-Column Layout */
+.sf-slide.sf-slide--two-col {
+  padding: 0;
+}
+
+.sf-slide--two-col .sf-columns {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sf-slide--two-col .sf-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--sf-spacing-slide-y) var(--sf-spacing-slide-compact-x);
+}
+
+/* Code Slide */
+.sf-slide.sf-slide--code {
+  padding: 10px;
+}
+
+/* ========== Navigation ========== */
+.sf-nav {
+  position: fixed;
+  bottom: var(--sf-spacing-nav-bottom);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--sf-spacing-gap-sm);
+  z-index: var(--sf-z-nav);
+}
+
+.sf-nav__btn {
+  background: var(--sf-color-nav-bg);
+  color: var(--sf-color-text-inverse);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--sf-border-radius-md);
+  font-size: var(--sf-font-size-nav);
+}
+
+.sf-nav__btn:hover:not(:disabled) {
+  background: var(--sf-color-nav-bg-hover);
+}
+
+.sf-nav__btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Page Number */
+.sf-page-num {
+  position: fixed;
+  bottom: var(--sf-spacing-nav-bottom);
+  right: var(--sf-spacing-nav-bottom);
+  color: var(--sf-color-text-muted);
+  font-size: var(--sf-font-size-nav);
+  z-index: var(--sf-z-nav);
+}
+
+/* ========== Slide Transitions (Optional) ========== */
+.sf-slides.sf-slides--fade .sf-slide {
+  opacity: 0;
+  transition: opacity var(--sf-transition-normal);
+}
+
+.sf-slides.sf-slides--fade .sf-slide.active {
+  opacity: 1;
+}
+
+/* ========== Mobile & Tablet Responsive Styles ========== */
+
+/* Tablets and smaller (landscape tablets, portrait tablets, large phones) */
+@media (max-width: 1024px) {
+  .sf-slide {
+    padding: 40px 50px;
+  }
+
+  .sf-slide.sf-slide--compact {
+    padding: 20px 30px;
+  }
+
+  .sf-slide.sf-slide--section h1 {
+    font-size: 3em;
+  }
+
+  .sf-nav__btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile devices (portrait phones and small tablets) */
+@media (max-width: 768px) {
+  .sf-slide {
+    padding: 30px 20px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sf-slide.sf-slide--compact {
+    padding: 20px 15px;
+  }
+
+  .sf-slide.sf-slide--lead h1 {
+    font-size: 2em;
+  }
+
+  .sf-slide.sf-slide--section h1 {
+    font-size: 2.5em;
+  }
+
+  /* Two-column layouts stack on mobile */
+  .sf-slide--two-col .sf-columns {
+    flex-direction: column;
+  }
+
+  .sf-slide--two-col .sf-col {
+    min-height: 50vh;
+    padding: 20px;
+  }
+
+  /* Navigation improvements for mobile */
+  .sf-nav {
+    bottom: 10px;
+    gap: 8px;
+  }
+
+  .sf-nav__btn {
+    padding: 10px 14px;
+    font-size: 12px;
+    min-width: 50px;
+  }
+
+  .sf-page-num {
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+  }
+
+  /* Code slides on mobile */
+  .sf-slide.sf-slide--code {
+    padding: 5px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .sf-slide {
+    padding: 20px 15px;
+  }
+
+  .sf-slide.sf-slide--lead h1 {
+    font-size: 1.8em;
+  }
+
+  .sf-slide.sf-slide--lead p {
+    font-size: 1em;
+  }
+
+  .sf-slide.sf-slide--section h1 {
+    font-size: 2em;
+  }
+
+  .sf-nav {
+    bottom: 5px;
+    gap: 5px;
+  }
+
+  .sf-nav__btn {
+    padding: 8px 12px;
+    font-size: 11px;
+    min-width: 45px;
+  }
+
+  .sf-page-num {
+    bottom: 5px;
+    right: 5px;
+    font-size: 11px;
+  }
+}
+
+/* Landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sf-slide {
+    padding: 15px 30px;
+  }
+
+  .sf-nav {
+    bottom: 5px;
+  }
+
+  .sf-page-num {
+    bottom: 5px;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger tap targets for touch devices */
+  .sf-nav__btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  button {
+    min-height: 44px;
+  }
+
+  /* Prevent iOS text size adjustment */
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Improve scrolling on iOS */
+  .sf-slide {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ========== Print Styles ========== */
+@media print {
+  .sf-nav,
+  .sf-page-num {
+    display: none;
+  }
+
+  .sf-slide {
+    display: block !important;
+    page-break-after: always;
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+  }
+}
