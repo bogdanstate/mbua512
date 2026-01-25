@@ -54,8 +54,8 @@ slides:
       - Interpreting cluster analysis results
     right:
       type: image
-      src: assets/images/image10.gif
-      alt: Grumpy cat meme
+      src: assets/images/image1.jpeg
+      alt: Slide 3 image
 - type: transcription
   title: What you need
   slideNum: 4
