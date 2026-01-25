@@ -10,9 +10,18 @@ export async function initAllInteractives(slidesContainer) {
 
   console.log(`Found ${interactiveSlides.length} interactive slide(s)`);
 
-  interactiveSlides.forEach(slide => {
+  // Track which interactives have been initialized
+  const initializedInteractives = new Set();
+
+  // Function to initialize a specific interactive
+  const initInteractive = (slide) => {
     const interactiveId = slide.getAttribute('data-interactive');
     const script = slide.getAttribute('data-script');
+
+    // Skip if already initialized
+    if (initializedInteractives.has(interactiveId)) {
+      return;
+    }
 
     console.log(`Initializing interactive: ${interactiveId}, script: ${script}`);
 
@@ -24,6 +33,7 @@ export async function initAllInteractives(slidesContainer) {
         contentDiv.id = `${interactiveId}-content`;
         try {
           initSoccerClustering(`${interactiveId}-content`);
+          initializedInteractives.add(interactiveId);
           console.log(`Soccer clustering initialized for ${interactiveId}`);
         } catch (err) {
           console.error(`Failed to init soccer clustering:`, err);
@@ -31,6 +41,28 @@ export async function initAllInteractives(slidesContainer) {
       } else {
         console.warn(`No .sf-interactive-content found in slide ${interactiveId}`);
       }
+    }
+  };
+
+  // Initialize interactives when their slide becomes active
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        const slide = mutation.target;
+        if (slide.classList.contains('active') && slide.hasAttribute('data-interactive')) {
+          initInteractive(slide);
+        }
+      }
+    });
+  });
+
+  // Observe each interactive slide for class changes
+  interactiveSlides.forEach(slide => {
+    observer.observe(slide, { attributes: true });
+
+    // Initialize if already active
+    if (slide.classList.contains('active')) {
+      initInteractive(slide);
     }
   });
 }
