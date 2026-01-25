@@ -344,12 +344,16 @@
 
 /* ===== Transcription Mode Styles ===== */
 .sf-slide--transcription {
-  display: flex;
+  /* Display is controlled by .sf-slide.active - don't override it here! */
   flex-direction: column;
   padding: 30px;
   background: var(--sf-color-bg-light);
   z-index: 1; /* Ensure nav buttons (z-index: 100) stay on top */
-  position: relative;
+  position: absolute; /* Match base .sf-slide positioning */
+}
+
+.sf-slide--transcription.active {
+  display: flex; /* Only show when active */
 }
 
 .sf-transcription-header {

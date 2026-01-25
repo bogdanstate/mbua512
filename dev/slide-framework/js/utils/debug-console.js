@@ -54,6 +54,7 @@ export class DebugConsole {
     header.innerHTML = `
       <span>🐛 Debug Console</span>
       <div>
+        <button id="debug-copy" style="margin-right: 5px; padding: 2px 8px; cursor: pointer;">📋</button>
         <button id="debug-clear" style="margin-right: 5px; padding: 2px 8px; cursor: pointer;">Clear</button>
         <button id="debug-minimize" style="padding: 2px 8px; cursor: pointer;">−</button>
       </div>
@@ -75,6 +76,7 @@ export class DebugConsole {
     document.body.appendChild(this.container);
 
     // Event listeners
+    document.getElementById('debug-copy').addEventListener('click', () => this.copyToClipboard());
     document.getElementById('debug-clear').addEventListener('click', () => this.clear());
     document.getElementById('debug-minimize').addEventListener('click', () => this.toggle());
 
@@ -185,6 +187,30 @@ export class DebugConsole {
 
   warn(message) {
     this._addMessage(message, 'warn');
+  }
+
+  async copyToClipboard() {
+    const text = this.messages.map(m => `[${m.timestamp}] ${m.message}`).join('\n');
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+        this.log('✓ Copied to clipboard');
+      } else {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        this.log('✓ Copied to clipboard (fallback)');
+      }
+    } catch (err) {
+      this.error('Failed to copy: ' + err.message);
+    }
   }
 
   clear() {
