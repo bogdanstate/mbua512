@@ -230,14 +230,13 @@ export class DebugConsole {
   }
 }
 
-// Auto-initialize on mobile
+// Initialize debug console when URL has ?debug parameter
 export function initDebugConsole() {
-  // Only enable on mobile or when URL has ?debug
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  // Only enable when URL has ?debug parameter
   const hasDebugParam = window.location.search.includes('debug');
 
-  if (isMobile || hasDebugParam) {
+  if (hasDebugParam) {
     window.debugConsole = new DebugConsole();
-    console.log('Mobile detected - Debug console enabled');
+    console.log('Debug console enabled via URL parameter');
   }
 }
