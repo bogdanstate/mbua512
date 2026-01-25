@@ -179,6 +179,14 @@ export class SlideNavigation {
     // Add active class to new slide
     this.slides[this.current].classList.add(this.options.activeClass);
 
+    // Scroll to top of the page/container
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    // Also scroll the container to top if it's scrollable
+    if (this.container.scrollTop > 0) {
+      this.container.scrollTop = 0;
+    }
+
     // Trigger callback
     this._triggerCallback();
   }
