@@ -1,180 +1,119 @@
-# MBUA512 Dev Site - Deployment Guide
+# GitHub Pages Deployment Guide
 
-## ✅ Setup Complete!
+This document explains how the MBUA512 presentations are automatically deployed to GitHub Pages.
 
-The development branch has been successfully created and pushed to GitHub.
+## Automatic Deployment
 
-## 🔗 URLs
+The site is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch.
 
-### Production (Current)
-- **URL**: https://bogdanstate.github.io/mbua512/
-- **Branch**: `main`
-- **Status**: Live ✅
-- **Content**: Original Week 9 slides
+### How it Works
 
-### Development (New Framework)
-- **URL**: https://bogdanstate.github.io/mbua512/dev/
-- **Branch**: `dev`
-- **Status**: Deploying... ⏳
-- **Content**: New slide framework (75 slides, 20 interactives)
+1. **GitHub Actions Workflow** (`.github/workflows/deploy.yml`)
+   - Triggers on every push to `main` branch
+   - Can also be triggered manually via "Actions" tab
+   - Deploys the `dev/` directory to GitHub Pages
 
-## 📦 What Was Deployed
+2. **Deployment Process**
+   - Checks out the repository
+   - Configures GitHub Pages
+   - Uploads the `dev/` directory as an artifact
+   - Deploys to GitHub Pages
 
-### New Slide Framework
-- ✅ YAML-based slide configuration (`presentation.yml`)
-- ✅ 75 slides fully ported
-- ✅ 20 interactive modules (datasaurus, rho-slider, etc.)
-- ✅ WebR integration for live R code
-- ✅ Mobile-responsive design
-- ✅ Touch gesture navigation
-- ✅ PWA-capable
+### Site URL
 
-### Directory Structure
+After deployment, the site will be available at:
 ```
-dev/
-├── index.html              # Main presentation
-├── presentation.yml        # Slide content (YAML)
-├── slide-framework/        # Core framework
-│   ├── css/               # Responsive styles
-│   ├── js/                # Navigation, WebR
-│   └── docs/              # Documentation
-├── js/                    # Interactive modules
-├── assets/                # Images, backgrounds
-└── data/                  # CSV datasets
+https://bogdanstate.github.io/mbua512/
 ```
 
-## 🚀 GitHub Pages Automatic Deployment
+## Initial Setup (One-Time)
 
-GitHub Pages automatically deploys both branches:
+To enable GitHub Pages for this repository:
 
-1. **Main branch** → https://bogdanstate.github.io/mbua512/
-2. **Dev branch** → https://bogdanstate.github.io/mbua512/dev/
+1. Go to repository **Settings** → **Pages**
+2. Under "Build and deployment":
+   - **Source**: Select "GitHub Actions"
+3. Save the changes
 
-No additional configuration needed! GitHub Pages serves all files from the `dev/` directory on the `dev` branch.
+That's it! The workflow will handle all deployments automatically.
 
-## ⏱️ Deployment Timeline
+## Manual Deployment
 
-- **Push time**: Just now
-- **Build time**: ~1-2 minutes
-- **Propagation**: ~5 minutes
-- **Total**: ~5-10 minutes
+To manually trigger a deployment:
 
-Check deployment status:
-```bash
-gh run list --workflow=pages --limit 5
+1. Go to the **Actions** tab in GitHub
+2. Select "Deploy to GitHub Pages" workflow
+3. Click "Run workflow"
+4. Select the `main` branch
+5. Click "Run workflow"
+
+## Directory Structure
+
+The deployed site structure:
+```
+/                       → Landing page (index.html)
+/week-09/              → Week 9: Correlation & Regression
+/week-10/              → Week 10: Cluster Analysis
+/slide-framework/      → Shared framework (CSS, JS)
 ```
 
-Or visit: https://github.com/bogdanstate/mbua512/actions
+## Updating Content
 
-## ✅ Verification Steps
+### To update Week 9 or Week 10:
+1. Edit files in `dev/week-09/` or `dev/week-10/`
+2. Commit changes
+3. Push to `main` branch
+4. Deployment happens automatically
 
-### 1. Wait for GitHub Pages Build
-Visit: https://github.com/bogdanstate/mbua512/deployments
+### To add a new week:
+1. Create `dev/week-XX/` directory
+2. Add `index.html` and `presentation.yml`
+3. Update `dev/index.html` to add the new presentation card
+4. Commit and push
 
-You should see:
-- ✅ "github-pages" environment deployment in progress
-- ⏳ Status: "In progress" → "Active"
+## Troubleshooting
 
-### 2. Test Dev Site (5-10 minutes)
-```bash
-# Should return HTTP 200
-curl -I https://bogdanstate.github.io/mbua512/dev/
+### Deployment failed
+- Check the **Actions** tab for error details
+- Ensure GitHub Pages is enabled in Settings
+- Verify the `dev/` directory contains valid HTML
 
-# Should load presentation
-curl https://bogdanstate.github.io/mbua512/dev/ | grep "MBUA512"
-```
+### Site not updating
+- Check if the workflow ran successfully in Actions tab
+- GitHub Pages may take 1-2 minutes to update after deployment
+- Clear browser cache (Ctrl+F5 or Cmd+Shift+R)
 
-### 3. Test in Browser
-Open: https://bogdanstate.github.io/mbua512/dev/
+### 404 errors
+- Ensure all file paths are relative (no leading `/`)
+- Check that files exist in the `dev/` directory
+- Verify links in `index.html` point to correct directories
 
-Expected:
-- ✅ Slide navigation working
-- ✅ 75 slides load from YAML
-- ✅ Interactive modules initialize
-- ✅ Mobile responsive
-- ✅ Touch gestures work on mobile
+## Testing Locally
 
-## 📱 Mobile Testing
-
-Test on your phone:
-1. Visit: https://bogdanstate.github.io/mbua512/dev/
-2. Swipe left/right to navigate
-3. Test R code execution (may take time to load WebR)
-4. Add to home screen (PWA)
-
-## 🔄 Future Updates
-
-### Update Dev Site
-```bash
-cd /home/bogdan/mbua512
-git checkout dev
-
-# Make changes to dev/ directory
-# ... edit files ...
-
-git add dev/
-git commit -m "Update dev slides"
-git push origin dev
-```
-
-GitHub Pages will automatically rebuild!
-
-### Promote Dev to Production
-When ready to replace production:
+Before pushing, test the site locally:
 
 ```bash
-cd /home/bogdan/mbua512
-
-# Option 1: Merge dev to main
-git checkout main
-git merge dev
-git push origin main
-
-# Option 2: Replace main content with dev
-git checkout main
-rm -rf *.html *.svg *.jpg *.json
-git checkout dev -- dev/
-mv dev/* .
-rmdir dev/
-git add .
-git commit -m "Promote dev to production"
-git push origin main
+cd dev
+python3 -m http.server 8080
+# Visit http://localhost:8080
 ```
 
-## 🐛 Troubleshooting
+## Repository Structure
 
-### Dev site shows 404
-- Wait 5-10 minutes for deployment
-- Check: https://github.com/bogdanstate/mbua512/actions
-- Verify branch exists: `git branch -a`
-
-### Styles/JS not loading
-- Check browser console for errors
-- Verify paths in `index.html` are relative
-- Clear browser cache
-
-### WebR not loading
-- WebR downloads ~10MB on first load
-- Check browser console for errors
-- Try on desktop first (faster)
-
-## 📊 Site Analytics
-
-Both sites are independent:
-- **Production**: Stable, proven
-- **Development**: Testing, experimental
-
-No risk to production site!
-
-## 🔗 Quick Links
-
-- **Production**: https://bogdanstate.github.io/mbua512/
-- **Development**: https://bogdanstate.github.io/mbua512/dev/
-- **Repository**: https://github.com/bogdanstate/mbua512
-- **Actions**: https://github.com/bogdanstate/mbua512/actions
-- **Branches**: https://github.com/bogdanstate/mbua512/branches
+```
+mbua512/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          ← Deployment workflow
+├── dev/                        ← Deployed to GitHub Pages
+│   ├── index.html             ← Landing page
+│   ├── slide-framework/       ← Shared framework
+│   ├── week-09/               ← Week 9 slides
+│   └── week-10/               ← Week 10 slides
+├── index.html                 ← Original Week 9 presentation (legacy)
+└── *.svg, *.jpg               ← Original Week 9 assets (legacy)
+```
 
 ---
 
-*Deployment completed: 2026-01-25*
-*Generated with [Claude Code](https://claude.ai/code) via [Happy](https://happy.engineering)*
+**Last updated:** 2026-01-25

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MBUA512 – Week 10: Cluster Analysis</title>
+
+  <!-- Slide Framework CSS -->
+  <link rel="stylesheet" href="../slide-framework/css/variables.css">
+  <link rel="stylesheet" href="../slide-framework/css/base.css">
+  <link rel="stylesheet" href="../slide-framework/css/slides.css">
+  <link rel="stylesheet" href="../slide-framework/css/smart-plot.css">
+
+  <!-- js-yaml for YAML parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+  <!-- Slide Container -->
+  <div class="sf-slides"></div>
+
+  <!-- Framework + Presentation Scripts -->
+  <script type="module">
+    import { initPresentation } from '../slide-framework/js/index.js';
+
+    async function main() {
+      try {
+        // Initialize from YAML
+        const app = await initPresentation({
+          yamlUrl: 'presentation.yml'
+        });
+
+        console.log('MBUA512 Week 10 presentation loaded!');
+        console.log(`Total slides: ${app.generator.config.slides.length}`);
+
+      } catch (error) {
+        console.error('Failed to load presentation:', error);
+        document.querySelector('.sf-slides').innerHTML = `
+          <div class="sf-slide sf-slide--content active">
+            <h1>Error Loading Presentation</h1>
+            <p style="color: var(--sf-color-error);">${error.message}</p>
+            <p>Check the console for details.</p>
+          </div>
+        `;
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

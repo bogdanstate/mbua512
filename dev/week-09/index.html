@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MBUA512 – Week 9: Correlation & Regression</title>
+
+  <!-- Slide Framework CSS -->
+  <link rel="stylesheet" href="../slide-framework/css/variables.css">
+  <link rel="stylesheet" href="../slide-framework/css/base.css">
+  <link rel="stylesheet" href="../slide-framework/css/slides.css">
+  <link rel="stylesheet" href="../slide-framework/css/smart-plot.css">
+
+  <!-- Presentation-specific styles -->
+  <style>
+    /* Custom styles for this presentation */
+    .slide-image-full {
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide-image-full img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    /* Interactive component containers */
+    .interactive-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Correlation animation canvas */
+    #correlationCanvas {
+      max-width: 100%;
+      max-height: 80vh;
+    }
+
+    /* Rho slider styles */
+    .rho-display {
+      font-size: 1.4em;
+      font-weight: 500;
+      margin-top: 15px;
+    }
+
+    /* Data table styles */
+    .data-table {
+      border-collapse: collapse;
+      font-size: 1.1em;
+      margin: 20px auto;
+    }
+    .data-table th {
+      background: linear-gradient(135deg, var(--sf-color-dark-bg), var(--sf-color-dark-bg-end));
+      color: white;
+      padding: 12px 20px;
+    }
+    .data-table td {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .data-table tr:nth-child(even) {
+      background: #f8f9fa;
+    }
+  </style>
+
+  <!-- js-yaml for YAML parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+  <!-- Slide Container -->
+  <div class="sf-slides"></div>
+
+  <!-- Loading indicator -->
+  <div id="loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 1.5em; color: #333;">
+    <p>Loading presentation...</p>
+    <p style="font-size: 0.8em; color: #666;">Please wait</p>
+  </div>
+
+  <!-- Framework + Presentation Scripts -->
+  <script type="module">
+    import { initPresentation } from './../slide-framework/js/index.js';
+    import { initAllInteractives } from './js/interactives.js';
+
+    async function main() {
+      try {
+        console.log('Starting presentation initialization...');
+
+        // Initialize from YAML
+        const app = await initPresentation({
+          yamlUrl: 'presentation.yml'
+        });
+
+        console.log('MBUA512 presentation loaded!');
+        console.log(`Total slides: ${app.generator.config.slides.length}`);
+
+        // Initialize custom interactive components
+        const slidesContainer = document.querySelector('.sf-slides');
+        await initAllInteractives(slidesContainer);
+
+        console.log('Interactive components initialized!');
+
+        // Hide loading indicator
+        const loadingEl = document.getElementById('loading');
+        if (loadingEl) loadingEl.style.display = 'none';
+
+      } catch (error) {
+        console.error('Failed to load presentation:', error);
+        console.error('Error stack:', error.stack);
+
+        // Hide loading indicator
+        const loadingEl = document.getElementById('loading');
+        if (loadingEl) loadingEl.style.display = 'none';
+
+        document.querySelector('.sf-slides').innerHTML = `
+          <div class="sf-slide sf-slide--content active" style="padding: 40px;">
+            <h1>Error Loading Presentation</h1>
+            <p style="color: #e74c3c; font-size: 1.2em; margin: 20px 0;">${error.message}</p>
+            <p style="margin: 20px 0;">Please check the browser console for details.</p>
+            <details style="margin: 20px 0; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+              <summary style="cursor: pointer; font-weight: bold;">Error Details</summary>
+              <pre style="margin: 10px 0; font-size: 0.9em; overflow: auto;">${error.stack || 'No stack trace available'}</pre>
+            </details>
+          </div>
+        `;
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>
