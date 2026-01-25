@@ -1,0 +1,8 @@
+# Ignore files that shouldn't be copied to Docker image
+.git
+.github
+*.md
+!README-DOCKER.md
+node_modules
+.DS_Store
+*.log

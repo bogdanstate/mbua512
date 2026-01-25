@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  slides:
+    build: .
+    ports:
+      # Map to port 8080 on all network interfaces (0.0.0.0)
+      # This allows access from other devices on your LAN
+      - "0.0.0.0:8080:8080"
+    volumes:
+      # Mount the current directory for live updates
+      - .:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    container_name: mbua512-slides
