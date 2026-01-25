@@ -114,9 +114,11 @@ slides:
   slideNum: 8
   original: assets/original-slides/slide-08.png
   ported:
-    type: content
-    title: What are the most common methods?
-    bullets:
+    type: interactive
+    id: soccer-clustering-viz
+    script: soccer-clustering
+    title: 'Interactive: Clustering Soccer Formations'
+    config:
     - Prototype-based (aka center-based)
     - Points are more common to the prototype of the cluster they belong to than to
       any other cluster prototype
