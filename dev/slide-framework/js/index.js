@@ -76,6 +76,20 @@ export async function initPresentation(options = {}) {
     createPageNumber(nav);
   }
 
+  // Check for ?slide=N parameter to navigate to specific slide
+  const urlParams = new URLSearchParams(window.location.search);
+  const slideParam = urlParams.get('slide');
+  if (slideParam) {
+    const slideNum = parseInt(slideParam, 10);
+    if (!isNaN(slideNum) && slideNum >= 1 && slideNum <= nav.slides.length) {
+      // Convert 1-based to 0-based index
+      nav.goTo(slideNum - 1);
+      console.log(`Navigated to slide ${slideNum} from URL parameter`);
+    } else {
+      console.warn(`Invalid slide parameter: ${slideParam}. Must be between 1 and ${nav.slides.length}`);
+    }
+  }
+
   // Initialize WebR if configured
   let webRManager = null;
   let smartPlots = null;
