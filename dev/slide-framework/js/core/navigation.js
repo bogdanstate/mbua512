@@ -160,6 +160,8 @@ export class SlideNavigation {
   showSlide(n) {
     if (this.slides.length === 0) return;
 
+    console.log(`showSlide called with n=${n}, current=${this.current}`);
+
     // Remove active class from current slide
     this.slides[this.current].classList.remove(this.options.activeClass);
 
@@ -178,6 +180,8 @@ export class SlideNavigation {
 
     // Add active class to new slide
     this.slides[this.current].classList.add(this.options.activeClass);
+
+    console.log(`Navigated to slide ${this.current + 1} of ${this.slides.length}`);
 
     // Scroll to top of the page/container
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -258,17 +262,36 @@ export function createNavButtons(nav, options = {}) {
   const prevBtn = document.createElement('button');
   prevBtn.className = 'sf-nav__btn';
   prevBtn.textContent = prevText;
-  prevBtn.addEventListener('click', () => nav.prev());
+  const prevHandler = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('Prev button clicked/tapped');
+    nav.prev();
+  };
+  prevBtn.addEventListener('click', prevHandler);
+  prevBtn.addEventListener('touchend', prevHandler);
 
   const nextBtn = document.createElement('button');
   nextBtn.className = 'sf-nav__btn';
   nextBtn.textContent = nextText;
-  nextBtn.addEventListener('click', () => nav.next());
+  const nextHandler = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('Next button clicked/tapped');
+    nav.next();
+  };
+  nextBtn.addEventListener('click', nextHandler);
+  nextBtn.addEventListener('touchend', nextHandler);
 
   container.appendChild(prevBtn);
   container.appendChild(nextBtn);
 
   document.body.appendChild(container);
+
+  console.log('Navigation buttons created and appended to body');
+  console.log('Prev button:', prevBtn);
+  console.log('Next button:', nextBtn);
+  console.log('Container:', container);
 
   return container;
 }
