@@ -175,9 +175,9 @@ export class SlideGenerator {
     this.templates.set('interactive', (slide) => {
       const id = slide.id || `interactive-${Date.now()}`;
       return `
-        <div class="sf-slide sf-slide--content" id="${id}" data-interactive="${id}" data-script="${slide.script || ''}" data-config='${JSON.stringify(slide.config || {})}'>
+        <div class="sf-slide sf-slide--content sf-slide--interactive" id="${id}" data-interactive="${id}" data-script="${slide.script || ''}" data-config='${JSON.stringify(slide.config || {})}'>
           ${slide.title ? `<h1>${slide.title}</h1>` : ''}
-          <div class="sf-interactive-content" id="${id}-content" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+          <div class="sf-interactive-content" id="${id}-content">
             <p style="color: var(--sf-color-text-muted);">Loading interactive: ${id}...</p>
           </div>
         </div>

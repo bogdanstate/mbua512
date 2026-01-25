@@ -122,6 +122,54 @@
   padding: var(--sf-spacing-slide-y) var(--sf-spacing-slide-compact-x);
 }
 
+/* Portrait mode: stack vertically */
+@media (orientation: portrait) {
+  .sf-slide--two-col .sf-columns,
+  .sf-slide.sf-slide--content {
+    flex-direction: column !important;
+  }
+
+  .sf-slide--two-col .sf-col {
+    width: 100%;
+  }
+}
+
+/* Landscape mode: side-by-side */
+@media (orientation: landscape) {
+  .sf-slide--two-col .sf-columns {
+    flex-direction: row;
+  }
+}
+
+/* Interactive Slide */
+.sf-slide.sf-slide--interactive {
+  display: flex;
+  flex-direction: column;
+}
+
+.sf-interactive-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  overflow: auto;
+}
+
+/* Portrait mode: give more vertical space to interactive */
+@media (orientation: portrait) {
+  .sf-slide.sf-slide--interactive h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .sf-interactive-content {
+    flex: 1;
+    width: 100%;
+  }
+}
+
 /* Code Slide */
 .sf-slide.sf-slide--code {
   padding: 10px;
