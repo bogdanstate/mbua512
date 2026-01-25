@@ -27,6 +27,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Inject commit hash into build version
+        run: |
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          echo "Updating build version to: $COMMIT_HASH"
+          sed -i "s/const BUILD_VERSION = '[^']*';/const BUILD_VERSION = '$COMMIT_HASH';/" dev/week-10/index.html
+          grep "BUILD_VERSION" dev/week-10/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
