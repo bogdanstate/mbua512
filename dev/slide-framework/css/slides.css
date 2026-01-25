@@ -430,12 +430,14 @@
 
 .sf-transcription-ported {
   flex: 1;
-  overflow: auto;
+  overflow: visible; /* Allow positioned images to show */
   padding: 20px;
   background: white;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   font-size: 0.9em;
+  position: relative; /* Establish positioning context for absolute children */
+  min-height: 400px; /* Ensure enough space for positioned images */
 }
 
 .sf-transcription-ported h1 {
