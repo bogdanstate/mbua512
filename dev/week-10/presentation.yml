@@ -42,7 +42,7 @@ slides:
   slideNum: 3
   original: assets/original-slides/slide-03.png
   ported:
-    type: two-col
+    type: two-column
     title: Goals for today
     left:
       type: content
