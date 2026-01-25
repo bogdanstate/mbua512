@@ -28,6 +28,10 @@
     import { initAllInteractives } from './js/interactives.js';
 
     async function main() {
+      // Log build version (update this with each deployment)
+      const BUILD_VERSION = 'cbbe5b2+';
+      console.log(`%cBuild: ${BUILD_VERSION}`, 'font-weight: bold; color: #4CAF50');
+
       // Initialize debug console
       initDebugConsole();
 
