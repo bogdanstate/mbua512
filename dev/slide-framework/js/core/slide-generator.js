@@ -69,11 +69,38 @@ export class SlideGenerator {
         ? `<ul>${slide.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
         : '';
 
+      // Support positioned images
+      let images = '';
+      if (slide.image) {
+        const position = slide.imagePosition || 'upper-right';
+        const size = slide.imageSize || 'medium';
+
+        const positions = {
+          'upper-right': 'top: 80px; right: 40px;',
+          'lower-right': 'bottom: 40px; right: 40px;',
+          'lower-left': 'bottom: 40px; left: 40px;',
+          'upper-left': 'top: 80px; left: 40px;'
+        };
+
+        const sizes = {
+          'small': 'max-width: 200px; max-height: 200px;',
+          'medium': 'max-width: 300px; max-height: 300px;',
+          'large': 'max-width: 400px; max-height: 400px;'
+        };
+
+        const posStyle = positions[position] || positions['upper-right'];
+        const sizeStyle = sizes[size] || sizes['medium'];
+
+        images = `<img src="${slide.image}" alt="${slide.imageAlt || ''}"
+                      style="position: absolute; ${posStyle} ${sizeStyle} object-fit: contain; z-index: 10;">`;
+      }
+
       return `
-        <div class="sf-slide sf-slide--content">
+        <div class="sf-slide sf-slide--content" style="position: relative;">
           <h1>${slide.title || ''}</h1>
           ${bullets}
           ${slide.note ? `<p class="note">${slide.note}</p>` : ''}
+          ${images}
         </div>
       `;
     });

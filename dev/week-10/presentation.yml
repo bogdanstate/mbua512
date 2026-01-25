@@ -42,39 +42,33 @@ slides:
   slideNum: 3
   original: assets/original-slides/slide-03.png
   ported:
-    type: two-column
+    type: content
     title: Goals for today
-    left:
-      type: content
-      bullets:
-      - What is cluster analysis?
-      - What can cluster analysis be used for?
-      - How to apply cluster analysis?
-      - The most common methods
-      - Interpreting cluster analysis results
-    right:
-      type: image
-      src: assets/images/image1.jpeg
-      alt: Slide 3 image
+    bullets:
+    - What is cluster analysis?
+    - What can cluster analysis be used for?
+    - How to apply cluster analysis?
+    - The most common methods
+    - Interpreting cluster analysis results
+    image: assets/images/image1.jpeg
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: What you need
   slideNum: 4
   original: assets/original-slides/slide-04.png
   ported:
-    type: two-column
+    type: content
     title: What you need
-    left:
-      type: content
-      bullets:
-      - RStudio
-      - Code for this lecture
-      - https://github.com/m-l-r/teaching/tree/main/data-analytics/clustering
-      - The example data
-      - https://www.kaggle.com/datasets/shashwatwork/injury-prediction-for-competitive-runners
-    right:
-      type: image
-      src: assets/images/image2.png
-      alt: Slide 4 image
+    bullets:
+    - RStudio
+    - Code for this lecture
+    - https://github.com/m-l-r/teaching/tree/main/data-analytics/clustering
+    - The example data
+    - https://www.kaggle.com/datasets/shashwatwork/injury-prediction-for-competitive-runners
+    image: assets/images/image2.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Cluster analysis fundamentals
   slideNum: 5
@@ -87,23 +81,20 @@ slides:
   slideNum: 6
   original: assets/original-slides/slide-06.png
   ported:
-    type: two-column
+    type: content
     title: Cluster analysis within the analytical context
-    left:
-      type: content
-      bullets:
-      - Exploratory method
-      - No statistical inference (no p–value)
-      - No dependent variable
-      - Unsupervised
-      - For numerical data
-      - Methods for categorical data exist but are beyond this lecture
-      - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining
-        cluster analysis: basic concepts and algorithms.'
-    right:
-      type: image
-      src: assets/images/image3.png
-      alt: Slide 6 image
+    bullets:
+    - Exploratory method
+    - No statistical inference (no p–value)
+    - No dependent variable
+    - Unsupervised
+    - For numerical data
+    - Methods for categorical data exist but are beyond this lecture
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+    image: assets/images/image3.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: What is a cluster?
   slideNum: 7
@@ -123,72 +114,63 @@ slides:
   slideNum: 8
   original: assets/original-slides/slide-08.png
   ported:
-    type: two-column
+    type: content
     title: What are the most common methods?
-    left:
-      type: content
-      bullets:
-      - Prototype-based (aka center-based)
-      - Points are more common to the prototype of the cluster they belong to than
-        to any other cluster prototype
-      - 'Example prototype: Cluster centroid'
-      - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining
-        cluster analysis: basic concepts and algorithms.'
-      - Introduction to data mining
-      - '487'
-      - ', 533.'
-    right:
-      type: image
-      src: assets/images/image6.png
-      alt: Slide 8 image
+    bullets:
+    - Prototype-based (aka center-based)
+    - Points are more common to the prototype of the cluster they belong to than to
+      any other cluster prototype
+    - 'Example prototype: Cluster centroid'
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+    - Introduction to data mining
+    - '487'
+    - ', 533.'
+    image: assets/images/image6.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: What are the most common methods?
   slideNum: 9
   original: assets/original-slides/slide-09.png
   ported:
-    type: two-column
+    type: content
     title: What are the most common methods?
-    left:
-      type: content
-      bullets:
-      - Prototype-based (aka center-based)
-      - Points are more common to the prototype of the cluster they belong to than
-        to any other cluster prototype
-      - 'Example prototype: Cluster centroid'
-      - Graph-based
-      - Cluster is a connected component in a graph representation of a data set (e.g.,
-        a social network)
-      - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining
-        cluster analysis: basic concepts and algorithms.'
-      - Introduction to data mining
-    right:
-      type: image
-      src: assets/images/image5.png
-      alt: Slide 9 image
+    bullets:
+    - Prototype-based (aka center-based)
+    - Points are more common to the prototype of the cluster they belong to than to
+      any other cluster prototype
+    - 'Example prototype: Cluster centroid'
+    - Graph-based
+    - Cluster is a connected component in a graph representation of a data set (e.g.,
+      a social network)
+    - 'Image source: Tan, P. N., Steinbach, M., & Kumar, V. (2013). Data mining cluster
+      analysis: basic concepts and algorithms.'
+    - Introduction to data mining
+    image: assets/images/image5.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: What are the most common methods?
   slideNum: 10
   original: assets/original-slides/slide-10.png
   ported:
-    type: two-column
+    type: content
     title: What are the most common methods?
-    left:
-      type: content
-      bullets:
-      - Prototype-based (aka center-based)
-      - Points are more common to the prototype of the cluster they belong to than
-        to any other cluster prototype
-      - 'Example prototype: Cluster centroid'
-      - Graph-based
-      - Cluster is a connected component in a graph representation of a data set (e.g.,
-        a social network)
-      - Density-based
-      - Cluster is a region of a certain density, surrounded by a region of different
-        density
-    right:
-      type: image
-      src: assets/images/image7.png
-      alt: Slide 10 image
+    bullets:
+    - Prototype-based (aka center-based)
+    - Points are more common to the prototype of the cluster they belong to than to
+      any other cluster prototype
+    - 'Example prototype: Cluster centroid'
+    - Graph-based
+    - Cluster is a connected component in a graph representation of a data set (e.g.,
+      a social network)
+    - Density-based
+    - Cluster is a region of a certain density, surrounded by a region of different
+      density
+    image: assets/images/image7.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Cluster Analysis for Data Mining
   slideNum: 11
@@ -242,165 +224,139 @@ slides:
   slideNum: 15
   original: assets/original-slides/slide-15.png
   ported:
-    type: two-column
+    type: content
     title: Our data
-    left:
-      type: content
-      bullets:
-      - https://
-      - www.kaggle.com
-      - /datasets/
-      - shashwatwork
-      - /injury-prediction-for-competitive-runners
-    right:
-      type: image
-      src: assets/images/image11.png
-      alt: Slide 15 image
+    bullets:
+    - https://
+    - www.kaggle.com
+    - /datasets/
+    - shashwatwork
+    - /injury-prediction-for-competitive-runners
+    image: assets/images/image11.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Data preparation (1/3)
   slideNum: 16
   original: assets/original-slides/slide-16.png
   ported:
-    type: two-column
+    type: content
     title: Data preparation (1/3)
-    left:
-      type: content
-      bullets:
-      - The current “Unit of Analysis” is training per week per athlete (with many
-        variables)
-      - What could we cluster?
-      - Typical training weeks
-      - Athletes
-    right:
-      type: image
-      src: assets/images/image12.png
-      alt: Slide 16 image
+    bullets:
+    - The current “Unit of Analysis” is training per week per athlete (with many variables)
+    - What could we cluster?
+    - Typical training weeks
+    - Athletes
+    image: assets/images/image12.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Data preparation (2/3)
   slideNum: 17
   original: assets/original-slides/slide-17.png
   ported:
-    type: two-column
+    type: content
     title: Data preparation (2/3)
-    left:
-      type: content
-      bullets:
-      - The current “Unit of Analysis” is training per week per athlete (with many
-        variables)
-      - What could we cluster?
-      - Typical training weeks
-      - Athletes
-      - We want to focus these
-    right:
-      type: image
-      src: assets/images/image12.png
-      alt: Slide 17 image
+    bullets:
+    - The current “Unit of Analysis” is training per week per athlete (with many variables)
+    - What could we cluster?
+    - Typical training weeks
+    - Athletes
+    - We want to focus these
+    image: assets/images/image12.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Data preparation (3/3)
   slideNum: 18
   original: assets/original-slides/slide-18.png
   ported:
-    type: two-column
+    type: content
     title: Data preparation (3/3)
-    left:
-      type: content
-      bullets:
-      - training_timeseries
-      - read_csv
-      - ("data/
-      - week_approach_maskedID_timeseries.csv
-      - athelete_data_means
-      - <- aggregate(.~`Athlete ID`,
-      - training_timeseries,mean
-    right:
-      type: image
-      src: assets/images/image13.png
-      alt: Slide 18 image
+    bullets:
+    - training_timeseries
+    - read_csv
+    - ("data/
+    - week_approach_maskedID_timeseries.csv
+    - athelete_data_means
+    - <- aggregate(.~`Athlete ID`,
+    - training_timeseries,mean
+    image: assets/images/image13.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Which variables to use?
   slideNum: 19
   original: assets/original-slides/slide-19.png
   ported:
-    type: two-column
+    type: content
     title: Which variables to use?
-    left:
-      type: content
-      bullets:
-      - Perform exploratory data analysis first to make that decision
-      - What variables exist in the data set?
-      - What are the distributions, means, standard deviations…?
-      - “summary(
-      - athlete_data_means
-      - Are variables significantly correlated?
-      - “pairs(
-    right:
-      type: image
-      src: assets/images/image14.png
-      alt: Slide 19 image
+    bullets:
+    - Perform exploratory data analysis first to make that decision
+    - What variables exist in the data set?
+    - What are the distributions, means, standard deviations…?
+    - “summary(
+    - athlete_data_means
+    - Are variables significantly correlated?
+    - “pairs(
+    image: assets/images/image14.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Normalisation
   slideNum: 20
   original: assets/original-slides/slide-20.png
   ported:
-    type: two-column
+    type: content
     title: Normalisation
-    left:
-      type: content
-      bullets:
-      - If data are not at the same scale
-      - min-max normalization to [0,1] or
-      - z-score
-      - standardisation
-      - (better if outliers are present)
-      - z <-
-      - mydata
-    right:
-      type: image
-      src: assets/images/image15.png
-      alt: Slide 20 image
+    bullets:
+    - If data are not at the same scale
+    - min-max normalization to [0,1] or
+    - z-score
+    - standardisation
+    - (better if outliers are present)
+    - z <-
+    - mydata
+    image: assets/images/image15.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: Hirarchical
   slideNum: 21
   original: assets/original-slides/slide-21.png
   ported:
-    type: two-column
+    type: content
     title: Hirarchical
-    left:
-      type: content
-      bullets:
-      - clustering
-      - '# Calculate distance matrix'
-      - distance =
-      - dist
-      - (nor)
-      - '# Hierarchical agglomerative clustering'
-      - mydata.hclust
-    right:
-      type: image
-      src: assets/images/image16.png
-      alt: Slide 21 image
+    bullets:
+    - clustering
+    - '# Calculate distance matrix'
+    - distance =
+    - dist
+    - (nor)
+    - '# Hierarchical agglomerative clustering'
+    - mydata.hclust
+    image: assets/images/image16.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: k-means Clustering
   slideNum: 22
   original: assets/original-slides/slide-22.png
   ported:
-    type: two-column
+    type: content
     title: k-means Clustering
-    left:
-      type: content
-      bullets:
-      - Pick k centroids
-      - Assign each data point to its closest centroid
-      - Move the k centroids from their initial position, so that they are the centroids
-        of the k clusters
-      - Repeat 2 & 3 until centroids
-      - stabilise
-      - '# K-means clustering'
-      - set.seed
-    right:
-      type: image
-      src: assets/images/image17.png
-      alt: Slide 22 image
+    bullets:
+    - Pick k centroids
+    - Assign each data point to its closest centroid
+    - Move the k centroids from their initial position, so that they are the centroids
+      of the k clusters
+    - Repeat 2 & 3 until centroids
+    - stabilise
+    - '# K-means clustering'
+    - set.seed
+    image: assets/images/image17.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: k-means clustering
   slideNum: 23
@@ -441,41 +397,35 @@ slides:
   slideNum: 28
   original: assets/original-slides/slide-28.png
   ported:
-    type: two-column
+    type: content
     title: Now I am going to teach something “wrong”!
-    left:
-      type: content
-      bullets:
-      - k-means clustering – Which k?
-      - “Elbow method”
-      - Try different k, looking at the change in the average distance to centroid
-        as k increases
-      - Average falls rapidly until right k, then changes little
-    right:
-      type: image
-      src: assets/images/image23.emf
-      alt: Slide 28 image
+    bullets:
+    - k-means clustering – Which k?
+    - “Elbow method”
+    - Try different k, looking at the change in the average distance to centroid as
+      k increases
+    - Average falls rapidly until right k, then changes little
+    image: assets/images/image23.emf
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: A word of caution
   slideNum: 29
   original: assets/original-slides/slide-29.png
   ported:
-    type: two-column
+    type: content
     title: A word of caution
-    left:
-      type: content
-      bullets:
-      - Elbow method is intuitive
-      - but mathematically flawed
-      - 'The right way:'
-      - Gap statistic
-      - Average Silhouette width (“
-      - asw
-      - options(digits=3)
-    right:
-      type: image
-      src: assets/images/image24.png
-      alt: Slide 29 image
+    bullets:
+    - Elbow method is intuitive
+    - but mathematically flawed
+    - 'The right way:'
+    - Gap statistic
+    - Average Silhouette width (“
+    - asw
+    - options(digits=3)
+    image: assets/images/image24.png
+    imagePosition: upper-right
+    imageSize: medium
 - type: transcription
   title: How many clusters?
   slideNum: 30
