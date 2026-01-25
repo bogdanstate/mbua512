@@ -45,9 +45,14 @@
         console.log(`Total slides: ${app.generator.config.slides.length}`);
 
         // Initialize interactive components
+        console.log('Starting interactive initialization...');
         const slidesContainer = document.querySelector('.sf-slides');
-        await initAllInteractives(slidesContainer);
-        console.log('Interactive components initialized');
+        try {
+          await initAllInteractives(slidesContainer);
+          console.log('Interactive components initialized');
+        } catch (err) {
+          console.error('Failed to initialize interactives:', err);
+        }
 
       } catch (error) {
         console.error('Failed to load presentation:', error);
