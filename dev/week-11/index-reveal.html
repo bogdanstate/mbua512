@@ -43,37 +43,59 @@
         margin: 10px 0;
       }
 
-      /* Title slide styling */
+      /* Title slide with NASA background */
       .title-slide {
+        background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1920&q=80');
+        background-size: cover;
+        background-position: center;
         text-align: center;
         height: 100vh;
         display: flex !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+      }
+
+      /* Dark overlay for readability */
+      .title-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+      }
+
+      .title-slide > * {
+        position: relative;
+        z-index: 1;
       }
 
       .title-slide h1 {
-        color: #2c3e50;
-        margin-bottom: 0.3em;
+        color: white;
+        font-size: 4em;
         font-weight: 700;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+        margin-bottom: 0.5em;
       }
 
       .title-slide h2 {
-        color: #3498db;
-        margin-bottom: 1em;
+        color: #e0e0e0;
+        font-size: 1.8em;
         font-weight: 400;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
       }
 
-      .title-slide p {
-        color: #7f8c8d;
-        font-size: 1.2em;
-        margin: 0.3em 0;
-      }
-
-      .title-slide .course-info {
-        margin-top: 2em;
-        font-size: 0.9em;
+      .title-slide .attribution {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 0.5em;
+        color: rgba(255, 255, 255, 0.6);
+        z-index: 1;
       }
 
       /* Section slide styling */
@@ -102,21 +124,8 @@
         <!-- Title Slide -->
         <section class="title-slide">
           <h1>Time Series Analysis</h1>
-          <h2>Patterns, Trends, and Forecasting</h2>
-
-          <div class="course-info">
-            <p><strong>MBUA 512: Data Mining</strong></p>
-            <p>Week 11</p>
-            <p style="margin-top: 1.5em; font-size: 0.8em; color: #95a5a6;">
-              Press <strong>Space</strong> or <strong>→</strong> to advance slides
-            </p>
-          </div>
-        </section>
-
-        <!-- Placeholder for future content -->
-        <section>
-          <h2>Coming Soon</h2>
-          <p>Time series analysis content will be added here.</p>
+          <h2>MBUA 512</h2>
+          <p class="attribution">Photo by NASA on Unsplash</p>
         </section>
 
       </div>
