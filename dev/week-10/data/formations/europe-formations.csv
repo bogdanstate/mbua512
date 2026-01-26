@@ -1,0 +1,1921 @@
+Team,League,Match,Formation,GK,DF,MF,FW
+Manchester City,Premier League,1,4-3-3,1,4,3,3
+Manchester City,Premier League,2,4-2-3-1,1,4,5,1
+Manchester City,Premier League,3,3-5-2,1,3,5,2
+Manchester City,Premier League,4,4-2-3-1,1,4,5,1
+Manchester City,Premier League,5,3-5-2,1,3,5,2
+Manchester City,Premier League,6,3-5-2,1,3,5,2
+Manchester City,Premier League,7,3-5-2,1,3,5,2
+Manchester City,Premier League,8,3-5-2,1,3,5,2
+Manchester City,Premier League,9,3-5-2,1,3,5,2
+Manchester City,Premier League,10,4-2-3-1,1,4,5,1
+Manchester City,Premier League,11,3-5-2,1,3,5,2
+Manchester City,Premier League,12,3-5-2,1,3,5,2
+Manchester City,Premier League,13,3-5-2,1,3,5,2
+Manchester City,Premier League,14,3-5-2,1,3,5,2
+Manchester City,Premier League,15,4-3-3,1,4,3,3
+Manchester City,Premier League,16,3-5-2,1,3,5,2
+Manchester City,Premier League,17,3-5-2,1,3,5,2
+Manchester City,Premier League,18,3-5-2,1,3,5,2
+Manchester City,Premier League,19,4-3-3,1,4,3,3
+Manchester City,Premier League,20,4-4-2,1,4,4,2
+Arsenal,Premier League,1,3-5-2,1,3,5,2
+Arsenal,Premier League,2,3-5-2,1,3,5,2
+Arsenal,Premier League,3,3-5-2,1,3,5,2
+Arsenal,Premier League,4,4-3-3,1,4,3,3
+Arsenal,Premier League,5,3-5-2,1,3,5,2
+Arsenal,Premier League,6,4-2-3-1,1,4,5,1
+Arsenal,Premier League,7,3-5-2,1,3,5,2
+Arsenal,Premier League,8,3-5-2,1,3,5,2
+Arsenal,Premier League,9,3-5-2,1,3,5,2
+Arsenal,Premier League,10,4-4-2,1,4,4,2
+Arsenal,Premier League,11,4-4-2,1,4,4,2
+Arsenal,Premier League,12,3-5-2,1,3,5,2
+Arsenal,Premier League,13,4-3-3,1,4,3,3
+Arsenal,Premier League,14,3-5-2,1,3,5,2
+Arsenal,Premier League,15,3-5-2,1,3,5,2
+Arsenal,Premier League,16,3-5-2,1,3,5,2
+Arsenal,Premier League,17,4-4-2,1,4,4,2
+Arsenal,Premier League,18,3-5-2,1,3,5,2
+Arsenal,Premier League,19,3-5-2,1,3,5,2
+Arsenal,Premier League,20,3-5-2,1,3,5,2
+Liverpool,Premier League,1,4-2-3-1,1,4,5,1
+Liverpool,Premier League,2,4-2-3-1,1,4,5,1
+Liverpool,Premier League,3,4-2-3-1,1,4,5,1
+Liverpool,Premier League,4,4-2-3-1,1,4,5,1
+Liverpool,Premier League,5,4-2-3-1,1,4,5,1
+Liverpool,Premier League,6,4-2-3-1,1,4,5,1
+Liverpool,Premier League,7,4-2-3-1,1,4,5,1
+Liverpool,Premier League,8,4-2-3-1,1,4,5,1
+Liverpool,Premier League,9,4-2-3-1,1,4,5,1
+Liverpool,Premier League,10,4-2-3-1,1,4,5,1
+Liverpool,Premier League,11,4-2-3-1,1,4,5,1
+Liverpool,Premier League,12,4-2-3-1,1,4,5,1
+Liverpool,Premier League,13,4-3-3,1,4,3,3
+Liverpool,Premier League,14,4-2-3-1,1,4,5,1
+Liverpool,Premier League,15,4-2-3-1,1,4,5,1
+Liverpool,Premier League,16,4-2-3-1,1,4,5,1
+Liverpool,Premier League,17,4-2-3-1,1,4,5,1
+Liverpool,Premier League,18,4-2-3-1,1,4,5,1
+Liverpool,Premier League,19,4-2-3-1,1,4,5,1
+Liverpool,Premier League,20,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,1,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,2,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,3,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,4,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,5,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,6,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,7,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,8,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,9,4-4-2,1,4,4,2
+Aston Villa,Premier League,10,4-3-3,1,4,3,3
+Aston Villa,Premier League,11,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,12,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,13,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,14,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,15,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,16,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,17,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,18,3-5-2,1,3,5,2
+Aston Villa,Premier League,19,4-2-3-1,1,4,5,1
+Aston Villa,Premier League,20,4-2-3-1,1,4,5,1
+Tottenham,Premier League,1,4-4-2,1,4,4,2
+Tottenham,Premier League,2,4-2-3-1,1,4,5,1
+Tottenham,Premier League,3,4-2-3-1,1,4,5,1
+Tottenham,Premier League,4,4-2-3-1,1,4,5,1
+Tottenham,Premier League,5,4-2-3-1,1,4,5,1
+Tottenham,Premier League,6,4-2-3-1,1,4,5,1
+Tottenham,Premier League,7,4-2-3-1,1,4,5,1
+Tottenham,Premier League,8,3-5-2,1,3,5,2
+Tottenham,Premier League,9,4-2-3-1,1,4,5,1
+Tottenham,Premier League,10,4-2-3-1,1,4,5,1
+Tottenham,Premier League,11,4-2-3-1,1,4,5,1
+Tottenham,Premier League,12,4-3-3,1,4,3,3
+Tottenham,Premier League,13,4-4-2,1,4,4,2
+Tottenham,Premier League,14,4-2-3-1,1,4,5,1
+Tottenham,Premier League,15,4-3-3,1,4,3,3
+Tottenham,Premier League,16,4-2-3-1,1,4,5,1
+Tottenham,Premier League,17,4-2-3-1,1,4,5,1
+Tottenham,Premier League,18,4-2-3-1,1,4,5,1
+Tottenham,Premier League,19,4-2-3-1,1,4,5,1
+Tottenham,Premier League,20,4-3-3,1,4,3,3
+Chelsea,Premier League,1,4-2-3-1,1,4,5,1
+Chelsea,Premier League,2,4-2-3-1,1,4,5,1
+Chelsea,Premier League,3,4-2-3-1,1,4,5,1
+Chelsea,Premier League,4,4-2-3-1,1,4,5,1
+Chelsea,Premier League,5,4-3-3,1,4,3,3
+Chelsea,Premier League,6,4-4-2,1,4,4,2
+Chelsea,Premier League,7,3-5-2,1,3,5,2
+Chelsea,Premier League,8,4-2-3-1,1,4,5,1
+Chelsea,Premier League,9,4-4-2,1,4,4,2
+Chelsea,Premier League,10,3-5-2,1,3,5,2
+Chelsea,Premier League,11,4-2-3-1,1,4,5,1
+Chelsea,Premier League,12,4-3-3,1,4,3,3
+Chelsea,Premier League,13,4-2-3-1,1,4,5,1
+Chelsea,Premier League,14,4-2-3-1,1,4,5,1
+Chelsea,Premier League,15,4-2-3-1,1,4,5,1
+Chelsea,Premier League,16,4-2-3-1,1,4,5,1
+Chelsea,Premier League,17,4-2-3-1,1,4,5,1
+Chelsea,Premier League,18,4-2-3-1,1,4,5,1
+Chelsea,Premier League,19,4-2-3-1,1,4,5,1
+Chelsea,Premier League,20,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,1,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,2,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,3,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,4,4-3-3,1,4,3,3
+Newcastle Utd,Premier League,5,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,6,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,7,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,8,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,9,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,10,4-4-2,1,4,4,2
+Newcastle Utd,Premier League,11,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,12,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,13,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,14,4-4-2,1,4,4,2
+Newcastle Utd,Premier League,15,3-5-2,1,3,5,2
+Newcastle Utd,Premier League,16,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,17,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,18,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,19,4-2-3-1,1,4,5,1
+Newcastle Utd,Premier League,20,4-2-3-1,1,4,5,1
+Manchester Utd,Premier League,1,4-3-3,1,4,3,3
+Manchester Utd,Premier League,2,4-3-3,1,4,3,3
+Manchester Utd,Premier League,3,4-3-3,1,4,3,3
+Manchester Utd,Premier League,4,4-4-2,1,4,4,2
+Manchester Utd,Premier League,5,4-2-3-1,1,4,5,1
+Manchester Utd,Premier League,6,4-4-2,1,4,4,2
+Manchester Utd,Premier League,7,4-3-3,1,4,3,3
+Manchester Utd,Premier League,8,4-3-3,1,4,3,3
+Manchester Utd,Premier League,9,4-2-3-1,1,4,5,1
+Manchester Utd,Premier League,10,4-3-3,1,4,3,3
+Manchester Utd,Premier League,11,4-3-3,1,4,3,3
+Manchester Utd,Premier League,12,4-3-3,1,4,3,3
+Manchester Utd,Premier League,13,4-3-3,1,4,3,3
+Manchester Utd,Premier League,14,4-3-3,1,4,3,3
+Manchester Utd,Premier League,15,4-3-3,1,4,3,3
+Manchester Utd,Premier League,16,4-3-3,1,4,3,3
+Manchester Utd,Premier League,17,4-4-2,1,4,4,2
+Manchester Utd,Premier League,18,4-3-3,1,4,3,3
+Manchester Utd,Premier League,19,4-3-3,1,4,3,3
+Manchester Utd,Premier League,20,4-3-3,1,4,3,3
+West Ham,Premier League,1,4-3-3,1,4,3,3
+West Ham,Premier League,2,4-2-3-1,1,4,5,1
+West Ham,Premier League,3,4-4-2,1,4,4,2
+West Ham,Premier League,4,4-3-3,1,4,3,3
+West Ham,Premier League,5,4-3-3,1,4,3,3
+West Ham,Premier League,6,4-3-3,1,4,3,3
+West Ham,Premier League,7,4-3-3,1,4,3,3
+West Ham,Premier League,8,4-3-3,1,4,3,3
+West Ham,Premier League,9,4-3-3,1,4,3,3
+West Ham,Premier League,10,4-3-3,1,4,3,3
+West Ham,Premier League,11,4-3-3,1,4,3,3
+West Ham,Premier League,12,4-3-3,1,4,3,3
+West Ham,Premier League,13,4-2-3-1,1,4,5,1
+West Ham,Premier League,14,4-3-3,1,4,3,3
+West Ham,Premier League,15,4-3-3,1,4,3,3
+West Ham,Premier League,16,4-3-3,1,4,3,3
+West Ham,Premier League,17,4-3-3,1,4,3,3
+West Ham,Premier League,18,4-3-3,1,4,3,3
+West Ham,Premier League,19,4-3-3,1,4,3,3
+West Ham,Premier League,20,4-3-3,1,4,3,3
+Crystal Palace,Premier League,1,4-3-3,1,4,3,3
+Crystal Palace,Premier League,2,4-3-3,1,4,3,3
+Crystal Palace,Premier League,3,4-3-3,1,4,3,3
+Crystal Palace,Premier League,4,4-3-3,1,4,3,3
+Crystal Palace,Premier League,5,4-3-3,1,4,3,3
+Crystal Palace,Premier League,6,4-3-3,1,4,3,3
+Crystal Palace,Premier League,7,4-3-3,1,4,3,3
+Crystal Palace,Premier League,8,3-5-2,1,3,5,2
+Crystal Palace,Premier League,9,4-3-3,1,4,3,3
+Crystal Palace,Premier League,10,4-3-3,1,4,3,3
+Crystal Palace,Premier League,11,4-3-3,1,4,3,3
+Crystal Palace,Premier League,12,4-3-3,1,4,3,3
+Crystal Palace,Premier League,13,4-3-3,1,4,3,3
+Crystal Palace,Premier League,14,4-2-3-1,1,4,5,1
+Crystal Palace,Premier League,15,4-3-3,1,4,3,3
+Crystal Palace,Premier League,16,3-5-2,1,3,5,2
+Crystal Palace,Premier League,17,3-5-2,1,3,5,2
+Crystal Palace,Premier League,18,4-3-3,1,4,3,3
+Crystal Palace,Premier League,19,4-4-2,1,4,4,2
+Crystal Palace,Premier League,20,4-3-3,1,4,3,3
+Brighton,Premier League,1,3-5-2,1,3,5,2
+Brighton,Premier League,2,3-5-2,1,3,5,2
+Brighton,Premier League,3,3-5-2,1,3,5,2
+Brighton,Premier League,4,3-5-2,1,3,5,2
+Brighton,Premier League,5,3-5-2,1,3,5,2
+Brighton,Premier League,6,3-5-2,1,3,5,2
+Brighton,Premier League,7,3-5-2,1,3,5,2
+Brighton,Premier League,8,3-5-2,1,3,5,2
+Brighton,Premier League,9,4-2-3-1,1,4,5,1
+Brighton,Premier League,10,3-5-2,1,3,5,2
+Brighton,Premier League,11,3-5-2,1,3,5,2
+Brighton,Premier League,12,3-5-2,1,3,5,2
+Brighton,Premier League,13,3-5-2,1,3,5,2
+Brighton,Premier League,14,3-5-2,1,3,5,2
+Brighton,Premier League,15,4-2-3-1,1,4,5,1
+Brighton,Premier League,16,3-5-2,1,3,5,2
+Brighton,Premier League,17,3-5-2,1,3,5,2
+Brighton,Premier League,18,3-5-2,1,3,5,2
+Brighton,Premier League,19,3-5-2,1,3,5,2
+Brighton,Premier League,20,4-3-3,1,4,3,3
+Bournemouth,Premier League,1,4-3-3,1,4,3,3
+Bournemouth,Premier League,2,4-3-3,1,4,3,3
+Bournemouth,Premier League,3,4-3-3,1,4,3,3
+Bournemouth,Premier League,4,4-3-3,1,4,3,3
+Bournemouth,Premier League,5,4-3-3,1,4,3,3
+Bournemouth,Premier League,6,4-3-3,1,4,3,3
+Bournemouth,Premier League,7,4-3-3,1,4,3,3
+Bournemouth,Premier League,8,4-3-3,1,4,3,3
+Bournemouth,Premier League,9,4-3-3,1,4,3,3
+Bournemouth,Premier League,10,4-3-3,1,4,3,3
+Bournemouth,Premier League,11,4-3-3,1,4,3,3
+Bournemouth,Premier League,12,4-2-3-1,1,4,5,1
+Bournemouth,Premier League,13,4-3-3,1,4,3,3
+Bournemouth,Premier League,14,4-3-3,1,4,3,3
+Bournemouth,Premier League,15,3-5-2,1,3,5,2
+Bournemouth,Premier League,16,4-3-3,1,4,3,3
+Bournemouth,Premier League,17,4-3-3,1,4,3,3
+Bournemouth,Premier League,18,4-3-3,1,4,3,3
+Bournemouth,Premier League,19,4-3-3,1,4,3,3
+Bournemouth,Premier League,20,4-3-3,1,4,3,3
+Fulham,Premier League,1,4-3-3,1,4,3,3
+Fulham,Premier League,2,4-3-3,1,4,3,3
+Fulham,Premier League,3,4-4-2,1,4,4,2
+Fulham,Premier League,4,3-5-2,1,3,5,2
+Fulham,Premier League,5,4-3-3,1,4,3,3
+Fulham,Premier League,6,4-3-3,1,4,3,3
+Fulham,Premier League,7,4-3-3,1,4,3,3
+Fulham,Premier League,8,4-3-3,1,4,3,3
+Fulham,Premier League,9,4-3-3,1,4,3,3
+Fulham,Premier League,10,4-3-3,1,4,3,3
+Fulham,Premier League,11,4-3-3,1,4,3,3
+Fulham,Premier League,12,3-5-2,1,3,5,2
+Fulham,Premier League,13,4-3-3,1,4,3,3
+Fulham,Premier League,14,4-3-3,1,4,3,3
+Fulham,Premier League,15,3-5-2,1,3,5,2
+Fulham,Premier League,16,4-3-3,1,4,3,3
+Fulham,Premier League,17,4-3-3,1,4,3,3
+Fulham,Premier League,18,4-4-2,1,4,4,2
+Fulham,Premier League,19,4-2-3-1,1,4,5,1
+Fulham,Premier League,20,4-3-3,1,4,3,3
+Wolves,Premier League,1,4-2-3-1,1,4,5,1
+Wolves,Premier League,2,4-2-3-1,1,4,5,1
+Wolves,Premier League,3,4-3-3,1,4,3,3
+Wolves,Premier League,4,4-2-3-1,1,4,5,1
+Wolves,Premier League,5,4-2-3-1,1,4,5,1
+Wolves,Premier League,6,4-2-3-1,1,4,5,1
+Wolves,Premier League,7,4-2-3-1,1,4,5,1
+Wolves,Premier League,8,4-2-3-1,1,4,5,1
+Wolves,Premier League,9,4-2-3-1,1,4,5,1
+Wolves,Premier League,10,4-3-3,1,4,3,3
+Wolves,Premier League,11,4-2-3-1,1,4,5,1
+Wolves,Premier League,12,4-2-3-1,1,4,5,1
+Wolves,Premier League,13,4-3-3,1,4,3,3
+Wolves,Premier League,14,4-2-3-1,1,4,5,1
+Wolves,Premier League,15,4-2-3-1,1,4,5,1
+Wolves,Premier League,16,4-2-3-1,1,4,5,1
+Wolves,Premier League,17,3-5-2,1,3,5,2
+Wolves,Premier League,18,4-4-2,1,4,4,2
+Wolves,Premier League,19,4-2-3-1,1,4,5,1
+Wolves,Premier League,20,4-2-3-1,1,4,5,1
+Everton,Premier League,1,4-2-3-1,1,4,5,1
+Everton,Premier League,2,4-3-3,1,4,3,3
+Everton,Premier League,3,4-3-3,1,4,3,3
+Everton,Premier League,4,4-3-3,1,4,3,3
+Everton,Premier League,5,4-3-3,1,4,3,3
+Everton,Premier League,6,4-4-2,1,4,4,2
+Everton,Premier League,7,3-5-2,1,3,5,2
+Everton,Premier League,8,4-3-3,1,4,3,3
+Everton,Premier League,9,4-3-3,1,4,3,3
+Everton,Premier League,10,4-3-3,1,4,3,3
+Everton,Premier League,11,4-3-3,1,4,3,3
+Everton,Premier League,12,4-2-3-1,1,4,5,1
+Everton,Premier League,13,4-2-3-1,1,4,5,1
+Everton,Premier League,14,4-3-3,1,4,3,3
+Everton,Premier League,15,4-3-3,1,4,3,3
+Everton,Premier League,16,4-3-3,1,4,3,3
+Everton,Premier League,17,4-3-3,1,4,3,3
+Everton,Premier League,18,4-3-3,1,4,3,3
+Everton,Premier League,19,4-3-3,1,4,3,3
+Everton,Premier League,20,4-2-3-1,1,4,5,1
+Brentford,Premier League,1,4-4-2,1,4,4,2
+Brentford,Premier League,2,4-4-2,1,4,4,2
+Brentford,Premier League,3,4-4-2,1,4,4,2
+Brentford,Premier League,4,4-4-2,1,4,4,2
+Brentford,Premier League,5,4-4-2,1,4,4,2
+Brentford,Premier League,6,4-4-2,1,4,4,2
+Brentford,Premier League,7,4-4-2,1,4,4,2
+Brentford,Premier League,8,4-4-2,1,4,4,2
+Brentford,Premier League,9,4-4-2,1,4,4,2
+Brentford,Premier League,10,4-3-3,1,4,3,3
+Brentford,Premier League,11,4-4-2,1,4,4,2
+Brentford,Premier League,12,4-4-2,1,4,4,2
+Brentford,Premier League,13,4-4-2,1,4,4,2
+Brentford,Premier League,14,4-4-2,1,4,4,2
+Brentford,Premier League,15,4-4-2,1,4,4,2
+Brentford,Premier League,16,4-4-2,1,4,4,2
+Brentford,Premier League,17,4-4-2,1,4,4,2
+Brentford,Premier League,18,4-4-2,1,4,4,2
+Brentford,Premier League,19,4-4-2,1,4,4,2
+Brentford,Premier League,20,4-4-2,1,4,4,2
+Nott'ham Forest,Premier League,1,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,2,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,3,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,4,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,5,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,6,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,7,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,8,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,9,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,10,4-4-2,1,4,4,2
+Nott'ham Forest,Premier League,11,4-3-3,1,4,3,3
+Nott'ham Forest,Premier League,12,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,13,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,14,3-5-2,1,3,5,2
+Nott'ham Forest,Premier League,15,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,16,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,17,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,18,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,19,4-2-3-1,1,4,5,1
+Nott'ham Forest,Premier League,20,4-2-3-1,1,4,5,1
+Luton Town,Premier League,1,4-3-3,1,4,3,3
+Luton Town,Premier League,2,4-3-3,1,4,3,3
+Luton Town,Premier League,3,3-5-2,1,3,5,2
+Luton Town,Premier League,4,4-3-3,1,4,3,3
+Luton Town,Premier League,5,4-3-3,1,4,3,3
+Luton Town,Premier League,6,4-2-3-1,1,4,5,1
+Luton Town,Premier League,7,4-3-3,1,4,3,3
+Luton Town,Premier League,8,4-3-3,1,4,3,3
+Luton Town,Premier League,9,4-3-3,1,4,3,3
+Luton Town,Premier League,10,4-3-3,1,4,3,3
+Luton Town,Premier League,11,4-3-3,1,4,3,3
+Luton Town,Premier League,12,4-3-3,1,4,3,3
+Luton Town,Premier League,13,4-3-3,1,4,3,3
+Luton Town,Premier League,14,4-3-3,1,4,3,3
+Luton Town,Premier League,15,4-3-3,1,4,3,3
+Luton Town,Premier League,16,4-3-3,1,4,3,3
+Luton Town,Premier League,17,4-3-3,1,4,3,3
+Luton Town,Premier League,18,4-2-3-1,1,4,5,1
+Luton Town,Premier League,19,4-2-3-1,1,4,5,1
+Luton Town,Premier League,20,4-3-3,1,4,3,3
+Burnley,Premier League,1,3-5-2,1,3,5,2
+Burnley,Premier League,2,4-3-3,1,4,3,3
+Burnley,Premier League,3,4-3-3,1,4,3,3
+Burnley,Premier League,4,3-5-2,1,3,5,2
+Burnley,Premier League,5,3-5-2,1,3,5,2
+Burnley,Premier League,6,3-5-2,1,3,5,2
+Burnley,Premier League,7,3-5-2,1,3,5,2
+Burnley,Premier League,8,3-5-2,1,3,5,2
+Burnley,Premier League,9,3-5-2,1,3,5,2
+Burnley,Premier League,10,4-2-3-1,1,4,5,1
+Burnley,Premier League,11,3-5-2,1,3,5,2
+Burnley,Premier League,12,3-5-2,1,3,5,2
+Burnley,Premier League,13,3-5-2,1,3,5,2
+Burnley,Premier League,14,3-5-2,1,3,5,2
+Burnley,Premier League,15,3-5-2,1,3,5,2
+Burnley,Premier League,16,4-3-3,1,4,3,3
+Burnley,Premier League,17,3-5-2,1,3,5,2
+Burnley,Premier League,18,3-5-2,1,3,5,2
+Burnley,Premier League,19,4-3-3,1,4,3,3
+Burnley,Premier League,20,3-5-2,1,3,5,2
+Sheffield Utd,Premier League,1,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,2,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,3,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,4,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,5,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,6,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,7,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,8,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,9,3-5-2,1,3,5,2
+Sheffield Utd,Premier League,10,4-4-2,1,4,4,2
+Sheffield Utd,Premier League,11,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,12,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,13,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,14,4-3-3,1,4,3,3
+Sheffield Utd,Premier League,15,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,16,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,17,4-4-2,1,4,4,2
+Sheffield Utd,Premier League,18,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,19,4-2-3-1,1,4,5,1
+Sheffield Utd,Premier League,20,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,1,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,2,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,3,4-4-2,1,4,4,2
+Real Madrid,La Liga,4,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,5,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,6,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,7,4-4-2,1,4,4,2
+Real Madrid,La Liga,8,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,9,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,10,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,11,4-4-2,1,4,4,2
+Real Madrid,La Liga,12,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,13,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,14,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,15,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,16,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,17,4-4-2,1,4,4,2
+Real Madrid,La Liga,18,3-5-2,1,3,5,2
+Real Madrid,La Liga,19,4-2-3-1,1,4,5,1
+Real Madrid,La Liga,20,4-2-3-1,1,4,5,1
+Barcelona,La Liga,1,4-3-3,1,4,3,3
+Barcelona,La Liga,2,4-2-3-1,1,4,5,1
+Barcelona,La Liga,3,4-3-3,1,4,3,3
+Barcelona,La Liga,4,4-4-2,1,4,4,2
+Barcelona,La Liga,5,4-3-3,1,4,3,3
+Barcelona,La Liga,6,4-4-2,1,4,4,2
+Barcelona,La Liga,7,4-3-3,1,4,3,3
+Barcelona,La Liga,8,4-3-3,1,4,3,3
+Barcelona,La Liga,9,4-3-3,1,4,3,3
+Barcelona,La Liga,10,4-3-3,1,4,3,3
+Barcelona,La Liga,11,4-3-3,1,4,3,3
+Barcelona,La Liga,12,4-3-3,1,4,3,3
+Barcelona,La Liga,13,4-3-3,1,4,3,3
+Barcelona,La Liga,14,4-4-2,1,4,4,2
+Barcelona,La Liga,15,4-3-3,1,4,3,3
+Barcelona,La Liga,16,4-3-3,1,4,3,3
+Barcelona,La Liga,17,4-3-3,1,4,3,3
+Barcelona,La Liga,18,4-2-3-1,1,4,5,1
+Barcelona,La Liga,19,4-3-3,1,4,3,3
+Barcelona,La Liga,20,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,1,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,2,4-2-3-1,1,4,5,1
+Atlético Madrid,La Liga,3,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,4,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,5,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,6,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,7,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,8,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,9,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,10,4-2-3-1,1,4,5,1
+Atlético Madrid,La Liga,11,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,12,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,13,3-5-2,1,3,5,2
+Atlético Madrid,La Liga,14,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,15,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,16,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,17,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,18,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,19,4-4-2,1,4,4,2
+Atlético Madrid,La Liga,20,4-4-2,1,4,4,2
+Athletic Club,La Liga,1,4-3-3,1,4,3,3
+Athletic Club,La Liga,2,4-3-3,1,4,3,3
+Athletic Club,La Liga,3,4-3-3,1,4,3,3
+Athletic Club,La Liga,4,4-3-3,1,4,3,3
+Athletic Club,La Liga,5,4-3-3,1,4,3,3
+Athletic Club,La Liga,6,4-3-3,1,4,3,3
+Athletic Club,La Liga,7,4-4-2,1,4,4,2
+Athletic Club,La Liga,8,4-3-3,1,4,3,3
+Athletic Club,La Liga,9,4-3-3,1,4,3,3
+Athletic Club,La Liga,10,4-3-3,1,4,3,3
+Athletic Club,La Liga,11,4-4-2,1,4,4,2
+Athletic Club,La Liga,12,4-3-3,1,4,3,3
+Athletic Club,La Liga,13,4-3-3,1,4,3,3
+Athletic Club,La Liga,14,4-3-3,1,4,3,3
+Athletic Club,La Liga,15,4-3-3,1,4,3,3
+Athletic Club,La Liga,16,4-3-3,1,4,3,3
+Athletic Club,La Liga,17,4-3-3,1,4,3,3
+Athletic Club,La Liga,18,4-3-3,1,4,3,3
+Athletic Club,La Liga,19,4-4-2,1,4,4,2
+Athletic Club,La Liga,20,4-3-3,1,4,3,3
+Real Sociedad,La Liga,1,4-3-3,1,4,3,3
+Real Sociedad,La Liga,2,4-3-3,1,4,3,3
+Real Sociedad,La Liga,3,4-3-3,1,4,3,3
+Real Sociedad,La Liga,4,4-3-3,1,4,3,3
+Real Sociedad,La Liga,5,4-3-3,1,4,3,3
+Real Sociedad,La Liga,6,4-2-3-1,1,4,5,1
+Real Sociedad,La Liga,7,4-3-3,1,4,3,3
+Real Sociedad,La Liga,8,4-2-3-1,1,4,5,1
+Real Sociedad,La Liga,9,4-3-3,1,4,3,3
+Real Sociedad,La Liga,10,4-3-3,1,4,3,3
+Real Sociedad,La Liga,11,4-3-3,1,4,3,3
+Real Sociedad,La Liga,12,4-3-3,1,4,3,3
+Real Sociedad,La Liga,13,4-3-3,1,4,3,3
+Real Sociedad,La Liga,14,4-3-3,1,4,3,3
+Real Sociedad,La Liga,15,4-3-3,1,4,3,3
+Real Sociedad,La Liga,16,4-3-3,1,4,3,3
+Real Sociedad,La Liga,17,4-3-3,1,4,3,3
+Real Sociedad,La Liga,18,4-3-3,1,4,3,3
+Real Sociedad,La Liga,19,4-4-2,1,4,4,2
+Real Sociedad,La Liga,20,4-3-3,1,4,3,3
+Betis,La Liga,1,4-4-2,1,4,4,2
+Betis,La Liga,2,4-4-2,1,4,4,2
+Betis,La Liga,3,4-3-3,1,4,3,3
+Betis,La Liga,4,4-4-2,1,4,4,2
+Betis,La Liga,5,4-4-2,1,4,4,2
+Betis,La Liga,6,4-4-2,1,4,4,2
+Betis,La Liga,7,4-4-2,1,4,4,2
+Betis,La Liga,8,4-4-2,1,4,4,2
+Betis,La Liga,9,4-4-2,1,4,4,2
+Betis,La Liga,10,4-4-2,1,4,4,2
+Betis,La Liga,11,4-4-2,1,4,4,2
+Betis,La Liga,12,4-3-3,1,4,3,3
+Betis,La Liga,13,4-3-3,1,4,3,3
+Betis,La Liga,14,4-4-2,1,4,4,2
+Betis,La Liga,15,4-4-2,1,4,4,2
+Betis,La Liga,16,4-2-3-1,1,4,5,1
+Betis,La Liga,17,4-4-2,1,4,4,2
+Betis,La Liga,18,4-4-2,1,4,4,2
+Betis,La Liga,19,4-3-3,1,4,3,3
+Betis,La Liga,20,4-4-2,1,4,4,2
+Villarreal,La Liga,1,4-2-3-1,1,4,5,1
+Villarreal,La Liga,2,4-4-2,1,4,4,2
+Villarreal,La Liga,3,4-2-3-1,1,4,5,1
+Villarreal,La Liga,4,4-4-2,1,4,4,2
+Villarreal,La Liga,5,4-2-3-1,1,4,5,1
+Villarreal,La Liga,6,4-3-3,1,4,3,3
+Villarreal,La Liga,7,4-4-2,1,4,4,2
+Villarreal,La Liga,8,4-2-3-1,1,4,5,1
+Villarreal,La Liga,9,4-2-3-1,1,4,5,1
+Villarreal,La Liga,10,4-2-3-1,1,4,5,1
+Villarreal,La Liga,11,4-2-3-1,1,4,5,1
+Villarreal,La Liga,12,4-2-3-1,1,4,5,1
+Villarreal,La Liga,13,3-5-2,1,3,5,2
+Villarreal,La Liga,14,4-3-3,1,4,3,3
+Villarreal,La Liga,15,4-2-3-1,1,4,5,1
+Villarreal,La Liga,16,4-2-3-1,1,4,5,1
+Villarreal,La Liga,17,4-2-3-1,1,4,5,1
+Villarreal,La Liga,18,4-2-3-1,1,4,5,1
+Villarreal,La Liga,19,4-2-3-1,1,4,5,1
+Villarreal,La Liga,20,4-2-3-1,1,4,5,1
+Valencia,La Liga,1,4-3-3,1,4,3,3
+Valencia,La Liga,2,4-4-2,1,4,4,2
+Valencia,La Liga,3,4-3-3,1,4,3,3
+Valencia,La Liga,4,4-3-3,1,4,3,3
+Valencia,La Liga,5,4-3-3,1,4,3,3
+Valencia,La Liga,6,4-3-3,1,4,3,3
+Valencia,La Liga,7,4-3-3,1,4,3,3
+Valencia,La Liga,8,3-5-2,1,3,5,2
+Valencia,La Liga,9,4-3-3,1,4,3,3
+Valencia,La Liga,10,4-3-3,1,4,3,3
+Valencia,La Liga,11,4-3-3,1,4,3,3
+Valencia,La Liga,12,4-3-3,1,4,3,3
+Valencia,La Liga,13,4-4-2,1,4,4,2
+Valencia,La Liga,14,4-3-3,1,4,3,3
+Valencia,La Liga,15,4-3-3,1,4,3,3
+Valencia,La Liga,16,4-2-3-1,1,4,5,1
+Valencia,La Liga,17,4-3-3,1,4,3,3
+Valencia,La Liga,18,4-3-3,1,4,3,3
+Valencia,La Liga,19,3-5-2,1,3,5,2
+Valencia,La Liga,20,4-3-3,1,4,3,3
+Sevilla,La Liga,1,4-3-3,1,4,3,3
+Sevilla,La Liga,2,4-3-3,1,4,3,3
+Sevilla,La Liga,3,4-3-3,1,4,3,3
+Sevilla,La Liga,4,4-3-3,1,4,3,3
+Sevilla,La Liga,5,4-3-3,1,4,3,3
+Sevilla,La Liga,6,4-3-3,1,4,3,3
+Sevilla,La Liga,7,4-3-3,1,4,3,3
+Sevilla,La Liga,8,4-3-3,1,4,3,3
+Sevilla,La Liga,9,4-4-2,1,4,4,2
+Sevilla,La Liga,10,4-3-3,1,4,3,3
+Sevilla,La Liga,11,4-3-3,1,4,3,3
+Sevilla,La Liga,12,4-3-3,1,4,3,3
+Sevilla,La Liga,13,4-3-3,1,4,3,3
+Sevilla,La Liga,14,4-4-2,1,4,4,2
+Sevilla,La Liga,15,4-3-3,1,4,3,3
+Sevilla,La Liga,16,4-3-3,1,4,3,3
+Sevilla,La Liga,17,4-3-3,1,4,3,3
+Sevilla,La Liga,18,4-3-3,1,4,3,3
+Sevilla,La Liga,19,4-3-3,1,4,3,3
+Sevilla,La Liga,20,4-3-3,1,4,3,3
+Getafe,La Liga,1,4-2-3-1,1,4,5,1
+Getafe,La Liga,2,4-2-3-1,1,4,5,1
+Getafe,La Liga,3,4-2-3-1,1,4,5,1
+Getafe,La Liga,4,4-2-3-1,1,4,5,1
+Getafe,La Liga,5,4-2-3-1,1,4,5,1
+Getafe,La Liga,6,4-2-3-1,1,4,5,1
+Getafe,La Liga,7,4-2-3-1,1,4,5,1
+Getafe,La Liga,8,4-2-3-1,1,4,5,1
+Getafe,La Liga,9,4-2-3-1,1,4,5,1
+Getafe,La Liga,10,4-2-3-1,1,4,5,1
+Getafe,La Liga,11,4-2-3-1,1,4,5,1
+Getafe,La Liga,12,4-2-3-1,1,4,5,1
+Getafe,La Liga,13,4-2-3-1,1,4,5,1
+Getafe,La Liga,14,3-5-2,1,3,5,2
+Getafe,La Liga,15,4-2-3-1,1,4,5,1
+Getafe,La Liga,16,4-2-3-1,1,4,5,1
+Getafe,La Liga,17,4-2-3-1,1,4,5,1
+Getafe,La Liga,18,4-2-3-1,1,4,5,1
+Getafe,La Liga,19,4-2-3-1,1,4,5,1
+Getafe,La Liga,20,4-2-3-1,1,4,5,1
+Girona,La Liga,1,4-4-2,1,4,4,2
+Girona,La Liga,2,4-2-3-1,1,4,5,1
+Girona,La Liga,3,4-4-2,1,4,4,2
+Girona,La Liga,4,4-4-2,1,4,4,2
+Girona,La Liga,5,4-4-2,1,4,4,2
+Girona,La Liga,6,4-4-2,1,4,4,2
+Girona,La Liga,7,4-4-2,1,4,4,2
+Girona,La Liga,8,4-4-2,1,4,4,2
+Girona,La Liga,9,4-4-2,1,4,4,2
+Girona,La Liga,10,4-4-2,1,4,4,2
+Girona,La Liga,11,4-4-2,1,4,4,2
+Girona,La Liga,12,4-3-3,1,4,3,3
+Girona,La Liga,13,4-4-2,1,4,4,2
+Girona,La Liga,14,3-5-2,1,3,5,2
+Girona,La Liga,15,3-5-2,1,3,5,2
+Girona,La Liga,16,4-4-2,1,4,4,2
+Girona,La Liga,17,4-4-2,1,4,4,2
+Girona,La Liga,18,4-4-2,1,4,4,2
+Girona,La Liga,19,4-4-2,1,4,4,2
+Girona,La Liga,20,4-4-2,1,4,4,2
+Osasuna,La Liga,1,4-3-3,1,4,3,3
+Osasuna,La Liga,2,4-2-3-1,1,4,5,1
+Osasuna,La Liga,3,4-3-3,1,4,3,3
+Osasuna,La Liga,4,4-3-3,1,4,3,3
+Osasuna,La Liga,5,4-3-3,1,4,3,3
+Osasuna,La Liga,6,4-3-3,1,4,3,3
+Osasuna,La Liga,7,4-3-3,1,4,3,3
+Osasuna,La Liga,8,4-3-3,1,4,3,3
+Osasuna,La Liga,9,4-3-3,1,4,3,3
+Osasuna,La Liga,10,4-3-3,1,4,3,3
+Osasuna,La Liga,11,4-3-3,1,4,3,3
+Osasuna,La Liga,12,4-3-3,1,4,3,3
+Osasuna,La Liga,13,4-3-3,1,4,3,3
+Osasuna,La Liga,14,3-5-2,1,3,5,2
+Osasuna,La Liga,15,3-5-2,1,3,5,2
+Osasuna,La Liga,16,4-3-3,1,4,3,3
+Osasuna,La Liga,17,4-3-3,1,4,3,3
+Osasuna,La Liga,18,4-3-3,1,4,3,3
+Osasuna,La Liga,19,4-3-3,1,4,3,3
+Osasuna,La Liga,20,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,1,4-4-2,1,4,4,2
+Rayo Vallecano,La Liga,2,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,3,3-5-2,1,3,5,2
+Rayo Vallecano,La Liga,4,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,5,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,6,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,7,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,8,3-5-2,1,3,5,2
+Rayo Vallecano,La Liga,9,4-4-2,1,4,4,2
+Rayo Vallecano,La Liga,10,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,11,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,12,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,13,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,14,4-2-3-1,1,4,5,1
+Rayo Vallecano,La Liga,15,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,16,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,17,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,18,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,19,4-3-3,1,4,3,3
+Rayo Vallecano,La Liga,20,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,1,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,2,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,3,4-3-3,1,4,3,3
+Las Palmas,La Liga,4,3-5-2,1,3,5,2
+Las Palmas,La Liga,5,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,6,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,7,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,8,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,9,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,10,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,11,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,12,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,13,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,14,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,15,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,16,4-4-2,1,4,4,2
+Las Palmas,La Liga,17,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,18,4-3-3,1,4,3,3
+Las Palmas,La Liga,19,4-2-3-1,1,4,5,1
+Las Palmas,La Liga,20,4-2-3-1,1,4,5,1
+Mallorca,La Liga,1,4-3-3,1,4,3,3
+Mallorca,La Liga,2,4-3-3,1,4,3,3
+Mallorca,La Liga,3,4-4-2,1,4,4,2
+Mallorca,La Liga,4,4-3-3,1,4,3,3
+Mallorca,La Liga,5,4-3-3,1,4,3,3
+Mallorca,La Liga,6,4-3-3,1,4,3,3
+Mallorca,La Liga,7,4-3-3,1,4,3,3
+Mallorca,La Liga,8,4-3-3,1,4,3,3
+Mallorca,La Liga,9,3-5-2,1,3,5,2
+Mallorca,La Liga,10,4-2-3-1,1,4,5,1
+Mallorca,La Liga,11,4-2-3-1,1,4,5,1
+Mallorca,La Liga,12,4-3-3,1,4,3,3
+Mallorca,La Liga,13,4-3-3,1,4,3,3
+Mallorca,La Liga,14,4-4-2,1,4,4,2
+Mallorca,La Liga,15,4-2-3-1,1,4,5,1
+Mallorca,La Liga,16,4-3-3,1,4,3,3
+Mallorca,La Liga,17,4-4-2,1,4,4,2
+Mallorca,La Liga,18,4-3-3,1,4,3,3
+Mallorca,La Liga,19,4-3-3,1,4,3,3
+Mallorca,La Liga,20,4-3-3,1,4,3,3
+Cádiz,La Liga,1,4-2-3-1,1,4,5,1
+Cádiz,La Liga,2,3-5-2,1,3,5,2
+Cádiz,La Liga,3,4-3-3,1,4,3,3
+Cádiz,La Liga,4,4-3-3,1,4,3,3
+Cádiz,La Liga,5,4-3-3,1,4,3,3
+Cádiz,La Liga,6,4-3-3,1,4,3,3
+Cádiz,La Liga,7,3-5-2,1,3,5,2
+Cádiz,La Liga,8,4-3-3,1,4,3,3
+Cádiz,La Liga,9,4-3-3,1,4,3,3
+Cádiz,La Liga,10,4-3-3,1,4,3,3
+Cádiz,La Liga,11,3-5-2,1,3,5,2
+Cádiz,La Liga,12,4-3-3,1,4,3,3
+Cádiz,La Liga,13,4-2-3-1,1,4,5,1
+Cádiz,La Liga,14,4-3-3,1,4,3,3
+Cádiz,La Liga,15,4-3-3,1,4,3,3
+Cádiz,La Liga,16,4-3-3,1,4,3,3
+Cádiz,La Liga,17,4-3-3,1,4,3,3
+Cádiz,La Liga,18,4-4-2,1,4,4,2
+Cádiz,La Liga,19,4-3-3,1,4,3,3
+Cádiz,La Liga,20,4-3-3,1,4,3,3
+Celta Vigo,La Liga,1,4-4-2,1,4,4,2
+Celta Vigo,La Liga,2,4-4-2,1,4,4,2
+Celta Vigo,La Liga,3,4-4-2,1,4,4,2
+Celta Vigo,La Liga,4,4-4-2,1,4,4,2
+Celta Vigo,La Liga,5,4-4-2,1,4,4,2
+Celta Vigo,La Liga,6,4-4-2,1,4,4,2
+Celta Vigo,La Liga,7,4-2-3-1,1,4,5,1
+Celta Vigo,La Liga,8,4-4-2,1,4,4,2
+Celta Vigo,La Liga,9,4-3-3,1,4,3,3
+Celta Vigo,La Liga,10,4-4-2,1,4,4,2
+Celta Vigo,La Liga,11,4-4-2,1,4,4,2
+Celta Vigo,La Liga,12,4-4-2,1,4,4,2
+Celta Vigo,La Liga,13,4-4-2,1,4,4,2
+Celta Vigo,La Liga,14,4-4-2,1,4,4,2
+Celta Vigo,La Liga,15,4-4-2,1,4,4,2
+Celta Vigo,La Liga,16,4-4-2,1,4,4,2
+Celta Vigo,La Liga,17,4-4-2,1,4,4,2
+Celta Vigo,La Liga,18,4-2-3-1,1,4,5,1
+Celta Vigo,La Liga,19,4-4-2,1,4,4,2
+Celta Vigo,La Liga,20,4-4-2,1,4,4,2
+Alavés,La Liga,1,4-2-3-1,1,4,5,1
+Alavés,La Liga,2,4-3-3,1,4,3,3
+Alavés,La Liga,3,4-4-2,1,4,4,2
+Alavés,La Liga,4,4-3-3,1,4,3,3
+Alavés,La Liga,5,4-4-2,1,4,4,2
+Alavés,La Liga,6,4-3-3,1,4,3,3
+Alavés,La Liga,7,3-5-2,1,3,5,2
+Alavés,La Liga,8,4-3-3,1,4,3,3
+Alavés,La Liga,9,4-3-3,1,4,3,3
+Alavés,La Liga,10,4-3-3,1,4,3,3
+Alavés,La Liga,11,4-3-3,1,4,3,3
+Alavés,La Liga,12,4-3-3,1,4,3,3
+Alavés,La Liga,13,4-3-3,1,4,3,3
+Alavés,La Liga,14,4-3-3,1,4,3,3
+Alavés,La Liga,15,3-5-2,1,3,5,2
+Alavés,La Liga,16,4-3-3,1,4,3,3
+Alavés,La Liga,17,4-3-3,1,4,3,3
+Alavés,La Liga,18,4-3-3,1,4,3,3
+Alavés,La Liga,19,3-5-2,1,3,5,2
+Alavés,La Liga,20,4-2-3-1,1,4,5,1
+Granada,La Liga,1,4-2-3-1,1,4,5,1
+Granada,La Liga,2,4-2-3-1,1,4,5,1
+Granada,La Liga,3,4-2-3-1,1,4,5,1
+Granada,La Liga,4,3-5-2,1,3,5,2
+Granada,La Liga,5,4-2-3-1,1,4,5,1
+Granada,La Liga,6,4-4-2,1,4,4,2
+Granada,La Liga,7,3-5-2,1,3,5,2
+Granada,La Liga,8,4-2-3-1,1,4,5,1
+Granada,La Liga,9,4-2-3-1,1,4,5,1
+Granada,La Liga,10,4-2-3-1,1,4,5,1
+Granada,La Liga,11,4-2-3-1,1,4,5,1
+Granada,La Liga,12,4-2-3-1,1,4,5,1
+Granada,La Liga,13,4-2-3-1,1,4,5,1
+Granada,La Liga,14,4-3-3,1,4,3,3
+Granada,La Liga,15,4-3-3,1,4,3,3
+Granada,La Liga,16,4-2-3-1,1,4,5,1
+Granada,La Liga,17,4-2-3-1,1,4,5,1
+Granada,La Liga,18,4-2-3-1,1,4,5,1
+Granada,La Liga,19,4-2-3-1,1,4,5,1
+Granada,La Liga,20,3-5-2,1,3,5,2
+Almería,La Liga,1,4-3-3,1,4,3,3
+Almería,La Liga,2,4-4-2,1,4,4,2
+Almería,La Liga,3,4-3-3,1,4,3,3
+Almería,La Liga,4,4-3-3,1,4,3,3
+Almería,La Liga,5,3-5-2,1,3,5,2
+Almería,La Liga,6,4-3-3,1,4,3,3
+Almería,La Liga,7,3-5-2,1,3,5,2
+Almería,La Liga,8,4-3-3,1,4,3,3
+Almería,La Liga,9,3-5-2,1,3,5,2
+Almería,La Liga,10,4-3-3,1,4,3,3
+Almería,La Liga,11,4-3-3,1,4,3,3
+Almería,La Liga,12,4-3-3,1,4,3,3
+Almería,La Liga,13,3-5-2,1,3,5,2
+Almería,La Liga,14,4-3-3,1,4,3,3
+Almería,La Liga,15,4-3-3,1,4,3,3
+Almería,La Liga,16,4-3-3,1,4,3,3
+Almería,La Liga,17,4-3-3,1,4,3,3
+Almería,La Liga,18,3-5-2,1,3,5,2
+Almería,La Liga,19,4-3-3,1,4,3,3
+Almería,La Liga,20,4-3-3,1,4,3,3
+Inter,Serie A,1,3-5-2,1,3,5,2
+Inter,Serie A,2,4-2-3-1,1,4,5,1
+Inter,Serie A,3,4-2-3-1,1,4,5,1
+Inter,Serie A,4,4-2-3-1,1,4,5,1
+Inter,Serie A,5,4-2-3-1,1,4,5,1
+Inter,Serie A,6,4-2-3-1,1,4,5,1
+Inter,Serie A,7,4-3-3,1,4,3,3
+Inter,Serie A,8,4-2-3-1,1,4,5,1
+Inter,Serie A,9,3-4-3,1,3,4,3
+Inter,Serie A,10,4-2-3-1,1,4,5,1
+Inter,Serie A,11,4-2-3-1,1,4,5,1
+Inter,Serie A,12,4-2-3-1,1,4,5,1
+Inter,Serie A,13,4-3-3,1,4,3,3
+Inter,Serie A,14,4-3-3,1,4,3,3
+Inter,Serie A,15,4-2-3-1,1,4,5,1
+Inter,Serie A,16,4-3-3,1,4,3,3
+Inter,Serie A,17,4-2-3-1,1,4,5,1
+Inter,Serie A,18,4-2-3-1,1,4,5,1
+Inter,Serie A,19,3-5-2,1,3,5,2
+Inter,Serie A,20,4-2-3-1,1,4,5,1
+Juventus,Serie A,1,3-5-2,1,3,5,2
+Juventus,Serie A,2,3-5-2,1,3,5,2
+Juventus,Serie A,3,3-5-2,1,3,5,2
+Juventus,Serie A,4,4-3-3,1,4,3,3
+Juventus,Serie A,5,3-5-2,1,3,5,2
+Juventus,Serie A,6,3-5-2,1,3,5,2
+Juventus,Serie A,7,3-5-2,1,3,5,2
+Juventus,Serie A,8,3-5-2,1,3,5,2
+Juventus,Serie A,9,3-5-2,1,3,5,2
+Juventus,Serie A,10,3-5-2,1,3,5,2
+Juventus,Serie A,11,4-2-3-1,1,4,5,1
+Juventus,Serie A,12,4-3-3,1,4,3,3
+Juventus,Serie A,13,3-5-2,1,3,5,2
+Juventus,Serie A,14,3-5-2,1,3,5,2
+Juventus,Serie A,15,4-3-3,1,4,3,3
+Juventus,Serie A,16,3-5-2,1,3,5,2
+Juventus,Serie A,17,3-5-2,1,3,5,2
+Juventus,Serie A,18,3-4-3,1,3,4,3
+Juventus,Serie A,19,3-5-2,1,3,5,2
+Juventus,Serie A,20,4-2-3-1,1,4,5,1
+Milan,Serie A,1,3-4-3,1,3,4,3
+Milan,Serie A,2,3-4-3,1,3,4,3
+Milan,Serie A,3,3-4-3,1,3,4,3
+Milan,Serie A,4,3-4-3,1,3,4,3
+Milan,Serie A,5,3-5-2,1,3,5,2
+Milan,Serie A,6,3-4-3,1,3,4,3
+Milan,Serie A,7,3-4-3,1,3,4,3
+Milan,Serie A,8,3-4-3,1,3,4,3
+Milan,Serie A,9,3-4-3,1,3,4,3
+Milan,Serie A,10,3-4-3,1,3,4,3
+Milan,Serie A,11,3-4-3,1,3,4,3
+Milan,Serie A,12,3-4-3,1,3,4,3
+Milan,Serie A,13,3-4-3,1,3,4,3
+Milan,Serie A,14,3-4-3,1,3,4,3
+Milan,Serie A,15,3-4-3,1,3,4,3
+Milan,Serie A,16,3-4-3,1,3,4,3
+Milan,Serie A,17,3-4-3,1,3,4,3
+Milan,Serie A,18,3-5-2,1,3,5,2
+Milan,Serie A,19,3-4-3,1,3,4,3
+Milan,Serie A,20,3-4-3,1,3,4,3
+Napoli,Serie A,1,3-5-2,1,3,5,2
+Napoli,Serie A,2,3-5-2,1,3,5,2
+Napoli,Serie A,3,4-2-3-1,1,4,5,1
+Napoli,Serie A,4,4-2-3-1,1,4,5,1
+Napoli,Serie A,5,3-5-2,1,3,5,2
+Napoli,Serie A,6,4-2-3-1,1,4,5,1
+Napoli,Serie A,7,3-5-2,1,3,5,2
+Napoli,Serie A,8,3-5-2,1,3,5,2
+Napoli,Serie A,9,3-5-2,1,3,5,2
+Napoli,Serie A,10,3-5-2,1,3,5,2
+Napoli,Serie A,11,3-5-2,1,3,5,2
+Napoli,Serie A,12,3-5-2,1,3,5,2
+Napoli,Serie A,13,3-5-2,1,3,5,2
+Napoli,Serie A,14,3-5-2,1,3,5,2
+Napoli,Serie A,15,3-5-2,1,3,5,2
+Napoli,Serie A,16,3-5-2,1,3,5,2
+Napoli,Serie A,17,3-5-2,1,3,5,2
+Napoli,Serie A,18,3-5-2,1,3,5,2
+Napoli,Serie A,19,3-5-2,1,3,5,2
+Napoli,Serie A,20,3-5-2,1,3,5,2
+Atalanta,Serie A,1,4-3-3,1,4,3,3
+Atalanta,Serie A,2,4-3-3,1,4,3,3
+Atalanta,Serie A,3,4-3-3,1,4,3,3
+Atalanta,Serie A,4,4-3-3,1,4,3,3
+Atalanta,Serie A,5,3-5-2,1,3,5,2
+Atalanta,Serie A,6,4-3-3,1,4,3,3
+Atalanta,Serie A,7,4-3-3,1,4,3,3
+Atalanta,Serie A,8,4-3-3,1,4,3,3
+Atalanta,Serie A,9,4-2-3-1,1,4,5,1
+Atalanta,Serie A,10,4-3-3,1,4,3,3
+Atalanta,Serie A,11,4-3-3,1,4,3,3
+Atalanta,Serie A,12,4-3-3,1,4,3,3
+Atalanta,Serie A,13,4-2-3-1,1,4,5,1
+Atalanta,Serie A,14,4-3-3,1,4,3,3
+Atalanta,Serie A,15,4-3-3,1,4,3,3
+Atalanta,Serie A,16,4-3-3,1,4,3,3
+Atalanta,Serie A,17,3-4-3,1,3,4,3
+Atalanta,Serie A,18,4-3-3,1,4,3,3
+Atalanta,Serie A,19,4-3-3,1,4,3,3
+Atalanta,Serie A,20,4-3-3,1,4,3,3
+Roma,Serie A,1,4-2-3-1,1,4,5,1
+Roma,Serie A,2,4-2-3-1,1,4,5,1
+Roma,Serie A,3,4-2-3-1,1,4,5,1
+Roma,Serie A,4,3-5-2,1,3,5,2
+Roma,Serie A,5,3-5-2,1,3,5,2
+Roma,Serie A,6,4-2-3-1,1,4,5,1
+Roma,Serie A,7,4-2-3-1,1,4,5,1
+Roma,Serie A,8,3-4-3,1,3,4,3
+Roma,Serie A,9,4-2-3-1,1,4,5,1
+Roma,Serie A,10,4-2-3-1,1,4,5,1
+Roma,Serie A,11,4-3-3,1,4,3,3
+Roma,Serie A,12,4-2-3-1,1,4,5,1
+Roma,Serie A,13,4-2-3-1,1,4,5,1
+Roma,Serie A,14,4-2-3-1,1,4,5,1
+Roma,Serie A,15,4-2-3-1,1,4,5,1
+Roma,Serie A,16,4-2-3-1,1,4,5,1
+Roma,Serie A,17,4-2-3-1,1,4,5,1
+Roma,Serie A,18,4-2-3-1,1,4,5,1
+Roma,Serie A,19,3-5-2,1,3,5,2
+Roma,Serie A,20,4-2-3-1,1,4,5,1
+Lazio,Serie A,1,3-5-2,1,3,5,2
+Lazio,Serie A,2,3-4-3,1,3,4,3
+Lazio,Serie A,3,3-5-2,1,3,5,2
+Lazio,Serie A,4,3-4-3,1,3,4,3
+Lazio,Serie A,5,3-5-2,1,3,5,2
+Lazio,Serie A,6,3-5-2,1,3,5,2
+Lazio,Serie A,7,3-5-2,1,3,5,2
+Lazio,Serie A,8,3-5-2,1,3,5,2
+Lazio,Serie A,9,3-5-2,1,3,5,2
+Lazio,Serie A,10,4-2-3-1,1,4,5,1
+Lazio,Serie A,11,4-3-3,1,4,3,3
+Lazio,Serie A,12,3-5-2,1,3,5,2
+Lazio,Serie A,13,4-3-3,1,4,3,3
+Lazio,Serie A,14,3-4-3,1,3,4,3
+Lazio,Serie A,15,4-2-3-1,1,4,5,1
+Lazio,Serie A,16,4-3-3,1,4,3,3
+Lazio,Serie A,17,3-5-2,1,3,5,2
+Lazio,Serie A,18,3-5-2,1,3,5,2
+Lazio,Serie A,19,3-5-2,1,3,5,2
+Lazio,Serie A,20,3-5-2,1,3,5,2
+Fiorentina,Serie A,1,3-5-2,1,3,5,2
+Fiorentina,Serie A,2,4-2-3-1,1,4,5,1
+Fiorentina,Serie A,3,4-3-3,1,4,3,3
+Fiorentina,Serie A,4,3-5-2,1,3,5,2
+Fiorentina,Serie A,5,3-5-2,1,3,5,2
+Fiorentina,Serie A,6,3-5-2,1,3,5,2
+Fiorentina,Serie A,7,3-5-2,1,3,5,2
+Fiorentina,Serie A,8,3-5-2,1,3,5,2
+Fiorentina,Serie A,9,3-5-2,1,3,5,2
+Fiorentina,Serie A,10,4-2-3-1,1,4,5,1
+Fiorentina,Serie A,11,3-5-2,1,3,5,2
+Fiorentina,Serie A,12,3-5-2,1,3,5,2
+Fiorentina,Serie A,13,3-5-2,1,3,5,2
+Fiorentina,Serie A,14,3-5-2,1,3,5,2
+Fiorentina,Serie A,15,4-2-3-1,1,4,5,1
+Fiorentina,Serie A,16,3-5-2,1,3,5,2
+Fiorentina,Serie A,17,4-3-3,1,4,3,3
+Fiorentina,Serie A,18,3-5-2,1,3,5,2
+Fiorentina,Serie A,19,3-5-2,1,3,5,2
+Fiorentina,Serie A,20,3-5-2,1,3,5,2
+Bologna,Serie A,1,4-3-3,1,4,3,3
+Bologna,Serie A,2,4-2-3-1,1,4,5,1
+Bologna,Serie A,3,4-2-3-1,1,4,5,1
+Bologna,Serie A,4,4-2-3-1,1,4,5,1
+Bologna,Serie A,5,4-2-3-1,1,4,5,1
+Bologna,Serie A,6,4-2-3-1,1,4,5,1
+Bologna,Serie A,7,4-2-3-1,1,4,5,1
+Bologna,Serie A,8,4-2-3-1,1,4,5,1
+Bologna,Serie A,9,4-2-3-1,1,4,5,1
+Bologna,Serie A,10,4-2-3-1,1,4,5,1
+Bologna,Serie A,11,4-2-3-1,1,4,5,1
+Bologna,Serie A,12,4-2-3-1,1,4,5,1
+Bologna,Serie A,13,4-3-3,1,4,3,3
+Bologna,Serie A,14,4-2-3-1,1,4,5,1
+Bologna,Serie A,15,4-2-3-1,1,4,5,1
+Bologna,Serie A,16,4-2-3-1,1,4,5,1
+Bologna,Serie A,17,4-3-3,1,4,3,3
+Bologna,Serie A,18,4-2-3-1,1,4,5,1
+Bologna,Serie A,19,4-2-3-1,1,4,5,1
+Bologna,Serie A,20,4-2-3-1,1,4,5,1
+Torino,Serie A,1,4-3-3,1,4,3,3
+Torino,Serie A,2,4-3-3,1,4,3,3
+Torino,Serie A,3,4-3-3,1,4,3,3
+Torino,Serie A,4,4-3-3,1,4,3,3
+Torino,Serie A,5,4-3-3,1,4,3,3
+Torino,Serie A,6,4-3-3,1,4,3,3
+Torino,Serie A,7,4-3-3,1,4,3,3
+Torino,Serie A,8,4-3-3,1,4,3,3
+Torino,Serie A,9,4-3-3,1,4,3,3
+Torino,Serie A,10,4-2-3-1,1,4,5,1
+Torino,Serie A,11,4-3-3,1,4,3,3
+Torino,Serie A,12,3-4-3,1,3,4,3
+Torino,Serie A,13,3-5-2,1,3,5,2
+Torino,Serie A,14,4-3-3,1,4,3,3
+Torino,Serie A,15,4-3-3,1,4,3,3
+Torino,Serie A,16,4-3-3,1,4,3,3
+Torino,Serie A,17,4-2-3-1,1,4,5,1
+Torino,Serie A,18,4-3-3,1,4,3,3
+Torino,Serie A,19,4-3-3,1,4,3,3
+Torino,Serie A,20,4-3-3,1,4,3,3
+Udinese,Serie A,1,3-5-2,1,3,5,2
+Udinese,Serie A,2,3-5-2,1,3,5,2
+Udinese,Serie A,3,4-2-3-1,1,4,5,1
+Udinese,Serie A,4,3-5-2,1,3,5,2
+Udinese,Serie A,5,3-5-2,1,3,5,2
+Udinese,Serie A,6,3-5-2,1,3,5,2
+Udinese,Serie A,7,4-3-3,1,4,3,3
+Udinese,Serie A,8,3-5-2,1,3,5,2
+Udinese,Serie A,9,4-3-3,1,4,3,3
+Udinese,Serie A,10,3-5-2,1,3,5,2
+Udinese,Serie A,11,3-5-2,1,3,5,2
+Udinese,Serie A,12,3-5-2,1,3,5,2
+Udinese,Serie A,13,3-5-2,1,3,5,2
+Udinese,Serie A,14,4-3-3,1,4,3,3
+Udinese,Serie A,15,3-5-2,1,3,5,2
+Udinese,Serie A,16,3-5-2,1,3,5,2
+Udinese,Serie A,17,3-5-2,1,3,5,2
+Udinese,Serie A,18,3-5-2,1,3,5,2
+Udinese,Serie A,19,3-5-2,1,3,5,2
+Udinese,Serie A,20,3-5-2,1,3,5,2
+Monza,Serie A,1,3-4-3,1,3,4,3
+Monza,Serie A,2,4-2-3-1,1,4,5,1
+Monza,Serie A,3,4-2-3-1,1,4,5,1
+Monza,Serie A,4,3-4-3,1,3,4,3
+Monza,Serie A,5,4-2-3-1,1,4,5,1
+Monza,Serie A,6,4-2-3-1,1,4,5,1
+Monza,Serie A,7,4-2-3-1,1,4,5,1
+Monza,Serie A,8,4-2-3-1,1,4,5,1
+Monza,Serie A,9,4-2-3-1,1,4,5,1
+Monza,Serie A,10,4-2-3-1,1,4,5,1
+Monza,Serie A,11,4-2-3-1,1,4,5,1
+Monza,Serie A,12,4-2-3-1,1,4,5,1
+Monza,Serie A,13,4-2-3-1,1,4,5,1
+Monza,Serie A,14,3-4-3,1,3,4,3
+Monza,Serie A,15,4-3-3,1,4,3,3
+Monza,Serie A,16,4-2-3-1,1,4,5,1
+Monza,Serie A,17,4-3-3,1,4,3,3
+Monza,Serie A,18,4-2-3-1,1,4,5,1
+Monza,Serie A,19,4-2-3-1,1,4,5,1
+Monza,Serie A,20,4-2-3-1,1,4,5,1
+Genoa,Serie A,1,4-2-3-1,1,4,5,1
+Genoa,Serie A,2,4-3-3,1,4,3,3
+Genoa,Serie A,3,4-2-3-1,1,4,5,1
+Genoa,Serie A,4,4-2-3-1,1,4,5,1
+Genoa,Serie A,5,4-2-3-1,1,4,5,1
+Genoa,Serie A,6,4-2-3-1,1,4,5,1
+Genoa,Serie A,7,4-2-3-1,1,4,5,1
+Genoa,Serie A,8,4-2-3-1,1,4,5,1
+Genoa,Serie A,9,4-2-3-1,1,4,5,1
+Genoa,Serie A,10,4-2-3-1,1,4,5,1
+Genoa,Serie A,11,4-2-3-1,1,4,5,1
+Genoa,Serie A,12,4-2-3-1,1,4,5,1
+Genoa,Serie A,13,4-2-3-1,1,4,5,1
+Genoa,Serie A,14,4-2-3-1,1,4,5,1
+Genoa,Serie A,15,4-2-3-1,1,4,5,1
+Genoa,Serie A,16,4-2-3-1,1,4,5,1
+Genoa,Serie A,17,4-2-3-1,1,4,5,1
+Genoa,Serie A,18,4-2-3-1,1,4,5,1
+Genoa,Serie A,19,4-2-3-1,1,4,5,1
+Genoa,Serie A,20,4-2-3-1,1,4,5,1
+Lecce,Serie A,1,3-5-2,1,3,5,2
+Lecce,Serie A,2,3-5-2,1,3,5,2
+Lecce,Serie A,3,3-5-2,1,3,5,2
+Lecce,Serie A,4,3-5-2,1,3,5,2
+Lecce,Serie A,5,4-2-3-1,1,4,5,1
+Lecce,Serie A,6,3-5-2,1,3,5,2
+Lecce,Serie A,7,3-4-3,1,3,4,3
+Lecce,Serie A,8,3-5-2,1,3,5,2
+Lecce,Serie A,9,3-5-2,1,3,5,2
+Lecce,Serie A,10,3-5-2,1,3,5,2
+Lecce,Serie A,11,4-2-3-1,1,4,5,1
+Lecce,Serie A,12,3-5-2,1,3,5,2
+Lecce,Serie A,13,3-4-3,1,3,4,3
+Lecce,Serie A,14,3-5-2,1,3,5,2
+Lecce,Serie A,15,3-5-2,1,3,5,2
+Lecce,Serie A,16,3-4-3,1,3,4,3
+Lecce,Serie A,17,3-5-2,1,3,5,2
+Lecce,Serie A,18,3-5-2,1,3,5,2
+Lecce,Serie A,19,4-3-3,1,4,3,3
+Lecce,Serie A,20,3-5-2,1,3,5,2
+Verona,Serie A,1,4-2-3-1,1,4,5,1
+Verona,Serie A,2,4-2-3-1,1,4,5,1
+Verona,Serie A,3,4-2-3-1,1,4,5,1
+Verona,Serie A,4,4-2-3-1,1,4,5,1
+Verona,Serie A,5,4-2-3-1,1,4,5,1
+Verona,Serie A,6,3-5-2,1,3,5,2
+Verona,Serie A,7,4-2-3-1,1,4,5,1
+Verona,Serie A,8,4-2-3-1,1,4,5,1
+Verona,Serie A,9,3-4-3,1,3,4,3
+Verona,Serie A,10,4-2-3-1,1,4,5,1
+Verona,Serie A,11,3-5-2,1,3,5,2
+Verona,Serie A,12,4-2-3-1,1,4,5,1
+Verona,Serie A,13,4-2-3-1,1,4,5,1
+Verona,Serie A,14,4-2-3-1,1,4,5,1
+Verona,Serie A,15,4-2-3-1,1,4,5,1
+Verona,Serie A,16,4-2-3-1,1,4,5,1
+Verona,Serie A,17,4-2-3-1,1,4,5,1
+Verona,Serie A,18,4-2-3-1,1,4,5,1
+Verona,Serie A,19,4-2-3-1,1,4,5,1
+Verona,Serie A,20,4-2-3-1,1,4,5,1
+Frosinone,Serie A,1,3-5-2,1,3,5,2
+Frosinone,Serie A,2,3-5-2,1,3,5,2
+Frosinone,Serie A,3,3-5-2,1,3,5,2
+Frosinone,Serie A,4,3-5-2,1,3,5,2
+Frosinone,Serie A,5,3-5-2,1,3,5,2
+Frosinone,Serie A,6,3-4-3,1,3,4,3
+Frosinone,Serie A,7,3-5-2,1,3,5,2
+Frosinone,Serie A,8,3-5-2,1,3,5,2
+Frosinone,Serie A,9,3-5-2,1,3,5,2
+Frosinone,Serie A,10,3-5-2,1,3,5,2
+Frosinone,Serie A,11,4-3-3,1,4,3,3
+Frosinone,Serie A,12,3-5-2,1,3,5,2
+Frosinone,Serie A,13,3-5-2,1,3,5,2
+Frosinone,Serie A,14,3-5-2,1,3,5,2
+Frosinone,Serie A,15,3-5-2,1,3,5,2
+Frosinone,Serie A,16,4-3-3,1,4,3,3
+Frosinone,Serie A,17,3-5-2,1,3,5,2
+Frosinone,Serie A,18,3-5-2,1,3,5,2
+Frosinone,Serie A,19,3-5-2,1,3,5,2
+Frosinone,Serie A,20,3-5-2,1,3,5,2
+Empoli,Serie A,1,3-5-2,1,3,5,2
+Empoli,Serie A,2,3-5-2,1,3,5,2
+Empoli,Serie A,3,3-4-3,1,3,4,3
+Empoli,Serie A,4,3-5-2,1,3,5,2
+Empoli,Serie A,5,3-5-2,1,3,5,2
+Empoli,Serie A,6,4-2-3-1,1,4,5,1
+Empoli,Serie A,7,4-2-3-1,1,4,5,1
+Empoli,Serie A,8,3-5-2,1,3,5,2
+Empoli,Serie A,9,3-5-2,1,3,5,2
+Empoli,Serie A,10,3-5-2,1,3,5,2
+Empoli,Serie A,11,3-5-2,1,3,5,2
+Empoli,Serie A,12,3-5-2,1,3,5,2
+Empoli,Serie A,13,3-5-2,1,3,5,2
+Empoli,Serie A,14,3-5-2,1,3,5,2
+Empoli,Serie A,15,3-5-2,1,3,5,2
+Empoli,Serie A,16,3-5-2,1,3,5,2
+Empoli,Serie A,17,3-4-3,1,3,4,3
+Empoli,Serie A,18,3-5-2,1,3,5,2
+Empoli,Serie A,19,3-5-2,1,3,5,2
+Empoli,Serie A,20,3-5-2,1,3,5,2
+Sassuolo,Serie A,1,4-3-3,1,4,3,3
+Sassuolo,Serie A,2,3-4-3,1,3,4,3
+Sassuolo,Serie A,3,3-4-3,1,3,4,3
+Sassuolo,Serie A,4,3-4-3,1,3,4,3
+Sassuolo,Serie A,5,3-4-3,1,3,4,3
+Sassuolo,Serie A,6,3-4-3,1,3,4,3
+Sassuolo,Serie A,7,3-5-2,1,3,5,2
+Sassuolo,Serie A,8,3-4-3,1,3,4,3
+Sassuolo,Serie A,9,3-4-3,1,3,4,3
+Sassuolo,Serie A,10,3-4-3,1,3,4,3
+Sassuolo,Serie A,11,3-4-3,1,3,4,3
+Sassuolo,Serie A,12,4-2-3-1,1,4,5,1
+Sassuolo,Serie A,13,3-4-3,1,3,4,3
+Sassuolo,Serie A,14,3-4-3,1,3,4,3
+Sassuolo,Serie A,15,4-2-3-1,1,4,5,1
+Sassuolo,Serie A,16,3-4-3,1,3,4,3
+Sassuolo,Serie A,17,3-4-3,1,3,4,3
+Sassuolo,Serie A,18,3-4-3,1,3,4,3
+Sassuolo,Serie A,19,4-2-3-1,1,4,5,1
+Sassuolo,Serie A,20,3-4-3,1,3,4,3
+Cagliari,Serie A,1,4-3-3,1,4,3,3
+Cagliari,Serie A,2,4-3-3,1,4,3,3
+Cagliari,Serie A,3,3-4-3,1,3,4,3
+Cagliari,Serie A,4,4-3-3,1,4,3,3
+Cagliari,Serie A,5,4-3-3,1,4,3,3
+Cagliari,Serie A,6,3-5-2,1,3,5,2
+Cagliari,Serie A,7,4-3-3,1,4,3,3
+Cagliari,Serie A,8,4-3-3,1,4,3,3
+Cagliari,Serie A,9,4-3-3,1,4,3,3
+Cagliari,Serie A,10,4-3-3,1,4,3,3
+Cagliari,Serie A,11,4-3-3,1,4,3,3
+Cagliari,Serie A,12,4-3-3,1,4,3,3
+Cagliari,Serie A,13,4-3-3,1,4,3,3
+Cagliari,Serie A,14,4-2-3-1,1,4,5,1
+Cagliari,Serie A,15,3-4-3,1,3,4,3
+Cagliari,Serie A,16,4-3-3,1,4,3,3
+Cagliari,Serie A,17,4-3-3,1,4,3,3
+Cagliari,Serie A,18,4-2-3-1,1,4,5,1
+Cagliari,Serie A,19,4-3-3,1,4,3,3
+Cagliari,Serie A,20,4-3-3,1,4,3,3
+Salernitana,Serie A,1,4-2-3-1,1,4,5,1
+Salernitana,Serie A,2,4-2-3-1,1,4,5,1
+Salernitana,Serie A,3,4-2-3-1,1,4,5,1
+Salernitana,Serie A,4,4-2-3-1,1,4,5,1
+Salernitana,Serie A,5,4-2-3-1,1,4,5,1
+Salernitana,Serie A,6,4-2-3-1,1,4,5,1
+Salernitana,Serie A,7,4-2-3-1,1,4,5,1
+Salernitana,Serie A,8,3-4-3,1,3,4,3
+Salernitana,Serie A,9,4-2-3-1,1,4,5,1
+Salernitana,Serie A,10,4-2-3-1,1,4,5,1
+Salernitana,Serie A,11,4-2-3-1,1,4,5,1
+Salernitana,Serie A,12,4-2-3-1,1,4,5,1
+Salernitana,Serie A,13,4-2-3-1,1,4,5,1
+Salernitana,Serie A,14,3-4-3,1,3,4,3
+Salernitana,Serie A,15,4-2-3-1,1,4,5,1
+Salernitana,Serie A,16,4-2-3-1,1,4,5,1
+Salernitana,Serie A,17,4-2-3-1,1,4,5,1
+Salernitana,Serie A,18,4-2-3-1,1,4,5,1
+Salernitana,Serie A,19,4-2-3-1,1,4,5,1
+Salernitana,Serie A,20,4-2-3-1,1,4,5,1
+Bayern Munich,Bundesliga,1,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,2,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,3,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,4,4-4-2,1,4,4,2
+Bayern Munich,Bundesliga,5,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,6,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,7,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,8,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,9,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,10,4-2-3-1,1,4,5,1
+Bayern Munich,Bundesliga,11,4-2-3-1,1,4,5,1
+Bayern Munich,Bundesliga,12,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,13,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,14,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,15,4-2-3-1,1,4,5,1
+Bayern Munich,Bundesliga,16,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,17,3-5-2,1,3,5,2
+Bayern Munich,Bundesliga,18,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,19,4-3-3,1,4,3,3
+Bayern Munich,Bundesliga,20,4-3-3,1,4,3,3
+Dortmund,Bundesliga,1,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,2,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,3,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,4,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,5,3-5-2,1,3,5,2
+Dortmund,Bundesliga,6,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,7,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,8,3-5-2,1,3,5,2
+Dortmund,Bundesliga,9,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,10,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,11,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,12,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,13,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,14,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,15,4-4-2,1,4,4,2
+Dortmund,Bundesliga,16,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,17,3-5-2,1,3,5,2
+Dortmund,Bundesliga,18,4-2-3-1,1,4,5,1
+Dortmund,Bundesliga,19,4-3-3,1,4,3,3
+Dortmund,Bundesliga,20,4-4-2,1,4,4,2
+RB Leipzig,Bundesliga,1,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,2,4-3-3,1,4,3,3
+RB Leipzig,Bundesliga,3,4-4-2,1,4,4,2
+RB Leipzig,Bundesliga,4,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,5,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,6,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,7,3-5-2,1,3,5,2
+RB Leipzig,Bundesliga,8,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,9,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,10,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,11,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,12,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,13,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,14,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,15,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,16,3-5-2,1,3,5,2
+RB Leipzig,Bundesliga,17,4-2-3-1,1,4,5,1
+RB Leipzig,Bundesliga,18,4-4-2,1,4,4,2
+RB Leipzig,Bundesliga,19,3-5-2,1,3,5,2
+RB Leipzig,Bundesliga,20,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,1,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,2,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,3,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,4,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,5,3-5-2,1,3,5,2
+Leverkusen,Bundesliga,6,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,7,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,8,4-3-3,1,4,3,3
+Leverkusen,Bundesliga,9,3-5-2,1,3,5,2
+Leverkusen,Bundesliga,10,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,11,3-5-2,1,3,5,2
+Leverkusen,Bundesliga,12,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,13,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,14,3-5-2,1,3,5,2
+Leverkusen,Bundesliga,15,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,16,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,17,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,18,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,19,4-2-3-1,1,4,5,1
+Leverkusen,Bundesliga,20,4-2-3-1,1,4,5,1
+Union Berlin,Bundesliga,1,4-4-2,1,4,4,2
+Union Berlin,Bundesliga,2,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,3,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,4,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,5,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,6,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,7,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,8,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,9,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,10,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,11,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,12,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,13,4-2-3-1,1,4,5,1
+Union Berlin,Bundesliga,14,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,15,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,16,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,17,4-4-2,1,4,4,2
+Union Berlin,Bundesliga,18,4-4-2,1,4,4,2
+Union Berlin,Bundesliga,19,3-5-2,1,3,5,2
+Union Berlin,Bundesliga,20,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,1,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,2,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,3,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,4,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,5,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,6,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,7,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,8,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,9,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,10,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,11,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,12,3-5-2,1,3,5,2
+Freiburg,Bundesliga,13,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,14,4-4-2,1,4,4,2
+Freiburg,Bundesliga,15,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,16,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,17,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,18,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,19,4-2-3-1,1,4,5,1
+Freiburg,Bundesliga,20,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,1,3-5-2,1,3,5,2
+Eint Frankfurt,Bundesliga,2,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,3,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,4,3-5-2,1,3,5,2
+Eint Frankfurt,Bundesliga,5,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,6,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,7,3-5-2,1,3,5,2
+Eint Frankfurt,Bundesliga,8,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,9,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,10,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,11,4-2-3-1,1,4,5,1
+Eint Frankfurt,Bundesliga,12,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,13,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,14,3-5-2,1,3,5,2
+Eint Frankfurt,Bundesliga,15,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,16,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,17,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,18,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,19,4-4-2,1,4,4,2
+Eint Frankfurt,Bundesliga,20,4-4-2,1,4,4,2
+Wolfsburg,Bundesliga,1,4-4-2,1,4,4,2
+Wolfsburg,Bundesliga,2,3-5-2,1,3,5,2
+Wolfsburg,Bundesliga,3,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,4,3-5-2,1,3,5,2
+Wolfsburg,Bundesliga,5,4-4-2,1,4,4,2
+Wolfsburg,Bundesliga,6,3-5-2,1,3,5,2
+Wolfsburg,Bundesliga,7,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,8,3-5-2,1,3,5,2
+Wolfsburg,Bundesliga,9,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,10,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,11,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,12,3-5-2,1,3,5,2
+Wolfsburg,Bundesliga,13,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,14,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,15,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,16,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,17,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,18,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,19,4-3-3,1,4,3,3
+Wolfsburg,Bundesliga,20,4-3-3,1,4,3,3
+Hoffenheim,Bundesliga,1,4-3-3,1,4,3,3
+Hoffenheim,Bundesliga,2,4-3-3,1,4,3,3
+Hoffenheim,Bundesliga,3,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,4,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,5,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,6,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,7,3-5-2,1,3,5,2
+Hoffenheim,Bundesliga,8,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,9,4-4-2,1,4,4,2
+Hoffenheim,Bundesliga,10,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,11,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,12,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,13,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,14,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,15,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,16,3-5-2,1,3,5,2
+Hoffenheim,Bundesliga,17,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,18,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,19,4-2-3-1,1,4,5,1
+Hoffenheim,Bundesliga,20,4-2-3-1,1,4,5,1
+Gladbach,Bundesliga,1,4-2-3-1,1,4,5,1
+Gladbach,Bundesliga,2,4-4-2,1,4,4,2
+Gladbach,Bundesliga,3,4-3-3,1,4,3,3
+Gladbach,Bundesliga,4,4-3-3,1,4,3,3
+Gladbach,Bundesliga,5,3-5-2,1,3,5,2
+Gladbach,Bundesliga,6,3-5-2,1,3,5,2
+Gladbach,Bundesliga,7,3-5-2,1,3,5,2
+Gladbach,Bundesliga,8,4-3-3,1,4,3,3
+Gladbach,Bundesliga,9,4-3-3,1,4,3,3
+Gladbach,Bundesliga,10,4-4-2,1,4,4,2
+Gladbach,Bundesliga,11,4-3-3,1,4,3,3
+Gladbach,Bundesliga,12,4-2-3-1,1,4,5,1
+Gladbach,Bundesliga,13,4-3-3,1,4,3,3
+Gladbach,Bundesliga,14,4-2-3-1,1,4,5,1
+Gladbach,Bundesliga,15,3-5-2,1,3,5,2
+Gladbach,Bundesliga,16,4-3-3,1,4,3,3
+Gladbach,Bundesliga,17,4-3-3,1,4,3,3
+Gladbach,Bundesliga,18,4-3-3,1,4,3,3
+Gladbach,Bundesliga,19,4-2-3-1,1,4,5,1
+Gladbach,Bundesliga,20,4-3-3,1,4,3,3
+Stuttgart,Bundesliga,1,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,2,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,3,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,4,4-3-3,1,4,3,3
+Stuttgart,Bundesliga,5,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,6,4-3-3,1,4,3,3
+Stuttgart,Bundesliga,7,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,8,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,9,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,10,3-5-2,1,3,5,2
+Stuttgart,Bundesliga,11,4-4-2,1,4,4,2
+Stuttgart,Bundesliga,12,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,13,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,14,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,15,4-4-2,1,4,4,2
+Stuttgart,Bundesliga,16,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,17,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,18,4-2-3-1,1,4,5,1
+Stuttgart,Bundesliga,19,4-4-2,1,4,4,2
+Stuttgart,Bundesliga,20,4-2-3-1,1,4,5,1
+Mainz 05,Bundesliga,1,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,2,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,3,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,4,4-3-3,1,4,3,3
+Mainz 05,Bundesliga,5,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,6,4-3-3,1,4,3,3
+Mainz 05,Bundesliga,7,4-2-3-1,1,4,5,1
+Mainz 05,Bundesliga,8,4-2-3-1,1,4,5,1
+Mainz 05,Bundesliga,9,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,10,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,11,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,12,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,13,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,14,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,15,4-2-3-1,1,4,5,1
+Mainz 05,Bundesliga,16,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,17,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,18,4-2-3-1,1,4,5,1
+Mainz 05,Bundesliga,19,3-5-2,1,3,5,2
+Mainz 05,Bundesliga,20,3-5-2,1,3,5,2
+Augsburg,Bundesliga,1,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,2,3-5-2,1,3,5,2
+Augsburg,Bundesliga,3,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,4,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,5,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,6,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,7,4-4-2,1,4,4,2
+Augsburg,Bundesliga,8,3-5-2,1,3,5,2
+Augsburg,Bundesliga,9,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,10,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,11,3-5-2,1,3,5,2
+Augsburg,Bundesliga,12,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,13,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,14,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,15,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,16,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,17,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,18,4-2-3-1,1,4,5,1
+Augsburg,Bundesliga,19,3-5-2,1,3,5,2
+Augsburg,Bundesliga,20,4-2-3-1,1,4,5,1
+Werder Bremen,Bundesliga,1,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,2,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,3,4-2-3-1,1,4,5,1
+Werder Bremen,Bundesliga,4,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,5,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,6,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,7,4-2-3-1,1,4,5,1
+Werder Bremen,Bundesliga,8,3-5-2,1,3,5,2
+Werder Bremen,Bundesliga,9,3-5-2,1,3,5,2
+Werder Bremen,Bundesliga,10,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,11,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,12,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,13,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,14,4-4-2,1,4,4,2
+Werder Bremen,Bundesliga,15,4-4-2,1,4,4,2
+Werder Bremen,Bundesliga,16,4-2-3-1,1,4,5,1
+Werder Bremen,Bundesliga,17,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,18,4-4-2,1,4,4,2
+Werder Bremen,Bundesliga,19,4-3-3,1,4,3,3
+Werder Bremen,Bundesliga,20,4-3-3,1,4,3,3
+Bochum,Bundesliga,1,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,2,3-5-2,1,3,5,2
+Bochum,Bundesliga,3,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,4,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,5,4-4-2,1,4,4,2
+Bochum,Bundesliga,6,4-4-2,1,4,4,2
+Bochum,Bundesliga,7,3-5-2,1,3,5,2
+Bochum,Bundesliga,8,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,9,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,10,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,11,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,12,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,13,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,14,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,15,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,16,3-5-2,1,3,5,2
+Bochum,Bundesliga,17,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,18,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,19,4-2-3-1,1,4,5,1
+Bochum,Bundesliga,20,4-2-3-1,1,4,5,1
+Köln,Bundesliga,1,3-5-2,1,3,5,2
+Köln,Bundesliga,2,3-5-2,1,3,5,2
+Köln,Bundesliga,3,3-5-2,1,3,5,2
+Köln,Bundesliga,4,4-3-3,1,4,3,3
+Köln,Bundesliga,5,3-5-2,1,3,5,2
+Köln,Bundesliga,6,3-5-2,1,3,5,2
+Köln,Bundesliga,7,3-5-2,1,3,5,2
+Köln,Bundesliga,8,3-5-2,1,3,5,2
+Köln,Bundesliga,9,3-5-2,1,3,5,2
+Köln,Bundesliga,10,3-5-2,1,3,5,2
+Köln,Bundesliga,11,3-5-2,1,3,5,2
+Köln,Bundesliga,12,3-5-2,1,3,5,2
+Köln,Bundesliga,13,3-5-2,1,3,5,2
+Köln,Bundesliga,14,3-5-2,1,3,5,2
+Köln,Bundesliga,15,4-4-2,1,4,4,2
+Köln,Bundesliga,16,3-5-2,1,3,5,2
+Köln,Bundesliga,17,3-5-2,1,3,5,2
+Köln,Bundesliga,18,4-2-3-1,1,4,5,1
+Köln,Bundesliga,19,3-5-2,1,3,5,2
+Köln,Bundesliga,20,3-5-2,1,3,5,2
+Heidenheim,Bundesliga,1,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,2,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,3,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,4,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,5,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,6,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,7,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,8,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,9,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,10,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,11,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,12,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,13,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,14,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,15,4-4-2,1,4,4,2
+Heidenheim,Bundesliga,16,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,17,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,18,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,19,4-3-3,1,4,3,3
+Heidenheim,Bundesliga,20,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,1,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,2,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,3,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,4,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,5,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,6,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,7,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,8,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,9,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,10,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,11,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,12,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,13,4-4-2,1,4,4,2
+Darmstadt 98,Bundesliga,14,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,15,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,16,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,17,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,18,3-5-2,1,3,5,2
+Darmstadt 98,Bundesliga,19,4-3-3,1,4,3,3
+Darmstadt 98,Bundesliga,20,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,1,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,2,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,3,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,4,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,5,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,6,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,7,4-4-2,1,4,4,2
+Paris S-G,Ligue 1,8,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,9,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,10,4-4-2,1,4,4,2
+Paris S-G,Ligue 1,11,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,12,4-2-3-1,1,4,5,1
+Paris S-G,Ligue 1,13,4-2-3-1,1,4,5,1
+Paris S-G,Ligue 1,14,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,15,4-4-2,1,4,4,2
+Paris S-G,Ligue 1,16,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,17,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,18,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,19,4-3-3,1,4,3,3
+Paris S-G,Ligue 1,20,3-5-2,1,3,5,2
+Monaco,Ligue 1,1,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,2,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,3,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,4,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,5,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,6,4-4-2,1,4,4,2
+Monaco,Ligue 1,7,4-3-3,1,4,3,3
+Monaco,Ligue 1,8,4-3-3,1,4,3,3
+Monaco,Ligue 1,9,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,10,4-4-2,1,4,4,2
+Monaco,Ligue 1,11,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,12,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,13,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,14,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,15,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,16,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,17,4-4-2,1,4,4,2
+Monaco,Ligue 1,18,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,19,4-2-3-1,1,4,5,1
+Monaco,Ligue 1,20,4-2-3-1,1,4,5,1
+Brest,Ligue 1,1,4-3-3,1,4,3,3
+Brest,Ligue 1,2,4-3-3,1,4,3,3
+Brest,Ligue 1,3,4-3-3,1,4,3,3
+Brest,Ligue 1,4,4-2-3-1,1,4,5,1
+Brest,Ligue 1,5,4-2-3-1,1,4,5,1
+Brest,Ligue 1,6,4-3-3,1,4,3,3
+Brest,Ligue 1,7,4-3-3,1,4,3,3
+Brest,Ligue 1,8,4-3-3,1,4,3,3
+Brest,Ligue 1,9,3-5-2,1,3,5,2
+Brest,Ligue 1,10,4-3-3,1,4,3,3
+Brest,Ligue 1,11,4-3-3,1,4,3,3
+Brest,Ligue 1,12,4-3-3,1,4,3,3
+Brest,Ligue 1,13,4-3-3,1,4,3,3
+Brest,Ligue 1,14,4-3-3,1,4,3,3
+Brest,Ligue 1,15,4-3-3,1,4,3,3
+Brest,Ligue 1,16,4-3-3,1,4,3,3
+Brest,Ligue 1,17,4-3-3,1,4,3,3
+Brest,Ligue 1,18,4-3-3,1,4,3,3
+Brest,Ligue 1,19,4-3-3,1,4,3,3
+Brest,Ligue 1,20,4-3-3,1,4,3,3
+Lille,Ligue 1,1,3-5-2,1,3,5,2
+Lille,Ligue 1,2,3-5-2,1,3,5,2
+Lille,Ligue 1,3,4-3-3,1,4,3,3
+Lille,Ligue 1,4,3-5-2,1,3,5,2
+Lille,Ligue 1,5,3-5-2,1,3,5,2
+Lille,Ligue 1,6,4-3-3,1,4,3,3
+Lille,Ligue 1,7,3-5-2,1,3,5,2
+Lille,Ligue 1,8,4-2-3-1,1,4,5,1
+Lille,Ligue 1,9,3-5-2,1,3,5,2
+Lille,Ligue 1,10,3-5-2,1,3,5,2
+Lille,Ligue 1,11,3-5-2,1,3,5,2
+Lille,Ligue 1,12,3-5-2,1,3,5,2
+Lille,Ligue 1,13,4-3-3,1,4,3,3
+Lille,Ligue 1,14,3-5-2,1,3,5,2
+Lille,Ligue 1,15,4-4-2,1,4,4,2
+Lille,Ligue 1,16,3-5-2,1,3,5,2
+Lille,Ligue 1,17,3-5-2,1,3,5,2
+Lille,Ligue 1,18,3-5-2,1,3,5,2
+Lille,Ligue 1,19,3-5-2,1,3,5,2
+Lille,Ligue 1,20,3-5-2,1,3,5,2
+Nice,Ligue 1,1,4-3-3,1,4,3,3
+Nice,Ligue 1,2,4-3-3,1,4,3,3
+Nice,Ligue 1,3,4-3-3,1,4,3,3
+Nice,Ligue 1,4,4-3-3,1,4,3,3
+Nice,Ligue 1,5,4-3-3,1,4,3,3
+Nice,Ligue 1,6,4-3-3,1,4,3,3
+Nice,Ligue 1,7,4-3-3,1,4,3,3
+Nice,Ligue 1,8,4-2-3-1,1,4,5,1
+Nice,Ligue 1,9,3-5-2,1,3,5,2
+Nice,Ligue 1,10,4-3-3,1,4,3,3
+Nice,Ligue 1,11,4-3-3,1,4,3,3
+Nice,Ligue 1,12,3-5-2,1,3,5,2
+Nice,Ligue 1,13,4-3-3,1,4,3,3
+Nice,Ligue 1,14,4-3-3,1,4,3,3
+Nice,Ligue 1,15,4-3-3,1,4,3,3
+Nice,Ligue 1,16,4-3-3,1,4,3,3
+Nice,Ligue 1,17,4-3-3,1,4,3,3
+Nice,Ligue 1,18,4-3-3,1,4,3,3
+Nice,Ligue 1,19,4-4-2,1,4,4,2
+Nice,Ligue 1,20,4-3-3,1,4,3,3
+Lens,Ligue 1,1,4-4-2,1,4,4,2
+Lens,Ligue 1,2,4-2-3-1,1,4,5,1
+Lens,Ligue 1,3,3-5-2,1,3,5,2
+Lens,Ligue 1,4,4-2-3-1,1,4,5,1
+Lens,Ligue 1,5,4-2-3-1,1,4,5,1
+Lens,Ligue 1,6,4-4-2,1,4,4,2
+Lens,Ligue 1,7,3-5-2,1,3,5,2
+Lens,Ligue 1,8,4-2-3-1,1,4,5,1
+Lens,Ligue 1,9,4-2-3-1,1,4,5,1
+Lens,Ligue 1,10,4-2-3-1,1,4,5,1
+Lens,Ligue 1,11,4-2-3-1,1,4,5,1
+Lens,Ligue 1,12,4-2-3-1,1,4,5,1
+Lens,Ligue 1,13,4-2-3-1,1,4,5,1
+Lens,Ligue 1,14,4-2-3-1,1,4,5,1
+Lens,Ligue 1,15,4-4-2,1,4,4,2
+Lens,Ligue 1,16,4-2-3-1,1,4,5,1
+Lens,Ligue 1,17,4-2-3-1,1,4,5,1
+Lens,Ligue 1,18,4-2-3-1,1,4,5,1
+Lens,Ligue 1,19,4-2-3-1,1,4,5,1
+Lens,Ligue 1,20,4-2-3-1,1,4,5,1
+Lyon,Ligue 1,1,4-4-2,1,4,4,2
+Lyon,Ligue 1,2,4-3-3,1,4,3,3
+Lyon,Ligue 1,3,4-3-3,1,4,3,3
+Lyon,Ligue 1,4,4-3-3,1,4,3,3
+Lyon,Ligue 1,5,3-5-2,1,3,5,2
+Lyon,Ligue 1,6,4-3-3,1,4,3,3
+Lyon,Ligue 1,7,4-3-3,1,4,3,3
+Lyon,Ligue 1,8,4-3-3,1,4,3,3
+Lyon,Ligue 1,9,4-2-3-1,1,4,5,1
+Lyon,Ligue 1,10,4-3-3,1,4,3,3
+Lyon,Ligue 1,11,4-3-3,1,4,3,3
+Lyon,Ligue 1,12,4-3-3,1,4,3,3
+Lyon,Ligue 1,13,4-3-3,1,4,3,3
+Lyon,Ligue 1,14,3-5-2,1,3,5,2
+Lyon,Ligue 1,15,4-3-3,1,4,3,3
+Lyon,Ligue 1,16,3-5-2,1,3,5,2
+Lyon,Ligue 1,17,4-2-3-1,1,4,5,1
+Lyon,Ligue 1,18,4-4-2,1,4,4,2
+Lyon,Ligue 1,19,4-3-3,1,4,3,3
+Lyon,Ligue 1,20,4-3-3,1,4,3,3
+Marseille,Ligue 1,1,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,2,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,3,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,4,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,5,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,6,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,7,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,8,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,9,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,10,4-3-3,1,4,3,3
+Marseille,Ligue 1,11,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,12,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,13,4-4-2,1,4,4,2
+Marseille,Ligue 1,14,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,15,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,16,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,17,4-4-2,1,4,4,2
+Marseille,Ligue 1,18,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,19,4-2-3-1,1,4,5,1
+Marseille,Ligue 1,20,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,1,4-4-2,1,4,4,2
+Rennes,Ligue 1,2,4-3-3,1,4,3,3
+Rennes,Ligue 1,3,4-3-3,1,4,3,3
+Rennes,Ligue 1,4,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,5,3-5-2,1,3,5,2
+Rennes,Ligue 1,6,4-4-2,1,4,4,2
+Rennes,Ligue 1,7,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,8,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,9,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,10,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,11,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,12,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,13,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,14,4-4-2,1,4,4,2
+Rennes,Ligue 1,15,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,16,4-3-3,1,4,3,3
+Rennes,Ligue 1,17,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,18,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,19,4-2-3-1,1,4,5,1
+Rennes,Ligue 1,20,4-2-3-1,1,4,5,1
+Reims,Ligue 1,1,4-4-2,1,4,4,2
+Reims,Ligue 1,2,4-4-2,1,4,4,2
+Reims,Ligue 1,3,4-4-2,1,4,4,2
+Reims,Ligue 1,4,4-2-3-1,1,4,5,1
+Reims,Ligue 1,5,4-4-2,1,4,4,2
+Reims,Ligue 1,6,4-4-2,1,4,4,2
+Reims,Ligue 1,7,4-4-2,1,4,4,2
+Reims,Ligue 1,8,4-4-2,1,4,4,2
+Reims,Ligue 1,9,4-4-2,1,4,4,2
+Reims,Ligue 1,10,4-4-2,1,4,4,2
+Reims,Ligue 1,11,4-4-2,1,4,4,2
+Reims,Ligue 1,12,4-4-2,1,4,4,2
+Reims,Ligue 1,13,4-4-2,1,4,4,2
+Reims,Ligue 1,14,4-4-2,1,4,4,2
+Reims,Ligue 1,15,4-4-2,1,4,4,2
+Reims,Ligue 1,16,4-4-2,1,4,4,2
+Reims,Ligue 1,17,4-4-2,1,4,4,2
+Reims,Ligue 1,18,4-3-3,1,4,3,3
+Reims,Ligue 1,19,4-4-2,1,4,4,2
+Reims,Ligue 1,20,4-4-2,1,4,4,2
+Toulouse,Ligue 1,1,4-3-3,1,4,3,3
+Toulouse,Ligue 1,2,4-3-3,1,4,3,3
+Toulouse,Ligue 1,3,4-3-3,1,4,3,3
+Toulouse,Ligue 1,4,4-3-3,1,4,3,3
+Toulouse,Ligue 1,5,4-3-3,1,4,3,3
+Toulouse,Ligue 1,6,4-3-3,1,4,3,3
+Toulouse,Ligue 1,7,4-3-3,1,4,3,3
+Toulouse,Ligue 1,8,4-4-2,1,4,4,2
+Toulouse,Ligue 1,9,3-5-2,1,3,5,2
+Toulouse,Ligue 1,10,4-3-3,1,4,3,3
+Toulouse,Ligue 1,11,4-3-3,1,4,3,3
+Toulouse,Ligue 1,12,4-3-3,1,4,3,3
+Toulouse,Ligue 1,13,3-5-2,1,3,5,2
+Toulouse,Ligue 1,14,4-3-3,1,4,3,3
+Toulouse,Ligue 1,15,4-3-3,1,4,3,3
+Toulouse,Ligue 1,16,4-2-3-1,1,4,5,1
+Toulouse,Ligue 1,17,4-3-3,1,4,3,3
+Toulouse,Ligue 1,18,4-3-3,1,4,3,3
+Toulouse,Ligue 1,19,3-5-2,1,3,5,2
+Toulouse,Ligue 1,20,4-3-3,1,4,3,3
+Strasbourg,Ligue 1,1,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,2,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,3,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,4,4-3-3,1,4,3,3
+Strasbourg,Ligue 1,5,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,6,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,7,4-4-2,1,4,4,2
+Strasbourg,Ligue 1,8,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,9,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,10,4-3-3,1,4,3,3
+Strasbourg,Ligue 1,11,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,12,3-5-2,1,3,5,2
+Strasbourg,Ligue 1,13,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,14,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,15,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,16,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,17,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,18,4-2-3-1,1,4,5,1
+Strasbourg,Ligue 1,19,4-4-2,1,4,4,2
+Strasbourg,Ligue 1,20,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,1,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,2,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,3,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,4,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,5,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,6,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,7,3-5-2,1,3,5,2
+Le Havre,Ligue 1,8,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,9,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,10,4-3-3,1,4,3,3
+Le Havre,Ligue 1,11,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,12,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,13,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,14,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,15,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,16,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,17,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,18,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,19,4-2-3-1,1,4,5,1
+Le Havre,Ligue 1,20,4-2-3-1,1,4,5,1
+Lorient,Ligue 1,1,4-3-3,1,4,3,3
+Lorient,Ligue 1,2,4-3-3,1,4,3,3
+Lorient,Ligue 1,3,4-4-2,1,4,4,2
+Lorient,Ligue 1,4,4-3-3,1,4,3,3
+Lorient,Ligue 1,5,4-3-3,1,4,3,3
+Lorient,Ligue 1,6,4-3-3,1,4,3,3
+Lorient,Ligue 1,7,4-3-3,1,4,3,3
+Lorient,Ligue 1,8,4-3-3,1,4,3,3
+Lorient,Ligue 1,9,4-3-3,1,4,3,3
+Lorient,Ligue 1,10,4-3-3,1,4,3,3
+Lorient,Ligue 1,11,4-3-3,1,4,3,3
+Lorient,Ligue 1,12,4-3-3,1,4,3,3
+Lorient,Ligue 1,13,3-5-2,1,3,5,2
+Lorient,Ligue 1,14,4-4-2,1,4,4,2
+Lorient,Ligue 1,15,4-4-2,1,4,4,2
+Lorient,Ligue 1,16,4-3-3,1,4,3,3
+Lorient,Ligue 1,17,4-3-3,1,4,3,3
+Lorient,Ligue 1,18,4-3-3,1,4,3,3
+Lorient,Ligue 1,19,4-3-3,1,4,3,3
+Lorient,Ligue 1,20,3-5-2,1,3,5,2
+Montpellier,Ligue 1,1,3-5-2,1,3,5,2
+Montpellier,Ligue 1,2,3-5-2,1,3,5,2
+Montpellier,Ligue 1,3,3-5-2,1,3,5,2
+Montpellier,Ligue 1,4,3-5-2,1,3,5,2
+Montpellier,Ligue 1,5,3-5-2,1,3,5,2
+Montpellier,Ligue 1,6,3-5-2,1,3,5,2
+Montpellier,Ligue 1,7,3-5-2,1,3,5,2
+Montpellier,Ligue 1,8,3-5-2,1,3,5,2
+Montpellier,Ligue 1,9,4-4-2,1,4,4,2
+Montpellier,Ligue 1,10,4-2-3-1,1,4,5,1
+Montpellier,Ligue 1,11,3-5-2,1,3,5,2
+Montpellier,Ligue 1,12,3-5-2,1,3,5,2
+Montpellier,Ligue 1,13,3-5-2,1,3,5,2
+Montpellier,Ligue 1,14,3-5-2,1,3,5,2
+Montpellier,Ligue 1,15,4-3-3,1,4,3,3
+Montpellier,Ligue 1,16,4-2-3-1,1,4,5,1
+Montpellier,Ligue 1,17,3-5-2,1,3,5,2
+Montpellier,Ligue 1,18,4-2-3-1,1,4,5,1
+Montpellier,Ligue 1,19,3-5-2,1,3,5,2
+Montpellier,Ligue 1,20,3-5-2,1,3,5,2
+Metz,Ligue 1,1,4-4-2,1,4,4,2
+Metz,Ligue 1,2,3-5-2,1,3,5,2
+Metz,Ligue 1,3,4-2-3-1,1,4,5,1
+Metz,Ligue 1,4,4-2-3-1,1,4,5,1
+Metz,Ligue 1,5,4-2-3-1,1,4,5,1
+Metz,Ligue 1,6,4-2-3-1,1,4,5,1
+Metz,Ligue 1,7,4-2-3-1,1,4,5,1
+Metz,Ligue 1,8,4-2-3-1,1,4,5,1
+Metz,Ligue 1,9,4-2-3-1,1,4,5,1
+Metz,Ligue 1,10,3-5-2,1,3,5,2
+Metz,Ligue 1,11,4-2-3-1,1,4,5,1
+Metz,Ligue 1,12,4-2-3-1,1,4,5,1
+Metz,Ligue 1,13,4-4-2,1,4,4,2
+Metz,Ligue 1,14,4-2-3-1,1,4,5,1
+Metz,Ligue 1,15,4-2-3-1,1,4,5,1
+Metz,Ligue 1,16,4-2-3-1,1,4,5,1
+Metz,Ligue 1,17,4-2-3-1,1,4,5,1
+Metz,Ligue 1,18,4-2-3-1,1,4,5,1
+Metz,Ligue 1,19,4-2-3-1,1,4,5,1
+Metz,Ligue 1,20,4-2-3-1,1,4,5,1
+Nantes,Ligue 1,1,4-3-3,1,4,3,3
+Nantes,Ligue 1,2,4-3-3,1,4,3,3
+Nantes,Ligue 1,3,4-3-3,1,4,3,3
+Nantes,Ligue 1,4,4-2-3-1,1,4,5,1
+Nantes,Ligue 1,5,4-3-3,1,4,3,3
+Nantes,Ligue 1,6,4-3-3,1,4,3,3
+Nantes,Ligue 1,7,4-3-3,1,4,3,3
+Nantes,Ligue 1,8,4-3-3,1,4,3,3
+Nantes,Ligue 1,9,4-3-3,1,4,3,3
+Nantes,Ligue 1,10,4-3-3,1,4,3,3
+Nantes,Ligue 1,11,4-3-3,1,4,3,3
+Nantes,Ligue 1,12,4-3-3,1,4,3,3
+Nantes,Ligue 1,13,4-2-3-1,1,4,5,1
+Nantes,Ligue 1,14,4-3-3,1,4,3,3
+Nantes,Ligue 1,15,4-3-3,1,4,3,3
+Nantes,Ligue 1,16,4-3-3,1,4,3,3
+Nantes,Ligue 1,17,4-3-3,1,4,3,3
+Nantes,Ligue 1,18,3-5-2,1,3,5,2
+Nantes,Ligue 1,19,4-3-3,1,4,3,3
+Nantes,Ligue 1,20,4-3-3,1,4,3,3
+Clermont Foot,Ligue 1,1,4-4-2,1,4,4,2
+Clermont Foot,Ligue 1,2,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,3,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,4,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,5,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,6,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,7,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,8,4-2-3-1,1,4,5,1
+Clermont Foot,Ligue 1,9,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,10,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,11,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,12,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,13,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,14,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,15,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,16,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,17,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,18,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,19,3-5-2,1,3,5,2
+Clermont Foot,Ligue 1,20,3-5-2,1,3,5,2

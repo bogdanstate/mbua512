@@ -41,8 +41,8 @@ export async function initSoccerClustering(containerId) {
   svg.style.background = '#2d5016';
   svg.style.borderRadius = '8px';
 
-  // Draw field markings
-  drawField(svg, fieldWidth, fieldHeight);
+  // Draw field markings (we'll toggle visibility later)
+  const fieldMarkings = drawField(svg, fieldWidth, fieldHeight);
 
   // Extract player positions from loaded data
   const team1Players = matchData.teams[0].players.map(p => ({ ...p, teamIdx: 0 }));
@@ -102,10 +102,16 @@ export async function initSoccerClustering(containerId) {
   resetBtn.textContent = 'Reset Animation';
   resetBtn.style.cssText = 'margin-left: 20px; padding: 8px 16px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;';
 
+  // Voronoi toggle button
+  const voronoiBtn = document.createElement('button');
+  voronoiBtn.textContent = 'Show Voronoi';
+  voronoiBtn.style.cssText = 'margin-left: 10px; padding: 8px 16px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;';
+
   controls.appendChild(label);
   controls.appendChild(slider);
   controls.appendChild(valueDisplay);
   controls.appendChild(resetBtn);
+  controls.appendChild(voronoiBtn);
   container.appendChild(controls);
 
   // Info display
@@ -196,7 +202,7 @@ export async function initSoccerClustering(containerId) {
     });
   }
 
-  function drawClusters(result) {
+  function drawClustersCircles(result) {
     clustersGroup.innerHTML = '';
 
     if (!result) return;
@@ -229,34 +235,173 @@ export async function initSoccerClustering(containerId) {
       clustersGroup.appendChild(clusterCircle);
 
       // Draw centroid
-      const cross = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-
-      const line1 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-      line1.setAttribute('x1', centroid.x - 10);
-      line1.setAttribute('y1', centroid.y - 10);
-      line1.setAttribute('x2', centroid.x + 10);
-      line1.setAttribute('y2', centroid.y + 10);
-      line1.setAttribute('stroke', colors[idx % colors.length]);
-      line1.setAttribute('stroke-width', '3');
-
-      const line2 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-      line2.setAttribute('x1', centroid.x - 10);
-      line2.setAttribute('y1', centroid.y + 10);
-      line2.setAttribute('x2', centroid.x + 10);
-      line2.setAttribute('y2', centroid.y - 10);
-      line2.setAttribute('stroke', colors[idx % colors.length]);
-      line2.setAttribute('stroke-width', '3');
-
-      cross.appendChild(line1);
-      cross.appendChild(line2);
-      clustersGroup.appendChild(cross);
+      drawCentroid(centroid, colors[idx % colors.length]);
     });
   }
 
+  function drawClustersVoronoi(result) {
+    clustersGroup.innerHTML = '';
+
+    if (!result) return;
+
+    const colors = ['#FF6B6B', '#4ECDC4', '#FFD93D', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#A8D8EA', '#FFA07A', '#98D8C8', '#F7DC6F'];
+
+    // Create a high-resolution grid for smooth visualization
+    const resolution = 2; // pixels per sample
+    const width = fieldWidth - 2 * padding;
+    const height = fieldHeight - 2 * padding;
+
+    // Create canvas for pixel-perfect Voronoi
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+
+    // For each pixel, find closest centroid and color it
+    const imageData = ctx.createImageData(width, height);
+    const data = imageData.data;
+
+    for (let py = 0; py < height; py++) {
+      for (let px = 0; px < width; px++) {
+        const x = px + padding;
+        const y = py + padding;
+
+        // Find closest centroid
+        let minDist = Infinity;
+        let closestIdx = 0;
+
+        result.centroids.forEach((centroid, idx) => {
+          const dist = Math.sqrt((x - centroid.x) ** 2 + (y - centroid.y) ** 2);
+          if (dist < minDist) {
+            minDist = dist;
+            closestIdx = idx;
+          }
+        });
+
+        // Color this pixel
+        const color = colors[closestIdx % colors.length];
+        const rgb = hexToRgb(color);
+        const idx = (py * width + px) * 4;
+        data[idx] = rgb.r;
+        data[idx + 1] = rgb.g;
+        data[idx + 2] = rgb.b;
+        data[idx + 3] = 38; // 15% opacity (38/255 ≈ 0.15)
+      }
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+
+    // Convert canvas to SVG image
+    const dataURL = canvas.toDataURL();
+    const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
+    image.setAttribute('x', padding);
+    image.setAttribute('y', padding);
+    image.setAttribute('width', width);
+    image.setAttribute('height', height);
+    image.setAttribute('href', dataURL);
+    clustersGroup.appendChild(image);
+
+    // Draw boundary lines between regions
+    // Sample points along a fine grid to detect boundaries
+    const boundaryStep = 3;
+    for (let py = 0; py < height - boundaryStep; py += boundaryStep) {
+      for (let px = 0; px < width - boundaryStep; px += boundaryStep) {
+        const x = px + padding;
+        const y = py + padding;
+
+        // Get cluster assignment for this point and neighbors
+        const getClosest = (tx, ty) => {
+          let minDist = Infinity;
+          let closestIdx = 0;
+          result.centroids.forEach((centroid, idx) => {
+            const dist = Math.sqrt((tx - centroid.x) ** 2 + (ty - centroid.y) ** 2);
+            if (dist < minDist) {
+              minDist = dist;
+              closestIdx = idx;
+            }
+          });
+          return closestIdx;
+        };
+
+        const c = getClosest(x, y);
+        const cRight = getClosest(x + boundaryStep, y);
+        const cDown = getClosest(x, y + boundaryStep);
+
+        // Draw line if boundary detected
+        if (c !== cRight) {
+          const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+          line.setAttribute('x1', x + boundaryStep);
+          line.setAttribute('y1', y);
+          line.setAttribute('x2', x + boundaryStep);
+          line.setAttribute('y2', y + boundaryStep);
+          line.setAttribute('stroke', 'white');
+          line.setAttribute('stroke-width', '2');
+          line.setAttribute('opacity', '0.8');
+          clustersGroup.appendChild(line);
+        }
+
+        if (c !== cDown) {
+          const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+          line.setAttribute('x1', x);
+          line.setAttribute('y1', y + boundaryStep);
+          line.setAttribute('x2', x + boundaryStep);
+          line.setAttribute('y2', y + boundaryStep);
+          line.setAttribute('stroke', 'white');
+          line.setAttribute('stroke-width', '2');
+          line.setAttribute('opacity', '0.8');
+          clustersGroup.appendChild(line);
+        }
+      }
+    }
+
+    // Don't draw centroids in Voronoi mode - cleaner visualization
+  }
+
+  function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : { r: 255, g: 255, b: 255 };
+  }
+
+  function drawCentroid(centroid, color) {
+    const cross = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+
+    const line1 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line1.setAttribute('x1', centroid.x - 10);
+    line1.setAttribute('y1', centroid.y - 10);
+    line1.setAttribute('x2', centroid.x + 10);
+    line1.setAttribute('y2', centroid.y + 10);
+    line1.setAttribute('stroke', color);
+    line1.setAttribute('stroke-width', '3');
+
+    const line2 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line2.setAttribute('x1', centroid.x - 10);
+    line2.setAttribute('y1', centroid.y + 10);
+    line2.setAttribute('x2', centroid.x + 10);
+    line2.setAttribute('y2', centroid.y - 10);
+    line2.setAttribute('stroke', color);
+    line2.setAttribute('stroke-width', '3');
+
+    cross.appendChild(line1);
+    cross.appendChild(line2);
+    clustersGroup.appendChild(cross);
+  }
+
+  // Track visualization mode
+  let showVoronoi = false;
+  let lastResult = null;
+
   function update(k) {
-    const result = performClustering(k);
-    drawPlayers(result.assignments);
-    drawClusters(result);
+    lastResult = performClustering(k);
+    drawPlayers(lastResult.assignments);
+    if (showVoronoi) {
+      drawClustersVoronoi(lastResult);
+    } else {
+      drawClustersCircles(lastResult);
+    }
   }
 
   slider.addEventListener('input', (e) => {
@@ -267,6 +412,27 @@ export async function initSoccerClustering(containerId) {
 
   resetBtn.addEventListener('click', () => {
     update(currentK);
+  });
+
+  voronoiBtn.addEventListener('click', () => {
+    showVoronoi = !showVoronoi;
+    voronoiBtn.textContent = showVoronoi ? 'Show Circles' : 'Show Voronoi';
+    voronoiBtn.style.background = showVoronoi ? '#e67e22' : '#3498db';
+
+    // Toggle field markings visibility
+    if (fieldMarkings) {
+      fieldMarkings.style.display = showVoronoi ? 'none' : 'block';
+    }
+
+    // Redraw with current result
+    if (lastResult) {
+      drawPlayers(lastResult.assignments);
+      if (showVoronoi) {
+        drawClustersVoronoi(lastResult);
+      } else {
+        drawClustersCircles(lastResult);
+      }
+    }
   });
 
   // Initial render
@@ -308,4 +474,7 @@ function drawField(svg, width, height) {
   g.appendChild(centerCircle);
 
   svg.appendChild(g);
+
+  // Return the group element so we can toggle its visibility
+  return g;
 }

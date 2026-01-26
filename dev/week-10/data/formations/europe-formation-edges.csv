@@ -1,0 +1,4557 @@
+source,target,distance,similarity
+Manchester City,Arsenal,26,0.675
+Manchester City,Liverpool,35,0.5625
+Manchester City,Aston Villa,34,0.575
+Manchester City,Tottenham,31,0.6125
+Manchester City,Chelsea,36,0.55
+Manchester City,Newcastle Utd,39,0.5125
+Manchester City,Manchester Utd,43,0.4625
+Manchester City,West Ham,43,0.4625
+Manchester City,Crystal Palace,39,0.5125
+Manchester City,Brighton,18,0.775
+Manchester City,Bournemouth,49,0.38749999999999996
+Manchester City,Fulham,47,0.4125
+Manchester City,Wolves,36,0.55
+Manchester City,Everton,43,0.4625
+Manchester City,Brentford,38,0.525
+Manchester City,Nott'ham Forest,35,0.5625
+Manchester City,Luton Town,44,0.44999999999999996
+Manchester City,Burnley,18,0.775
+Manchester City,Sheffield Utd,35,0.5625
+Manchester City,Real Madrid,32,0.6
+Manchester City,Barcelona,40,0.5
+Manchester City,Atlético Madrid,32,0.6
+Manchester City,Athletic Club,47,0.4125
+Manchester City,Real Sociedad,47,0.4125
+Manchester City,Betis,39,0.5125
+Manchester City,Villarreal,38,0.525
+Manchester City,Valencia,45,0.4375
+Manchester City,Sevilla,45,0.4375
+Manchester City,Getafe,32,0.6
+Manchester City,Girona,36,0.55
+Manchester City,Osasuna,45,0.4375
+Manchester City,Rayo Vallecano,41,0.48750000000000004
+Manchester City,Las Palmas,38,0.525
+Manchester City,Mallorca,40,0.5
+Manchester City,Cádiz,41,0.48750000000000004
+Manchester City,Celta Vigo,39,0.5125
+Manchester City,Alavés,50,0.375
+Manchester City,Granada,33,0.5875
+Manchester City,Almería,32,0.6
+Manchester City,Inter,40,0.5
+Manchester City,Juventus,21,0.7375
+Manchester City,Milan,39,0.5125
+Manchester City,Napoli,19,0.7625
+Manchester City,Atalanta,41,0.48750000000000004
+Manchester City,Roma,36,0.55
+Manchester City,Lazio,27,0.6625
+Manchester City,Fiorentina,18,0.775
+Manchester City,Bologna,34,0.575
+Manchester City,Torino,40,0.5
+Manchester City,Udinese,28,0.65
+Manchester City,Monza,36,0.55
+Manchester City,Genoa,36,0.55
+Manchester City,Lecce,24,0.7
+Manchester City,Verona,30,0.625
+Manchester City,Frosinone,25,0.6875
+Manchester City,Empoli,25,0.6875
+Manchester City,Sassuolo,39,0.5125
+Manchester City,Cagliari,43,0.4625
+Manchester City,Salernitana,34,0.575
+Manchester City,Bayern Munich,43,0.4625
+Manchester City,Dortmund,24,0.7
+Manchester City,RB Leipzig,33,0.5875
+Manchester City,Leverkusen,27,0.6625
+Manchester City,Union Berlin,22,0.725
+Manchester City,Freiburg,30,0.625
+Manchester City,Eint Frankfurt,35,0.5625
+Manchester City,Wolfsburg,39,0.5125
+Manchester City,Hoffenheim,30,0.625
+Manchester City,Gladbach,43,0.4625
+Manchester City,Stuttgart,39,0.5125
+Manchester City,Mainz 05,25,0.6875
+Manchester City,Augsburg,33,0.5875
+Manchester City,Werder Bremen,38,0.525
+Manchester City,Bochum,32,0.6
+Manchester City,Köln,18,0.775
+Manchester City,Heidenheim,49,0.38749999999999996
+Manchester City,Darmstadt 98,43,0.4625
+Manchester City,Paris S-G,46,0.42500000000000004
+Manchester City,Monaco,38,0.525
+Manchester City,Brest,41,0.48750000000000004
+Manchester City,Lille,27,0.6625
+Manchester City,Nice,42,0.475
+Manchester City,Lens,30,0.625
+Manchester City,Lyon,37,0.5375
+Manchester City,Marseille,36,0.55
+Manchester City,Rennes,36,0.55
+Manchester City,Reims,37,0.5375
+Manchester City,Toulouse,42,0.475
+Manchester City,Strasbourg,36,0.55
+Manchester City,Le Havre,34,0.575
+Manchester City,Lorient,44,0.44999999999999996
+Manchester City,Montpellier,18,0.775
+Manchester City,Metz,38,0.525
+Manchester City,Nantes,41,0.48750000000000004
+Manchester City,Clermont Foot,18,0.775
+Arsenal,Liverpool,36,0.55
+Arsenal,Aston Villa,36,0.55
+Arsenal,Tottenham,39,0.5125
+Arsenal,Chelsea,40,0.5
+Arsenal,Newcastle Utd,32,0.6
+Arsenal,Manchester Utd,48,0.4
+Arsenal,West Ham,50,0.375
+Arsenal,Crystal Palace,42,0.475
+Arsenal,Brighton,21,0.7375
+Arsenal,Bournemouth,46,0.42500000000000004
+Arsenal,Fulham,44,0.44999999999999996
+Arsenal,Wolves,37,0.5375
+Arsenal,Everton,46,0.42500000000000004
+Arsenal,Brentford,36,0.55
+Arsenal,Nott'ham Forest,34,0.575
+Arsenal,Luton Town,43,0.4625
+Arsenal,Burnley,26,0.675
+Arsenal,Sheffield Utd,33,0.5875
+Arsenal,Real Madrid,32,0.6
+Arsenal,Barcelona,48,0.4
+Arsenal,Atlético Madrid,37,0.5375
+Arsenal,Athletic Club,46,0.42500000000000004
+Arsenal,Real Sociedad,46,0.42500000000000004
+Arsenal,Betis,35,0.5625
+Arsenal,Villarreal,42,0.475
+Arsenal,Valencia,44,0.44999999999999996
+Arsenal,Sevilla,48,0.4
+Arsenal,Getafe,36,0.55
+Arsenal,Girona,31,0.6125
+Arsenal,Osasuna,43,0.4625
+Arsenal,Rayo Vallecano,40,0.5
+Arsenal,Las Palmas,41,0.48750000000000004
+Arsenal,Mallorca,42,0.475
+Arsenal,Cádiz,44,0.44999999999999996
+Arsenal,Celta Vigo,35,0.5625
+Arsenal,Alavés,37,0.5375
+Arsenal,Granada,39,0.5125
+Arsenal,Almería,40,0.5
+Arsenal,Inter,35,0.5625
+Arsenal,Juventus,21,0.7375
+Arsenal,Milan,37,0.5375
+Arsenal,Napoli,13,0.8375
+Arsenal,Atalanta,48,0.4
+Arsenal,Roma,35,0.5625
+Arsenal,Lazio,19,0.7625
+Arsenal,Fiorentina,21,0.7375
+Arsenal,Bologna,37,0.5375
+Arsenal,Torino,52,0.35
+Arsenal,Udinese,25,0.6875
+Arsenal,Monza,39,0.5125
+Arsenal,Genoa,39,0.5125
+Arsenal,Lecce,22,0.725
+Arsenal,Verona,40,0.5
+Arsenal,Frosinone,18,0.775
+Arsenal,Empoli,16,0.8
+Arsenal,Sassuolo,40,0.5
+Arsenal,Cagliari,46,0.42500000000000004
+Arsenal,Salernitana,38,0.525
+Arsenal,Bayern Munich,51,0.36250000000000004
+Arsenal,Dortmund,35,0.5625
+Arsenal,RB Leipzig,33,0.5875
+Arsenal,Leverkusen,33,0.5875
+Arsenal,Union Berlin,17,0.7875
+Arsenal,Freiburg,36,0.55
+Arsenal,Eint Frankfurt,31,0.6125
+Arsenal,Wolfsburg,42,0.475
+Arsenal,Hoffenheim,36,0.55
+Arsenal,Gladbach,34,0.575
+Arsenal,Stuttgart,36,0.55
+Arsenal,Mainz 05,19,0.7625
+Arsenal,Augsburg,32,0.6
+Arsenal,Werder Bremen,38,0.525
+Arsenal,Bochum,34,0.575
+Arsenal,Köln,15,0.8125
+Arsenal,Heidenheim,49,0.38749999999999996
+Arsenal,Darmstadt 98,49,0.38749999999999996
+Arsenal,Paris S-G,44,0.44999999999999996
+Arsenal,Monaco,38,0.525
+Arsenal,Brest,48,0.4
+Arsenal,Lille,18,0.775
+Arsenal,Nice,42,0.475
+Arsenal,Lens,36,0.55
+Arsenal,Lyon,38,0.525
+Arsenal,Marseille,36,0.55
+Arsenal,Rennes,41,0.48750000000000004
+Arsenal,Reims,35,0.5625
+Arsenal,Toulouse,45,0.4375
+Arsenal,Strasbourg,34,0.575
+Arsenal,Le Havre,36,0.55
+Arsenal,Lorient,47,0.4125
+Arsenal,Montpellier,23,0.7125
+Arsenal,Metz,36,0.55
+Arsenal,Nantes,51,0.36250000000000004
+Arsenal,Clermont Foot,18,0.775
+Liverpool,Aston Villa,8,0.9
+Liverpool,Tottenham,12,0.85
+Liverpool,Chelsea,14,0.825
+Liverpool,Newcastle Utd,10,0.875
+Liverpool,Manchester Utd,34,0.575
+Liverpool,West Ham,38,0.525
+Liverpool,Crystal Palace,36,0.55
+Liverpool,Brighton,37,0.5375
+Liverpool,Bournemouth,36,0.55
+Liverpool,Fulham,36,0.55
+Liverpool,Wolves,8,0.9
+Liverpool,Everton,34,0.575
+Liverpool,Brentford,40,0.5
+Liverpool,Nott'ham Forest,8,0.9
+Liverpool,Luton Town,32,0.6
+Liverpool,Burnley,39,0.5125
+Liverpool,Sheffield Utd,10,0.875
+Liverpool,Real Madrid,12,0.85
+Liverpool,Barcelona,34,0.575
+Liverpool,Atlético Madrid,37,0.5375
+Liverpool,Athletic Club,38,0.525
+Liverpool,Real Sociedad,34,0.575
+Liverpool,Betis,36,0.55
+Liverpool,Villarreal,13,0.8375
+Liverpool,Valencia,38,0.525
+Liverpool,Sevilla,38,0.525
+Liverpool,Getafe,4,0.95
+Liverpool,Girona,38,0.525
+Liverpool,Osasuna,36,0.55
+Liverpool,Rayo Vallecano,34,0.575
+Liverpool,Las Palmas,10,0.875
+Liverpool,Mallorca,32,0.6
+Liverpool,Cádiz,38,0.525
+Liverpool,Celta Vigo,36,0.55
+Liverpool,Alavés,34,0.575
+Liverpool,Granada,14,0.825
+Liverpool,Almería,41,0.48750000000000004
+Liverpool,Inter,13,0.8375
+Liverpool,Juventus,38,0.525
+Liverpool,Napoli,35,0.5625
+Liverpool,Atalanta,39,0.5125
+Liverpool,Roma,13,0.8375
+Liverpool,Lazio,37,0.5375
+Liverpool,Fiorentina,35,0.5625
+Liverpool,Bologna,4,0.95
+Liverpool,Torino,38,0.525
+Liverpool,Udinese,39,0.5125
+Liverpool,Monza,15,0.8125
+Liverpool,Genoa,4,0.95
+Liverpool,Lecce,38,0.525
+Liverpool,Verona,9,0.8875
+Liverpool,Frosinone,42,0.475
+Liverpool,Empoli,39,0.5125
+Liverpool,Sassuolo,48,0.4
+Liverpool,Cagliari,36,0.55
+Liverpool,Salernitana,8,0.9
+Liverpool,Bayern Munich,32,0.6
+Liverpool,Dortmund,14,0.825
+Liverpool,RB Leipzig,14,0.825
+Liverpool,Leverkusen,12,0.85
+Liverpool,Union Berlin,38,0.525
+Liverpool,Freiburg,8,0.9
+Liverpool,Eint Frankfurt,38,0.525
+Liverpool,Wolfsburg,38,0.525
+Liverpool,Hoffenheim,12,0.85
+Liverpool,Gladbach,30,0.625
+Liverpool,Stuttgart,14,0.825
+Liverpool,Mainz 05,33,0.5875
+Liverpool,Augsburg,12,0.85
+Liverpool,Werder Bremen,32,0.6
+Liverpool,Bochum,12,0.85
+Liverpool,Köln,39,0.5125
+Liverpool,Heidenheim,38,0.525
+Liverpool,Darmstadt 98,40,0.5
+Liverpool,Paris S-G,38,0.525
+Liverpool,Monaco,12,0.85
+Liverpool,Brest,34,0.575
+Liverpool,Lille,36,0.55
+Liverpool,Nice,36,0.55
+Liverpool,Lens,12,0.85
+Liverpool,Lyon,34,0.575
+Liverpool,Marseille,6,0.925
+Liverpool,Rennes,16,0.8
+Liverpool,Reims,38,0.525
+Liverpool,Toulouse,39,0.5125
+Liverpool,Strasbourg,12,0.85
+Liverpool,Le Havre,6,0.925
+Liverpool,Lorient,41,0.48750000000000004
+Liverpool,Montpellier,35,0.5625
+Liverpool,Metz,8,0.9
+Liverpool,Nantes,38,0.525
+Liverpool,Clermont Foot,39,0.5125
+Aston Villa,Tottenham,18,0.775
+Aston Villa,Chelsea,13,0.8375
+Aston Villa,Newcastle Utd,12,0.85
+Aston Villa,Manchester Utd,37,0.5375
+Aston Villa,West Ham,35,0.5625
+Aston Villa,Crystal Palace,37,0.5375
+Aston Villa,Brighton,37,0.5375
+Aston Villa,Bournemouth,37,0.5375
+Aston Villa,Fulham,36,0.55
+Aston Villa,Wolves,10,0.875
+Aston Villa,Everton,31,0.6125
+Aston Villa,Brentford,36,0.55
+Aston Villa,Nott'ham Forest,10,0.875
+Aston Villa,Luton Town,34,0.575
+Aston Villa,Burnley,38,0.525
+Aston Villa,Sheffield Utd,10,0.875
+Aston Villa,Real Madrid,12,0.85
+Aston Villa,Barcelona,36,0.55
+Aston Villa,Atlético Madrid,36,0.55
+Aston Villa,Athletic Club,39,0.5125
+Aston Villa,Real Sociedad,35,0.5625
+Aston Villa,Betis,36,0.55
+Aston Villa,Villarreal,18,0.775
+Aston Villa,Valencia,37,0.5375
+Aston Villa,Sevilla,37,0.5375
+Aston Villa,Getafe,8,0.9
+Aston Villa,Girona,36,0.55
+Aston Villa,Osasuna,37,0.5375
+Aston Villa,Rayo Vallecano,33,0.5875
+Aston Villa,Las Palmas,13,0.8375
+Aston Villa,Mallorca,37,0.5375
+Aston Villa,Cádiz,34,0.575
+Aston Villa,Celta Vigo,38,0.525
+Aston Villa,Alavés,35,0.5625
+Aston Villa,Granada,18,0.775
+Aston Villa,Almería,36,0.55
+Aston Villa,Inter,18,0.775
+Aston Villa,Juventus,37,0.5375
+Aston Villa,Milan,54,0.32499999999999996
+Aston Villa,Napoli,33,0.5875
+Aston Villa,Atalanta,38,0.525
+Aston Villa,Roma,17,0.7875
+Aston Villa,Lazio,39,0.5125
+Aston Villa,Fiorentina,34,0.575
+Aston Villa,Bologna,12,0.85
+Aston Villa,Torino,40,0.5
+Aston Villa,Udinese,37,0.5375
+Aston Villa,Monza,19,0.7625
+Aston Villa,Genoa,8,0.9
+Aston Villa,Lecce,38,0.525
+Aston Villa,Verona,10,0.875
+Aston Villa,Frosinone,40,0.5
+Aston Villa,Empoli,37,0.5375
+Aston Villa,Sassuolo,46,0.42500000000000004
+Aston Villa,Cagliari,38,0.525
+Aston Villa,Salernitana,12,0.85
+Aston Villa,Bayern Munich,37,0.5375
+Aston Villa,Dortmund,18,0.775
+Aston Villa,RB Leipzig,16,0.8
+Aston Villa,Leverkusen,14,0.825
+Aston Villa,Union Berlin,37,0.5375
+Aston Villa,Freiburg,12,0.85
+Aston Villa,Eint Frankfurt,36,0.55
+Aston Villa,Wolfsburg,39,0.5125
+Aston Villa,Hoffenheim,12,0.85
+Aston Villa,Gladbach,33,0.5875
+Aston Villa,Stuttgart,17,0.7875
+Aston Villa,Mainz 05,35,0.5625
+Aston Villa,Augsburg,16,0.8
+Aston Villa,Werder Bremen,32,0.6
+Aston Villa,Bochum,16,0.8
+Aston Villa,Köln,41,0.48750000000000004
+Aston Villa,Heidenheim,39,0.5125
+Aston Villa,Darmstadt 98,36,0.55
+Aston Villa,Paris S-G,37,0.5375
+Aston Villa,Monaco,14,0.825
+Aston Villa,Brest,35,0.5625
+Aston Villa,Lille,37,0.5375
+Aston Villa,Nice,37,0.5375
+Aston Villa,Lens,16,0.8
+Aston Villa,Lyon,36,0.55
+Aston Villa,Marseille,8,0.9
+Aston Villa,Rennes,20,0.75
+Aston Villa,Reims,37,0.5375
+Aston Villa,Toulouse,37,0.5375
+Aston Villa,Strasbourg,12,0.85
+Aston Villa,Le Havre,6,0.925
+Aston Villa,Lorient,39,0.5125
+Aston Villa,Montpellier,36,0.55
+Aston Villa,Metz,13,0.8375
+Aston Villa,Nantes,32,0.6
+Aston Villa,Clermont Foot,37,0.5375
+Tottenham,Chelsea,20,0.75
+Tottenham,Newcastle Utd,19,0.7625
+Tottenham,Manchester Utd,31,0.6125
+Tottenham,West Ham,33,0.5875
+Tottenham,Crystal Palace,30,0.625
+Tottenham,Brighton,35,0.5625
+Tottenham,Bournemouth,40,0.5
+Tottenham,Fulham,39,0.5125
+Tottenham,Wolves,20,0.75
+Tottenham,Everton,39,0.5125
+Tottenham,Brentford,36,0.55
+Tottenham,Nott'ham Forest,18,0.775
+Tottenham,Luton Town,29,0.6375
+Tottenham,Burnley,39,0.5125
+Tottenham,Sheffield Utd,20,0.75
+Tottenham,Real Madrid,22,0.725
+Tottenham,Barcelona,33,0.5875
+Tottenham,Atlético Madrid,34,0.575
+Tottenham,Athletic Club,35,0.5625
+Tottenham,Real Sociedad,32,0.6
+Tottenham,Betis,34,0.575
+Tottenham,Villarreal,22,0.725
+Tottenham,Valencia,28,0.65
+Tottenham,Sevilla,35,0.5625
+Tottenham,Getafe,14,0.825
+Tottenham,Girona,33,0.5875
+Tottenham,Osasuna,36,0.55
+Tottenham,Rayo Vallecano,30,0.625
+Tottenham,Las Palmas,20,0.75
+Tottenham,Mallorca,33,0.5875
+Tottenham,Cádiz,35,0.5625
+Tottenham,Celta Vigo,32,0.6
+Tottenham,Alavés,40,0.5
+Tottenham,Granada,19,0.7625
+Tottenham,Almería,35,0.5625
+Tottenham,Inter,23,0.7125
+Tottenham,Juventus,33,0.5875
+Tottenham,Milan,52,0.35
+Tottenham,Napoli,35,0.5625
+Tottenham,Atalanta,34,0.575
+Tottenham,Roma,20,0.75
+Tottenham,Lazio,41,0.48750000000000004
+Tottenham,Fiorentina,36,0.55
+Tottenham,Bologna,14,0.825
+Tottenham,Torino,33,0.5875
+Tottenham,Udinese,39,0.5125
+Tottenham,Monza,18,0.775
+Tottenham,Genoa,14,0.825
+Tottenham,Lecce,39,0.5125
+Tottenham,Verona,19,0.7625
+Tottenham,Frosinone,42,0.475
+Tottenham,Empoli,39,0.5125
+Tottenham,Sassuolo,50,0.375
+Tottenham,Cagliari,34,0.575
+Tottenham,Salernitana,15,0.8125
+Tottenham,Bayern Munich,33,0.5875
+Tottenham,Dortmund,16,0.8
+Tottenham,RB Leipzig,24,0.7
+Tottenham,Leverkusen,21,0.7375
+Tottenham,Union Berlin,38,0.525
+Tottenham,Freiburg,15,0.8125
+Tottenham,Eint Frankfurt,36,0.55
+Tottenham,Wolfsburg,33,0.5875
+Tottenham,Hoffenheim,20,0.75
+Tottenham,Gladbach,36,0.55
+Tottenham,Stuttgart,22,0.725
+Tottenham,Mainz 05,38,0.525
+Tottenham,Augsburg,18,0.775
+Tottenham,Werder Bremen,28,0.65
+Tottenham,Bochum,22,0.725
+Tottenham,Köln,38,0.525
+Tottenham,Heidenheim,37,0.5375
+Tottenham,Darmstadt 98,33,0.5875
+Tottenham,Paris S-G,42,0.475
+Tottenham,Monaco,21,0.7375
+Tottenham,Brest,31,0.6125
+Tottenham,Lille,42,0.475
+Tottenham,Nice,37,0.5375
+Tottenham,Lens,16,0.8
+Tottenham,Lyon,29,0.6375
+Tottenham,Marseille,14,0.825
+Tottenham,Rennes,22,0.725
+Tottenham,Reims,34,0.575
+Tottenham,Toulouse,32,0.6
+Tottenham,Strasbourg,21,0.7375
+Tottenham,Le Havre,16,0.8
+Tottenham,Lorient,40,0.5
+Tottenham,Montpellier,32,0.6
+Tottenham,Metz,12,0.85
+Tottenham,Nantes,33,0.5875
+Tottenham,Clermont Foot,41,0.48750000000000004
+Chelsea,Newcastle Utd,18,0.775
+Chelsea,Manchester Utd,38,0.525
+Chelsea,West Ham,34,0.575
+Chelsea,Crystal Palace,36,0.55
+Chelsea,Brighton,36,0.55
+Chelsea,Bournemouth,40,0.5
+Chelsea,Fulham,39,0.5125
+Chelsea,Wolves,21,0.7375
+Chelsea,Everton,29,0.6375
+Chelsea,Brentford,37,0.5375
+Chelsea,Nott'ham Forest,16,0.8
+Chelsea,Luton Town,34,0.575
+Chelsea,Burnley,40,0.5
+Chelsea,Sheffield Utd,16,0.8
+Chelsea,Real Madrid,20,0.75
+Chelsea,Barcelona,32,0.6
+Chelsea,Atlético Madrid,34,0.575
+Chelsea,Athletic Club,37,0.5375
+Chelsea,Real Sociedad,36,0.55
+Chelsea,Betis,32,0.6
+Chelsea,Villarreal,20,0.75
+Chelsea,Valencia,36,0.55
+Chelsea,Sevilla,36,0.55
+Chelsea,Getafe,14,0.825
+Chelsea,Girona,32,0.6
+Chelsea,Osasuna,36,0.55
+Chelsea,Rayo Vallecano,32,0.6
+Chelsea,Las Palmas,20,0.75
+Chelsea,Mallorca,33,0.5875
+Chelsea,Cádiz,31,0.6125
+Chelsea,Celta Vigo,36,0.55
+Chelsea,Alavés,33,0.5875
+Chelsea,Granada,16,0.8
+Chelsea,Almería,38,0.525
+Chelsea,Inter,23,0.7125
+Chelsea,Juventus,32,0.6
+Chelsea,Milan,54,0.32499999999999996
+Chelsea,Napoli,34,0.575
+Chelsea,Atalanta,40,0.5
+Chelsea,Roma,22,0.725
+Chelsea,Lazio,41,0.48750000000000004
+Chelsea,Fiorentina,36,0.55
+Chelsea,Bologna,18,0.775
+Chelsea,Torino,37,0.5375
+Chelsea,Udinese,39,0.5125
+Chelsea,Monza,25,0.6875
+Chelsea,Genoa,14,0.825
+Chelsea,Lecce,39,0.5125
+Chelsea,Verona,14,0.825
+Chelsea,Frosinone,38,0.525
+Chelsea,Empoli,42,0.475
+Chelsea,Sassuolo,45,0.4375
+Chelsea,Cagliari,36,0.55
+Chelsea,Salernitana,18,0.775
+Chelsea,Bayern Munich,33,0.5875
+Chelsea,Dortmund,23,0.7125
+Chelsea,RB Leipzig,20,0.75
+Chelsea,Leverkusen,19,0.7625
+Chelsea,Union Berlin,34,0.575
+Chelsea,Freiburg,17,0.7875
+Chelsea,Eint Frankfurt,32,0.6
+Chelsea,Wolfsburg,43,0.4625
+Chelsea,Hoffenheim,14,0.825
+Chelsea,Gladbach,33,0.5875
+Chelsea,Stuttgart,18,0.775
+Chelsea,Mainz 05,34,0.575
+Chelsea,Augsburg,20,0.75
+Chelsea,Werder Bremen,33,0.5875
+Chelsea,Bochum,12,0.85
+Chelsea,Köln,36,0.55
+Chelsea,Heidenheim,38,0.525
+Chelsea,Darmstadt 98,38,0.525
+Chelsea,Paris S-G,36,0.55
+Chelsea,Monaco,15,0.8125
+Chelsea,Brest,38,0.525
+Chelsea,Lille,36,0.55
+Chelsea,Nice,39,0.5125
+Chelsea,Lens,14,0.825
+Chelsea,Lyon,39,0.5125
+Chelsea,Marseille,17,0.7875
+Chelsea,Rennes,21,0.7375
+Chelsea,Reims,34,0.575
+Chelsea,Toulouse,36,0.55
+Chelsea,Strasbourg,18,0.775
+Chelsea,Le Havre,11,0.8625
+Chelsea,Lorient,38,0.525
+Chelsea,Montpellier,34,0.575
+Chelsea,Metz,16,0.8
+Chelsea,Nantes,34,0.575
+Chelsea,Clermont Foot,36,0.55
+Newcastle Utd,Manchester Utd,37,0.5375
+Newcastle Utd,West Ham,35,0.5625
+Newcastle Utd,Crystal Palace,39,0.5125
+Newcastle Utd,Brighton,39,0.5125
+Newcastle Utd,Bournemouth,34,0.575
+Newcastle Utd,Fulham,37,0.5375
+Newcastle Utd,Wolves,16,0.8
+Newcastle Utd,Everton,31,0.6125
+Newcastle Utd,Brentford,38,0.525
+Newcastle Utd,Nott'ham Forest,8,0.9
+Newcastle Utd,Luton Town,33,0.5875
+Newcastle Utd,Burnley,39,0.5125
+Newcastle Utd,Sheffield Utd,10,0.875
+Newcastle Utd,Real Madrid,18,0.775
+Newcastle Utd,Barcelona,35,0.5625
+Newcastle Utd,Atlético Madrid,36,0.55
+Newcastle Utd,Athletic Club,39,0.5125
+Newcastle Utd,Real Sociedad,35,0.5625
+Newcastle Utd,Betis,34,0.575
+Newcastle Utd,Villarreal,16,0.8
+Newcastle Utd,Valencia,37,0.5375
+Newcastle Utd,Sevilla,37,0.5375
+Newcastle Utd,Getafe,8,0.9
+Newcastle Utd,Girona,34,0.575
+Newcastle Utd,Osasuna,34,0.575
+Newcastle Utd,Rayo Vallecano,37,0.5375
+Newcastle Utd,Las Palmas,15,0.8125
+Newcastle Utd,Mallorca,34,0.575
+Newcastle Utd,Cádiz,35,0.5625
+Newcastle Utd,Celta Vigo,32,0.6
+Newcastle Utd,Alavés,32,0.6
+Newcastle Utd,Granada,16,0.8
+Newcastle Utd,Almería,39,0.5125
+Newcastle Utd,Inter,21,0.7375
+Newcastle Utd,Juventus,36,0.55
+Newcastle Utd,Milan,54,0.32499999999999996
+Newcastle Utd,Napoli,34,0.575
+Newcastle Utd,Atalanta,36,0.55
+Newcastle Utd,Roma,18,0.775
+Newcastle Utd,Lazio,41,0.48750000000000004
+Newcastle Utd,Fiorentina,39,0.5125
+Newcastle Utd,Bologna,14,0.825
+Newcastle Utd,Torino,38,0.525
+Newcastle Utd,Udinese,37,0.5375
+Newcastle Utd,Monza,14,0.825
+Newcastle Utd,Genoa,10,0.875
+Newcastle Utd,Lecce,38,0.525
+Newcastle Utd,Verona,15,0.8125
+Newcastle Utd,Frosinone,40,0.5
+Newcastle Utd,Empoli,37,0.5375
+Newcastle Utd,Sassuolo,48,0.4
+Newcastle Utd,Cagliari,37,0.5375
+Newcastle Utd,Salernitana,11,0.8625
+Newcastle Utd,Bayern Munich,38,0.525
+Newcastle Utd,Dortmund,18,0.775
+Newcastle Utd,RB Leipzig,20,0.75
+Newcastle Utd,Leverkusen,16,0.8
+Newcastle Utd,Union Berlin,35,0.5625
+Newcastle Utd,Freiburg,10,0.875
+Newcastle Utd,Eint Frankfurt,37,0.5375
+Newcastle Utd,Wolfsburg,42,0.475
+Newcastle Utd,Hoffenheim,18,0.775
+Newcastle Utd,Gladbach,28,0.65
+Newcastle Utd,Stuttgart,12,0.85
+Newcastle Utd,Mainz 05,32,0.6
+Newcastle Utd,Augsburg,18,0.775
+Newcastle Utd,Werder Bremen,30,0.625
+Newcastle Utd,Bochum,18,0.775
+Newcastle Utd,Köln,36,0.55
+Newcastle Utd,Heidenheim,38,0.525
+Newcastle Utd,Darmstadt 98,39,0.5125
+Newcastle Utd,Paris S-G,32,0.6
+Newcastle Utd,Monaco,14,0.825
+Newcastle Utd,Brest,39,0.5125
+Newcastle Utd,Lille,39,0.5125
+Newcastle Utd,Nice,37,0.5375
+Newcastle Utd,Lens,16,0.8
+Newcastle Utd,Lyon,35,0.5625
+Newcastle Utd,Marseille,12,0.85
+Newcastle Utd,Rennes,18,0.775
+Newcastle Utd,Reims,36,0.55
+Newcastle Utd,Toulouse,37,0.5375
+Newcastle Utd,Strasbourg,12,0.85
+Newcastle Utd,Le Havre,10,0.875
+Newcastle Utd,Lorient,36,0.55
+Newcastle Utd,Montpellier,38,0.525
+Newcastle Utd,Metz,14,0.825
+Newcastle Utd,Nantes,39,0.5125
+Newcastle Utd,Clermont Foot,37,0.5375
+Manchester Utd,West Ham,16,0.8
+Manchester Utd,Crystal Palace,20,0.75
+Manchester Utd,Brighton,49,0.38749999999999996
+Manchester Utd,Bournemouth,15,0.8125
+Manchester Utd,Fulham,22,0.725
+Manchester Utd,Wolves,30,0.625
+Manchester Utd,Everton,19,0.7625
+Manchester Utd,Brentford,32,0.6
+Manchester Utd,Nott'ham Forest,35,0.5625
+Manchester Utd,Luton Town,17,0.7875
+Manchester Utd,Burnley,42,0.475
+Manchester Utd,Sheffield Utd,34,0.575
+Manchester Utd,Real Madrid,35,0.5625
+Manchester Utd,Barcelona,14,0.825
+Manchester Utd,Atlético Madrid,35,0.5625
+Manchester Utd,Athletic Club,16,0.8
+Manchester Utd,Real Sociedad,14,0.825
+Manchester Utd,Betis,26,0.675
+Manchester Utd,Villarreal,33,0.5875
+Manchester Utd,Valencia,22,0.725
+Manchester Utd,Sevilla,12,0.85
+Manchester Utd,Getafe,37,0.5375
+Manchester Utd,Girona,34,0.575
+Manchester Utd,Osasuna,18,0.775
+Manchester Utd,Rayo Vallecano,22,0.725
+Manchester Utd,Las Palmas,32,0.6
+Manchester Utd,Mallorca,18,0.775
+Manchester Utd,Cádiz,25,0.6875
+Manchester Utd,Celta Vigo,34,0.575
+Manchester Utd,Alavés,25,0.6875
+Manchester Utd,Granada,32,0.6
+Manchester Utd,Almería,21,0.7375
+Manchester Utd,Inter,33,0.5875
+Manchester Utd,Juventus,46,0.42500000000000004
+Manchester Utd,Milan,42,0.475
+Manchester Utd,Napoli,54,0.32499999999999996
+Manchester Utd,Atalanta,10,0.875
+Manchester Utd,Roma,37,0.5375
+Manchester Utd,Lazio,42,0.475
+Manchester Utd,Fiorentina,49,0.38749999999999996
+Manchester Utd,Bologna,32,0.6
+Manchester Utd,Torino,17,0.7875
+Manchester Utd,Udinese,48,0.4
+Manchester Utd,Monza,34,0.575
+Manchester Utd,Genoa,34,0.575
+Manchester Utd,Lecce,46,0.42500000000000004
+Manchester Utd,Verona,40,0.5
+Manchester Utd,Frosinone,49,0.38749999999999996
+Manchester Utd,Empoli,53,0.3375
+Manchester Utd,Sassuolo,41,0.48750000000000004
+Manchester Utd,Cagliari,18,0.775
+Manchester Utd,Salernitana,36,0.55
+Manchester Utd,Bayern Munich,14,0.825
+Manchester Utd,Dortmund,37,0.5375
+Manchester Utd,RB Leipzig,37,0.5375
+Manchester Utd,Leverkusen,40,0.5
+Manchester Utd,Union Berlin,49,0.38749999999999996
+Manchester Utd,Freiburg,37,0.5375
+Manchester Utd,Eint Frankfurt,39,0.5125
+Manchester Utd,Wolfsburg,21,0.7375
+Manchester Utd,Hoffenheim,36,0.55
+Manchester Utd,Gladbach,28,0.65
+Manchester Utd,Stuttgart,37,0.5375
+Manchester Utd,Mainz 05,51,0.36250000000000004
+Manchester Utd,Augsburg,40,0.5
+Manchester Utd,Werder Bremen,25,0.6875
+Manchester Utd,Bochum,39,0.5125
+Manchester Utd,Köln,53,0.3375
+Manchester Utd,Heidenheim,12,0.85
+Manchester Utd,Darmstadt 98,15,0.8125
+Manchester Utd,Paris S-G,23,0.7125
+Manchester Utd,Monaco,28,0.65
+Manchester Utd,Brest,8,0.9
+Manchester Utd,Lille,47,0.4125
+Manchester Utd,Nice,17,0.7875
+Manchester Utd,Lens,36,0.55
+Manchester Utd,Lyon,18,0.775
+Manchester Utd,Marseille,32,0.6
+Manchester Utd,Rennes,30,0.625
+Manchester Utd,Reims,34,0.575
+Manchester Utd,Toulouse,20,0.75
+Manchester Utd,Strasbourg,35,0.5625
+Manchester Utd,Le Havre,35,0.5625
+Manchester Utd,Lorient,22,0.725
+Manchester Utd,Montpellier,49,0.38749999999999996
+Manchester Utd,Metz,38,0.525
+Manchester Utd,Nantes,15,0.8125
+Manchester Utd,Clermont Foot,53,0.3375
+West Ham,Crystal Palace,19,0.7625
+West Ham,Brighton,52,0.35
+West Ham,Bournemouth,11,0.8625
+West Ham,Fulham,17,0.7875
+West Ham,Wolves,37,0.5375
+West Ham,Everton,15,0.8125
+West Ham,Brentford,36,0.55
+West Ham,Nott'ham Forest,35,0.5625
+West Ham,Luton Town,12,0.85
+West Ham,Burnley,50,0.375
+West Ham,Sheffield Utd,35,0.5625
+West Ham,Real Madrid,35,0.5625
+West Ham,Barcelona,14,0.825
+West Ham,Atlético Madrid,36,0.55
+West Ham,Athletic Club,12,0.85
+West Ham,Real Sociedad,12,0.85
+West Ham,Betis,36,0.55
+West Ham,Villarreal,36,0.55
+West Ham,Valencia,14,0.825
+West Ham,Sevilla,10,0.875
+West Ham,Getafe,37,0.5375
+West Ham,Girona,36,0.55
+West Ham,Osasuna,10,0.875
+West Ham,Rayo Vallecano,17,0.7875
+West Ham,Las Palmas,35,0.5625
+West Ham,Mallorca,17,0.7875
+West Ham,Cádiz,14,0.825
+West Ham,Celta Vigo,36,0.55
+West Ham,Alavés,19,0.7625
+West Ham,Granada,35,0.5625
+West Ham,Almería,18,0.775
+West Ham,Inter,34,0.575
+West Ham,Juventus,45,0.4375
+West Ham,Milan,44,0.44999999999999996
+West Ham,Napoli,55,0.3125
+West Ham,Atalanta,11,0.8625
+West Ham,Roma,37,0.5375
+West Ham,Lazio,48,0.4
+West Ham,Fiorentina,50,0.375
+West Ham,Bologna,34,0.575
+West Ham,Torino,12,0.85
+West Ham,Udinese,48,0.4
+West Ham,Monza,32,0.6
+West Ham,Genoa,38,0.525
+West Ham,Lecce,51,0.36250000000000004
+West Ham,Verona,38,0.525
+West Ham,Frosinone,50,0.375
+West Ham,Empoli,54,0.32499999999999996
+West Ham,Sassuolo,41,0.48750000000000004
+West Ham,Cagliari,15,0.8125
+West Ham,Salernitana,36,0.55
+West Ham,Bayern Munich,17,0.7875
+West Ham,Dortmund,37,0.5375
+West Ham,RB Leipzig,39,0.5125
+West Ham,Leverkusen,38,0.525
+West Ham,Union Berlin,51,0.36250000000000004
+West Ham,Freiburg,37,0.5375
+West Ham,Eint Frankfurt,42,0.475
+West Ham,Wolfsburg,22,0.725
+West Ham,Hoffenheim,38,0.525
+West Ham,Gladbach,28,0.65
+West Ham,Stuttgart,33,0.5875
+West Ham,Mainz 05,47,0.4125
+West Ham,Augsburg,41,0.48750000000000004
+West Ham,Werder Bremen,22,0.725
+West Ham,Bochum,40,0.5
+West Ham,Köln,52,0.35
+West Ham,Heidenheim,8,0.9
+West Ham,Darmstadt 98,9,0.8875
+West Ham,Paris S-G,15,0.8125
+West Ham,Monaco,32,0.6
+West Ham,Brest,13,0.8375
+West Ham,Lille,52,0.35
+West Ham,Nice,16,0.8
+West Ham,Lens,37,0.5375
+West Ham,Lyon,23,0.7125
+West Ham,Marseille,36,0.55
+West Ham,Rennes,37,0.5375
+West Ham,Reims,36,0.55
+West Ham,Toulouse,16,0.8
+West Ham,Strasbourg,33,0.5875
+West Ham,Le Havre,35,0.5625
+West Ham,Lorient,11,0.8625
+West Ham,Montpellier,50,0.375
+West Ham,Metz,41,0.48750000000000004
+West Ham,Nantes,9,0.8875
+West Ham,Clermont Foot,55,0.3125
+Crystal Palace,Brighton,44,0.44999999999999996
+Crystal Palace,Bournemouth,18,0.775
+Crystal Palace,Fulham,26,0.675
+Crystal Palace,Wolves,30,0.625
+Crystal Palace,Everton,26,0.675
+Crystal Palace,Brentford,36,0.55
+Crystal Palace,Nott'ham Forest,38,0.525
+Crystal Palace,Luton Town,20,0.75
+Crystal Palace,Burnley,45,0.4375
+Crystal Palace,Sheffield Utd,41,0.48750000000000004
+Crystal Palace,Real Madrid,39,0.5125
+Crystal Palace,Barcelona,23,0.7125
+Crystal Palace,Atlético Madrid,39,0.5125
+Crystal Palace,Athletic Club,15,0.8125
+Crystal Palace,Real Sociedad,12,0.85
+Crystal Palace,Betis,34,0.575
+Crystal Palace,Villarreal,39,0.5125
+Crystal Palace,Valencia,13,0.8375
+Crystal Palace,Sevilla,15,0.8125
+Crystal Palace,Getafe,40,0.5
+Crystal Palace,Girona,37,0.5375
+Crystal Palace,Osasuna,18,0.775
+Crystal Palace,Rayo Vallecano,17,0.7875
+Crystal Palace,Las Palmas,35,0.5625
+Crystal Palace,Mallorca,23,0.7125
+Crystal Palace,Cádiz,28,0.65
+Crystal Palace,Celta Vigo,36,0.55
+Crystal Palace,Alavés,27,0.6625
+Crystal Palace,Granada,41,0.48750000000000004
+Crystal Palace,Almería,30,0.625
+Crystal Palace,Inter,38,0.525
+Crystal Palace,Juventus,37,0.5375
+Crystal Palace,Milan,43,0.4625
+Crystal Palace,Napoli,46,0.42500000000000004
+Crystal Palace,Atalanta,19,0.7625
+Crystal Palace,Roma,38,0.525
+Crystal Palace,Lazio,43,0.4625
+Crystal Palace,Fiorentina,46,0.42500000000000004
+Crystal Palace,Bologna,35,0.5625
+Crystal Palace,Torino,19,0.7625
+Crystal Palace,Udinese,42,0.475
+Crystal Palace,Monza,40,0.5
+Crystal Palace,Genoa,36,0.55
+Crystal Palace,Lecce,47,0.4125
+Crystal Palace,Verona,40,0.5
+Crystal Palace,Frosinone,48,0.4
+Crystal Palace,Empoli,48,0.4
+Crystal Palace,Sassuolo,40,0.5
+Crystal Palace,Cagliari,20,0.75
+Crystal Palace,Salernitana,41,0.48750000000000004
+Crystal Palace,Bayern Munich,18,0.775
+Crystal Palace,Dortmund,35,0.5625
+Crystal Palace,RB Leipzig,35,0.5625
+Crystal Palace,Leverkusen,44,0.44999999999999996
+Crystal Palace,Union Berlin,47,0.4125
+Crystal Palace,Freiburg,41,0.48750000000000004
+Crystal Palace,Eint Frankfurt,41,0.48750000000000004
+Crystal Palace,Wolfsburg,26,0.675
+Crystal Palace,Hoffenheim,33,0.5875
+Crystal Palace,Gladbach,31,0.6125
+Crystal Palace,Stuttgart,33,0.5875
+Crystal Palace,Mainz 05,42,0.475
+Crystal Palace,Augsburg,38,0.525
+Crystal Palace,Werder Bremen,20,0.75
+Crystal Palace,Bochum,38,0.525
+Crystal Palace,Köln,44,0.44999999999999996
+Crystal Palace,Heidenheim,15,0.8125
+Crystal Palace,Darmstadt 98,18,0.775
+Crystal Palace,Paris S-G,26,0.675
+Crystal Palace,Monaco,37,0.5375
+Crystal Palace,Brest,20,0.75
+Crystal Palace,Lille,41,0.48750000000000004
+Crystal Palace,Nice,16,0.8
+Crystal Palace,Lens,40,0.5
+Crystal Palace,Lyon,18,0.775
+Crystal Palace,Marseille,36,0.55
+Crystal Palace,Rennes,38,0.525
+Crystal Palace,Reims,36,0.55
+Crystal Palace,Toulouse,17,0.7875
+Crystal Palace,Strasbourg,33,0.5875
+Crystal Palace,Le Havre,37,0.5375
+Crystal Palace,Lorient,23,0.7125
+Crystal Palace,Montpellier,45,0.4375
+Crystal Palace,Metz,40,0.5
+Crystal Palace,Nantes,20,0.75
+Crystal Palace,Clermont Foot,50,0.375
+Brighton,Bournemouth,54,0.32499999999999996
+Brighton,Fulham,46,0.42500000000000004
+Brighton,Wolves,37,0.5375
+Brighton,Everton,50,0.375
+Brighton,Brentford,41,0.48750000000000004
+Brighton,Nott'ham Forest,35,0.5625
+Brighton,Luton Town,49,0.38749999999999996
+Brighton,Burnley,21,0.7375
+Brighton,Sheffield Utd,39,0.5125
+Brighton,Real Madrid,34,0.575
+Brighton,Barcelona,52,0.35
+Brighton,Atlético Madrid,38,0.525
+Brighton,Athletic Club,52,0.35
+Brighton,Real Sociedad,52,0.35
+Brighton,Betis,44,0.44999999999999996
+Brighton,Villarreal,36,0.55
+Brighton,Valencia,46,0.42500000000000004
+Brighton,Sevilla,54,0.32499999999999996
+Brighton,Getafe,34,0.575
+Brighton,Girona,39,0.5125
+Brighton,Osasuna,51,0.36250000000000004
+Brighton,Rayo Vallecano,49,0.38749999999999996
+Brighton,Las Palmas,36,0.55
+Brighton,Mallorca,48,0.4
+Brighton,Cádiz,43,0.4625
+Brighton,Celta Vigo,40,0.5
+Brighton,Alavés,48,0.4
+Brighton,Granada,36,0.55
+Brighton,Almería,42,0.475
+Brighton,Inter,39,0.5125
+Brighton,Juventus,16,0.8
+Brighton,Milan,38,0.525
+Brighton,Napoli,13,0.8375
+Brighton,Atalanta,48,0.4
+Brighton,Roma,31,0.6125
+Brighton,Lazio,22,0.725
+Brighton,Fiorentina,15,0.8125
+Brighton,Bologna,39,0.5125
+Brighton,Torino,49,0.38749999999999996
+Brighton,Udinese,15,0.8125
+Brighton,Monza,39,0.5125
+Brighton,Genoa,37,0.5375
+Brighton,Lecce,20,0.75
+Brighton,Verona,35,0.5625
+Brighton,Frosinone,15,0.8125
+Brighton,Empoli,15,0.8125
+Brighton,Sassuolo,38,0.525
+Brighton,Cagliari,50,0.375
+Brighton,Salernitana,36,0.55
+Brighton,Bayern Munich,47,0.4125
+Brighton,Dortmund,33,0.5875
+Brighton,RB Leipzig,31,0.6125
+Brighton,Leverkusen,33,0.5875
+Brighton,Union Berlin,14,0.825
+Brighton,Freiburg,34,0.575
+Brighton,Eint Frankfurt,32,0.6
+Brighton,Wolfsburg,38,0.525
+Brighton,Hoffenheim,36,0.55
+Brighton,Gladbach,40,0.5
+Brighton,Stuttgart,38,0.525
+Brighton,Mainz 05,17,0.7875
+Brighton,Augsburg,28,0.65
+Brighton,Werder Bremen,47,0.4125
+Brighton,Bochum,30,0.625
+Brighton,Köln,12,0.85
+Brighton,Heidenheim,55,0.3125
+Brighton,Darmstadt 98,51,0.36250000000000004
+Brighton,Paris S-G,54,0.32499999999999996
+Brighton,Monaco,38,0.525
+Brighton,Brest,53,0.3375
+Brighton,Lille,18,0.775
+Brighton,Nice,50,0.375
+Brighton,Lens,34,0.575
+Brighton,Lyon,41,0.48750000000000004
+Brighton,Marseille,37,0.5375
+Brighton,Rennes,37,0.5375
+Brighton,Reims,41,0.48750000000000004
+Brighton,Toulouse,47,0.4125
+Brighton,Strasbourg,36,0.55
+Brighton,Le Havre,35,0.5625
+Brighton,Lorient,53,0.3375
+Brighton,Montpellier,13,0.8375
+Brighton,Metz,32,0.6
+Brighton,Nantes,50,0.375
+Brighton,Clermont Foot,11,0.8625
+Bournemouth,Fulham,11,0.8625
+Bournemouth,Wolves,33,0.5875
+Bournemouth,Everton,14,0.825
+Bournemouth,Brentford,38,0.525
+Bournemouth,Nott'ham Forest,37,0.5375
+Bournemouth,Luton Town,14,0.825
+Bournemouth,Burnley,43,0.4625
+Bournemouth,Sheffield Utd,37,0.5375
+Bournemouth,Real Madrid,39,0.5125
+Bournemouth,Barcelona,17,0.7875
+Bournemouth,Atlético Madrid,41,0.48750000000000004
+Bournemouth,Athletic Club,11,0.8625
+Bournemouth,Real Sociedad,11,0.8625
+Bournemouth,Betis,34,0.575
+Bournemouth,Villarreal,35,0.5625
+Bournemouth,Valencia,17,0.7875
+Bournemouth,Sevilla,9,0.8875
+Bournemouth,Getafe,39,0.5125
+Bournemouth,Girona,39,0.5125
+Bournemouth,Osasuna,7,0.9125
+Bournemouth,Rayo Vallecano,19,0.7625
+Bournemouth,Las Palmas,35,0.5625
+Bournemouth,Mallorca,17,0.7875
+Bournemouth,Cádiz,20,0.75
+Bournemouth,Celta Vigo,38,0.525
+Bournemouth,Alavés,16,0.8
+Bournemouth,Granada,40,0.5
+Bournemouth,Almería,22,0.725
+Bournemouth,Inter,32,0.6
+Bournemouth,Juventus,53,0.3375
+Bournemouth,Milan,43,0.4625
+Bournemouth,Napoli,53,0.3375
+Bournemouth,Atalanta,14,0.825
+Bournemouth,Roma,39,0.5125
+Bournemouth,Lazio,45,0.4375
+Bournemouth,Fiorentina,50,0.375
+Bournemouth,Bologna,32,0.6
+Bournemouth,Torino,13,0.8375
+Bournemouth,Udinese,46,0.42500000000000004
+Bournemouth,Monza,37,0.5375
+Bournemouth,Genoa,36,0.55
+Bournemouth,Lecce,48,0.4
+Bournemouth,Verona,40,0.5
+Bournemouth,Frosinone,49,0.38749999999999996
+Bournemouth,Empoli,52,0.35
+Bournemouth,Sassuolo,37,0.5375
+Bournemouth,Cagliari,13,0.8375
+Bournemouth,Salernitana,38,0.525
+Bournemouth,Bayern Munich,13,0.8375
+Bournemouth,Dortmund,39,0.5125
+Bournemouth,RB Leipzig,39,0.5125
+Bournemouth,Leverkusen,40,0.5
+Bournemouth,Union Berlin,51,0.36250000000000004
+Bournemouth,Freiburg,40,0.5
+Bournemouth,Eint Frankfurt,44,0.44999999999999996
+Bournemouth,Wolfsburg,21,0.7375
+Bournemouth,Hoffenheim,36,0.55
+Bournemouth,Gladbach,19,0.7625
+Bournemouth,Stuttgart,35,0.5625
+Bournemouth,Mainz 05,49,0.38749999999999996
+Bournemouth,Augsburg,42,0.475
+Bournemouth,Werder Bremen,20,0.75
+Bournemouth,Bochum,41,0.48750000000000004
+Bournemouth,Köln,54,0.32499999999999996
+Bournemouth,Heidenheim,4,0.95
+Bournemouth,Darmstadt 98,10,0.875
+Bournemouth,Paris S-G,11,0.8625
+Bournemouth,Monaco,34,0.575
+Bournemouth,Brest,12,0.85
+Bournemouth,Lille,48,0.4
+Bournemouth,Nice,12,0.85
+Bournemouth,Lens,40,0.5
+Bournemouth,Lyon,22,0.725
+Bournemouth,Marseille,36,0.55
+Bournemouth,Rennes,33,0.5875
+Bournemouth,Reims,38,0.525
+Bournemouth,Toulouse,18,0.775
+Bournemouth,Strasbourg,36,0.55
+Bournemouth,Le Havre,37,0.5375
+Bournemouth,Lorient,14,0.825
+Bournemouth,Montpellier,55,0.3125
+Bournemouth,Metz,40,0.5
+Bournemouth,Nantes,12,0.85
+Bournemouth,Clermont Foot,54,0.32499999999999996
+Fulham,Wolves,33,0.5875
+Fulham,Everton,25,0.6875
+Fulham,Brentford,34,0.575
+Fulham,Nott'ham Forest,37,0.5375
+Fulham,Luton Town,15,0.8125
+Fulham,Burnley,41,0.48750000000000004
+Fulham,Sheffield Utd,37,0.5375
+Fulham,Real Madrid,36,0.55
+Fulham,Barcelona,22,0.725
+Fulham,Atlético Madrid,37,0.5375
+Fulham,Athletic Club,19,0.7625
+Fulham,Real Sociedad,19,0.7625
+Fulham,Betis,37,0.5375
+Fulham,Villarreal,35,0.5625
+Fulham,Valencia,24,0.7
+Fulham,Sevilla,19,0.7625
+Fulham,Getafe,39,0.5125
+Fulham,Girona,36,0.55
+Fulham,Osasuna,17,0.7875
+Fulham,Rayo Vallecano,26,0.675
+Fulham,Las Palmas,36,0.55
+Fulham,Mallorca,23,0.7125
+Fulham,Cádiz,26,0.675
+Fulham,Celta Vigo,36,0.55
+Fulham,Alavés,19,0.7625
+Fulham,Granada,37,0.5375
+Fulham,Almería,29,0.6375
+Fulham,Inter,33,0.5875
+Fulham,Juventus,55,0.3125
+Fulham,Milan,42,0.475
+Fulham,Napoli,49,0.38749999999999996
+Fulham,Atalanta,24,0.7
+Fulham,Roma,37,0.5375
+Fulham,Lazio,40,0.5
+Fulham,Fiorentina,45,0.4375
+Fulham,Bologna,32,0.6
+Fulham,Torino,21,0.7375
+Fulham,Udinese,39,0.5125
+Fulham,Monza,37,0.5375
+Fulham,Genoa,36,0.55
+Fulham,Lecce,43,0.4625
+Fulham,Verona,40,0.5
+Fulham,Frosinone,41,0.48750000000000004
+Fulham,Empoli,45,0.4375
+Fulham,Sassuolo,37,0.5375
+Fulham,Cagliari,19,0.7625
+Fulham,Salernitana,38,0.525
+Fulham,Bayern Munich,20,0.75
+Fulham,Dortmund,43,0.4625
+Fulham,RB Leipzig,36,0.55
+Fulham,Leverkusen,40,0.5
+Fulham,Union Berlin,42,0.475
+Fulham,Freiburg,36,0.55
+Fulham,Eint Frankfurt,37,0.5375
+Fulham,Wolfsburg,22,0.725
+Fulham,Hoffenheim,36,0.55
+Fulham,Gladbach,26,0.675
+Fulham,Stuttgart,40,0.5
+Fulham,Mainz 05,48,0.4
+Fulham,Augsburg,43,0.4625
+Fulham,Werder Bremen,24,0.7
+Fulham,Bochum,41,0.48750000000000004
+Fulham,Köln,53,0.3375
+Fulham,Heidenheim,14,0.825
+Fulham,Darmstadt 98,17,0.7875
+Fulham,Paris S-G,22,0.725
+Fulham,Monaco,34,0.575
+Fulham,Brest,19,0.7625
+Fulham,Lille,43,0.4625
+Fulham,Nice,17,0.7875
+Fulham,Lens,39,0.5125
+Fulham,Lyon,28,0.65
+Fulham,Marseille,36,0.55
+Fulham,Rennes,35,0.5625
+Fulham,Reims,38,0.525
+Fulham,Toulouse,25,0.6875
+Fulham,Strasbourg,37,0.5375
+Fulham,Le Havre,37,0.5375
+Fulham,Lorient,20,0.75
+Fulham,Montpellier,48,0.4
+Fulham,Metz,40,0.5
+Fulham,Nantes,16,0.8
+Fulham,Clermont Foot,46,0.42500000000000004
+Wolves,Everton,31,0.6125
+Wolves,Brentford,36,0.55
+Wolves,Nott'ham Forest,14,0.825
+Wolves,Luton Town,34,0.575
+Wolves,Burnley,37,0.5375
+Wolves,Sheffield Utd,14,0.825
+Wolves,Real Madrid,14,0.825
+Wolves,Barcelona,33,0.5875
+Wolves,Atlético Madrid,37,0.5375
+Wolves,Athletic Club,35,0.5625
+Wolves,Real Sociedad,31,0.6125
+Wolves,Betis,32,0.6
+Wolves,Villarreal,21,0.7375
+Wolves,Valencia,35,0.5625
+Wolves,Sevilla,35,0.5625
+Wolves,Getafe,12,0.85
+Wolves,Girona,36,0.55
+Wolves,Osasuna,33,0.5875
+Wolves,Rayo Vallecano,34,0.575
+Wolves,Las Palmas,12,0.85
+Wolves,Mallorca,34,0.575
+Wolves,Cádiz,33,0.5875
+Wolves,Celta Vigo,38,0.525
+Wolves,Alavés,33,0.5875
+Wolves,Granada,22,0.725
+Wolves,Almería,38,0.525
+Wolves,Inter,21,0.7375
+Wolves,Juventus,37,0.5375
+Wolves,Milan,54,0.32499999999999996
+Wolves,Napoli,36,0.55
+Wolves,Atalanta,34,0.575
+Wolves,Roma,21,0.7375
+Wolves,Lazio,38,0.525
+Wolves,Fiorentina,36,0.55
+Wolves,Bologna,11,0.8625
+Wolves,Torino,40,0.5
+Wolves,Udinese,40,0.5
+Wolves,Monza,22,0.725
+Wolves,Genoa,12,0.85
+Wolves,Lecce,38,0.525
+Wolves,Verona,17,0.7875
+Wolves,Frosinone,42,0.475
+Wolves,Empoli,38,0.525
+Wolves,Sassuolo,44,0.44999999999999996
+Wolves,Cagliari,36,0.55
+Wolves,Salernitana,16,0.8
+Wolves,Bayern Munich,30,0.625
+Wolves,Dortmund,18,0.775
+Wolves,RB Leipzig,16,0.8
+Wolves,Leverkusen,20,0.75
+Wolves,Union Berlin,38,0.525
+Wolves,Freiburg,16,0.8
+Wolves,Eint Frankfurt,36,0.55
+Wolves,Wolfsburg,35,0.5625
+Wolves,Hoffenheim,20,0.75
+Wolves,Gladbach,29,0.6375
+Wolves,Stuttgart,21,0.7375
+Wolves,Mainz 05,35,0.5625
+Wolves,Augsburg,20,0.75
+Wolves,Werder Bremen,31,0.6125
+Wolves,Bochum,20,0.75
+Wolves,Köln,41,0.48750000000000004
+Wolves,Heidenheim,35,0.5625
+Wolves,Darmstadt 98,37,0.5375
+Wolves,Paris S-G,37,0.5375
+Wolves,Monaco,16,0.8
+Wolves,Brest,31,0.6125
+Wolves,Lille,33,0.5875
+Wolves,Nice,33,0.5875
+Wolves,Lens,19,0.7625
+Wolves,Lyon,30,0.625
+Wolves,Marseille,8,0.9
+Wolves,Rennes,20,0.75
+Wolves,Reims,38,0.525
+Wolves,Toulouse,36,0.55
+Wolves,Strasbourg,16,0.8
+Wolves,Le Havre,10,0.875
+Wolves,Lorient,40,0.5
+Wolves,Montpellier,38,0.525
+Wolves,Metz,15,0.8125
+Wolves,Nantes,35,0.5625
+Wolves,Clermont Foot,39,0.5125
+Everton,Brentford,36,0.55
+Everton,Nott'ham Forest,31,0.6125
+Everton,Luton Town,20,0.75
+Everton,Burnley,39,0.5125
+Everton,Sheffield Utd,31,0.6125
+Everton,Real Madrid,33,0.5875
+Everton,Barcelona,19,0.7625
+Everton,Atlético Madrid,38,0.525
+Everton,Athletic Club,16,0.8
+Everton,Real Sociedad,17,0.7875
+Everton,Betis,34,0.575
+Everton,Villarreal,32,0.6
+Everton,Valencia,23,0.7125
+Everton,Sevilla,17,0.7875
+Everton,Getafe,33,0.5875
+Everton,Girona,40,0.5
+Everton,Osasuna,21,0.7375
+Everton,Rayo Vallecano,21,0.7375
+Everton,Las Palmas,29,0.6375
+Everton,Mallorca,28,0.65
+Everton,Cádiz,14,0.825
+Everton,Celta Vigo,36,0.55
+Everton,Alavés,16,0.8
+Everton,Granada,27,0.6625
+Everton,Almería,21,0.7375
+Everton,Inter,34,0.575
+Everton,Juventus,42,0.475
+Everton,Milan,46,0.42500000000000004
+Everton,Napoli,50,0.375
+Everton,Atalanta,18,0.775
+Everton,Roma,33,0.5875
+Everton,Lazio,41,0.48750000000000004
+Everton,Fiorentina,43,0.4625
+Everton,Bologna,34,0.575
+Everton,Torino,18,0.775
+Everton,Udinese,48,0.4
+Everton,Monza,31,0.6125
+Everton,Genoa,30,0.625
+Everton,Lecce,49,0.38749999999999996
+Everton,Verona,33,0.5875
+Everton,Frosinone,46,0.42500000000000004
+Everton,Empoli,52,0.35
+Everton,Sassuolo,38,0.525
+Everton,Cagliari,21,0.7375
+Everton,Salernitana,32,0.6
+Everton,Bayern Munich,24,0.7
+Everton,Dortmund,35,0.5625
+Everton,RB Leipzig,30,0.625
+Everton,Leverkusen,34,0.575
+Everton,Union Berlin,46,0.42500000000000004
+Everton,Freiburg,36,0.55
+Everton,Eint Frankfurt,38,0.525
+Everton,Wolfsburg,24,0.7
+Everton,Hoffenheim,31,0.6125
+Everton,Gladbach,20,0.75
+Everton,Stuttgart,31,0.6125
+Everton,Mainz 05,48,0.4
+Everton,Augsburg,36,0.55
+Everton,Werder Bremen,28,0.65
+Everton,Bochum,30,0.625
+Everton,Köln,47,0.4125
+Everton,Heidenheim,15,0.8125
+Everton,Darmstadt 98,16,0.8
+Everton,Paris S-G,12,0.85
+Everton,Monaco,29,0.6375
+Everton,Brest,20,0.75
+Everton,Lille,47,0.4125
+Everton,Nice,20,0.75
+Everton,Lens,31,0.6125
+Everton,Lyon,28,0.65
+Everton,Marseille,32,0.6
+Everton,Rennes,27,0.6625
+Everton,Reims,36,0.55
+Everton,Toulouse,23,0.7125
+Everton,Strasbourg,30,0.625
+Everton,Le Havre,28,0.65
+Everton,Lorient,19,0.7625
+Everton,Montpellier,45,0.4375
+Everton,Metz,38,0.525
+Everton,Nantes,16,0.8
+Everton,Clermont Foot,51,0.36250000000000004
+Brentford,Nott'ham Forest,40,0.5
+Brentford,Luton Town,38,0.525
+Brentford,Burnley,40,0.5
+Brentford,Sheffield Utd,38,0.525
+Brentford,Real Madrid,32,0.6
+Brentford,Barcelona,30,0.625
+Brentford,Atlético Madrid,6,0.925
+Brentford,Athletic Club,32,0.6
+Brentford,Real Sociedad,36,0.55
+Brentford,Betis,12,0.85
+Brentford,Villarreal,34,0.575
+Brentford,Valencia,34,0.575
+Brentford,Sevilla,34,0.575
+Brentford,Getafe,40,0.5
+Brentford,Girona,10,0.875
+Brentford,Osasuna,38,0.525
+Brentford,Rayo Vallecano,34,0.575
+Brentford,Las Palmas,38,0.525
+Brentford,Mallorca,34,0.575
+Brentford,Cádiz,36,0.55
+Brentford,Celta Vigo,8,0.9
+Brentford,Alavés,34,0.575
+Brentford,Granada,38,0.525
+Brentford,Almería,36,0.55
+Brentford,Inter,40,0.5
+Brentford,Juventus,41,0.48750000000000004
+Brentford,Milan,40,0.5
+Brentford,Napoli,41,0.48750000000000004
+Brentford,Atalanta,38,0.525
+Brentford,Roma,40,0.5
+Brentford,Lazio,40,0.5
+Brentford,Fiorentina,40,0.5
+Brentford,Bologna,40,0.5
+Brentford,Torino,40,0.5
+Brentford,Udinese,41,0.48750000000000004
+Brentford,Monza,40,0.5
+Brentford,Genoa,40,0.5
+Brentford,Lecce,41,0.48750000000000004
+Brentford,Verona,40,0.5
+Brentford,Frosinone,41,0.48750000000000004
+Brentford,Empoli,41,0.48750000000000004
+Brentford,Sassuolo,40,0.5
+Brentford,Cagliari,38,0.525
+Brentford,Salernitana,40,0.5
+Brentford,Bayern Munich,38,0.525
+Brentford,Dortmund,36,0.55
+Brentford,RB Leipzig,36,0.55
+Brentford,Leverkusen,40,0.5
+Brentford,Union Berlin,35,0.5625
+Brentford,Freiburg,36,0.55
+Brentford,Eint Frankfurt,12,0.85
+Brentford,Wolfsburg,34,0.575
+Brentford,Hoffenheim,38,0.525
+Brentford,Gladbach,38,0.525
+Brentford,Stuttgart,35,0.5625
+Brentford,Mainz 05,41,0.48750000000000004
+Brentford,Augsburg,38,0.525
+Brentford,Werder Bremen,32,0.6
+Brentford,Bochum,36,0.55
+Brentford,Köln,39,0.5125
+Brentford,Heidenheim,36,0.55
+Brentford,Darmstadt 98,36,0.55
+Brentford,Paris S-G,36,0.55
+Brentford,Monaco,36,0.55
+Brentford,Brest,38,0.525
+Brentford,Lille,39,0.5125
+Brentford,Nice,36,0.55
+Brentford,Lens,34,0.575
+Brentford,Lyon,34,0.575
+Brentford,Marseille,34,0.575
+Brentford,Rennes,34,0.575
+Brentford,Reims,6,0.925
+Brentford,Toulouse,36,0.55
+Brentford,Strasbourg,34,0.575
+Brentford,Le Havre,38,0.525
+Brentford,Lorient,32,0.6
+Brentford,Montpellier,38,0.525
+Brentford,Metz,37,0.5375
+Brentford,Nantes,38,0.525
+Brentford,Clermont Foot,39,0.5125
+Nott'ham Forest,Luton Town,33,0.5875
+Nott'ham Forest,Burnley,39,0.5125
+Nott'ham Forest,Sheffield Utd,9,0.8875
+Nott'ham Forest,Real Madrid,14,0.825
+Nott'ham Forest,Barcelona,34,0.575
+Nott'ham Forest,Atlético Madrid,38,0.525
+Nott'ham Forest,Athletic Club,41,0.48750000000000004
+Nott'ham Forest,Real Sociedad,35,0.5625
+Nott'ham Forest,Betis,36,0.55
+Nott'ham Forest,Villarreal,17,0.7875
+Nott'ham Forest,Valencia,37,0.5375
+Nott'ham Forest,Sevilla,38,0.525
+Nott'ham Forest,Getafe,4,0.95
+Nott'ham Forest,Girona,34,0.575
+Nott'ham Forest,Osasuna,34,0.575
+Nott'ham Forest,Rayo Vallecano,36,0.55
+Nott'ham Forest,Las Palmas,14,0.825
+Nott'ham Forest,Mallorca,38,0.525
+Nott'ham Forest,Cádiz,38,0.525
+Nott'ham Forest,Celta Vigo,34,0.575
+Nott'ham Forest,Alavés,35,0.5625
+Nott'ham Forest,Granada,17,0.7875
+Nott'ham Forest,Almería,39,0.5125
+Nott'ham Forest,Inter,20,0.75
+Nott'ham Forest,Juventus,37,0.5375
+Nott'ham Forest,Milan,55,0.3125
+Nott'ham Forest,Napoli,33,0.5875
+Nott'ham Forest,Atalanta,36,0.55
+Nott'ham Forest,Roma,13,0.8375
+Nott'ham Forest,Lazio,38,0.525
+Nott'ham Forest,Fiorentina,35,0.5625
+Nott'ham Forest,Bologna,12,0.85
+Nott'ham Forest,Torino,38,0.525
+Nott'ham Forest,Udinese,40,0.5
+Nott'ham Forest,Monza,16,0.8
+Nott'ham Forest,Genoa,8,0.9
+Nott'ham Forest,Lecce,39,0.5125
+Nott'ham Forest,Verona,12,0.85
+Nott'ham Forest,Frosinone,37,0.5375
+Nott'ham Forest,Empoli,37,0.5375
+Nott'ham Forest,Sassuolo,46,0.42500000000000004
+Nott'ham Forest,Cagliari,38,0.525
+Nott'ham Forest,Salernitana,9,0.8875
+Nott'ham Forest,Bayern Munich,39,0.5125
+Nott'ham Forest,Dortmund,18,0.775
+Nott'ham Forest,RB Leipzig,18,0.775
+Nott'ham Forest,Leverkusen,11,0.8625
+Nott'ham Forest,Union Berlin,35,0.5625
+Nott'ham Forest,Freiburg,10,0.875
+Nott'ham Forest,Eint Frankfurt,36,0.55
+Nott'ham Forest,Wolfsburg,39,0.5125
+Nott'ham Forest,Hoffenheim,16,0.8
+Nott'ham Forest,Gladbach,30,0.625
+Nott'ham Forest,Stuttgart,14,0.825
+Nott'ham Forest,Mainz 05,31,0.6125
+Nott'ham Forest,Augsburg,15,0.8125
+Nott'ham Forest,Werder Bremen,32,0.6
+Nott'ham Forest,Bochum,16,0.8
+Nott'ham Forest,Köln,37,0.5375
+Nott'ham Forest,Heidenheim,39,0.5125
+Nott'ham Forest,Darmstadt 98,39,0.5125
+Nott'ham Forest,Paris S-G,33,0.5875
+Nott'ham Forest,Monaco,12,0.85
+Nott'ham Forest,Brest,35,0.5625
+Nott'ham Forest,Lille,37,0.5375
+Nott'ham Forest,Nice,37,0.5375
+Nott'ham Forest,Lens,16,0.8
+Nott'ham Forest,Lyon,32,0.6
+Nott'ham Forest,Marseille,10,0.875
+Nott'ham Forest,Rennes,18,0.775
+Nott'ham Forest,Reims,36,0.55
+Nott'ham Forest,Toulouse,37,0.5375
+Nott'ham Forest,Strasbourg,14,0.825
+Nott'ham Forest,Le Havre,8,0.9
+Nott'ham Forest,Lorient,38,0.525
+Nott'ham Forest,Montpellier,35,0.5625
+Nott'ham Forest,Metz,12,0.85
+Nott'ham Forest,Nantes,35,0.5625
+Nott'ham Forest,Clermont Foot,37,0.5375
+Luton Town,Burnley,50,0.375
+Luton Town,Sheffield Utd,33,0.5875
+Luton Town,Real Madrid,36,0.55
+Luton Town,Barcelona,15,0.8125
+Luton Town,Atlético Madrid,41,0.48750000000000004
+Luton Town,Athletic Club,13,0.8375
+Luton Town,Real Sociedad,9,0.8875
+Luton Town,Betis,37,0.5375
+Luton Town,Villarreal,35,0.5625
+Luton Town,Valencia,18,0.775
+Luton Town,Sevilla,13,0.8375
+Luton Town,Getafe,35,0.5625
+Luton Town,Girona,40,0.5
+Luton Town,Osasuna,17,0.7875
+Luton Town,Rayo Vallecano,17,0.7875
+Luton Town,Las Palmas,38,0.525
+Luton Town,Mallorca,21,0.7375
+Luton Town,Cádiz,22,0.725
+Luton Town,Celta Vigo,36,0.55
+Luton Town,Alavés,20,0.75
+Luton Town,Granada,35,0.5625
+Luton Town,Almería,23,0.7125
+Luton Town,Inter,29,0.6375
+Luton Town,Juventus,44,0.44999999999999996
+Luton Town,Milan,43,0.4625
+Luton Town,Napoli,53,0.3375
+Luton Town,Atalanta,18,0.775
+Luton Town,Roma,36,0.55
+Luton Town,Lazio,40,0.5
+Luton Town,Fiorentina,51,0.36250000000000004
+Luton Town,Bologna,28,0.65
+Luton Town,Torino,18,0.775
+Luton Town,Udinese,47,0.4125
+Luton Town,Monza,30,0.625
+Luton Town,Genoa,32,0.6
+Luton Town,Lecce,49,0.38749999999999996
+Luton Town,Verona,37,0.5375
+Luton Town,Frosinone,49,0.38749999999999996
+Luton Town,Empoli,52,0.35
+Luton Town,Sassuolo,39,0.5125
+Luton Town,Cagliari,10,0.875
+Luton Town,Salernitana,34,0.575
+Luton Town,Bayern Munich,20,0.75
+Luton Town,Dortmund,39,0.5125
+Luton Town,RB Leipzig,38,0.525
+Luton Town,Leverkusen,36,0.55
+Luton Town,Union Berlin,50,0.375
+Luton Town,Freiburg,35,0.5625
+Luton Town,Eint Frankfurt,44,0.44999999999999996
+Luton Town,Wolfsburg,25,0.6875
+Luton Town,Hoffenheim,32,0.6
+Luton Town,Gladbach,26,0.675
+Luton Town,Stuttgart,37,0.5375
+Luton Town,Mainz 05,46,0.42500000000000004
+Luton Town,Augsburg,39,0.5125
+Luton Town,Werder Bremen,22,0.725
+Luton Town,Bochum,39,0.5125
+Luton Town,Köln,48,0.4
+Luton Town,Heidenheim,11,0.8625
+Luton Town,Darmstadt 98,11,0.8625
+Luton Town,Paris S-G,22,0.725
+Luton Town,Monaco,32,0.6
+Luton Town,Brest,16,0.8
+Luton Town,Lille,52,0.35
+Luton Town,Nice,17,0.7875
+Luton Town,Lens,35,0.5625
+Luton Town,Lyon,24,0.7
+Luton Town,Marseille,32,0.6
+Luton Town,Rennes,34,0.575
+Luton Town,Reims,40,0.5
+Luton Town,Toulouse,19,0.7625
+Luton Town,Strasbourg,33,0.5875
+Luton Town,Le Havre,33,0.5875
+Luton Town,Lorient,18,0.775
+Luton Town,Montpellier,46,0.42500000000000004
+Luton Town,Metz,36,0.55
+Luton Town,Nantes,13,0.8375
+Luton Town,Clermont Foot,52,0.35
+Burnley,Sheffield Utd,39,0.5125
+Burnley,Real Madrid,36,0.55
+Burnley,Barcelona,44,0.44999999999999996
+Burnley,Atlético Madrid,36,0.55
+Burnley,Athletic Club,47,0.4125
+Burnley,Real Sociedad,47,0.4125
+Burnley,Betis,38,0.525
+Burnley,Villarreal,38,0.525
+Burnley,Valencia,50,0.375
+Burnley,Sevilla,45,0.4375
+Burnley,Getafe,36,0.55
+Burnley,Girona,37,0.5375
+Burnley,Osasuna,43,0.4625
+Burnley,Rayo Vallecano,43,0.4625
+Burnley,Las Palmas,35,0.5625
+Burnley,Mallorca,40,0.5
+Burnley,Cádiz,41,0.48750000000000004
+Burnley,Celta Vigo,41,0.48750000000000004
+Burnley,Alavés,43,0.4625
+Burnley,Granada,34,0.575
+Burnley,Almería,34,0.575
+Burnley,Inter,38,0.525
+Burnley,Juventus,29,0.6375
+Burnley,Milan,37,0.5375
+Burnley,Napoli,17,0.7875
+Burnley,Atalanta,41,0.48750000000000004
+Burnley,Roma,36,0.55
+Burnley,Lazio,20,0.75
+Burnley,Fiorentina,13,0.8375
+Burnley,Bologna,41,0.48750000000000004
+Burnley,Torino,40,0.5
+Burnley,Udinese,22,0.725
+Burnley,Monza,40,0.5
+Burnley,Genoa,36,0.55
+Burnley,Lecce,18,0.775
+Burnley,Verona,34,0.575
+Burnley,Frosinone,16,0.8
+Burnley,Empoli,19,0.7625
+Burnley,Sassuolo,40,0.5
+Burnley,Cagliari,43,0.4625
+Burnley,Salernitana,38,0.525
+Burnley,Bayern Munich,39,0.5125
+Burnley,Dortmund,30,0.625
+Burnley,RB Leipzig,36,0.55
+Burnley,Leverkusen,31,0.6125
+Burnley,Union Berlin,24,0.7
+Burnley,Freiburg,36,0.55
+Burnley,Eint Frankfurt,32,0.6
+Burnley,Wolfsburg,36,0.55
+Burnley,Hoffenheim,36,0.55
+Burnley,Gladbach,36,0.55
+Burnley,Stuttgart,42,0.475
+Burnley,Mainz 05,28,0.65
+Burnley,Augsburg,36,0.55
+Burnley,Werder Bremen,41,0.48750000000000004
+Burnley,Bochum,38,0.525
+Burnley,Köln,21,0.7375
+Burnley,Heidenheim,46,0.42500000000000004
+Burnley,Darmstadt 98,43,0.4625
+Burnley,Paris S-G,40,0.5
+Burnley,Monaco,42,0.475
+Burnley,Brest,42,0.475
+Burnley,Lille,21,0.7375
+Burnley,Nice,42,0.475
+Burnley,Lens,37,0.5375
+Burnley,Lyon,40,0.5
+Burnley,Marseille,40,0.5
+Burnley,Rennes,30,0.625
+Burnley,Reims,41,0.48750000000000004
+Burnley,Toulouse,45,0.4375
+Burnley,Strasbourg,39,0.5125
+Burnley,Le Havre,38,0.525
+Burnley,Lorient,41,0.48750000000000004
+Burnley,Montpellier,18,0.775
+Burnley,Metz,41,0.48750000000000004
+Burnley,Nantes,42,0.475
+Burnley,Clermont Foot,18,0.775
+Sheffield Utd,Real Madrid,14,0.825
+Sheffield Utd,Barcelona,37,0.5375
+Sheffield Utd,Atlético Madrid,36,0.55
+Sheffield Utd,Athletic Club,39,0.5125
+Sheffield Utd,Real Sociedad,35,0.5625
+Sheffield Utd,Betis,34,0.575
+Sheffield Utd,Villarreal,16,0.8
+Sheffield Utd,Valencia,37,0.5375
+Sheffield Utd,Sevilla,40,0.5
+Sheffield Utd,Getafe,9,0.8875
+Sheffield Utd,Girona,35,0.5625
+Sheffield Utd,Osasuna,40,0.5
+Sheffield Utd,Rayo Vallecano,38,0.525
+Sheffield Utd,Las Palmas,16,0.8
+Sheffield Utd,Mallorca,32,0.6
+Sheffield Utd,Cádiz,35,0.5625
+Sheffield Utd,Celta Vigo,33,0.5875
+Sheffield Utd,Alavés,35,0.5625
+Sheffield Utd,Granada,16,0.8
+Sheffield Utd,Almería,36,0.55
+Sheffield Utd,Inter,16,0.8
+Sheffield Utd,Juventus,36,0.55
+Sheffield Utd,Milan,54,0.32499999999999996
+Sheffield Utd,Napoli,33,0.5875
+Sheffield Utd,Atalanta,36,0.55
+Sheffield Utd,Roma,19,0.7625
+Sheffield Utd,Lazio,38,0.525
+Sheffield Utd,Fiorentina,35,0.5625
+Sheffield Utd,Bologna,12,0.85
+Sheffield Utd,Torino,40,0.5
+Sheffield Utd,Udinese,37,0.5375
+Sheffield Utd,Monza,16,0.8
+Sheffield Utd,Genoa,10,0.875
+Sheffield Utd,Lecce,38,0.525
+Sheffield Utd,Verona,12,0.85
+Sheffield Utd,Frosinone,40,0.5
+Sheffield Utd,Empoli,36,0.55
+Sheffield Utd,Sassuolo,45,0.4375
+Sheffield Utd,Cagliari,41,0.48750000000000004
+Sheffield Utd,Salernitana,11,0.8625
+Sheffield Utd,Bayern Munich,35,0.5625
+Sheffield Utd,Dortmund,18,0.775
+Sheffield Utd,RB Leipzig,20,0.75
+Sheffield Utd,Leverkusen,13,0.8375
+Sheffield Utd,Union Berlin,33,0.5875
+Sheffield Utd,Freiburg,12,0.85
+Sheffield Utd,Eint Frankfurt,35,0.5625
+Sheffield Utd,Wolfsburg,39,0.5125
+Sheffield Utd,Hoffenheim,16,0.8
+Sheffield Utd,Gladbach,33,0.5875
+Sheffield Utd,Stuttgart,18,0.775
+Sheffield Utd,Mainz 05,31,0.6125
+Sheffield Utd,Augsburg,18,0.775
+Sheffield Utd,Werder Bremen,32,0.6
+Sheffield Utd,Bochum,18,0.775
+Sheffield Utd,Köln,37,0.5375
+Sheffield Utd,Heidenheim,39,0.5125
+Sheffield Utd,Darmstadt 98,39,0.5125
+Sheffield Utd,Paris S-G,33,0.5875
+Sheffield Utd,Monaco,10,0.875
+Sheffield Utd,Brest,32,0.6
+Sheffield Utd,Lille,37,0.5375
+Sheffield Utd,Nice,34,0.575
+Sheffield Utd,Lens,18,0.775
+Sheffield Utd,Lyon,41,0.48750000000000004
+Sheffield Utd,Marseille,8,0.9
+Sheffield Utd,Rennes,20,0.75
+Sheffield Utd,Reims,34,0.575
+Sheffield Utd,Toulouse,34,0.575
+Sheffield Utd,Strasbourg,16,0.8
+Sheffield Utd,Le Havre,10,0.875
+Sheffield Utd,Lorient,41,0.48750000000000004
+Sheffield Utd,Montpellier,37,0.5375
+Sheffield Utd,Metz,14,0.825
+Sheffield Utd,Nantes,35,0.5625
+Sheffield Utd,Clermont Foot,37,0.5375
+Real Madrid,Barcelona,38,0.525
+Real Madrid,Atlético Madrid,28,0.65
+Real Madrid,Athletic Club,37,0.5375
+Real Madrid,Real Sociedad,37,0.5375
+Real Madrid,Betis,32,0.6
+Real Madrid,Villarreal,18,0.775
+Real Madrid,Valencia,39,0.5125
+Real Madrid,Sevilla,41,0.48750000000000004
+Real Madrid,Getafe,12,0.85
+Real Madrid,Girona,30,0.625
+Real Madrid,Osasuna,39,0.5125
+Real Madrid,Rayo Vallecano,37,0.5375
+Real Madrid,Las Palmas,15,0.8125
+Real Madrid,Mallorca,33,0.5875
+Real Madrid,Cádiz,36,0.55
+Real Madrid,Celta Vigo,34,0.575
+Real Madrid,Alavés,35,0.5625
+Real Madrid,Granada,20,0.75
+Real Madrid,Almería,38,0.525
+Real Madrid,Inter,23,0.7125
+Real Madrid,Juventus,38,0.525
+Real Madrid,Milan,52,0.35
+Real Madrid,Napoli,34,0.575
+Real Madrid,Atalanta,37,0.5375
+Real Madrid,Roma,19,0.7625
+Real Madrid,Lazio,37,0.5375
+Real Madrid,Fiorentina,32,0.6
+Real Madrid,Bologna,14,0.825
+Real Madrid,Torino,40,0.5
+Real Madrid,Udinese,38,0.525
+Real Madrid,Monza,21,0.7375
+Real Madrid,Genoa,12,0.85
+Real Madrid,Lecce,38,0.525
+Real Madrid,Verona,15,0.8125
+Real Madrid,Frosinone,39,0.5125
+Real Madrid,Empoli,36,0.55
+Real Madrid,Sassuolo,45,0.4375
+Real Madrid,Cagliari,39,0.5125
+Real Madrid,Salernitana,16,0.8
+Real Madrid,Bayern Munich,37,0.5375
+Real Madrid,Dortmund,20,0.75
+Real Madrid,RB Leipzig,14,0.825
+Real Madrid,Leverkusen,18,0.775
+Real Madrid,Union Berlin,34,0.575
+Real Madrid,Freiburg,16,0.8
+Real Madrid,Eint Frankfurt,36,0.55
+Real Madrid,Wolfsburg,41,0.48750000000000004
+Real Madrid,Hoffenheim,18,0.775
+Real Madrid,Gladbach,33,0.5875
+Real Madrid,Stuttgart,18,0.775
+Real Madrid,Mainz 05,36,0.55
+Real Madrid,Augsburg,14,0.825
+Real Madrid,Werder Bremen,38,0.525
+Real Madrid,Bochum,18,0.775
+Real Madrid,Köln,40,0.5
+Real Madrid,Heidenheim,41,0.48750000000000004
+Real Madrid,Darmstadt 98,38,0.525
+Real Madrid,Paris S-G,35,0.5625
+Real Madrid,Monaco,14,0.825
+Real Madrid,Brest,37,0.5375
+Real Madrid,Lille,36,0.55
+Real Madrid,Nice,39,0.5125
+Real Madrid,Lens,16,0.8
+Real Madrid,Lyon,38,0.525
+Real Madrid,Marseille,12,0.85
+Real Madrid,Rennes,22,0.725
+Real Madrid,Reims,31,0.6125
+Real Madrid,Toulouse,39,0.5125
+Real Madrid,Strasbourg,16,0.8
+Real Madrid,Le Havre,12,0.85
+Real Madrid,Lorient,39,0.5125
+Real Madrid,Montpellier,36,0.55
+Real Madrid,Metz,18,0.775
+Real Madrid,Nantes,34,0.575
+Real Madrid,Clermont Foot,36,0.55
+Barcelona,Atlético Madrid,31,0.6125
+Barcelona,Athletic Club,18,0.775
+Barcelona,Real Sociedad,16,0.8
+Barcelona,Betis,24,0.7
+Barcelona,Villarreal,37,0.5375
+Barcelona,Valencia,22,0.725
+Barcelona,Sevilla,12,0.85
+Barcelona,Getafe,36,0.55
+Barcelona,Girona,31,0.6125
+Barcelona,Osasuna,13,0.8375
+Barcelona,Rayo Vallecano,22,0.725
+Barcelona,Las Palmas,36,0.55
+Barcelona,Mallorca,23,0.7125
+Barcelona,Cádiz,22,0.725
+Barcelona,Celta Vigo,28,0.65
+Barcelona,Alavés,27,0.6625
+Barcelona,Granada,33,0.5875
+Barcelona,Almería,24,0.7
+Barcelona,Inter,32,0.6
+Barcelona,Juventus,48,0.4
+Barcelona,Milan,42,0.475
+Barcelona,Napoli,53,0.3375
+Barcelona,Atalanta,21,0.7375
+Barcelona,Roma,36,0.55
+Barcelona,Lazio,44,0.44999999999999996
+Barcelona,Fiorentina,44,0.44999999999999996
+Barcelona,Bologna,30,0.625
+Barcelona,Torino,21,0.7375
+Barcelona,Udinese,47,0.4125
+Barcelona,Monza,32,0.6
+Barcelona,Genoa,38,0.525
+Barcelona,Lecce,46,0.42500000000000004
+Barcelona,Verona,37,0.5375
+Barcelona,Frosinone,48,0.4
+Barcelona,Empoli,51,0.36250000000000004
+Barcelona,Sassuolo,41,0.48750000000000004
+Barcelona,Cagliari,14,0.825
+Barcelona,Salernitana,36,0.55
+Barcelona,Bayern Munich,19,0.7625
+Barcelona,Dortmund,35,0.5625
+Barcelona,RB Leipzig,43,0.4625
+Barcelona,Leverkusen,37,0.5375
+Barcelona,Union Berlin,51,0.36250000000000004
+Barcelona,Freiburg,33,0.5875
+Barcelona,Eint Frankfurt,38,0.525
+Barcelona,Wolfsburg,22,0.725
+Barcelona,Hoffenheim,38,0.525
+Barcelona,Gladbach,29,0.6375
+Barcelona,Stuttgart,37,0.5375
+Barcelona,Mainz 05,49,0.38749999999999996
+Barcelona,Augsburg,41,0.48750000000000004
+Barcelona,Werder Bremen,24,0.7
+Barcelona,Bochum,38,0.525
+Barcelona,Köln,51,0.36250000000000004
+Barcelona,Heidenheim,14,0.825
+Barcelona,Darmstadt 98,14,0.825
+Barcelona,Paris S-G,22,0.725
+Barcelona,Monaco,30,0.625
+Barcelona,Brest,17,0.7875
+Barcelona,Lille,46,0.42500000000000004
+Barcelona,Nice,22,0.725
+Barcelona,Lens,36,0.55
+Barcelona,Lyon,24,0.7
+Barcelona,Marseille,34,0.575
+Barcelona,Rennes,31,0.6125
+Barcelona,Reims,34,0.575
+Barcelona,Toulouse,25,0.6875
+Barcelona,Strasbourg,35,0.5625
+Barcelona,Le Havre,35,0.5625
+Barcelona,Lorient,17,0.7875
+Barcelona,Montpellier,46,0.42500000000000004
+Barcelona,Metz,39,0.5125
+Barcelona,Nantes,14,0.825
+Barcelona,Clermont Foot,52,0.35
+Atlético Madrid,Athletic Club,35,0.5625
+Atlético Madrid,Real Sociedad,39,0.5125
+Atlético Madrid,Betis,15,0.8125
+Atlético Madrid,Villarreal,32,0.6
+Atlético Madrid,Valencia,40,0.5
+Atlético Madrid,Sevilla,37,0.5375
+Atlético Madrid,Getafe,36,0.55
+Atlético Madrid,Girona,10,0.875
+Atlético Madrid,Osasuna,39,0.5125
+Atlético Madrid,Rayo Vallecano,37,0.5375
+Atlético Madrid,Las Palmas,34,0.575
+Atlético Madrid,Mallorca,33,0.5875
+Atlético Madrid,Cádiz,38,0.525
+Atlético Madrid,Celta Vigo,12,0.85
+Atlético Madrid,Alavés,37,0.5375
+Atlético Madrid,Granada,34,0.575
+Atlético Madrid,Almería,38,0.525
+Atlético Madrid,Inter,37,0.5375
+Atlético Madrid,Juventus,38,0.525
+Atlético Madrid,Milan,42,0.475
+Atlético Madrid,Napoli,38,0.525
+Atlético Madrid,Atalanta,40,0.5
+Atlético Madrid,Roma,36,0.55
+Atlético Madrid,Lazio,40,0.5
+Atlético Madrid,Fiorentina,34,0.575
+Atlético Madrid,Bologna,37,0.5375
+Atlético Madrid,Torino,36,0.55
+Atlético Madrid,Udinese,38,0.525
+Atlético Madrid,Monza,36,0.55
+Atlético Madrid,Genoa,38,0.525
+Atlético Madrid,Lecce,40,0.5
+Atlético Madrid,Verona,36,0.55
+Atlético Madrid,Frosinone,38,0.525
+Atlético Madrid,Empoli,38,0.525
+Atlético Madrid,Sassuolo,42,0.475
+Atlético Madrid,Cagliari,41,0.48750000000000004
+Atlético Madrid,Salernitana,36,0.55
+Atlético Madrid,Bayern Munich,37,0.5375
+Atlético Madrid,Dortmund,32,0.6
+Atlético Madrid,RB Leipzig,34,0.575
+Atlético Madrid,Leverkusen,36,0.55
+Atlético Madrid,Union Berlin,34,0.575
+Atlético Madrid,Freiburg,32,0.6
+Atlético Madrid,Eint Frankfurt,16,0.8
+Atlético Madrid,Wolfsburg,37,0.5375
+Atlético Madrid,Hoffenheim,36,0.55
+Atlético Madrid,Gladbach,41,0.48750000000000004
+Atlético Madrid,Stuttgart,32,0.6
+Atlético Madrid,Mainz 05,38,0.525
+Atlético Madrid,Augsburg,36,0.55
+Atlético Madrid,Werder Bremen,35,0.5625
+Atlético Madrid,Bochum,34,0.575
+Atlético Madrid,Köln,36,0.55
+Atlético Madrid,Heidenheim,39,0.5125
+Atlético Madrid,Darmstadt 98,40,0.5
+Atlético Madrid,Paris S-G,36,0.55
+Atlético Madrid,Monaco,34,0.575
+Atlético Madrid,Brest,41,0.48750000000000004
+Atlético Madrid,Lille,39,0.5125
+Atlético Madrid,Nice,39,0.5125
+Atlético Madrid,Lens,30,0.625
+Atlético Madrid,Lyon,37,0.5375
+Atlético Madrid,Marseille,36,0.55
+Atlético Madrid,Rennes,32,0.6
+Atlético Madrid,Reims,10,0.875
+Atlético Madrid,Toulouse,36,0.55
+Atlético Madrid,Strasbourg,34,0.575
+Atlético Madrid,Le Havre,38,0.525
+Atlético Madrid,Lorient,32,0.6
+Atlético Madrid,Montpellier,34,0.575
+Atlético Madrid,Metz,38,0.525
+Atlético Madrid,Nantes,40,0.5
+Atlético Madrid,Clermont Foot,36,0.55
+Athletic Club,Real Sociedad,8,0.9
+Athletic Club,Betis,30,0.625
+Athletic Club,Villarreal,35,0.5625
+Athletic Club,Valencia,15,0.8125
+Athletic Club,Sevilla,10,0.875
+Athletic Club,Getafe,41,0.48750000000000004
+Athletic Club,Girona,34,0.575
+Athletic Club,Osasuna,14,0.825
+Athletic Club,Rayo Vallecano,20,0.75
+Athletic Club,Las Palmas,37,0.5375
+Athletic Club,Mallorca,19,0.7625
+Athletic Club,Cádiz,15,0.8125
+Athletic Club,Celta Vigo,34,0.575
+Athletic Club,Alavés,17,0.7875
+Athletic Club,Granada,38,0.525
+Athletic Club,Almería,20,0.75
+Athletic Club,Inter,35,0.5625
+Athletic Club,Juventus,46,0.42500000000000004
+Athletic Club,Milan,42,0.475
+Athletic Club,Napoli,54,0.32499999999999996
+Athletic Club,Atalanta,15,0.8125
+Athletic Club,Roma,42,0.475
+Athletic Club,Lazio,46,0.42500000000000004
+Athletic Club,Fiorentina,48,0.4
+Athletic Club,Bologna,34,0.575
+Athletic Club,Torino,15,0.8125
+Athletic Club,Udinese,50,0.375
+Athletic Club,Monza,36,0.55
+Athletic Club,Genoa,38,0.525
+Athletic Club,Lecce,54,0.32499999999999996
+Athletic Club,Verona,41,0.48750000000000004
+Athletic Club,Frosinone,53,0.3375
+Athletic Club,Empoli,54,0.32499999999999996
+Athletic Club,Sassuolo,38,0.525
+Athletic Club,Cagliari,17,0.7875
+Athletic Club,Salernitana,40,0.5
+Athletic Club,Bayern Munich,15,0.8125
+Athletic Club,Dortmund,43,0.4625
+Athletic Club,RB Leipzig,39,0.5125
+Athletic Club,Leverkusen,41,0.48750000000000004
+Athletic Club,Union Berlin,52,0.35
+Athletic Club,Freiburg,41,0.48750000000000004
+Athletic Club,Eint Frankfurt,41,0.48750000000000004
+Athletic Club,Wolfsburg,25,0.6875
+Athletic Club,Hoffenheim,37,0.5375
+Athletic Club,Gladbach,25,0.6875
+Athletic Club,Stuttgart,33,0.5875
+Athletic Club,Mainz 05,48,0.4
+Athletic Club,Augsburg,40,0.5
+Athletic Club,Werder Bremen,22,0.725
+Athletic Club,Bochum,42,0.475
+Athletic Club,Köln,52,0.35
+Athletic Club,Heidenheim,8,0.9
+Athletic Club,Darmstadt 98,11,0.8625
+Athletic Club,Paris S-G,15,0.8125
+Athletic Club,Monaco,38,0.525
+Athletic Club,Brest,13,0.8375
+Athletic Club,Lille,46,0.42500000000000004
+Athletic Club,Nice,12,0.85
+Athletic Club,Lens,41,0.48750000000000004
+Athletic Club,Lyon,23,0.7125
+Athletic Club,Marseille,38,0.525
+Athletic Club,Rennes,35,0.5625
+Athletic Club,Reims,32,0.6
+Athletic Club,Toulouse,16,0.8
+Athletic Club,Strasbourg,33,0.5875
+Athletic Club,Le Havre,38,0.525
+Athletic Club,Lorient,18,0.775
+Athletic Club,Montpellier,50,0.375
+Athletic Club,Metz,42,0.475
+Athletic Club,Nantes,13,0.8375
+Athletic Club,Clermont Foot,55,0.3125
+Real Sociedad,Betis,34,0.575
+Real Sociedad,Villarreal,37,0.5375
+Real Sociedad,Valencia,12,0.85
+Real Sociedad,Sevilla,10,0.875
+Real Sociedad,Getafe,37,0.5375
+Real Sociedad,Girona,38,0.525
+Real Sociedad,Osasuna,14,0.825
+Real Sociedad,Rayo Vallecano,17,0.7875
+Real Sociedad,Las Palmas,33,0.5875
+Real Sociedad,Mallorca,21,0.7375
+Real Sociedad,Cádiz,21,0.7375
+Real Sociedad,Celta Vigo,36,0.55
+Real Sociedad,Alavés,20,0.75
+Real Sociedad,Granada,37,0.5375
+Real Sociedad,Almería,23,0.7125
+Real Sociedad,Inter,29,0.6375
+Real Sociedad,Juventus,45,0.4375
+Real Sociedad,Milan,44,0.44999999999999996
+Real Sociedad,Napoli,53,0.3375
+Real Sociedad,Atalanta,15,0.8125
+Real Sociedad,Roma,39,0.5125
+Real Sociedad,Lazio,43,0.4625
+Real Sociedad,Fiorentina,48,0.4
+Real Sociedad,Bologna,30,0.625
+Real Sociedad,Torino,15,0.8125
+Real Sociedad,Udinese,47,0.4125
+Real Sociedad,Monza,32,0.6
+Real Sociedad,Genoa,34,0.575
+Real Sociedad,Lecce,52,0.35
+Real Sociedad,Verona,39,0.5125
+Real Sociedad,Frosinone,52,0.35
+Real Sociedad,Empoli,52,0.35
+Real Sociedad,Sassuolo,41,0.48750000000000004
+Real Sociedad,Cagliari,14,0.825
+Real Sociedad,Salernitana,39,0.5125
+Real Sociedad,Bayern Munich,17,0.7875
+Real Sociedad,Dortmund,40,0.5
+Real Sociedad,RB Leipzig,36,0.55
+Real Sociedad,Leverkusen,42,0.475
+Real Sociedad,Union Berlin,52,0.35
+Real Sociedad,Freiburg,37,0.5375
+Real Sociedad,Eint Frankfurt,42,0.475
+Real Sociedad,Wolfsburg,19,0.7625
+Real Sociedad,Hoffenheim,34,0.575
+Real Sociedad,Gladbach,25,0.6875
+Real Sociedad,Stuttgart,35,0.5625
+Real Sociedad,Mainz 05,49,0.38749999999999996
+Real Sociedad,Augsburg,40,0.5
+Real Sociedad,Werder Bremen,21,0.7375
+Real Sociedad,Bochum,41,0.48750000000000004
+Real Sociedad,Köln,52,0.35
+Real Sociedad,Heidenheim,8,0.9
+Real Sociedad,Darmstadt 98,11,0.8625
+Real Sociedad,Paris S-G,19,0.7625
+Real Sociedad,Monaco,38,0.525
+Real Sociedad,Brest,13,0.8375
+Real Sociedad,Lille,48,0.4
+Real Sociedad,Nice,8,0.9
+Real Sociedad,Lens,40,0.5
+Real Sociedad,Lyon,23,0.7125
+Real Sociedad,Marseille,34,0.575
+Real Sociedad,Rennes,33,0.5875
+Real Sociedad,Reims,36,0.55
+Real Sociedad,Toulouse,14,0.825
+Real Sociedad,Strasbourg,31,0.6125
+Real Sociedad,Le Havre,35,0.5625
+Real Sociedad,Lorient,18,0.775
+Real Sociedad,Montpellier,50,0.375
+Real Sociedad,Metz,38,0.525
+Real Sociedad,Nantes,13,0.8375
+Real Sociedad,Clermont Foot,54,0.32499999999999996
+Betis,Villarreal,33,0.5875
+Betis,Valencia,33,0.5875
+Betis,Sevilla,28,0.65
+Betis,Getafe,38,0.525
+Betis,Girona,14,0.825
+Betis,Osasuna,32,0.6
+Betis,Rayo Vallecano,31,0.6125
+Betis,Las Palmas,38,0.525
+Betis,Mallorca,30,0.625
+Betis,Cádiz,32,0.6
+Betis,Celta Vigo,16,0.8
+Betis,Alavés,35,0.5625
+Betis,Granada,36,0.55
+Betis,Almería,33,0.5875
+Betis,Inter,39,0.5125
+Betis,Juventus,41,0.48750000000000004
+Betis,Milan,41,0.48750000000000004
+Betis,Napoli,43,0.4625
+Betis,Atalanta,34,0.575
+Betis,Roma,39,0.5125
+Betis,Lazio,41,0.48750000000000004
+Betis,Fiorentina,41,0.48750000000000004
+Betis,Bologna,36,0.55
+Betis,Torino,37,0.5375
+Betis,Udinese,43,0.4625
+Betis,Monza,38,0.525
+Betis,Genoa,38,0.525
+Betis,Lecce,41,0.48750000000000004
+Betis,Verona,38,0.525
+Betis,Frosinone,44,0.44999999999999996
+Betis,Empoli,43,0.4625
+Betis,Sassuolo,41,0.48750000000000004
+Betis,Cagliari,34,0.575
+Betis,Salernitana,38,0.525
+Betis,Bayern Munich,30,0.625
+Betis,Dortmund,32,0.6
+Betis,RB Leipzig,39,0.5125
+Betis,Leverkusen,38,0.525
+Betis,Union Berlin,37,0.5375
+Betis,Freiburg,35,0.5625
+Betis,Eint Frankfurt,20,0.75
+Betis,Wolfsburg,31,0.6125
+Betis,Hoffenheim,38,0.525
+Betis,Gladbach,32,0.6
+Betis,Stuttgart,34,0.575
+Betis,Mainz 05,44,0.44999999999999996
+Betis,Augsburg,37,0.5375
+Betis,Werder Bremen,26,0.675
+Betis,Bochum,36,0.55
+Betis,Köln,42,0.475
+Betis,Heidenheim,30,0.625
+Betis,Darmstadt 98,34,0.575
+Betis,Paris S-G,30,0.625
+Betis,Monaco,32,0.6
+Betis,Brest,32,0.6
+Betis,Lille,36,0.55
+Betis,Nice,37,0.5375
+Betis,Lens,33,0.5875
+Betis,Lyon,28,0.65
+Betis,Marseille,36,0.55
+Betis,Rennes,32,0.6
+Betis,Reims,14,0.825
+Betis,Toulouse,34,0.575
+Betis,Strasbourg,37,0.5375
+Betis,Le Havre,38,0.525
+Betis,Lorient,33,0.5875
+Betis,Montpellier,40,0.5
+Betis,Metz,36,0.55
+Betis,Nantes,34,0.575
+Betis,Clermont Foot,42,0.475
+Villarreal,Valencia,32,0.6
+Villarreal,Sevilla,39,0.5125
+Villarreal,Getafe,13,0.8375
+Villarreal,Girona,37,0.5375
+Villarreal,Osasuna,40,0.5
+Villarreal,Rayo Vallecano,37,0.5375
+Villarreal,Las Palmas,18,0.775
+Villarreal,Mallorca,33,0.5875
+Villarreal,Cádiz,34,0.575
+Villarreal,Celta Vigo,34,0.575
+Villarreal,Alavés,33,0.5875
+Villarreal,Granada,14,0.825
+Villarreal,Almería,32,0.6
+Villarreal,Inter,20,0.75
+Villarreal,Juventus,37,0.5375
+Villarreal,Milan,52,0.35
+Villarreal,Napoli,37,0.5375
+Villarreal,Atalanta,35,0.5625
+Villarreal,Roma,21,0.7375
+Villarreal,Lazio,38,0.525
+Villarreal,Fiorentina,36,0.55
+Villarreal,Bologna,17,0.7875
+Villarreal,Torino,31,0.6125
+Villarreal,Udinese,35,0.5625
+Villarreal,Monza,19,0.7625
+Villarreal,Genoa,12,0.85
+Villarreal,Lecce,39,0.5125
+Villarreal,Verona,18,0.775
+Villarreal,Frosinone,39,0.5125
+Villarreal,Empoli,41,0.48750000000000004
+Villarreal,Sassuolo,44,0.44999999999999996
+Villarreal,Cagliari,42,0.475
+Villarreal,Salernitana,15,0.8125
+Villarreal,Bayern Munich,29,0.6375
+Villarreal,Dortmund,24,0.7
+Villarreal,RB Leipzig,20,0.75
+Villarreal,Leverkusen,21,0.7375
+Villarreal,Union Berlin,40,0.5
+Villarreal,Freiburg,16,0.8
+Villarreal,Eint Frankfurt,37,0.5375
+Villarreal,Wolfsburg,40,0.5
+Villarreal,Hoffenheim,18,0.775
+Villarreal,Gladbach,34,0.575
+Villarreal,Stuttgart,18,0.775
+Villarreal,Mainz 05,31,0.6125
+Villarreal,Augsburg,16,0.8
+Villarreal,Werder Bremen,35,0.5625
+Villarreal,Bochum,16,0.8
+Villarreal,Köln,38,0.525
+Villarreal,Heidenheim,37,0.5375
+Villarreal,Darmstadt 98,36,0.55
+Villarreal,Paris S-G,32,0.6
+Villarreal,Monaco,18,0.775
+Villarreal,Brest,35,0.5625
+Villarreal,Lille,38,0.525
+Villarreal,Nice,35,0.5625
+Villarreal,Lens,18,0.775
+Villarreal,Lyon,36,0.55
+Villarreal,Marseille,16,0.8
+Villarreal,Rennes,20,0.75
+Villarreal,Reims,36,0.55
+Villarreal,Toulouse,32,0.6
+Villarreal,Strasbourg,16,0.8
+Villarreal,Le Havre,14,0.825
+Villarreal,Lorient,36,0.55
+Villarreal,Montpellier,34,0.575
+Villarreal,Metz,16,0.8
+Villarreal,Nantes,36,0.55
+Villarreal,Clermont Foot,38,0.525
+Valencia,Sevilla,16,0.8
+Valencia,Getafe,39,0.5125
+Valencia,Girona,38,0.525
+Valencia,Osasuna,18,0.775
+Valencia,Rayo Vallecano,20,0.75
+Valencia,Las Palmas,37,0.5375
+Valencia,Mallorca,27,0.6625
+Valencia,Cádiz,22,0.725
+Valencia,Celta Vigo,34,0.575
+Valencia,Alavés,23,0.7125
+Valencia,Granada,37,0.5375
+Valencia,Almería,22,0.725
+Valencia,Inter,35,0.5625
+Valencia,Juventus,39,0.5125
+Valencia,Milan,43,0.4625
+Valencia,Napoli,48,0.4
+Valencia,Atalanta,19,0.7625
+Valencia,Roma,36,0.55
+Valencia,Lazio,44,0.44999999999999996
+Valencia,Fiorentina,43,0.4625
+Valencia,Bologna,34,0.575
+Valencia,Torino,18,0.775
+Valencia,Udinese,41,0.48750000000000004
+Valencia,Monza,34,0.575
+Valencia,Genoa,38,0.525
+Valencia,Lecce,52,0.35
+Valencia,Verona,40,0.5
+Valencia,Frosinone,47,0.4125
+Valencia,Empoli,47,0.4125
+Valencia,Sassuolo,40,0.5
+Valencia,Cagliari,23,0.7125
+Valencia,Salernitana,38,0.525
+Valencia,Bayern Munich,23,0.7125
+Valencia,Dortmund,39,0.5125
+Valencia,RB Leipzig,39,0.5125
+Valencia,Leverkusen,43,0.4625
+Valencia,Union Berlin,47,0.4125
+Valencia,Freiburg,39,0.5125
+Valencia,Eint Frankfurt,40,0.5
+Valencia,Wolfsburg,22,0.725
+Valencia,Hoffenheim,39,0.5125
+Valencia,Gladbach,29,0.6375
+Valencia,Stuttgart,35,0.5625
+Valencia,Mainz 05,44,0.44999999999999996
+Valencia,Augsburg,35,0.5625
+Valencia,Werder Bremen,20,0.75
+Valencia,Bochum,41,0.48750000000000004
+Valencia,Köln,46,0.42500000000000004
+Valencia,Heidenheim,14,0.825
+Valencia,Darmstadt 98,13,0.8375
+Valencia,Paris S-G,23,0.7125
+Valencia,Monaco,37,0.5375
+Valencia,Brest,19,0.7625
+Valencia,Lille,46,0.42500000000000004
+Valencia,Nice,16,0.8
+Valencia,Lens,40,0.5
+Valencia,Lyon,26,0.675
+Valencia,Marseille,34,0.575
+Valencia,Rennes,39,0.5125
+Valencia,Reims,34,0.575
+Valencia,Toulouse,9,0.8875
+Valencia,Strasbourg,35,0.5625
+Valencia,Le Havre,37,0.5375
+Valencia,Lorient,21,0.7375
+Valencia,Montpellier,43,0.4625
+Valencia,Metz,37,0.5375
+Valencia,Nantes,17,0.7875
+Valencia,Clermont Foot,52,0.35
+Sevilla,Getafe,40,0.5
+Sevilla,Girona,37,0.5375
+Sevilla,Osasuna,9,0.8875
+Sevilla,Rayo Vallecano,12,0.85
+Sevilla,Las Palmas,37,0.5375
+Sevilla,Mallorca,12,0.85
+Sevilla,Cádiz,19,0.7625
+Sevilla,Celta Vigo,38,0.525
+Sevilla,Alavés,21,0.7375
+Sevilla,Granada,41,0.48750000000000004
+Sevilla,Almería,18,0.775
+Sevilla,Inter,36,0.55
+Sevilla,Juventus,46,0.42500000000000004
+Sevilla,Milan,42,0.475
+Sevilla,Napoli,55,0.3125
+Sevilla,Atalanta,11,0.8625
+Sevilla,Roma,41,0.48750000000000004
+Sevilla,Lazio,45,0.4375
+Sevilla,Fiorentina,49,0.38749999999999996
+Sevilla,Bologna,34,0.575
+Sevilla,Torino,13,0.8375
+Sevilla,Udinese,54,0.32499999999999996
+Sevilla,Monza,36,0.55
+Sevilla,Genoa,38,0.525
+Sevilla,Lecce,50,0.375
+Sevilla,Verona,42,0.475
+Sevilla,Frosinone,51,0.36250000000000004
+Sevilla,Empoli,54,0.32499999999999996
+Sevilla,Sassuolo,39,0.5125
+Sevilla,Cagliari,13,0.8375
+Sevilla,Salernitana,40,0.5
+Sevilla,Bayern Munich,15,0.8125
+Sevilla,Dortmund,41,0.48750000000000004
+Sevilla,RB Leipzig,41,0.48750000000000004
+Sevilla,Leverkusen,40,0.5
+Sevilla,Union Berlin,53,0.3375
+Sevilla,Freiburg,39,0.5125
+Sevilla,Eint Frankfurt,41,0.48750000000000004
+Sevilla,Wolfsburg,23,0.7125
+Sevilla,Hoffenheim,36,0.55
+Sevilla,Gladbach,26,0.675
+Sevilla,Stuttgart,37,0.5375
+Sevilla,Mainz 05,48,0.4
+Sevilla,Augsburg,44,0.44999999999999996
+Sevilla,Werder Bremen,15,0.8125
+Sevilla,Bochum,43,0.4625
+Sevilla,Köln,53,0.3375
+Sevilla,Heidenheim,6,0.925
+Sevilla,Darmstadt 98,9,0.8875
+Sevilla,Paris S-G,17,0.7875
+Sevilla,Monaco,36,0.55
+Sevilla,Brest,8,0.9
+Sevilla,Lille,47,0.4125
+Sevilla,Nice,11,0.8625
+Sevilla,Lens,42,0.475
+Sevilla,Lyon,16,0.8
+Sevilla,Marseille,38,0.525
+Sevilla,Rennes,33,0.5875
+Sevilla,Reims,34,0.575
+Sevilla,Toulouse,14,0.825
+Sevilla,Strasbourg,37,0.5375
+Sevilla,Le Havre,39,0.5125
+Sevilla,Lorient,12,0.85
+Sevilla,Montpellier,50,0.375
+Sevilla,Metz,42,0.475
+Sevilla,Nantes,11,0.8625
+Sevilla,Clermont Foot,56,0.30000000000000004
+Getafe,Girona,36,0.55
+Getafe,Osasuna,36,0.55
+Getafe,Rayo Vallecano,38,0.525
+Getafe,Las Palmas,10,0.875
+Getafe,Mallorca,34,0.575
+Getafe,Cádiz,37,0.5375
+Getafe,Celta Vigo,36,0.55
+Getafe,Alavés,37,0.5375
+Getafe,Granada,13,0.8375
+Getafe,Almería,41,0.48750000000000004
+Getafe,Inter,16,0.8
+Getafe,Juventus,35,0.5625
+Getafe,Napoli,32,0.6
+Getafe,Atalanta,38,0.525
+Getafe,Roma,13,0.8375
+Getafe,Lazio,38,0.525
+Getafe,Fiorentina,32,0.6
+Getafe,Bologna,8,0.9
+Getafe,Torino,38,0.525
+Getafe,Udinese,39,0.5125
+Getafe,Monza,12,0.85
+Getafe,Genoa,4,0.95
+Getafe,Lecce,37,0.5375
+Getafe,Verona,9,0.8875
+Getafe,Frosinone,39,0.5125
+Getafe,Empoli,36,0.55
+Getafe,Sassuolo,48,0.4
+Getafe,Cagliari,40,0.5
+Getafe,Salernitana,5,0.9375
+Getafe,Bayern Munich,35,0.5625
+Getafe,Dortmund,14,0.825
+Getafe,RB Leipzig,14,0.825
+Getafe,Leverkusen,8,0.9
+Getafe,Union Berlin,34,0.575
+Getafe,Freiburg,6,0.925
+Getafe,Eint Frankfurt,36,0.55
+Getafe,Wolfsburg,41,0.48750000000000004
+Getafe,Hoffenheim,12,0.85
+Getafe,Gladbach,34,0.575
+Getafe,Stuttgart,14,0.825
+Getafe,Mainz 05,30,0.625
+Getafe,Augsburg,12,0.85
+Getafe,Werder Bremen,34,0.575
+Getafe,Bochum,12,0.85
+Getafe,Köln,36,0.55
+Getafe,Heidenheim,41,0.48750000000000004
+Getafe,Darmstadt 98,41,0.48750000000000004
+Getafe,Paris S-G,37,0.5375
+Getafe,Monaco,12,0.85
+Getafe,Brest,37,0.5375
+Getafe,Lille,36,0.55
+Getafe,Nice,39,0.5125
+Getafe,Lens,12,0.85
+Getafe,Lyon,34,0.575
+Getafe,Marseille,8,0.9
+Getafe,Rennes,14,0.825
+Getafe,Reims,38,0.525
+Getafe,Toulouse,39,0.5125
+Getafe,Strasbourg,12,0.85
+Getafe,Le Havre,6,0.925
+Getafe,Lorient,40,0.5
+Getafe,Montpellier,32,0.6
+Getafe,Metz,10,0.875
+Getafe,Nantes,37,0.5375
+Getafe,Clermont Foot,36,0.55
+Girona,Osasuna,32,0.6
+Girona,Rayo Vallecano,35,0.5625
+Girona,Las Palmas,36,0.55
+Girona,Mallorca,34,0.575
+Girona,Cádiz,38,0.525
+Girona,Celta Vigo,14,0.825
+Girona,Alavés,33,0.5875
+Girona,Granada,38,0.525
+Girona,Almería,40,0.5
+Girona,Inter,39,0.5125
+Girona,Juventus,37,0.5375
+Girona,Milan,41,0.48750000000000004
+Girona,Napoli,37,0.5375
+Girona,Atalanta,40,0.5
+Girona,Roma,38,0.525
+Girona,Lazio,42,0.475
+Girona,Fiorentina,37,0.5375
+Girona,Bologna,38,0.525
+Girona,Torino,42,0.475
+Girona,Udinese,40,0.5
+Girona,Monza,39,0.5125
+Girona,Genoa,40,0.5
+Girona,Lecce,37,0.5375
+Girona,Verona,38,0.525
+Girona,Frosinone,37,0.5375
+Girona,Empoli,37,0.5375
+Girona,Sassuolo,41,0.48750000000000004
+Girona,Cagliari,38,0.525
+Girona,Salernitana,38,0.525
+Girona,Bayern Munich,37,0.5375
+Girona,Dortmund,36,0.55
+Girona,RB Leipzig,36,0.55
+Girona,Leverkusen,36,0.55
+Girona,Union Berlin,31,0.6125
+Girona,Freiburg,37,0.5375
+Girona,Eint Frankfurt,14,0.825
+Girona,Wolfsburg,39,0.5125
+Girona,Hoffenheim,38,0.525
+Girona,Gladbach,36,0.55
+Girona,Stuttgart,34,0.575
+Girona,Mainz 05,39,0.5125
+Girona,Augsburg,38,0.525
+Girona,Werder Bremen,36,0.55
+Girona,Bochum,36,0.55
+Girona,Köln,39,0.5125
+Girona,Heidenheim,39,0.5125
+Girona,Darmstadt 98,38,0.525
+Girona,Paris S-G,37,0.5375
+Girona,Monaco,32,0.6
+Girona,Brest,40,0.5
+Girona,Lille,39,0.5125
+Girona,Nice,41,0.48750000000000004
+Girona,Lens,34,0.575
+Girona,Lyon,33,0.5875
+Girona,Marseille,34,0.575
+Girona,Rennes,36,0.55
+Girona,Reims,12,0.85
+Girona,Toulouse,38,0.525
+Girona,Strasbourg,35,0.5625
+Girona,Le Havre,38,0.525
+Girona,Lorient,36,0.55
+Girona,Montpellier,38,0.525
+Girona,Metz,36,0.55
+Girona,Nantes,40,0.5
+Girona,Clermont Foot,35,0.5625
+Osasuna,Rayo Vallecano,19,0.7625
+Osasuna,Las Palmas,35,0.5625
+Osasuna,Mallorca,17,0.7875
+Osasuna,Cádiz,20,0.75
+Osasuna,Celta Vigo,38,0.525
+Osasuna,Alavés,19,0.7625
+Osasuna,Granada,43,0.4625
+Osasuna,Almería,23,0.7125
+Osasuna,Inter,35,0.5625
+Osasuna,Juventus,47,0.4125
+Osasuna,Milan,43,0.4625
+Osasuna,Napoli,50,0.375
+Osasuna,Atalanta,17,0.7875
+Osasuna,Roma,39,0.5125
+Osasuna,Lazio,47,0.4125
+Osasuna,Fiorentina,46,0.42500000000000004
+Osasuna,Bologna,32,0.6
+Osasuna,Torino,17,0.7875
+Osasuna,Udinese,49,0.38749999999999996
+Osasuna,Monza,37,0.5375
+Osasuna,Genoa,40,0.5
+Osasuna,Lecce,45,0.4375
+Osasuna,Verona,40,0.5
+Osasuna,Frosinone,46,0.42500000000000004
+Osasuna,Empoli,49,0.38749999999999996
+Osasuna,Sassuolo,40,0.5
+Osasuna,Cagliari,13,0.8375
+Osasuna,Salernitana,38,0.525
+Osasuna,Bayern Munich,16,0.8
+Osasuna,Dortmund,39,0.5125
+Osasuna,RB Leipzig,43,0.4625
+Osasuna,Leverkusen,37,0.5375
+Osasuna,Union Berlin,48,0.4
+Osasuna,Freiburg,39,0.5125
+Osasuna,Eint Frankfurt,41,0.48750000000000004
+Osasuna,Wolfsburg,24,0.7
+Osasuna,Hoffenheim,40,0.5
+Osasuna,Gladbach,21,0.7375
+Osasuna,Stuttgart,35,0.5625
+Osasuna,Mainz 05,46,0.42500000000000004
+Osasuna,Augsburg,43,0.4625
+Osasuna,Werder Bremen,20,0.75
+Osasuna,Bochum,42,0.475
+Osasuna,Köln,51,0.36250000000000004
+Osasuna,Heidenheim,7,0.9125
+Osasuna,Darmstadt 98,13,0.8375
+Osasuna,Paris S-G,18,0.775
+Osasuna,Monaco,34,0.575
+Osasuna,Brest,15,0.8125
+Osasuna,Lille,45,0.4375
+Osasuna,Nice,18,0.775
+Osasuna,Lens,40,0.5
+Osasuna,Lyon,19,0.7625
+Osasuna,Marseille,36,0.55
+Osasuna,Rennes,37,0.5375
+Osasuna,Reims,38,0.525
+Osasuna,Toulouse,21,0.7375
+Osasuna,Strasbourg,35,0.5625
+Osasuna,Le Havre,37,0.5375
+Osasuna,Lorient,14,0.825
+Osasuna,Montpellier,52,0.35
+Osasuna,Metz,41,0.48750000000000004
+Osasuna,Nantes,15,0.8125
+Osasuna,Clermont Foot,51,0.36250000000000004
+Rayo Vallecano,Las Palmas,36,0.55
+Rayo Vallecano,Mallorca,21,0.7375
+Rayo Vallecano,Cádiz,27,0.6625
+Rayo Vallecano,Celta Vigo,38,0.525
+Rayo Vallecano,Alavés,22,0.725
+Rayo Vallecano,Granada,40,0.5
+Rayo Vallecano,Almería,28,0.65
+Rayo Vallecano,Inter,33,0.5875
+Rayo Vallecano,Juventus,37,0.5375
+Rayo Vallecano,Milan,44,0.44999999999999996
+Rayo Vallecano,Napoli,50,0.375
+Rayo Vallecano,Atalanta,21,0.7375
+Rayo Vallecano,Roma,37,0.5375
+Rayo Vallecano,Lazio,38,0.525
+Rayo Vallecano,Fiorentina,47,0.4125
+Rayo Vallecano,Bologna,32,0.6
+Rayo Vallecano,Torino,23,0.7125
+Rayo Vallecano,Udinese,49,0.38749999999999996
+Rayo Vallecano,Monza,35,0.5625
+Rayo Vallecano,Genoa,34,0.575
+Rayo Vallecano,Lecce,42,0.475
+Rayo Vallecano,Verona,38,0.525
+Rayo Vallecano,Frosinone,43,0.4625
+Rayo Vallecano,Empoli,49,0.38749999999999996
+Rayo Vallecano,Sassuolo,43,0.4625
+Rayo Vallecano,Cagliari,18,0.775
+Rayo Vallecano,Salernitana,39,0.5125
+Rayo Vallecano,Bayern Munich,25,0.6875
+Rayo Vallecano,Dortmund,36,0.55
+Rayo Vallecano,RB Leipzig,37,0.5375
+Rayo Vallecano,Leverkusen,41,0.48750000000000004
+Rayo Vallecano,Union Berlin,43,0.4625
+Rayo Vallecano,Freiburg,41,0.48750000000000004
+Rayo Vallecano,Eint Frankfurt,40,0.5
+Rayo Vallecano,Wolfsburg,23,0.7125
+Rayo Vallecano,Hoffenheim,34,0.575
+Rayo Vallecano,Gladbach,32,0.6
+Rayo Vallecano,Stuttgart,33,0.5875
+Rayo Vallecano,Mainz 05,43,0.4625
+Rayo Vallecano,Augsburg,37,0.5375
+Rayo Vallecano,Werder Bremen,18,0.775
+Rayo Vallecano,Bochum,39,0.5125
+Rayo Vallecano,Köln,45,0.4375
+Rayo Vallecano,Heidenheim,16,0.8
+Rayo Vallecano,Darmstadt 98,19,0.7625
+Rayo Vallecano,Paris S-G,24,0.7
+Rayo Vallecano,Monaco,35,0.5625
+Rayo Vallecano,Brest,18,0.775
+Rayo Vallecano,Lille,48,0.4
+Rayo Vallecano,Nice,18,0.775
+Rayo Vallecano,Lens,33,0.5875
+Rayo Vallecano,Lyon,22,0.725
+Rayo Vallecano,Marseille,34,0.575
+Rayo Vallecano,Rennes,34,0.575
+Rayo Vallecano,Reims,34,0.575
+Rayo Vallecano,Toulouse,21,0.7375
+Rayo Vallecano,Strasbourg,33,0.5875
+Rayo Vallecano,Le Havre,35,0.5625
+Rayo Vallecano,Lorient,18,0.775
+Rayo Vallecano,Montpellier,42,0.475
+Rayo Vallecano,Metz,36,0.55
+Rayo Vallecano,Nantes,21,0.7375
+Rayo Vallecano,Clermont Foot,50,0.375
+Las Palmas,Mallorca,33,0.5875
+Las Palmas,Cádiz,35,0.5625
+Las Palmas,Celta Vigo,36,0.55
+Las Palmas,Alavés,35,0.5625
+Las Palmas,Granada,16,0.8
+Las Palmas,Almería,40,0.5
+Las Palmas,Inter,21,0.7375
+Las Palmas,Juventus,38,0.525
+Las Palmas,Milan,56,0.30000000000000004
+Las Palmas,Napoli,39,0.5125
+Las Palmas,Atalanta,34,0.575
+Las Palmas,Roma,15,0.8125
+Las Palmas,Lazio,40,0.5
+Las Palmas,Fiorentina,31,0.6125
+Las Palmas,Bologna,14,0.825
+Las Palmas,Torino,34,0.575
+Las Palmas,Udinese,39,0.5125
+Las Palmas,Monza,18,0.775
+Las Palmas,Genoa,10,0.875
+Las Palmas,Lecce,38,0.525
+Las Palmas,Verona,15,0.8125
+Las Palmas,Frosinone,41,0.48750000000000004
+Las Palmas,Empoli,36,0.55
+Las Palmas,Sassuolo,45,0.4375
+Las Palmas,Cagliari,40,0.5
+Las Palmas,Salernitana,14,0.825
+Las Palmas,Bayern Munich,30,0.625
+Las Palmas,Dortmund,20,0.75
+Las Palmas,RB Leipzig,14,0.825
+Las Palmas,Leverkusen,18,0.775
+Las Palmas,Union Berlin,35,0.5625
+Las Palmas,Freiburg,14,0.825
+Las Palmas,Eint Frankfurt,34,0.575
+Las Palmas,Wolfsburg,34,0.575
+Las Palmas,Hoffenheim,16,0.8
+Las Palmas,Gladbach,29,0.6375
+Las Palmas,Stuttgart,19,0.7625
+Las Palmas,Mainz 05,36,0.55
+Las Palmas,Augsburg,18,0.775
+Las Palmas,Werder Bremen,39,0.5125
+Las Palmas,Bochum,16,0.8
+Las Palmas,Köln,42,0.475
+Las Palmas,Heidenheim,37,0.5375
+Las Palmas,Darmstadt 98,40,0.5
+Las Palmas,Paris S-G,33,0.5875
+Las Palmas,Monaco,18,0.775
+Las Palmas,Brest,34,0.575
+Las Palmas,Lille,35,0.5625
+Las Palmas,Nice,35,0.5625
+Las Palmas,Lens,17,0.7875
+Las Palmas,Lyon,35,0.5625
+Las Palmas,Marseille,14,0.825
+Las Palmas,Rennes,16,0.8
+Las Palmas,Reims,36,0.55
+Las Palmas,Toulouse,37,0.5375
+Las Palmas,Strasbourg,17,0.7875
+Las Palmas,Le Havre,12,0.85
+Las Palmas,Lorient,39,0.5125
+Las Palmas,Montpellier,37,0.5375
+Las Palmas,Metz,16,0.8
+Las Palmas,Nantes,37,0.5375
+Las Palmas,Clermont Foot,38,0.525
+Mallorca,Cádiz,27,0.6625
+Mallorca,Celta Vigo,35,0.5625
+Mallorca,Alavés,25,0.6875
+Mallorca,Granada,39,0.5125
+Mallorca,Almería,26,0.675
+Mallorca,Inter,30,0.625
+Mallorca,Juventus,41,0.48750000000000004
+Mallorca,Milan,45,0.4375
+Mallorca,Napoli,49,0.38749999999999996
+Mallorca,Atalanta,19,0.7625
+Mallorca,Roma,39,0.5125
+Mallorca,Lazio,39,0.5125
+Mallorca,Fiorentina,46,0.42500000000000004
+Mallorca,Bologna,30,0.625
+Mallorca,Torino,18,0.775
+Mallorca,Udinese,51,0.36250000000000004
+Mallorca,Monza,36,0.55
+Mallorca,Genoa,32,0.6
+Mallorca,Lecce,42,0.475
+Mallorca,Verona,37,0.5375
+Mallorca,Frosinone,47,0.4125
+Mallorca,Empoli,49,0.38749999999999996
+Mallorca,Sassuolo,39,0.5125
+Mallorca,Cagliari,21,0.7375
+Mallorca,Salernitana,34,0.575
+Mallorca,Bayern Munich,11,0.8625
+Mallorca,Dortmund,36,0.55
+Mallorca,RB Leipzig,33,0.5875
+Mallorca,Leverkusen,33,0.5875
+Mallorca,Union Berlin,45,0.4375
+Mallorca,Freiburg,33,0.5875
+Mallorca,Eint Frankfurt,37,0.5375
+Mallorca,Wolfsburg,34,0.575
+Mallorca,Hoffenheim,32,0.6
+Mallorca,Gladbach,32,0.6
+Mallorca,Stuttgart,36,0.55
+Mallorca,Mainz 05,40,0.5
+Mallorca,Augsburg,39,0.5125
+Mallorca,Werder Bremen,19,0.7625
+Mallorca,Bochum,37,0.5375
+Mallorca,Köln,47,0.4125
+Mallorca,Heidenheim,15,0.8125
+Mallorca,Darmstadt 98,20,0.75
+Mallorca,Paris S-G,24,0.7
+Mallorca,Monaco,30,0.625
+Mallorca,Brest,16,0.8
+Mallorca,Lille,44,0.44999999999999996
+Mallorca,Nice,19,0.7625
+Mallorca,Lens,37,0.5375
+Mallorca,Lyon,24,0.7
+Mallorca,Marseille,34,0.575
+Mallorca,Rennes,29,0.6375
+Mallorca,Reims,32,0.6
+Mallorca,Toulouse,22,0.725
+Mallorca,Strasbourg,35,0.5625
+Mallorca,Le Havre,37,0.5375
+Mallorca,Lorient,17,0.7875
+Mallorca,Montpellier,49,0.38749999999999996
+Mallorca,Metz,37,0.5375
+Mallorca,Nantes,22,0.725
+Mallorca,Clermont Foot,49,0.38749999999999996
+Cádiz,Celta Vigo,38,0.525
+Cádiz,Alavés,22,0.725
+Cádiz,Granada,32,0.6
+Cádiz,Almería,17,0.7875
+Cádiz,Inter,38,0.525
+Cádiz,Juventus,40,0.5
+Cádiz,Milan,43,0.4625
+Cádiz,Napoli,45,0.4375
+Cádiz,Atalanta,20,0.75
+Cádiz,Roma,40,0.5
+Cádiz,Lazio,46,0.42500000000000004
+Cádiz,Fiorentina,42,0.475
+Cádiz,Bologna,38,0.525
+Cádiz,Torino,21,0.7375
+Cádiz,Udinese,44,0.44999999999999996
+Cádiz,Monza,35,0.5625
+Cádiz,Genoa,37,0.5375
+Cádiz,Lecce,48,0.4
+Cádiz,Verona,35,0.5625
+Cádiz,Frosinone,47,0.4125
+Cádiz,Empoli,47,0.4125
+Cádiz,Sassuolo,39,0.5125
+Cádiz,Cagliari,24,0.7
+Cádiz,Salernitana,36,0.55
+Cádiz,Bayern Munich,23,0.7125
+Cádiz,Dortmund,37,0.5375
+Cádiz,RB Leipzig,35,0.5625
+Cádiz,Leverkusen,35,0.5625
+Cádiz,Union Berlin,42,0.475
+Cádiz,Freiburg,37,0.5375
+Cádiz,Eint Frankfurt,38,0.525
+Cádiz,Wolfsburg,26,0.675
+Cádiz,Hoffenheim,38,0.525
+Cádiz,Gladbach,26,0.675
+Cádiz,Stuttgart,33,0.5875
+Cádiz,Mainz 05,42,0.475
+Cádiz,Augsburg,34,0.575
+Cádiz,Werder Bremen,26,0.675
+Cádiz,Bochum,33,0.5875
+Cádiz,Köln,44,0.44999999999999996
+Cádiz,Heidenheim,17,0.7875
+Cádiz,Darmstadt 98,15,0.8125
+Cádiz,Paris S-G,21,0.7375
+Cádiz,Monaco,35,0.5625
+Cádiz,Brest,22,0.725
+Cádiz,Lille,40,0.5
+Cádiz,Nice,25,0.6875
+Cádiz,Lens,37,0.5375
+Cádiz,Lyon,26,0.675
+Cádiz,Marseille,36,0.55
+Cádiz,Rennes,36,0.55
+Cádiz,Reims,40,0.5
+Cádiz,Toulouse,25,0.6875
+Cádiz,Strasbourg,33,0.5875
+Cádiz,Le Havre,32,0.6
+Cádiz,Lorient,24,0.7
+Cádiz,Montpellier,42,0.475
+Cádiz,Metz,39,0.5125
+Cádiz,Nantes,15,0.8125
+Cádiz,Clermont Foot,47,0.4125
+Celta Vigo,Alavés,34,0.575
+Celta Vigo,Granada,36,0.55
+Celta Vigo,Almería,39,0.5125
+Celta Vigo,Inter,38,0.525
+Celta Vigo,Juventus,42,0.475
+Celta Vigo,Milan,41,0.48750000000000004
+Celta Vigo,Napoli,41,0.48750000000000004
+Celta Vigo,Atalanta,40,0.5
+Celta Vigo,Roma,36,0.55
+Celta Vigo,Lazio,41,0.48750000000000004
+Celta Vigo,Fiorentina,41,0.48750000000000004
+Celta Vigo,Bologna,36,0.55
+Celta Vigo,Torino,38,0.525
+Celta Vigo,Udinese,38,0.525
+Celta Vigo,Monza,36,0.55
+Celta Vigo,Genoa,36,0.55
+Celta Vigo,Lecce,42,0.475
+Celta Vigo,Verona,36,0.55
+Celta Vigo,Frosinone,41,0.48750000000000004
+Celta Vigo,Empoli,39,0.5125
+Celta Vigo,Sassuolo,41,0.48750000000000004
+Celta Vigo,Cagliari,36,0.55
+Celta Vigo,Salernitana,36,0.55
+Celta Vigo,Bayern Munich,36,0.55
+Celta Vigo,Dortmund,32,0.6
+Celta Vigo,RB Leipzig,38,0.525
+Celta Vigo,Leverkusen,37,0.5375
+Celta Vigo,Union Berlin,37,0.5375
+Celta Vigo,Freiburg,32,0.6
+Celta Vigo,Eint Frankfurt,14,0.825
+Celta Vigo,Wolfsburg,34,0.575
+Celta Vigo,Hoffenheim,38,0.525
+Celta Vigo,Gladbach,34,0.575
+Celta Vigo,Stuttgart,30,0.625
+Celta Vigo,Mainz 05,37,0.5375
+Celta Vigo,Augsburg,38,0.525
+Celta Vigo,Werder Bremen,35,0.5625
+Celta Vigo,Bochum,34,0.575
+Celta Vigo,Köln,37,0.5375
+Celta Vigo,Heidenheim,36,0.55
+Celta Vigo,Darmstadt 98,36,0.55
+Celta Vigo,Paris S-G,34,0.575
+Celta Vigo,Monaco,32,0.6
+Celta Vigo,Brest,41,0.48750000000000004
+Celta Vigo,Lille,39,0.5125
+Celta Vigo,Nice,39,0.5125
+Celta Vigo,Lens,32,0.6
+Celta Vigo,Lyon,38,0.525
+Celta Vigo,Marseille,32,0.6
+Celta Vigo,Rennes,30,0.625
+Celta Vigo,Reims,8,0.9
+Celta Vigo,Toulouse,39,0.5125
+Celta Vigo,Strasbourg,36,0.55
+Celta Vigo,Le Havre,38,0.525
+Celta Vigo,Lorient,32,0.6
+Celta Vigo,Montpellier,38,0.525
+Celta Vigo,Metz,32,0.6
+Celta Vigo,Nantes,38,0.525
+Celta Vigo,Clermont Foot,39,0.5125
+Alavés,Granada,36,0.55
+Alavés,Almería,25,0.6875
+Alavés,Inter,31,0.6125
+Alavés,Juventus,40,0.5
+Alavés,Milan,43,0.4625
+Alavés,Napoli,45,0.4375
+Alavés,Atalanta,23,0.7125
+Alavés,Roma,33,0.5875
+Alavés,Lazio,36,0.55
+Alavés,Fiorentina,44,0.44999999999999996
+Alavés,Bologna,34,0.575
+Alavés,Torino,26,0.675
+Alavés,Udinese,44,0.44999999999999996
+Alavés,Monza,38,0.525
+Alavés,Genoa,34,0.575
+Alavés,Lecce,49,0.38749999999999996
+Alavés,Verona,38,0.525
+Alavés,Frosinone,40,0.5
+Alavés,Empoli,47,0.4125
+Alavés,Sassuolo,39,0.5125
+Alavés,Cagliari,23,0.7125
+Alavés,Salernitana,36,0.55
+Alavés,Bayern Munich,25,0.6875
+Alavés,Dortmund,41,0.48750000000000004
+Alavés,RB Leipzig,29,0.6375
+Alavés,Leverkusen,37,0.5375
+Alavés,Union Berlin,42,0.475
+Alavés,Freiburg,39,0.5125
+Alavés,Eint Frankfurt,36,0.55
+Alavés,Wolfsburg,30,0.625
+Alavés,Hoffenheim,35,0.5625
+Alavés,Gladbach,19,0.7625
+Alavés,Stuttgart,33,0.5875
+Alavés,Mainz 05,43,0.4625
+Alavés,Augsburg,37,0.5375
+Alavés,Werder Bremen,27,0.6625
+Alavés,Bochum,34,0.575
+Alavés,Köln,45,0.4375
+Alavés,Heidenheim,16,0.8
+Alavés,Darmstadt 98,22,0.725
+Alavés,Paris S-G,21,0.7375
+Alavés,Monaco,35,0.5625
+Alavés,Brest,22,0.725
+Alavés,Lille,42,0.475
+Alavés,Nice,24,0.7
+Alavés,Lens,36,0.55
+Alavés,Lyon,29,0.6375
+Alavés,Marseille,34,0.575
+Alavés,Rennes,34,0.575
+Alavés,Reims,34,0.575
+Alavés,Toulouse,24,0.7
+Alavés,Strasbourg,33,0.5875
+Alavés,Le Havre,32,0.6
+Alavés,Lorient,19,0.7625
+Alavés,Montpellier,46,0.42500000000000004
+Alavés,Metz,40,0.5
+Alavés,Nantes,24,0.7
+Alavés,Clermont Foot,46,0.42500000000000004
+Granada,Almería,36,0.55
+Granada,Inter,22,0.725
+Granada,Juventus,37,0.5375
+Granada,Milan,52,0.35
+Granada,Napoli,36,0.55
+Granada,Atalanta,36,0.55
+Granada,Roma,19,0.7625
+Granada,Lazio,35,0.5625
+Granada,Fiorentina,31,0.6125
+Granada,Bologna,18,0.775
+Granada,Torino,36,0.55
+Granada,Udinese,34,0.575
+Granada,Monza,15,0.8125
+Granada,Genoa,14,0.825
+Granada,Lecce,36,0.55
+Granada,Verona,17,0.7875
+Granada,Frosinone,36,0.55
+Granada,Empoli,40,0.5
+Granada,Sassuolo,45,0.4375
+Granada,Cagliari,42,0.475
+Granada,Salernitana,15,0.8125
+Granada,Bayern Munich,36,0.55
+Granada,Dortmund,20,0.75
+Granada,RB Leipzig,20,0.75
+Granada,Leverkusen,21,0.7375
+Granada,Union Berlin,36,0.55
+Granada,Freiburg,14,0.825
+Granada,Eint Frankfurt,33,0.5875
+Granada,Wolfsburg,36,0.55
+Granada,Hoffenheim,18,0.775
+Granada,Gladbach,35,0.5625
+Granada,Stuttgart,19,0.7625
+Granada,Mainz 05,36,0.55
+Granada,Augsburg,20,0.75
+Granada,Werder Bremen,38,0.525
+Granada,Bochum,14,0.825
+Granada,Köln,36,0.55
+Granada,Heidenheim,41,0.48750000000000004
+Granada,Darmstadt 98,39,0.5125
+Granada,Paris S-G,33,0.5875
+Granada,Monaco,17,0.7875
+Granada,Brest,36,0.55
+Granada,Lille,33,0.5875
+Granada,Nice,37,0.5375
+Granada,Lens,12,0.85
+Granada,Lyon,38,0.525
+Granada,Marseille,18,0.775
+Granada,Rennes,20,0.75
+Granada,Reims,38,0.525
+Granada,Toulouse,37,0.5375
+Granada,Strasbourg,19,0.7625
+Granada,Le Havre,12,0.85
+Granada,Lorient,40,0.5
+Granada,Montpellier,27,0.6625
+Granada,Metz,20,0.75
+Granada,Nantes,36,0.55
+Granada,Clermont Foot,34,0.575
+Almería,Inter,40,0.5
+Almería,Juventus,35,0.5625
+Almería,Milan,36,0.55
+Almería,Napoli,41,0.48750000000000004
+Almería,Atalanta,14,0.825
+Almería,Roma,38,0.525
+Almería,Lazio,37,0.5375
+Almería,Fiorentina,36,0.55
+Almería,Bologna,37,0.5375
+Almería,Torino,20,0.75
+Almería,Udinese,46,0.42500000000000004
+Almería,Monza,36,0.55
+Almería,Genoa,40,0.5
+Almería,Lecce,45,0.4375
+Almería,Verona,42,0.475
+Almería,Frosinone,37,0.5375
+Almería,Empoli,43,0.4625
+Almería,Sassuolo,36,0.55
+Almería,Cagliari,25,0.6875
+Almería,Salernitana,40,0.5
+Almería,Bayern Munich,28,0.65
+Almería,Dortmund,38,0.525
+Almería,RB Leipzig,40,0.5
+Almería,Leverkusen,36,0.55
+Almería,Union Berlin,45,0.4375
+Almería,Freiburg,41,0.48750000000000004
+Almería,Eint Frankfurt,39,0.5125
+Almería,Wolfsburg,30,0.625
+Almería,Hoffenheim,37,0.5375
+Almería,Gladbach,25,0.6875
+Almería,Stuttgart,37,0.5375
+Almería,Mainz 05,40,0.5
+Almería,Augsburg,43,0.4625
+Almería,Werder Bremen,23,0.7125
+Almería,Bochum,39,0.5125
+Almería,Köln,42,0.475
+Almería,Heidenheim,19,0.7625
+Almería,Darmstadt 98,13,0.8375
+Almería,Paris S-G,24,0.7
+Almería,Monaco,39,0.5125
+Almería,Brest,15,0.8125
+Almería,Lille,39,0.5125
+Almería,Nice,21,0.7375
+Almería,Lens,39,0.5125
+Almería,Lyon,22,0.725
+Almería,Marseille,38,0.525
+Almería,Rennes,34,0.575
+Almería,Reims,39,0.5125
+Almería,Toulouse,18,0.775
+Almería,Strasbourg,37,0.5375
+Almería,Le Havre,36,0.55
+Almería,Lorient,23,0.7125
+Almería,Montpellier,43,0.4625
+Almería,Metz,41,0.48750000000000004
+Almería,Nantes,15,0.8125
+Almería,Clermont Foot,42,0.475
+Inter,Juventus,37,0.5375
+Inter,Milan,49,0.38749999999999996
+Inter,Napoli,34,0.575
+Inter,Atalanta,38,0.525
+Inter,Roma,22,0.725
+Inter,Lazio,31,0.6125
+Inter,Fiorentina,34,0.575
+Inter,Bologna,16,0.8
+Inter,Torino,34,0.575
+Inter,Udinese,32,0.6
+Inter,Monza,22,0.725
+Inter,Genoa,17,0.7875
+Inter,Lecce,36,0.55
+Inter,Verona,16,0.8
+Inter,Frosinone,38,0.525
+Inter,Empoli,39,0.5125
+Inter,Sassuolo,47,0.4125
+Inter,Cagliari,36,0.55
+Inter,Salernitana,18,0.775
+Inter,Bayern Munich,28,0.65
+Inter,Dortmund,26,0.675
+Inter,RB Leipzig,21,0.7375
+Inter,Leverkusen,21,0.7375
+Inter,Union Berlin,39,0.5125
+Inter,Freiburg,19,0.7625
+Inter,Eint Frankfurt,38,0.525
+Inter,Wolfsburg,33,0.5875
+Inter,Hoffenheim,19,0.7625
+Inter,Gladbach,35,0.5625
+Inter,Stuttgart,25,0.6875
+Inter,Mainz 05,33,0.5875
+Inter,Augsburg,19,0.7625
+Inter,Werder Bremen,38,0.525
+Inter,Bochum,23,0.7125
+Inter,Köln,38,0.525
+Inter,Heidenheim,34,0.575
+Inter,Darmstadt 98,36,0.55
+Inter,Paris S-G,36,0.55
+Inter,Monaco,21,0.7375
+Inter,Brest,30,0.625
+Inter,Lille,35,0.5625
+Inter,Nice,31,0.6125
+Inter,Lens,22,0.725
+Inter,Lyon,38,0.525
+Inter,Marseille,19,0.7625
+Inter,Rennes,21,0.7375
+Inter,Reims,38,0.525
+Inter,Toulouse,36,0.55
+Inter,Strasbourg,21,0.7375
+Inter,Le Havre,18,0.775
+Inter,Lorient,39,0.5125
+Inter,Montpellier,35,0.5625
+Inter,Metz,19,0.7625
+Inter,Nantes,34,0.575
+Inter,Clermont Foot,40,0.5
+Juventus,Milan,40,0.5
+Juventus,Napoli,18,0.775
+Juventus,Atalanta,42,0.475
+Juventus,Roma,36,0.55
+Juventus,Lazio,25,0.6875
+Juventus,Fiorentina,24,0.7
+Juventus,Bologna,40,0.5
+Juventus,Torino,45,0.4375
+Juventus,Udinese,26,0.675
+Juventus,Monza,36,0.55
+Juventus,Genoa,38,0.525
+Juventus,Lecce,24,0.7
+Juventus,Verona,37,0.5375
+Juventus,Frosinone,20,0.75
+Juventus,Empoli,23,0.7125
+Juventus,Sassuolo,39,0.5125
+Juventus,Cagliari,46,0.42500000000000004
+Juventus,Salernitana,37,0.5375
+Juventus,Bayern Munich,46,0.42500000000000004
+Juventus,Dortmund,34,0.575
+Juventus,RB Leipzig,31,0.6125
+Juventus,Leverkusen,34,0.575
+Juventus,Union Berlin,19,0.7625
+Juventus,Freiburg,40,0.5
+Juventus,Eint Frankfurt,33,0.5875
+Juventus,Wolfsburg,43,0.4625
+Juventus,Hoffenheim,35,0.5625
+Juventus,Gladbach,39,0.5125
+Juventus,Stuttgart,36,0.55
+Juventus,Mainz 05,19,0.7625
+Juventus,Augsburg,33,0.5875
+Juventus,Werder Bremen,40,0.5
+Juventus,Bochum,31,0.6125
+Juventus,Köln,12,0.85
+Juventus,Heidenheim,50,0.375
+Juventus,Darmstadt 98,47,0.4125
+Juventus,Paris S-G,49,0.38749999999999996
+Juventus,Monaco,39,0.5125
+Juventus,Brest,46,0.42500000000000004
+Juventus,Lille,25,0.6875
+Juventus,Nice,46,0.42500000000000004
+Juventus,Lens,33,0.5875
+Juventus,Lyon,36,0.55
+Juventus,Marseille,38,0.525
+Juventus,Rennes,38,0.525
+Juventus,Reims,40,0.5
+Juventus,Toulouse,37,0.5375
+Juventus,Strasbourg,37,0.5375
+Juventus,Le Havre,36,0.55
+Juventus,Lorient,45,0.4375
+Juventus,Montpellier,19,0.7625
+Juventus,Metz,33,0.5875
+Juventus,Nantes,49,0.38749999999999996
+Juventus,Clermont Foot,19,0.7625
+Milan,Napoli,39,0.5125
+Milan,Atalanta,39,0.5125
+Milan,Roma,50,0.375
+Milan,Lazio,32,0.6
+Milan,Fiorentina,39,0.5125
+Milan,Bologna,55,0.3125
+Milan,Torino,42,0.475
+Milan,Udinese,37,0.5375
+Milan,Monza,47,0.4125
+Milan,Lecce,33,0.5875
+Milan,Verona,53,0.3375
+Milan,Frosinone,34,0.575
+Milan,Empoli,34,0.575
+Milan,Sassuolo,17,0.7875
+Milan,Cagliari,38,0.525
+Milan,Salernitana,52,0.35
+Milan,Bayern Munich,45,0.4375
+Milan,Dortmund,51,0.36250000000000004
+Milan,RB Leipzig,53,0.3375
+Milan,Leverkusen,52,0.35
+Milan,Union Berlin,40,0.5
+Milan,Freiburg,55,0.3125
+Milan,Eint Frankfurt,41,0.48750000000000004
+Milan,Wolfsburg,41,0.48750000000000004
+Milan,Hoffenheim,53,0.3375
+Milan,Gladbach,43,0.4625
+Milan,Stuttgart,52,0.35
+Milan,Mainz 05,41,0.48750000000000004
+Milan,Augsburg,53,0.3375
+Milan,Werder Bremen,44,0.44999999999999996
+Milan,Bochum,54,0.32499999999999996
+Milan,Köln,38,0.525
+Milan,Heidenheim,42,0.475
+Milan,Darmstadt 98,39,0.5125
+Milan,Paris S-G,44,0.44999999999999996
+Milan,Monaco,53,0.3375
+Milan,Brest,42,0.475
+Milan,Lille,37,0.5375
+Milan,Nice,43,0.4625
+Milan,Lens,53,0.3375
+Milan,Lyon,40,0.5
+Milan,Marseille,55,0.3125
+Milan,Rennes,50,0.375
+Milan,Reims,42,0.475
+Milan,Toulouse,43,0.4625
+Milan,Strasbourg,53,0.3375
+Milan,Le Havre,56,0.30000000000000004
+Milan,Lorient,42,0.475
+Milan,Montpellier,40,0.5
+Milan,Metz,54,0.32499999999999996
+Milan,Nantes,41,0.48750000000000004
+Milan,Clermont Foot,37,0.5375
+Napoli,Atalanta,51,0.36250000000000004
+Napoli,Roma,33,0.5875
+Napoli,Lazio,24,0.7
+Napoli,Fiorentina,15,0.8125
+Napoli,Bologna,37,0.5375
+Napoli,Torino,51,0.36250000000000004
+Napoli,Udinese,13,0.8375
+Napoli,Monza,39,0.5125
+Napoli,Genoa,35,0.5625
+Napoli,Lecce,19,0.7625
+Napoli,Verona,34,0.575
+Napoli,Frosinone,13,0.8375
+Napoli,Empoli,9,0.8875
+Napoli,Sassuolo,42,0.475
+Napoli,Cagliari,55,0.3125
+Napoli,Salernitana,34,0.575
+Napoli,Bayern Munich,51,0.36250000000000004
+Napoli,Dortmund,29,0.6375
+Napoli,RB Leipzig,31,0.6125
+Napoli,Leverkusen,27,0.6625
+Napoli,Union Berlin,16,0.8
+Napoli,Freiburg,32,0.6
+Napoli,Eint Frankfurt,34,0.575
+Napoli,Wolfsburg,46,0.42500000000000004
+Napoli,Hoffenheim,32,0.6
+Napoli,Gladbach,42,0.475
+Napoli,Stuttgart,36,0.55
+Napoli,Mainz 05,14,0.825
+Napoli,Augsburg,26,0.675
+Napoli,Werder Bremen,44,0.44999999999999996
+Napoli,Bochum,30,0.625
+Napoli,Köln,10,0.875
+Napoli,Heidenheim,56,0.30000000000000004
+Napoli,Darmstadt 98,53,0.3375
+Napoli,Paris S-G,49,0.38749999999999996
+Napoli,Monaco,38,0.525
+Napoli,Brest,51,0.36250000000000004
+Napoli,Lille,13,0.8375
+Napoli,Nice,49,0.38749999999999996
+Napoli,Lens,36,0.55
+Napoli,Lyon,44,0.44999999999999996
+Napoli,Marseille,35,0.5625
+Napoli,Rennes,38,0.525
+Napoli,Reims,39,0.5125
+Napoli,Toulouse,46,0.42500000000000004
+Napoli,Strasbourg,35,0.5625
+Napoli,Le Havre,33,0.5875
+Napoli,Lorient,49,0.38749999999999996
+Napoli,Montpellier,17,0.7875
+Napoli,Metz,30,0.625
+Napoli,Nantes,51,0.36250000000000004
+Napoli,Clermont Foot,10,0.875
+Atalanta,Roma,35,0.5625
+Atalanta,Lazio,43,0.4625
+Atalanta,Fiorentina,48,0.4
+Atalanta,Bologna,36,0.55
+Atalanta,Torino,14,0.825
+Atalanta,Udinese,47,0.4125
+Atalanta,Monza,34,0.575
+Atalanta,Genoa,35,0.5625
+Atalanta,Lecce,51,0.36250000000000004
+Atalanta,Verona,42,0.475
+Atalanta,Frosinone,47,0.4125
+Atalanta,Empoli,49,0.38749999999999996
+Atalanta,Sassuolo,39,0.5125
+Atalanta,Cagliari,20,0.75
+Atalanta,Salernitana,37,0.5375
+Atalanta,Bayern Munich,17,0.7875
+Atalanta,Dortmund,33,0.5875
+Atalanta,RB Leipzig,38,0.525
+Atalanta,Leverkusen,37,0.5375
+Atalanta,Union Berlin,49,0.38749999999999996
+Atalanta,Freiburg,38,0.525
+Atalanta,Eint Frankfurt,44,0.44999999999999996
+Atalanta,Wolfsburg,25,0.6875
+Atalanta,Hoffenheim,37,0.5375
+Atalanta,Gladbach,27,0.6625
+Atalanta,Stuttgart,34,0.575
+Atalanta,Mainz 05,44,0.44999999999999996
+Atalanta,Augsburg,41,0.48750000000000004
+Atalanta,Werder Bremen,24,0.7
+Atalanta,Bochum,40,0.5
+Atalanta,Köln,49,0.38749999999999996
+Atalanta,Heidenheim,11,0.8625
+Atalanta,Darmstadt 98,12,0.85
+Atalanta,Paris S-G,18,0.775
+Atalanta,Monaco,32,0.6
+Atalanta,Brest,10,0.875
+Atalanta,Lille,46,0.42500000000000004
+Atalanta,Nice,16,0.8
+Atalanta,Lens,39,0.5125
+Atalanta,Lyon,15,0.8125
+Atalanta,Marseille,36,0.55
+Atalanta,Rennes,29,0.6375
+Atalanta,Reims,38,0.525
+Atalanta,Toulouse,16,0.8
+Atalanta,Strasbourg,34,0.575
+Atalanta,Le Havre,36,0.55
+Atalanta,Lorient,18,0.775
+Atalanta,Montpellier,48,0.4
+Atalanta,Metz,41,0.48750000000000004
+Atalanta,Nantes,12,0.85
+Atalanta,Clermont Foot,52,0.35
+Roma,Lazio,32,0.6
+Roma,Fiorentina,29,0.6375
+Roma,Bologna,17,0.7875
+Roma,Torino,38,0.525
+Roma,Udinese,33,0.5875
+Roma,Monza,21,0.7375
+Roma,Genoa,13,0.8375
+Roma,Lecce,42,0.475
+Roma,Verona,17,0.7875
+Roma,Frosinone,33,0.5875
+Roma,Empoli,33,0.5875
+Roma,Sassuolo,45,0.4375
+Roma,Cagliari,39,0.5125
+Roma,Salernitana,11,0.8625
+Roma,Bayern Munich,38,0.525
+Roma,Dortmund,15,0.8125
+Roma,RB Leipzig,19,0.7625
+Roma,Leverkusen,13,0.8375
+Roma,Union Berlin,31,0.6125
+Roma,Freiburg,17,0.7875
+Roma,Eint Frankfurt,38,0.525
+Roma,Wolfsburg,37,0.5375
+Roma,Hoffenheim,21,0.7375
+Roma,Gladbach,31,0.6125
+Roma,Stuttgart,18,0.775
+Roma,Mainz 05,33,0.5875
+Roma,Augsburg,13,0.8375
+Roma,Werder Bremen,35,0.5625
+Roma,Bochum,19,0.7625
+Roma,Köln,36,0.55
+Roma,Heidenheim,41,0.48750000000000004
+Roma,Darmstadt 98,41,0.48750000000000004
+Roma,Paris S-G,37,0.5375
+Roma,Monaco,18,0.775
+Roma,Brest,39,0.5125
+Roma,Lille,36,0.55
+Roma,Nice,41,0.48750000000000004
+Roma,Lens,21,0.7375
+Roma,Lyon,34,0.575
+Roma,Marseille,17,0.7875
+Roma,Rennes,21,0.7375
+Roma,Reims,40,0.5
+Roma,Toulouse,36,0.55
+Roma,Strasbourg,18,0.775
+Roma,Le Havre,15,0.8125
+Roma,Lorient,41,0.48750000000000004
+Roma,Montpellier,29,0.6375
+Roma,Metz,19,0.7625
+Roma,Nantes,38,0.525
+Roma,Clermont Foot,36,0.55
+Lazio,Fiorentina,22,0.725
+Lazio,Bologna,39,0.5125
+Lazio,Torino,45,0.4375
+Lazio,Udinese,27,0.6625
+Lazio,Monza,36,0.55
+Lazio,Genoa,38,0.525
+Lazio,Lecce,23,0.7125
+Lazio,Verona,38,0.525
+Lazio,Frosinone,15,0.8125
+Lazio,Empoli,27,0.6625
+Lazio,Sassuolo,32,0.6
+Lazio,Cagliari,43,0.4625
+Lazio,Salernitana,36,0.55
+Lazio,Bayern Munich,41,0.48750000000000004
+Lazio,Dortmund,36,0.55
+Lazio,RB Leipzig,35,0.5625
+Lazio,Leverkusen,36,0.55
+Lazio,Union Berlin,26,0.675
+Lazio,Freiburg,36,0.55
+Lazio,Eint Frankfurt,36,0.55
+Lazio,Wolfsburg,35,0.5625
+Lazio,Hoffenheim,38,0.525
+Lazio,Gladbach,35,0.5625
+Lazio,Stuttgart,43,0.4625
+Lazio,Mainz 05,26,0.675
+Lazio,Augsburg,35,0.5625
+Lazio,Werder Bremen,39,0.5125
+Lazio,Bochum,37,0.5375
+Lazio,Köln,21,0.7375
+Lazio,Heidenheim,46,0.42500000000000004
+Lazio,Darmstadt 98,45,0.4375
+Lazio,Paris S-G,43,0.4625
+Lazio,Monaco,43,0.4625
+Lazio,Brest,43,0.4625
+Lazio,Lille,24,0.7
+Lazio,Nice,38,0.525
+Lazio,Lens,37,0.5375
+Lazio,Lyon,42,0.475
+Lazio,Marseille,41,0.48750000000000004
+Lazio,Rennes,34,0.575
+Lazio,Reims,42,0.475
+Lazio,Toulouse,44,0.44999999999999996
+Lazio,Strasbourg,38,0.525
+Lazio,Le Havre,39,0.5125
+Lazio,Lorient,45,0.4375
+Lazio,Montpellier,20,0.75
+Lazio,Metz,40,0.5
+Lazio,Nantes,46,0.42500000000000004
+Lazio,Clermont Foot,23,0.7125
+Fiorentina,Bologna,34,0.575
+Fiorentina,Torino,47,0.4125
+Fiorentina,Udinese,20,0.75
+Fiorentina,Monza,34,0.575
+Fiorentina,Genoa,36,0.55
+Fiorentina,Lecce,25,0.6875
+Fiorentina,Verona,30,0.625
+Fiorentina,Frosinone,20,0.75
+Fiorentina,Empoli,14,0.825
+Fiorentina,Sassuolo,39,0.5125
+Fiorentina,Cagliari,49,0.38749999999999996
+Fiorentina,Salernitana,34,0.575
+Fiorentina,Bayern Munich,48,0.4
+Fiorentina,Dortmund,34,0.575
+Fiorentina,RB Leipzig,30,0.625
+Fiorentina,Leverkusen,27,0.6625
+Fiorentina,Union Berlin,19,0.7625
+Fiorentina,Freiburg,32,0.6
+Fiorentina,Eint Frankfurt,32,0.6
+Fiorentina,Wolfsburg,37,0.5375
+Fiorentina,Hoffenheim,33,0.5875
+Fiorentina,Gladbach,38,0.525
+Fiorentina,Stuttgart,40,0.5
+Fiorentina,Mainz 05,22,0.725
+Fiorentina,Augsburg,30,0.625
+Fiorentina,Werder Bremen,43,0.4625
+Fiorentina,Bochum,32,0.6
+Fiorentina,Köln,17,0.7875
+Fiorentina,Heidenheim,51,0.36250000000000004
+Fiorentina,Darmstadt 98,47,0.4125
+Fiorentina,Paris S-G,45,0.4375
+Fiorentina,Monaco,38,0.525
+Fiorentina,Brest,46,0.42500000000000004
+Fiorentina,Lille,17,0.7875
+Fiorentina,Nice,43,0.4625
+Fiorentina,Lens,35,0.5625
+Fiorentina,Lyon,41,0.48750000000000004
+Fiorentina,Marseille,36,0.55
+Fiorentina,Rennes,33,0.5875
+Fiorentina,Reims,41,0.48750000000000004
+Fiorentina,Toulouse,40,0.5
+Fiorentina,Strasbourg,35,0.5625
+Fiorentina,Le Havre,34,0.575
+Fiorentina,Lorient,46,0.42500000000000004
+Fiorentina,Montpellier,16,0.8
+Fiorentina,Metz,38,0.525
+Fiorentina,Nantes,46,0.42500000000000004
+Fiorentina,Clermont Foot,16,0.8
+Bologna,Torino,38,0.525
+Bologna,Udinese,41,0.48750000000000004
+Bologna,Monza,12,0.85
+Bologna,Genoa,8,0.9
+Bologna,Lecce,40,0.5
+Bologna,Verona,13,0.8375
+Bologna,Frosinone,44,0.44999999999999996
+Bologna,Empoli,39,0.5125
+Bologna,Sassuolo,45,0.4375
+Bologna,Cagliari,32,0.6
+Bologna,Salernitana,12,0.85
+Bologna,Bayern Munich,31,0.6125
+Bologna,Dortmund,17,0.7875
+Bologna,RB Leipzig,18,0.775
+Bologna,Leverkusen,16,0.8
+Bologna,Union Berlin,38,0.525
+Bologna,Freiburg,12,0.85
+Bologna,Eint Frankfurt,39,0.5125
+Bologna,Wolfsburg,36,0.55
+Bologna,Hoffenheim,12,0.85
+Bologna,Gladbach,30,0.625
+Bologna,Stuttgart,18,0.775
+Bologna,Mainz 05,35,0.5625
+Bologna,Augsburg,16,0.8
+Bologna,Werder Bremen,28,0.65
+Bologna,Bochum,16,0.8
+Bologna,Köln,41,0.48750000000000004
+Bologna,Heidenheim,34,0.575
+Bologna,Darmstadt 98,36,0.55
+Bologna,Paris S-G,34,0.575
+Bologna,Monaco,14,0.825
+Bologna,Brest,30,0.625
+Bologna,Lille,38,0.525
+Bologna,Nice,32,0.6
+Bologna,Lens,14,0.825
+Bologna,Lyon,36,0.55
+Bologna,Marseille,8,0.9
+Bologna,Rennes,18,0.775
+Bologna,Reims,38,0.525
+Bologna,Toulouse,35,0.5625
+Bologna,Strasbourg,16,0.8
+Bologna,Le Havre,10,0.875
+Bologna,Lorient,37,0.5375
+Bologna,Montpellier,37,0.5375
+Bologna,Metz,10,0.875
+Bologna,Nantes,34,0.575
+Bologna,Clermont Foot,40,0.5
+Torino,Udinese,44,0.44999999999999996
+Torino,Monza,37,0.5375
+Torino,Genoa,35,0.5625
+Torino,Lecce,49,0.38749999999999996
+Torino,Verona,39,0.5125
+Torino,Frosinone,47,0.4125
+Torino,Empoli,52,0.35
+Torino,Sassuolo,42,0.475
+Torino,Cagliari,20,0.75
+Torino,Salernitana,37,0.5375
+Torino,Bayern Munich,13,0.8375
+Torino,Dortmund,39,0.5125
+Torino,RB Leipzig,38,0.525
+Torino,Leverkusen,39,0.5125
+Torino,Union Berlin,53,0.3375
+Torino,Freiburg,36,0.55
+Torino,Eint Frankfurt,44,0.44999999999999996
+Torino,Wolfsburg,25,0.6875
+Torino,Hoffenheim,35,0.5625
+Torino,Gladbach,30,0.625
+Torino,Stuttgart,35,0.5625
+Torino,Mainz 05,44,0.44999999999999996
+Torino,Augsburg,41,0.48750000000000004
+Torino,Werder Bremen,27,0.6625
+Torino,Bochum,40,0.5
+Torino,Köln,49,0.38749999999999996
+Torino,Heidenheim,11,0.8625
+Torino,Darmstadt 98,11,0.8625
+Torino,Paris S-G,16,0.8
+Torino,Monaco,37,0.5375
+Torino,Brest,16,0.8
+Torino,Lille,49,0.38749999999999996
+Torino,Nice,16,0.8
+Torino,Lens,39,0.5125
+Torino,Lyon,22,0.725
+Torino,Marseille,41,0.48750000000000004
+Torino,Rennes,32,0.6
+Torino,Reims,38,0.525
+Torino,Toulouse,16,0.8
+Torino,Strasbourg,36,0.55
+Torino,Le Havre,40,0.5
+Torino,Lorient,15,0.8125
+Torino,Montpellier,46,0.42500000000000004
+Torino,Metz,40,0.5
+Torino,Nantes,13,0.8375
+Torino,Clermont Foot,52,0.35
+Udinese,Monza,40,0.5
+Udinese,Genoa,39,0.5125
+Udinese,Lecce,21,0.7375
+Udinese,Verona,34,0.575
+Udinese,Frosinone,19,0.7625
+Udinese,Empoli,15,0.8125
+Udinese,Sassuolo,43,0.4625
+Udinese,Cagliari,48,0.4
+Udinese,Salernitana,38,0.525
+Udinese,Bayern Munich,43,0.4625
+Udinese,Dortmund,33,0.5875
+Udinese,RB Leipzig,38,0.525
+Udinese,Leverkusen,37,0.5375
+Udinese,Union Berlin,21,0.7375
+Udinese,Freiburg,36,0.55
+Udinese,Eint Frankfurt,38,0.525
+Udinese,Wolfsburg,33,0.5875
+Udinese,Hoffenheim,39,0.5125
+Udinese,Gladbach,41,0.48750000000000004
+Udinese,Stuttgart,38,0.525
+Udinese,Mainz 05,22,0.725
+Udinese,Augsburg,30,0.625
+Udinese,Werder Bremen,49,0.38749999999999996
+Udinese,Bochum,35,0.5625
+Udinese,Köln,18,0.775
+Udinese,Heidenheim,49,0.38749999999999996
+Udinese,Darmstadt 98,46,0.42500000000000004
+Udinese,Paris S-G,45,0.4375
+Udinese,Monaco,37,0.5375
+Udinese,Brest,51,0.36250000000000004
+Udinese,Lille,21,0.7375
+Udinese,Nice,48,0.4
+Udinese,Lens,41,0.48750000000000004
+Udinese,Lyon,46,0.42500000000000004
+Udinese,Marseille,39,0.5125
+Udinese,Rennes,40,0.5
+Udinese,Reims,41,0.48750000000000004
+Udinese,Toulouse,45,0.4375
+Udinese,Strasbourg,38,0.525
+Udinese,Le Havre,40,0.5
+Udinese,Lorient,45,0.4375
+Udinese,Montpellier,19,0.7625
+Udinese,Metz,34,0.575
+Udinese,Nantes,45,0.4375
+Udinese,Clermont Foot,15,0.8125
+Monza,Genoa,15,0.8125
+Monza,Lecce,41,0.48750000000000004
+Monza,Verona,20,0.75
+Monza,Frosinone,43,0.4625
+Monza,Empoli,38,0.525
+Monza,Sassuolo,44,0.44999999999999996
+Monza,Cagliari,38,0.525
+Monza,Salernitana,13,0.8375
+Monza,Bayern Munich,37,0.5375
+Monza,Dortmund,22,0.725
+Monza,RB Leipzig,25,0.6875
+Monza,Leverkusen,20,0.75
+Monza,Union Berlin,37,0.5375
+Monza,Freiburg,16,0.8
+Monza,Eint Frankfurt,38,0.525
+Monza,Wolfsburg,36,0.55
+Monza,Hoffenheim,20,0.75
+Monza,Gladbach,37,0.5375
+Monza,Stuttgart,20,0.75
+Monza,Mainz 05,35,0.5625
+Monza,Augsburg,23,0.7125
+Monza,Werder Bremen,32,0.6
+Monza,Bochum,23,0.7125
+Monza,Köln,39,0.5125
+Monza,Heidenheim,38,0.525
+Monza,Darmstadt 98,36,0.55
+Monza,Paris S-G,34,0.575
+Monza,Monaco,21,0.7375
+Monza,Brest,35,0.5625
+Monza,Lille,39,0.5125
+Monza,Nice,34,0.575
+Monza,Lens,18,0.775
+Monza,Lyon,36,0.55
+Monza,Marseille,17,0.7875
+Monza,Rennes,21,0.7375
+Monza,Reims,41,0.48750000000000004
+Monza,Toulouse,34,0.575
+Monza,Strasbourg,20,0.75
+Monza,Le Havre,17,0.7875
+Monza,Lorient,38,0.525
+Monza,Montpellier,33,0.5875
+Monza,Metz,18,0.775
+Monza,Nantes,35,0.5625
+Monza,Clermont Foot,40,0.5
+Genoa,Lecce,40,0.5
+Genoa,Verona,9,0.8875
+Genoa,Frosinone,42,0.475
+Genoa,Empoli,39,0.5125
+Genoa,Sassuolo,48,0.4
+Genoa,Cagliari,36,0.55
+Genoa,Salernitana,8,0.9
+Genoa,Bayern Munich,32,0.6
+Genoa,Dortmund,14,0.825
+Genoa,RB Leipzig,10,0.875
+Genoa,Leverkusen,12,0.85
+Genoa,Union Berlin,37,0.5375
+Genoa,Freiburg,8,0.9
+Genoa,Eint Frankfurt,38,0.525
+Genoa,Wolfsburg,41,0.48750000000000004
+Genoa,Hoffenheim,8,0.9
+Genoa,Gladbach,32,0.6
+Genoa,Stuttgart,14,0.825
+Genoa,Mainz 05,33,0.5875
+Genoa,Augsburg,11,0.8625
+Genoa,Werder Bremen,32,0.6
+Genoa,Bochum,11,0.8625
+Genoa,Köln,39,0.5125
+Genoa,Heidenheim,38,0.525
+Genoa,Darmstadt 98,38,0.525
+Genoa,Paris S-G,34,0.575
+Genoa,Monaco,12,0.85
+Genoa,Brest,34,0.575
+Genoa,Lille,39,0.5125
+Genoa,Nice,36,0.55
+Genoa,Lens,12,0.85
+Genoa,Lyon,34,0.575
+Genoa,Marseille,8,0.9
+Genoa,Rennes,12,0.85
+Genoa,Reims,38,0.525
+Genoa,Toulouse,36,0.55
+Genoa,Strasbourg,12,0.85
+Genoa,Le Havre,6,0.925
+Genoa,Lorient,38,0.525
+Genoa,Montpellier,35,0.5625
+Genoa,Metz,9,0.8875
+Genoa,Nantes,34,0.575
+Genoa,Clermont Foot,39,0.5125
+Lecce,Verona,39,0.5125
+Lecce,Frosinone,15,0.8125
+Lecce,Empoli,20,0.75
+Lecce,Sassuolo,39,0.5125
+Lecce,Cagliari,45,0.4375
+Lecce,Salernitana,39,0.5125
+Lecce,Bayern Munich,44,0.44999999999999996
+Lecce,Dortmund,35,0.5625
+Lecce,RB Leipzig,39,0.5125
+Lecce,Leverkusen,40,0.5
+Lecce,Union Berlin,22,0.725
+Lecce,Freiburg,37,0.5375
+Lecce,Eint Frankfurt,32,0.6
+Lecce,Wolfsburg,36,0.55
+Lecce,Hoffenheim,39,0.5125
+Lecce,Gladbach,43,0.4625
+Lecce,Stuttgart,41,0.48750000000000004
+Lecce,Mainz 05,26,0.675
+Lecce,Augsburg,37,0.5375
+Lecce,Werder Bremen,44,0.44999999999999996
+Lecce,Bochum,37,0.5375
+Lecce,Köln,20,0.75
+Lecce,Heidenheim,51,0.36250000000000004
+Lecce,Darmstadt 98,49,0.38749999999999996
+Lecce,Paris S-G,47,0.4125
+Lecce,Monaco,39,0.5125
+Lecce,Brest,46,0.42500000000000004
+Lecce,Lille,23,0.7125
+Lecce,Nice,47,0.4125
+Lecce,Lens,36,0.55
+Lecce,Lyon,45,0.4375
+Lecce,Marseille,39,0.5125
+Lecce,Rennes,42,0.475
+Lecce,Reims,41,0.48750000000000004
+Lecce,Toulouse,52,0.35
+Lecce,Strasbourg,38,0.525
+Lecce,Le Havre,39,0.5125
+Lecce,Lorient,46,0.42500000000000004
+Lecce,Montpellier,23,0.7125
+Lecce,Metz,34,0.575
+Lecce,Nantes,49,0.38749999999999996
+Lecce,Clermont Foot,17,0.7875
+Verona,Frosinone,41,0.48750000000000004
+Verona,Empoli,38,0.525
+Verona,Sassuolo,44,0.44999999999999996
+Verona,Cagliari,37,0.5375
+Verona,Salernitana,13,0.8375
+Verona,Bayern Munich,37,0.5375
+Verona,Dortmund,19,0.7625
+Verona,RB Leipzig,19,0.7625
+Verona,Leverkusen,10,0.875
+Verona,Union Berlin,32,0.6
+Verona,Freiburg,13,0.8375
+Verona,Eint Frankfurt,40,0.5
+Verona,Wolfsburg,39,0.5125
+Verona,Hoffenheim,14,0.825
+Verona,Gladbach,31,0.6125
+Verona,Stuttgart,16,0.8
+Verona,Mainz 05,31,0.6125
+Verona,Augsburg,13,0.8375
+Verona,Werder Bremen,36,0.55
+Verona,Bochum,15,0.8125
+Verona,Köln,34,0.575
+Verona,Heidenheim,42,0.475
+Verona,Darmstadt 98,42,0.475
+Verona,Paris S-G,38,0.525
+Verona,Monaco,15,0.8125
+Verona,Brest,38,0.525
+Verona,Lille,37,0.5375
+Verona,Nice,40,0.5
+Verona,Lens,15,0.8125
+Verona,Lyon,41,0.48750000000000004
+Verona,Marseille,13,0.8375
+Verona,Rennes,19,0.7625
+Verona,Reims,38,0.525
+Verona,Toulouse,40,0.5
+Verona,Strasbourg,17,0.7875
+Verona,Le Havre,11,0.8625
+Verona,Lorient,42,0.475
+Verona,Montpellier,30,0.625
+Verona,Metz,15,0.8125
+Verona,Nantes,38,0.525
+Verona,Clermont Foot,34,0.575
+Frosinone,Empoli,15,0.8125
+Frosinone,Sassuolo,37,0.5375
+Frosinone,Cagliari,49,0.38749999999999996
+Frosinone,Salernitana,41,0.48750000000000004
+Frosinone,Bayern Munich,49,0.38749999999999996
+Frosinone,Dortmund,36,0.55
+Frosinone,RB Leipzig,39,0.5125
+Frosinone,Leverkusen,37,0.5375
+Frosinone,Union Berlin,18,0.775
+Frosinone,Freiburg,39,0.5125
+Frosinone,Eint Frankfurt,32,0.6
+Frosinone,Wolfsburg,39,0.5125
+Frosinone,Hoffenheim,42,0.475
+Frosinone,Gladbach,38,0.525
+Frosinone,Stuttgart,39,0.5125
+Frosinone,Mainz 05,19,0.7625
+Frosinone,Augsburg,36,0.55
+Frosinone,Werder Bremen,44,0.44999999999999996
+Frosinone,Bochum,37,0.5375
+Frosinone,Köln,15,0.8125
+Frosinone,Heidenheim,52,0.35
+Frosinone,Darmstadt 98,49,0.38749999999999996
+Frosinone,Paris S-G,45,0.4375
+Frosinone,Monaco,42,0.475
+Frosinone,Brest,48,0.4
+Frosinone,Lille,18,0.775
+Frosinone,Nice,45,0.4375
+Frosinone,Lens,36,0.55
+Frosinone,Lyon,46,0.42500000000000004
+Frosinone,Marseille,42,0.475
+Frosinone,Rennes,38,0.525
+Frosinone,Reims,41,0.48750000000000004
+Frosinone,Toulouse,45,0.4375
+Frosinone,Strasbourg,41,0.48750000000000004
+Frosinone,Le Havre,40,0.5
+Frosinone,Lorient,44,0.44999999999999996
+Frosinone,Montpellier,16,0.8
+Frosinone,Metz,37,0.5375
+Frosinone,Nantes,48,0.4
+Frosinone,Clermont Foot,12,0.85
+Empoli,Sassuolo,38,0.525
+Empoli,Cagliari,51,0.36250000000000004
+Empoli,Salernitana,38,0.525
+Empoli,Bayern Munich,52,0.35
+Empoli,Dortmund,34,0.575
+Empoli,RB Leipzig,36,0.55
+Empoli,Leverkusen,31,0.6125
+Empoli,Union Berlin,16,0.8
+Empoli,Freiburg,36,0.55
+Empoli,Eint Frankfurt,34,0.575
+Empoli,Wolfsburg,42,0.475
+Empoli,Hoffenheim,40,0.5
+Empoli,Gladbach,44,0.44999999999999996
+Empoli,Stuttgart,39,0.5125
+Empoli,Mainz 05,15,0.8125
+Empoli,Augsburg,32,0.6
+Empoli,Werder Bremen,45,0.4375
+Empoli,Bochum,38,0.525
+Empoli,Köln,15,0.8125
+Empoli,Heidenheim,55,0.3125
+Empoli,Darmstadt 98,52,0.35
+Empoli,Paris S-G,49,0.38749999999999996
+Empoli,Monaco,42,0.475
+Empoli,Brest,51,0.36250000000000004
+Empoli,Lille,15,0.8125
+Empoli,Nice,48,0.4
+Empoli,Lens,41,0.48750000000000004
+Empoli,Lyon,45,0.4375
+Empoli,Marseille,38,0.525
+Empoli,Rennes,39,0.5125
+Empoli,Reims,41,0.48750000000000004
+Empoli,Toulouse,45,0.4375
+Empoli,Strasbourg,40,0.5
+Empoli,Le Havre,41,0.48750000000000004
+Empoli,Lorient,48,0.4
+Empoli,Montpellier,19,0.7625
+Empoli,Metz,34,0.575
+Empoli,Nantes,51,0.36250000000000004
+Empoli,Clermont Foot,12,0.85
+Sassuolo,Cagliari,40,0.5
+Sassuolo,Salernitana,43,0.4625
+Sassuolo,Bayern Munich,39,0.5125
+Sassuolo,Dortmund,49,0.38749999999999996
+Sassuolo,RB Leipzig,45,0.4375
+Sassuolo,Leverkusen,44,0.44999999999999996
+Sassuolo,Union Berlin,40,0.5
+Sassuolo,Freiburg,49,0.38749999999999996
+Sassuolo,Eint Frankfurt,40,0.5
+Sassuolo,Wolfsburg,41,0.48750000000000004
+Sassuolo,Hoffenheim,42,0.475
+Sassuolo,Gladbach,35,0.5625
+Sassuolo,Stuttgart,49,0.38749999999999996
+Sassuolo,Mainz 05,41,0.48750000000000004
+Sassuolo,Augsburg,48,0.4
+Sassuolo,Werder Bremen,40,0.5
+Sassuolo,Bochum,43,0.4625
+Sassuolo,Köln,40,0.5
+Sassuolo,Heidenheim,39,0.5125
+Sassuolo,Darmstadt 98,39,0.5125
+Sassuolo,Paris S-G,37,0.5375
+Sassuolo,Monaco,46,0.42500000000000004
+Sassuolo,Brest,41,0.48750000000000004
+Sassuolo,Lille,40,0.5
+Sassuolo,Nice,40,0.5
+Sassuolo,Lens,47,0.4125
+Sassuolo,Lyon,43,0.4625
+Sassuolo,Marseille,46,0.42500000000000004
+Sassuolo,Rennes,43,0.4625
+Sassuolo,Reims,41,0.48750000000000004
+Sassuolo,Toulouse,40,0.5
+Sassuolo,Strasbourg,51,0.36250000000000004
+Sassuolo,Le Havre,46,0.42500000000000004
+Sassuolo,Lorient,39,0.5125
+Sassuolo,Montpellier,42,0.475
+Sassuolo,Metz,46,0.42500000000000004
+Sassuolo,Nantes,41,0.48750000000000004
+Sassuolo,Clermont Foot,39,0.5125
+Cagliari,Salernitana,41,0.48750000000000004
+Cagliari,Bayern Munich,21,0.7375
+Cagliari,Dortmund,38,0.525
+Cagliari,RB Leipzig,40,0.5
+Cagliari,Leverkusen,41,0.48750000000000004
+Cagliari,Union Berlin,49,0.38749999999999996
+Cagliari,Freiburg,41,0.48750000000000004
+Cagliari,Eint Frankfurt,43,0.4625
+Cagliari,Wolfsburg,24,0.7
+Cagliari,Hoffenheim,36,0.55
+Cagliari,Gladbach,22,0.725
+Cagliari,Stuttgart,37,0.5375
+Cagliari,Mainz 05,50,0.375
+Cagliari,Augsburg,42,0.475
+Cagliari,Werder Bremen,22,0.725
+Cagliari,Bochum,41,0.48750000000000004
+Cagliari,Köln,48,0.4
+Cagliari,Heidenheim,11,0.8625
+Cagliari,Darmstadt 98,13,0.8375
+Cagliari,Paris S-G,22,0.725
+Cagliari,Monaco,34,0.575
+Cagliari,Brest,18,0.775
+Cagliari,Lille,52,0.35
+Cagliari,Nice,21,0.7375
+Cagliari,Lens,37,0.5375
+Cagliari,Lyon,23,0.7125
+Cagliari,Marseille,36,0.55
+Cagliari,Rennes,36,0.55
+Cagliari,Reims,40,0.5
+Cagliari,Toulouse,24,0.7
+Cagliari,Strasbourg,35,0.5625
+Cagliari,Le Havre,37,0.5375
+Cagliari,Lorient,17,0.7875
+Cagliari,Montpellier,48,0.4
+Cagliari,Metz,40,0.5
+Cagliari,Nantes,15,0.8125
+Cagliari,Clermont Foot,51,0.36250000000000004
+Salernitana,Bayern Munich,34,0.575
+Salernitana,Dortmund,15,0.8125
+Salernitana,RB Leipzig,18,0.775
+Salernitana,Leverkusen,10,0.875
+Salernitana,Union Berlin,36,0.55
+Salernitana,Freiburg,9,0.8875
+Salernitana,Eint Frankfurt,38,0.525
+Salernitana,Wolfsburg,40,0.5
+Salernitana,Hoffenheim,16,0.8
+Salernitana,Gladbach,35,0.5625
+Salernitana,Stuttgart,18,0.775
+Salernitana,Mainz 05,35,0.5625
+Salernitana,Augsburg,13,0.8375
+Salernitana,Werder Bremen,34,0.575
+Salernitana,Bochum,16,0.8
+Salernitana,Köln,38,0.525
+Salernitana,Heidenheim,40,0.5
+Salernitana,Darmstadt 98,40,0.5
+Salernitana,Paris S-G,36,0.55
+Salernitana,Monaco,13,0.8375
+Salernitana,Brest,36,0.55
+Salernitana,Lille,41,0.48750000000000004
+Salernitana,Nice,41,0.48750000000000004
+Salernitana,Lens,16,0.8
+Salernitana,Lyon,36,0.55
+Salernitana,Marseille,12,0.85
+Salernitana,Rennes,17,0.7875
+Salernitana,Reims,38,0.525
+Salernitana,Toulouse,38,0.525
+Salernitana,Strasbourg,16,0.8
+Salernitana,Le Havre,10,0.875
+Salernitana,Lorient,40,0.5
+Salernitana,Montpellier,34,0.575
+Salernitana,Metz,14,0.825
+Salernitana,Nantes,36,0.55
+Salernitana,Clermont Foot,41,0.48750000000000004
+Bayern Munich,Dortmund,34,0.575
+Bayern Munich,RB Leipzig,35,0.5625
+Bayern Munich,Leverkusen,37,0.5375
+Bayern Munich,Union Berlin,51,0.36250000000000004
+Bayern Munich,Freiburg,35,0.5625
+Bayern Munich,Eint Frankfurt,41,0.48750000000000004
+Bayern Munich,Wolfsburg,27,0.6625
+Bayern Munich,Hoffenheim,32,0.6
+Bayern Munich,Gladbach,30,0.625
+Bayern Munich,Stuttgart,38,0.525
+Bayern Munich,Mainz 05,45,0.4375
+Bayern Munich,Augsburg,39,0.5125
+Bayern Munich,Werder Bremen,27,0.6625
+Bayern Munich,Bochum,37,0.5375
+Bayern Munich,Köln,52,0.35
+Bayern Munich,Heidenheim,11,0.8625
+Bayern Munich,Darmstadt 98,16,0.8
+Bayern Munich,Paris S-G,20,0.75
+Bayern Munich,Monaco,32,0.6
+Bayern Munich,Brest,16,0.8
+Bayern Munich,Lille,43,0.4625
+Bayern Munich,Nice,21,0.7375
+Bayern Munich,Lens,38,0.525
+Bayern Munich,Lyon,25,0.6875
+Bayern Munich,Marseille,36,0.55
+Bayern Munich,Rennes,29,0.6375
+Bayern Munich,Reims,38,0.525
+Bayern Munich,Toulouse,24,0.7
+Bayern Munich,Strasbourg,37,0.5375
+Bayern Munich,Le Havre,37,0.5375
+Bayern Munich,Lorient,21,0.7375
+Bayern Munich,Montpellier,48,0.4
+Bayern Munich,Metz,37,0.5375
+Bayern Munich,Nantes,16,0.8
+Bayern Munich,Clermont Foot,51,0.36250000000000004
+Dortmund,RB Leipzig,23,0.7125
+Dortmund,Leverkusen,17,0.7875
+Dortmund,Union Berlin,35,0.5625
+Dortmund,Freiburg,14,0.825
+Dortmund,Eint Frankfurt,34,0.575
+Dortmund,Wolfsburg,37,0.5375
+Dortmund,Hoffenheim,22,0.725
+Dortmund,Gladbach,34,0.575
+Dortmund,Stuttgart,18,0.775
+Dortmund,Mainz 05,33,0.5875
+Dortmund,Augsburg,17,0.7875
+Dortmund,Werder Bremen,30,0.625
+Dortmund,Bochum,20,0.75
+Dortmund,Köln,31,0.6125
+Dortmund,Heidenheim,39,0.5125
+Dortmund,Darmstadt 98,41,0.48750000000000004
+Dortmund,Paris S-G,35,0.5625
+Dortmund,Monaco,19,0.7625
+Dortmund,Brest,38,0.525
+Dortmund,Lille,35,0.5625
+Dortmund,Nice,42,0.475
+Dortmund,Lens,18,0.775
+Dortmund,Lyon,35,0.5625
+Dortmund,Marseille,16,0.8
+Dortmund,Rennes,22,0.725
+Dortmund,Reims,34,0.575
+Dortmund,Toulouse,41,0.48750000000000004
+Dortmund,Strasbourg,20,0.75
+Dortmund,Le Havre,16,0.8
+Dortmund,Lorient,39,0.5125
+Dortmund,Montpellier,29,0.6375
+Dortmund,Metz,20,0.75
+Dortmund,Nantes,37,0.5375
+Dortmund,Clermont Foot,37,0.5375
+RB Leipzig,Leverkusen,22,0.725
+RB Leipzig,Union Berlin,29,0.6375
+RB Leipzig,Freiburg,18,0.775
+RB Leipzig,Eint Frankfurt,32,0.6
+RB Leipzig,Wolfsburg,44,0.44999999999999996
+RB Leipzig,Hoffenheim,10,0.875
+RB Leipzig,Gladbach,33,0.5875
+RB Leipzig,Stuttgart,22,0.725
+RB Leipzig,Mainz 05,33,0.5875
+RB Leipzig,Augsburg,15,0.8125
+RB Leipzig,Werder Bremen,37,0.5375
+RB Leipzig,Bochum,13,0.8375
+RB Leipzig,Köln,35,0.5625
+RB Leipzig,Heidenheim,41,0.48750000000000004
+RB Leipzig,Darmstadt 98,41,0.48750000000000004
+RB Leipzig,Paris S-G,36,0.55
+RB Leipzig,Monaco,21,0.7375
+RB Leipzig,Brest,37,0.5375
+RB Leipzig,Lille,33,0.5875
+RB Leipzig,Nice,38,0.525
+RB Leipzig,Lens,16,0.8
+RB Leipzig,Lyon,32,0.6
+RB Leipzig,Marseille,18,0.775
+RB Leipzig,Rennes,19,0.7625
+RB Leipzig,Reims,36,0.55
+RB Leipzig,Toulouse,37,0.5375
+RB Leipzig,Strasbourg,18,0.775
+RB Leipzig,Le Havre,12,0.85
+RB Leipzig,Lorient,39,0.5125
+RB Leipzig,Montpellier,35,0.5625
+RB Leipzig,Metz,19,0.7625
+RB Leipzig,Nantes,37,0.5375
+RB Leipzig,Clermont Foot,33,0.5875
+Leverkusen,Union Berlin,29,0.6375
+Leverkusen,Freiburg,14,0.825
+Leverkusen,Eint Frankfurt,38,0.525
+Leverkusen,Wolfsburg,44,0.44999999999999996
+Leverkusen,Hoffenheim,18,0.775
+Leverkusen,Gladbach,32,0.6
+Leverkusen,Stuttgart,20,0.75
+Leverkusen,Mainz 05,26,0.675
+Leverkusen,Augsburg,15,0.8125
+Leverkusen,Werder Bremen,35,0.5625
+Leverkusen,Bochum,18,0.775
+Leverkusen,Köln,31,0.6125
+Leverkusen,Heidenheim,42,0.475
+Leverkusen,Darmstadt 98,42,0.475
+Leverkusen,Paris S-G,38,0.525
+Leverkusen,Monaco,16,0.8
+Leverkusen,Brest,36,0.55
+Leverkusen,Lille,32,0.6
+Leverkusen,Nice,41,0.48750000000000004
+Leverkusen,Lens,20,0.75
+Leverkusen,Lyon,33,0.5875
+Leverkusen,Marseille,16,0.8
+Leverkusen,Rennes,18,0.775
+Leverkusen,Reims,38,0.525
+Leverkusen,Toulouse,39,0.5125
+Leverkusen,Strasbourg,20,0.75
+Leverkusen,Le Havre,14,0.825
+Leverkusen,Lorient,41,0.48750000000000004
+Leverkusen,Montpellier,29,0.6375
+Leverkusen,Metz,18,0.775
+Leverkusen,Nantes,38,0.525
+Leverkusen,Clermont Foot,32,0.6
+Union Berlin,Freiburg,36,0.55
+Union Berlin,Eint Frankfurt,30,0.625
+Union Berlin,Wolfsburg,37,0.5375
+Union Berlin,Hoffenheim,33,0.5875
+Union Berlin,Gladbach,38,0.525
+Union Berlin,Stuttgart,36,0.55
+Union Berlin,Mainz 05,22,0.725
+Union Berlin,Augsburg,28,0.65
+Union Berlin,Werder Bremen,42,0.475
+Union Berlin,Bochum,30,0.625
+Union Berlin,Köln,15,0.8125
+Union Berlin,Heidenheim,54,0.32499999999999996
+Union Berlin,Darmstadt 98,55,0.3125
+Union Berlin,Paris S-G,49,0.38749999999999996
+Union Berlin,Monaco,36,0.55
+Union Berlin,Brest,50,0.375
+Union Berlin,Lille,20,0.75
+Union Berlin,Nice,47,0.4125
+Union Berlin,Lens,30,0.625
+Union Berlin,Lyon,41,0.48750000000000004
+Union Berlin,Marseille,37,0.5375
+Union Berlin,Rennes,35,0.5625
+Union Berlin,Reims,36,0.55
+Union Berlin,Toulouse,47,0.4125
+Union Berlin,Strasbourg,36,0.55
+Union Berlin,Le Havre,35,0.5625
+Union Berlin,Lorient,52,0.35
+Union Berlin,Montpellier,19,0.7625
+Union Berlin,Metz,32,0.6
+Union Berlin,Nantes,52,0.35
+Union Berlin,Clermont Foot,10,0.875
+Freiburg,Eint Frankfurt,36,0.55
+Freiburg,Wolfsburg,38,0.525
+Freiburg,Hoffenheim,16,0.8
+Freiburg,Gladbach,36,0.55
+Freiburg,Stuttgart,18,0.775
+Freiburg,Mainz 05,30,0.625
+Freiburg,Augsburg,16,0.8
+Freiburg,Werder Bremen,33,0.5875
+Freiburg,Bochum,16,0.8
+Freiburg,Köln,36,0.55
+Freiburg,Heidenheim,41,0.48750000000000004
+Freiburg,Darmstadt 98,41,0.48750000000000004
+Freiburg,Paris S-G,38,0.525
+Freiburg,Monaco,16,0.8
+Freiburg,Brest,37,0.5375
+Freiburg,Lille,36,0.55
+Freiburg,Nice,36,0.55
+Freiburg,Lens,16,0.8
+Freiburg,Lyon,37,0.5375
+Freiburg,Marseille,12,0.85
+Freiburg,Rennes,16,0.8
+Freiburg,Reims,34,0.575
+Freiburg,Toulouse,39,0.5125
+Freiburg,Strasbourg,12,0.85
+Freiburg,Le Havre,10,0.875
+Freiburg,Lorient,39,0.5125
+Freiburg,Montpellier,32,0.6
+Freiburg,Metz,14,0.825
+Freiburg,Nantes,37,0.5375
+Freiburg,Clermont Foot,36,0.55
+Eint Frankfurt,Wolfsburg,38,0.525
+Eint Frankfurt,Hoffenheim,35,0.5625
+Eint Frankfurt,Gladbach,35,0.5625
+Eint Frankfurt,Stuttgart,37,0.5375
+Eint Frankfurt,Mainz 05,37,0.5375
+Eint Frankfurt,Augsburg,40,0.5
+Eint Frankfurt,Werder Bremen,38,0.525
+Eint Frankfurt,Bochum,32,0.6
+Eint Frankfurt,Köln,33,0.5875
+Eint Frankfurt,Heidenheim,42,0.475
+Eint Frankfurt,Darmstadt 98,42,0.475
+Eint Frankfurt,Paris S-G,39,0.5125
+Eint Frankfurt,Monaco,33,0.5875
+Eint Frankfurt,Brest,43,0.4625
+Eint Frankfurt,Lille,30,0.625
+Eint Frankfurt,Nice,42,0.475
+Eint Frankfurt,Lens,32,0.6
+Eint Frankfurt,Lyon,38,0.525
+Eint Frankfurt,Marseille,34,0.575
+Eint Frankfurt,Rennes,36,0.55
+Eint Frankfurt,Reims,12,0.85
+Eint Frankfurt,Toulouse,42,0.475
+Eint Frankfurt,Strasbourg,37,0.5375
+Eint Frankfurt,Le Havre,36,0.55
+Eint Frankfurt,Lorient,39,0.5125
+Eint Frankfurt,Montpellier,30,0.625
+Eint Frankfurt,Metz,36,0.55
+Eint Frankfurt,Nantes,43,0.4625
+Eint Frankfurt,Clermont Foot,34,0.575
+Wolfsburg,Hoffenheim,43,0.4625
+Wolfsburg,Gladbach,26,0.675
+Wolfsburg,Stuttgart,43,0.4625
+Wolfsburg,Mainz 05,48,0.4
+Wolfsburg,Augsburg,38,0.525
+Wolfsburg,Werder Bremen,31,0.6125
+Wolfsburg,Bochum,38,0.525
+Wolfsburg,Köln,44,0.44999999999999996
+Wolfsburg,Heidenheim,21,0.7375
+Wolfsburg,Darmstadt 98,24,0.7
+Wolfsburg,Paris S-G,29,0.6375
+Wolfsburg,Monaco,39,0.5125
+Wolfsburg,Brest,21,0.7375
+Wolfsburg,Lille,41,0.48750000000000004
+Wolfsburg,Nice,20,0.75
+Wolfsburg,Lens,40,0.5
+Wolfsburg,Lyon,29,0.6375
+Wolfsburg,Marseille,38,0.525
+Wolfsburg,Rennes,35,0.5625
+Wolfsburg,Reims,34,0.575
+Wolfsburg,Toulouse,29,0.6375
+Wolfsburg,Strasbourg,37,0.5375
+Wolfsburg,Le Havre,39,0.5125
+Wolfsburg,Lorient,31,0.6125
+Wolfsburg,Montpellier,36,0.55
+Wolfsburg,Metz,37,0.5375
+Wolfsburg,Nantes,23,0.7125
+Wolfsburg,Clermont Foot,43,0.4625
+Hoffenheim,Gladbach,33,0.5875
+Hoffenheim,Stuttgart,22,0.725
+Hoffenheim,Mainz 05,34,0.575
+Hoffenheim,Augsburg,17,0.7875
+Hoffenheim,Werder Bremen,34,0.575
+Hoffenheim,Bochum,11,0.8625
+Hoffenheim,Köln,36,0.55
+Hoffenheim,Heidenheim,38,0.525
+Hoffenheim,Darmstadt 98,38,0.525
+Hoffenheim,Paris S-G,33,0.5875
+Hoffenheim,Monaco,19,0.7625
+Hoffenheim,Brest,34,0.575
+Hoffenheim,Lille,36,0.55
+Hoffenheim,Nice,36,0.55
+Hoffenheim,Lens,14,0.825
+Hoffenheim,Lyon,35,0.5625
+Hoffenheim,Marseille,16,0.8
+Hoffenheim,Rennes,17,0.7875
+Hoffenheim,Reims,36,0.55
+Hoffenheim,Toulouse,37,0.5375
+Hoffenheim,Strasbourg,18,0.775
+Hoffenheim,Le Havre,10,0.875
+Hoffenheim,Lorient,38,0.525
+Hoffenheim,Montpellier,34,0.575
+Hoffenheim,Metz,15,0.8125
+Hoffenheim,Nantes,34,0.575
+Hoffenheim,Clermont Foot,35,0.5625
+Gladbach,Stuttgart,33,0.5875
+Gladbach,Mainz 05,44,0.44999999999999996
+Gladbach,Augsburg,36,0.55
+Gladbach,Werder Bremen,34,0.575
+Gladbach,Bochum,31,0.6125
+Gladbach,Köln,40,0.5
+Gladbach,Heidenheim,23,0.7125
+Gladbach,Darmstadt 98,29,0.6375
+Gladbach,Paris S-G,23,0.7125
+Gladbach,Monaco,29,0.6375
+Gladbach,Brest,28,0.65
+Gladbach,Lille,40,0.5
+Gladbach,Nice,29,0.6375
+Gladbach,Lens,33,0.5875
+Gladbach,Lyon,30,0.625
+Gladbach,Marseille,32,0.6
+Gladbach,Rennes,30,0.625
+Gladbach,Reims,34,0.575
+Gladbach,Toulouse,34,0.575
+Gladbach,Strasbourg,34,0.575
+Gladbach,Le Havre,30,0.625
+Gladbach,Lorient,31,0.6125
+Gladbach,Montpellier,42,0.475
+Gladbach,Metz,34,0.575
+Gladbach,Nantes,31,0.6125
+Gladbach,Clermont Foot,41,0.48750000000000004
+Stuttgart,Mainz 05,28,0.65
+Stuttgart,Augsburg,18,0.775
+Stuttgart,Werder Bremen,29,0.6375
+Stuttgart,Bochum,20,0.75
+Stuttgart,Köln,33,0.5875
+Stuttgart,Heidenheim,35,0.5625
+Stuttgart,Darmstadt 98,37,0.5375
+Stuttgart,Paris S-G,30,0.625
+Stuttgart,Monaco,18,0.775
+Stuttgart,Brest,37,0.5375
+Stuttgart,Lille,33,0.5875
+Stuttgart,Nice,33,0.5875
+Stuttgart,Lens,16,0.8
+Stuttgart,Lyon,33,0.5875
+Stuttgart,Marseille,17,0.7875
+Stuttgart,Rennes,24,0.7
+Stuttgart,Reims,34,0.575
+Stuttgart,Toulouse,35,0.5625
+Stuttgart,Strasbourg,13,0.8375
+Stuttgart,Le Havre,15,0.8125
+Stuttgart,Lorient,35,0.5625
+Stuttgart,Montpellier,38,0.525
+Stuttgart,Metz,16,0.8
+Stuttgart,Nantes,37,0.5375
+Stuttgart,Clermont Foot,38,0.525
+Mainz 05,Augsburg,30,0.625
+Mainz 05,Werder Bremen,42,0.475
+Mainz 05,Bochum,30,0.625
+Mainz 05,Köln,9,0.8875
+Mainz 05,Heidenheim,50,0.375
+Mainz 05,Darmstadt 98,49,0.38749999999999996
+Mainz 05,Paris S-G,44,0.44999999999999996
+Mainz 05,Monaco,36,0.55
+Mainz 05,Brest,48,0.4
+Mainz 05,Lille,15,0.8125
+Mainz 05,Nice,41,0.48750000000000004
+Mainz 05,Lens,34,0.575
+Mainz 05,Lyon,38,0.525
+Mainz 05,Marseille,33,0.5875
+Mainz 05,Rennes,33,0.5875
+Mainz 05,Reims,40,0.5
+Mainz 05,Toulouse,40,0.5
+Mainz 05,Strasbourg,31,0.6125
+Mainz 05,Le Havre,35,0.5625
+Mainz 05,Lorient,42,0.475
+Mainz 05,Montpellier,18,0.775
+Mainz 05,Metz,28,0.65
+Mainz 05,Nantes,51,0.36250000000000004
+Mainz 05,Clermont Foot,14,0.825
+Augsburg,Werder Bremen,37,0.5375
+Augsburg,Bochum,14,0.825
+Augsburg,Köln,30,0.625
+Augsburg,Heidenheim,44,0.44999999999999996
+Augsburg,Darmstadt 98,44,0.44999999999999996
+Augsburg,Paris S-G,38,0.525
+Augsburg,Monaco,17,0.7875
+Augsburg,Brest,40,0.5
+Augsburg,Lille,34,0.575
+Augsburg,Nice,42,0.475
+Augsburg,Lens,18,0.775
+Augsburg,Lyon,40,0.5
+Augsburg,Marseille,16,0.8
+Augsburg,Rennes,23,0.7125
+Augsburg,Reims,36,0.55
+Augsburg,Toulouse,38,0.525
+Augsburg,Strasbourg,14,0.825
+Augsburg,Le Havre,12,0.85
+Augsburg,Lorient,44,0.44999999999999996
+Augsburg,Montpellier,26,0.675
+Augsburg,Metz,14,0.825
+Augsburg,Nantes,40,0.5
+Augsburg,Clermont Foot,34,0.575
+Werder Bremen,Bochum,39,0.5125
+Werder Bremen,Köln,43,0.4625
+Werder Bremen,Heidenheim,16,0.8
+Werder Bremen,Darmstadt 98,20,0.75
+Werder Bremen,Paris S-G,25,0.6875
+Werder Bremen,Monaco,37,0.5375
+Werder Bremen,Brest,19,0.7625
+Werder Bremen,Lille,42,0.475
+Werder Bremen,Nice,19,0.7625
+Werder Bremen,Lens,36,0.55
+Werder Bremen,Lyon,22,0.725
+Werder Bremen,Marseille,32,0.6
+Werder Bremen,Rennes,35,0.5625
+Werder Bremen,Reims,36,0.55
+Werder Bremen,Toulouse,18,0.775
+Werder Bremen,Strasbourg,33,0.5875
+Werder Bremen,Le Havre,34,0.575
+Werder Bremen,Lorient,20,0.75
+Werder Bremen,Montpellier,47,0.4125
+Werder Bremen,Metz,36,0.55
+Werder Bremen,Nantes,22,0.725
+Werder Bremen,Clermont Foot,49,0.38749999999999996
+Bochum,Köln,32,0.6
+Bochum,Heidenheim,43,0.4625
+Bochum,Darmstadt 98,43,0.4625
+Bochum,Paris S-G,38,0.525
+Bochum,Monaco,15,0.8125
+Bochum,Brest,41,0.48750000000000004
+Bochum,Lille,32,0.6
+Bochum,Nice,41,0.48750000000000004
+Bochum,Lens,12,0.85
+Bochum,Lyon,36,0.55
+Bochum,Marseille,16,0.8
+Bochum,Rennes,16,0.8
+Bochum,Reims,34,0.575
+Bochum,Toulouse,42,0.475
+Bochum,Strasbourg,18,0.775
+Bochum,Le Havre,10,0.875
+Bochum,Lorient,43,0.4625
+Bochum,Montpellier,32,0.6
+Bochum,Metz,14,0.825
+Bochum,Nantes,39,0.5125
+Bochum,Clermont Foot,32,0.6
+Köln,Heidenheim,53,0.3375
+Köln,Darmstadt 98,54,0.32499999999999996
+Köln,Paris S-G,46,0.42500000000000004
+Köln,Monaco,40,0.5
+Köln,Brest,53,0.3375
+Köln,Lille,16,0.8
+Köln,Nice,47,0.4125
+Köln,Lens,32,0.6
+Köln,Lyon,43,0.4625
+Köln,Marseille,39,0.5125
+Köln,Rennes,39,0.5125
+Köln,Reims,38,0.525
+Köln,Toulouse,44,0.44999999999999996
+Köln,Strasbourg,35,0.5625
+Köln,Le Havre,37,0.5375
+Köln,Lorient,45,0.4375
+Köln,Montpellier,11,0.8625
+Köln,Metz,34,0.575
+Köln,Nantes,56,0.30000000000000004
+Köln,Clermont Foot,11,0.8625
+Heidenheim,Darmstadt 98,7,0.9125
+Heidenheim,Paris S-G,11,0.8625
+Heidenheim,Monaco,36,0.55
+Heidenheim,Brest,9,0.8875
+Heidenheim,Lille,47,0.4125
+Heidenheim,Nice,12,0.85
+Heidenheim,Lens,40,0.5
+Heidenheim,Lyon,19,0.7625
+Heidenheim,Marseille,38,0.525
+Heidenheim,Rennes,35,0.5625
+Heidenheim,Reims,36,0.55
+Heidenheim,Toulouse,15,0.8125
+Heidenheim,Strasbourg,37,0.5375
+Heidenheim,Le Havre,39,0.5125
+Heidenheim,Lorient,10,0.875
+Heidenheim,Montpellier,55,0.3125
+Heidenheim,Metz,42,0.475
+Heidenheim,Nantes,9,0.8875
+Darmstadt 98,Paris S-G,16,0.8
+Darmstadt 98,Monaco,36,0.55
+Darmstadt 98,Brest,12,0.85
+Darmstadt 98,Lille,48,0.4
+Darmstadt 98,Nice,15,0.8125
+Darmstadt 98,Lens,42,0.475
+Darmstadt 98,Lyon,19,0.7625
+Darmstadt 98,Marseille,36,0.55
+Darmstadt 98,Rennes,35,0.5625
+Darmstadt 98,Reims,39,0.5125
+Darmstadt 98,Toulouse,15,0.8125
+Darmstadt 98,Strasbourg,37,0.5375
+Darmstadt 98,Le Havre,39,0.5125
+Darmstadt 98,Lorient,14,0.825
+Darmstadt 98,Montpellier,52,0.35
+Darmstadt 98,Metz,40,0.5
+Darmstadt 98,Nantes,4,0.95
+Darmstadt 98,Clermont Foot,54,0.32499999999999996
+Paris S-G,Monaco,32,0.6
+Paris S-G,Brest,20,0.75
+Paris S-G,Lille,43,0.4625
+Paris S-G,Nice,20,0.75
+Paris S-G,Lens,35,0.5625
+Paris S-G,Lyon,30,0.625
+Paris S-G,Marseille,38,0.525
+Paris S-G,Rennes,31,0.6125
+Paris S-G,Reims,32,0.6
+Paris S-G,Toulouse,23,0.7125
+Paris S-G,Strasbourg,34,0.575
+Paris S-G,Le Havre,36,0.55
+Paris S-G,Lorient,12,0.85
+Paris S-G,Montpellier,49,0.38749999999999996
+Paris S-G,Metz,39,0.5125
+Paris S-G,Nantes,16,0.8
+Paris S-G,Clermont Foot,50,0.375
+Monaco,Brest,32,0.6
+Monaco,Lille,41,0.48750000000000004
+Monaco,Nice,38,0.525
+Monaco,Lens,15,0.8125
+Monaco,Lyon,34,0.575
+Monaco,Marseille,10,0.875
+Monaco,Rennes,20,0.75
+Monaco,Reims,32,0.6
+Monaco,Toulouse,36,0.55
+Monaco,Strasbourg,16,0.8
+Monaco,Le Havre,11,0.8625
+Monaco,Lorient,36,0.55
+Monaco,Montpellier,38,0.525
+Monaco,Metz,16,0.8
+Monaco,Nantes,32,0.6
+Monaco,Clermont Foot,41,0.48750000000000004
+Brest,Lille,44,0.44999999999999996
+Brest,Nice,11,0.8625
+Brest,Lens,38,0.525
+Brest,Lyon,18,0.775
+Brest,Marseille,34,0.575
+Brest,Rennes,32,0.6
+Brest,Reims,36,0.55
+Brest,Toulouse,14,0.825
+Brest,Strasbourg,37,0.5375
+Brest,Le Havre,35,0.5625
+Brest,Lorient,19,0.7625
+Brest,Montpellier,51,0.36250000000000004
+Brest,Metz,38,0.525
+Brest,Nantes,10,0.875
+Brest,Clermont Foot,53,0.3375
+Lille,Nice,40,0.5
+Lille,Lens,35,0.5625
+Lille,Lyon,36,0.55
+Lille,Marseille,39,0.5125
+Lille,Rennes,36,0.55
+Lille,Reims,39,0.5125
+Lille,Toulouse,45,0.4375
+Lille,Strasbourg,38,0.525
+Lille,Le Havre,37,0.5375
+Lille,Lorient,48,0.4
+Lille,Montpellier,21,0.7375
+Lille,Metz,34,0.575
+Lille,Nantes,47,0.4125
+Lille,Clermont Foot,13,0.8375
+Nice,Lens,40,0.5
+Nice,Lyon,24,0.7
+Nice,Marseille,36,0.55
+Nice,Rennes,33,0.5875
+Nice,Reims,36,0.55
+Nice,Toulouse,12,0.85
+Nice,Strasbourg,30,0.625
+Nice,Le Havre,37,0.5375
+Nice,Lorient,22,0.725
+Nice,Montpellier,48,0.4
+Nice,Metz,40,0.5
+Nice,Nantes,17,0.7875
+Nice,Clermont Foot,49,0.38749999999999996
+Lens,Lyon,36,0.55
+Lens,Marseille,16,0.8
+Lens,Rennes,15,0.8125
+Lens,Reims,32,0.6
+Lens,Toulouse,40,0.5
+Lens,Strasbourg,18,0.775
+Lens,Le Havre,10,0.875
+Lens,Lorient,39,0.5125
+Lens,Montpellier,30,0.625
+Lens,Metz,14,0.825
+Lens,Nantes,38,0.525
+Lens,Clermont Foot,32,0.6
+Lyon,Marseille,36,0.55
+Lyon,Rennes,29,0.6375
+Lyon,Reims,38,0.525
+Lyon,Toulouse,24,0.7
+Lyon,Strasbourg,33,0.5875
+Lyon,Le Havre,35,0.5625
+Lyon,Lorient,26,0.675
+Lyon,Montpellier,45,0.4375
+Lyon,Metz,36,0.55
+Lyon,Nantes,21,0.7375
+Lyon,Clermont Foot,44,0.44999999999999996
+Marseille,Rennes,20,0.75
+Marseille,Reims,34,0.575
+Marseille,Toulouse,36,0.55
+Marseille,Strasbourg,12,0.85
+Marseille,Le Havre,6,0.925
+Marseille,Lorient,38,0.525
+Marseille,Montpellier,36,0.55
+Marseille,Metz,9,0.8875
+Marseille,Nantes,36,0.55
+Marseille,Clermont Foot,39,0.5125
+Rennes,Reims,32,0.6
+Rennes,Toulouse,37,0.5375
+Rennes,Strasbourg,24,0.7
+Rennes,Le Havre,18,0.775
+Rennes,Lorient,35,0.5625
+Rennes,Montpellier,36,0.55
+Rennes,Metz,17,0.7875
+Rennes,Nantes,31,0.6125
+Rennes,Clermont Foot,37,0.5375
+Reims,Toulouse,36,0.55
+Reims,Strasbourg,36,0.55
+Reims,Le Havre,38,0.525
+Reims,Lorient,32,0.6
+Reims,Montpellier,38,0.525
+Reims,Metz,34,0.575
+Reims,Nantes,39,0.5125
+Reims,Clermont Foot,39,0.5125
+Toulouse,Strasbourg,35,0.5625
+Toulouse,Le Havre,37,0.5375
+Toulouse,Lorient,19,0.7625
+Toulouse,Montpellier,44,0.44999999999999996
+Toulouse,Metz,40,0.5
+Toulouse,Nantes,17,0.7875
+Toulouse,Clermont Foot,48,0.4
+Strasbourg,Le Havre,8,0.9
+Strasbourg,Lorient,37,0.5375
+Strasbourg,Montpellier,35,0.5625
+Strasbourg,Metz,17,0.7875
+Strasbourg,Nantes,37,0.5375
+Strasbourg,Clermont Foot,38,0.525
+Le Havre,Lorient,39,0.5125
+Le Havre,Montpellier,34,0.575
+Le Havre,Metz,11,0.8625
+Le Havre,Nantes,35,0.5625
+Le Havre,Clermont Foot,37,0.5375
+Lorient,Montpellier,47,0.4125
+Lorient,Metz,42,0.475
+Lorient,Nantes,16,0.8
+Lorient,Clermont Foot,49,0.38749999999999996
+Montpellier,Metz,34,0.575
+Montpellier,Nantes,51,0.36250000000000004
+Montpellier,Clermont Foot,15,0.8125
+Metz,Nantes,40,0.5
+Metz,Clermont Foot,32,0.6
+Nantes,Clermont Foot,53,0.3375

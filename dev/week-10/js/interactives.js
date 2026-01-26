@@ -59,10 +59,11 @@ export async function initAllInteractives(slidesContainer) {
   // Observe each interactive slide for class changes
   interactiveSlides.forEach(slide => {
     observer.observe(slide, { attributes: true });
-
-    // Initialize if already active
-    if (slide.classList.contains('active')) {
-      initInteractive(slide);
-    }
   });
+
+  // IMPORTANT: Don't check for initially active slides here.
+  // Let the MutationObserver handle it when user navigates.
+  // If you land directly on an interactive slide via URL, you'll need
+  // to manually navigate away and back to trigger initialization.
+  console.log('Interactive observer set up - will initialize on slide navigation');
 }

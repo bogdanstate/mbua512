@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source": "Barcelona vs Manchester United, 2011 Champions League Final",
+    "description": "Midfield battle - minute 28, Barcelona pressing",
+    "scenario": "Barcelona controlling possession in midfield, Man United compact defending"
+  },
+  "teams": [
+    {
+      "name": "Barcelona",
+      "formation": "4-3-3",
+      "color": "#004D98",
+      "players": [
+        {"id": 1, "position": "GK", "x": 0.08, "y": 0.5},
+        {"id": 2, "position": "RB", "x": 0.25, "y": 0.18},
+        {"id": 3, "position": "CB", "x": 0.22, "y": 0.38},
+        {"id": 4, "position": "CB", "x": 0.22, "y": 0.62},
+        {"id": 5, "position": "LB", "x": 0.25, "y": 0.82},
+        {"id": 6, "position": "CDM", "x": 0.38, "y": 0.5},
+        {"id": 7, "position": "CM", "x": 0.52, "y": 0.35},
+        {"id": 8, "position": "CM", "x": 0.52, "y": 0.65},
+        {"id": 9, "position": "RW", "x": 0.68, "y": 0.22},
+        {"id": 10, "position": "ST", "x": 0.72, "y": 0.48},
+        {"id": 11, "position": "LW", "x": 0.68, "y": 0.78}
+      ]
+    },
+    {
+      "name": "Man United",
+      "formation": "4-4-1-1",
+      "color": "#DA020E",
+      "players": [
+        {"id": 12, "position": "GK", "x": 0.92, "y": 0.5},
+        {"id": 13, "position": "LB", "x": 0.78, "y": 0.18},
+        {"id": 14, "position": "CB", "x": 0.82, "y": 0.38},
+        {"id": 15, "position": "CB", "x": 0.82, "y": 0.62},
+        {"id": 16, "position": "RB", "x": 0.78, "y": 0.82},
+        {"id": 17, "position": "LM", "x": 0.58, "y": 0.25},
+        {"id": 18, "position": "CM", "x": 0.65, "y": 0.42},
+        {"id": 19, "position": "CM", "x": 0.65, "y": 0.58},
+        {"id": 20, "position": "RM", "x": 0.58, "y": 0.75},
+        {"id": 21, "position": "CAM", "x": 0.48, "y": 0.5},
+        {"id": 22, "position": "ST", "x": 0.35, "y": 0.5}
+      ]
+    }
+  ]
+}

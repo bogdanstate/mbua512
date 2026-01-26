@@ -1,0 +1,333 @@
+source,target,similarity,distance,source_team,target_team
+Youssouf Koné,Ibrahima Diallo,0.9655927091570516,0.03440729084294836,Ajaccio,Southampton
+Houboulang Mendes,Filippo Missori,0.9685611007592069,0.03143889924079313,Almería,Roma
+Samu Costa,Angelo Stiller,0.9622915471070188,0.03770845289298119,Almería,Hoffenheim
+Samu Costa,Benoît Badiashile,0.9709820313032841,0.029017968696715912,Almería,Monaco
+Samu Costa,Juan Bernat,0.9736720790143686,0.026327920985631414,Almería,Paris S-G
+Nabil Bentaleb,Antonín Barák,0.9624727460826851,0.03752725391731493,Angers,Fiorentina
+Nabil Bentaleb,Harry Winks,0.9656035679480838,0.034396432051916226,Angers,Sampdoria
+Kieran Tierney,Charles Aránguiz,0.9639563581284284,0.03604364187157161,Arsenal,Leverkusen
+Diego Carlos,Marten de Roon,0.9680866560545285,0.03191334394547152,Aston Villa,Atalanta
+Philippe Coutinho,Sergio Busquets,0.9626993728972558,0.03730062710274418,Aston Villa,Barcelona
+Philippe Coutinho,Pape Gueye,0.9655436141598036,0.03445638584019639,Aston Villa,Marseille
+Unai Vencedor Paris,Sergio Busquets,0.9708231284292247,0.02917687157077531,Athletic Club,Barcelona
+Unai Vencedor Paris,Darwin Machís,0.9608140684078926,0.03918593159210737,Athletic Club,Valladolid
+Marcos Llorente,Sergio Busquets,0.9736956848630722,0.02630431513692777,Atlético Madrid,Barcelona
+Marcos Llorente,Ben Pearson,0.9605574308602421,0.039442569139757855,Atlético Madrid,Bournemouth
+Marcos Llorente,Hugo Magnetti,0.9625898323962597,0.037410167603740274,Atlético Madrid,Brest
+Marcos Llorente,Hugo Mallo,0.9631789290886033,0.03682107091139675,Atlético Madrid,Celta Vigo
+Marcos Llorente,Lautaro Blanco,0.9609963585884826,0.039003641411517354,Atlético Madrid,Elche
+Marcos Llorente,Rubén,0.9643241732650137,0.03567582673498626,Atlético Madrid,Espanyol
+Marcos Llorente,Fernando Calero,0.9666805609619329,0.03331943903806711,Atlético Madrid,Espanyol
+Marcos Llorente,Alessandro Bianco,0.9721621585492238,0.02783784145077617,Atlético Madrid,Fiorentina
+Marcos Llorente,Antonín Barák,0.9611825648295741,0.03881743517042591,Atlético Madrid,Fiorentina
+Marcos Llorente,Harrison Reed,0.9635359280473041,0.03646407195269585,Atlético Madrid,Fulham
+Marcos Llorente,Angelo Stiller,0.9647458217337589,0.03525417826624111,Atlético Madrid,Hoffenheim
+Marcos Llorente,Przemysław Frankowski,0.9634509283827036,0.03654907161729637,Atlético Madrid,Lens
+Marcos Llorente,Nathan Aké,0.960732929772801,0.039267070227199,Atlético Madrid,Manchester City
+Marcos Llorente,Juan Bernat,0.9601772798318637,0.03982272016813626,Atlético Madrid,Paris S-G
+Marcos Llorente,Abdou Diallo,0.9680261158611478,0.03197388413885216,Atlético Madrid,RB Leipzig
+Marcos Llorente,Michel Ndary Adopo,0.9767620424384822,0.023237957561517808,Atlético Madrid,Torino
+Marcos Llorente,Pierre Højbjerg,0.9661355230098069,0.033864476990193126,Atlético Madrid,Tottenham
+Marcos Llorente,Toni Villa,0.9697288882158678,0.03027111178413222,Atlético Madrid,Valladolid
+Marcos Llorente,Sergi Guardiola,0.961857644041164,0.03814235595883597,Atlético Madrid,Valladolid
+Marcos Llorente,Christian Groß,0.9604011377429214,0.03959886225707865,Atlético Madrid,Werder Bremen
+Rodrigo De Paul,Iago,0.9681954485103459,0.03180455148965411,Atlético Madrid,Augsburg
+Ricardo Pepi,Copete,0.9650015158214854,0.03499848417851459,Augsburg,Mallorca
+Iago,Florent Mollet,0.9624176850211775,0.03758231497882247,Augsburg,Nantes
+Iago,Sergi Guardiola,0.9645873382064767,0.035412661793523315,Augsburg,Valladolid
+Birama Touré,Maxime Gonalons,0.9744207615661451,0.0255792384338549,Auxerre,Clermont Foot
+Birama Touré,Scott McTominay,0.9681726731537446,0.031827326846255444,Auxerre,Manchester Utd
+Birama Touré,Pathé Ciss,0.9639322050050095,0.036067794994990465,Auxerre,Rayo Vallecano
+Sergi Roberto,Trevoh Chalobah,0.9719950513583013,0.028004948641698668,Barcelona,Chelsea
+Sergi Roberto,Rico Lewis,0.9701709689408201,0.02982903105917989,Barcelona,Manchester City
+Sergi Roberto,Pierre Højbjerg,0.9675491519997804,0.03245084800021958,Barcelona,Tottenham
+Sergio Busquets,Ben Pearson,0.9653195970638415,0.03468040293615848,Barcelona,Bournemouth
+Sergio Busquets,Alessandro Bianco,0.9709953409159858,0.029004659084014173,Barcelona,Fiorentina
+Sergio Busquets,Harrison Reed,0.9797893604807765,0.020210639519223528,Barcelona,Fulham
+Sergio Busquets,Joan Gonzàlez,0.9609912765499747,0.03900872345002526,Barcelona,Lecce
+Sergio Busquets,Scott McTominay,0.9621070381842739,0.0378929618157261,Barcelona,Manchester Utd
+Sergio Busquets,Pape Gueye,0.965401971795092,0.03459802820490798,Barcelona,Marseille
+Sergio Busquets,Téji Savanier,0.963117933173556,0.036882066826444015,Barcelona,Montpellier
+Sergio Busquets,Florent Mollet,0.9666812147912682,0.03331878520873177,Barcelona,Nantes
+Sergio Busquets,Abdou Diallo,0.9618359970841703,0.038164002915829665,Barcelona,RB Leipzig
+Sergio Busquets,Michel Ndary Adopo,0.9680059714364094,0.03199402856359057,Barcelona,Torino
+Sergio Busquets,Toni Villa,0.9797703773707194,0.02022962262928063,Barcelona,Valladolid
+Marcel Sabitzer,Eduardo Camavinga,0.9714781952419341,0.028521804758065872,Bayern Munich,Real Madrid
+Marcel Sabitzer,Pierre Højbjerg,0.9661585033532695,0.03384149664673053,Bayern Munich,Tottenham
+Marcel Sabitzer,Felix Nmecha,0.9671887924066033,0.03281120759339673,Bayern Munich,Wolfsburg
+Ryan Gravenberch,Conor Gallagher,0.966005335972101,0.03399466402789897,Bayern Munich,Chelsea
+Ryan Gravenberch,Maxime Gonalons,0.9621826292203847,0.037817370779615334,Bayern Munich,Clermont Foot
+Ryan Gravenberch,Noah Weißhaupt,0.9638036299969266,0.03619637000307341,Bayern Munich,Freiburg
+Ryan Gravenberch,Luis Alberto,0.960831284412524,0.03916871558747603,Bayern Munich,Lazio
+Ryan Gravenberch,Joan Gonzàlez,0.9620910753986799,0.037908924601320115,Bayern Munich,Lecce
+Ryan Gravenberch,Florent Mollet,0.9613683246808886,0.03863167531911138,Bayern Munich,Nantes
+Ryan Gravenberch,Toni Kroos,0.9613607710249031,0.03863922897509686,Bayern Munich,Real Madrid
+Ryan Gravenberch,Harry Winks,0.9626700812449911,0.037329918755008906,Bayern Munich,Sampdoria
+Ryan Gravenberch,Yannick Gerhardt,0.9741199819649364,0.025880018035063568,Bayern Munich,Wolfsburg
+Ryan Gravenberch,Felix Nmecha,0.9638762947786035,0.03612370522139652,Bayern Munich,Wolfsburg
+William Carvalho,Conor Gallagher,0.9612427992609799,0.038757200739020115,Betis,Chelsea
+William Carvalho,Pathé Ciss,0.960144987570109,0.03985501242989098,Betis,Rayo Vallecano
+Ben Pearson,Noah Weißhaupt,0.9706449691587101,0.029355030841289875,Bournemouth,Freiburg
+Ben Pearson,Harrison Reed,0.9629513798313168,0.037048620168683155,Bournemouth,Fulham
+Ben Pearson,Przemysław Frankowski,0.9637269374646084,0.03627306253539164,Bournemouth,Lens
+Ben Pearson,Jeremie Frimpong,0.9618547502937833,0.03814524970621669,Bournemouth,Leverkusen
+Ben Pearson,Charles Aránguiz,0.962598462365994,0.037401537634006,Bournemouth,Leverkusen
+Ben Pearson,Nathan Aké,0.9623242947543642,0.03767570524563579,Bournemouth,Manchester City
+Ben Pearson,Patrick Ciurria,0.9653425544262159,0.03465744557378414,Bournemouth,Monza
+Ben Pearson,Mickaël Cuisance,0.963469164627115,0.03653083537288504,Bournemouth,Sampdoria
+Ben Pearson,Ibrahima Diallo,0.9644026745694518,0.035597325430548166,Bournemouth,Southampton
+Ben Pearson,João Gomes,0.9677840928334515,0.03221590716654854,Bournemouth,Wolves
+Hugo Magnetti,Florent Mollet,0.9625890215643238,0.0374109784356762,Brest,Nantes
+Hugo Magnetti,Michel Ndary Adopo,0.971659571511092,0.028340428488908054,Brest,Torino
+Pascal Groß,Antonín Barák,0.9606841451680048,0.03931585483199518,Brighton,Fiorentina
+Augusto Solari,Maxime Gonalons,0.970163830267228,0.029836169732772033,Celta Vigo,Clermont Foot
+Augusto Solari,Florent Mollet,0.96049549722411,0.039504502775890016,Celta Vigo,Nantes
+Augusto Solari,Anthony Gordon,0.9627450432163098,0.037254956783690174,Celta Vigo,Newcastle Utd
+Augusto Solari,Abdou Diallo,0.9674527502767254,0.03254724972327461,Celta Vigo,RB Leipzig
+Augusto Solari,Viktor Kovalenko,0.9700221466224466,0.02997785337755343,Celta Vigo,Spezia
+Augusto Solari,Carlos Soler,0.9708547947369363,0.029145205263063745,Celta Vigo,Valencia
+Augusto Solari,Yannick Gerhardt,0.9649339013494377,0.035066098650562316,Celta Vigo,Wolfsburg
+Augusto Solari,Felix Nmecha,0.9625280684187881,0.03747193158121187,Celta Vigo,Wolfsburg
+Augusto Solari,João Gomes,0.9650476465081236,0.03495235349187642,Celta Vigo,Wolves
+Hugo Mallo,Charles Aránguiz,0.9666247643865417,0.03337523561345834,Celta Vigo,Leverkusen
+Conor Gallagher,Saîf-Eddine Khaoui,0.9621750444445724,0.03782495555542764,Chelsea,Clermont Foot
+Conor Gallagher,Noah Weißhaupt,0.9673321821657633,0.03266781783423667,Chelsea,Freiburg
+Conor Gallagher,Luis Alberto,0.9640784255670833,0.03592157443291666,Chelsea,Lazio
+Conor Gallagher,Harry Winks,0.9626955388647251,0.03730446113527486,Chelsea,Sampdoria
+Conor Gallagher,Christian Groß,0.9766107561592771,0.02338924384072294,Chelsea,Werder Bremen
+Conor Gallagher,Jens Stage,0.9637401514048738,0.03625984859512621,Chelsea,Werder Bremen
+Conor Gallagher,Yannick Gerhardt,0.9663236391648596,0.03367636083514036,Chelsea,Wolfsburg
+Aïman Maurer,Saîf-Eddine Khaoui,0.964231363338591,0.03576863666140895,Clermont Foot,Clermont Foot
+Aïman Maurer,Noah Weißhaupt,0.9628736352857132,0.037126364714286764,Clermont Foot,Freiburg
+Aïman Maurer,Angelo Stiller,0.9722463272811298,0.027753672718870193,Clermont Foot,Hoffenheim
+Aïman Maurer,Harry Souttar,0.9617524816582416,0.038247518341758435,Clermont Foot,Leicester City
+Aïman Maurer,Fabinho,0.9633993352076459,0.03660066479235413,Clermont Foot,Liverpool
+Aïman Maurer,Jean-Victor Makengo,0.9609760311339989,0.039023968866001124,Clermont Foot,Lorient
+Aïman Maurer,Scott McTominay,0.9617198917116386,0.03828010828836137,Clermont Foot,Manchester Utd
+Aïman Maurer,Pape Gueye,0.9732617392947115,0.026738260705288508,Clermont Foot,Marseille
+Aïman Maurer,Tommaso Pobega,0.9620321905701593,0.03796780942984068,Clermont Foot,Milan
+Aïman Maurer,Florent Mollet,0.9629843851089521,0.03701561489104788,Clermont Foot,Nantes
+Aïman Maurer,Moussa Sissoko,0.9654799615565861,0.03452003844341389,Clermont Foot,Nantes
+Aïman Maurer,Jon Moncayola,0.9663613048672735,0.03363869513272655,Clermont Foot,Osasuna
+Aïman Maurer,Juan Bernat,0.9621608025486122,0.03783919745138775,Clermont Foot,Paris S-G
+Aïman Maurer,Pierre Højbjerg,0.9650065990709047,0.03499340092909531,Clermont Foot,Tottenham
+Aïman Maurer,Christian Groß,0.9682130002034832,0.03178699979651678,Clermont Foot,Werder Bremen
+Saîf-Eddine Khaoui,Angelo Stiller,0.9683142872221618,0.03168571277783816,Clermont Foot,Hoffenheim
+Saîf-Eddine Khaoui,Eduardo Camavinga,0.9719656513195168,0.028034348680483157,Clermont Foot,Real Madrid
+Saîf-Eddine Khaoui,Christian Groß,0.9633727548670183,0.036627245132981656,Clermont Foot,Werder Bremen
+Maxime Gonalons,Jacopo Fazzini,0.9714050448762994,0.028594955123700583,Clermont Foot,Empoli
+Maxime Gonalons,Noah Weißhaupt,0.9611347733671951,0.038865226632804895,Clermont Foot,Freiburg
+Maxime Gonalons,Harrison Reed,0.9680433769044913,0.03195662309550873,Clermont Foot,Fulham
+Maxime Gonalons,Bonke Innocent,0.9646734716729232,0.035326528327076834,Clermont Foot,Lorient
+Maxime Gonalons,Martin Valjent,0.9630575564954996,0.03694244350450038,Clermont Foot,Mallorca
+Maxime Gonalons,Rico Lewis,0.9605627024406478,0.039437297559352213,Clermont Foot,Manchester City
+Maxime Gonalons,Scott McTominay,0.9698704676771335,0.030129532322866526,Clermont Foot,Manchester Utd
+Maxime Gonalons,Abdou Diallo,0.9687031135944086,0.03129688640559136,Clermont Foot,RB Leipzig
+Maxime Gonalons,Pathé Ciss,0.9708198064781526,0.02918019352184742,Clermont Foot,Rayo Vallecano
+Maxime Gonalons,Toni Kroos,0.9616586820908178,0.03834131790918216,Clermont Foot,Real Madrid
+Maxime Gonalons,Harry Winks,0.9614035466695072,0.038596453330492775,Clermont Foot,Sampdoria
+Maxime Gonalons,Michel Ndary Adopo,0.9644126361906299,0.03558736380937011,Clermont Foot,Torino
+Maxime Gonalons,João Gomes,0.9629742834277012,0.037025716572298806,Clermont Foot,Wolves
+Pablo Galdames Millán,Noah Weißhaupt,0.9636387912223638,0.036361208777636156,Cremonese,Freiburg
+Pablo Galdames Millán,Roberto Pereyra,0.9695552580884412,0.03044474191155877,Cremonese,Udinese
+Jude Bellingham,Damián Suárez,0.9708820238149759,0.029117976185024097,Dortmund,Getafe
+Jude Bellingham,Scott McTominay,0.9638778292519374,0.036122170748062565,Dortmund,Manchester Utd
+Jude Bellingham,Harry Winks,0.9714746269757448,0.028525373024255174,Dortmund,Sampdoria
+Jude Bellingham,Carlos Soler,0.9638343876446219,0.036165612355378074,Dortmund,Valencia
+Sebastian Rode,Kristijan Jakić,0.9636197409905567,0.036380259009443305,Eint Frankfurt,Eint Frankfurt
+Sebastian Rode,Nathan Patterson,0.9663987705669763,0.03360122943302368,Eint Frankfurt,Everton
+Sebastian Rode,Harry Souttar,0.9613027470001507,0.038697252999849274,Eint Frankfurt,Leicester City
+Sebastian Rode,Charles Aránguiz,0.9611186049619193,0.038881395038080746,Eint Frankfurt,Leverkusen
+Kristijan Jakić,Lee Jae-sung,0.9601854919086683,0.03981450809133169,Eint Frankfurt,Mainz 05
+Kristijan Jakić,Yannick Gerhardt,0.9694192715469003,0.03058072845309967,Eint Frankfurt,Wolfsburg
+Pedro Bigas,Nathan Aké,0.9624556236076752,0.037544376392324774,Elche,Manchester City
+Lautaro Blanco,Dimitri Liénard,0.9671475013417996,0.03285249865820039,Elche,Strasbourg
+Lautaro Blanco,Pierre Højbjerg,0.9606326899976918,0.0393673100023082,Elche,Tottenham
+Sebastian Walukiewicz,Jacopo Fazzini,0.9616363547234514,0.038363645276548564,Empoli,Empoli
+Sebastian Walukiewicz,Szymon Żurkowski,0.96696670180432,0.033033298195680016,Empoli,Spezia
+Sebastian Walukiewicz,Viktor Kovalenko,0.9631735873254073,0.036826412674592746,Empoli,Spezia
+Jacopo Fazzini,Liam Henderson,0.960691182730601,0.039308817269399055,Empoli,Empoli
+Jacopo Fazzini,Harrison Reed,0.9604432717943011,0.03955672820569889,Empoli,Fulham
+Jacopo Fazzini,Damián Suárez,0.9644559341723857,0.03554406582761427,Empoli,Getafe
+Jacopo Fazzini,Scott McTominay,0.9630433975128639,0.03695660248713606,Empoli,Manchester Utd
+Jacopo Fazzini,Valentin Rongier,0.9630643962917128,0.03693560370828719,Empoli,Marseille
+Jacopo Fazzini,Moussa Sissoko,0.9720905825786434,0.027909417421356553,Empoli,Nantes
+Jacopo Fazzini,Abdou Diallo,0.972959128821614,0.02704087117838605,Empoli,RB Leipzig
+Jacopo Fazzini,Valentin Atangana Edoa,0.9607931224858387,0.0392068775141613,Empoli,Reims
+Jacopo Fazzini,Mickaël Cuisance,0.96563870196789,0.034361298032109966,Empoli,Sampdoria
+Jacopo Fazzini,Michel Ndary Adopo,0.9689138054715,0.031086194528500033,Empoli,Torino
+Jacopo Fazzini,Karol Linetty,0.9612672014395759,0.03873279856042411,Empoli,Torino
+Liam Henderson,Rico Lewis,0.9617940013344096,0.03820599866559038,Empoli,Manchester City
+Rubén,Fernando Calero,0.9616940344913353,0.03830596550866472,Espanyol,Espanyol
+Rubén,Michel Ndary Adopo,0.9693799811509956,0.03062001884900445,Espanyol,Torino
+Rubén,Rominigue Kouamé,0.9642036489706524,0.03579635102934764,Espanyol,Troyes
+Fernando Calero,Antonín Barák,0.9694075988252867,0.03059240117471329,Espanyol,Fiorentina
+Fernando Calero,Jon Moncayola,0.9600121277826955,0.03998787221730449,Espanyol,Osasuna
+Sofyan Amrabat,Luis Alberto,0.9629254335398634,0.037074566460136626,Fiorentina,Lazio
+Sofyan Amrabat,Ibrahima Diallo,0.9644432086506084,0.0355567913493916,Fiorentina,Southampton
+Sofyan Amrabat,Yannick Gerhardt,0.9606817196869121,0.03931828031308793,Fiorentina,Wolfsburg
+Alessandro Bianco,Harrison Reed,0.9611590422260102,0.03884095777398977,Fiorentina,Fulham
+Alessandro Bianco,Téji Savanier,0.9601247686049706,0.039875231395029354,Fiorentina,Montpellier
+Alessandro Bianco,Abdou Diallo,0.9700522175228465,0.029947782477153462,Fiorentina,RB Leipzig
+Alessandro Bianco,Pierre Højbjerg,0.9635623776744344,0.03643762232556558,Fiorentina,Tottenham
+Alessandro Bianco,Toni Villa,0.9615864434566503,0.03841355654334966,Fiorentina,Valladolid
+Antonín Barák,Noah Weißhaupt,0.9672254208470487,0.032774579152951344,Fiorentina,Freiburg
+Antonín Barák,Moussa Sissoko,0.9600671221634121,0.03993287783658794,Fiorentina,Nantes
+Antonín Barák,Michel Ndary Adopo,0.9711330569421042,0.028866943057895833,Fiorentina,Torino
+Noah Weißhaupt,Damián Suárez,0.9600254702758797,0.0399745297241203,Freiburg,Getafe
+Noah Weißhaupt,Harry Souttar,0.9658081589885447,0.03419184101145534,Freiburg,Leicester City
+Noah Weißhaupt,Przemysław Frankowski,0.9603970649019946,0.03960293509800539,Freiburg,Lens
+Noah Weißhaupt,Casemiro,0.96327102901991,0.03672897098008998,Freiburg,Manchester Utd
+Noah Weißhaupt,Patrick Ciurria,0.9604436823971527,0.03955631760284728,Freiburg,Monza
+Noah Weißhaupt,Moussa Sissoko,0.9601806632225105,0.0398193367774895,Freiburg,Nantes
+Noah Weißhaupt,Juan Bernat,0.9602523047573923,0.039747695242607683,Freiburg,Paris S-G
+Noah Weißhaupt,Abdou Harroui,0.9670237911638048,0.03297620883619523,Freiburg,Sassuolo
+Noah Weißhaupt,Ibrahima Diallo,0.9620802589272595,0.03791974107274054,Freiburg,Southampton
+Noah Weißhaupt,Michel Ndary Adopo,0.961956753436827,0.03804324656317304,Freiburg,Torino
+Noah Weißhaupt,Christian Groß,0.9678678969975816,0.03213210300241842,Freiburg,Werder Bremen
+Noah Weißhaupt,Jens Stage,0.9702926518505905,0.02970734814940945,Freiburg,Werder Bremen
+Noah Weißhaupt,Yannick Gerhardt,0.9646658472029584,0.03533415279704155,Freiburg,Wolfsburg
+Noah Weißhaupt,João Gomes,0.9619186191805336,0.03808138081946644,Freiburg,Wolves
+Harrison Reed,Luis Alberto,0.9668465517337282,0.03315344826627176,Fulham,Lazio
+Harrison Reed,Nathan Aké,0.9606995123537948,0.039300487646205196,Fulham,Manchester City
+Harrison Reed,Téji Savanier,0.9682660340786383,0.031733965921361684,Fulham,Montpellier
+Harrison Reed,Florent Mollet,0.9667864271336197,0.03321357286638027,Fulham,Nantes
+Harrison Reed,Toni Villa,0.9635928970303548,0.03640710296964522,Fulham,Valladolid
+Harrison Reed,Yannick Gerhardt,0.9693161782576039,0.030683821742396145,Fulham,Wolfsburg
+Damián Suárez,Luis Alberto,0.9603259103144094,0.03967408968559061,Getafe,Lazio
+Damián Suárez,Przemysław Frankowski,0.9603193066522069,0.03968069334779312,Getafe,Lens
+Damián Suárez,Jean-Victor Makengo,0.9832927851344038,0.01670721486559623,Getafe,Lorient
+Damián Suárez,Bonke Innocent,0.9689166328811979,0.031083367118802108,Getafe,Lorient
+Damián Suárez,Scott McTominay,0.9656014804614005,0.034398519538599515,Getafe,Manchester Utd
+Damián Suárez,Valentin Rongier,0.9648130893775546,0.03518691062244539,Getafe,Marseille
+Damián Suárez,Moussa Sissoko,0.9759769094263073,0.024023090573692674,Getafe,Nantes
+Damián Suárez,Harry Winks,0.9711975082601113,0.02880249173988869,Getafe,Sampdoria
+Damián Suárez,Michel Ndary Adopo,0.9723258672228791,0.02767413277712094,Getafe,Torino
+Damián Suárez,Jens Stage,0.9647230334240501,0.03527696657594992,Getafe,Werder Bremen
+Oliver Abildgaard,Florent Mollet,0.9602644528422897,0.03973554715771033,Hellas Verona,Nantes
+Oliver Abildgaard,Juan Bernat,0.9658912196641247,0.03410878033587528,Hellas Verona,Paris S-G
+Angelo Stiller,Valentin Rongier,0.9635525256336505,0.03644747436634954,Hoffenheim,Marseille
+Angelo Stiller,Moussa Sissoko,0.9616895149697119,0.03831048503028811,Hoffenheim,Nantes
+Angelo Stiller,Juan Bernat,0.9639806530735783,0.036019346926421725,Hoffenheim,Paris S-G
+Angelo Stiller,Pierre Højbjerg,0.9779008235553004,0.02209917644469961,Hoffenheim,Tottenham
+Luis Alberto,Bonke Innocent,0.9671205027039851,0.032879497296014915,Lazio,Lorient
+Luis Alberto,Christian Groß,0.9637518018727906,0.03624819812720936,Lazio,Werder Bremen
+Luis Alberto,Yannick Gerhardt,0.975277444535586,0.024722555464414042,Lazio,Wolfsburg
+Luis Alberto,Felix Nmecha,0.962885347842856,0.037114652157144046,Lazio,Wolfsburg
+Joan Gonzàlez,Tommaso Pobega,0.969096134160522,0.030903865839478017,Lecce,Milan
+Joan Gonzàlez,Florent Mollet,0.9670288405133046,0.03297115948669538,Lecce,Nantes
+Joan Gonzàlez,Ibrahima Diallo,0.9646514648270077,0.0353485351729923,Lecce,Southampton
+Harry Souttar,Charles Aránguiz,0.9700187924519086,0.029981207548091415,Leicester City,Leverkusen
+Harry Souttar,Tommaso Pobega,0.9658515667315771,0.03414843326842287,Leicester City,Milan
+Harry Souttar,Ismail Jakobs,0.9651077895528977,0.034892210447102334,Leicester City,Monaco
+Harry Souttar,Mickaël Cuisance,0.9703505005246217,0.029649499475378316,Leicester City,Sampdoria
+Harry Souttar,Ibrahima Diallo,0.9617128251228728,0.038287174877127184,Leicester City,Southampton
+Harry Souttar,Tristan Dingomé,0.9633730704916527,0.03662692950834734,Leicester City,Troyes
+Harry Souttar,Carlos Soler,0.9636905767481736,0.0363094232518264,Leicester City,Valencia
+Harry Souttar,Christian Groß,0.9734662600393856,0.026533739960614366,Leicester City,Werder Bremen
+Harry Souttar,Yannick Gerhardt,0.9809073704254151,0.019092629574584907,Leicester City,Wolfsburg
+Przemysław Frankowski,Florent Mollet,0.9654945491320849,0.03450545086791512,Lens,Nantes
+Przemysław Frankowski,Moussa Sissoko,0.9760422689460241,0.023957731053975917,Lens,Nantes
+Przemysław Frankowski,Amadou Haidara,0.969694596671935,0.030305403328064973,Lens,RB Leipzig
+Przemysław Frankowski,James Bree,0.9718709934944617,0.02812900650553829,Lens,Southampton
+Przemysław Frankowski,Michel Ndary Adopo,0.9676558105573865,0.032344189442613525,Lens,Torino
+Daley Sinkgraven,Toni Villa,0.9611899063723426,0.038810093627657416,Leverkusen,Valladolid
+Moussa Diaby,Sanjin Prcić,0.9716907257548071,0.028309274245192917,Leverkusen,Strasbourg
+Jeremie Frimpong,Charles Aránguiz,0.9659330830641143,0.034066916935885705,Leverkusen,Leverkusen
+Jeremie Frimpong,Nathan Aké,0.9628528721177427,0.03714712788225727,Leverkusen,Manchester City
+Jeremie Frimpong,Ibrahima Diallo,0.9618287862881867,0.03817121371181331,Leverkusen,Southampton
+Charles Aránguiz,Mickaël Cuisance,0.9664001180115009,0.03359988198849906,Leverkusen,Sampdoria
+Charles Aránguiz,Ibrahima Diallo,0.9639278428353742,0.03607215716462575,Leverkusen,Southampton
+Charles Aránguiz,Yannick Gerhardt,0.9633931780930994,0.036606821906900566,Leverkusen,Wolfsburg
+Angel Gomes,Jon Moncayola,0.9683596385049432,0.03164036149505678,Lille,Osasuna
+Joe Gomez,Naby Keïta,0.9631583069302226,0.03684169306977736,Liverpool,Liverpool
+Fabinho,Bonke Innocent,0.9649546469575219,0.03504535304247813,Liverpool,Lorient
+Fabinho,Antonio Sánchez,0.9601973790501863,0.03980262094981368,Liverpool,Mallorca
+Fabinho,Karol Linetty,0.9622062895246205,0.037793710475379494,Liverpool,Torino
+Fabinho,Toni Villa,0.9614746299306076,0.038525370069392384,Liverpool,Valladolid
+Naby Keïta,Juan Bernat,0.9633478501229831,0.036652149877016926,Liverpool,Paris S-G
+Ayman Kari,Moussa Sissoko,0.962374182749714,0.03762581725028602,Lorient,Nantes
+Jean-Victor Makengo,Bonke Innocent,0.9750306229296479,0.024969377070352072,Lorient,Lorient
+Jean-Victor Makengo,Valentin Rongier,0.966431626214355,0.033568373785645034,Lorient,Marseille
+Jean-Victor Makengo,Florent Mollet,0.9609368817613326,0.03906311823866737,Lorient,Nantes
+Jean-Victor Makengo,Moussa Sissoko,0.9658155990593303,0.03418440094066966,Lorient,Nantes
+Jean-Victor Makengo,Michel Ndary Adopo,0.9725480947727368,0.02745190522726315,Lorient,Torino
+Jean-Victor Makengo,Karol Linetty,0.9679501659863111,0.03204983401368888,Lorient,Torino
+Bonke Innocent,Rico Lewis,0.9710623684469522,0.02893763155304785,Lorient,Manchester City
+Bonke Innocent,Yannick Gerhardt,0.9666469861497119,0.033353013850288105,Lorient,Wolfsburg
+Corentin Tolisso,João Gomes,0.9624698277870064,0.037530172212993596,Lyon,Wolves
+Lee Jae-sung,Yannick Gerhardt,0.9646974778064507,0.035302522193549346,Mainz 05,Wolfsburg
+Antonio Sánchez,Karol Linetty,0.9727814953557574,0.02721850464424258,Mallorca,Torino
+Antonio Sánchez,Pierre Højbjerg,0.9681779203427484,0.03182207965725159,Mallorca,Tottenham
+Martin Valjent,Abdou Harroui,0.9678943452150434,0.03210565478495664,Mallorca,Sassuolo
+Rico Lewis,Pierre Højbjerg,0.9667560590607086,0.033243940939291394,Manchester City,Tottenham
+Nathan Aké,Robin Knoche,0.9618663823696341,0.038133617630365935,Manchester City,Union Berlin
+Nathan Aké,Toni Villa,0.9670679438769155,0.032932056123084474,Manchester City,Valladolid
+Casemiro,Juan Bernat,0.9648593524085346,0.0351406475914654,Manchester Utd,Paris S-G
+Scott McTominay,Léo Leroy,0.9707594861427578,0.029240513857242245,Manchester Utd,Montpellier
+Scott McTominay,Valentin Atangana Edoa,0.9627978496651659,0.037202150334834094,Manchester Utd,Reims
+Scott McTominay,Harry Winks,0.9668108614549797,0.03318913854502026,Manchester Utd,Sampdoria
+Scott McTominay,Karol Linetty,0.9607668567233414,0.03923314327665861,Manchester Utd,Torino
+Pape Gueye,Florent Mollet,0.9618800198394483,0.038119980160551736,Marseille,Nantes
+Pape Gueye,Juan Bernat,0.9646224261782902,0.03537757382170981,Marseille,Paris S-G
+Souleymane Touré,Sebastiaan Bornauw,0.9624695861100563,0.037530413889943715,Marseille,Wolfsburg
+Valentin Rongier,Juan Bernat,0.9618133006115988,0.038186699388401246,Marseille,Paris S-G
+Valentin Rongier,Karol Linetty,0.9704739211754324,0.029526078824567592,Marseille,Torino
+Valentin Rongier,Pierre Højbjerg,0.9661686510648919,0.033831348935108085,Marseille,Tottenham
+Valentin Rongier,Carlos Soler,0.963171531985765,0.036828468014235005,Marseille,Valencia
+Matteo Gabbia,Bartosz Bereszyński,0.9671429838927224,0.03285701610727765,Milan,Napoli
+Tommaso Pobega,Abdou Harroui,0.9620976861933781,0.0379023138066219,Milan,Sassuolo
+Tommaso Pobega,Tristan Dingomé,0.9763512801181287,0.02364871988187134,Milan,Troyes
+Tommaso Pobega,Ramón Terrats,0.9630334265776157,0.0369665734223843,Milan,Villarreal
+Tommaso Pobega,Christian Groß,0.9638980093335278,0.03610199066647224,Milan,Werder Bremen
+Léo Leroy,Toni Villa,0.9642072867067231,0.035792713293276934,Montpellier,Valladolid
+Téji Savanier,Pierre Højbjerg,0.9606537884263444,0.03934621157365559,Montpellier,Tottenham
+Téji Savanier,Toni Villa,0.9659819196982894,0.03401808030171061,Montpellier,Valladolid
+Patrick Ciurria,Moussa Sissoko,0.9615031964924405,0.03849680350755946,Monza,Nantes
+Patrick Ciurria,Tristan Dingomé,0.9641789352486012,0.03582106475139879,Monza,Troyes
+Patrick Ciurria,Jens Stage,0.9627048999397754,0.03729510006022463,Monza,Werder Bremen
+Florent Mollet,Juan Bernat,0.961597966472118,0.03840203352788196,Nantes,Paris S-G
+Florent Mollet,Michel Ndary Adopo,0.964355715077378,0.03564428492262195,Nantes,Torino
+Florent Mollet,Sergi Guardiola,0.9617881615127027,0.038211838487297256,Nantes,Valladolid
+Florent Mollet,Yannick Gerhardt,0.9626945293683522,0.0373054706316478,Nantes,Wolfsburg
+Moussa Sissoko,Amadou Haidara,0.9640393393491455,0.03596066065085446,Nantes,RB Leipzig
+Moussa Sissoko,Michel Ndary Adopo,0.9668240345839602,0.03317596541603984,Nantes,Torino
+Moussa Sissoko,Jens Stage,0.9657125920207452,0.03428740797925478,Nantes,Werder Bremen
+Fabian Schär,Toni Kroos,0.9610290601541644,0.03897093984583555,Newcastle Utd,Real Madrid
+Anthony Gordon,Carlos Soler,0.9698849035625049,0.030115096437495104,Newcastle Utd,Valencia
+Steve Cook,Mitchell van Bergen,0.9650102176030606,0.034989782396939395,Nott'ham Forest,Reims
+Morgan Gibbs-White,Abdou Diallo,0.9627006941703553,0.03729930582964469,Nott'ham Forest,RB Leipzig
+Morgan Gibbs-White,Toni Villa,0.960463122207461,0.039536877792539005,Nott'ham Forest,Valladolid
+Juan Cruz Armada,Juan Bernat,0.9718806935933731,0.028119306406626854,Osasuna,Paris S-G
+Jon Moncayola,Pierre Højbjerg,0.9626347344888205,0.03736526551117947,Osasuna,Tottenham
+Jon Moncayola,Yves Bissouma,0.9714194773852315,0.02858052261476851,Osasuna,Tottenham
+Juan Bernat,Mickaël Cuisance,0.9603117163483558,0.03968828365164423,Paris S-G,Sampdoria
+Juan Bernat,Toni Villa,0.9634227930796635,0.0365772069203365,Paris S-G,Valladolid
+Fabián Ruiz Peña,Carlos Soler,0.961792579484704,0.03820742051529602,Paris S-G,Valencia
+Abdou Diallo,Michel Ndary Adopo,0.9619140746642095,0.03808592533579047,RB Leipzig,Torino
+Amadou Haidara,Michel Ndary Adopo,0.972288751001939,0.02771124899806099,RB Leipzig,Torino
+Valentin Atangana Edoa,Toni Villa,0.9604259089131855,0.039574091086814533,Reims,Valladolid
+Xeka,Michel Ndary Adopo,0.9717316645025428,0.02826833549745722,Rennes,Torino
+Xeka,Monchu,0.9617061154700666,0.03829388452993343,Rennes,Valladolid
+Xeka,Toni Villa,0.9654215505893153,0.034578449410684664,Rennes,Valladolid
+Harry Winks,Yannick Gerhardt,0.9682067559792374,0.03179324402076256,Sampdoria,Wolfsburg
+Lorenzo Malagrida,Monchu,0.9618740823029468,0.0381259176970532,Sampdoria,Valladolid
+Mickaël Cuisance,Ibrahima Diallo,0.9772058058821146,0.022794194117885413,Sampdoria,Southampton
+Mickaël Cuisance,Yannick Gerhardt,0.9644636164266654,0.03553638357333455,Sampdoria,Wolfsburg
+Mickaël Cuisance,João Gomes,0.9617498575932673,0.038250142406732746,Sampdoria,Wolves
+Kristian Thorstvedt,Toni Villa,0.9640421601957334,0.03595783980426659,Sassuolo,Valladolid
+Abdou Harroui,Tristan Dingomé,0.9659674121300161,0.034032587869983866,Sassuolo,Troyes
+Abdou Harroui,João Gomes,0.9668556908062782,0.0331443091937218,Sassuolo,Wolves
+Szymon Żurkowski,Viktor Kovalenko,0.9617170290569201,0.038282970943079864,Spezia,Spezia
+Michel Ndary Adopo,Pierre Højbjerg,0.9640988104594432,0.035901189540556766,Torino,Tottenham
+Michel Ndary Adopo,Toni Villa,0.9636485934947275,0.036351406505272466,Torino,Valladolid
+Karol Linetty,Pierre Højbjerg,0.9608648085805974,0.03913519141940258,Torino,Tottenham
+Roberto Pereyra,Christian Groß,0.9643086458325923,0.03569135416740765,Udinese,Werder Bremen
+Edinson Cavani,Carlos Soler,0.962454484906673,0.03754551509332704,Valencia,Valencia
+Darwin Machís,Toni Villa,0.9637792797240881,0.036220720275911944,Valladolid,Valladolid
+Toni Villa,Ilia Gruev,0.9698536537183106,0.03014634628168944,Valladolid,Werder Bremen
+Manu Trigueros,Ramón Terrats,0.9706297515890858,0.02937024841091418,Villarreal,Villarreal
+Christian Groß,Jens Stage,0.9646210250236305,0.03537897497636955,Werder Bremen,Werder Bremen
+Christian Groß,Yannick Gerhardt,0.9723808396000123,0.027619160399987686,Werder Bremen,Wolfsburg
+Yannick Gerhardt,Felix Nmecha,0.9642162613677255,0.035783738632274464,Wolfsburg,Wolfsburg

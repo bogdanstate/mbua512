@@ -1,0 +1,4946 @@
+{
+  "nodes": [
+    {
+      "id": "Youssouf Koné",
+      "team": "Ajaccio",
+      "league": "Ligue 1",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Youcef Belaïli",
+      "team": "Ajaccio",
+      "league": "Ligue 1",
+      "avgPossession": 7.3
+    },
+    {
+      "id": "Mickaël Alphonse",
+      "team": "Ajaccio",
+      "league": "Ligue 1",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Moussa Soumano",
+      "team": "Ajaccio",
+      "league": "Ligue 1",
+      "avgPossession": 4.5
+    },
+    {
+      "id": "Mathieu Coutadeur",
+      "team": "Ajaccio",
+      "league": "Ligue 1",
+      "avgPossession": 10.4
+    },
+    {
+      "id": "El Bilal Touré",
+      "team": "Almería",
+      "league": "La Liga",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Francisco Portillo",
+      "team": "Almería",
+      "league": "La Liga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Houboulang Mendes",
+      "team": "Almería",
+      "league": "La Liga",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Lázaro",
+      "team": "Almería",
+      "league": "La Liga",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Samu Costa",
+      "team": "Almería",
+      "league": "La Liga",
+      "avgPossession": 12
+    },
+    {
+      "id": "Nabil Bentaleb",
+      "team": "Angers",
+      "league": "Ligue 1",
+      "avgPossession": 12.3
+    },
+    {
+      "id": "Abdallah Sima",
+      "team": "Angers",
+      "league": "Ligue 1",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Miha Blažič",
+      "team": "Angers",
+      "league": "Ligue 1",
+      "avgPossession": 10
+    },
+    {
+      "id": "Adrien Hunou",
+      "team": "Angers",
+      "league": "Ligue 1",
+      "avgPossession": 8
+    },
+    {
+      "id": "Zinédine Ould Khaled",
+      "team": "Angers",
+      "league": "Ligue 1",
+      "avgPossession": 5.3
+    },
+    {
+      "id": "Fabio Vieira",
+      "team": "Arsenal",
+      "league": "Premier League",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Kieran Tierney",
+      "team": "Arsenal",
+      "league": "Premier League",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Rob Holding",
+      "team": "Arsenal",
+      "league": "Premier League",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Eddie Nketiah",
+      "team": "Arsenal",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Gabriel Jesus",
+      "team": "Arsenal",
+      "league": "Premier League",
+      "avgPossession": 7.4
+    },
+    {
+      "id": "Diego Carlos",
+      "team": "Aston Villa",
+      "league": "Premier League",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Boubacar Kamara",
+      "team": "Aston Villa",
+      "league": "Premier League",
+      "avgPossession": 11.2
+    },
+    {
+      "id": "Ashley Young",
+      "team": "Aston Villa",
+      "league": "Premier League",
+      "avgPossession": 9.4
+    },
+    {
+      "id": "Leon Bailey",
+      "team": "Aston Villa",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Philippe Coutinho",
+      "team": "Aston Villa",
+      "league": "Premier League",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Berat Djimsiti",
+      "team": "Atalanta",
+      "league": "Serie A",
+      "avgPossession": 8.5
+    },
+    {
+      "id": "Jeremie Boga",
+      "team": "Atalanta",
+      "league": "Serie A",
+      "avgPossession": 6
+    },
+    {
+      "id": "Ruslan Malinovskyi",
+      "team": "Atalanta",
+      "league": "Serie A",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Luis Muriel",
+      "team": "Atalanta",
+      "league": "Serie A",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Marten de Roon",
+      "team": "Atalanta",
+      "league": "Serie A",
+      "avgPossession": 13.4
+    },
+    {
+      "id": "Nico Williams",
+      "team": "Athletic Club",
+      "league": "La Liga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Raúl García",
+      "team": "Athletic Club",
+      "league": "La Liga",
+      "avgPossession": 5.6
+    },
+    {
+      "id": "Álex Berenguer",
+      "team": "Athletic Club",
+      "league": "La Liga",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Iñaki Williams",
+      "team": "Athletic Club",
+      "league": "La Liga",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Unai Vencedor Paris",
+      "team": "Athletic Club",
+      "league": "La Liga",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Marcos Llorente",
+      "team": "Atlético Madrid",
+      "league": "La Liga",
+      "avgPossession": 10.6
+    },
+    {
+      "id": "Rodrigo De Paul",
+      "team": "Atlético Madrid",
+      "league": "La Liga",
+      "avgPossession": 11.3
+    },
+    {
+      "id": "Matheus Cunha",
+      "team": "Atlético Madrid",
+      "league": "La Liga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Yannick Carrasco",
+      "team": "Atlético Madrid",
+      "league": "La Liga",
+      "avgPossession": 10.8
+    },
+    {
+      "id": "Álvaro Morata",
+      "team": "Atlético Madrid",
+      "league": "La Liga",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Mergim Berisha",
+      "team": "Augsburg",
+      "league": "Bundesliga",
+      "avgPossession": 7
+    },
+    {
+      "id": "Lukas Petkov",
+      "team": "Augsburg",
+      "league": "Bundesliga",
+      "avgPossession": 5.6
+    },
+    {
+      "id": "Ricardo Pepi",
+      "team": "Augsburg",
+      "league": "Bundesliga",
+      "avgPossession": 5.4
+    },
+    {
+      "id": "Iago",
+      "team": "Augsburg",
+      "league": "Bundesliga",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Reece Oxford",
+      "team": "Augsburg",
+      "league": "Bundesliga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Birama Touré",
+      "team": "Auxerre",
+      "league": "Ligue 1",
+      "avgPossession": 13.2
+    },
+    {
+      "id": "M'Baye Niang",
+      "team": "Auxerre",
+      "league": "Ligue 1",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Gaëtan Charbonnier",
+      "team": "Auxerre",
+      "league": "Ligue 1",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Akim Zedadka",
+      "team": "Auxerre",
+      "league": "Ligue 1",
+      "avgPossession": 9.2
+    },
+    {
+      "id": "Mathias Autret",
+      "team": "Auxerre",
+      "league": "Ligue 1",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Sergi Roberto",
+      "team": "Barcelona",
+      "league": "La Liga",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "Ronald Araújo",
+      "team": "Barcelona",
+      "league": "La Liga",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Marcos Alonso",
+      "team": "Barcelona",
+      "league": "La Liga",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Sergio Busquets",
+      "team": "Barcelona",
+      "league": "La Liga",
+      "avgPossession": 14.1
+    },
+    {
+      "id": "Eric García",
+      "team": "Barcelona",
+      "league": "La Liga",
+      "avgPossession": 10.9
+    },
+    {
+      "id": "Lucas Hernández",
+      "team": "Bayern Munich",
+      "league": "Bundesliga",
+      "avgPossession": 7.1
+    },
+    {
+      "id": "Serge Gnabry",
+      "team": "Bayern Munich",
+      "league": "Bundesliga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Daley Blind",
+      "team": "Bayern Munich",
+      "league": "Bundesliga",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Marcel Sabitzer",
+      "team": "Bayern Munich",
+      "league": "Bundesliga",
+      "avgPossession": 8.5
+    },
+    {
+      "id": "Ryan Gravenberch",
+      "team": "Bayern Munich",
+      "league": "Bundesliga",
+      "avgPossession": 8.5
+    },
+    {
+      "id": "William Carvalho",
+      "team": "Betis",
+      "league": "La Liga",
+      "avgPossession": 13.2
+    },
+    {
+      "id": "Borja Iglesias",
+      "team": "Betis",
+      "league": "La Liga",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Roberto González",
+      "team": "Betis",
+      "league": "La Liga",
+      "avgPossession": 4.5
+    },
+    {
+      "id": "Édgar González",
+      "team": "Betis",
+      "league": "La Liga",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Luiz Henrique",
+      "team": "Betis",
+      "league": "La Liga",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Keven Schlotterbeck",
+      "team": "Bochum",
+      "league": "Bundesliga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Philipp Hofmann",
+      "team": "Bochum",
+      "league": "Bundesliga",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Saidy Janko",
+      "team": "Bochum",
+      "league": "Bundesliga",
+      "avgPossession": 8
+    },
+    {
+      "id": "Moritz Broschinski",
+      "team": "Bochum",
+      "league": "Bundesliga",
+      "avgPossession": 5.2
+    },
+    {
+      "id": "Tim Oermann",
+      "team": "Bochum",
+      "league": "Bundesliga",
+      "avgPossession": 5.9
+    },
+    {
+      "id": "Andrea Cambiaso",
+      "team": "Bologna",
+      "league": "Serie A",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Nikola Moro",
+      "team": "Bologna",
+      "league": "Serie A",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Joshua Zirkzee",
+      "team": "Bologna",
+      "league": "Serie A",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Marko Arnautović",
+      "team": "Bologna",
+      "league": "Serie A",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Nicola Sansone",
+      "team": "Bologna",
+      "league": "Serie A",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Matías Viña",
+      "team": "Bournemouth",
+      "league": "Premier League",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Marcos Senesi",
+      "team": "Bournemouth",
+      "league": "Premier League",
+      "avgPossession": 12.6
+    },
+    {
+      "id": "Adam Smith",
+      "team": "Bournemouth",
+      "league": "Premier League",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Lewis Cook",
+      "team": "Bournemouth",
+      "league": "Premier League",
+      "avgPossession": 9.7
+    },
+    {
+      "id": "Ben Pearson",
+      "team": "Bournemouth",
+      "league": "Premier League",
+      "avgPossession": 8.7
+    },
+    {
+      "id": "Aaron Hickey",
+      "team": "Brentford",
+      "league": "Premier League",
+      "avgPossession": 8.5
+    },
+    {
+      "id": "Yoane Wissa",
+      "team": "Brentford",
+      "league": "Premier League",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Mikkel Damsgaard",
+      "team": "Brentford",
+      "league": "Premier League",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Kevin Schade",
+      "team": "Brentford",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Rico Henry",
+      "team": "Brentford",
+      "league": "Premier League",
+      "avgPossession": 10.8
+    },
+    {
+      "id": "Romain Del Castillo",
+      "team": "Brest",
+      "league": "Ligue 1",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Jérémy Le Douaron",
+      "team": "Brest",
+      "league": "Ligue 1",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Alberth Elis",
+      "team": "Brest",
+      "league": "Ligue 1",
+      "avgPossession": 5.2
+    },
+    {
+      "id": "Bradley Locko",
+      "team": "Brest",
+      "league": "Ligue 1",
+      "avgPossession": 5.6
+    },
+    {
+      "id": "Hugo Magnetti",
+      "team": "Brest",
+      "league": "Ligue 1",
+      "avgPossession": 10.7
+    },
+    {
+      "id": "Deniz Undav",
+      "team": "Brighton",
+      "league": "Premier League",
+      "avgPossession": 4.8
+    },
+    {
+      "id": "Enock Mwepu",
+      "team": "Brighton",
+      "league": "Premier League",
+      "avgPossession": 5
+    },
+    {
+      "id": "Jeremy Sarmiento",
+      "team": "Brighton",
+      "league": "Premier League",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Tariq Lamptey",
+      "team": "Brighton",
+      "league": "Premier League",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Pascal Groß",
+      "team": "Brighton",
+      "league": "Premier League",
+      "avgPossession": 13
+    },
+    {
+      "id": "Gonçalo Paciência",
+      "team": "Celta Vigo",
+      "league": "La Liga",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Augusto Solari",
+      "team": "Celta Vigo",
+      "league": "La Liga",
+      "avgPossession": 9.4
+    },
+    {
+      "id": "Hugo Mallo",
+      "team": "Celta Vigo",
+      "league": "La Liga",
+      "avgPossession": 10.6
+    },
+    {
+      "id": "Javi Galán",
+      "team": "Celta Vigo",
+      "league": "La Liga",
+      "avgPossession": 12.2
+    },
+    {
+      "id": "Joseph Aidoo",
+      "team": "Celta Vigo",
+      "league": "La Liga",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Conor Gallagher",
+      "team": "Chelsea",
+      "league": "Premier League",
+      "avgPossession": 11.5
+    },
+    {
+      "id": "Lewis Hall",
+      "team": "Chelsea",
+      "league": "Premier League",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Trevoh Chalobah",
+      "team": "Chelsea",
+      "league": "Premier League",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "David Datro Fofana",
+      "team": "Chelsea",
+      "league": "Premier League",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Mason Mount",
+      "team": "Chelsea",
+      "league": "Premier League",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Aïman Maurer",
+      "team": "Clermont Foot",
+      "league": "Ligue 1",
+      "avgPossession": 9.4
+    },
+    {
+      "id": "Saîf-Eddine Khaoui",
+      "team": "Clermont Foot",
+      "league": "Ligue 1",
+      "avgPossession": 11
+    },
+    {
+      "id": "Maxime Gonalons",
+      "team": "Clermont Foot",
+      "league": "Ligue 1",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Alidu Seidu",
+      "team": "Clermont Foot",
+      "league": "Ligue 1",
+      "avgPossession": 11.1
+    },
+    {
+      "id": "Jim Allevinah",
+      "team": "Clermont Foot",
+      "league": "Ligue 1",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Johan Vásquez",
+      "team": "Cremonese",
+      "league": "Serie A",
+      "avgPossession": 7
+    },
+    {
+      "id": "Luca Zanimacchia",
+      "team": "Cremonese",
+      "league": "Serie A",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "David Okereke",
+      "team": "Cremonese",
+      "league": "Serie A",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Luka Lochoshvili",
+      "team": "Cremonese",
+      "league": "Serie A",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Pablo Galdames Millán",
+      "team": "Cremonese",
+      "league": "Serie A",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Michael Olise",
+      "team": "Crystal Palace",
+      "league": "Premier League",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Chris Richards",
+      "team": "Crystal Palace",
+      "league": "Premier League",
+      "avgPossession": 7.2
+    },
+    {
+      "id": "Odsonne Édouard",
+      "team": "Crystal Palace",
+      "league": "Premier League",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Joel Ward",
+      "team": "Crystal Palace",
+      "league": "Premier League",
+      "avgPossession": 9.2
+    },
+    {
+      "id": "James McArthur",
+      "team": "Crystal Palace",
+      "league": "Premier League",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Theo Bongonda",
+      "team": "Cádiz",
+      "league": "La Liga",
+      "avgPossession": 5.6
+    },
+    {
+      "id": "Anthony Lozano",
+      "team": "Cádiz",
+      "league": "La Liga",
+      "avgPossession": 7.1
+    },
+    {
+      "id": "Awer Mabil",
+      "team": "Cádiz",
+      "league": "La Liga",
+      "avgPossession": 4.9
+    },
+    {
+      "id": "Álvaro Negredo",
+      "team": "Cádiz",
+      "league": "La Liga",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Fede San Emeterio",
+      "team": "Cádiz",
+      "league": "La Liga",
+      "avgPossession": 10.6
+    },
+    {
+      "id": "Marco Reus",
+      "team": "Dortmund",
+      "league": "Bundesliga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Jude Bellingham",
+      "team": "Dortmund",
+      "league": "Bundesliga",
+      "avgPossession": 12.1
+    },
+    {
+      "id": "Soumaïla Coulibaly",
+      "team": "Dortmund",
+      "league": "Bundesliga",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Nico Schlotterbeck",
+      "team": "Dortmund",
+      "league": "Bundesliga",
+      "avgPossession": 12.7
+    },
+    {
+      "id": "Julian Ryerson",
+      "team": "Dortmund",
+      "league": "Bundesliga",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "Sebastian Rode",
+      "team": "Eint Frankfurt",
+      "league": "Bundesliga",
+      "avgPossession": 11.8
+    },
+    {
+      "id": "Christopher Lenz",
+      "team": "Eint Frankfurt",
+      "league": "Bundesliga",
+      "avgPossession": 8.9
+    },
+    {
+      "id": "Lucas Alario",
+      "team": "Eint Frankfurt",
+      "league": "Bundesliga",
+      "avgPossession": 5.6
+    },
+    {
+      "id": "Kristijan Jakić",
+      "team": "Eint Frankfurt",
+      "league": "Bundesliga",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Ansgar Knauff",
+      "team": "Eint Frankfurt",
+      "league": "Bundesliga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Gonzalo Verdú",
+      "team": "Elche",
+      "league": "La Liga",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Fidel",
+      "team": "Elche",
+      "league": "La Liga",
+      "avgPossession": 4.7
+    },
+    {
+      "id": "Pedro Bigas",
+      "team": "Elche",
+      "league": "La Liga",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Lautaro Blanco",
+      "team": "Elche",
+      "league": "La Liga",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Ezequiel Ponce",
+      "team": "Elche",
+      "league": "La Liga",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Sebastian Walukiewicz",
+      "team": "Empoli",
+      "league": "Serie A",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Jacopo Fazzini",
+      "team": "Empoli",
+      "league": "Serie A",
+      "avgPossession": 10.4
+    },
+    {
+      "id": "Liam Henderson",
+      "team": "Empoli",
+      "league": "Serie A",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Nedim Bajrami",
+      "team": "Empoli",
+      "league": "Serie A",
+      "avgPossession": 7
+    },
+    {
+      "id": "Martin Satriano",
+      "team": "Empoli",
+      "league": "Serie A",
+      "avgPossession": 7
+    },
+    {
+      "id": "Dani Gómez",
+      "team": "Espanyol",
+      "league": "La Liga",
+      "avgPossession": 4.2
+    },
+    {
+      "id": "Rubén",
+      "team": "Espanyol",
+      "league": "La Liga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Fernando Calero",
+      "team": "Espanyol",
+      "league": "La Liga",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Aleix Vidal",
+      "team": "Espanyol",
+      "league": "La Liga",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Brian Oliván",
+      "team": "Espanyol",
+      "league": "La Liga",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Vitaliy Mykolenko",
+      "team": "Everton",
+      "league": "Premier League",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Abdoulaye Doucouré",
+      "team": "Everton",
+      "league": "Premier League",
+      "avgPossession": 9.3
+    },
+    {
+      "id": "Séamus Coleman",
+      "team": "Everton",
+      "league": "Premier League",
+      "avgPossession": 9.2
+    },
+    {
+      "id": "Neal Maupay",
+      "team": "Everton",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Nathan Patterson",
+      "team": "Everton",
+      "league": "Premier League",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Sofyan Amrabat",
+      "team": "Fiorentina",
+      "league": "Serie A",
+      "avgPossession": 11.2
+    },
+    {
+      "id": "Alessandro Bianco",
+      "team": "Fiorentina",
+      "league": "Serie A",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Antonín Barák",
+      "team": "Fiorentina",
+      "league": "Serie A",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Riccardo Saponara",
+      "team": "Fiorentina",
+      "league": "Serie A",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Igor",
+      "team": "Fiorentina",
+      "league": "Serie A",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Lukas Kübler",
+      "team": "Freiburg",
+      "league": "Bundesliga",
+      "avgPossession": 8.6
+    },
+    {
+      "id": "Noah Weißhaupt",
+      "team": "Freiburg",
+      "league": "Bundesliga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Jonathan Schmid",
+      "team": "Freiburg",
+      "league": "Bundesliga",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Michael Gregoritsch",
+      "team": "Freiburg",
+      "league": "Bundesliga",
+      "avgPossession": 6.3
+    },
+    {
+      "id": "Jeong Woo-yeong",
+      "team": "Freiburg",
+      "league": "Bundesliga",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Manor Solomon",
+      "team": "Fulham",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Aleksandar Mitrović",
+      "team": "Fulham",
+      "league": "Premier League",
+      "avgPossession": 7.2
+    },
+    {
+      "id": "Harry Wilson",
+      "team": "Fulham",
+      "league": "Premier League",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Harrison Reed",
+      "team": "Fulham",
+      "league": "Premier League",
+      "avgPossession": 12.8
+    },
+    {
+      "id": "Carlos Vinícius",
+      "team": "Fulham",
+      "league": "Premier League",
+      "avgPossession": 4.7
+    },
+    {
+      "id": "Damián Suárez",
+      "team": "Getafe",
+      "league": "La Liga",
+      "avgPossession": 10.6
+    },
+    {
+      "id": "Omar Alderete",
+      "team": "Getafe",
+      "league": "La Liga",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "Stefan Mitrović",
+      "team": "Getafe",
+      "league": "La Liga",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Enes Ünal",
+      "team": "Getafe",
+      "league": "La Liga",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "Carles Aleñá",
+      "team": "Getafe",
+      "league": "La Liga",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Borja García",
+      "team": "Girona",
+      "league": "La Liga",
+      "avgPossession": 5.2
+    },
+    {
+      "id": "Reinier",
+      "team": "Girona",
+      "league": "La Liga",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Alexander Callens",
+      "team": "Girona",
+      "league": "La Liga",
+      "avgPossession": 7.4
+    },
+    {
+      "id": "Yan Couto",
+      "team": "Girona",
+      "league": "La Liga",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "David López",
+      "team": "Girona",
+      "league": "La Liga",
+      "avgPossession": 10.3
+    },
+    {
+      "id": "Koray Günter",
+      "team": "Hellas Verona",
+      "league": "Serie A",
+      "avgPossession": 8.6
+    },
+    {
+      "id": "Oliver Abildgaard",
+      "team": "Hellas Verona",
+      "league": "Serie A",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Kevin Lasagna",
+      "team": "Hellas Verona",
+      "league": "Serie A",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Diego Coppola",
+      "team": "Hellas Verona",
+      "league": "Serie A",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Martin Hongla",
+      "team": "Hellas Verona",
+      "league": "Serie A",
+      "avgPossession": 8.6
+    },
+    {
+      "id": "Filip Uremović",
+      "team": "Hertha BSC",
+      "league": "Bundesliga",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Stevan Jovetić",
+      "team": "Hertha BSC",
+      "league": "Bundesliga",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Marvin Plattenhardt",
+      "team": "Hertha BSC",
+      "league": "Bundesliga",
+      "avgPossession": 9.7
+    },
+    {
+      "id": "Pascal Klemens",
+      "team": "Hertha BSC",
+      "league": "Bundesliga",
+      "avgPossession": 6
+    },
+    {
+      "id": "Wilfried Kanga",
+      "team": "Hertha BSC",
+      "league": "Bundesliga",
+      "avgPossession": 5.3
+    },
+    {
+      "id": "Jacob Bruun Larsen",
+      "team": "Hoffenheim",
+      "league": "Bundesliga",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Kevin Vogt",
+      "team": "Hoffenheim",
+      "league": "Bundesliga",
+      "avgPossession": 8.7
+    },
+    {
+      "id": "Angelo Stiller",
+      "team": "Hoffenheim",
+      "league": "Bundesliga",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Fisnik Asllani",
+      "team": "Hoffenheim",
+      "league": "Bundesliga",
+      "avgPossession": 5.9
+    },
+    {
+      "id": "Stanley N'Soki",
+      "team": "Hoffenheim",
+      "league": "Bundesliga",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Robin Gosens",
+      "team": "Inter",
+      "league": "Serie A",
+      "avgPossession": 7.2
+    },
+    {
+      "id": "Stefan de Vrij",
+      "team": "Inter",
+      "league": "Serie A",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Romelu Lukaku",
+      "team": "Inter",
+      "league": "Serie A",
+      "avgPossession": 6.3
+    },
+    {
+      "id": "Francesco Acerbi",
+      "team": "Inter",
+      "league": "Serie A",
+      "avgPossession": 7.7
+    },
+    {
+      "id": "Edin Džeko",
+      "team": "Inter",
+      "league": "Serie A",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Juan Cuadrado",
+      "team": "Juventus",
+      "league": "Serie A",
+      "avgPossession": 10
+    },
+    {
+      "id": "Federico Gatti",
+      "team": "Juventus",
+      "league": "Serie A",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Ángel Di María",
+      "team": "Juventus",
+      "league": "Serie A",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Daniele Rugani",
+      "team": "Juventus",
+      "league": "Serie A",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Alex Sandro",
+      "team": "Juventus",
+      "league": "Serie A",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Jan Thielmann",
+      "team": "Köln",
+      "league": "Bundesliga",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Ellyes Skhiri",
+      "team": "Köln",
+      "league": "Bundesliga",
+      "avgPossession": 11.6
+    },
+    {
+      "id": "Linton Maina",
+      "team": "Köln",
+      "league": "Bundesliga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Kingsley Ehizibue",
+      "team": "Köln",
+      "league": "Bundesliga",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Tim Lemperle",
+      "team": "Köln",
+      "league": "Bundesliga",
+      "avgPossession": 4.9
+    },
+    {
+      "id": "Pedro",
+      "team": "Lazio",
+      "league": "Serie A",
+      "avgPossession": 9
+    },
+    {
+      "id": "Felipe Anderson",
+      "team": "Lazio",
+      "league": "Serie A",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "Nicolò Casale",
+      "team": "Lazio",
+      "league": "Serie A",
+      "avgPossession": 11
+    },
+    {
+      "id": "Luis Alberto",
+      "team": "Lazio",
+      "league": "Serie A",
+      "avgPossession": 14.6
+    },
+    {
+      "id": "Patric",
+      "team": "Lazio",
+      "league": "Serie A",
+      "avgPossession": 8.9
+    },
+    {
+      "id": "Remi Oudin",
+      "team": "Lecce",
+      "league": "Serie A",
+      "avgPossession": 7.1
+    },
+    {
+      "id": "Giuseppe Pezzella",
+      "team": "Lecce",
+      "league": "Serie A",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Joan Gonzàlez",
+      "team": "Lecce",
+      "league": "Serie A",
+      "avgPossession": 10.4
+    },
+    {
+      "id": "Marin Pongračić",
+      "team": "Lecce",
+      "league": "Serie A",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Lameck Banda",
+      "team": "Lecce",
+      "league": "Serie A",
+      "avgPossession": 7.7
+    },
+    {
+      "id": "Degnand Gnonto",
+      "team": "Leeds United",
+      "league": "Premier League",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Patrick Bamford",
+      "team": "Leeds United",
+      "league": "Premier League",
+      "avgPossession": 6.3
+    },
+    {
+      "id": "Rodrigo",
+      "team": "Leeds United",
+      "league": "Premier League",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Robin Koch",
+      "team": "Leeds United",
+      "league": "Premier League",
+      "avgPossession": 11.9
+    },
+    {
+      "id": "Junior Firpo",
+      "team": "Leeds United",
+      "league": "Premier League",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Ayoze Pérez",
+      "team": "Leicester City",
+      "league": "Premier League",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Timothy Castagne",
+      "team": "Leicester City",
+      "league": "Premier League",
+      "avgPossession": 10.5
+    },
+    {
+      "id": "Tetê",
+      "team": "Leicester City",
+      "league": "Premier League",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Harry Souttar",
+      "team": "Leicester City",
+      "league": "Premier League",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Dennis Praet",
+      "team": "Leicester City",
+      "league": "Premier League",
+      "avgPossession": 4.7
+    },
+    {
+      "id": "Przemysław Frankowski",
+      "team": "Lens",
+      "league": "Ligue 1",
+      "avgPossession": 12.4
+    },
+    {
+      "id": "Jonathan Gradit",
+      "team": "Lens",
+      "league": "Ligue 1",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "David Pereira da Costa",
+      "team": "Lens",
+      "league": "Ligue 1",
+      "avgPossession": 7.7
+    },
+    {
+      "id": "Angelo Fulgini",
+      "team": "Lens",
+      "league": "Ligue 1",
+      "avgPossession": 7
+    },
+    {
+      "id": "Adrien Thomasson",
+      "team": "Lens",
+      "league": "Ligue 1",
+      "avgPossession": 7.3
+    },
+    {
+      "id": "Daley Sinkgraven",
+      "team": "Leverkusen",
+      "league": "Bundesliga",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Moussa Diaby",
+      "team": "Leverkusen",
+      "league": "Bundesliga",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Jeremie Frimpong",
+      "team": "Leverkusen",
+      "league": "Bundesliga",
+      "avgPossession": 11.2
+    },
+    {
+      "id": "Florian Wirtz",
+      "team": "Leverkusen",
+      "league": "Bundesliga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Charles Aránguiz",
+      "team": "Leverkusen",
+      "league": "Bundesliga",
+      "avgPossession": 9.2
+    },
+    {
+      "id": "Angel Gomes",
+      "team": "Lille",
+      "league": "Ligue 1",
+      "avgPossession": 13
+    },
+    {
+      "id": "Alan Virginius",
+      "team": "Lille",
+      "league": "Ligue 1",
+      "avgPossession": 4.1
+    },
+    {
+      "id": "Ismaily",
+      "team": "Lille",
+      "league": "Ligue 1",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Bafodé Diakité",
+      "team": "Lille",
+      "league": "Ligue 1",
+      "avgPossession": 12.2
+    },
+    {
+      "id": "Adam Ounas",
+      "team": "Lille",
+      "league": "Ligue 1",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Cody Gakpo",
+      "team": "Liverpool",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Joe Gomez",
+      "team": "Liverpool",
+      "league": "Premier League",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Darwin Núñez",
+      "team": "Liverpool",
+      "league": "Premier League",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Fabinho",
+      "team": "Liverpool",
+      "league": "Premier League",
+      "avgPossession": 13.7
+    },
+    {
+      "id": "Naby Keïta",
+      "team": "Liverpool",
+      "league": "Premier League",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "Ayman Kari",
+      "team": "Lorient",
+      "league": "Ligue 1",
+      "avgPossession": 8
+    },
+    {
+      "id": "Bamo Meïté",
+      "team": "Lorient",
+      "league": "Ligue 1",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Jean-Victor Makengo",
+      "team": "Lorient",
+      "league": "Ligue 1",
+      "avgPossession": 9
+    },
+    {
+      "id": "Bonke Innocent",
+      "team": "Lorient",
+      "league": "Ligue 1",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Yoann Cathline",
+      "team": "Lorient",
+      "league": "Ligue 1",
+      "avgPossession": 7.1
+    },
+    {
+      "id": "Bradley Barcola",
+      "team": "Lyon",
+      "league": "Ligue 1",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Jérôme Boateng",
+      "team": "Lyon",
+      "league": "Ligue 1",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Corentin Tolisso",
+      "team": "Lyon",
+      "league": "Ligue 1",
+      "avgPossession": 12.4
+    },
+    {
+      "id": "Alexandre Lacazette",
+      "team": "Lyon",
+      "league": "Ligue 1",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Dejan Lovren",
+      "team": "Lyon",
+      "league": "Ligue 1",
+      "avgPossession": 9.4
+    },
+    {
+      "id": "Patrick Herrmann",
+      "team": "M'Gladbach",
+      "league": "Bundesliga",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Ko Itakura",
+      "team": "M'Gladbach",
+      "league": "Bundesliga",
+      "avgPossession": 9.7
+    },
+    {
+      "id": "Nathan N'Goumou",
+      "team": "M'Gladbach",
+      "league": "Bundesliga",
+      "avgPossession": 5.1
+    },
+    {
+      "id": "Stefan Lainer",
+      "team": "M'Gladbach",
+      "league": "Bundesliga",
+      "avgPossession": 7.2
+    },
+    {
+      "id": "Ramy Bensebaini",
+      "team": "M'Gladbach",
+      "league": "Bundesliga",
+      "avgPossession": 11.7
+    },
+    {
+      "id": "Lee Jae-sung",
+      "team": "Mainz 05",
+      "league": "Bundesliga",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Ludovic Ajorque",
+      "team": "Mainz 05",
+      "league": "Bundesliga",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Stefan Bell",
+      "team": "Mainz 05",
+      "league": "Bundesliga",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Marcus Ingvartsen",
+      "team": "Mainz 05",
+      "league": "Bundesliga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Jonathan Burkardt",
+      "team": "Mainz 05",
+      "league": "Bundesliga",
+      "avgPossession": 4.9
+    },
+    {
+      "id": "Antonio Sánchez",
+      "team": "Mallorca",
+      "league": "La Liga",
+      "avgPossession": 9.6
+    },
+    {
+      "id": "Tino Kadewere",
+      "team": "Mallorca",
+      "league": "La Liga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Braian Cufré",
+      "team": "Mallorca",
+      "league": "La Liga",
+      "avgPossession": 6
+    },
+    {
+      "id": "Martin Valjent",
+      "team": "Mallorca",
+      "league": "La Liga",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Copete",
+      "team": "Mallorca",
+      "league": "La Liga",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "Bernardo Silva",
+      "team": "Manchester City",
+      "league": "Premier League",
+      "avgPossession": 7.1
+    },
+    {
+      "id": "Phil Foden",
+      "team": "Manchester City",
+      "league": "Premier League",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Rico Lewis",
+      "team": "Manchester City",
+      "league": "Premier League",
+      "avgPossession": 10
+    },
+    {
+      "id": "Nathan Aké",
+      "team": "Manchester City",
+      "league": "Premier League",
+      "avgPossession": 12.4
+    },
+    {
+      "id": "Aymeric Laporte",
+      "team": "Manchester City",
+      "league": "Premier League",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Casemiro",
+      "team": "Manchester Utd",
+      "league": "Premier League",
+      "avgPossession": 12
+    },
+    {
+      "id": "Antony",
+      "team": "Manchester Utd",
+      "league": "Premier League",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Scott McTominay",
+      "team": "Manchester Utd",
+      "league": "Premier League",
+      "avgPossession": 9.3
+    },
+    {
+      "id": "Luke Shaw",
+      "team": "Manchester Utd",
+      "league": "Premier League",
+      "avgPossession": 12.7
+    },
+    {
+      "id": "Harry Maguire",
+      "team": "Manchester Utd",
+      "league": "Premier League",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Pape Gueye",
+      "team": "Marseille",
+      "league": "Ligue 1",
+      "avgPossession": 8.9
+    },
+    {
+      "id": "Souleymane Touré",
+      "team": "Marseille",
+      "league": "Ligue 1",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Amine Harit",
+      "team": "Marseille",
+      "league": "Ligue 1",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Samuel Gigot",
+      "team": "Marseille",
+      "league": "Ligue 1",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Valentin Rongier",
+      "team": "Marseille",
+      "league": "Ligue 1",
+      "avgPossession": 13.6
+    },
+    {
+      "id": "Divock Origi",
+      "team": "Milan",
+      "league": "Serie A",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Zlatan Ibrahimović",
+      "team": "Milan",
+      "league": "Serie A",
+      "avgPossession": 5
+    },
+    {
+      "id": "Olivier Giroud",
+      "team": "Milan",
+      "league": "Serie A",
+      "avgPossession": 6
+    },
+    {
+      "id": "Matteo Gabbia",
+      "team": "Milan",
+      "league": "Serie A",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Tommaso Pobega",
+      "team": "Milan",
+      "league": "Serie A",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Ismail Jakobs",
+      "team": "Monaco",
+      "league": "Ligue 1",
+      "avgPossession": 8
+    },
+    {
+      "id": "Aleksandr Golovin",
+      "team": "Monaco",
+      "league": "Ligue 1",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Malang Sarr",
+      "team": "Monaco",
+      "league": "Ligue 1",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Benoît Badiashile",
+      "team": "Monaco",
+      "league": "Ligue 1",
+      "avgPossession": 8
+    },
+    {
+      "id": "Takumi Minamino",
+      "team": "Monaco",
+      "league": "Ligue 1",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Issiaga Sylla",
+      "team": "Montpellier",
+      "league": "Ligue 1",
+      "avgPossession": 9.2
+    },
+    {
+      "id": "Léo Leroy",
+      "team": "Montpellier",
+      "league": "Ligue 1",
+      "avgPossession": 10.6
+    },
+    {
+      "id": "Nicolas Cozza",
+      "team": "Montpellier",
+      "league": "Ligue 1",
+      "avgPossession": 8.5
+    },
+    {
+      "id": "Mamadou Sakho",
+      "team": "Montpellier",
+      "league": "Ligue 1",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Téji Savanier",
+      "team": "Montpellier",
+      "league": "Ligue 1",
+      "avgPossession": 13.6
+    },
+    {
+      "id": "Salvatore Molina",
+      "team": "Monza",
+      "league": "Serie A",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Christian Gytkjær",
+      "team": "Monza",
+      "league": "Serie A",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Marlon",
+      "team": "Monza",
+      "league": "Serie A",
+      "avgPossession": 9.2
+    },
+    {
+      "id": "Patrick Ciurria",
+      "team": "Monza",
+      "league": "Serie A",
+      "avgPossession": 12.5
+    },
+    {
+      "id": "Luca Caldirola",
+      "team": "Monza",
+      "league": "Serie A",
+      "avgPossession": 12.1
+    },
+    {
+      "id": "Andrei Girotto",
+      "team": "Nantes",
+      "league": "Ligue 1",
+      "avgPossession": 14
+    },
+    {
+      "id": "Mostafa Mohamed",
+      "team": "Nantes",
+      "league": "Ligue 1",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Florent Mollet",
+      "team": "Nantes",
+      "league": "Ligue 1",
+      "avgPossession": 9.6
+    },
+    {
+      "id": "Moussa Sissoko",
+      "team": "Nantes",
+      "league": "Ligue 1",
+      "avgPossession": 9.7
+    },
+    {
+      "id": "Lohann Doucet",
+      "team": "Nantes",
+      "league": "Ligue 1",
+      "avgPossession": 4.3
+    },
+    {
+      "id": "Amir Rrahmani",
+      "team": "Napoli",
+      "league": "Serie A",
+      "avgPossession": 13.2
+    },
+    {
+      "id": "Diego Demme",
+      "team": "Napoli",
+      "league": "Serie A",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Elif Elmas",
+      "team": "Napoli",
+      "league": "Serie A",
+      "avgPossession": 8
+    },
+    {
+      "id": "Khvicha Kvaratskhelia",
+      "team": "Napoli",
+      "league": "Serie A",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Bartosz Bereszyński",
+      "team": "Napoli",
+      "league": "Serie A",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Fabian Schär",
+      "team": "Newcastle Utd",
+      "league": "Premier League",
+      "avgPossession": 12.5
+    },
+    {
+      "id": "Jacob Murphy",
+      "team": "Newcastle Utd",
+      "league": "Premier League",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Anthony Gordon",
+      "team": "Newcastle Utd",
+      "league": "Premier League",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Callum Wilson",
+      "team": "Newcastle Utd",
+      "league": "Premier League",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Joelinton",
+      "team": "Newcastle Utd",
+      "league": "Premier League",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Mattia Viti",
+      "team": "Nice",
+      "league": "Ligue 1",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Joe Bryan",
+      "team": "Nice",
+      "league": "Ligue 1",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Badredine Bouanani",
+      "team": "Nice",
+      "league": "Ligue 1",
+      "avgPossession": 5.9
+    },
+    {
+      "id": "Mario Lemina",
+      "team": "Nice",
+      "league": "Ligue 1",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Aaron Ramsey",
+      "team": "Nice",
+      "league": "Ligue 1",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Taiwo Awoniyi",
+      "team": "Nott'ham Forest",
+      "league": "Premier League",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Steve Cook",
+      "team": "Nott'ham Forest",
+      "league": "Premier League",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Felipe",
+      "team": "Nott'ham Forest",
+      "league": "Premier League",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Neco Williams",
+      "team": "Nott'ham Forest",
+      "league": "Premier League",
+      "avgPossession": 9
+    },
+    {
+      "id": "Morgan Gibbs-White",
+      "team": "Nott'ham Forest",
+      "league": "Premier League",
+      "avgPossession": 10.4
+    },
+    {
+      "id": "Juan Cruz Armada",
+      "team": "Osasuna",
+      "league": "La Liga",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "Ante Budimir",
+      "team": "Osasuna",
+      "league": "La Liga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Kike",
+      "team": "Osasuna",
+      "league": "La Liga",
+      "avgPossession": 5.2
+    },
+    {
+      "id": "Unai García",
+      "team": "Osasuna",
+      "league": "La Liga",
+      "avgPossession": 8.7
+    },
+    {
+      "id": "Jon Moncayola",
+      "team": "Osasuna",
+      "league": "La Liga",
+      "avgPossession": 12.4
+    },
+    {
+      "id": "Juan Bernat",
+      "team": "Paris S-G",
+      "league": "Ligue 1",
+      "avgPossession": 11.3
+    },
+    {
+      "id": "Nuno Mendes",
+      "team": "Paris S-G",
+      "league": "Ligue 1",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Lionel Messi",
+      "team": "Paris S-G",
+      "league": "Ligue 1",
+      "avgPossession": 11.8
+    },
+    {
+      "id": "Fabián Ruiz Peña",
+      "team": "Paris S-G",
+      "league": "Ligue 1",
+      "avgPossession": 13.8
+    },
+    {
+      "id": "Neymar",
+      "team": "Paris S-G",
+      "league": "Ligue 1",
+      "avgPossession": 8.9
+    },
+    {
+      "id": "Abdou Diallo",
+      "team": "RB Leipzig",
+      "league": "Bundesliga",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Hugo Novoa",
+      "team": "RB Leipzig",
+      "league": "Bundesliga",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Amadou Haidara",
+      "team": "RB Leipzig",
+      "league": "Bundesliga",
+      "avgPossession": 10.8
+    },
+    {
+      "id": "Joško Gvardiol",
+      "team": "RB Leipzig",
+      "league": "Bundesliga",
+      "avgPossession": 11.6
+    },
+    {
+      "id": "Dominik Szoboszlai",
+      "team": "RB Leipzig",
+      "league": "Bundesliga",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Óscar Trejo",
+      "team": "Rayo Vallecano",
+      "league": "La Liga",
+      "avgPossession": 8
+    },
+    {
+      "id": "Pathé Ciss",
+      "team": "Rayo Vallecano",
+      "league": "La Liga",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Pep Chavarría",
+      "team": "Rayo Vallecano",
+      "league": "La Liga",
+      "avgPossession": 5.1
+    },
+    {
+      "id": "Fran Garcia",
+      "team": "Rayo Vallecano",
+      "league": "La Liga",
+      "avgPossession": 12.3
+    },
+    {
+      "id": "Bebé",
+      "team": "Rayo Vallecano",
+      "league": "La Liga",
+      "avgPossession": 4.5
+    },
+    {
+      "id": "Eduardo Camavinga",
+      "team": "Real Madrid",
+      "league": "La Liga",
+      "avgPossession": 12.1
+    },
+    {
+      "id": "Toni Kroos",
+      "team": "Real Madrid",
+      "league": "La Liga",
+      "avgPossession": 13.4
+    },
+    {
+      "id": "Nacho",
+      "team": "Real Madrid",
+      "league": "La Liga",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "Aurélien Tchouaméni",
+      "team": "Real Madrid",
+      "league": "La Liga",
+      "avgPossession": 11.9
+    },
+    {
+      "id": "Karim Benzema",
+      "team": "Real Madrid",
+      "league": "La Liga",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Mikel Oyarzabal",
+      "team": "Real Sociedad",
+      "league": "La Liga",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Takefusa Kubo",
+      "team": "Real Sociedad",
+      "league": "La Liga",
+      "avgPossession": 9
+    },
+    {
+      "id": "Mohamed Ali Cho",
+      "team": "Real Sociedad",
+      "league": "La Liga",
+      "avgPossession": 5.1
+    },
+    {
+      "id": "Alexander Isak",
+      "team": "Real Sociedad",
+      "league": "La Liga",
+      "avgPossession": 5.5
+    },
+    {
+      "id": "Diego Rico",
+      "team": "Real Sociedad",
+      "league": "La Liga",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Myziane Maolida",
+      "team": "Reims",
+      "league": "Ligue 1",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Folarin Balogun",
+      "team": "Reims",
+      "league": "Ligue 1",
+      "avgPossession": 6.5
+    },
+    {
+      "id": "Mitchell van Bergen",
+      "team": "Reims",
+      "league": "Ligue 1",
+      "avgPossession": 7
+    },
+    {
+      "id": "Thomas Foket",
+      "team": "Reims",
+      "league": "Ligue 1",
+      "avgPossession": 11.6
+    },
+    {
+      "id": "Valentin Atangana Edoa",
+      "team": "Reims",
+      "league": "Ligue 1",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Xeka",
+      "team": "Rennes",
+      "league": "Ligue 1",
+      "avgPossession": 9.3
+    },
+    {
+      "id": "Arnaud Kalimuendo",
+      "team": "Rennes",
+      "league": "Ligue 1",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Amine Gouiri",
+      "team": "Rennes",
+      "league": "Ligue 1",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Hamari Traoré",
+      "team": "Rennes",
+      "league": "Ligue 1",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Baptiste Santamaria",
+      "team": "Rennes",
+      "league": "Ligue 1",
+      "avgPossession": 10.3
+    },
+    {
+      "id": "Nicolò Zaniolo",
+      "team": "Roma",
+      "league": "Serie A",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Gianluca Mancini",
+      "team": "Roma",
+      "league": "Serie A",
+      "avgPossession": 10.2
+    },
+    {
+      "id": "Marash Kumbulla",
+      "team": "Roma",
+      "league": "Serie A",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Filippo Missori",
+      "team": "Roma",
+      "league": "Serie A",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Diego Llorente",
+      "team": "Roma",
+      "league": "Serie A",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Diego Valencia",
+      "team": "Salernitana",
+      "league": "Serie A",
+      "avgPossession": 5.4
+    },
+    {
+      "id": "William Troost-Ekong",
+      "team": "Salernitana",
+      "league": "Serie A",
+      "avgPossession": 7.3
+    },
+    {
+      "id": "Federico Bonazzoli",
+      "team": "Salernitana",
+      "league": "Serie A",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Pasquale Mazzocchi",
+      "team": "Salernitana",
+      "league": "Serie A",
+      "avgPossession": 7.4
+    },
+    {
+      "id": "Matteo Lovato",
+      "team": "Salernitana",
+      "league": "Serie A",
+      "avgPossession": 7
+    },
+    {
+      "id": "Abdelhamid Sabiri",
+      "team": "Sampdoria",
+      "league": "Serie A",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Harry Winks",
+      "team": "Sampdoria",
+      "league": "Serie A",
+      "avgPossession": 10.5
+    },
+    {
+      "id": "Lorenzo Malagrida",
+      "team": "Sampdoria",
+      "league": "Serie A",
+      "avgPossession": 8
+    },
+    {
+      "id": "Jeison Murillo",
+      "team": "Sampdoria",
+      "league": "Serie A",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Mickaël Cuisance",
+      "team": "Sampdoria",
+      "league": "Serie A",
+      "avgPossession": 9
+    },
+    {
+      "id": "Kristian Thorstvedt",
+      "team": "Sassuolo",
+      "league": "Serie A",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Andrea Pinamonti",
+      "team": "Sassuolo",
+      "league": "Serie A",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Abdou Harroui",
+      "team": "Sassuolo",
+      "league": "Serie A",
+      "avgPossession": 9.9
+    },
+    {
+      "id": "Giorgos Kyriakopoulos",
+      "team": "Sassuolo",
+      "league": "Serie A",
+      "avgPossession": 7
+    },
+    {
+      "id": "Luca D'Andrea",
+      "team": "Sassuolo",
+      "league": "Serie A",
+      "avgPossession": 5.4
+    },
+    {
+      "id": "Éder Álvarez Balanta",
+      "team": "Schalke 04",
+      "league": "Bundesliga",
+      "avgPossession": 4.1
+    },
+    {
+      "id": "Moritz Jenz",
+      "team": "Schalke 04",
+      "league": "Bundesliga",
+      "avgPossession": 7.3
+    },
+    {
+      "id": "Kenan Karaman",
+      "team": "Schalke 04",
+      "league": "Bundesliga",
+      "avgPossession": 5.4
+    },
+    {
+      "id": "Malick Thiaw",
+      "team": "Schalke 04",
+      "league": "Bundesliga",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Leo Greiml",
+      "team": "Schalke 04",
+      "league": "Bundesliga",
+      "avgPossession": 6
+    },
+    {
+      "id": "Alex Telles",
+      "team": "Sevilla",
+      "league": "La Liga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Isco",
+      "team": "Sevilla",
+      "league": "La Liga",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "Érik Lamela",
+      "team": "Sevilla",
+      "league": "La Liga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Rafa Mir",
+      "team": "Sevilla",
+      "league": "La Liga",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Suso",
+      "team": "Sevilla",
+      "league": "La Liga",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "James Bree",
+      "team": "Southampton",
+      "league": "Premier League",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Adam Armstrong",
+      "team": "Southampton",
+      "league": "Premier League",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Jan Bednarek",
+      "team": "Southampton",
+      "league": "Premier League",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "Ibrahima Diallo",
+      "team": "Southampton",
+      "league": "Premier League",
+      "avgPossession": 9.5
+    },
+    {
+      "id": "Romain Perraud",
+      "team": "Southampton",
+      "league": "Premier League",
+      "avgPossession": 8.5
+    },
+    {
+      "id": "Dávid Strelec",
+      "team": "Spezia",
+      "league": "Serie A",
+      "avgPossession": 5.4
+    },
+    {
+      "id": "Daniele Verde",
+      "team": "Spezia",
+      "league": "Serie A",
+      "avgPossession": 7.2
+    },
+    {
+      "id": "Szymon Żurkowski",
+      "team": "Spezia",
+      "league": "Serie A",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Viktor Kovalenko",
+      "team": "Spezia",
+      "league": "Serie A",
+      "avgPossession": 9.3
+    },
+    {
+      "id": "Emmanuel Gyasi",
+      "team": "Spezia",
+      "league": "Serie A",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Dimitri Liénard",
+      "team": "Strasbourg",
+      "league": "Ligue 1",
+      "avgPossession": 10.9
+    },
+    {
+      "id": "Lucas Perrin",
+      "team": "Strasbourg",
+      "league": "Ligue 1",
+      "avgPossession": 9.4
+    },
+    {
+      "id": "Jean-Ricner Bellegarde",
+      "team": "Strasbourg",
+      "league": "Ligue 1",
+      "avgPossession": 9.8
+    },
+    {
+      "id": "Sanjin Prcić",
+      "team": "Strasbourg",
+      "league": "Ligue 1",
+      "avgPossession": 10.8
+    },
+    {
+      "id": "Habib Diallo",
+      "team": "Strasbourg",
+      "league": "Ligue 1",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Gil Bastião Dias",
+      "team": "Stuttgart",
+      "league": "Bundesliga",
+      "avgPossession": 6.8
+    },
+    {
+      "id": "Hiroki Ito",
+      "team": "Stuttgart",
+      "league": "Bundesliga",
+      "avgPossession": 10.9
+    },
+    {
+      "id": "Tiago Tomás",
+      "team": "Stuttgart",
+      "league": "Bundesliga",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Josha Vagnoman",
+      "team": "Stuttgart",
+      "league": "Bundesliga",
+      "avgPossession": 7.5
+    },
+    {
+      "id": "Chris Führich",
+      "team": "Stuttgart",
+      "league": "Bundesliga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Antonio Sanabria",
+      "team": "Torino",
+      "league": "Serie A",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Aleksei Miranchuk",
+      "team": "Torino",
+      "league": "Serie A",
+      "avgPossession": 10
+    },
+    {
+      "id": "Valentino Lazaro",
+      "team": "Torino",
+      "league": "Serie A",
+      "avgPossession": 8.1
+    },
+    {
+      "id": "Michel Ndary Adopo",
+      "team": "Torino",
+      "league": "Serie A",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Karol Linetty",
+      "team": "Torino",
+      "league": "Serie A",
+      "avgPossession": 11.3
+    },
+    {
+      "id": "Clément Lenglet",
+      "team": "Tottenham",
+      "league": "Premier League",
+      "avgPossession": 9
+    },
+    {
+      "id": "Arnaut Danjuma",
+      "team": "Tottenham",
+      "league": "Premier League",
+      "avgPossession": 4.1
+    },
+    {
+      "id": "Pierre Højbjerg",
+      "team": "Tottenham",
+      "league": "Premier League",
+      "avgPossession": 14
+    },
+    {
+      "id": "Cristian Romero",
+      "team": "Tottenham",
+      "league": "Premier League",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Yves Bissouma",
+      "team": "Tottenham",
+      "league": "Premier League",
+      "avgPossession": 10.4
+    },
+    {
+      "id": "Mikkel Desler",
+      "team": "Toulouse",
+      "league": "Ligue 1",
+      "avgPossession": 10.4
+    },
+    {
+      "id": "Gabriel Suazo",
+      "team": "Toulouse",
+      "league": "Ligue 1",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Kévin Keben Biakolo",
+      "team": "Toulouse",
+      "league": "Ligue 1",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Issiaga Sylla",
+      "team": "Toulouse",
+      "league": "Ligue 1",
+      "avgPossession": 9.3
+    },
+    {
+      "id": "Zakaria Aboukhlal",
+      "team": "Toulouse",
+      "league": "Ligue 1",
+      "avgPossession": 7.8
+    },
+    {
+      "id": "Mama Samba Baldé",
+      "team": "Troyes",
+      "league": "Ligue 1",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Tristan Dingomé",
+      "team": "Troyes",
+      "league": "Ligue 1",
+      "avgPossession": 8.2
+    },
+    {
+      "id": "Rominigue Kouamé",
+      "team": "Troyes",
+      "league": "Ligue 1",
+      "avgPossession": 10.6
+    },
+    {
+      "id": "Rudy Kohon",
+      "team": "Troyes",
+      "league": "Ligue 1",
+      "avgPossession": 6.2
+    },
+    {
+      "id": "Rony Lopes",
+      "team": "Troyes",
+      "league": "Ligue 1",
+      "avgPossession": 6
+    },
+    {
+      "id": "Jean-Victor Makengo",
+      "team": "Udinese",
+      "league": "Serie A",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Roberto Pereyra",
+      "team": "Udinese",
+      "league": "Serie A",
+      "avgPossession": 12
+    },
+    {
+      "id": "Ilija Nestorovski",
+      "team": "Udinese",
+      "league": "Serie A",
+      "avgPossession": 6.3
+    },
+    {
+      "id": "Brandon Soppy",
+      "team": "Udinese",
+      "league": "Serie A",
+      "avgPossession": 5.7
+    },
+    {
+      "id": "James Abankwah",
+      "team": "Udinese",
+      "league": "Serie A",
+      "avgPossession": 4.9
+    },
+    {
+      "id": "Robin Knoche",
+      "team": "Union Berlin",
+      "league": "Bundesliga",
+      "avgPossession": 11.8
+    },
+    {
+      "id": "Paul Jaeckel",
+      "team": "Union Berlin",
+      "league": "Bundesliga",
+      "avgPossession": 6.6
+    },
+    {
+      "id": "Diogo Leite",
+      "team": "Union Berlin",
+      "league": "Bundesliga",
+      "avgPossession": 9.6
+    },
+    {
+      "id": "Jamie Leweling",
+      "team": "Union Berlin",
+      "league": "Bundesliga",
+      "avgPossession": 5
+    },
+    {
+      "id": "Sheraldo Becker",
+      "team": "Union Berlin",
+      "league": "Bundesliga",
+      "avgPossession": 5.9
+    },
+    {
+      "id": "Mouctar Diakhaby",
+      "team": "Valencia",
+      "league": "La Liga",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "José Luis Gayà",
+      "team": "Valencia",
+      "league": "La Liga",
+      "avgPossession": 12.5
+    },
+    {
+      "id": "Edinson Cavani",
+      "team": "Valencia",
+      "league": "La Liga",
+      "avgPossession": 7
+    },
+    {
+      "id": "Carlos Soler",
+      "team": "Valencia",
+      "league": "La Liga",
+      "avgPossession": 8.4
+    },
+    {
+      "id": "Cristhian Mosquera",
+      "team": "Valencia",
+      "league": "La Liga",
+      "avgPossession": 6.7
+    },
+    {
+      "id": "Lucas Oliveira Rosa",
+      "team": "Valladolid",
+      "league": "La Liga",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "Monchu",
+      "team": "Valladolid",
+      "league": "La Liga",
+      "avgPossession": 11.4
+    },
+    {
+      "id": "Darwin Machís",
+      "team": "Valladolid",
+      "league": "La Liga",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Toni Villa",
+      "team": "Valladolid",
+      "league": "La Liga",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Sergi Guardiola",
+      "team": "Valladolid",
+      "league": "La Liga",
+      "avgPossession": 5.9
+    },
+    {
+      "id": "Manu Trigueros",
+      "team": "Villarreal",
+      "league": "La Liga",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Aïssa Mandi",
+      "team": "Villarreal",
+      "league": "La Liga",
+      "avgPossession": 8.3
+    },
+    {
+      "id": "Jorge Cuenca",
+      "team": "Villarreal",
+      "league": "La Liga",
+      "avgPossession": 6.9
+    },
+    {
+      "id": "Ramón Terrats",
+      "team": "Villarreal",
+      "league": "La Liga",
+      "avgPossession": 9
+    },
+    {
+      "id": "Kiko Femenía",
+      "team": "Villarreal",
+      "league": "La Liga",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Eren Dinkçi",
+      "team": "Werder Bremen",
+      "league": "Bundesliga",
+      "avgPossession": 5
+    },
+    {
+      "id": "Christian Groß",
+      "team": "Werder Bremen",
+      "league": "Bundesliga",
+      "avgPossession": 11.2
+    },
+    {
+      "id": "Ilia Gruev",
+      "team": "Werder Bremen",
+      "league": "Bundesliga",
+      "avgPossession": 10.5
+    },
+    {
+      "id": "Anthony Jung",
+      "team": "Werder Bremen",
+      "league": "Bundesliga",
+      "avgPossession": 9.1
+    },
+    {
+      "id": "Jens Stage",
+      "team": "Werder Bremen",
+      "league": "Bundesliga",
+      "avgPossession": 10.1
+    },
+    {
+      "id": "Nayef Aguerd",
+      "team": "West Ham",
+      "league": "Premier League",
+      "avgPossession": 8.8
+    },
+    {
+      "id": "Angelo Ogbonna",
+      "team": "West Ham",
+      "league": "Premier League",
+      "avgPossession": 6.3
+    },
+    {
+      "id": "Jarrod Bowen",
+      "team": "West Ham",
+      "league": "Premier League",
+      "avgPossession": 9.3
+    },
+    {
+      "id": "Aaron Cresswell",
+      "team": "West Ham",
+      "league": "Premier League",
+      "avgPossession": 9.6
+    },
+    {
+      "id": "Danny Ings",
+      "team": "West Ham",
+      "league": "Premier League",
+      "avgPossession": 5.8
+    },
+    {
+      "id": "Jakub Kamiński",
+      "team": "Wolfsburg",
+      "league": "Bundesliga",
+      "avgPossession": 7.6
+    },
+    {
+      "id": "Yannick Gerhardt",
+      "team": "Wolfsburg",
+      "league": "Bundesliga",
+      "avgPossession": 10.3
+    },
+    {
+      "id": "Sebastiaan Bornauw",
+      "team": "Wolfsburg",
+      "league": "Bundesliga",
+      "avgPossession": 11.5
+    },
+    {
+      "id": "Felix Nmecha",
+      "team": "Wolfsburg",
+      "league": "Bundesliga",
+      "avgPossession": 9.6
+    },
+    {
+      "id": "Kevin Paredes",
+      "team": "Wolfsburg",
+      "league": "Bundesliga",
+      "avgPossession": 6.1
+    },
+    {
+      "id": "Craig Dawson",
+      "team": "Wolves",
+      "league": "Premier League",
+      "avgPossession": 7.9
+    },
+    {
+      "id": "Chem Campbell",
+      "team": "Wolves",
+      "league": "Premier League",
+      "avgPossession": 5.6
+    },
+    {
+      "id": "Leander Dendoncker",
+      "team": "Wolves",
+      "league": "Premier League",
+      "avgPossession": 9
+    },
+    {
+      "id": "Raúl Jiménez",
+      "team": "Wolves",
+      "league": "Premier League",
+      "avgPossession": 6.4
+    },
+    {
+      "id": "João Gomes",
+      "team": "Wolves",
+      "league": "Premier League",
+      "avgPossession": 9.5
+    }
+  ],
+  "edges": [
+    {
+      "source": "Youssouf Koné",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9656,
+      "distance": 0.0344
+    },
+    {
+      "source": "Houboulang Mendes",
+      "target": "Filippo Missori",
+      "weight": 0.9686,
+      "distance": 0.0314
+    },
+    {
+      "source": "Samu Costa",
+      "target": "Angelo Stiller",
+      "weight": 0.9623,
+      "distance": 0.0377
+    },
+    {
+      "source": "Samu Costa",
+      "target": "Benoît Badiashile",
+      "weight": 0.971,
+      "distance": 0.029
+    },
+    {
+      "source": "Samu Costa",
+      "target": "Juan Bernat",
+      "weight": 0.9737,
+      "distance": 0.0263
+    },
+    {
+      "source": "Nabil Bentaleb",
+      "target": "Antonín Barák",
+      "weight": 0.9625,
+      "distance": 0.0375
+    },
+    {
+      "source": "Nabil Bentaleb",
+      "target": "Harry Winks",
+      "weight": 0.9656,
+      "distance": 0.0344
+    },
+    {
+      "source": "Kieran Tierney",
+      "target": "Charles Aránguiz",
+      "weight": 0.964,
+      "distance": 0.036
+    },
+    {
+      "source": "Diego Carlos",
+      "target": "Marten de Roon",
+      "weight": 0.9681,
+      "distance": 0.0319
+    },
+    {
+      "source": "Philippe Coutinho",
+      "target": "Sergio Busquets",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Philippe Coutinho",
+      "target": "Pape Gueye",
+      "weight": 0.9655,
+      "distance": 0.0345
+    },
+    {
+      "source": "Unai Vencedor Paris",
+      "target": "Sergio Busquets",
+      "weight": 0.9708,
+      "distance": 0.0292
+    },
+    {
+      "source": "Unai Vencedor Paris",
+      "target": "Darwin Machís",
+      "weight": 0.9608,
+      "distance": 0.0392
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Sergio Busquets",
+      "weight": 0.9737,
+      "distance": 0.0263
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Ben Pearson",
+      "weight": 0.9606,
+      "distance": 0.0394
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Hugo Magnetti",
+      "weight": 0.9626,
+      "distance": 0.0374
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Hugo Mallo",
+      "weight": 0.9632,
+      "distance": 0.0368
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Lautaro Blanco",
+      "weight": 0.961,
+      "distance": 0.039
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Rubén",
+      "weight": 0.9643,
+      "distance": 0.0357
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Fernando Calero",
+      "weight": 0.9667,
+      "distance": 0.0333
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Alessandro Bianco",
+      "weight": 0.9722,
+      "distance": 0.0278
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Antonín Barák",
+      "weight": 0.9612,
+      "distance": 0.0388
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Harrison Reed",
+      "weight": 0.9635,
+      "distance": 0.0365
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Angelo Stiller",
+      "weight": 0.9647,
+      "distance": 0.0353
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Przemysław Frankowski",
+      "weight": 0.9635,
+      "distance": 0.0365
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Nathan Aké",
+      "weight": 0.9607,
+      "distance": 0.0393
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Juan Bernat",
+      "weight": 0.9602,
+      "distance": 0.0398
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Abdou Diallo",
+      "weight": 0.968,
+      "distance": 0.032
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9768,
+      "distance": 0.0232
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9661,
+      "distance": 0.0339
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Toni Villa",
+      "weight": 0.9697,
+      "distance": 0.0303
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Sergi Guardiola",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Marcos Llorente",
+      "target": "Christian Groß",
+      "weight": 0.9604,
+      "distance": 0.0396
+    },
+    {
+      "source": "Rodrigo De Paul",
+      "target": "Iago",
+      "weight": 0.9682,
+      "distance": 0.0318
+    },
+    {
+      "source": "Ricardo Pepi",
+      "target": "Copete",
+      "weight": 0.965,
+      "distance": 0.035
+    },
+    {
+      "source": "Iago",
+      "target": "Florent Mollet",
+      "weight": 0.9624,
+      "distance": 0.0376
+    },
+    {
+      "source": "Iago",
+      "target": "Sergi Guardiola",
+      "weight": 0.9646,
+      "distance": 0.0354
+    },
+    {
+      "source": "Birama Touré",
+      "target": "Maxime Gonalons",
+      "weight": 0.9744,
+      "distance": 0.0256
+    },
+    {
+      "source": "Birama Touré",
+      "target": "Scott McTominay",
+      "weight": 0.9682,
+      "distance": 0.0318
+    },
+    {
+      "source": "Birama Touré",
+      "target": "Pathé Ciss",
+      "weight": 0.9639,
+      "distance": 0.0361
+    },
+    {
+      "source": "Sergi Roberto",
+      "target": "Trevoh Chalobah",
+      "weight": 0.972,
+      "distance": 0.028
+    },
+    {
+      "source": "Sergi Roberto",
+      "target": "Rico Lewis",
+      "weight": 0.9702,
+      "distance": 0.0298
+    },
+    {
+      "source": "Sergi Roberto",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9675,
+      "distance": 0.0325
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Ben Pearson",
+      "weight": 0.9653,
+      "distance": 0.0347
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Alessandro Bianco",
+      "weight": 0.971,
+      "distance": 0.029
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Harrison Reed",
+      "weight": 0.9798,
+      "distance": 0.0202
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Joan Gonzàlez",
+      "weight": 0.961,
+      "distance": 0.039
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Scott McTominay",
+      "weight": 0.9621,
+      "distance": 0.0379
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Pape Gueye",
+      "weight": 0.9654,
+      "distance": 0.0346
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Téji Savanier",
+      "weight": 0.9631,
+      "distance": 0.0369
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Florent Mollet",
+      "weight": 0.9667,
+      "distance": 0.0333
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Abdou Diallo",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.968,
+      "distance": 0.032
+    },
+    {
+      "source": "Sergio Busquets",
+      "target": "Toni Villa",
+      "weight": 0.9798,
+      "distance": 0.0202
+    },
+    {
+      "source": "Marcel Sabitzer",
+      "target": "Eduardo Camavinga",
+      "weight": 0.9715,
+      "distance": 0.0285
+    },
+    {
+      "source": "Marcel Sabitzer",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9662,
+      "distance": 0.0338
+    },
+    {
+      "source": "Marcel Sabitzer",
+      "target": "Felix Nmecha",
+      "weight": 0.9672,
+      "distance": 0.0328
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Conor Gallagher",
+      "weight": 0.966,
+      "distance": 0.034
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Maxime Gonalons",
+      "weight": 0.9622,
+      "distance": 0.0378
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9638,
+      "distance": 0.0362
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Luis Alberto",
+      "weight": 0.9608,
+      "distance": 0.0392
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Joan Gonzàlez",
+      "weight": 0.9621,
+      "distance": 0.0379
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Florent Mollet",
+      "weight": 0.9614,
+      "distance": 0.0386
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Toni Kroos",
+      "weight": 0.9614,
+      "distance": 0.0386
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Harry Winks",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9741,
+      "distance": 0.0259
+    },
+    {
+      "source": "Ryan Gravenberch",
+      "target": "Felix Nmecha",
+      "weight": 0.9639,
+      "distance": 0.0361
+    },
+    {
+      "source": "William Carvalho",
+      "target": "Conor Gallagher",
+      "weight": 0.9612,
+      "distance": 0.0388
+    },
+    {
+      "source": "William Carvalho",
+      "target": "Pathé Ciss",
+      "weight": 0.9601,
+      "distance": 0.0399
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9706,
+      "distance": 0.0294
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Harrison Reed",
+      "weight": 0.963,
+      "distance": 0.037
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Przemysław Frankowski",
+      "weight": 0.9637,
+      "distance": 0.0363
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Jeremie Frimpong",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Charles Aránguiz",
+      "weight": 0.9626,
+      "distance": 0.0374
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Nathan Aké",
+      "weight": 0.9623,
+      "distance": 0.0377
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Patrick Ciurria",
+      "weight": 0.9653,
+      "distance": 0.0347
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Mickaël Cuisance",
+      "weight": 0.9635,
+      "distance": 0.0365
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9644,
+      "distance": 0.0356
+    },
+    {
+      "source": "Ben Pearson",
+      "target": "João Gomes",
+      "weight": 0.9678,
+      "distance": 0.0322
+    },
+    {
+      "source": "Hugo Magnetti",
+      "target": "Florent Mollet",
+      "weight": 0.9626,
+      "distance": 0.0374
+    },
+    {
+      "source": "Hugo Magnetti",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9717,
+      "distance": 0.0283
+    },
+    {
+      "source": "Pascal Groß",
+      "target": "Antonín Barák",
+      "weight": 0.9607,
+      "distance": 0.0393
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Maxime Gonalons",
+      "weight": 0.9702,
+      "distance": 0.0298
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Florent Mollet",
+      "weight": 0.9605,
+      "distance": 0.0395
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Anthony Gordon",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Abdou Diallo",
+      "weight": 0.9675,
+      "distance": 0.0325
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Viktor Kovalenko",
+      "weight": 0.97,
+      "distance": 0.03
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Carlos Soler",
+      "weight": 0.9709,
+      "distance": 0.0291
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9649,
+      "distance": 0.0351
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "Felix Nmecha",
+      "weight": 0.9625,
+      "distance": 0.0375
+    },
+    {
+      "source": "Augusto Solari",
+      "target": "João Gomes",
+      "weight": 0.965,
+      "distance": 0.035
+    },
+    {
+      "source": "Hugo Mallo",
+      "target": "Charles Aránguiz",
+      "weight": 0.9666,
+      "distance": 0.0334
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Saîf-Eddine Khaoui",
+      "weight": 0.9622,
+      "distance": 0.0378
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9673,
+      "distance": 0.0327
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Luis Alberto",
+      "weight": 0.9641,
+      "distance": 0.0359
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Harry Winks",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Christian Groß",
+      "weight": 0.9766,
+      "distance": 0.0234
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Jens Stage",
+      "weight": 0.9637,
+      "distance": 0.0363
+    },
+    {
+      "source": "Conor Gallagher",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9663,
+      "distance": 0.0337
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Saîf-Eddine Khaoui",
+      "weight": 0.9642,
+      "distance": 0.0358
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9629,
+      "distance": 0.0371
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Angelo Stiller",
+      "weight": 0.9722,
+      "distance": 0.0278
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Harry Souttar",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Fabinho",
+      "weight": 0.9634,
+      "distance": 0.0366
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Jean-Victor Makengo",
+      "weight": 0.961,
+      "distance": 0.039
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Scott McTominay",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Pape Gueye",
+      "weight": 0.9733,
+      "distance": 0.0267
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Tommaso Pobega",
+      "weight": 0.962,
+      "distance": 0.038
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Florent Mollet",
+      "weight": 0.963,
+      "distance": 0.037
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Moussa Sissoko",
+      "weight": 0.9655,
+      "distance": 0.0345
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Jon Moncayola",
+      "weight": 0.9664,
+      "distance": 0.0336
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Juan Bernat",
+      "weight": 0.9622,
+      "distance": 0.0378
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Pierre Højbjerg",
+      "weight": 0.965,
+      "distance": 0.035
+    },
+    {
+      "source": "Aïman Maurer",
+      "target": "Christian Groß",
+      "weight": 0.9682,
+      "distance": 0.0318
+    },
+    {
+      "source": "Saîf-Eddine Khaoui",
+      "target": "Angelo Stiller",
+      "weight": 0.9683,
+      "distance": 0.0317
+    },
+    {
+      "source": "Saîf-Eddine Khaoui",
+      "target": "Eduardo Camavinga",
+      "weight": 0.972,
+      "distance": 0.028
+    },
+    {
+      "source": "Saîf-Eddine Khaoui",
+      "target": "Christian Groß",
+      "weight": 0.9634,
+      "distance": 0.0366
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Jacopo Fazzini",
+      "weight": 0.9714,
+      "distance": 0.0286
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9611,
+      "distance": 0.0389
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Harrison Reed",
+      "weight": 0.968,
+      "distance": 0.032
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Bonke Innocent",
+      "weight": 0.9647,
+      "distance": 0.0353
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Martin Valjent",
+      "weight": 0.9631,
+      "distance": 0.0369
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Rico Lewis",
+      "weight": 0.9606,
+      "distance": 0.0394
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Scott McTominay",
+      "weight": 0.9699,
+      "distance": 0.0301
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Abdou Diallo",
+      "weight": 0.9687,
+      "distance": 0.0313
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Pathé Ciss",
+      "weight": 0.9708,
+      "distance": 0.0292
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Toni Kroos",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Harry Winks",
+      "weight": 0.9614,
+      "distance": 0.0386
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9644,
+      "distance": 0.0356
+    },
+    {
+      "source": "Maxime Gonalons",
+      "target": "João Gomes",
+      "weight": 0.963,
+      "distance": 0.037
+    },
+    {
+      "source": "Pablo Galdames Millán",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9636,
+      "distance": 0.0364
+    },
+    {
+      "source": "Pablo Galdames Millán",
+      "target": "Roberto Pereyra",
+      "weight": 0.9696,
+      "distance": 0.0304
+    },
+    {
+      "source": "Jude Bellingham",
+      "target": "Damián Suárez",
+      "weight": 0.9709,
+      "distance": 0.0291
+    },
+    {
+      "source": "Jude Bellingham",
+      "target": "Scott McTominay",
+      "weight": 0.9639,
+      "distance": 0.0361
+    },
+    {
+      "source": "Jude Bellingham",
+      "target": "Harry Winks",
+      "weight": 0.9715,
+      "distance": 0.0285
+    },
+    {
+      "source": "Jude Bellingham",
+      "target": "Carlos Soler",
+      "weight": 0.9638,
+      "distance": 0.0362
+    },
+    {
+      "source": "Sebastian Rode",
+      "target": "Kristijan Jakić",
+      "weight": 0.9636,
+      "distance": 0.0364
+    },
+    {
+      "source": "Sebastian Rode",
+      "target": "Nathan Patterson",
+      "weight": 0.9664,
+      "distance": 0.0336
+    },
+    {
+      "source": "Sebastian Rode",
+      "target": "Harry Souttar",
+      "weight": 0.9613,
+      "distance": 0.0387
+    },
+    {
+      "source": "Sebastian Rode",
+      "target": "Charles Aránguiz",
+      "weight": 0.9611,
+      "distance": 0.0389
+    },
+    {
+      "source": "Kristijan Jakić",
+      "target": "Lee Jae-sung",
+      "weight": 0.9602,
+      "distance": 0.0398
+    },
+    {
+      "source": "Kristijan Jakić",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9694,
+      "distance": 0.0306
+    },
+    {
+      "source": "Pedro Bigas",
+      "target": "Nathan Aké",
+      "weight": 0.9625,
+      "distance": 0.0375
+    },
+    {
+      "source": "Lautaro Blanco",
+      "target": "Dimitri Liénard",
+      "weight": 0.9671,
+      "distance": 0.0329
+    },
+    {
+      "source": "Lautaro Blanco",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9606,
+      "distance": 0.0394
+    },
+    {
+      "source": "Sebastian Walukiewicz",
+      "target": "Jacopo Fazzini",
+      "weight": 0.9616,
+      "distance": 0.0384
+    },
+    {
+      "source": "Sebastian Walukiewicz",
+      "target": "Szymon Żurkowski",
+      "weight": 0.967,
+      "distance": 0.033
+    },
+    {
+      "source": "Sebastian Walukiewicz",
+      "target": "Viktor Kovalenko",
+      "weight": 0.9632,
+      "distance": 0.0368
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Liam Henderson",
+      "weight": 0.9607,
+      "distance": 0.0393
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Harrison Reed",
+      "weight": 0.9604,
+      "distance": 0.0396
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Damián Suárez",
+      "weight": 0.9645,
+      "distance": 0.0355
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Scott McTominay",
+      "weight": 0.963,
+      "distance": 0.037
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Valentin Rongier",
+      "weight": 0.9631,
+      "distance": 0.0369
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Moussa Sissoko",
+      "weight": 0.9721,
+      "distance": 0.0279
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Abdou Diallo",
+      "weight": 0.973,
+      "distance": 0.027
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Valentin Atangana Edoa",
+      "weight": 0.9608,
+      "distance": 0.0392
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Mickaël Cuisance",
+      "weight": 0.9656,
+      "distance": 0.0344
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9689,
+      "distance": 0.0311
+    },
+    {
+      "source": "Jacopo Fazzini",
+      "target": "Karol Linetty",
+      "weight": 0.9613,
+      "distance": 0.0387
+    },
+    {
+      "source": "Liam Henderson",
+      "target": "Rico Lewis",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Rubén",
+      "target": "Fernando Calero",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Rubén",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9694,
+      "distance": 0.0306
+    },
+    {
+      "source": "Rubén",
+      "target": "Rominigue Kouamé",
+      "weight": 0.9642,
+      "distance": 0.0358
+    },
+    {
+      "source": "Fernando Calero",
+      "target": "Antonín Barák",
+      "weight": 0.9694,
+      "distance": 0.0306
+    },
+    {
+      "source": "Fernando Calero",
+      "target": "Jon Moncayola",
+      "weight": 0.96,
+      "distance": 0.04
+    },
+    {
+      "source": "Sofyan Amrabat",
+      "target": "Luis Alberto",
+      "weight": 0.9629,
+      "distance": 0.0371
+    },
+    {
+      "source": "Sofyan Amrabat",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9644,
+      "distance": 0.0356
+    },
+    {
+      "source": "Sofyan Amrabat",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9607,
+      "distance": 0.0393
+    },
+    {
+      "source": "Alessandro Bianco",
+      "target": "Harrison Reed",
+      "weight": 0.9612,
+      "distance": 0.0388
+    },
+    {
+      "source": "Alessandro Bianco",
+      "target": "Téji Savanier",
+      "weight": 0.9601,
+      "distance": 0.0399
+    },
+    {
+      "source": "Alessandro Bianco",
+      "target": "Abdou Diallo",
+      "weight": 0.9701,
+      "distance": 0.0299
+    },
+    {
+      "source": "Alessandro Bianco",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9636,
+      "distance": 0.0364
+    },
+    {
+      "source": "Alessandro Bianco",
+      "target": "Toni Villa",
+      "weight": 0.9616,
+      "distance": 0.0384
+    },
+    {
+      "source": "Antonín Barák",
+      "target": "Noah Weißhaupt",
+      "weight": 0.9672,
+      "distance": 0.0328
+    },
+    {
+      "source": "Antonín Barák",
+      "target": "Moussa Sissoko",
+      "weight": 0.9601,
+      "distance": 0.0399
+    },
+    {
+      "source": "Antonín Barák",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9711,
+      "distance": 0.0289
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Damián Suárez",
+      "weight": 0.96,
+      "distance": 0.04
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Harry Souttar",
+      "weight": 0.9658,
+      "distance": 0.0342
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Przemysław Frankowski",
+      "weight": 0.9604,
+      "distance": 0.0396
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Casemiro",
+      "weight": 0.9633,
+      "distance": 0.0367
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Patrick Ciurria",
+      "weight": 0.9604,
+      "distance": 0.0396
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Moussa Sissoko",
+      "weight": 0.9602,
+      "distance": 0.0398
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Juan Bernat",
+      "weight": 0.9603,
+      "distance": 0.0397
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Abdou Harroui",
+      "weight": 0.967,
+      "distance": 0.033
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9621,
+      "distance": 0.0379
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.962,
+      "distance": 0.038
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Christian Groß",
+      "weight": 0.9679,
+      "distance": 0.0321
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Jens Stage",
+      "weight": 0.9703,
+      "distance": 0.0297
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9647,
+      "distance": 0.0353
+    },
+    {
+      "source": "Noah Weißhaupt",
+      "target": "João Gomes",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Harrison Reed",
+      "target": "Luis Alberto",
+      "weight": 0.9668,
+      "distance": 0.0332
+    },
+    {
+      "source": "Harrison Reed",
+      "target": "Nathan Aké",
+      "weight": 0.9607,
+      "distance": 0.0393
+    },
+    {
+      "source": "Harrison Reed",
+      "target": "Téji Savanier",
+      "weight": 0.9683,
+      "distance": 0.0317
+    },
+    {
+      "source": "Harrison Reed",
+      "target": "Florent Mollet",
+      "weight": 0.9668,
+      "distance": 0.0332
+    },
+    {
+      "source": "Harrison Reed",
+      "target": "Toni Villa",
+      "weight": 0.9636,
+      "distance": 0.0364
+    },
+    {
+      "source": "Harrison Reed",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9693,
+      "distance": 0.0307
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Luis Alberto",
+      "weight": 0.9603,
+      "distance": 0.0397
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Przemysław Frankowski",
+      "weight": 0.9603,
+      "distance": 0.0397
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Jean-Victor Makengo",
+      "weight": 0.9833,
+      "distance": 0.0167
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Bonke Innocent",
+      "weight": 0.9689,
+      "distance": 0.0311
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Scott McTominay",
+      "weight": 0.9656,
+      "distance": 0.0344
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Valentin Rongier",
+      "weight": 0.9648,
+      "distance": 0.0352
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Moussa Sissoko",
+      "weight": 0.976,
+      "distance": 0.024
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Harry Winks",
+      "weight": 0.9712,
+      "distance": 0.0288
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9723,
+      "distance": 0.0277
+    },
+    {
+      "source": "Damián Suárez",
+      "target": "Jens Stage",
+      "weight": 0.9647,
+      "distance": 0.0353
+    },
+    {
+      "source": "Oliver Abildgaard",
+      "target": "Florent Mollet",
+      "weight": 0.9603,
+      "distance": 0.0397
+    },
+    {
+      "source": "Oliver Abildgaard",
+      "target": "Juan Bernat",
+      "weight": 0.9659,
+      "distance": 0.0341
+    },
+    {
+      "source": "Angelo Stiller",
+      "target": "Valentin Rongier",
+      "weight": 0.9636,
+      "distance": 0.0364
+    },
+    {
+      "source": "Angelo Stiller",
+      "target": "Moussa Sissoko",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Angelo Stiller",
+      "target": "Juan Bernat",
+      "weight": 0.964,
+      "distance": 0.036
+    },
+    {
+      "source": "Angelo Stiller",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9779,
+      "distance": 0.0221
+    },
+    {
+      "source": "Luis Alberto",
+      "target": "Bonke Innocent",
+      "weight": 0.9671,
+      "distance": 0.0329
+    },
+    {
+      "source": "Luis Alberto",
+      "target": "Christian Groß",
+      "weight": 0.9638,
+      "distance": 0.0362
+    },
+    {
+      "source": "Luis Alberto",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9753,
+      "distance": 0.0247
+    },
+    {
+      "source": "Luis Alberto",
+      "target": "Felix Nmecha",
+      "weight": 0.9629,
+      "distance": 0.0371
+    },
+    {
+      "source": "Joan Gonzàlez",
+      "target": "Tommaso Pobega",
+      "weight": 0.9691,
+      "distance": 0.0309
+    },
+    {
+      "source": "Joan Gonzàlez",
+      "target": "Florent Mollet",
+      "weight": 0.967,
+      "distance": 0.033
+    },
+    {
+      "source": "Joan Gonzàlez",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9647,
+      "distance": 0.0353
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Charles Aránguiz",
+      "weight": 0.97,
+      "distance": 0.03
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Tommaso Pobega",
+      "weight": 0.9659,
+      "distance": 0.0341
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Ismail Jakobs",
+      "weight": 0.9651,
+      "distance": 0.0349
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Mickaël Cuisance",
+      "weight": 0.9704,
+      "distance": 0.0296
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Tristan Dingomé",
+      "weight": 0.9634,
+      "distance": 0.0366
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Carlos Soler",
+      "weight": 0.9637,
+      "distance": 0.0363
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Christian Groß",
+      "weight": 0.9735,
+      "distance": 0.0265
+    },
+    {
+      "source": "Harry Souttar",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9809,
+      "distance": 0.0191
+    },
+    {
+      "source": "Przemysław Frankowski",
+      "target": "Florent Mollet",
+      "weight": 0.9655,
+      "distance": 0.0345
+    },
+    {
+      "source": "Przemysław Frankowski",
+      "target": "Moussa Sissoko",
+      "weight": 0.976,
+      "distance": 0.024
+    },
+    {
+      "source": "Przemysław Frankowski",
+      "target": "Amadou Haidara",
+      "weight": 0.9697,
+      "distance": 0.0303
+    },
+    {
+      "source": "Przemysław Frankowski",
+      "target": "James Bree",
+      "weight": 0.9719,
+      "distance": 0.0281
+    },
+    {
+      "source": "Przemysław Frankowski",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9677,
+      "distance": 0.0323
+    },
+    {
+      "source": "Daley Sinkgraven",
+      "target": "Toni Villa",
+      "weight": 0.9612,
+      "distance": 0.0388
+    },
+    {
+      "source": "Moussa Diaby",
+      "target": "Sanjin Prcić",
+      "weight": 0.9717,
+      "distance": 0.0283
+    },
+    {
+      "source": "Jeremie Frimpong",
+      "target": "Charles Aránguiz",
+      "weight": 0.9659,
+      "distance": 0.0341
+    },
+    {
+      "source": "Jeremie Frimpong",
+      "target": "Nathan Aké",
+      "weight": 0.9629,
+      "distance": 0.0371
+    },
+    {
+      "source": "Jeremie Frimpong",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Charles Aránguiz",
+      "target": "Mickaël Cuisance",
+      "weight": 0.9664,
+      "distance": 0.0336
+    },
+    {
+      "source": "Charles Aránguiz",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9639,
+      "distance": 0.0361
+    },
+    {
+      "source": "Charles Aránguiz",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9634,
+      "distance": 0.0366
+    },
+    {
+      "source": "Angel Gomes",
+      "target": "Jon Moncayola",
+      "weight": 0.9684,
+      "distance": 0.0316
+    },
+    {
+      "source": "Joe Gomez",
+      "target": "Naby Keïta",
+      "weight": 0.9632,
+      "distance": 0.0368
+    },
+    {
+      "source": "Fabinho",
+      "target": "Bonke Innocent",
+      "weight": 0.965,
+      "distance": 0.035
+    },
+    {
+      "source": "Fabinho",
+      "target": "Antonio Sánchez",
+      "weight": 0.9602,
+      "distance": 0.0398
+    },
+    {
+      "source": "Fabinho",
+      "target": "Karol Linetty",
+      "weight": 0.9622,
+      "distance": 0.0378
+    },
+    {
+      "source": "Fabinho",
+      "target": "Toni Villa",
+      "weight": 0.9615,
+      "distance": 0.0385
+    },
+    {
+      "source": "Naby Keïta",
+      "target": "Juan Bernat",
+      "weight": 0.9633,
+      "distance": 0.0367
+    },
+    {
+      "source": "Ayman Kari",
+      "target": "Moussa Sissoko",
+      "weight": 0.9624,
+      "distance": 0.0376
+    },
+    {
+      "source": "Jean-Victor Makengo",
+      "target": "Bonke Innocent",
+      "weight": 0.975,
+      "distance": 0.025
+    },
+    {
+      "source": "Jean-Victor Makengo",
+      "target": "Valentin Rongier",
+      "weight": 0.9664,
+      "distance": 0.0336
+    },
+    {
+      "source": "Jean-Victor Makengo",
+      "target": "Florent Mollet",
+      "weight": 0.9609,
+      "distance": 0.0391
+    },
+    {
+      "source": "Jean-Victor Makengo",
+      "target": "Moussa Sissoko",
+      "weight": 0.9658,
+      "distance": 0.0342
+    },
+    {
+      "source": "Jean-Victor Makengo",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9725,
+      "distance": 0.0275
+    },
+    {
+      "source": "Jean-Victor Makengo",
+      "target": "Karol Linetty",
+      "weight": 0.968,
+      "distance": 0.032
+    },
+    {
+      "source": "Bonke Innocent",
+      "target": "Rico Lewis",
+      "weight": 0.9711,
+      "distance": 0.0289
+    },
+    {
+      "source": "Bonke Innocent",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9666,
+      "distance": 0.0334
+    },
+    {
+      "source": "Corentin Tolisso",
+      "target": "João Gomes",
+      "weight": 0.9625,
+      "distance": 0.0375
+    },
+    {
+      "source": "Lee Jae-sung",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9647,
+      "distance": 0.0353
+    },
+    {
+      "source": "Antonio Sánchez",
+      "target": "Karol Linetty",
+      "weight": 0.9728,
+      "distance": 0.0272
+    },
+    {
+      "source": "Antonio Sánchez",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9682,
+      "distance": 0.0318
+    },
+    {
+      "source": "Martin Valjent",
+      "target": "Abdou Harroui",
+      "weight": 0.9679,
+      "distance": 0.0321
+    },
+    {
+      "source": "Rico Lewis",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9668,
+      "distance": 0.0332
+    },
+    {
+      "source": "Nathan Aké",
+      "target": "Robin Knoche",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Nathan Aké",
+      "target": "Toni Villa",
+      "weight": 0.9671,
+      "distance": 0.0329
+    },
+    {
+      "source": "Casemiro",
+      "target": "Juan Bernat",
+      "weight": 0.9649,
+      "distance": 0.0351
+    },
+    {
+      "source": "Scott McTominay",
+      "target": "Léo Leroy",
+      "weight": 0.9708,
+      "distance": 0.0292
+    },
+    {
+      "source": "Scott McTominay",
+      "target": "Valentin Atangana Edoa",
+      "weight": 0.9628,
+      "distance": 0.0372
+    },
+    {
+      "source": "Scott McTominay",
+      "target": "Harry Winks",
+      "weight": 0.9668,
+      "distance": 0.0332
+    },
+    {
+      "source": "Scott McTominay",
+      "target": "Karol Linetty",
+      "weight": 0.9608,
+      "distance": 0.0392
+    },
+    {
+      "source": "Pape Gueye",
+      "target": "Florent Mollet",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Pape Gueye",
+      "target": "Juan Bernat",
+      "weight": 0.9646,
+      "distance": 0.0354
+    },
+    {
+      "source": "Souleymane Touré",
+      "target": "Sebastiaan Bornauw",
+      "weight": 0.9625,
+      "distance": 0.0375
+    },
+    {
+      "source": "Valentin Rongier",
+      "target": "Juan Bernat",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Valentin Rongier",
+      "target": "Karol Linetty",
+      "weight": 0.9705,
+      "distance": 0.0295
+    },
+    {
+      "source": "Valentin Rongier",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9662,
+      "distance": 0.0338
+    },
+    {
+      "source": "Valentin Rongier",
+      "target": "Carlos Soler",
+      "weight": 0.9632,
+      "distance": 0.0368
+    },
+    {
+      "source": "Matteo Gabbia",
+      "target": "Bartosz Bereszyński",
+      "weight": 0.9671,
+      "distance": 0.0329
+    },
+    {
+      "source": "Tommaso Pobega",
+      "target": "Abdou Harroui",
+      "weight": 0.9621,
+      "distance": 0.0379
+    },
+    {
+      "source": "Tommaso Pobega",
+      "target": "Tristan Dingomé",
+      "weight": 0.9764,
+      "distance": 0.0236
+    },
+    {
+      "source": "Tommaso Pobega",
+      "target": "Ramón Terrats",
+      "weight": 0.963,
+      "distance": 0.037
+    },
+    {
+      "source": "Tommaso Pobega",
+      "target": "Christian Groß",
+      "weight": 0.9639,
+      "distance": 0.0361
+    },
+    {
+      "source": "Léo Leroy",
+      "target": "Toni Villa",
+      "weight": 0.9642,
+      "distance": 0.0358
+    },
+    {
+      "source": "Téji Savanier",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9607,
+      "distance": 0.0393
+    },
+    {
+      "source": "Téji Savanier",
+      "target": "Toni Villa",
+      "weight": 0.966,
+      "distance": 0.034
+    },
+    {
+      "source": "Patrick Ciurria",
+      "target": "Moussa Sissoko",
+      "weight": 0.9615,
+      "distance": 0.0385
+    },
+    {
+      "source": "Patrick Ciurria",
+      "target": "Tristan Dingomé",
+      "weight": 0.9642,
+      "distance": 0.0358
+    },
+    {
+      "source": "Patrick Ciurria",
+      "target": "Jens Stage",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Florent Mollet",
+      "target": "Juan Bernat",
+      "weight": 0.9616,
+      "distance": 0.0384
+    },
+    {
+      "source": "Florent Mollet",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9644,
+      "distance": 0.0356
+    },
+    {
+      "source": "Florent Mollet",
+      "target": "Sergi Guardiola",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Florent Mollet",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Moussa Sissoko",
+      "target": "Amadou Haidara",
+      "weight": 0.964,
+      "distance": 0.036
+    },
+    {
+      "source": "Moussa Sissoko",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9668,
+      "distance": 0.0332
+    },
+    {
+      "source": "Moussa Sissoko",
+      "target": "Jens Stage",
+      "weight": 0.9657,
+      "distance": 0.0343
+    },
+    {
+      "source": "Fabian Schär",
+      "target": "Toni Kroos",
+      "weight": 0.961,
+      "distance": 0.039
+    },
+    {
+      "source": "Anthony Gordon",
+      "target": "Carlos Soler",
+      "weight": 0.9699,
+      "distance": 0.0301
+    },
+    {
+      "source": "Steve Cook",
+      "target": "Mitchell van Bergen",
+      "weight": 0.965,
+      "distance": 0.035
+    },
+    {
+      "source": "Morgan Gibbs-White",
+      "target": "Abdou Diallo",
+      "weight": 0.9627,
+      "distance": 0.0373
+    },
+    {
+      "source": "Morgan Gibbs-White",
+      "target": "Toni Villa",
+      "weight": 0.9605,
+      "distance": 0.0395
+    },
+    {
+      "source": "Juan Cruz Armada",
+      "target": "Juan Bernat",
+      "weight": 0.9719,
+      "distance": 0.0281
+    },
+    {
+      "source": "Jon Moncayola",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9626,
+      "distance": 0.0374
+    },
+    {
+      "source": "Jon Moncayola",
+      "target": "Yves Bissouma",
+      "weight": 0.9714,
+      "distance": 0.0286
+    },
+    {
+      "source": "Juan Bernat",
+      "target": "Mickaël Cuisance",
+      "weight": 0.9603,
+      "distance": 0.0397
+    },
+    {
+      "source": "Juan Bernat",
+      "target": "Toni Villa",
+      "weight": 0.9634,
+      "distance": 0.0366
+    },
+    {
+      "source": "Fabián Ruiz Peña",
+      "target": "Carlos Soler",
+      "weight": 0.9618,
+      "distance": 0.0382
+    },
+    {
+      "source": "Abdou Diallo",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Amadou Haidara",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9723,
+      "distance": 0.0277
+    },
+    {
+      "source": "Valentin Atangana Edoa",
+      "target": "Toni Villa",
+      "weight": 0.9604,
+      "distance": 0.0396
+    },
+    {
+      "source": "Xeka",
+      "target": "Michel Ndary Adopo",
+      "weight": 0.9717,
+      "distance": 0.0283
+    },
+    {
+      "source": "Xeka",
+      "target": "Monchu",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Xeka",
+      "target": "Toni Villa",
+      "weight": 0.9654,
+      "distance": 0.0346
+    },
+    {
+      "source": "Harry Winks",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9682,
+      "distance": 0.0318
+    },
+    {
+      "source": "Lorenzo Malagrida",
+      "target": "Monchu",
+      "weight": 0.9619,
+      "distance": 0.0381
+    },
+    {
+      "source": "Mickaël Cuisance",
+      "target": "Ibrahima Diallo",
+      "weight": 0.9772,
+      "distance": 0.0228
+    },
+    {
+      "source": "Mickaël Cuisance",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9645,
+      "distance": 0.0355
+    },
+    {
+      "source": "Mickaël Cuisance",
+      "target": "João Gomes",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Kristian Thorstvedt",
+      "target": "Toni Villa",
+      "weight": 0.964,
+      "distance": 0.036
+    },
+    {
+      "source": "Abdou Harroui",
+      "target": "Tristan Dingomé",
+      "weight": 0.966,
+      "distance": 0.034
+    },
+    {
+      "source": "Abdou Harroui",
+      "target": "João Gomes",
+      "weight": 0.9669,
+      "distance": 0.0331
+    },
+    {
+      "source": "Szymon Żurkowski",
+      "target": "Viktor Kovalenko",
+      "weight": 0.9617,
+      "distance": 0.0383
+    },
+    {
+      "source": "Michel Ndary Adopo",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9641,
+      "distance": 0.0359
+    },
+    {
+      "source": "Michel Ndary Adopo",
+      "target": "Toni Villa",
+      "weight": 0.9636,
+      "distance": 0.0364
+    },
+    {
+      "source": "Karol Linetty",
+      "target": "Pierre Højbjerg",
+      "weight": 0.9609,
+      "distance": 0.0391
+    },
+    {
+      "source": "Roberto Pereyra",
+      "target": "Christian Groß",
+      "weight": 0.9643,
+      "distance": 0.0357
+    },
+    {
+      "source": "Edinson Cavani",
+      "target": "Carlos Soler",
+      "weight": 0.9625,
+      "distance": 0.0375
+    },
+    {
+      "source": "Darwin Machís",
+      "target": "Toni Villa",
+      "weight": 0.9638,
+      "distance": 0.0362
+    },
+    {
+      "source": "Toni Villa",
+      "target": "Ilia Gruev",
+      "weight": 0.9699,
+      "distance": 0.0301
+    },
+    {
+      "source": "Manu Trigueros",
+      "target": "Ramón Terrats",
+      "weight": 0.9706,
+      "distance": 0.0294
+    },
+    {
+      "source": "Christian Groß",
+      "target": "Jens Stage",
+      "weight": 0.9646,
+      "distance": 0.0354
+    },
+    {
+      "source": "Christian Groß",
+      "target": "Yannick Gerhardt",
+      "weight": 0.9724,
+      "distance": 0.0276
+    },
+    {
+      "source": "Yannick Gerhardt",
+      "target": "Felix Nmecha",
+      "weight": 0.9642,
+      "distance": 0.0358
+    }
+  ],
+  "metadata": {
+    "description": "Cosine similarity network for European Big 5 player possession patterns",
+    "games_analyzed": 20,
+    "min_similarity": 0.96,
+    "max_similarity": 0.9833,
+    "avg_similarity": 0.9655,
+    "threshold": 0.96
+  }
+}

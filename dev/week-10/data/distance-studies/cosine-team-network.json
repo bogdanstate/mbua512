@@ -1,0 +1,559 @@
+{
+  "nodes": [
+    {
+      "id": "Manchester City",
+      "label": "Manchester City",
+      "style": "possession",
+      "touches": {
+        "GK": 36.5,
+        "DEF": 64.3,
+        "MID": 88.9,
+        "FWD": 62.6,
+        "Total": 252.3
+      }
+    },
+    {
+      "id": "Arsenal",
+      "label": "Arsenal",
+      "style": "possession",
+      "touches": {
+        "GK": 31.3,
+        "DEF": 61.8,
+        "MID": 91.5,
+        "FWD": 61.8,
+        "Total": 246.4
+      }
+    },
+    {
+      "id": "Liverpool",
+      "label": "Liverpool",
+      "style": "possession",
+      "touches": {
+        "GK": 28.6,
+        "DEF": 62.7,
+        "MID": 75.2,
+        "FWD": 59.7,
+        "Total": 226.2
+      }
+    },
+    {
+      "id": "Tottenham",
+      "label": "Tottenham",
+      "style": "balanced",
+      "touches": {
+        "GK": 28.7,
+        "DEF": 45.4,
+        "MID": 59.7,
+        "FWD": 55.2,
+        "Total": 189.0
+      }
+    },
+    {
+      "id": "Newcastle",
+      "label": "Newcastle",
+      "style": "balanced",
+      "touches": {
+        "GK": 24.0,
+        "DEF": 59.6,
+        "MID": 62.6,
+        "FWD": 44.9,
+        "Total": 191.1
+      }
+    },
+    {
+      "id": "Manchester Utd",
+      "label": "Manchester Utd",
+      "style": "balanced",
+      "touches": {
+        "GK": 33.4,
+        "DEF": 54.9,
+        "MID": 72.4,
+        "FWD": 47.9,
+        "Total": 208.6
+      }
+    },
+    {
+      "id": "Chelsea",
+      "label": "Chelsea",
+      "style": "balanced",
+      "touches": {
+        "GK": 28.4,
+        "DEF": 57.6,
+        "MID": 64.1,
+        "FWD": 55.9,
+        "Total": 206.0
+      }
+    },
+    {
+      "id": "Brighton",
+      "label": "Brighton",
+      "style": "balanced",
+      "touches": {
+        "GK": 29.2,
+        "DEF": 57.5,
+        "MID": 69.4,
+        "FWD": 60.3,
+        "Total": 216.40000000000003
+      }
+    },
+    {
+      "id": "Aston Villa",
+      "label": "Aston Villa",
+      "style": "counter",
+      "touches": {
+        "GK": 26.0,
+        "DEF": 46.7,
+        "MID": 69.9,
+        "FWD": 49.9,
+        "Total": 192.50000000000003
+      }
+    },
+    {
+      "id": "West Ham",
+      "label": "West Ham",
+      "style": "counter",
+      "touches": {
+        "GK": 24.6,
+        "DEF": 40.2,
+        "MID": 54.0,
+        "FWD": 55.0,
+        "Total": 173.8
+      }
+    },
+    {
+      "id": "Wolves",
+      "label": "Wolves",
+      "style": "counter",
+      "touches": {
+        "GK": 27.2,
+        "DEF": 51.9,
+        "MID": 62.3,
+        "FWD": 51.5,
+        "Total": 192.9
+      }
+    },
+    {
+      "id": "Brentford",
+      "label": "Brentford",
+      "style": "defensive",
+      "touches": {
+        "GK": 17.6,
+        "DEF": 44.4,
+        "MID": 55.2,
+        "FWD": 53.3,
+        "Total": 170.5
+      }
+    },
+    {
+      "id": "Crystal Palace",
+      "label": "Crystal Palace",
+      "style": "defensive",
+      "touches": {
+        "GK": 22.0,
+        "DEF": 38.2,
+        "MID": 58.9,
+        "FWD": 45.1,
+        "Total": 164.2
+      }
+    },
+    {
+      "id": "Fulham",
+      "label": "Fulham",
+      "style": "defensive",
+      "touches": {
+        "GK": 21.0,
+        "DEF": 52.1,
+        "MID": 65.2,
+        "FWD": 53.7,
+        "Total": 192.0
+      }
+    },
+    {
+      "id": "Everton",
+      "label": "Everton",
+      "style": "defensive",
+      "touches": {
+        "GK": 17.5,
+        "DEF": 43.5,
+        "MID": 57.0,
+        "FWD": 49.9,
+        "Total": 167.9
+      }
+    },
+    {
+      "id": "Bournemouth",
+      "label": "Bournemouth",
+      "style": "defensive",
+      "touches": {
+        "GK": 20.6,
+        "DEF": 45.1,
+        "MID": 49.4,
+        "FWD": 40.0,
+        "Total": 155.1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "Chelsea",
+      "target": "Wolves",
+      "distance": 0.0053295418450403,
+      "similarity": 0.9946704581549597,
+      "weight": 0.9946704581549597
+    },
+    {
+      "source": "Chelsea",
+      "target": "Brighton",
+      "distance": 0.0072374018581246,
+      "similarity": 0.9927625981418754,
+      "weight": 0.9927625981418754
+    },
+    {
+      "source": "Manchester City",
+      "target": "Arsenal",
+      "distance": 0.0089125544783932,
+      "similarity": 0.9910874455216068,
+      "weight": 0.9910874455216068
+    },
+    {
+      "source": "Liverpool",
+      "target": "Brighton",
+      "distance": 0.0097405813076951,
+      "similarity": 0.9902594186923049,
+      "weight": 0.9902594186923049
+    },
+    {
+      "source": "Liverpool",
+      "target": "Chelsea",
+      "distance": 0.0104036498144444,
+      "similarity": 0.9895963501855556,
+      "weight": 0.9895963501855556
+    },
+    {
+      "source": "Brighton",
+      "target": "Wolves",
+      "distance": 0.0108691891174322,
+      "similarity": 0.9891308108825678,
+      "weight": 0.9891308108825678
+    },
+    {
+      "source": "Brentford",
+      "target": "Everton",
+      "distance": 0.0115496559507108,
+      "similarity": 0.9884503440492892,
+      "weight": 0.9884503440492892
+    },
+    {
+      "source": "Manchester City",
+      "target": "Aston Villa",
+      "distance": 0.0124703108679249,
+      "similarity": 0.9875296891320751,
+      "weight": 0.9875296891320751
+    },
+    {
+      "source": "Manchester City",
+      "target": "Wolves",
+      "distance": 0.0137370185613795,
+      "similarity": 0.9862629814386205,
+      "weight": 0.9862629814386205
+    },
+    {
+      "source": "Arsenal",
+      "target": "Aston Villa",
+      "distance": 0.0147892339315618,
+      "similarity": 0.9852107660684382,
+      "weight": 0.9852107660684382
+    },
+    {
+      "source": "Liverpool",
+      "target": "Wolves",
+      "distance": 0.0175901461707819,
+      "similarity": 0.9824098538292181,
+      "weight": 0.9824098538292181
+    },
+    {
+      "source": "Manchester City",
+      "target": "Liverpool",
+      "distance": 0.0182436036038272,
+      "similarity": 0.9817563963961728,
+      "weight": 0.9817563963961728
+    },
+    {
+      "source": "Arsenal",
+      "target": "Liverpool",
+      "distance": 0.0188300754084692,
+      "similarity": 0.9811699245915309,
+      "weight": 0.9811699245915309
+    },
+    {
+      "source": "Manchester City",
+      "target": "Brighton",
+      "distance": 0.0208682293531604,
+      "similarity": 0.9791317706468396,
+      "weight": 0.9791317706468396
+    },
+    {
+      "source": "Liverpool",
+      "target": "Fulham",
+      "distance": 0.0211525773361664,
+      "similarity": 0.9788474226638336,
+      "weight": 0.9788474226638336
+    },
+    {
+      "source": "Manchester City",
+      "target": "Chelsea",
+      "distance": 0.0262179192833268,
+      "similarity": 0.9737820807166732,
+      "weight": 0.9737820807166732
+    },
+    {
+      "source": "Arsenal",
+      "target": "Brighton",
+      "distance": 0.0297891665043422,
+      "similarity": 0.9702108334956578,
+      "weight": 0.9702108334956578
+    },
+    {
+      "source": "Brighton",
+      "target": "Fulham",
+      "distance": 0.0328399746932996,
+      "similarity": 0.9671600253067004,
+      "weight": 0.9671600253067004
+    },
+    {
+      "source": "Arsenal",
+      "target": "Wolves",
+      "distance": 0.0373638228826558,
+      "similarity": 0.9626361771173442,
+      "weight": 0.9626361771173442
+    },
+    {
+      "source": "Manchester City",
+      "target": "Manchester Utd",
+      "distance": 0.0402281169066361,
+      "similarity": 0.9597718830933639,
+      "weight": 0.9597718830933639
+    },
+    {
+      "source": "Arsenal",
+      "target": "Fulham",
+      "distance": 0.0421833231937669,
+      "similarity": 0.9578166768062331,
+      "weight": 0.9578166768062331
+    },
+    {
+      "source": "Arsenal",
+      "target": "Chelsea",
+      "distance": 0.0446497561871784,
+      "similarity": 0.9553502438128216,
+      "weight": 0.9553502438128216
+    },
+    {
+      "source": "Tottenham",
+      "target": "West Ham",
+      "distance": 0.044786423438748,
+      "similarity": 0.9552135765612519,
+      "weight": 0.9552135765612519
+    },
+    {
+      "source": "Aston Villa",
+      "target": "Wolves",
+      "distance": 0.045759082086239,
+      "similarity": 0.954240917913761,
+      "weight": 0.954240917913761
+    },
+    {
+      "source": "Chelsea",
+      "target": "Fulham",
+      "distance": 0.0480064326013001,
+      "similarity": 0.9519935673986999,
+      "weight": 0.9519935673986999
+    },
+    {
+      "source": "Brighton",
+      "target": "Aston Villa",
+      "distance": 0.0490433289547473,
+      "similarity": 0.9509566710452527,
+      "weight": 0.9509566710452527
+    },
+    {
+      "source": "Tottenham",
+      "target": "Brighton",
+      "distance": 0.0490892459179808,
+      "similarity": 0.9509107540820192,
+      "weight": 0.9509107540820192
+    },
+    {
+      "source": "Manchester Utd",
+      "target": "Wolves",
+      "distance": 0.0497500747789659,
+      "similarity": 0.9502499252210341,
+      "weight": 0.9502499252210341
+    },
+    {
+      "source": "Liverpool",
+      "target": "Aston Villa",
+      "distance": 0.0526365206798015,
+      "similarity": 0.9473634793201985,
+      "weight": 0.9473634793201985
+    },
+    {
+      "source": "Tottenham",
+      "target": "Wolves",
+      "distance": 0.0538722614479845,
+      "similarity": 0.9461277385520155,
+      "weight": 0.9461277385520155
+    },
+    {
+      "source": "Manchester Utd",
+      "target": "Aston Villa",
+      "distance": 0.0554465642047409,
+      "similarity": 0.9445534357952591,
+      "weight": 0.9445534357952591
+    },
+    {
+      "source": "Fulham",
+      "target": "Everton",
+      "distance": 0.0576629806458005,
+      "similarity": 0.9423370193541996,
+      "weight": 0.9423370193541996
+    },
+    {
+      "source": "Manchester City",
+      "target": "Fulham",
+      "distance": 0.0642770356335433,
+      "similarity": 0.9357229643664567,
+      "weight": 0.9357229643664567
+    },
+    {
+      "source": "Chelsea",
+      "target": "Aston Villa",
+      "distance": 0.0692477511064206,
+      "similarity": 0.9307522488935794,
+      "weight": 0.9307522488935794
+    },
+    {
+      "source": "Tottenham",
+      "target": "Chelsea",
+      "distance": 0.0695401069191323,
+      "similarity": 0.9304598930808677,
+      "weight": 0.9304598930808677
+    },
+    {
+      "source": "Wolves",
+      "target": "Fulham",
+      "distance": 0.0697908864351569,
+      "similarity": 0.9302091135648431,
+      "weight": 0.9302091135648431
+    },
+    {
+      "source": "Manchester City",
+      "target": "Tottenham",
+      "distance": 0.072471959344368,
+      "similarity": 0.927528040655632,
+      "weight": 0.927528040655632
+    },
+    {
+      "source": "Tottenham",
+      "target": "Aston Villa",
+      "distance": 0.0749223117617424,
+      "similarity": 0.9250776882382576,
+      "weight": 0.9250776882382576
+    },
+    {
+      "source": "Arsenal",
+      "target": "Manchester Utd",
+      "distance": 0.0755119721880173,
+      "similarity": 0.9244880278119827,
+      "weight": 0.9244880278119827
+    },
+    {
+      "source": "Aston Villa",
+      "target": "Crystal Palace",
+      "distance": 0.0765058615924311,
+      "similarity": 0.9234941384075689,
+      "weight": 0.9234941384075689
+    },
+    {
+      "source": "Manchester Utd",
+      "target": "Chelsea",
+      "distance": 0.080548986568273,
+      "similarity": 0.919451013431727,
+      "weight": 0.919451013431727
+    },
+    {
+      "source": "Liverpool",
+      "target": "Manchester Utd",
+      "distance": 0.0897837281328446,
+      "similarity": 0.9102162718671554,
+      "weight": 0.9102162718671554
+    },
+    {
+      "source": "Liverpool",
+      "target": "Newcastle",
+      "distance": 0.0901497947554924,
+      "similarity": 0.9098502052445077,
+      "weight": 0.9098502052445077
+    },
+    {
+      "source": "Brentford",
+      "target": "Fulham",
+      "distance": 0.0919458391335814,
+      "similarity": 0.9080541608664185,
+      "weight": 0.9080541608664185
+    },
+    {
+      "source": "Newcastle",
+      "target": "Bournemouth",
+      "distance": 0.0924203203913207,
+      "similarity": 0.9075796796086792,
+      "weight": 0.9075796796086792
+    },
+    {
+      "source": "Aston Villa",
+      "target": "Fulham",
+      "distance": 0.096350695954791,
+      "similarity": 0.903649304045209,
+      "weight": 0.903649304045209
+    },
+    {
+      "source": "Manchester Utd",
+      "target": "Brighton",
+      "distance": 0.0977727919087327,
+      "similarity": 0.9022272080912673,
+      "weight": 0.9022272080912673
+    },
+    {
+      "source": "Newcastle",
+      "target": "Chelsea",
+      "distance": 0.0977804575195414,
+      "similarity": 0.9022195424804587,
+      "weight": 0.9022195424804587
+    },
+    {
+      "source": "Liverpool",
+      "target": "Tottenham",
+      "distance": 0.0982090532565043,
+      "similarity": 0.9017909467434957,
+      "weight": 0.9017909467434957
+    },
+    {
+      "source": "Tottenham",
+      "target": "Crystal Palace",
+      "distance": 0.0984491266378362,
+      "similarity": 0.9015508733621638,
+      "weight": 0.9015508733621638
+    }
+  ],
+  "metadata": {
+    "description": "Premier League teams connected by similar possession patterns by position",
+    "metric": "cosine_similarity",
+    "min_similarity": 0.9,
+    "features": [
+      "GK_Touches",
+      "DEF_Touches",
+      "MID_Touches",
+      "FWD_Touches"
+    ]
+  }
+}
