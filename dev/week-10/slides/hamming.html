@@ -1,0 +1,414 @@
+<style>
+  /* Mobile styling for Hamming Distance slides */
+  @media only screen and (max-width: 768px) {
+    /* Comprehensive text size reduction for all Hamming slides */
+    section h2 {
+      font-size: 0.55em !important;
+    }
+
+    section h3 {
+      font-size: 0.48em !important;
+    }
+
+    section p {
+      font-size: 0.42em !important;
+      line-height: 1.3 !important;
+    }
+
+    section p strong {
+      font-size: inherit !important;
+    }
+
+    section ul li {
+      font-size: 0.4em !important;
+      line-height: 1.3 !important;
+    }
+
+    section table {
+      font-size: 0.35em !important;
+    }
+
+    section table th,
+    section table td {
+      padding: 4px !important;
+      font-size: inherit !important;
+    }
+
+    /* Formula boxes */
+    section div[style*="background: #e3f2fd"] {
+      padding: 8px !important;
+      margin: 8px 0 !important;
+    }
+
+    section div[style*="background: #e3f2fd"] p {
+      font-size: 0.5em !important;
+      white-space: nowrap !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
+
+    section div[style*="background: #e3f2fd"] p:first-child {
+      font-size: 0.6em !important;
+      font-family: 'Georgia', serif !important;
+      font-weight: bold !important;
+    }
+
+    section div[style*="background: #e3f2fd"] p:last-child {
+      font-size: 0.48em !important;
+    }
+
+    /* Other colored boxes */
+    section div[style*="background: #ecf0f1"],
+    section div[style*="background: #f5f5f5"],
+    section div[style*="background: #f0f0f0"],
+    section div[style*="background: #fff3cd"],
+    section div[style*="background: #fff3e0"],
+    section div[style*="background: #2ecc71"],
+    section div[style*="background: #f3e5f5"] {
+      padding: 6px !important;
+      margin: 6px 0 !important;
+      font-size: 0.4em !important;
+    }
+
+    section div[style*="background: #ecf0f1"] p,
+    section div[style*="background: #f5f5f5"] p,
+    section div[style*="background: #f0f0f0"] p,
+    section div[style*="background: #fff3cd"] p,
+    section div[style*="background: #fff3e0"] p,
+    section div[style*="background: #2ecc71"] p,
+    section div[style*="background: #f3e5f5"] p {
+      font-size: inherit !important;
+    }
+
+    /* SVG containers */
+    section svg {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    /* SVG text elements */
+    section svg text {
+      font-size: 9px !important;
+    }
+
+    /* Heatmap layout - stack vertically on mobile */
+    section.interactive-slide div[style*="display: flex"] {
+      flex-direction: column !important;
+      height: auto !important;
+      padding: 10px !important;
+    }
+
+    section.interactive-slide div[style*="flex: 0 0 50%"],
+    section.interactive-slide div[style*="flex: 1"] {
+      flex: 1 1 100% !important;
+      width: 100% !important;
+      padding: 0 !important;
+      margin-bottom: 15px !important;
+    }
+
+    section.interactive-slide div[id*="heatmap"] {
+      min-height: 400px !important;
+    }
+
+    section.interactive-slide div[id*="dendrogram"] {
+      min-height: 200px !important;
+    }
+
+    /* Formation diagrams - reduce sizes on mobile */
+    section div[style*="background: #2a9d8f"],
+    section div[style*="background: #e63946"] {
+      padding: 6px !important;
+      line-height: 1.2 !important;
+    }
+
+    section div[style*="background: #2a9d8f"] div,
+    section div[style*="background: #e63946"] div {
+      font-size: 0.35em !important;
+      line-height: 1.1 !important;
+    }
+
+    section div[style*="background: #2a9d8f"] div[style*="font-size: 1.5em"],
+    section div[style*="background: #e63946"] div[style*="font-size: 1.5em"] {
+      font-size: 0.4em !important;
+    }
+
+    section div[style*="background: #2a9d8f"] div[style*="font-size: 1.2em"],
+    section div[style*="background: #e63946"] div[style*="font-size: 1.2em"] {
+      font-size: 0.35em !important;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    section h2 {
+      font-size: 0.48em !important;
+    }
+
+    section h3 {
+      font-size: 0.42em !important;
+    }
+
+    section p {
+      font-size: 0.38em !important;
+    }
+
+    section ul li {
+      font-size: 0.36em !important;
+    }
+
+    section table {
+      font-size: 0.32em !important;
+    }
+
+    section svg text {
+      font-size: 7px !important;
+    }
+  }
+</style>
+
+      <!-- Slide 17: Hamming Distance - Concept and Formula -->
+      <section>
+        <h2>Hamming Distance</h2>
+        <p>Number of positions at which corresponding symbols differ between two strings of equal length</p>
+
+        <div style="max-width: 800px; margin: 30px auto;">
+          <h3>The Formula</h3>
+          <div style="background: #e3f2fd; border-left: 4px solid #2196f3; padding: 20px; margin: 15px 0;">
+            <p style="font-size: 1.3em; font-family: 'Georgia', serif; text-align: center; margin: 0; font-weight: bold;">
+              d(A, B) = Σ(Aᵢ ≠ Bᵢ)
+            </p>
+            <p style="font-size: 0.9em; text-align: center; margin: 10px 0 0 0; font-style: italic; color: #555;">
+              Count of positions where symbols differ
+            </p>
+          </div>
+
+          <div style="margin-top: 25px; background: #f0f0f0; padding: 20px; border-radius: 8px;">
+            <p style="font-size: 1em; margin: 0 0 10px 0;"><strong>Example:</strong></p>
+            <table style="width: 100%; font-size: 0.85em; margin-top: 10px;">
+              <tr style="background: #3498db; color: white;">
+                <th>Position</th><th>Team A</th><th>Team B</th><th>Different?</th>
+              </tr>
+              <tr>
+                <td>GK</td><td>1</td><td>1</td><td style="color: #27ae60;">✗ Same</td>
+              </tr>
+              <tr style="background: #ecf0f1;">
+                <td>DF</td><td>4</td><td>3</td><td style="color: #e74c3c;">✓ Differ</td>
+              </tr>
+              <tr>
+                <td>MF</td><td>4</td><td>4</td><td style="color: #27ae60;">✗ Same</td>
+              </tr>
+              <tr style="background: #ecf0f1;">
+                <td>FW</td><td>2</td><td>3</td><td style="color: #e74c3c;">✓ Differ</td>
+              </tr>
+            </table>
+            <p style="font-family: monospace; font-size: 1.1em; margin: 15px 0 0 0; text-align: center; background: #2ecc71; color: white; padding: 10px;">
+              Hamming Distance = <strong>2 positions</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hamming Formation: Tactical Strategy Introduction -->
+      <section>
+        <h2>Hamming Distance: Tactical Formations</h2>
+        <p style="font-size: 0.9em;">Comparing team strategies by analyzing formation choices across matches</p>
+
+        <div class="two-columns" style="margin-top: 40px;">
+          <div class="column">
+            <h3 style="font-size: 1.1em;">Attacking: 4-3-3</h3>
+            <div style="background: #2a9d8f; color: white; padding: 25px; border-radius: 8px; font-family: monospace; line-height: 2.5;">
+              <div style="text-align: center; font-size: 1.5em;">⚽</div>
+              <div style="text-align: center; font-size: 1.2em;">FW FW FW</div>
+              <div style="text-align: center; font-size: 1.2em;">MF MF MF</div>
+              <div style="text-align: center; font-size: 1.2em;">DF DF DF DF</div>
+              <div style="text-align: center; font-size: 1.5em;">🧤</div>
+            </div>
+            <p style="font-size: 0.85em; margin-top: 15px;">
+              <strong>Philosophy:</strong> High press, wide attack, aggressive
+            </p>
+          </div>
+
+          <div class="column">
+            <h3 style="font-size: 1.1em;">Defensive: 5-3-2</h3>
+            <div style="background: #e63946; color: white; padding: 25px; border-radius: 8px; font-family: monospace; line-height: 2.5;">
+              <div style="text-align: center; font-size: 1.5em;">⚽</div>
+              <div style="text-align: center; font-size: 1.2em;">FW FW</div>
+              <div style="text-align: center; font-size: 1.2em;">MF MF MF</div>
+              <div style="text-align: center; font-size: 1.2em;">DF DF DF DF DF</div>
+              <div style="text-align: center; font-size: 1.5em;">🧤</div>
+            </div>
+            <p style="font-size: 0.85em; margin-top: 15px;">
+              <strong>Philosophy:</strong> Compact defense, counter-attack
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 8px;">
+          <p style="font-size: 1.1em; margin: 0; color: #2c3e50;">
+            <strong>Formation Vector:</strong> [GK, DF, MF, FW] = <span style="color: #2a9d8f;">[1, 4, 3, 3]</span> vs <span style="color: #e63946;">[1, 5, 3, 2]</span>
+          </p>
+          <p style="font-size: 1em; margin: 10px 0 0 0; color: #555;">
+            Hamming distance = number of positions that differ = <strong>2</strong> (DF and FW differ)
+          </p>
+        </div>
+      </section>
+
+      <!-- Hamming Formation: Concatenation -->
+      <section>
+        <h2>From Single Match to Full Season</h2>
+        <p style="font-size: 0.9em;">Building a tactical fingerprint across all matches</p>
+
+        <div style="margin-top: 30px;">
+          <h3 style="font-size: 1em; color: #2a9d8f;">Manchester City's 2023-2024 Season</h3>
+
+          <div style="background: #e8f4f8; padding: 15px; border-radius: 8px; margin: 15px 0;">
+            <p style="margin: 0; font-size: 0.9em;"><strong>Match 1 vs Arsenal:</strong></p>
+            <p style="margin: 5px 0 0 0; font-family: monospace; font-size: 1.1em;">
+              Formation: <span style="color: #2a9d8f; font-weight: bold;">4-3-3</span> → Vector: <span style="color: #2a9d8f;">[1, 4, 3, 3]</span>
+            </p>
+          </div>
+
+          <div style="text-align: center; font-size: 2em; color: #555; margin: 10px 0;">
+            ⬇️
+          </div>
+
+          <div style="background: #2a9d8f; color: white; padding: 20px; border-radius: 8px;">
+            <p style="margin: 0; font-size: 0.9em;"><strong>Full Season Vector (38 matches):</strong></p>
+            <p style="margin: 10px 0 0 0; font-family: monospace; font-size: 0.85em; line-height: 1.6;">
+              [1,4,3,3, 1,4,3,3, 1,4,2,4, 1,4,3,3, 1,4,3,3, 1,4,3,3, 1,5,3,2, ...]
+            </p>
+            <p style="margin: 15px 0 0 0; font-size: 0.9em;">
+              Length: <strong>38 matches × 4 positions = 152 dimensions</strong>
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 25px; padding: 15px; background: #fff3cd; border-radius: 8px;">
+          <p style="margin: 0; font-size: 0.95em; color: #856404;">
+            💡 <strong>Key Insight:</strong> Teams with similar season-long formation patterns have small Hamming distances
+          </p>
+        </div>
+      </section>
+
+      <!-- Hamming Formation: Distance Computation -->
+      <section>
+        <h2>Computing Hamming Distance</h2>
+        <p style="font-size: 0.9em;">Counting position-wise differences between team strategies</p>
+
+        <div style="margin-top: 30px;">
+          <div class="two-columns">
+            <div class="column">
+              <h3 style="font-size: 1em; color: #2a9d8f;">Manchester City</h3>
+              <div style="background: #2a9d8f; color: white; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.85em;">
+                Match 1: [1, 4, 3, 3]<br>
+                Match 2: [1, 4, 3, 3]<br>
+                Match 3: [1, 4, 2, 4]<br>
+                Match 4: [1, 4, 3, 3]<br>
+                Match 5: [1, 4, 3, 3]
+              </div>
+            </div>
+
+            <div class="column">
+              <h3 style="font-size: 1em; color: #e63946;">Arsenal</h3>
+              <div style="background: #e63946; color: white; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.85em;">
+                Match 1: [1, 4, 3, 3]<br>
+                Match 2: [1, 4, 3, 3]<br>
+                Match 3: [1, 4, 3, 3]<br>
+                Match 4: [1, 5, 3, 2]<br>
+                Match 5: [1, 4, 3, 3]
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 25px; background: #f0f0f0; padding: 20px; border-radius: 8px;">
+            <p style="font-size: 1em; margin: 0; color: #2c3e50;">
+              <strong>Hamming Distance:</strong> Count differences position-by-position
+            </p>
+            <p style="font-family: monospace; margin: 15px 0; font-size: 0.9em; line-height: 2;">
+              Match 1: 0 differences<br>
+              Match 2: 0 differences<br>
+              Match 3: <span style="color: #e63946;">2 differences</span> (MF: 2≠3, FW: 4≠3)<br>
+              Match 4: <span style="color: #e63946;">2 differences</span> (DF: 4≠5, FW: 3≠2)<br>
+              Match 5: 0 differences
+            </p>
+            <p style="font-size: 1.2em; margin: 15px 0 0 0; color: #2c3e50;">
+              <strong>Total Hamming Distance:</strong> 0 + 0 + 2 + 2 + 0 = <strong style="color: #e63946;">4</strong>
+            </p>
+          </div>
+
+          <div style="margin-top: 20px; background: #e8f4f8; padding: 20px; border-radius: 8px;">
+            <p style="font-size: 1em; margin: 0; color: #2c3e50;">
+              <strong>Convert to Similarity:</strong>
+            </p>
+            <p style="font-size: 1.3em; margin: 15px 0; color: #2a9d8f;">
+              similarity = 1 - (distance / max_distance)
+            </p>
+            <p style="font-size: 1.1em; margin: 0;">
+              similarity = 1 - (4 / 20) = <strong style="color: #2a9d8f;">0.80</strong> ← Very similar!
+            </p>
+            <p style="font-size: 0.85em; margin: 10px 0 0 0; color: #555;">
+              (max_distance = 5 matches × 4 positions = 20)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hamming Formation: Premier League Heatmap -->
+      <section class="interactive-slide">
+        <div style="display: flex; gap: 20px; height: 100%; align-items: flex-start; padding: 20px;">
+          <div style="flex: 0 0 50%; padding-right: 20px; text-align: left; display: flex; flex-direction: column;">
+            <h2 style="font-size: 1.3em; margin-top: 0; text-align: left;">Premier League 2023-2024: Formation Similarity</h2>
+            <p style="font-size: 0.9em; line-height: 1.5; margin-top: 15px; text-align: left;">
+              <strong>Hamming distance</strong> measures how many positions differ in formation vectors concatenated across all 38 matches.
+            </p>
+            <p style="font-size: 0.85em; line-height: 1.5; margin-top: 15px; text-align: left;">
+              Teams with consistent tactical identities cluster together - for example, clubs that predominantly use <strong>4-3-3</strong> vs <strong>3-5-2</strong>.
+            </p>
+            <p style="font-size: 0.85em; line-height: 1.5; margin-top: 15px; text-align: left;">
+              <strong>Lower distances</strong> indicate similar formation patterns throughout the season, revealing shared tactical philosophies.
+            </p>
+            <p style="font-size: 0.8em; margin-top: 20px; padding: 10px; background: #fff3e0; border-radius: 5px; text-align: left;">
+              💡 <strong>Tip:</strong> Click dendrogram branches to highlight team clusters with similar formation strategies
+            </p>
+            <div id="formation-heatmap-premier-dendrogram" style="width: 100%; flex: 1; min-height: 150px; margin-top: 20px;"></div>
+          </div>
+          <div style="flex: 1; display: flex; justify-content: center; align-items: center; min-height: 0;">
+            <div id="formation-heatmap-premier" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hamming Formation: Women's World Cup 2022 Heatmap -->
+      <section class="interactive-slide">
+        <div style="display: flex; gap: 20px; height: 100%; align-items: flex-start; padding: 20px;">
+          <div style="flex: 0 0 50%; padding-right: 20px; text-align: left; display: flex; flex-direction: column;">
+            <h2 style="font-size: 1.3em; margin-top: 0; text-align: left;">Women's World Cup 2022: Formation Patterns</h2>
+            <p style="font-size: 0.9em; line-height: 1.5; margin-top: 15px; text-align: left;">
+              <strong>Tournament-wide analysis</strong> of formation choices across all participating nations in the 2022 Women's World Cup.
+            </p>
+            <p style="font-size: 0.85em; line-height: 1.5; margin-top: 15px; text-align: left;">
+              National teams often maintain <strong>consistent formations</strong> throughout tournaments, with tactical adjustments reflecting their playing philosophy.
+            </p>
+            <p style="font-size: 0.85em; line-height: 1.5; margin-top: 15px; text-align: left;">
+              <strong>Similar distances</strong> reveal teams with comparable tactical approaches - defensive, balanced, or attacking setups.
+            </p>
+            <p style="font-size: 0.8em; margin-top: 20px; padding: 10px; background: #fff3e0; border-radius: 5px; text-align: left;">
+              💡 <strong>Tip:</strong> Click dendrogram branches to highlight national team clusters with similar formation patterns
+            </p>
+            <div id="formation-heatmap-wwc-dendrogram" style="width: 100%; flex: 1; min-height: 150px; margin-top: 20px;"></div>
+          </div>
+          <div style="flex: 1; display: flex; justify-content: center; align-items: center; min-height: 0;">
+            <div id="formation-heatmap-wwc" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hamming Formation: European Network -->
+      <section class="interactive-slide">
+        <h2>European Big 5 Leagues: Formation Similarity Network</h2>
+        <p style="font-size: 0.9em;">96 teams from Premier League, La Liga, Serie A, Bundesliga, and Ligue 1</p>
+        <div id="formation-network-container" style="width: 100%; height: 700px;"></div>
+        <p class="attribution" style="font-size: 12px; margin-top: 10px;">
+          Interactive network showing clubs connected by similar tactical formation patterns (first 20 matches, 2023-2024 season)
+        </p>
+      </section>
+

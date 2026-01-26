@@ -1,0 +1,285 @@
+<!-- K-means Clustering Demo Slides -->
+
+<!-- Slide 1: Types of Clustering - Section -->
+<section class="section-slide">
+  <h2>Types of Clustering</h2>
+</section>
+
+<!-- Slide 2: K-means Concept -->
+<section>
+  <h2>K-means Clustering</h2>
+  <p>Partitioning method that divides data into K distinct, non-overlapping clusters</p>
+
+  <div style="background: #e3f2fd; border-left: 4px solid #2196f3; padding: 20px; margin: 20px 0;">
+    <h3 style="margin-top: 0;">Algorithm Steps:</h3>
+    <ol style="text-align: left; margin-left: 20px;">
+      <li><strong>Initialize:</strong> Randomly select K points as initial centroids</li>
+      <li><strong>Assign:</strong> Assign each point to the nearest centroid</li>
+      <li><strong>Update:</strong> Recalculate centroids as the mean of assigned points</li>
+      <li><strong>Repeat:</strong> Steps 2-3 until convergence (centroids stop moving)</li>
+    </ol>
+  </div>
+
+  <p style="font-size: 0.9em; color: #666; margin-top: 20px;">
+    <em>Time complexity: O(n × K × i × d) where n = points, K = clusters, i = iterations, d = dimensions</em>
+  </p>
+</section>
+
+<!-- Slide 3: Interactive K-means Demo -->
+<section class="interactive-slide">
+  <h2>K-means Demo: Cocktail Party</h2>
+  <p style="font-size: 0.9em;">100 people at a cocktail party • Animate movement & watch Voronoi diagrams update with K-means</p>
+  <div id="kmeans-cocktail-container" style="width: 100%; height: 600px;"></div>
+</section>
+
+<!-- Slide 3: K-means Strengths and Limitations -->
+<section>
+  <h2>K-means: Strengths & Limitations</h2>
+
+  <div class="two-columns" style="margin-top: 30px;">
+    <div class="column">
+      <h3 style="color: #2ecc71;">✓ Strengths</h3>
+      <ul style="font-size: 0.85em; text-align: left;">
+        <li>Simple and intuitive</li>
+        <li>Fast and scalable (linear complexity)</li>
+        <li>Works well with spherical clusters</li>
+        <li>Easy to implement</li>
+        <li>Guaranteed to converge</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3 style="color: #e74c3c;">✗ Limitations</h3>
+      <ul style="font-size: 0.85em; text-align: left;">
+        <li>Must specify K in advance</li>
+        <li>Sensitive to initial centroids</li>
+        <li>Assumes spherical clusters</li>
+        <li>Sensitive to outliers</li>
+        <li>Only finds local optima</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; padding: 15px; background: #fff3cd; border-radius: 8px;">
+    <p style="margin: 0; font-size: 0.9em; color: #856404;">
+      💡 <strong>Tip:</strong> Use the Elbow Method or Silhouette Analysis to determine optimal K
+    </p>
+  </div>
+</section>
+
+<!-- Slide 5: Elbow Method -->
+<section class="interactive-slide">
+  <h3 style="margin-bottom: 25px;">Choosing K: The Elbow Method</h3>
+
+  <p style="text-align: left; margin-bottom: 20px; font-size: 0.95em;">
+    The <strong>Elbow Method</strong> plots the Within-Cluster Sum of Squares (WCSS) for different values of K. Look for the "elbow" where adding more clusters provides diminishing returns.
+  </p>
+
+  <div id="elbow-plot-container" style="margin-top: 20px;"></div>
+
+  <div style="margin-top: 25px; padding: 15px; background: #e8f5e9; border-radius: 8px; text-align: left;">
+    <p style="margin: 0 0 10px 0; font-size: 0.9em;">
+      <strong>How to interpret:</strong>
+    </p>
+    <ul style="margin: 0; font-size: 0.85em; line-height: 1.8;">
+      <li><strong>WCSS always decreases</strong> as K increases (more clusters = tighter fit)</li>
+      <li><strong>Look for the "elbow"</strong> - the point where the curve bends sharply</li>
+      <li><strong>Diminishing returns:</strong> Beyond the elbow, additional clusters don't improve fit much</li>
+      <li>For cocktail party data, the elbow suggests <strong>K ≈ 5-6 clusters</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Slide 6: Silhouette Analysis -->
+<section class="interactive-slide">
+  <h3 style="margin-bottom: 25px;">Choosing K: Silhouette Analysis</h3>
+
+  <p style="text-align: left; margin-bottom: 20px; font-size: 0.95em;">
+    The <strong>Silhouette Score</strong> measures how well each point fits within its cluster compared to other clusters. Values range from -1 (poor) to +1 (excellent).
+  </p>
+
+  <div id="silhouette-plot-container" style="margin-top: 20px;"></div>
+
+  <div style="margin-top: 25px; padding: 15px; background: #e3f2fd; border-radius: 8px; text-align: left;">
+    <p style="margin: 0 0 10px 0; font-size: 0.9em;">
+      <strong>How to interpret:</strong>
+    </p>
+    <ul style="margin: 0; font-size: 0.85em; line-height: 1.8;">
+      <li><strong>Score close to +1:</strong> Point is well-matched to its cluster</li>
+      <li><strong>Score close to 0:</strong> Point is on the boundary between clusters</li>
+      <li><strong>Score close to -1:</strong> Point might be in the wrong cluster</li>
+      <li><strong>Higher average score:</strong> Better overall clustering quality</li>
+      <li>For cocktail party data, peak silhouette suggests <strong>K ≈ 5 clusters</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Slide 7: Hierarchical Clustering Concept -->
+<section>
+  <h2>Hierarchical Clustering</h2>
+  <p>Builds a tree of clusters (dendrogram) by iteratively merging or splitting clusters</p>
+
+  <div class="two-columns" style="margin-top: 30px;">
+    <div class="column">
+      <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 20px;">
+        <h3 style="margin-top: 0; color: #2e7d32;">Agglomerative (Bottom-Up)</h3>
+        <ol style="text-align: left; margin-left: 20px; font-size: 0.9em;">
+          <li><strong>Start:</strong> Each point is its own cluster</li>
+          <li><strong>Merge:</strong> Find closest pair of clusters</li>
+          <li><strong>Repeat:</strong> Merge until one cluster remains</li>
+          <li><strong>Cut:</strong> Choose height to get desired K clusters</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="column">
+      <div style="background: #fff3e0; border-left: 4px solid #ff9800; padding: 20px;">
+        <h3 style="margin-top: 0; color: #e65100;">Divisive (Top-Down)</h3>
+        <ol style="text-align: left; margin-left: 20px; font-size: 0.9em;">
+          <li><strong>Start:</strong> All points in one cluster</li>
+          <li><strong>Split:</strong> Divide cluster into two</li>
+          <li><strong>Repeat:</strong> Split until each point is separate</li>
+          <li><strong>Cut:</strong> Choose height to get desired K clusters</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 0.9em; color: #666; margin-top: 20px;">
+    <em>Time complexity: O(n² log n) for agglomerative with efficient data structures</em>
+  </p>
+</section>
+
+<!-- Slide 6: Interactive Hierarchical Clustering Demo -->
+<section class="interactive-slide">
+  <h2>Hierarchical Clustering Demo: Cocktail Party</h2>
+  <p style="font-size: 0.9em;">Same 100 people • Watch the dendrogram build as clusters merge • Adjust cutting height to control number of clusters</p>
+  <div id="hierarchical-cocktail-container" style="width: 100%; height: 600px;"></div>
+</section>
+
+<!-- Slide 7: Hierarchical Clustering Strengths and Limitations -->
+<section>
+  <h2>Hierarchical Clustering: Strengths & Limitations</h2>
+
+  <div class="two-columns" style="margin-top: 30px;">
+    <div class="column">
+      <h3 style="color: #2ecc71;">✓ Strengths</h3>
+      <ul style="font-size: 0.85em; text-align: left;">
+        <li>No need to specify K in advance</li>
+        <li>Creates interpretable dendrogram</li>
+        <li>Deterministic (same result each time)</li>
+        <li>Can capture nested clusters</li>
+        <li>Works with any distance metric</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3 style="color: #e74c3c;">✗ Limitations</h3>
+      <ul style="font-size: 0.85em; text-align: left;">
+        <li>Computationally expensive (O(n²) or worse)</li>
+        <li>Doesn't scale to large datasets</li>
+        <li>Sensitive to noise and outliers</li>
+        <li>Cannot undo previous merges/splits</li>
+        <li>Choice of linkage method affects results</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; padding: 15px; background: #e3f2fd; border-radius: 8px;">
+    <p style="margin: 0; font-size: 0.9em; color: #1565c0;">
+      💡 <strong>Tip:</strong> Use <strong>Complete linkage</strong> for compact clusters, <strong>Single linkage</strong> for elongated clusters, <strong>Average linkage</strong> as a compromise
+    </p>
+  </div>
+</section>
+
+<!-- DBSCAN Clustering Slides -->
+<section>
+  <h3 style="margin-bottom: 25px;">DBSCAN (Density-Based Spatial Clustering)</h3>
+
+  <p style="text-align: left; margin-bottom: 20px; font-size: 0.95em;">
+    DBSCAN discovers clusters based on <strong>density</strong> rather than distance or hierarchy. It identifies regions with high point density separated by regions of low density.
+  </p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 25px;">
+    <div style="text-align: left;">
+      <h4 style="color: #2196f3; margin-bottom: 15px;">Key Concepts</h4>
+      <ul style="font-size: 0.9em; line-height: 1.8;">
+        <li><strong>ε (epsilon):</strong> Neighborhood radius</li>
+        <li><strong>MinPts:</strong> Minimum points to form cluster</li>
+        <li><strong>Core points:</strong> ≥ MinPts neighbors within ε</li>
+        <li><strong>Border points:</strong> In ε-neighborhood of core point</li>
+        <li><strong>Noise points:</strong> Neither core nor border</li>
+      </ul>
+    </div>
+
+    <div style="text-align: left;">
+      <h4 style="color: #4caf50; margin-bottom: 15px;">Algorithm Steps</h4>
+      <ol style="font-size: 0.9em; line-height: 1.8;">
+        <li>For each point, find neighbors within ε</li>
+        <li>Identify core points (≥ MinPts neighbors)</li>
+        <li>Form clusters by connecting core points</li>
+        <li>Add border points to clusters</li>
+        <li>Mark remaining points as noise</li>
+      </ol>
+      <p style="margin-top: 15px; font-size: 0.85em; color: #666;">
+        <strong>Time Complexity:</strong> O(n log n) with spatial indexing
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; padding: 15px; background: #fff3e0; border-radius: 8px;">
+    <p style="margin: 0; font-size: 0.9em; color: #e65100;">
+      ⚡ <strong>Key Advantage:</strong> No need to specify number of clusters in advance, and automatically identifies outliers
+    </p>
+  </div>
+</section>
+
+<section>
+  <h3 style="margin-bottom: 25px;">DBSCAN Demo: Cocktail Party</h3>
+
+  <p style="text-align: left; margin-bottom: 15px; font-size: 0.9em;">
+    Adjust <strong>ε</strong> (neighborhood radius) and <strong>MinPts</strong> (minimum cluster size) to see how DBSCAN identifies conversation groups while detecting isolated individuals as noise.
+  </p>
+
+  <div id="dbscan-cocktail-container" style="margin-top: 20px;"></div>
+
+  <div style="margin-top: 20px; padding: 12px; background: #f5f5f5; border-radius: 8px; text-align: left;">
+    <p style="margin: 0; font-size: 0.85em; color: #555;">
+      <strong>Try this:</strong> Start with ε=1.5m, MinPts=3. Increase ε to merge nearby groups. Decrease MinPts to form smaller clusters. Click <strong>Animate Party</strong> to see dynamic social behavior!
+    </p>
+  </div>
+</section>
+
+<section>
+  <h3 style="margin-bottom: 25px;">DBSCAN: Strengths & Limitations</h3>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 25px;">
+    <div style="text-align: left;">
+      <h4 style="color: #4caf50; margin-bottom: 15px;">✓ Strengths</h4>
+      <ul style="font-size: 0.9em; line-height: 1.8;">
+        <li><strong>No K required:</strong> Discovers cluster count automatically</li>
+        <li><strong>Arbitrary shapes:</strong> Finds non-spherical clusters</li>
+        <li><strong>Robust to outliers:</strong> Identifies noise points</li>
+        <li><strong>Deterministic:</strong> Same result every run</li>
+        <li><strong>Intuitive parameters:</strong> ε and MinPts have clear meanings</li>
+      </ul>
+    </div>
+
+    <div style="text-align: left;">
+      <h4 style="color: #e74c3c; margin-bottom: 15px;">✗ Limitations</h4>
+      <ul style="font-size: 0.9em; line-height: 1.8;">
+        <li><strong>Parameter sensitivity:</strong> Results depend heavily on ε</li>
+        <li><strong>Varying densities:</strong> Struggles with clusters of different densities</li>
+        <li><strong>High dimensions:</strong> Distance becomes less meaningful</li>
+        <li><strong>Border point ambiguity:</strong> Can belong to multiple clusters</li>
+        <li><strong>Memory intensive:</strong> Requires distance matrix storage</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; padding: 15px; background: #e3f2fd; border-radius: 8px;">
+    <p style="margin: 0; font-size: 0.9em; color: #1565c0;">
+      💡 <strong>Tip:</strong> Set ε based on <strong>k-distance graph</strong> (elbow point), and MinPts ≈ 2×dimensions for a good starting point
+    </p>
+  </div>
+</section>

@@ -1,0 +1,227 @@
+<!-- Solution Slides - Only visible with ?solution query parameter -->
+
+<!-- Solution 1: Data Exploration -->
+<section class="solution-slide">
+  <h2>Solution: Data Exploration</h2>
+  <p style="font-size: 0.9em;">Exploring the structure and summary of the athlete data</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># Explore the data structure
+str(data)
+head(data)
+summary(data)
+
+# Look at pairwise relationships
+pairs(data[, c("total.kms", "max.recovery", "nr..rest.days", "avg.exertion")])</code></pre>
+  </div>
+</section>
+
+<!-- Solution 2: Normalization -->
+<section class="solution-slide">
+  <h2>Solution: Data Normalization</h2>
+  <p style="font-size: 0.9em;">Standardizing variables to ensure equal weighting in distance calculations</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># Select numeric columns (exclude Athlete.ID)
+numeric_cols <- sapply(data, is.numeric)
+data_numeric <- data[, numeric_cols]
+
+# Normalize using z-scores
+means <- apply(data_numeric, 2, mean)
+sds <- apply(data_numeric, 2, sd)
+data_normalized <- scale(data_numeric, center = means, scale = sds)
+
+# Check normalization
+head(data_normalized)
+summary(data_normalized)</code></pre>
+  </div>
+</section>
+
+<!-- Solution 3: Hierarchical Clustering -->
+<section class="solution-slide">
+  <h2>Solution: Hierarchical Clustering</h2>
+  <p style="font-size: 0.9em;">Building a dendrogram to visualize cluster hierarchy</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># Calculate distance matrix
+distance <- dist(data_normalized)
+
+# Hierarchical clustering
+data_hclust <- hclust(distance, method = "ward.D2")
+
+# Plot dendrogram
+plot(data_hclust,
+     main = "Hierarchical Clustering Dendrogram",
+     xlab = "Athlete",
+     ylab = "Distance",
+     hang = -1)
+
+# Cut tree to get clusters
+clusters_h <- cutree(data_hclust, k = 3)
+table(clusters_h)</code></pre>
+  </div>
+</section>
+
+<!-- Solution 4: Determining Optimal K -->
+<section class="solution-slide">
+  <h2>Solution: Finding Optimal Number of Clusters</h2>
+  <p style="font-size: 0.9em;">Using statistical methods to determine the best K</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># Elbow method
+wss <- sapply(1:10, function(k) {
+  kmeans(data_normalized, centers = k, nstart = 25)$tot.withinss
+})
+plot(1:10, wss, type = "b",
+     xlab = "Number of Clusters (K)",
+     ylab = "Within-cluster Sum of Squares",
+     main = "Elbow Method")
+
+# Silhouette method (requires cluster package)
+# library(cluster)
+# sil_width <- sapply(2:10, function(k) {
+#   km <- kmeans(data_normalized, centers = k, nstart = 25)
+#   ss <- silhouette(km$cluster, dist(data_normalized))
+#   mean(ss[, 3])
+# })
+# plot(2:10, sil_width, type = "b",
+#      xlab = "Number of Clusters (K)",
+#      ylab = "Average Silhouette Width",
+#      main = "Silhouette Method")</code></pre>
+  </div>
+</section>
+
+<!-- Solution 5: K-means Clustering -->
+<section class="solution-slide">
+  <h2>Solution: K-means Clustering</h2>
+  <p style="font-size: 0.9em;">Applying K-means algorithm and examining results</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># K-means clustering with K=3
+set.seed(123)
+kmeans_result <- kmeans(data_normalized, centers = 3, nstart = 25)
+
+# Examine cluster assignments
+table(kmeans_result$cluster)
+
+# View cluster centers (in normalized space)
+kmeans_result$centers
+
+# Add cluster assignments to original data
+data$cluster <- kmeans_result$cluster
+
+# View first few rows with cluster assignments
+head(data[, c("Athlete.ID", "total.kms", "avg.exertion", "cluster")])</code></pre>
+  </div>
+</section>
+
+<!-- Solution 6: Visualization -->
+<section class="solution-slide">
+  <h2>Solution: Visualizing Clusters</h2>
+  <p style="font-size: 0.9em;">Creating scatter plots to visualize cluster separation</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># Scatter plot: total kms vs max recovery
+plot(data$total.kms ~ data$max.recovery,
+     col = kmeans_result$cluster,
+     pch = 19,
+     xlab = "Max Recovery",
+     ylab = "Total KMs",
+     main = "Clusters: Total KMs vs Max Recovery")
+legend("topright",
+       legend = paste("Cluster", 1:3),
+       col = 1:3,
+       pch = 19)
+
+# Scatter plot: avg exertion vs avg recovery
+plot(data$avg.exertion ~ data$avg.recovery,
+     col = kmeans_result$cluster,
+     pch = 19,
+     xlab = "Average Recovery",
+     ylab = "Average Exertion",
+     main = "Clusters: Avg Exertion vs Avg Recovery")
+legend("topright",
+       legend = paste("Cluster", 1:3),
+       col = 1:3,
+       pch = 19)</code></pre>
+  </div>
+</section>
+
+<!-- Solution 7: Cluster Characterization -->
+<section class="solution-slide">
+  <h2>Solution: Understanding Cluster Characteristics</h2>
+  <p style="font-size: 0.9em;">Computing cluster means to interpret what makes each cluster unique</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.75em; text-align: left;">
+    <pre style="margin: 0;"><code># Calculate mean values for each cluster
+cluster_means <- aggregate(data_numeric,
+                          list(Cluster = kmeans_result$cluster),
+                          mean)
+
+# Display cluster characteristics
+print(cluster_means)
+
+# Count athletes in each cluster
+table(kmeans_result$cluster)
+
+# Compare clusters on key variables
+boxplot(total.kms ~ cluster, data = data,
+        main = "Total KMs by Cluster",
+        xlab = "Cluster",
+        ylab = "Total KMs")
+
+boxplot(avg.exertion ~ cluster, data = data,
+        main = "Average Exertion by Cluster",
+        xlab = "Cluster",
+        ylab = "Average Exertion")</code></pre>
+  </div>
+</section>
+
+<!-- Solution 8: Complete Analysis Code -->
+<section class="solution-slide">
+  <h2>Solution: Complete Analysis Code</h2>
+  <p style="font-size: 0.9em;">Full workflow from data loading to cluster interpretation</p>
+
+  <div style="background: #f5f5f5; border-radius: 8px; padding: 15px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.65em; text-align: left; max-height: 400px; overflow-y: auto;">
+    <pre style="margin: 0;"><code># Complete Cluster Analysis Workflow
+
+# 1. Load and explore data
+str(data)
+summary(data)
+
+# 2. Select numeric columns
+numeric_cols <- sapply(data, is.numeric)
+data_numeric <- data[, numeric_cols]
+
+# 3. Normalize data
+data_normalized <- scale(data_numeric)
+
+# 4. Hierarchical clustering
+distance <- dist(data_normalized)
+hclust_result <- hclust(distance, method = "ward.D2")
+plot(hclust_result, hang = -1)
+
+# 5. Determine optimal K
+wss <- sapply(1:10, function(k) {
+  kmeans(data_normalized, centers = k, nstart = 25)$tot.withinss
+})
+plot(1:10, wss, type = "b",
+     xlab = "K", ylab = "WSS", main = "Elbow Method")
+
+# 6. K-means clustering
+set.seed(123)
+kmeans_result <- kmeans(data_normalized, centers = 3, nstart = 25)
+
+# 7. Visualize results
+data$cluster <- kmeans_result$cluster
+plot(data$total.kms ~ data$max.recovery,
+     col = data$cluster, pch = 19,
+     main = "K-means Clusters")
+
+# 8. Characterize clusters
+cluster_means <- aggregate(data_numeric,
+                          list(Cluster = kmeans_result$cluster),
+                          mean)
+print(cluster_means)</code></pre>
+  </div>
+</section>

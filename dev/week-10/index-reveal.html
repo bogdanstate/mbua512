@@ -200,7 +200,18 @@
 
       .two-columns {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
+      }
+
+      .two-columns .column {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+      }
+
+      .two-columns .column.small,
+      .two-columns .column.large {
+        width: 100% !important;
+        flex: 1 1 100% !important;
       }
 
       .attribution {
@@ -351,6 +362,7 @@
     import { initKMeansCocktailParty } from './js/kmeans-cocktail-config.js?v=1';
     import { initHierarchicalCocktailParty } from './js/hierarchical-cocktail-config.js?v=1';
     import { initDBSCANCocktailParty } from './js/dbscan-cocktail-config.js?v=1';
+    import { initElbowPlot, initSilhouettePlot } from './js/kmeans-metrics.js';
     import {
       initClusterStep1,
       initClusterStep2,
@@ -361,10 +373,36 @@
     import { initWebRClusterAnalysis } from './js/webr-cluster-analysis.js';
     import { initWebRClusterEditor } from './js/webr-cluster-editor.js';
 
+    // Check for query parameters
+    function hasQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.has(param);
+    }
+
+    // Filter slides based on query parameters
+    function filterSlidesByQueryParams(manifest) {
+      return manifest.filter(section => {
+        // If section requires a query param, check if it's present
+        if (section.requiresQueryParam) {
+          return hasQueryParam(section.requiresQueryParam);
+        }
+        // Otherwise, include the section
+        return true;
+      });
+    }
+
     // Load slides dynamically from external files
     async function initPresentation() {
       console.log('Loading slide sections...');
-      await loadSlides(slideManifest);
+
+      // Filter slides based on query parameters
+      const filteredManifest = filterSlidesByQueryParams(slideManifest);
+
+      if (hasQueryParam('solution')) {
+        console.log('✓ Solution mode enabled - showing solution slides');
+      }
+
+      await loadSlides(filteredManifest);
       console.log('✓ All slides loaded');
 
       // Initialize Reveal.js after slides are loaded
@@ -516,6 +554,12 @@
         width: 1000,
         height: 750
       },
+      'elbow-plot-container': {
+        type: 'elbow-plot'
+      },
+      'silhouette-plot-container': {
+        type: 'silhouette-plot'
+      },
       'euclidean-heatmap-premier': {
         type: 'euclidean-heatmap',
         dataFile: 'data/distance-studies/euclidean-player-distance.csv',
@@ -614,6 +658,10 @@ summary(data)`
             initHierarchicalCocktailParty(containerId, config);
           } else if (config.type === 'dbscan-cocktail') {
             initDBSCANCocktailParty(containerId, config);
+          } else if (config.type === 'elbow-plot') {
+            initElbowPlot(containerId);
+          } else if (config.type === 'silhouette-plot') {
+            initSilhouettePlot(containerId);
           } else if (config.type === 'euclidean-heatmap') {
             // Delay slightly to ensure layout is complete
             setTimeout(() => initEuclideanHeatmap(containerId, config), 50);
