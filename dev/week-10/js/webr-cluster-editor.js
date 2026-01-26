@@ -103,17 +103,48 @@ export async function initWebRClusterEditor(containerId, options = {}) {
 
       statusBar.textContent = '⏳ Running R code...';
 
-      // Execute user code
-      await webR.evalR(code);
+      // Wrap user code to capture both plot and text output
+      const wrappedCode = `
+        # Start PNG device to capture any plots
+        png('/plot.png', width = 1200, height = 800, res = 100, bg = '#1e1e1e')
+
+        # Capture text output as well
+        output <- capture.output({
+          # Execute user code
+          ${code}
+        })
+
+        # Close device
+        dev.off()
+
+        # Save text output
+        writeLines(output, '/output.txt')
+      `;
+
+      // Execute wrapped code
+      await webR.evalR(wrappedCode);
 
       // Check for plot output
       let hasPlot = false;
       try {
-        await webR.FS.readFile('/plot.png');
-        hasPlot = true;
+        const plotData = await webR.FS.readFile('/plot.png');
+        // Check if PNG has actual content (more than just empty PNG header)
+        hasPlot = plotData && plotData.length > 1000;
       } catch (e) {
         // No plot generated
       }
+
+      // Get text output
+      let textOutput = '';
+      try {
+        const outputData = await webR.FS.readFile('/output.txt');
+        textOutput = new TextDecoder().decode(outputData);
+      } catch (e) {
+        console.log('No text output');
+      }
+
+      // Build output display
+      let outputHTML = '';
 
       if (hasPlot) {
         // Display plot
@@ -121,37 +152,29 @@ export async function initWebRClusterEditor(containerId, options = {}) {
         const blob = new Blob([pngData], { type: 'image/png' });
         const imageUrl = URL.createObjectURL(blob);
 
-        output.innerHTML = `
-          <img src="${imageUrl}" alt="Plot output" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-          <button class="cluster-editor__back-btn" onclick="this.parentElement.style.display='none'; document.getElementById('${containerId}-editor').style.display='block'">← Back to Code</button>
+        outputHTML += `
+          <img src="${imageUrl}" alt="Plot output" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); margin-bottom: 20px;">
         `;
-        output.style.display = 'flex';
-        editor.style.display = 'none';
-      } else {
-        // Try to get text output
-        let textOutput = 'Code executed successfully (no output)';
-        try {
-          const result = await webR.evalR(`
-            capture.output({
-              ${code}
-            })
-          `);
-          const resultData = await result.toArray();
-          if (resultData && resultData.length > 0) {
-            textOutput = resultData.join('\n');
-          }
-        } catch (e) {
-          console.log('No text output');
-        }
-
-        output.innerHTML = `
-          <pre class="r-text-output">${textOutput}</pre>
-          <button class="cluster-editor__back-btn" onclick="this.parentElement.style.display='none'; document.getElementById('${containerId}-editor').style.display='block'">← Back to Code</button>
-        `;
-        output.style.display = 'block';
-        output.classList.add('text-output');
-        editor.style.display = 'none';
       }
+
+      if (textOutput && textOutput.trim()) {
+        // Display text output
+        outputHTML += `
+          <pre class="r-text-output" style="background: #2e2e2e; color: #e0e0e0; padding: 15px; border-radius: 8px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; font-family: 'Courier New', monospace; font-size: 0.85em;">${textOutput}</pre>
+        `;
+      }
+
+      if (!outputHTML) {
+        outputHTML = '<p style="color: #888;">Code executed successfully (no output)</p>';
+      }
+
+      outputHTML += `
+        <button class="cluster-editor__back-btn" onclick="this.parentElement.style.display='none'; document.getElementById('${containerId}-editor').style.display='block'">← Back to Code</button>
+      `;
+
+      output.innerHTML = outputHTML;
+      output.style.display = 'flex';
+      editor.style.display = 'none';
 
       statusBar.textContent = '✓ Code executed successfully';
       statusBar.className = 'cluster-editor__status success';
