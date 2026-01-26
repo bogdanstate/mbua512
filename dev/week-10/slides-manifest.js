@@ -61,16 +61,16 @@ export const slideManifest = [
     enabled: true
   },
   {
-    name: 'Cluster Analysis Example',
-    file: 'slides/cluster-analysis-example.html',
-    description: 'Real-world cluster analysis with injury prediction dataset using webR',
-    enabled: true
-  },
-  {
     name: 'Solutions',
     file: 'slides/solutions.html',
     description: 'Step-by-step solutions for cluster analysis - only visible with ?solution query parameter',
     enabled: true,
     requiresQueryParam: 'solution'
+  },
+  {
+    name: 'Cluster Analysis Example',
+    file: 'slides/cluster-analysis-example.html',
+    description: 'Real-world cluster analysis with injury prediction dataset using webR',
+    enabled: true
   }
 ].filter(section => section.enabled);
