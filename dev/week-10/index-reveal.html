@@ -126,6 +126,11 @@
 
     /* Mobile-specific styles */
     @media only screen and (max-width: 768px) {
+      /* SVG tooltips (title elements) - hide on mobile as they're too large */
+      svg title {
+        display: none;
+      }
+
       .reveal h1 {
         font-size: 0.85em;
         margin-bottom: 0.3em;
