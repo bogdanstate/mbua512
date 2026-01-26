@@ -648,68 +648,116 @@ summary(data)`
             initClusteringDemo(containerId, config);
             setTimeout(() => {
               protectInteractiveElements(container);
+              Reveal.layout();
             }, 100);
           } else if (config.type === 'heatmap') {
             initCSVHeatmap(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'jaccard-network') {
             initNetworkGraph(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'hamming-network') {
             initHammingNetworkGraph(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'formation-heatmap') {
             initFormationHeatmap(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'formation-network') {
             initFormationNetwork(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'cosine-heatmap') {
             initCosineHeatmap(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'cosine-network') {
             initCosineNetwork(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'soccer-clustering') {
             initSoccerClustering(containerId);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'kmeans-cocktail') {
             initKMeansCocktailParty(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'hierarchical-cocktail') {
             initHierarchicalCocktailParty(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'dbscan-cocktail') {
             initDBSCANCocktailParty(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'elbow-plot') {
             initElbowPlot(containerId);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'silhouette-plot') {
             initSilhouettePlot(containerId);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'euclidean-heatmap') {
             // Delay slightly to ensure layout is complete
-            setTimeout(() => initEuclideanHeatmap(containerId, config), 50);
+            setTimeout(() => {
+              initEuclideanHeatmap(containerId, config);
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'manhattan-heatmap') {
             // Delay slightly to ensure layout is complete
-            setTimeout(() => initManhattanHeatmap(containerId, config), 50);
+            setTimeout(() => {
+              initManhattanHeatmap(containerId, config);
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'jaccard-heatmap') {
             // Delay slightly to ensure layout is complete
-            setTimeout(() => initJaccardHeatmap(containerId, config), 50);
+            setTimeout(() => {
+              initJaccardHeatmap(containerId, config);
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'network') {
             initNetworkGraph(containerId, config);
+            setTimeout(() => Reveal.layout(), 100);
           } else if (config.type === 'cluster-step1') {
             console.log('🔵 Initializing cluster-step1');
-            setTimeout(() => initClusterStep1(), 50);
+            setTimeout(() => {
+              initClusterStep1();
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'cluster-step2') {
             console.log('🔵 Initializing cluster-step2');
-            setTimeout(() => initClusterStep2(), 50);
+            setTimeout(() => {
+              initClusterStep2();
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'cluster-step3') {
             console.log('🔵 Initializing cluster-step3');
-            setTimeout(() => initClusterStep3(), 50);
+            setTimeout(() => {
+              initClusterStep3();
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'cluster-step4') {
             console.log('🔵 Initializing cluster-step4');
-            setTimeout(() => initClusterStep4(), 50);
+            setTimeout(() => {
+              initClusterStep4();
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'cluster-step5') {
             console.log('🔵 Initializing cluster-step5');
-            setTimeout(() => initClusterStep5(), 50);
+            setTimeout(() => {
+              initClusterStep5();
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'webr-cluster-analysis') {
             console.log('🔵 Initializing webR cluster analysis');
-            setTimeout(() => initWebRClusterAnalysis(containerId, config), 50);
+            setTimeout(() => {
+              initWebRClusterAnalysis(containerId, config);
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'webr-cluster-editor') {
             console.log('🔵 Initializing webR cluster editor');
-            setTimeout(() => initWebRClusterEditor(containerId, config), 50);
+            setTimeout(() => {
+              initWebRClusterEditor(containerId, config);
+              setTimeout(() => Reveal.layout(), 100);
+            }, 50);
           } else if (config.type === 'rstudio-viewport') {
             console.log('🔵 Initializing RStudio viewport');
-            setTimeout(() => initRStudioViewport(containerId, config), 50);
+            setTimeout(() => {
+              initRStudioViewport(containerId, config);
+              setTimeout(() => Reveal.layout(), 200);
+            }, 50);
           }
         }
       });
