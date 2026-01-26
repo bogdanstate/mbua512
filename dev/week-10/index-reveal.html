@@ -127,42 +127,52 @@
     /* Mobile-specific styles */
     @media only screen and (max-width: 768px) {
       .reveal h1 {
-        font-size: 0.95em;
+        font-size: 0.85em;
         margin-bottom: 0.3em;
+        line-height: 1.2;
       }
 
       .reveal h2 {
-        font-size: 0.75em;
+        font-size: 0.65em;
         margin-bottom: 0.25em;
+        line-height: 1.2;
       }
 
       .reveal h3 {
-        font-size: 0.68em;
+        font-size: 0.58em;
         margin-bottom: 0.2em;
+        line-height: 1.2;
       }
 
       .section-slide h2 {
-        font-size: 1.0em;
+        font-size: 0.9em;
       }
 
       .reveal p {
-        font-size: 0.6em;
+        font-size: 0.5em;
         margin-top: 0.2em;
         margin-bottom: 0.2em;
+        line-height: 1.4;
       }
 
       .reveal ul, .reveal ol {
-        font-size: 0.55em;
+        font-size: 0.48em;
         margin-top: 0.3em;
         margin-bottom: 0.3em;
+        line-height: 1.4;
       }
 
       .reveal li {
-        margin-bottom: 0.3em;
+        margin-bottom: 0.25em;
+        line-height: 1.4;
       }
 
       .reveal table {
-        font-size: 0.5em;
+        font-size: 0.42em;
+      }
+
+      .reveal a {
+        font-size: 0.9em;
       }
 
       .interactive-slide {
@@ -170,8 +180,12 @@
       }
 
       .interactive-slide h2 {
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin-bottom: 0.2em;
+      }
+
+      .interactive-slide p {
+        font-size: 0.48em;
       }
 
       .two-columns {
@@ -180,7 +194,7 @@
       }
 
       .attribution {
-        font-size: 0.4em;
+        font-size: 0.35em;
       }
 
       /* Additional mobile text elements */
@@ -193,33 +207,101 @@
       }
 
       .reveal code {
-        font-size: 0.55em;
+        font-size: 0.48em;
+        padding: 2px 4px;
       }
 
       .reveal pre {
-        font-size: 0.5em;
+        font-size: 0.42em;
+        line-height: 1.3;
+        padding: 8px;
       }
 
-      /* Formula boxes on mobile - LaTeX-style single line */
-      .reveal div[style*="background: #e3f2fd"] {
+      .reveal pre code {
+        font-size: inherit;
+      }
+
+      /* All colored info boxes - smaller text and padding */
+      .reveal div[style*="background: #e3f2fd"],
+      .reveal div[style*="background: #f5f5f5"],
+      .reveal div[style*="background: #fff3cd"],
+      .reveal div[style*="background: #ffebee"],
+      .reveal div[style*="background: #e8f5e9"] {
         padding: 8px !important;
         margin: 8px 0 !important;
+        font-size: 0.48em !important;
       }
 
-      .reveal div[style*="background: #e3f2fd"] p {
-        white-space: nowrap !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch !important;
+      .reveal div[style*="background: #e3f2fd"] h3,
+      .reveal div[style*="background: #f5f5f5"] h3,
+      .reveal div[style*="background: #fff3cd"] h3,
+      .reveal div[style*="background: #ffebee"] h3,
+      .reveal div[style*="background: #e8f5e9"] h3 {
+        font-size: 0.65em !important;
+        margin-bottom: 0.3em !important;
       }
 
-      .reveal div[style*="background: #e3f2fd"] p:first-child {
-        font-size: 0.7em !important;
-        font-family: 'Georgia', serif !important;
-        font-weight: bold !important;
+      .reveal div[style*="background: #e3f2fd"] p,
+      .reveal div[style*="background: #f5f5f5"] p,
+      .reveal div[style*="background: #fff3cd"] p,
+      .reveal div[style*="background: #ffebee"] p,
+      .reveal div[style*="background: #e8f5e9"] p {
+        font-size: 0.48em !important;
+        line-height: 1.3 !important;
       }
 
-      .reveal div[style*="background: #e3f2fd"] p:last-child {
-        font-size: 0.55em !important;
+      .reveal div[style*="background: #e3f2fd"] ul,
+      .reveal div[style*="background: #f5f5f5"] ul,
+      .reveal div[style*="background: #fff3cd"] ul,
+      .reveal div[style*="background: #ffebee"] ul,
+      .reveal div[style*="background: #e8f5e9"] ul {
+        font-size: 0.45em !important;
+        line-height: 1.3 !important;
+      }
+
+      /* Images on mobile */
+      .reveal section img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Extra small mobile (portrait phones) */
+    @media only screen and (max-width: 480px) {
+      .reveal h1 {
+        font-size: 0.75em;
+      }
+
+      .reveal h2 {
+        font-size: 0.58em;
+      }
+
+      .reveal h3 {
+        font-size: 0.52em;
+      }
+
+      .reveal p {
+        font-size: 0.45em;
+      }
+
+      .reveal ul, .reveal ol {
+        font-size: 0.42em;
+      }
+
+      .reveal code {
+        font-size: 0.42em;
+      }
+
+      .reveal pre {
+        font-size: 0.38em;
+      }
+
+      .interactive-slide h2 {
+        font-size: 0.55em;
+      }
+
+      .interactive-slide p {
+        font-size: 0.42em;
       }
     }
   </style>
