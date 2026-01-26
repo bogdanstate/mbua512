@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBUA512 Week 10: Cluster Analysis</title>
+  <!-- Build: local -->
+
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.5/dist/theme/white.css">
+
+  <!-- Cluster Editor CSS -->
+  <link rel="stylesheet" href="css/cluster-editor.css">
+
+  <style>
+    /* Custom styles for our slides */
+    .reveal h1 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 0.5em;
+    }
+
+    .reveal h2 {
+      font-size: 1.3em;
+      color: #34495e;
+      margin-bottom: 0.5em;
+    }
+
+    .reveal h3 {
+      font-size: 1.1em;
+      margin-bottom: 0.4em;
+    }
+
+    .reveal p {
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+    }
+
+    .reveal ul, .reveal ol {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .reveal section img {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Title slide with background */
+    .title-slide {
+      background-size: cover;
+      background-position: center;
+      color: white !important;
+    }
+
+    .title-slide h1,
+    .title-slide h2,
+    .title-slide p {
+      color: white !important;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    /* Two column layout */
+    .two-columns {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .two-columns .column {
+      flex: 1;
+    }
+
+    .two-columns .column.small {
+      flex: 0 0 35%;
+    }
+
+    .two-columns .column.large {
+      flex: 0 0 60%;
+    }
+
+    /* Section slides */
+    .section-slide {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white !important;
+    }
+
+    .section-slide h2 {
+      color: white !important;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    /* Interactive slide styling */
+    .interactive-slide {
+      padding: 10px;
+    }
+
+    .interactive-slide h2 {
+      margin-top: 0;
+      margin-bottom: 0.3em;
+    }
+
+    #soccer-container {
+      width: 100%;
+      height: 600px;
+    }
+
+    /* Attribution */
+    .attribution {
+      font-size: 0.6em;
+      color: #7f8c8d;
+      margin-top: 2rem;
+    }
+
+    /* Slide number styling */
+    .reveal .slide-number {
+      font-size: 0.7em;
+      color: #2c3e50;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 5px 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Mobile-specific styles */
+    @media only screen and (max-width: 768px) {
+      .reveal h1 {
+        font-size: 0.95em;
+        margin-bottom: 0.3em;
+      }
+
+      .reveal h2 {
+        font-size: 0.75em;
+        margin-bottom: 0.25em;
+      }
+
+      .reveal h3 {
+        font-size: 0.68em;
+        margin-bottom: 0.2em;
+      }
+
+      .section-slide h2 {
+        font-size: 1.0em;
+      }
+
+      .reveal p {
+        font-size: 0.6em;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+      }
+
+      .reveal ul, .reveal ol {
+        font-size: 0.55em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+      }
+
+      .reveal li {
+        margin-bottom: 0.3em;
+      }
+
+      .reveal table {
+        font-size: 0.5em;
+      }
+
+      .interactive-slide {
+        padding: 5px;
+      }
+
+      .interactive-slide h2 {
+        font-size: 0.7em;
+        margin-bottom: 0.2em;
+      }
+
+      .two-columns {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .attribution {
+        font-size: 0.4em;
+      }
+
+      /* Additional mobile text elements */
+      .reveal strong {
+        font-size: inherit;
+      }
+
+      .reveal em {
+        font-size: inherit;
+      }
+
+      .reveal code {
+        font-size: 0.55em;
+      }
+
+      .reveal pre {
+        font-size: 0.5em;
+      }
+
+      /* Formula boxes on mobile - LaTeX-style single line */
+      .reveal div[style*="background: #e3f2fd"] {
+        padding: 8px !important;
+        margin: 8px 0 !important;
+      }
+
+      .reveal div[style*="background: #e3f2fd"] p {
+        white-space: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      .reveal div[style*="background: #e3f2fd"] p:first-child {
+        font-size: 0.7em !important;
+        font-family: 'Georgia', serif !important;
+        font-weight: bold !important;
+      }
+
+      .reveal div[style*="background: #e3f2fd"] p:last-child {
+        font-size: 0.55em !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slides will be dynamically loaded from slides/ directory -->
+
+    </div>
+  </div>
+
+  <!-- Reveal.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.5/plugin/highlight/highlight.js"></script>
+
+  <!-- D3.js for formation visualizations -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Clustering interactives -->
+  <script type="module">
+    import { loadSlides } from './js/slide-loader.js';
+    import { slideManifest } from './slides-manifest.js';
+    import { initClusteringDemo } from './js/clustering-demo.js';
+    import { initCSVHeatmap } from './js/csv-heatmap.js';
+    import { initNetworkGraph } from './js/network-graph.js?v=10';
+    import { initHammingNetworkGraph } from './js/network-graph-hamming.js?v=8';
+    import { initFormationHeatmap } from './js/formation-heatmap.js';
+    import { initFormationNetwork } from './js/formation-network.js';
+    import { initCosineHeatmap } from './js/cosine-heatmap.js';
+    import { initCosineNetwork } from './js/cosine-network.js';
+    import { initEuclideanHeatmap } from './js/euclidean-heatmap.js';
+    import { initManhattanHeatmap } from './js/manhattan-heatmap.js';
+    import { initJaccardHeatmap } from './js/jaccard-heatmap.js';
+    import { initKMeansCocktailParty } from './js/kmeans-cocktail-config.js?v=1';
+    import { initHierarchicalCocktailParty } from './js/hierarchical-cocktail-config.js?v=1';
+    import { initDBSCANCocktailParty } from './js/dbscan-cocktail-config.js?v=1';
+    import {
+      initClusterStep1,
+      initClusterStep2,
+      initClusterStep3,
+      initClusterStep4,
+      initClusterStep5
+    } from './js/cluster-concept.js?v=1';
+    import { initWebRClusterAnalysis } from './js/webr-cluster-analysis.js';
+    import { initWebRClusterEditor } from './js/webr-cluster-editor.js';
+
+    // Load slides dynamically from external files
+    async function initPresentation() {
+      console.log('Loading slide sections...');
+      await loadSlides(slideManifest);
+      console.log('✓ All slides loaded');
+
+      // Initialize Reveal.js after slides are loaded
+      initializeReveal();
+    }
+
+    // Initialize Reveal.js
+    function initializeReveal() {
+      Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'slide',
+      slideNumber: 'c/t',  // Enable slide numbers (current/total)
+      plugins: [],
+      width: '100%',
+      height: '100%',
+      margin: 0.04,  // Reduce margins (default is 0.04)
+      minScale: 0.2,
+      maxScale: 2.0
+    });
+
+    // Function to update slide number with section name
+    function updateSlideNumber() {
+      const slideNumberDiv = document.querySelector('.reveal .slide-number');
+      if (slideNumberDiv) {
+        const currentSlide = Reveal.getCurrentSlide();
+        if (currentSlide) {
+          const sectionName = currentSlide.getAttribute('data-section-name') || 'Untitled';
+          const indices = Reveal.getIndices();
+          const slideNum = indices.h + 1;
+          const total = Reveal.getTotalSlides();
+          slideNumberDiv.textContent = `${sectionName} | Slide ${slideNum}/${total}`;
+        }
+      }
+    }
+
+    // Function to prevent Reveal.js from interfering with interactive elements
+    function protectInteractiveElements(container) {
+      const interactiveElements = container.querySelectorAll('input, button, select, textarea');
+      interactiveElements.forEach(element => {
+        ['touchstart', 'touchmove', 'touchend', 'mousedown', 'mousemove'].forEach(eventType => {
+          element.addEventListener(eventType, (e) => {
+            e.stopPropagation();
+          }, { passive: true });
+        });
+      });
+    }
+
+    // Configuration for each interactive
+    const interactiveConfigs = {
+      'kmeans-container': {
+        type: 'kmeans-cocktail',
+        dataFile: 'data/cocktail-party-positions.csv',
+        width: 1000,
+        height: 750
+      },
+      'graph-container': {
+        type: 'clustering',
+        dataFile: 'data/soccer-counter-attack.json',
+        method: 'graph',
+        defaultParam: 15,
+        paramMin: 5,
+        paramMax: 30,
+        paramLabel: 'Edge distance threshold'
+      },
+      'dbscan-container': {
+        type: 'dbscan-cocktail',
+        dataFile: 'data/cocktail-party-positions.csv',
+        width: 1000,
+        height: 750
+      },
+      'jaccard-heatmap-premier': {
+        type: 'jaccard-heatmap',
+        dataFile: 'data/jaccard-matrix-top12.csv',
+        title: 'Jaccard Similarity Between Top European Clubs'
+      },
+      'jaccard-network-container': {
+        type: 'jaccard-network',
+        dataFile: 'data/club-network.json',
+        width: 1200,
+        height: 700
+      },
+      'hamming-heatmap': {
+        type: 'heatmap',
+        dataFile: 'data/hamming-matrix.csv',
+        title: 'Hamming Similarity Between Clubs',
+        subtitle: 'Based on tactical lineup strategies',
+        colorScheme: 'blues',
+        fontSize: 8
+      },
+      'hamming-network-container': {
+        type: 'hamming-network',
+        dataFile: 'data/club-hamming-network.json',
+        width: 1200,
+        height: 700
+      },
+      'formation-heatmap-premier': {
+        type: 'formation-heatmap',
+        dataFile: 'data/formations/formation-hamming-distance.csv',
+        title: 'Premier League 2023-2024',
+        width: 1200,
+        height: 1000
+      },
+      'formation-heatmap-wwc': {
+        type: 'formation-heatmap',
+        dataFile: 'data/formations/wwc-2022-hamming-distance.csv',
+        title: 'Women\'s World Cup 2022',
+        width: 1200,
+        height: 1000
+      },
+      'formation-network-container': {
+        type: 'formation-network',
+        dataFile: 'data/formations/formation-network.json',
+        width: 1200,
+        height: 700
+      },
+      'cosine-heatmap-premier': {
+        type: 'cosine-heatmap',
+        dataFile: 'data/distance-studies/cosine-team-distance.csv',
+        title: 'Premier League Teams - Cosine Distance',
+        width: 1200,
+        height: 1000
+      },
+      'cosine-network-container': {
+        type: 'cosine-network',
+        dataFile: 'data/distance-studies/cosine-team-network.json',
+        width: 1200,
+        height: 700,
+        minEdgeWeight: 0.90,
+        maxEdgeWeight: 0.995
+      },
+      'kmeans-cocktail-container': {
+        type: 'kmeans-cocktail',
+        dataFile: 'data/cocktail-party-positions.csv',
+        width: 1000,
+        height: 750
+      },
+      'hierarchical-cocktail-container': {
+        type: 'hierarchical-cocktail',
+        dataFile: 'data/cocktail-party-positions.csv',
+        width: 1000,
+        height: 750
+      },
+      'euclidean-heatmap-premier': {
+        type: 'euclidean-heatmap',
+        dataFile: 'data/distance-studies/euclidean-player-distance.csv',
+        title: 'Premier League Players - Euclidean Distance'
+      },
+      'manhattan-heatmap-premier': {
+        type: 'manhattan-heatmap',
+        dataFile: 'data/distance-studies/manhattan-player-distance.csv',
+        title: 'Premier League Players - Manhattan Distance'
+      },
+      'cosine-heatmap': {
+        type: 'heatmap',
+        dataFile: 'data/cosine-matrix.csv',
+        title: 'Cosine Similarity Between Players',
+        subtitle: 'Based on possession time patterns',
+        colorScheme: 'oranges',
+        fontSize: 7
+      },
+      'cluster-step1-container': {
+        type: 'cluster-step1'
+      },
+      'cluster-step2-plot': {
+        type: 'cluster-step2'
+      },
+      'cluster-step3-plot': {
+        type: 'cluster-step3'
+      },
+      'cluster-step4-container': {
+        type: 'cluster-step4'
+      },
+      'cluster-step5-plot': {
+        type: 'cluster-step5'
+      },
+      'webr-cluster-analysis': {
+        type: 'webr-cluster-analysis',
+        dataFile: 'data/injury-runner-sample.csv',
+        width: 1200,
+        height: 700,
+        nClusters: 3
+      },
+      'webr-cluster-editor': {
+        type: 'webr-cluster-editor',
+        dataFile: 'data/injury-runner-sample.csv',
+        initialCode: `library(cluster)
+
+# Load injury prediction data
+data <- read.csv('/data.csv', stringsAsFactors = FALSE)
+
+# Select numeric columns for clustering
+numeric_cols <- sapply(data, is.numeric)
+data_numeric <- data[, numeric_cols]
+
+# Normalize data (z-score standardization)
+data_scaled <- scale(data_numeric)
+
+# Perform K-means clustering
+set.seed(123)
+kmeans_result <- kmeans(data_scaled, centers = 3, nstart = 25)
+
+# Create visualization
+png('/plot.png', width = 1200, height = 600, res = 100)
+par(mfrow = c(1, 2), bg = '#1e1e1e', col.main = 'white',
+    col.lab = 'white', col.axis = 'white', fg = 'white')
+
+# Plot 1: PCA scatter plot with clusters
+pca_result <- prcomp(data_scaled)
+plot(pca_result$x[, 1:2],
+     col = kmeans_result$cluster + 1,
+     pch = 19,
+     cex = 1.5,
+     main = paste0('K-means Clustering (k = 3)'),
+     xlab = 'PC1',
+     ylab = 'PC2')
+
+# Add cluster centers
+centers_pca <- predict(pca_result, kmeans_result$centers)[, 1:2]
+points(centers_pca, col = 1:3 + 1, pch = 8, cex = 3, lwd = 3)
+
+# Plot 2: Silhouette plot
+sil <- silhouette(kmeans_result$cluster, dist(data_scaled))
+avg_sil <- mean(sil[, 3])
+plot(sil[, 1], sil[, 3],
+     col = sil[, 1] + 1,
+     pch = 19,
+     main = paste0('Silhouette (avg = ', round(avg_sil, 3), ')'),
+     xlab = 'Cluster',
+     ylab = 'Silhouette Width')
+abline(h = avg_sil, col = '#4caf50', lty = 2, lwd = 2)
+abline(h = 0, col = 'white', lty = 1)
+
+dev.off()
+
+# Display summary
+cat('Cluster sizes:', table(kmeans_result$cluster), '\\n')
+cat('Between SS / Total SS:',
+    round(kmeans_result$betweenss / kmeans_result$totss * 100, 1), '%\\n')`
+      }
+    };
+
+    // Initialize interactive when its slide is shown
+    function initializeInteractive(slide) {
+      console.log('🎬 initializeInteractive called for slide:', slide);
+      console.log('🔍 Slide HTML:', slide.innerHTML.substring(0, 200));
+      const allContainers = Object.keys(interactiveConfigs);
+      console.log('🔑 Looking for containers:', allContainers);
+
+      allContainers.forEach(containerId => {
+        const container = slide.querySelector(`#${containerId}`);
+        console.log(`🔎 Checking ${containerId}:`, container ? 'FOUND' : 'NOT FOUND');
+        if (container && !container.dataset.initialized) {
+          console.log(`✨ Found container: ${containerId}`);
+          container.dataset.initialized = 'true';
+          const config = interactiveConfigs[containerId];
+
+          if (config.type === 'clustering') {
+            initClusteringDemo(containerId, config);
+            setTimeout(() => {
+              protectInteractiveElements(container);
+            }, 100);
+          } else if (config.type === 'heatmap') {
+            initCSVHeatmap(containerId, config);
+          } else if (config.type === 'jaccard-network') {
+            initNetworkGraph(containerId, config);
+          } else if (config.type === 'hamming-network') {
+            initHammingNetworkGraph(containerId, config);
+          } else if (config.type === 'formation-heatmap') {
+            initFormationHeatmap(containerId, config);
+          } else if (config.type === 'formation-network') {
+            initFormationNetwork(containerId, config);
+          } else if (config.type === 'cosine-heatmap') {
+            initCosineHeatmap(containerId, config);
+          } else if (config.type === 'cosine-network') {
+            initCosineNetwork(containerId, config);
+          } else if (config.type === 'kmeans-cocktail') {
+            initKMeansCocktailParty(containerId, config);
+          } else if (config.type === 'hierarchical-cocktail') {
+            initHierarchicalCocktailParty(containerId, config);
+          } else if (config.type === 'dbscan-cocktail') {
+            initDBSCANCocktailParty(containerId, config);
+          } else if (config.type === 'euclidean-heatmap') {
+            // Delay slightly to ensure layout is complete
+            setTimeout(() => initEuclideanHeatmap(containerId, config), 50);
+          } else if (config.type === 'manhattan-heatmap') {
+            // Delay slightly to ensure layout is complete
+            setTimeout(() => initManhattanHeatmap(containerId, config), 50);
+          } else if (config.type === 'jaccard-heatmap') {
+            // Delay slightly to ensure layout is complete
+            setTimeout(() => initJaccardHeatmap(containerId, config), 50);
+          } else if (config.type === 'network') {
+            initNetworkGraph(containerId, config);
+          } else if (config.type === 'cluster-step1') {
+            console.log('🔵 Initializing cluster-step1');
+            setTimeout(() => initClusterStep1(), 50);
+          } else if (config.type === 'cluster-step2') {
+            console.log('🔵 Initializing cluster-step2');
+            setTimeout(() => initClusterStep2(), 50);
+          } else if (config.type === 'cluster-step3') {
+            console.log('🔵 Initializing cluster-step3');
+            setTimeout(() => initClusterStep3(), 50);
+          } else if (config.type === 'cluster-step4') {
+            console.log('🔵 Initializing cluster-step4');
+            setTimeout(() => initClusterStep4(), 50);
+          } else if (config.type === 'cluster-step5') {
+            console.log('🔵 Initializing cluster-step5');
+            setTimeout(() => initClusterStep5(), 50);
+          } else if (config.type === 'webr-cluster-analysis') {
+            console.log('🔵 Initializing webR cluster analysis');
+            setTimeout(() => initWebRClusterAnalysis(containerId, config), 50);
+          } else if (config.type === 'webr-cluster-editor') {
+            console.log('🔵 Initializing webR cluster editor');
+            setTimeout(() => initWebRClusterEditor(containerId, config), 50);
+          }
+        }
+      });
+    }
+
+    Reveal.on('slidechanged', event => {
+      updateSlideNumber();
+      if (event.currentSlide.classList.contains('interactive-slide')) {
+        initializeInteractive(event.currentSlide);
+      }
+    });
+
+    Reveal.on('ready', event => {
+      updateSlideNumber();
+      if (event.currentSlide.classList.contains('interactive-slide')) {
+        initializeInteractive(event.currentSlide);
+      }
+    });
+  }
+
+    // Start the presentation by loading slides
+    initPresentation();
+  </script>
+</body>
+</html>

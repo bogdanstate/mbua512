@@ -31,8 +31,21 @@ jobs:
         run: |
           COMMIT_HASH=$(git rev-parse --short HEAD)
           echo "Updating build version to: $COMMIT_HASH"
-          sed -i "s/const BUILD_VERSION = '[^']*';/const BUILD_VERSION = '$COMMIT_HASH';/" dev/week-10/index.html
-          grep "BUILD_VERSION" dev/week-10/index.html
+
+          # Update slide framework version (week-10/index.html)
+          if [ -f dev/week-10/index.html ]; then
+            sed -i "s/const BUILD_VERSION = '[^']*';/const BUILD_VERSION = '$COMMIT_HASH';/" dev/week-10/index.html
+            echo "✓ Updated slide framework build version"
+            grep "BUILD_VERSION" dev/week-10/index.html
+          fi
+
+          # Update reveal.js comment (week-10/index-reveal.html)
+          if [ -f dev/week-10/index-reveal.html ]; then
+            sed -i "s|<!-- Build: [a-f0-9]\+ -->|<!-- Build: $COMMIT_HASH -->|" dev/week-10/index-reveal.html || \
+            sed -i "s|<title>MBUA512 Week 10: Cluster Analysis</title>|<title>MBUA512 Week 10: Cluster Analysis</title>\n  <!-- Build: $COMMIT_HASH -->|" dev/week-10/index-reveal.html
+            echo "✓ Updated reveal.js build version"
+            grep -A1 "<title>" dev/week-10/index-reveal.html | head -2
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
