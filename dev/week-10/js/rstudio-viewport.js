@@ -143,7 +143,7 @@ export async function initRStudioViewport(containerId, options = {}) {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #1e1e1e;
+        background: #f5f5f5;
         overflow: auto;
       }
 
@@ -460,7 +460,7 @@ export async function initRStudioViewport(containerId, options = {}) {
 
       // Wrap code to capture plot and output
       const wrappedCode = `
-        png('/plot.png', width = 1200, height = 800, res = 100, bg = '#1e1e1e')
+        png('/plot.png', width = 1200, height = 800, res = 100, bg = 'white')
         output <- capture.output({
           ${code}
         })
