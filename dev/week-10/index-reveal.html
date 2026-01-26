@@ -372,6 +372,7 @@
     } from './js/cluster-concept.js?v=1';
     import { initWebRClusterAnalysis } from './js/webr-cluster-analysis.js';
     import { initWebRClusterEditor } from './js/webr-cluster-editor.js';
+    import { initRStudioViewport } from './js/rstudio-viewport.js';
 
     // Check for query parameters
     function hasQueryParam(param) {
@@ -613,6 +614,18 @@ data <- read.csv('/data.csv', stringsAsFactors = FALSE)
 head(data)
 str(data)
 summary(data)`
+      },
+      'rstudio-cluster-analysis': {
+        type: 'rstudio-viewport',
+        dataFile: 'data/injury-runner-sample.csv',
+        initialCode: `# Load the injury prediction data
+# Dataset: Kaggle - Injury Prediction for Competitive Runners
+data <- read.csv('/data.csv', stringsAsFactors = FALSE)
+
+# Explore the dataset
+head(data)
+str(data)
+summary(data)`
       }
     };
 
@@ -694,6 +707,9 @@ summary(data)`
           } else if (config.type === 'webr-cluster-editor') {
             console.log('🔵 Initializing webR cluster editor');
             setTimeout(() => initWebRClusterEditor(containerId, config), 50);
+          } else if (config.type === 'rstudio-viewport') {
+            console.log('🔵 Initializing RStudio viewport');
+            setTimeout(() => initRStudioViewport(containerId, config), 50);
           }
         }
       });
