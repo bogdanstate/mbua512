@@ -187,80 +187,121 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .cluster-editor {
-    max-height: 500px;
+    max-height: none; /* Allow full height on mobile */
+    min-height: 500px;
   }
 
   .cluster-editor__header {
     flex-wrap: wrap;
-    padding: 8px 12px;
+    padding: 12px 15px;
+    gap: 10px;
   }
 
   .cluster-editor__title {
-    font-size: 12px;
+    font-size: 13px;
     flex: 1 0 100%;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 
   .cluster-editor__btn {
     width: 100%;
     justify-content: center;
-    padding: 12px 18px;
-    font-size: 14px;
+    padding: 14px 20px;
+    font-size: 15px;
+    /* Touch-friendly sizing */
+    min-height: 44px;
   }
 
   .cluster-editor__editor {
-    font-size: 12px;
+    font-size: 13px;
     padding: 15px;
-    min-height: 300px;
+    min-height: 400px;
+    line-height: 1.8; /* More space between lines for readability */
   }
 
   .cluster-editor__content {
-    min-height: 300px;
+    min-height: 400px;
   }
 
   .cluster-editor__output {
-    min-height: 300px;
+    min-height: 400px;
     padding: 15px;
+  }
+
+  .cluster-editor__output img {
+    width: 100%;
+    height: auto;
   }
 
   .cluster-editor__output pre {
-    font-size: 11px;
+    font-size: 12px;
     padding: 15px;
+    line-height: 1.8;
   }
 
   .cluster-editor__back-btn {
-    padding: 10px 16px;
-    font-size: 12px;
+    padding: 12px 20px;
+    font-size: 13px;
+    /* Touch-friendly sizing */
+    min-height: 44px;
   }
 
   .cluster-editor__status {
-    font-size: 11px;
-    padding: 6px 12px;
+    font-size: 12px;
+    padding: 10px 15px;
   }
 }
 
 @media (max-width: 480px) {
   .cluster-editor {
-    max-height: 400px;
+    min-height: 450px;
+    border-radius: 5px;
+  }
+
+  .cluster-editor__header {
+    padding: 10px 12px;
+  }
+
+  .cluster-editor__title {
+    font-size: 12px;
+  }
+
+  .cluster-editor__btn {
+    padding: 14px 18px;
+    font-size: 14px;
   }
 
   .cluster-editor__editor {
-    font-size: 11px;
+    font-size: 12px;
     padding: 12px;
-    min-height: 250px;
+    min-height: 350px;
+    line-height: 1.9;
   }
 
   .cluster-editor__content {
-    min-height: 250px;
+    min-height: 350px;
   }
 
   .cluster-editor__output {
-    min-height: 250px;
+    min-height: 350px;
     padding: 12px;
   }
 
   .cluster-editor__output pre {
-    font-size: 10px;
+    font-size: 11px;
     padding: 12px;
+    line-height: 1.8;
+  }
+
+  .cluster-editor__back-btn {
+    padding: 12px 18px;
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .cluster-editor__status {
+    font-size: 11px;
+    padding: 8px 12px;
   }
 }
