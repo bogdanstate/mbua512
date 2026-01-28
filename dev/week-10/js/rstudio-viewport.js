@@ -145,12 +145,16 @@ export async function initRStudioViewport(containerId, options = {}) {
         justify-content: center;
         background: #f5f5f5;
         overflow: auto;
+        padding: 12px;
+        box-sizing: border-box;
       }
 
       .rstudio-plot-viewer img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       }
 
       .rstudio-plot-viewer .placeholder {
@@ -460,7 +464,7 @@ export async function initRStudioViewport(containerId, options = {}) {
 
       // Wrap code to capture plot and output
       const wrappedCode = `
-        png('/plot.png', width = 1200, height = 800, res = 100, bg = 'white')
+        png('/plot.png', width = 600, height = 400, res = 100, bg = 'white')
         output <- capture.output({
           ${code}
         })
