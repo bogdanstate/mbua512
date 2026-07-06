@@ -25,32 +25,57 @@ paginate: true
 
 ## Rendering
 
-The theme must be registered with MARP. Either pass it on the command line:
+### The easy way — build all decks
+
+`dev/build-slides.sh` finds every deck that declares `theme: mbua512` (any
+`dev/**/mbua512-*.md`) and renders it to HTML + PDF beside the source. New class
+folders are picked up automatically.
+
+```bash
+./dev/build-slides.sh            # render every mbua512-themed deck
+./dev/build-slides.sh class-01   # render only decks under dev/class-01
+```
+
+It uses `marp` if installed, otherwise falls back to `npx @marp-team/marp-cli`.
+
+### Auto-render on push (CI)
+
+You don't have to remember to run the build. The **Render slides** workflow
+(`.github/workflows/render-slides.yml`) re-renders and commits the HTML/PDF on
+every push to `main` that touches a deck's `.md`, the theme, or the build
+script — so the repo and the deployed site never drift from the Markdown. It
+skips itself when only generated files change, so there's no loop. You can also
+trigger it manually from the Actions tab (**Run workflow**).
+
+### By hand (single deck)
+
+The theme must be registered with MARP. Pass it on the command line:
 
 ```bash
 # HTML
 marp --theme dev/theme/mbua512.css --allow-local-files \
-     dev/theme/TEMPLATE.md -o out/template.html
+     dev/class-01/mbua512-01.md -o dev/class-01/mbua512-01.html
 
 # PDF (needs a headless Chrome available to marp)
 marp --theme dev/theme/mbua512.css --allow-local-files --pdf \
-     dev/theme/TEMPLATE.md -o out/template.pdf
-```
-
-…or register it once in a `.marprc.yml` at the repo root so `theme: mbua512`
-resolves automatically:
-
-```yaml
-themeSet:
-  - dev/theme/mbua512.css
-allowLocalFiles: true
+     dev/class-01/mbua512-01.md -o dev/class-01/mbua512-01.pdf
 ```
 
 If you don't have the MARP CLI, run it via `npx`:
 
 ```bash
 npx @marp-team/marp-cli@latest --theme dev/theme/mbua512.css \
-    --allow-local-files dev/theme/TEMPLATE.md -o out/template.html
+    --allow-local-files dev/class-01/mbua512-01.md -o dev/class-01/mbua512-01.html
+```
+
+### While authoring — live watch
+
+`marp --watch` re-renders instantly and live-reloads a browser preview as you
+edit:
+
+```bash
+marp --watch --theme dev/theme/mbua512.css --allow-local-files \
+     dev/class-01/mbua512-01.md -o dev/class-01/mbua512-01.html
 ```
 
 ## Fonts
