@@ -3,239 +3,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MBUA512 - Presentations</title>
+  <title>MBUA 512 — Data, Analytics & Insights</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    /* Landing page in the same visual language as the slides (dev/theme/mbua512.css):
+       VUW bottle green, Newsreader serif, warm paper/cream, one sienna accent.
+       Understated and minimal — no gradients, no drop shadows, no emoji. */
+    @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap');
+
+    :root {
+      --vuw-green:      #003824;
+      --vuw-green-mid:  #005c3c;
+      --ink:            #1c211e;
+      --ink-soft:       #5c655f;
+      --paper:          #fbfaf7;
+      --cream:          #fef9f0;
+      --rule:           #d8dcd7;
+      --accent:         #b8552e;
+      --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
     }
+
+    * { box-sizing: border-box; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .container {
-      max-width: 1200px;
-      width: 100%;
+    /* Masthead — a green field band, echoing the slide title/section slides. */
+    header.masthead {
+      background: var(--vuw-green);
+      color: var(--paper);
+      padding: 72px 40px 64px;
+    }
+    header.masthead .inner,
+    main.wrap,
+    footer .inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header.masthead h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2.6rem, 6vw, 4rem);
+      letter-spacing: -0.01em;
+      margin: 0;
+      line-height: 1.08;
+    }
+    /* the one restrained accent — a short sienna rule, as on section slides */
+    header.masthead h1::after {
+      content: "";
+      display: block;
+      width: 1.6em;
+      height: 3px;
+      margin-top: 0.5rem;
+      background: var(--accent);
+    }
+    header.masthead p.sub {
+      margin: 1.4rem 0 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #cfe0d6;
+      max-width: 46ch;
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      text-align: center;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+    main.wrap { padding: 72px 40px 40px; }
 
-    .subtitle {
-      text-align: center;
-      font-size: 1.3em;
-      color: #a0a0a0;
-      margin-bottom: 3em;
-    }
-
-    .presentations {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-
-    .presentation-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 40px;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .presentation-card:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(102, 126, 234, 0.5);
-      transform: translateY(-5px);
-      box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
-    }
-
-    .week-number {
-      font-size: 0.9em;
-      color: #667eea;
+    .section-label {
+      font-size: 0.85rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
+      color: var(--ink-soft);
+      margin: 0 0 28px;
       font-weight: 600;
     }
 
-    .presentation-title {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-      color: #fff;
-      line-height: 1.3;
+    /* Class list — hairline-separated rows, not floating gradient cards. */
+    .classes { border-top: 1px solid var(--rule); }
+    .class {
+      display: grid;
+      grid-template-columns: 5.5rem 1fr auto;
+      gap: 8px 28px;
+      align-items: baseline;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--rule);
     }
-
-    .presentation-description {
-      color: #b0b0b0;
-      font-size: 1.1em;
-      line-height: 1.6;
-      flex-grow: 1;
-    }
-
-    .presentation-meta {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.9em;
-      color: #888;
-    }
-
-    .meta-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .view-button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 1em;
+    .class .no {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--vuw-green-mid);
       font-weight: 600;
-      text-align: center;
-      transition: transform 0.2s ease;
+      padding-top: 0.35rem;
+    }
+    .class h2 {
+      grid-column: 2;
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.7rem;
+      color: var(--vuw-green);
+      line-height: 1.15;
+    }
+    .class p {
+      grid-column: 2;
+      margin: 0.5rem 0 0;
+      color: var(--ink);
+      max-width: 60ch;
+    }
+    .class .links {
+      grid-column: 3;
+      grid-row: 1 / span 2;
+      display: flex;
+      gap: 10px;
+      align-self: center;
+      flex-shrink: 0;
     }
 
-    .view-button:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      color: #666;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-
-    footer a {
-      color: #667eea;
+    /* Buttons: a solid green primary + a hairline-outline secondary. */
+    .btn {
+      font-family: var(--serif);
+      font-size: 1rem;
       text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
     }
-
-    footer a:hover {
-      text-decoration: underline;
+    .btn-slides {
+      background: var(--vuw-green);
+      color: var(--paper);
+      border: 1px solid var(--vuw-green);
     }
+    .btn-slides:hover { background: var(--vuw-green-mid); border-color: var(--vuw-green-mid); }
+    .btn-pdf {
+      background: transparent;
+      color: var(--vuw-green-mid);
+      border: 1px solid var(--rule);
+    }
+    .btn-pdf:hover { border-color: var(--vuw-green-mid); }
 
-    @media (max-width: 768px) {
-      .presentations {
+    footer { padding: 8px 40px 72px; }
+    footer .inner {
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      border-top: 1px solid var(--rule);
+      padding-top: 24px;
+    }
+    footer a { color: var(--vuw-green-mid); }
+
+    @media (max-width: 640px) {
+      .class {
         grid-template-columns: 1fr;
+        gap: 4px;
       }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      .subtitle {
-        font-size: 1em;
-      }
-
-      .presentation-card {
-        padding: 25px;
-      }
-
-      .presentation-title {
-        font-size: 1.5em;
-      }
-
-      .presentation-description {
-        font-size: 0.95em;
-      }
-
-      .presentation-meta {
-        flex-wrap: wrap;
-        gap: 10px;
+      .class .no, .class h2, .class p { grid-column: 1; }
+      .class .links {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 16px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>MBUA512</h1>
-    <p class="subtitle">Databases and Analytics - Slide Presentations</p>
-
-    <div class="presentations">
-      <!-- Week 9 -->
-      <a href="dev/week-09/index.html" class="presentation-card">
-        <div class="week-number">Week 09</div>
-        <h2 class="presentation-title">Correlation & Regression</h2>
-        <p class="presentation-description">
-          Explore relationships between variables through correlation analysis and linear regression.
-          Features interactive visualizations, R code examples with WebR, and comprehensive coverage
-          of correlation coefficients, R², model fitting, and assumptions.
-        </p>
-        <div class="presentation-meta">
-          <div class="meta-item">
-            <span>📊</span>
-            <span>75 slides</span>
-          </div>
-          <div class="meta-item">
-            <span>🎨</span>
-            <span>20 interactive components</span>
-          </div>
-          <div class="meta-item">
-            <span>💻</span>
-            <span>20 R code examples</span>
-          </div>
-        </div>
-        <div class="view-button">View Presentation →</div>
-      </a>
-
-      <!-- Week 10 -->
-      <a href="dev/week-10/index-reveal.html" class="presentation-card">
-        <div class="week-number">Week 10</div>
-        <h2 class="presentation-title">Cluster Analysis</h2>
-        <p class="presentation-description">
-          Learn about unsupervised learning through cluster analysis. Topics include distance metrics
-          (Euclidean, Manhattan, Cosine, Jaccard, Hamming), k-means clustering, and hierarchical methods.
-          Features interactive webR cluster analysis with real injury prediction data.
-        </p>
-        <div class="presentation-meta">
-          <div class="meta-item">
-            <span>📊</span>
-            <span>~60 slides</span>
-          </div>
-          <div class="meta-item">
-            <span>🎨</span>
-            <span>Interactive R analysis</span>
-          </div>
-          <div class="meta-item">
-            <span>⚽</span>
-            <span>Football analytics</span>
-          </div>
-        </div>
-        <div class="view-button">View Presentation →</div>
-      </a>
+  <header class="masthead">
+    <div class="inner">
+      <h1>MBUA 512</h1>
+      <p class="sub">Data, Analytics &amp; Insights — databases and analytics for business analysts.</p>
     </div>
+  </header>
 
-    <footer>
-      <p>Victoria University of Wellington · Markus Luczak-Roesch</p>
-    </footer>
-  </div>
+  <main class="wrap">
+    <p class="section-label">Class presentations</p>
+
+    <div class="classes">
+      <article class="class">
+        <div class="no">Class 01</div>
+        <h2>Data &amp; Databases</h2>
+        <p>
+          What data is and why it matters to business analysts; structured vs. unstructured data;
+          database management systems and relational databases; and the core modelling concepts of
+          entities, attributes, and relationships.
+        </p>
+        <div class="links">
+          <a class="btn btn-slides" href="dev/class-01/mbua512-01.html">Slides</a>
+          <a class="btn btn-pdf" href="dev/class-01/mbua512-01.pdf">PDF</a>
+        </div>
+      </article>
+
+      <article class="class">
+        <div class="no">Class 02</div>
+        <h2>Database Modelling</h2>
+        <p>
+          Modelling data with ER diagrams; translating diagrams to relational tables and the role of
+          keys; and avoiding update anomalies through functional dependencies and normalisation to 3NF.
+        </p>
+        <div class="links">
+          <a class="btn btn-slides" href="dev/class-02/mbua512-02.html">Slides</a>
+          <a class="btn btn-pdf" href="dev/class-02/mbua512-02.pdf">PDF</a>
+        </div>
+      </article>
+
+      <article class="class">
+        <div class="no">Class 03</div>
+        <h2>SQL</h2>
+        <p>
+          The Structured Query Language: defining tables with CREATE and ALTER; changing data with
+          INSERT, DELETE, and UPDATE; and querying with SELECT. Worked examples on the Trino / Superset
+          platform.
+        </p>
+        <div class="links">
+          <a class="btn btn-slides" href="dev/class-03/mbua512-03.html">Slides</a>
+          <a class="btn btn-pdf" href="dev/class-03/mbua512-03.pdf">PDF</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="inner">
+      Te Herenga Waka — Victoria University of Wellington. Based on slides by Professor Markus Luczak-Roesch.
+    </div>
+  </footer>
 </body>
 </html>
