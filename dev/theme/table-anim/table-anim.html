@@ -1,0 +1,166 @@
+<!doctype html>
+<meta charset="utf-8">
+<!--
+  Rubik's-style table shuffle for the "order of rows and columns doesn't matter"
+  slide. The table is laid out as absolutely-positioned cells on a grid so a
+  whole row or column can translate smoothly by one position at a time.
+
+  Driven frame-by-frame from render-gif.py: JS exposes window.ANIM with a
+  target permutation of row/column order and an eased progress value, so the
+  Python side controls exact timing and screenshots each frame. Styling mirrors
+  dev/theme/mbua512.css (cream field, green header, hairlines, Newsreader).
+-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap');
+
+  :root {
+    --green:      #003824;
+    --green-mid:  #005c3c;
+    --ink:        #1c211e;
+    --cream:      #fef9f0;
+    --rule:       #d8dcd7;
+    --row-h:      64px;
+    --gap:        0px;
+  }
+  html, body { margin: 0; }
+  /* the capture surface — cream field cropped tight to the table, so the GIF
+     embeds compactly beneath the slide caption. Height is header + 6 rows +
+     modest vertical padding (see STAGE_H in render-gif.py — keep in sync). */
+  #stage {
+    width: 1280px; height: 528px;
+    background: var(--cream);
+    box-sizing: border-box;
+    padding: 36px 72px;
+    font-family: 'Newsreader', Georgia, serif;
+    color: var(--ink);
+    display: flex; align-items: center;
+  }
+  #grid {
+    position: relative;
+    width: 100%;
+  }
+  .cell {
+    position: absolute;
+    display: flex; align-items: center;
+    height: var(--row-h);
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 19px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+    /* the slide — transform is set per-frame from JS */
+    will-change: transform;
+  }
+  .cell.head {
+    color: var(--green);
+    font-weight: 600;
+    border-bottom: 2px solid var(--green-mid);
+    height: calc(var(--row-h) + 6px);
+  }
+</style>
+
+<div id="stage"><div id="grid"></div></div>
+
+<script>
+// ---- table data (defined once) -----------------------------------------
+const HEAD = ["Flight Number","Airline","Day","Time","Pilot ID","Pilot Name","Plane model","Plane manufacturer"];
+const ROWS = [
+  ["NZ123","Air NZ","10 Aug 2018","10am","PL8715","Pat Smith","Airbus310","AirBus"],
+  ["NZ456","Air NZ","11 Aug 2018","11am","PL8716","Yi Zhang","Airbus320","AirBus"],
+  ["YA789","Yugoslav Air","17 Aug 2018","10:30am","PL9781","Jim Belich","Boeing737","Boeing"],
+  ["NZ123","Air NZ","12 Aug 2018","10am","PL9781","Jim Belich","Boeing737","Boeing"],
+  ["NZ124","Air NZ","13 Aug 2018","11pm","PL9781","Jim Belich","Airbus310","Airbus"],
+  ["YA890","Yugoslav Air","17 Aug 2018","4pm","PL9781","Jim Belich","Airbus310","Airbus"],
+];
+const NCOL = HEAD.length;
+const NROW = ROWS.length + 1;          // +1 for the header row
+
+// column widths (fractions of the grid), tuned so all 8 headers fit 1136px
+//        Flight  Airline  Day    Time   PilotID PilotName Model  Manufacturer
+const COLW = [0.135, 0.135, 0.135, 0.085, 0.105,  0.125,   0.125, 0.155];
+
+// ---- build the cells ----------------------------------------------------
+const grid = document.getElementById('grid');
+const ROWH = 64, HEADH = 70, GRIDW = 1136;   // 1280 - 2*72 padding
+grid.style.height = (HEADH + ROWS.length*ROWH) + 'px';
+
+// cell[r][c]; row 0 is the header
+const cells = [];
+const table = [HEAD, ...ROWS];
+for (let r = 0; r < NROW; r++) {
+  cells[r] = [];
+  for (let c = 0; c < NCOL; c++) {
+    const el = document.createElement('div');
+    el.className = 'cell' + (r === 0 ? ' head' : '');
+    el.textContent = table[r][c];
+    grid.appendChild(el);
+    cells[r][c] = el;
+  }
+}
+
+// column x-offsets and widths in px
+const colX = [], colWpx = [];
+{ let x = 0; for (let c = 0; c < NCOL; c++){ colWpx[c] = COLW[c]*GRIDW; colX[c] = x; x += colWpx[c]; } }
+// row y-offsets in px (header taller)
+const rowY = [];
+{ let y = 0; for (let r = 0; r < NROW; r++){ rowY[r] = y; y += (r === 0 ? HEADH : ROWH); } }
+
+// current logical order -> display slot
+let rowOrder = Array.from({length: NROW}, (_, i) => i);   // rowOrder[slot] = logical row
+let colOrder = Array.from({length: NCOL}, (_, i) => i);
+
+// ANIM state the Python driver reads/writes
+window.ANIM = {
+  // an in-progress move: {axis:'row'|'col', a, b, t} where a,b are SLOT indices
+  move: null,
+  NROW, NCOL,
+};
+
+function slotX(cSlot){ let x = 0; for (let i=0;i<cSlot;i++) x += colWpx[colOrder[i]]; return x; }
+function slotWidth(cSlot){ return colWpx[colOrder[cSlot]]; }
+
+// place every cell according to current order + any in-flight move offset
+function layout() {
+  const mv = window.ANIM.move;
+  for (let rs = 0; rs < NROW; rs++) {          // rs = row slot
+    for (let cs = 0; cs < NCOL; cs++) {        // cs = col slot
+      const lr = rowOrder[rs], lc = colOrder[cs];
+      const el = cells[lr][lc];
+      let x = slotX(cs), y = rowY[rs], w = slotWidth(cs);
+
+      if (mv) {
+        const ease = mv.t<0.5 ? 4*mv.t**3 : 1-(-2*mv.t+2)**3/2;   // easeInOutCubic
+        if (mv.axis === 'row') {
+          // rows a,b swap: slot a slides toward b's y and vice-versa
+          if (rs === mv.a) y = rowY[mv.a] + (rowY[mv.b]-rowY[mv.a])*ease;
+          if (rs === mv.b) y = rowY[mv.b] + (rowY[mv.a]-rowY[mv.b])*ease;
+        } else {
+          if (cs === mv.a) x = colXslot(mv.a) + (colXslot(mv.b)-colXslot(mv.a))*ease;
+          if (cs === mv.b) x = colXslot(mv.b) + (colXslot(mv.a)-colXslot(mv.b))*ease;
+        }
+      }
+      el.style.width = w + 'px';
+      el.style.transform = `translate(${x}px, ${y}px)`;
+      // raise the two moving cells above their neighbours
+      el.style.zIndex = (mv && ((mv.axis==='row' && (rs===mv.a||rs===mv.b)) ||
+                                (mv.axis==='col' && (cs===mv.a||cs===mv.b)))) ? 2 : 1;
+    }
+  }
+}
+// x of a column slot's left edge (helper for column moves)
+function colXslot(cs){ let x=0; for(let i=0;i<cs;i++) x+=colWpx[colOrder[i]]; return x; }
+
+// driver API: set the current move + progress, then relayout
+window.setMove = (axis, a, b, t) => { window.ANIM.move = (a==null?null:{axis,a,b,t}); layout(); };
+// commit a completed swap into the logical order
+window.commitMove = (axis, a, b) => {
+  const ord = axis==='row' ? rowOrder : colOrder;
+  [ord[a], ord[b]] = [ord[b], ord[a]];
+  window.ANIM.move = null;
+  layout();
+};
+
+layout();
+window.READY = true;
+</script>
