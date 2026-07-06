@@ -127,8 +127,7 @@
       transform: scale(1.05);
     }
 
-    /* A card can hold more than one deck (e.g. two class sessions), each with
-       a slides link and a PDF link. */
+    /* Each card links one deck: a slides button and a PDF button. */
     .deck-links {
       margin-top: 20px;
       display: flex;
@@ -139,20 +138,7 @@
     .deck-row {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 12px;
-      padding-top: 12px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .deck-row:first-child {
-      border-top: none;
-      padding-top: 0;
-    }
-
-    .deck-label {
-      color: #d0d0d0;
-      font-size: 1.05em;
     }
 
     .deck-buttons {
@@ -213,9 +199,9 @@
     <p class="subtitle">Databases and Analytics - Slide Presentations</p>
 
     <div class="presentations">
-      <!-- Week 1 -->
+      <!-- Class 1 -->
       <div class="presentation-card">
-        <div class="week-number">Week 01</div>
+        <div class="week-number">Class 01</div>
         <h2 class="presentation-title">Data & Databases</h2>
         <p class="presentation-description">
           What data is and why it matters to business analysts; structured vs. unstructured data;
@@ -224,18 +210,17 @@
         </p>
         <div class="deck-links">
           <div class="deck-row">
-            <span class="deck-label">Class 1 — Data &amp; Databases</span>
             <span class="deck-buttons">
-              <a class="btn-slides" href="week-01/mbua512-01.html">Slides</a>
-              <a class="btn-pdf" href="week-01/mbua512-01.pdf">PDF</a>
+              <a class="btn-slides" href="class-01/mbua512-01.html">Slides</a>
+              <a class="btn-pdf" href="class-01/mbua512-01.pdf">PDF</a>
             </span>
           </div>
         </div>
       </div>
 
-      <!-- Week 2 -->
+      <!-- Class 2 -->
       <div class="presentation-card">
-        <div class="week-number">Week 02</div>
+        <div class="week-number">Class 02</div>
         <h2 class="presentation-title">Database Modelling</h2>
         <p class="presentation-description">
           Modelling data with ER diagrams; translating diagrams to relational tables and the role of
@@ -243,10 +228,28 @@
         </p>
         <div class="deck-links">
           <div class="deck-row">
-            <span class="deck-label">Class 2 — Database Modelling</span>
             <span class="deck-buttons">
-              <a class="btn-slides" href="week-02/mbua512-02.html">Slides</a>
-              <a class="btn-pdf" href="week-02/mbua512-02.pdf">PDF</a>
+              <a class="btn-slides" href="class-02/mbua512-02.html">Slides</a>
+              <a class="btn-pdf" href="class-02/mbua512-02.pdf">PDF</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Class 3 -->
+      <div class="presentation-card">
+        <div class="week-number">Class 03</div>
+        <h2 class="presentation-title">SQL</h2>
+        <p class="presentation-description">
+          The Structured Query Language: defining tables with CREATE and ALTER; changing data with
+          INSERT, DELETE, and UPDATE; and querying with SELECT. Worked examples on the Trino / Superset
+          platform.
+        </p>
+        <div class="deck-links">
+          <div class="deck-row">
+            <span class="deck-buttons">
+              <a class="btn-slides" href="class-03/mbua512-03.html">Slides</a>
+              <a class="btn-pdf" href="class-03/mbua512-03.pdf">PDF</a>
             </span>
           </div>
         </div>

@@ -1,0 +1,62 @@
+name: Render slides
+
+# Re-render the MARP decks to HTML + PDF whenever the Markdown source, the
+# theme, or the build script changes, and commit the regenerated files back.
+# This keeps the committed .html/.pdf (and the deployed site) in sync with the
+# .md source so no one has to remember to run MARP by hand.
+#
+# The `paths:` filter is scoped to source files only. The commit this workflow
+# pushes touches just .html/.pdf, which are NOT in the filter — so it never
+# re-triggers itself.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dev/**/mbua512-*.md'
+      - 'dev/theme/**'
+      - 'dev/build-slides.sh'
+  workflow_dispatch:
+
+permissions:
+  contents: write        # needed to commit the regenerated files back
+
+concurrency:
+  group: render-slides
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install MARP CLI
+        run: npm install -g @marp-team/marp-cli@latest
+
+      # MARP needs a headless Chromium to export PDF. ubuntu-latest ships Chrome
+      # pre-installed; point MARP at it so it doesn't try to download its own.
+      - name: Locate Chrome for PDF export
+        run: echo "CHROME_PATH=$(which google-chrome-stable || which google-chrome || which chromium-browser)" >> "$GITHUB_ENV"
+
+      - name: Render all mbua512-themed decks
+        run: ./dev/build-slides.sh
+
+      - name: Commit regenerated slides
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # stage only the generated outputs
+          git add 'dev/**/mbua512-*.html' 'dev/**/mbua512-*.pdf'
+          if git diff --cached --quiet; then
+            echo "No slide changes to commit."
+          else
+            git commit -m "Re-render slides from Markdown [skip ci]"
+            git push
+          fi
