@@ -1,15 +1,40 @@
-CREATE TABLE pilot (pilotID varchar(10) primary key, pilotName varchar(30));
-INSERT INTO pilot VALUES ('PL8715', 'Pat Smith'), ('PL8716', 'Yi Zhang'), ('PL9781', 'Jim Belich');
+CREATE TABLE pilot (
+    pilotID varchar(10) PRIMARY KEY, 
+    pilotName varchar(30)
+);
+INSERT INTO pilot VALUES 
+    ('PL8715', 'Pat Smith'), 
+    ('PL8716', 'Yi Zhang'), 
+    ('PL9781', 'Jim Belich');
 
-CREATE TABLE aircraft (planeModel varchar(10), planeManufacturer varchar(10));
-INSERT INTO aircraft VALUES ('Airbus310','Airbus'),('Airbus320','Airbus'),('Boeing737','Boeing');
+CREATE TABLE aircraft (
+    planeModel varchar(10) PRIMARY KEY, 
+    planeManufacturer varchar(10)
+);
+INSERT INTO aircraft VALUES 
+    ('Airbus310','Airbus'),
+    ('Airbus320','Airbus'),
+    ('Boeing737','Boeing');
 
-CREATE TABLE flightinfo (flightNumber varchar(6) PRIMARY KEY, airline varchar(20), time varchar(10));
-INSERT INTO flightinfo VALUES ('NZ123','Air NZ','10am'), ('NZ456','Air NZ','11am'),
-  ('YA789','Yugoslav Air','10:30am'),('NA124','Air NZ','11pm'),('YA890','Yugoslav Air','4pm');
+CREATE TABLE flightinfo (
+    flightNumber varchar(6) PRIMARY KEY, 
+    airline varchar(20), 
+    time varchar(10));
+INSERT INTO flightinfo VALUES 
+    ('NZ123','Air NZ','10am'), 
+    ('NZ456','Air NZ','11am'),
+    ('YA789','Yugoslav Air','10:30am'),
+    ('NA124','Air NZ','11pm'),
+    ('YA890','Yugoslav Air','4pm');
 
-CREATE TABLE flight (flightNumber varchar(6), day varchar(10), pilotID varchar(10), 
-  planeModel varchar(10), primary key (flightNumber,day)); -- missing foreign keys 
+CREATE TABLE flight (
+    flightNumber varchar(6), 
+    day varchar(10), 
+    pilotID varchar(10), 
+    planeModel varchar(10), 
+    primary key (flightNumber,day),
+    foreign key(pilotID) REFERENCES pilot(pilotID),
+); 
 INSERT INTO flight VALUES 
     ('NZ123', '2018-08-10', 'PL8715', 'Airbus310'),
     ('NZ456', '2018-08-11', 'PL8716', 'Airbus320'),
