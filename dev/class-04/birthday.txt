@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS  people;
+
+CREATE TABLE people (
+	personID INTEGER PRIMARY KEY,
+	firstName VARCHAR(30) NOT NULL,
+	lastName VARCHAR(30),
+	birthdate DATE NOT NULL,
+	planner INTEGER,
+	email VARCHAR(30),
+	FOREIGN KEY(planner) REFERENCES people(personID)
+);
+
+INSERT INTO people VALUES
+	(1, 'Bob', 'Smith', '1917-01-03', 1, NULL),
+ 	(2, 'Bob', 'Smith', '1973-03-25', NULL, 'bob@smith.net'),
+	(3, 'Alice', 'Smith', '2026-07-07', 1, 'Alice@smith.net'),
+	(4, 'sam', 'Smith', '2020-01-03', 1, 'sam'),
+	(5, 'Bobbie','Smithton', '1987-03-16', NULL, 'bob@smith.net');
+

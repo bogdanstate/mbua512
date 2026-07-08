@@ -33,7 +33,7 @@ CREATE TABLE flight (
     pilotID varchar(10), 
     planeModel varchar(10), 
     primary key (flightNumber,day),
-    foreign key(pilotID) REFERENCES pilot(pilotID),
+    foreign key(pilotID) REFERENCES pilot(pilotID)
 ); 
 INSERT INTO flight VALUES 
     ('NZ123', '2018-08-10', 'PL8715', 'Airbus310'),
