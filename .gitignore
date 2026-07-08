@@ -1,3 +1,5 @@
 dev/theme/table-anim/frames/
 out/
 .venv/
+tmp.html
+.DS_Store
