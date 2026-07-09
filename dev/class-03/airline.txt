@@ -19,17 +19,17 @@ INSERT INTO aircraft VALUES
 CREATE TABLE flightinfo (
     flightNumber varchar(6) PRIMARY KEY, 
     airline varchar(20), 
-    time varchar(10));
+    time varchar(10)); -- really should use TIME
 INSERT INTO flightinfo VALUES 
-    ('NZ123','Air NZ','10am'), 
-    ('NZ456','Air NZ','11am'),
+    ('NZ123','Air NZ','10:00am'), 
+    ('NZ456','Air NZ','11:00am'),
     ('YA789','Yugoslav Air','10:30am'),
-    ('NA124','Air NZ','11pm'),
-    ('YA890','Yugoslav Air','4pm');
+    ('NA124','Air NZ','11:00pm'),
+    ('YA890','Yugoslav Air','4:00pm');
 
 CREATE TABLE flight (
     flightNumber varchar(6), 
-    day varchar(10), 
+    day date,
     pilotID varchar(10), 
     planeModel varchar(10), 
     primary key (flightNumber,day),
