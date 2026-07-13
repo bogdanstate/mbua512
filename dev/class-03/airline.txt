@@ -5,6 +5,7 @@ CREATE TABLE pilot (
 INSERT INTO pilot VALUES 
     ('PL8715', 'Pat Smith'), 
     ('PL8716', 'Yi Zhang'), 
+    ('PL9713', 'Anh Nguyen'),
     ('PL9781', 'Jim Belich');
 
 CREATE TABLE aircraft (
@@ -14,6 +15,7 @@ CREATE TABLE aircraft (
 INSERT INTO aircraft VALUES 
     ('Airbus310','Airbus'),
     ('Airbus320','Airbus'),
+    ('Boeing777','Boeing'),
     ('Boeing737','Boeing');
 
 CREATE TABLE flightinfo (
@@ -37,9 +39,9 @@ CREATE TABLE flight (
 ); 
 INSERT INTO flight VALUES 
     ('NZ123', '2018-08-10', 'PL8715', 'Airbus310'),
-    ('NZ456', '2018-08-11', 'PL8716', 'Airbus320'),
+    ('NZ456', '2018-08-11', 'PL8716', 'Boeing777'),
     ('YA789', '2018-08-17', 'PL9781', 'Boeing737'),
     ('NZ123', '2018-08-12', 'PL9781', 'Boeing737'),
-    ('N124',  '2018-08-13', 'PL9781', 'Airbus310'),
-    ('YA890', '2018-08-17', 'PL9781', 'Airbus310');
+    ('NZ124',  '2018-08-13', 'PL9781', 'Airbus310'),
+    ('YA890', '2018-08-17', 'PL9781', 'Airbus320');
 
