@@ -1,11 +1,13 @@
-create table person (
+DROP TABLE IF EXISTS person;
+
+CREATE TABLE person (
 	personID INT PRIMARY KEY,
 	firstName VARCHAR(50),
 	lastName VARCHAR(50),
 	birthdate DATE,
 	planner INT,
 	email VARCHAR(50),
-	FOREIGN KEY(planner) REFERENCES person(personID)
+	-- FOREIGN KEY(planner) REFERENCES person(personID)
 );
 
 INSERT INTO `person` (`personID`, `firstName`, `lastName`, `birthdate`, `planner`, `email`) VALUES
@@ -209,3 +211,8 @@ INSERT INTO `person` (`personID`, `firstName`, `lastName`, `birthdate`, `planner
   (198, 'Rosabel', 'Langston', '1989-03-18', NULL, NULL),
   (199, 'Alisha', 'Terran', NULL, 136, NULL),
   (200, 'Randolph', 'Blakeney', '1985-10-27', 83, NULL);
+  
+-- Add the foreign key constraint - adding it earlier causes a problem when inserting data
+ALTER TABLE person 
+ADD CONSTRAINT fk_planner
+FOREIGN KEY (planner) REFERENCES person(personID);
