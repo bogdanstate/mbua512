@@ -11,7 +11,8 @@ first — `update.sh` enforces that with a stale guard (see below).
 
 | | |
 |---|---|
-| **Dev deck** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09 — deck **id 13**, `instructors`, 95 slides |
+| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 59 slides, 16 SQL |
+| **Dev deck B** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09b-regression — **id 15**, `instructors`, 38 slides, 9 SQL |
 | **Prod** | not uploaded. Prod is a separate, deliberate export/import; neither script here targets it |
 | **Plan** | `infra/superset-grading/docs/week09-correlation-regression-deck-plan.md` |
 | **Data** | `infra/mysql/week09-gen.py` → `week09.sql`, loaded by `infra/mysql/load-week09.sh`. **Not loaded anywhere yet** |
@@ -22,7 +23,9 @@ first — `update.sh` enforces that with a stale guard (see below).
 
 | file | what it is |
 |---|---|
-| `deck.md` | the deck. 95 slides, 24 `sql-live` fences, 1 `annotated-code` |
+| `deck.md` | **the single source** — both decks are derived from it. Carries one `<!-- DECK-SPLIT: b -->` marker |
+| `split-deck.py` | derives `deck-a.md` + `deck-b.md` from `deck.md` (fence-aware; adds each deck's title slide and deck B's recap) |
+| `deck-a.md`, `deck-b.md` | **generated — do not edit.** Edit `deck.md` and re-run the split |
 | `assets/` | 34 PNGs, all generated or rasterised here, all under the 4 MiB cap |
 | `mbua512-week-09.css` | the deck stylesheet (course theme + week-09 addendum). One stylesheet per deck; `stylesheet_url` beats front-matter `css:` |
 | `figures/make_figures.py` | draws all 32 generated figures from the same rows the SQL slides query |
@@ -47,15 +50,22 @@ cd ~/mbua512/dev/week-09/deck/figures
 # 2. check every query against the real rows, offline, no database
 python3 check_deck_sql.py
 
-# 3. upload (dev only)
-cd .. && ./upload.sh                        # first time
-FORCE=1 ./update.sh                         # subsequent edits — read §4 first
+# 3. upload (dev only) — TWO decks, one flag each
+cd ..
+python3 split-deck.py                       # deck.md -> deck-a.md + deck-b.md
+DECK=a ./upload.sh                          # first time
+DECK=b ./upload.sh
+DECK=a FORCE=1 ./update.sh                  # subsequent edits — read §4 first
+DECK=b FORCE=1 ./update.sh
 
 # 4. verify in a browser, in the cluster
 cd ~/infra/playwright
-./run-in-pod.sh -n superset-dev --login-as bogdanstate \
-  --env SLUG=mbua512-week-09 --env SIZES=1920x1080,1440x900,1366x768 \
-  verify-week09-deck.js
+for S in mbua512-week-09a-correlation mbua512-week-09b-regression; do
+  ./run-in-pod.sh -n superset-dev --login-as bogdanstate \
+    --env SLUG=$S --env SIZES=1920x1080,1440x900,1366x768 verify-week09-deck.js
+  ./run-in-pod.sh -n superset-dev --login-as bogdanstate \
+    --env SLUG=$S --env DO_PIN=1 run-week09-sql.js     # pins are PER DECK
+done
 ```
 
 **Never run node/npm/npx on the workstation.** The Playwright checks run in a
@@ -247,3 +257,51 @@ R² 0.883, train r 0.935 / slope 3.243, sensors 120/102, chocolate 0.800).
 the rows as a `<table>` **sibling below it**. Eight slides overran on the first
 pin pass while every widget still reported exactly its requested height. Budget
 `height=` for what will sit under it, and re-run the pin pass after any change.
+
+
+---
+
+## 8. The split into two decks (instructor, 2026-09-23)
+
+*"could we split the Week 9 deck into two decks — one for multivariate
+relationships and correlations and one on regression / ML?"*
+
+| | deck A | deck B |
+|---|---|---|
+| slug | `mbua512-week-09a-correlation` | `mbua512-week-09b-regression` |
+| title | Multivariate Relationships and Correlation | Regression and Prediction |
+| slides | 59 | 38 |
+| SQL fences | 16 (ladder rungs 0–14) | 9 (rungs 15–23) |
+| assets | 19 | 15 |
+
+**The cut is at "Regression Analysis"**, the section slide that opened the
+regression half of the combined deck. Deck A ends on the four
+when-to-use-correlation assumptions; deck B opens on that section header.
+
+**`R² is the shared variation` stays in deck A**, as the instructor leaned.
+The deck treats R² twice, and the two treatments are genuinely different
+lessons: deck A's is *R² as shared variation* — the Venn figure and
+`POW(r, 2)`, a property of a correlation, needing no line. Deck B's is
+*R² as 1 − SSR/TSS* ("Two roads, one number"), which cannot be stated before
+there is a fitted line to produce an SSR. Splitting them across the two decks
+is right, and the pairing is a nice callback when deck B shows the two roads
+meet.
+
+**Nothing else moved.** One slide was ADDED to deck B: a recap of deck A's
+finished r query, re-pointed at `housing`, because deck B's first rung is
+`slope = r · sy / sx` and that is meaningless without an r in the room. It is
+generated from deck A's own payoff slide, not retyped.
+
+**One source, two outputs.** `deck.md` stays authoritative and carries a
+single `<!-- DECK-SPLIT: b -->` marker; `split-deck.py` derives both files.
+That keeps the ladder visible as one thing while it is edited — the rungs run
+0–23 across both decks, so a change to how rung 12 builds r has to be legible
+to whoever is editing rung 16.
+
+**Trap found doing this.** The first split used `source.split("\n---\n")`,
+which is wrong: the `annotated-code` exhibit contains R's `summary(lm)`
+output, and R prints a literal `---` line before `Signif. codes`. That cut the
+exhibit in half and sent the halves into different slides. The platform then
+rejoined them and rendered something that looked almost right — it showed up
+only as a slide-count mismatch (39 source blocks, 38 rendered). `split-deck.py`
+now tracks fence state exactly as the platform's own parser does.

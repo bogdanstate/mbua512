@@ -33,9 +33,17 @@ import re
 import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
-DECK_MD = HERE / "deck.md"
 ASSET_DIR = HERE / "assets"
 CSS_PATH = HERE / "mbua512-week-09.css"
+
+# The week-9 material is TWO decks (instructor, 2026-09-23), both derived from
+# the single source `deck.md` by `split-deck.py`. `--deck a|b` picks one; the
+# stylesheet is shared content uploaded separately under each deck, because
+# the platform scopes assets and stylesheets to a deck.
+DECKS = {
+    "a": ("deck-a.md", "mbua512-week-09a-correlation"),
+    "b": ("deck-b.md", "mbua512-week-09b-regression"),
+}
 
 MAX_ASSET_BYTES = 4 * 1024 * 1024
 
@@ -54,12 +62,23 @@ def parse_front_matter(md: str) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--out", default=str(HERE / "payload.json"))
-    ap.add_argument("--slug", default="mbua512-week-09")
+    ap.add_argument("--deck", choices=sorted(DECKS), required=True,
+                    help="which of the two week-9 decks to build")
+    ap.add_argument("--out", default=None)
+    ap.add_argument("--slug", default=None)
     ap.add_argument("--visibility", default="instructors")
     args = ap.parse_args()
 
-    md = DECK_MD.read_text()
+    src_name, default_slug = DECKS[args.deck]
+    deck_md = HERE / src_name
+    if not deck_md.exists():
+        print(f"ERROR: {src_name} missing — run split-deck.py first",
+              file=sys.stderr)
+        return 1
+    args.slug = args.slug or default_slug
+    args.out = args.out or str(HERE / f"payload-{args.deck}.json")
+
+    md = deck_md.read_text()
     fm = parse_front_matter(md)
     title = fm.get("title")
     if not title:
@@ -72,8 +91,9 @@ def main() -> int:
     problems = []
     for name in sorted(referenced - on_disk):
         problems.append(f"markdown references {name}, which is not in assets/")
-    for name in sorted(on_disk - referenced):
-        problems.append(f"assets/{name} is never referenced by the markdown")
+    # NOT an error that a file in assets/ is unreferenced HERE: the other deck
+    # very likely uses it. What matters is that nothing this deck references is
+    # missing, and that each deck uploads only its own assets.
 
     assets = {}
     for name in sorted(referenced & on_disk):

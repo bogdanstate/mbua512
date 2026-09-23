@@ -649,7 +649,7 @@ The spread of Y should be roughly the **same at every value of X**.
 *Example: income varies far more among those with less education than among those with more — so income on education is heteroscedastic.*
 
 ---
-
+<!-- DECK-SPLIT: b -->
 <!-- _class: section -->
 
 # Regression Analysis

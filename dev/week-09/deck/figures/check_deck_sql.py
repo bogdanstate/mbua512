@@ -47,6 +47,8 @@ import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 DECK = HERE.parent / "deck.md"
+DECK_A = HERE.parent / "deck-a.md"
+DECK_B = HERE.parent / "deck-b.md"
 MYSQL_DIR = pathlib.Path("/home/bogdan/infra/mysql")
 DATA_DIR = MYSQL_DIR / "week09" / "data"
 
@@ -306,6 +308,27 @@ def main() -> int:
         first = rows[0] if rows else ()
         preview = ", ".join(f"{c}={v}" for c, v in zip(cols, first))[:88]
         print(f"  {label}  {len(rows):>3} row(s)  {status:22s} {preview}")
+
+    # The two derived decks must be current, and between them must carry
+    # every fence in the source plus deck B's recap (which is a COPY of deck
+    # A's payoff query, so the total is one more than the source has).
+    if DECK_A.exists() and DECK_B.exists():
+        a, b = DECK_A.read_text(), DECK_B.read_text()
+        n_src = md.count("```sql-live")
+        n_split = a.count("```sql-live") + b.count("```sql-live")
+        if n_split != n_src + 1:
+            problems.append(
+                f"deck-a + deck-b carry {n_split} sql fences, expected "
+                f"{n_src + 1} (the source's {n_src} plus deck B's recap) — "
+                "re-run split-deck.py"
+            )
+        for name, text in (("deck-a.md", a), ("deck-b.md", b)):
+            if "DECK-SPLIT" in text:
+                problems.append(f"{name} still carries the split marker")
+            if text.count("_class: title") != 1:
+                problems.append(f"{name} does not have exactly one title slide")
+    else:
+        problems.append("deck-a.md / deck-b.md missing — run split-deck.py")
 
     # Every SQL slide must still carry its gloss, as speaker notes.
     for i, block in enumerate(md.split("\n---\n")):

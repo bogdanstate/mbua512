@@ -23,7 +23,15 @@ cd "$(dirname "$0")"
 unset KUBECONFIG
 CONTEXT="${CONTEXT:-scienz-scienz}"
 NS="${NS:-superset-dev}"
-SLUG="${SLUG:-mbua512-week-09}"
+# Which of the two week-9 decks (instructor split, 2026-09-23).
+DECK="${DECK:-}"
+case "$DECK" in
+  a) SLUG="${SLUG:-mbua512-week-09a-correlation}" ;;
+  b) SLUG="${SLUG:-mbua512-week-09b-regression}" ;;
+  *) echo "ERROR: set DECK=a or DECK=b (a = correlation, b = regression)." >&2
+     exit 1 ;;
+esac
+PAYLOAD="payload-${DECK}.json"
 
 if [ "$NS" = "superset" ]; then
   echo "ERROR: this script does not target prod. See README.md." >&2
@@ -31,7 +39,8 @@ if [ "$NS" = "superset" ]; then
 fi
 
 echo "=== 1/4  building the payload ==="
-python3 build-payload.py --slug "$SLUG"
+python3 split-deck.py
+python3 build-payload.py --deck "$DECK" --slug "$SLUG"
 
 POD=$(kubectl --context "$CONTEXT" get pods -n "$NS" -l app=superset \
         -o name | head -1 | sed 's|^pod/||')
@@ -41,7 +50,7 @@ if [ -z "$POD" ]; then
 fi
 echo ""
 echo "=== 2/4  copying into ${NS}/${POD} ==="
-kubectl --context "$CONTEXT" cp payload.json \
+kubectl --context "$CONTEXT" cp "$PAYLOAD" \
   "${NS}/${POD}:/tmp/w9-payload.json" -c superset
 kubectl --context "$CONTEXT" cp upload-deck.py \
   "${NS}/${POD}:/tmp/w9-upload.py" -c superset

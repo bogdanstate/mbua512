@@ -16,7 +16,15 @@ cd "$(dirname "$0")"
 unset KUBECONFIG
 CONTEXT="${CONTEXT:-scienz-scienz}"
 NS="${NS:-superset-dev}"
-SLUG="${SLUG:-mbua512-week-09}"
+# Which of the two week-9 decks (instructor split, 2026-09-23).
+DECK="${DECK:-}"
+case "$DECK" in
+  a) SLUG="${SLUG:-mbua512-week-09a-correlation}" ;;
+  b) SLUG="${SLUG:-mbua512-week-09b-regression}" ;;
+  *) echo "ERROR: set DECK=a or DECK=b (a = correlation, b = regression)." >&2
+     exit 1 ;;
+esac
+PAYLOAD="payload-${DECK}.json"
 
 if [ "$NS" = "superset" ]; then
   echo "ERROR: this script does not target prod. See README.md." >&2
@@ -50,10 +58,11 @@ BASE=$(printf '%s' "$PROBE" | python3 -c 'import json,sys; print(json.load(sys.s
 
 echo ""
 echo "=== 2/5  building the payload ==="
-python3 build-payload.py --slug "$SLUG"
-python3 - "$BASE" <<'PY'
+python3 split-deck.py
+python3 build-payload.py --deck "$DECK" --slug "$SLUG"
+python3 - "$BASE" "$PAYLOAD" <<'PY'
 import json, sys, pathlib
-p = pathlib.Path("payload.json")
+p = pathlib.Path(sys.argv[2])
 d = json.loads(p.read_text())
 d["base_updated_at"] = sys.argv[1]
 import os
@@ -65,7 +74,7 @@ PY
 
 echo ""
 echo "=== 3/5  copying into ${NS}/${POD} ==="
-kubectl --context "$CONTEXT" cp payload.json "${NS}/${POD}:/tmp/w9-payload.json" -c superset
+kubectl --context "$CONTEXT" cp "$PAYLOAD" "${NS}/${POD}:/tmp/w9-payload.json" -c superset
 kubectl --context "$CONTEXT" cp update-deck.py "${NS}/${POD}:/tmp/w9-update.py" -c superset
 
 echo ""
