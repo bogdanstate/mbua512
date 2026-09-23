@@ -57,17 +57,28 @@ DATA_DIR = MYSQL_DIR / "week09" / "data"
 ALLOWED_FUNCS = {
     "count", "sum", "avg", "min", "max", "round", "pow", "sqrt", "log10",
     "stddev_samp",
+    # Ranking, for Spearman (2026-09-23). `RANK` is the deck's only window
+    # function and appears on exactly two slides.
+    "rank",
 }
+
+# The fence ordinals allowed to use `OVER`: the ranks slide and the Spearman
+# assembly. Keyed by position like EXPECTATIONS, and asserted below.
+SPEARMAN_FENCES = {16, 17}
 # Keywords that can be followed by "(" without being a function call.
 SQL_KEYWORDS = {"as", "in", "select", "from", "where", "and", "or", "not",
-                "on", "by", "values", "join", "with", "union"}
+                "on", "by", "values", "join", "with", "union",
+                # `OVER (…)` and `PARTITION BY (…)` read as calls to this
+                # regex but are clauses. The Spearman guard below is what
+                # actually polices window functions.
+                "over", "partition"}
 # The deck's CTE names, which appear as `name AS (` and `FROM name`.
 CTE_NAMES = {"d", "stats", "sums", "fit", "parts", "corr"}
 FORBIDDEN = [
     (r"\bFILTER\s*\(", "FILTER is not MariaDB"),
     (r"\bCORR\s*\(", "MariaDB has no CORR -- the deck builds r by hand"),
     (r"\bREGR_\w+\s*\(", "MariaDB has no REGR_* functions"),
-    (r"\bOVER\s*\(", "no window functions in week 9 (plan SS5.3)"),
+
     (r"\bSTDDEV\s*\(", "bare STDDEV is the POPULATION SD -- use STDDEV_SAMP"),
     (r"\bSTD\s*\(", "bare STD is the POPULATION SD -- use STDDEV_SAMP"),
     (r"\bCASE\b", "no CASE in week 9 (plan SS5.2)"),
@@ -203,24 +214,25 @@ EXPECTATIONS = {
     13: ("ncols", 3),
     14: ("r_is", 0.967),
     15: ("r_is", -0.770),
-    16: ("cells", {"r": 0.967, "r_squared": 0.935}),
-    17: ("cells", {"readings": 120, "with_temperature": 102}),
-    18: ("cells", {"r": 0.939, "slope": 3.0}),
-    # Slide 73 was SHORTENED so the tall query would fit the stage: the slope
-    # is a literal (it was derived on the previous slide), leaving the query
-    # free to be about the INTERCEPT, which is this slide's actual point.
-    # 80.93, not 80.94 — rounding the exact 2.99989 slope to 3.000 before
-    # computing the intercept moves it by a cent, and the slide says so.
-    19: ("cells", {"mean_sqm": 94.56, "mean_price": 364.61, "intercept": 80.93}),
-    20: ("rows", 10),
-    21: ("cell", ("ssr", 93044)),
-    22: ("cells", {"ssr": 93044, "sst": 791883, "r_squared": 0.883}),
-    # The train/test query was shortened to fit the stage once pinned results
-    # were budgeted for: the intercept column went, and the slope is now the
-    # equivalent sxy/sxx rather than r*sy/sx (the identity rung 16 proves).
-    23: ("cells", {"r": 0.935, "slope": 3.243}),
-    24: ("r_is", 0.800),
+    # --- Spearman, added 2026-09-23 -------------------------------------
+    # 16: the ranks slide. RANK() OVER is the deck's FIRST window function;
+    # it lists rows, so only the shape is pinned here.
+    16: ("rows", 10),
+    # 17: Spearman = Pearson on AVERAGE ranks. -0.950 on the raw marathon
+    # distances, which Pearson only reached (-0.948) after a LOG10 — that
+    # contrast is the slide's whole point, so the value is pinned exactly.
+    17: ("cell", ("spearman_rho", -0.950)),
+    18: ("cells", {"r": 0.967, "r_squared": 0.936}),
+    19: ("cells", {"readings": 120, "with_temperature": 102}),
+    20: ("cells", {"r": 0.939, "slope": 3.0}),
+    21: ("cells", {"mean_sqm": 94.56, "mean_price": 364.61, "intercept": 80.93}),
+    22: ("rows", 10),
+    23: ("cell", ("ssr", 93044)),
+    24: ("cells", {"ssr": 93044, "sst": 791883, "r_squared": 0.883}),
+    25: ("cells", {"r": 0.935, "slope": 3.243}),
+    26: ("r_is", 0.800),
 }
+
 
 
 def main() -> int:
@@ -253,6 +265,15 @@ def main() -> int:
         for pat, why in FORBIDDEN:
             if re.search(pat, sql, re.I):
                 problems.append(f"{label}: {why}")
+
+        # `OVER` is banned everywhere EXCEPT the two Spearman slides, which
+        # introduce it deliberately as the one new idea ranking needs (plan
+        # SS5.3 rungs 13a/13b). Anywhere else it is the old ruling's breach.
+        if re.search(r"\bOVER\s*\(", sql, re.I) and i not in SPEARMAN_FENCES:
+            problems.append(
+                f"{label}: window function outside the Spearman slides "
+                "(the ladder uses WITH + CROSS JOIN)"
+            )
 
         for fn in re.findall(r"\b([A-Za-z_][A-Za-z_0-9]*)\s*\(", sql):
             low = fn.lower()

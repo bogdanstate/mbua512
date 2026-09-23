@@ -232,7 +232,10 @@ def main() -> int:
     for key, text in built.items():
         path = DECKS[key]["out"]
         path.write_text(text)
-        n = len(text.split("\n---\n")) - 1
+        # Count with the fence-aware splitter, not a naive split: deck B's
+        # annotated-code exhibit contains R's literal `---`, so a naive count
+        # reports 39 for a 38-slide deck and quietly contradicts the checks.
+        n = len([b for b in split_blocks(text) if b.strip()]) - 1
         used = assets_of(text)
         fences = text.count("```sql-live")
         print(f"wrote {path.name}")

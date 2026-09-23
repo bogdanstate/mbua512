@@ -11,9 +11,10 @@ first — `update.sh` enforces that with a stale guard (see below).
 
 | | |
 |---|---|
-| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 59 slides, 16 SQL |
+| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 61 slides, 18 SQL |
 | **Dev deck B** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09b-regression — **id 15**, `instructors`, 38 slides, 9 SQL |
-| **Prod** | not uploaded. Prod is a separate, deliberate export/import; neither script here targets it |
+| **PROD deck A** | https://learn.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 4**, `instructors` (unpublished), 61 slides, all 18 SQL slides pinned. Copied 2026-09-23 |
+| **Prod deck B** | not copied — deck B stays on dev by instructor decision |
 | **Plan** | `infra/superset-grading/docs/week09-correlation-regression-deck-plan.md` |
 | **Data** | `infra/mysql/week09-gen.py` → `week09.sql`, loaded by `infra/mysql/load-week09.sh`. **Not loaded anywhere yet** |
 
@@ -270,8 +271,8 @@ relationships and correlations and one on regression / ML?"*
 |---|---|---|
 | slug | `mbua512-week-09a-correlation` | `mbua512-week-09b-regression` |
 | title | Multivariate Relationships and Correlation | Regression and Prediction |
-| slides | 59 | 38 |
-| SQL fences | 16 (ladder rungs 0–14) | 9 (rungs 15–23) |
+| slides | 61 | 38 |
+| SQL fences | 18 (ladder rungs 0–14, incl. 13a/13b) | 9 (rungs 15–23) |
 | assets | 19 | 15 |
 
 **The cut is at "Regression Analysis"**, the section slide that opened the
@@ -305,3 +306,78 @@ exhibit in half and sent the halves into different slides. The platform then
 rejoined them and rendered something that looked almost right — it showed up
 only as a slide-count mismatch (39 source blocks, 38 rendered). `split-deck.py`
 now tracks fence state exactly as the platform's own parser does.
+
+
+---
+
+## 9. Pearson and Spearman in SQL (instructor, 2026-09-23)
+
+*"could we also add slides re: computing the Pearson and Spearman correlation
+coefficients in MySQL / MariaDB?"*
+
+Deck A already **built** Pearson's r across rungs 8–13 without ever naming it.
+Three slides added after the r payoff ("Now point it at anything"), before
+"The same points, at five values of ρ" — i.e. the ladder finishes correlation
+in SQL before moving to the pictures:
+
+| # | slide | what it adds |
+|---|---|---|
+| 43 | *(existing)* "Step 5 — and there is r" | **renamed, not duplicated**: its notes now say this is **Pearson's** r |
+| 45 | Ranks | rung **13a** — `RANK() OVER (ORDER BY x)`, the deck's FIRST window function |
+| 46 | Spearman's ρ | rung **13b** — the Pearson chain with `d` replaced by the ranks |
+| 47 | Pearson or Spearman? | a plain two-column comparison table |
+
+**The dataset is `marathon_opinion`, and the reason is the whole lesson.**
+Pearson on the raw distances is **−0.770**; it only reaches **−0.948** after a
+`LOG10`. Spearman on the *same raw column* is **−0.950** — it lands where
+Pearson needed a transform to get, because it never required a straight line,
+only a one-way relationship.
+
+**Ties: handled properly, not dodged.** The `opinion` column has **315 tied
+rows out of 400**, so plain `RANK()` is not defensible here. The slide computes
+true average ranks:
+
+```sql
+RANK() OVER (ORDER BY v) + (COUNT(*) OVER (PARTITION BY v) - 1) / 2
+```
+
+(Plain `RANK()` happens to give −0.9503 against the correct −0.9502 on this
+data — but relying on a coincidence in a teaching query would be dishonest.)
+Tie-free alternatives were measured and rejected on pedagogy: `housing` has no
+ties at all, but its Spearman (0.889) is *lower* than its Pearson (0.939),
+which teaches nothing.
+
+**`OVER` is the one exception to the no-window-functions ruling.** Ranking is
+the single thing plain aggregates cannot express, and the alternative (a
+correlated subquery counting smaller rows) is harder to read for no gain. It
+appears on exactly two slides, introduced as one new idea, and
+`check_deck_sql.py` enforces that it appears nowhere else in the deck.
+
+Values asserted in `mysql/test_week09_gen.py` against `scipy.stats.spearmanr`
+and `pearsonr`, including that the SQL average-rank identity matches
+`scipy.stats.rankdata`.
+
+
+---
+
+## 10. Instructor edits and the prod copy (2026-09-23)
+
+**Two deletions plus a register sweep** (see the hand-off report for the full
+list with slide numbers — every removed line is listed so it can be vetoed).
+The rule applied: a line earns its place on a slide if it teaches something the
+slide does not already show. Lines that narrate what the deck is about to do,
+or restate the bullets directly above them, moved to the speaker notes or went.
+**SQL slides, notes and figures were not touched.** Deck A 62 → **61 slides**.
+
+**Deck A copied to PROD** as a new deck, same slug, `instructors` /
+unpublished, deck id **4**. The three decks the instructor edits live on prod
+(`week-7-data-quality`, `mbua512-week-07`, `mbua512-data-graphics`) were
+verified untouched before and after — their `updated_at` did not move.
+
+Prod has all eight week-9 tables in `stats_demo` with row counts matching the
+generator (100/500/400/300/228/50/120/23), so all 18 SQL slides were run and
+pinned on prod and **every pinned value equals dev's**.
+
+To re-upload deck A to prod later, the payload builder and in-pod script are
+tier-agnostic — copy `payload-a.json` + `upload-deck.py` into the prod web pod
+and run the same one-liner. `upload.sh`/`update.sh` deliberately refuse prod.

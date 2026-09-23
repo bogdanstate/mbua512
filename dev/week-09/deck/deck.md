@@ -88,8 +88,6 @@ Two measurements on the same person:
 - **Fun during** the activity — how it felt at the time
 - **Fun after** the activity — how it feels looking back
 
-Some things are fun in the moment. Some things are only fun once they are over.
-
 <!-- suggestion: the old deck illustrated this with two hot-linked SVG illustrations. They are dropped; the idea carries in words, and the scatter two slides on makes it concrete. -->
 
 ---
@@ -213,15 +211,8 @@ LIMIT  10;
 
 *Bigger fires do more damage. r = +0.987.*
 
----
+<!-- The three fire slides are the argument: firefighters correlate with damage at 0.967, but the SIZE of the fire drives both — structures burned runs 0.979 with firefighters and 0.987 with damage. A variable that drives both sides of a correlation like this is a CONFOUNDER. The word comes back on the Prediction ≠ Causation slide at the end. -->
 
-<!-- _class: callout -->
-
-# The firefighters did not cause the damage
-
-**The size of the fire caused both.**
-
-A variable that drives both sides of a correlation is a **confounder**. It is the first thing to look for and the easiest thing to forget.
 
 ---
 
@@ -366,8 +357,6 @@ WHERE  humidity < 60;
 - If so, is it **positive** or **negative**?
 - Is it **strong** or **weak**?
 
-One number answers all three. Over the next few slides we are going to **build** that number, one piece at a time.
-
 <!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function — which is a teaching gift, because it means we have to build it, and building it is the only way to see what it actually measures. -->
 
 ---
@@ -480,8 +469,9 @@ FROM   sums;
 ```
 
 
-<!-- Step 5 — and there is r -->
-<!-- The formula from two slides ago, piece by piece. Expect 0.967. -->
+<!-- Pearson's r, in one query -->
+<!-- This is the finished article: the formula from two slides ago, assembled. It has a name — the PEARSON correlation coefficient, written r. Everything the deck has called "r" so far is Pearson's r. -->
+<!-- Pearson measures how close the points lie to a straight LINE. That is the whole assumption, and it is the one Spearman relaxes in a moment. -->
 <!-- **Run it.** `SQRT` is the square root. Expect **0.967**. -->
 
 ---
@@ -512,6 +502,71 @@ FROM   sums;
 
 ---
 
+```sql-live db=stats_demo layout=rows height=414 limit=5
+WITH d AS (
+  SELECT meters_run AS x, opinion AS y
+  FROM   marathon_opinion
+)
+SELECT x,
+       y,
+       RANK() OVER (ORDER BY x) AS rank_x,
+       RANK() OVER (ORDER BY y) AS rank_y
+FROM   d
+LIMIT  10;
+```
+
+<!-- Ranks -->
+<!-- One new idea: instead of the VALUES, use their positions in order. Shortest run = rank 1, next = rank 2, and so on. -->
+<!-- RANK() OVER (ORDER BY x) is a WINDOW function — the first this deck has used. A plain aggregate collapses the rows into one answer; a window function keeps every row and computes something against the whole table alongside it. Here: "where does this row sit in the sorted order?" -->
+<!-- Watch the two columns come apart: the longest runs carry the LOWEST opinion ranks. That is the relationship, expressed without a single distance in metres. -->
+<!-- CAUTION, and the next slide fixes it: RANK() gives tied values the SAME rank and then skips (1, 2, 2, 4). Spearman is defined on AVERAGE ranks, so the tied pair should both be 2.5, not 2. The opinion column has a lot of ties — 315 of 400 rows share a value with something — so the next slide does it properly. -->
+
+---
+
+```sql-live db=stats_demo layout=rows height=549
+WITH r AS (   -- the ONLY new part: values -> their average ranks
+  SELECT RANK() OVER (ORDER BY meters_run)
+           + (COUNT(*) OVER (PARTITION BY meters_run) - 1)/2.0 AS x,
+         RANK() OVER (ORDER BY opinion)
+           + (COUNT(*) OVER (PARTITION BY opinion) - 1)/2.0 AS y
+  FROM   marathon_opinion
+),
+stats AS (   -- from here down, identical to the Pearson query
+  SELECT AVG(x) AS mx, AVG(y) AS my FROM r
+),
+sums AS (
+  SELECT SUM((r.x - s.mx) * (r.y - s.my)) AS sxy,
+         SUM(POW(r.x - s.mx, 2))          AS sxx,
+         SUM(POW(r.y - s.my, 2))          AS syy
+  FROM   r CROSS JOIN stats s
+)
+SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS spearman_rho
+FROM   sums;
+```
+
+<!-- Spearman's ρ = Pearson's r on the ranks -->
+<!-- There is no new formula here. `stats` and `sums` are byte-identical to the Pearson query; the ONLY change is that `d` has been replaced by `r`, the ranks. Spearman's rho IS Pearson's r computed on ranks. -->
+<!-- The average-rank correction: RANK() + (COUNT(*) OVER (PARTITION BY value) - 1) / 2 turns 1, 2, 2, 4 into 1, 2.5, 2.5, 4. With 315 tied rows in the opinion column this matters — it is the difference between the textbook definition and an approximation. -->
+<!-- Expect -0.950. Now compare: Pearson on these same raw distances was -0.770, and it only reached -0.948 after we took LOG10. Spearman gets there with NO transform, because it never needed the relationship to be a straight line — only for it to keep going the same way. -->
+
+---
+
+# Pearson or Spearman?
+
+| | **Pearson's r** | **Spearman's ρ** |
+|---|---|---|
+| measures | a **straight-line** relationship | any **one-way** relationship |
+| needs | interval or ratio data | ranks — **ordinal is fine** |
+| outliers | one stray point can swing it | barely moves it |
+| transforms | change it (LOG10: −0.770 → −0.948) | do not change it at all |
+| computed on | the values | the ranks of the values |
+
+<!-- The marathon data made the case twice over. Pearson said -0.770 on the raw distances and -0.948 once we logged them — the SAME data, two different answers, because Pearson was measuring straightness and the raw curve was not straight. Spearman said -0.950 either way: a log is a one-way transform, and rank order is all Spearman looks at. -->
+<!-- The beer slide is the outlier case: 25 points out of 228 held Pearson's r up at 0.127, and dropping them collapsed it to 0.038. Spearman on the same data is 0.106 — it never leaned on those points that hard in the first place. -->
+<!-- Rule of thumb: if you are about to reach for a transform to "straighten" a relationship before correlating it, ask whether you wanted Spearman all along. -->
+
+---
+
 # The same points, at five values of ρ
 
 ![Five scatters from ρ = −1 to ρ = +1](asset:rho-strip.png)
@@ -528,7 +583,7 @@ FROM   sums;
 
 The correlation coefficient is a **ratio**, not a percent.
 
-The number that *is* a share is **R²**, the coefficient of determination — and it is just r squared.
+<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. That is the next two slides. -->
 
 ---
 
@@ -584,7 +639,7 @@ FROM   sums;
 - **ρ = 0.00** — no relationship
 - **ρ = ±1.00** — a perfect relationship
 
-The **sign** tells you the direction. The **absolute value** tells you the strength.
+<!-- The sign tells you the direction; the absolute value tells you the strength. -->
 
 ---
 

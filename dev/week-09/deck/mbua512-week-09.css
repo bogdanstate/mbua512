@@ -788,6 +788,10 @@ section.section .credit { color: #9fb6a8; }
 .reveal .slides section .deck-sql[style*="523px"] { --w9-editor-lines: 16; }
 .reveal .slides section .deck-sql[style*="546px"] { --w9-editor-lines: 17; }
 .reveal .slides section .deck-sql[style*="549px"] { --w9-editor-lines: 18; }
+/* The Spearman slide is the deck's longest query (18 lines) and returns a
+ * SINGLE value, so its in-widget pane is tightened to make the room. The
+ * pinned table below is what the audience reads. */
+.reveal .slides section .deck-sql[style*="549px"] .deck-sql-results-pane { max-height: 46px; }
 
 /* The tables are LOADED on dev now and every query returns rows, so the
  * results pane needs real room rather than the 130px that was enough for an
