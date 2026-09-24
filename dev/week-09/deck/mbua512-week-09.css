@@ -800,3 +800,51 @@ section.section .credit { color: #9fb6a8; }
 .reveal .slides section .deck-sql--rows .deck-sql-results-pane {
   max-height: 150px;
 }
+
+/* --- The Rasinski 1989 Table 2 slides ------------------------------------ *
+ *
+ * Instructor, 2026-09-25: embed Table 2 from Rasinski (1989) on the
+ * "Confusing Question ⇒ Confusing Answer" slide.
+ *
+ * TWO SLIDES, not one, and the reason is measured. The full table is portrait
+ * (1081x1359). In the platform's split layout it rendered 173x217 DEVICE
+ * PIXELS at 1366 wide — the body text, which is the whole point of showing a
+ * table, was unreadable. So the slide carries the WELFARE BLOCK alone
+ * (1081x445, landscape: title, the two column labels, 1984-86) and the full
+ * table follows on its own slide for reference.
+ *
+ * SELECTOR NOTE, and it cost a render to find: the uploader rewrites
+ * `asset:name.png` to a CONTENT-HASH url, so `img[src*="rasinski"]` matches
+ * nothing once deployed. These rules key off the ALT TEXT, which survives
+ * substitution untouched.
+ *
+ * The platform bounds a figure at 0.56 of the stage (0.42 when split), which
+ * is right for a chart beside prose. A table being read needs more, so both
+ * of these are raised — the full-table slide to nearly the whole stage, since
+ * it carries nothing but the figure and its citation.
+ *
+ * SPECIFICITY: these must out-rank rule 2 of this same stylesheet
+ * (`section:not(.split-right) p:has(> img:only-child) > img`, 0.56), which
+ * sits LATER in the file and would otherwise win the tie on source order.
+ * The doubled `:has()` adds specificity without changing what matches.
+ */
+.reveal .slides section:not(.split-right) p:has(> img[alt*="Welfare block"]):has(> img) > img {
+  max-height: calc(var(--deck-stage-h, 720px) * 0.54);
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal .slides section:not(.split-right) p:has(> img[alt*="in full"]):has(> img) > img {
+  /* This slide carries only the figure and its citation, so the table gets
+     as much of the stage as the heading and citation leave. MEASURED, not
+     estimated: at 0.80 the image came out 581px and the slide overran by
+     116px, so the real budget is 465px = 0.645 of the stage. 0.63 leaves a
+     small margin and fits at all three widths. */
+  max-height: calc(var(--deck-stage-h, 720px) * 0.63);
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}

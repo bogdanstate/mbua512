@@ -11,9 +11,9 @@ first — `update.sh` enforces that with a stale guard (see below).
 
 | | |
 |---|---|
-| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 64 slides (52 main + 12 appendix), 18 SQL |
+| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 61 slides (48 main + 13 appendix), 18 SQL |
 | **Dev deck B** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09b-regression — **id 15**, `instructors`, 38 slides, 9 SQL |
-| **PROD deck A** | https://learn.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 4**, `instructors` (unpublished), 64 slides, all 18 SQL slides pinned. Copied 2026-09-23, appendix 2026-09-24 |
+| **PROD deck A** | https://learn.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 4**, `instructors` (unpublished), 61 slides, all 18 SQL slides pinned. Copied 2026-09-23, appendix 2026-09-24 |
 | **Prod deck B** | not copied — deck B stays on dev by instructor decision |
 | **Plan** | `infra/superset-grading/docs/week09-correlation-regression-deck-plan.md` |
 | **Data** | `infra/mysql/week09-gen.py` → `week09.sql`, loaded by `infra/mysql/load-week09.sh`. **Not loaded anywhere yet** |
@@ -123,6 +123,7 @@ Full provenance: `infra/mysql/week09/data/SOURCE.md`.
 
 | asset | origin |
 |---|---|
+| `rasinski-1989-table2.png`, `rasinski-1989-table2-welfare.png` | **Rasinski, K. A. (1989).** *The effect of question wording on public support for government spending.* **Public Opinion Quarterly 53(3), 388–394, Table 2.** © 1989 Oxford University Press / AAPOR, all rights reserved; obtained via JSTOR. Reproduced as a **single table** for classroom teaching under educational fair dealing (**NZ Copyright Act 1994, s 44**), at the instructor's request 2026-09-25. **Not hot-linked** — rendered from the PDF at 220 dpi and uploaded as a deck asset; the welfare version is a crop of the same table. **The source PDF is deliberately NOT in this repo.** Cited in full on both slides |
 | `spurious-correlation.png` | **Tyler Vigen, "Spurious Correlations"** (tylervigen.com/spurious/correlation/1248). Rasterised from the SVG in `../assets/`. Credit line on the slide; the chart carries its own attribution (Box Office Mojo, FBI CJIS) inside the image |
 | `confusion-matrix.png` | **ours.** Replaces the Devopedia/Medium figure the old slide hot-linked (plan Q6) |
 | the other 32 | **ours**, drawn by `figures/make_figures.py` from the datasets above |
@@ -416,3 +417,38 @@ source carried 0, and the first dev re-upload duly wiped dev's. Fixed by:
 
 All 18 pins survived onto both tiers, so no re-pinning was needed after the
 move.
+
+
+---
+
+## 12. Instructor edits, 2026-09-25
+
+**1. Rasinski (1989) Table 2 on "Confusing Question ⇒ Confusing Answer".**
+The full table is portrait (1081×1359) and rendered **173×217 device pixels at
+1366** in the split layout — the body text, which is the entire point of
+showing a table, was unreadable. Taking the pre-authorised fallback, the slide
+now carries the **Welfare block alone** (1081×445 landscape → **667×275 at
+1366, legible**) and the full table follows on its own slide, "(full table)",
+at 0.63 of the stage. Citation under both figures; the teaching point (same
+respondents, same year: "assistance to the poor" ≈64% vs "welfare" ≈20–25%,
+one word, ~40 points) is in the speaker notes.
+
+**2. The Spearman thread moved to the Appendix** — Ranks, Spearman's ρ,
+Pearson or Spearman? — placed after the marathon thread it reads on from, so
+the "see the appendix" pointer was removed and replaced with a "follows on
+from the marathon slides above" note. Main-body ladder re-checked: zero
+one-new-idea violations, and **`OVER` no longer appears in the main body at
+all**.
+
+**3. Five "interpreting" one-liners merged** into one slide, **"Reading ρ"**,
+three bullets, with all five slides' speaker notes folded in.
+
+**Deck A: 61 slides = 48 main + Appendix header + 12 appendix.** All 18 pins
+carried through every step.
+
+**CSS trap found here:** the uploader rewrites `asset:name.png` to a
+**content-hash URL**, so a rule keyed on `img[src*="name"]` matches nothing
+once deployed. Key deck CSS off the **alt text** instead. A second rule then
+lost a specificity tie to this stylesheet's own generic figure bound and had to
+be doubled (`:has(...):has(> img)`) to win — both are commented in the
+stylesheet.

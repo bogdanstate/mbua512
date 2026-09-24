@@ -64,7 +64,7 @@ ALLOWED_FUNCS = {
 
 # The fence ordinals allowed to use `OVER`: the ranks slide and the Spearman
 # assembly. Keyed by position like EXPECTATIONS, and asserted below.
-SPEARMAN_FENCES = {12, 13}
+SPEARMAN_FENCES = {15, 16}
 # Keywords that can be followed by "(" without being a function call.
 SQL_KEYWORDS = {"as", "in", "select", "from", "where", "and", "or", "not",
                 "on", "by", "values", "join", "with", "union",
@@ -199,9 +199,9 @@ def parse_params(info: str) -> dict:
 # ladder is defined by (plan SS5.3), so a reordered deck fails here loudly
 # instead of silently checking the wrong slide.
 EXPECTATIONS = {
-    # Re-keyed 2026-09-24: the formula slide, the marathon thread and the beer
-    # thread moved to deck A's Appendix, so the fence ORDINALS shifted. The
-    # queries and their expected values are unchanged.
+    # Re-keyed 2026-09-25: the Spearman thread joined the formula, marathon
+    # and beer threads in deck A's Appendix, so the ordinals shifted again.
+    # The queries and their expected values are unchanged throughout.
     1: ("rows", 10),
     2: ("rows_max", 10),
     3: ("rows", 10),
@@ -213,14 +213,13 @@ EXPECTATIONS = {
     9: ("ncols", 3),
     10: ("r_is", 0.967),
     11: ("r_is", -0.770),
-    # 12/13: the Spearman pair (RANK() OVER). Still on marathon_opinion --
-    # see the plan: no remaining main-body dataset reproduces the lesson.
-    12: ("rows", 10),
-    13: ("cell", ("spearman_rho", -0.950)),
-    14: ("cells", {"r": 0.967, "r_squared": 0.936}),
+    12: ("cells", {"r": 0.967, "r_squared": 0.936}),
     # --- Appendix (deck A) ------------------------------------------------
-    15: ("cell", ("runners", 400)),
-    16: ("rows", 10),
+    13: ("cell", ("runners", 400)),
+    14: ("rows", 10),
+    # 15/16: the Spearman pair, the deck's only `OVER` usage.
+    15: ("rows", 10),
+    16: ("cell", ("spearman_rho", -0.950)),
     17: ("rows", 10),
     18: ("rows", 10),
     # --- deck B -----------------------------------------------------------
@@ -233,6 +232,7 @@ EXPECTATIONS = {
     25: ("cells", {"r": 0.935, "slope": 3.243}),
     26: ("r_is", 0.800),
 }
+
 
 
 

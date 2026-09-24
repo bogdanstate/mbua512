@@ -54,8 +54,22 @@ When we want to predict:
 ---
 # Confusing Question ⇒ Confusing Answer
 
+![Rasinski 1989 Table 2, Welfare block: 'assistance to the poor' versus 'welfare', 1984-86](asset:rasinski-1989-table2-welfare.png)
+
 If you cannot say plainly what you are asking, no amount of data will answer it.
 
+*Rasinski, K. A. (1989). The effect of question wording on public support for government spending. Public Opinion Quarterly, 53(3), 388–394. Table 2.*
+---
+# Confusing Question ⇒ Confusing Answer (full table)
+
+![Rasinski 1989 Table 2 in full: crime, drug addiction and welfare spending items](asset:rasinski-1989-table2.png)
+
+*Rasinski, K. A. (1989). The effect of question wording on public support for government spending. Public Opinion Quarterly, 53(3), 388–394. Table 2.*
+
+<!-- The full table, for reference. The crime and drug-addiction blocks show the same effect at a smaller size: "halting the rising crime rate" beats "law enforcement" by ~15 points, "drug addiction" beats "drug rehabilitation" by ~15. Welfare is the extreme case, not the only one. -->
+
+<!-- THE POINT: the same GSS respondents, in the same year, say too little is spent on "assistance to the poor" (about 64%) but on "welfare" (about 20-25%). One word, roughly 40 points. The question wording IS the finding. -->
+<!-- Read the Welfare block: "Assistance to the poor" against "Welfare", 1984-86. The rest of the table shows the same effect is not universal — some pairs barely move — which is why it is worth asking WHICH words matter. -->
 <!-- The old deck stacked "Confusing Question / ⇓ / Confusing Answer" vertically, so its arrow pointed DOWN. Here the three parts sit on one line, so the arrow points RIGHT (⇒). The `callout` class is gone too: it draws a 6px blue rule down the left edge of the whole section, which on a slide this short reads as a stray blue bar rather than as emphasis. -->
 ---
 <!-- _class: section -->
@@ -173,9 +187,7 @@ LIMIT  10;
 <!-- _class: section -->
 
 # Negative (Inverse) Relationship
-
 ---
-
 ![Metres run against opinion of running, with a fitted line](asset:marathon-linear.png)
 
 *Marathon runners: the further they ran, the dimmer their view of running. r = −0.770. Synthetic data, authored for this lecture.*
@@ -185,9 +197,7 @@ LIMIT  10;
 <!-- _class: section -->
 
 # No (Weak) Relationship
-
 ---
-
 ![Belgian beer price against expert score, with a nearly flat fitted line](asset:beer-scatter.png)
 
 *228 Belgian beers: paying more buys almost nothing. r = +0.127. Real data: Verstrepen et al. (2024), PMC10966102.*
@@ -345,66 +355,6 @@ FROM   sums;
 <!-- **Change it.** Go back to any scatter in this deck and check its r yourself. -->
 <!-- Answer key — every one of these is just a different `d`: marathon, raw -0.770 marathon, LOG10(x) -0.948 belgian_beer +0.127 belgian_beer WHERE is_influential = 0 +0.038 hotel_fun WHERE humidity < 60 +0.345 hotel_fun WHERE humidity >= 60 +0.847 chocolate_nobel +0.800 fun_survey (during/after) +0.529 -->
 ---
-```sql-live db=stats_demo layout=rows height=414 limit=5
-WITH d AS (
-  SELECT meters_run AS x, opinion AS y
-  FROM   marathon_opinion
-)
-SELECT x,
-       y,
-       RANK() OVER (ORDER BY x) AS rank_x,
-       RANK() OVER (ORDER BY y) AS rank_y
-FROM   d
-LIMIT  10;
-```
-
-<!-- Ranks -->
-<!-- One new idea: instead of the VALUES, use their positions in order. Shortest run = rank 1, next = rank 2, and so on. -->
-<!-- RANK() OVER (ORDER BY x) is a WINDOW function — the first this deck has used. A plain aggregate collapses the rows into one answer; a window function keeps every row and computes something against the whole table alongside it. Here: "where does this row sit in the sorted order?" -->
-<!-- Watch the two columns come apart: the longest runs carry the LOWEST opinion ranks. That is the relationship, expressed without a single distance in metres. -->
-<!-- The marathon data now lives in the Appendix: the scatter, the log transform and the -0.770 -> -0.948 jump are all there. Worth a 20-second detour before this slide, or say "we will come back to this" and point at it. -->
-<!-- CAUTION, and the next slide fixes it: RANK() gives tied values the SAME rank and then skips (1, 2, 2, 4). Spearman is defined on AVERAGE ranks, so the tied pair should both be 2.5, not 2. The opinion column has a lot of ties — 315 of 400 rows share a value with something — so the next slide does it properly. -->
----
-```sql-live db=stats_demo layout=rows height=549
-WITH r AS (   -- the ONLY new part: values -> their average ranks
-  SELECT RANK() OVER (ORDER BY meters_run)
-           + (COUNT(*) OVER (PARTITION BY meters_run) - 1)/2.0 AS x,
-         RANK() OVER (ORDER BY opinion)
-           + (COUNT(*) OVER (PARTITION BY opinion) - 1)/2.0 AS y
-  FROM   marathon_opinion
-),
-stats AS (   -- from here down, identical to the Pearson query
-  SELECT AVG(x) AS mx, AVG(y) AS my FROM r
-),
-sums AS (
-  SELECT SUM((r.x - s.mx) * (r.y - s.my)) AS sxy,
-         SUM(POW(r.x - s.mx, 2))          AS sxx,
-         SUM(POW(r.y - s.my, 2))          AS syy
-  FROM   r CROSS JOIN stats s
-)
-SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS spearman_rho
-FROM   sums;
-```
-
-<!-- Spearman's ρ = Pearson's r on the ranks -->
-<!-- There is no new formula here. `stats` and `sums` are byte-identical to the Pearson query; the ONLY change is that `d` has been replaced by `r`, the ranks. Spearman's rho IS Pearson's r computed on ranks. -->
-<!-- The average-rank correction: RANK() + (COUNT(*) OVER (PARTITION BY value) - 1) / 2 turns 1, 2, 2, 4 into 1, 2.5, 2.5, 4. With 315 tied rows in the opinion column this matters — it is the difference between the textbook definition and an approximation. -->
-<!-- Expect -0.950. Now compare: Pearson on these same raw distances was -0.770, and it only reached -0.948 after we took LOG10. Spearman gets there with NO transform, because it never needed the relationship to be a straight line — only for it to keep going the same way. -->
----
-# Pearson or Spearman?
-
-| | **Pearson's r** | **Spearman's ρ** |
-|---|---|---|
-| measures | a **straight-line** relationship | any **one-way** relationship |
-| needs | interval or ratio data | ranks — **ordinal is fine** |
-| outliers | one stray point can swing it | barely moves it |
-| transforms | change it (LOG10: −0.770 → −0.948) | do not change it at all |
-| computed on | the values | the ranks of the values |
-
-<!-- The marathon data made the case twice over. Pearson said -0.770 on the raw distances and -0.948 once we logged them — the SAME data, two different answers, because Pearson was measuring straightness and the raw curve was not straight. Spearman said -0.950 either way: a log is a one-way transform, and rank order is all Spearman looks at. -->
-<!-- The beer slide is the outlier case: 25 points out of 228 held Pearson's r up at 0.127, and dropping them collapsed it to 0.038. Spearman on the same data is 0.106 — it never leaned on those points that hard in the first place. -->
-<!-- Rule of thumb: if you are about to reach for a transform to "straighten" a relationship before correlating it, ask whether you wanted Spearman all along. -->
----
 # The same points, at five values of ρ
 
 ![Five scatters from ρ = −1 to ρ = +1](asset:rho-strip.png)
@@ -455,33 +405,17 @@ FROM   sums;
 
 # Interpreting Correlation Coefficients
 ---
-# Large and small coefficients
+# Reading ρ
 
-- **Large coefficients** — closer to **±1.00** → stronger relationships
-- **Small coefficients** — close to **0.00** → weaker relationships
----
-# The scale, end to end
-
-- **ρ = 0.00** — no relationship
-- **ρ = ±1.00** — a perfect relationship
+- **±1.00** is a perfect relationship, **0.00** none; the closer to ±1, the stronger.
+- One number: how much a person's score on one variable goes with their score on the other.
+- ρ is **not** a share of anything. **R² = ρ²** is — the share of variation in one variable accounted for by the other; the larger, the better one predicts the other.
 
 <!-- The sign tells you the direction; the absolute value tells you the strength. -->
----
-# What the correlation coefficient is
+<!-- "Average amount that a person's score on one variable is related to another" is the careful phrasing: ρ is about how the two move together across people, not about any one person. -->
+<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The R² slides just before this one make the same point with a picture and with SQL. -->
+<!-- Larger R² means more shared variation, so a prediction of one variable from the other is more accurate. That is the whole practical pay-off of the number. -->
 
-<!-- _class: quote -->
-
-It provides you with a **single summary number** telling you the average amount that a person's score on one variable is related to another variable.
----
-# What it is not
-
-The **correlation coefficient (ρ)** is **not** a measure of the percent of one variable that is accounted for by the other variable.
-
-**R²** (the coefficient of determination) **is** a measure of the percent of variation in one variable that is accounted for by the other.
----
-# Large R² values
-
-...mean **more shared variation**, which means **more accurate predictions** are possible about one variable based on nothing more than knowledge of the other.
 ---
 <!-- _class: section -->
 
@@ -562,6 +496,66 @@ LIMIT  10;
 <!-- LOG10 counts the zeros -->
 <!-- LOG10 counts the zeros: 100 → 2, 10 000 → 4. -->
 <!-- **Change it.** Take `LOG10` away and watch the curve come back. -->
+---
+```sql-live db=stats_demo layout=rows height=414 limit=5
+WITH d AS (
+  SELECT meters_run AS x, opinion AS y
+  FROM   marathon_opinion
+)
+SELECT x,
+       y,
+       RANK() OVER (ORDER BY x) AS rank_x,
+       RANK() OVER (ORDER BY y) AS rank_y
+FROM   d
+LIMIT  10;
+```
+
+<!-- Ranks -->
+<!-- This follows straight on from the marathon slides above: same 400 runners, same two columns. -->
+<!-- One new idea: instead of the VALUES, use their positions in order. Shortest run = rank 1, next = rank 2, and so on. -->
+<!-- RANK() OVER (ORDER BY x) is a WINDOW function — the first this deck has used. A plain aggregate collapses the rows into one answer; a window function keeps every row and computes something against the whole table alongside it. Here: "where does this row sit in the sorted order?" -->
+<!-- Watch the two columns come apart: the longest runs carry the LOWEST opinion ranks. That is the relationship, expressed without a single distance in metres. -->
+<!-- CAUTION, and the next slide fixes it: RANK() gives tied values the SAME rank and then skips (1, 2, 2, 4). Spearman is defined on AVERAGE ranks, so the tied pair should both be 2.5, not 2. The opinion column has a lot of ties — 315 of 400 rows share a value with something — so the next slide does it properly. -->
+---
+```sql-live db=stats_demo layout=rows height=549
+WITH r AS (   -- the ONLY new part: values -> their average ranks
+  SELECT RANK() OVER (ORDER BY meters_run)
+           + (COUNT(*) OVER (PARTITION BY meters_run) - 1)/2.0 AS x,
+         RANK() OVER (ORDER BY opinion)
+           + (COUNT(*) OVER (PARTITION BY opinion) - 1)/2.0 AS y
+  FROM   marathon_opinion
+),
+stats AS (   -- from here down, identical to the Pearson query
+  SELECT AVG(x) AS mx, AVG(y) AS my FROM r
+),
+sums AS (
+  SELECT SUM((r.x - s.mx) * (r.y - s.my)) AS sxy,
+         SUM(POW(r.x - s.mx, 2))          AS sxx,
+         SUM(POW(r.y - s.my, 2))          AS syy
+  FROM   r CROSS JOIN stats s
+)
+SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS spearman_rho
+FROM   sums;
+```
+
+<!-- Spearman's ρ = Pearson's r on the ranks -->
+<!-- There is no new formula here. `stats` and `sums` are byte-identical to the Pearson query; the ONLY change is that `d` has been replaced by `r`, the ranks. Spearman's rho IS Pearson's r computed on ranks. -->
+<!-- The average-rank correction: RANK() + (COUNT(*) OVER (PARTITION BY value) - 1) / 2 turns 1, 2, 2, 4 into 1, 2.5, 2.5, 4. With 315 tied rows in the opinion column this matters — it is the difference between the textbook definition and an approximation. -->
+<!-- Expect -0.950. Now compare: Pearson on these same raw distances was -0.770, and it only reached -0.948 after we took LOG10. Spearman gets there with NO transform, because it never needed the relationship to be a straight line — only for it to keep going the same way. -->
+---
+# Pearson or Spearman?
+
+| | **Pearson's r** | **Spearman's ρ** |
+|---|---|---|
+| measures | a **straight-line** relationship | any **one-way** relationship |
+| needs | interval or ratio data | ranks — **ordinal is fine** |
+| outliers | one stray point can swing it | barely moves it |
+| transforms | change it (LOG10: −0.770 → −0.948) | do not change it at all |
+| computed on | the values | the ranks of the values |
+
+<!-- The marathon data made the case twice over. Pearson said -0.770 on the raw distances and -0.948 once we logged them — the SAME data, two different answers, because Pearson was measuring straightness and the raw curve was not straight. Spearman said -0.950 either way: a log is a one-way transform, and rank order is all Spearman looks at. -->
+<!-- The beer slide is the outlier case: 25 points out of 228 held Pearson's r up at 0.127, and dropping them collapsed it to 0.038. Spearman on the same data is 0.106 — it never leaned on those points that hard in the first place. -->
+<!-- Rule of thumb: if you are about to reach for a transform to "straighten" a relationship before correlating it, ask whether you wanted Spearman all along. -->
 ---
 # Does a dearer beer taste better?
 

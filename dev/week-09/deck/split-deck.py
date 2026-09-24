@@ -219,9 +219,18 @@ def main() -> int:
     built = split(source)
 
     if args.check:
+        import re as _re
+        # The derived decks legitimately carry PINNED RESULTS that `deck.md`
+        # does not: pins are written by the tier and carried back by
+        # `carry-pins.py`. So compare with pin blocks stripped, or a deck that
+        # is perfectly in sync reports STALE the moment it is deployed.
+        pin_re = _re.compile(
+            r"\n*\[//\]: # \(sql-live result:.*?\[//\]: # \(end sql-live result\)",
+            _re.S,
+        )
         for key, text in built.items():
             path = DECKS[key]["out"]
-            if not path.exists() or path.read_text() != text:
+            if not path.exists() or pin_re.sub("", path.read_text()) != pin_re.sub("", text):
                 print(f"STALE: {path.name} — re-run: python3 split-deck.py",
                       file=sys.stderr)
                 return 1
