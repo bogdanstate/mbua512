@@ -64,7 +64,7 @@ ALLOWED_FUNCS = {
 
 # The fence ordinals allowed to use `OVER`: the ranks slide and the Spearman
 # assembly. Keyed by position like EXPECTATIONS, and asserted below.
-SPEARMAN_FENCES = {16, 17}
+SPEARMAN_FENCES = {12, 13}
 # Keywords that can be followed by "(" without being a function call.
 SQL_KEYWORDS = {"as", "in", "select", "from", "where", "and", "or", "not",
                 "on", "by", "values", "join", "with", "union",
@@ -199,30 +199,31 @@ def parse_params(info: str) -> dict:
 # ladder is defined by (plan SS5.3), so a reordered deck fails here loudly
 # instead of silently checking the wrong slide.
 EXPECTATIONS = {
+    # Re-keyed 2026-09-24: the formula slide, the marathon thread and the beer
+    # thread moved to deck A's Appendix, so the fence ORDINALS shifted. The
+    # queries and their expected values are unchanged.
     1: ("rows", 10),
     2: ("rows_max", 10),
     3: ("rows", 10),
     4: ("rows", 10),
-    5: ("cell", ("runners", 400)),
-    6: ("rows", 10),
+    5: ("cells", {"stays": 150, "mean_fun": 5.93, "sd_fun": 2.26}),
+    6: ("cells", {"mx": 28.03, "my": 1067048.95}),
     7: ("rows", 10),
-    8: ("rows", 10),
-    9: ("cells", {"stays": 150, "mean_fun": 5.93, "sd_fun": 2.26}),
-    10: ("cells", {"mx": 28.03, "my": 1067048.95}),
-    11: ("rows", 10),
-    12: ("ncols", 1),
-    13: ("ncols", 3),
-    14: ("r_is", 0.967),
-    15: ("r_is", -0.770),
-    # --- Spearman, added 2026-09-23 -------------------------------------
-    # 16: the ranks slide. RANK() OVER is the deck's FIRST window function;
-    # it lists rows, so only the shape is pinned here.
+    8: ("ncols", 1),
+    9: ("ncols", 3),
+    10: ("r_is", 0.967),
+    11: ("r_is", -0.770),
+    # 12/13: the Spearman pair (RANK() OVER). Still on marathon_opinion --
+    # see the plan: no remaining main-body dataset reproduces the lesson.
+    12: ("rows", 10),
+    13: ("cell", ("spearman_rho", -0.950)),
+    14: ("cells", {"r": 0.967, "r_squared": 0.936}),
+    # --- Appendix (deck A) ------------------------------------------------
+    15: ("cell", ("runners", 400)),
     16: ("rows", 10),
-    # 17: Spearman = Pearson on AVERAGE ranks. -0.950 on the raw marathon
-    # distances, which Pearson only reached (-0.948) after a LOG10 — that
-    # contrast is the slide's whole point, so the value is pinned exactly.
-    17: ("cell", ("spearman_rho", -0.950)),
-    18: ("cells", {"r": 0.967, "r_squared": 0.936}),
+    17: ("rows", 10),
+    18: ("rows", 10),
+    # --- deck B -----------------------------------------------------------
     19: ("cells", {"readings": 120, "with_temperature": 102}),
     20: ("cells", {"r": 0.939, "slope": 3.0}),
     21: ("cells", {"mean_sqm": 94.56, "mean_price": 364.61, "intercept": 80.93}),
@@ -232,6 +233,7 @@ EXPECTATIONS = {
     25: ("cells", {"r": 0.935, "slope": 3.243}),
     26: ("r_is", 0.800),
 }
+
 
 
 

@@ -11,9 +11,9 @@ first — `update.sh` enforces that with a stale guard (see below).
 
 | | |
 |---|---|
-| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 61 slides, 18 SQL |
+| **Dev deck A** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 14**, `instructors`, 64 slides (52 main + 12 appendix), 18 SQL |
 | **Dev deck B** | https://learn-dev.datascie.nz/grading/#/decks/mbua512-week-09b-regression — **id 15**, `instructors`, 38 slides, 9 SQL |
-| **PROD deck A** | https://learn.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 4**, `instructors` (unpublished), 61 slides, all 18 SQL slides pinned. Copied 2026-09-23 |
+| **PROD deck A** | https://learn.datascie.nz/grading/#/decks/mbua512-week-09a-correlation — **id 4**, `instructors` (unpublished), 64 slides, all 18 SQL slides pinned. Copied 2026-09-23, appendix 2026-09-24 |
 | **Prod deck B** | not copied — deck B stays on dev by instructor decision |
 | **Plan** | `infra/superset-grading/docs/week09-correlation-regression-deck-plan.md` |
 | **Data** | `infra/mysql/week09-gen.py` → `week09.sql`, loaded by `infra/mysql/load-week09.sh`. **Not loaded anywhere yet** |
@@ -26,6 +26,7 @@ first — `update.sh` enforces that with a stale guard (see below).
 |---|---|
 | `deck.md` | **the single source** — both decks are derived from it. Carries one `<!-- DECK-SPLIT: b -->` marker |
 | `split-deck.py` | derives `deck-a.md` + `deck-b.md` from `deck.md` (fence-aware; adds each deck's title slide and deck B's recap) |
+| `carry-pins.py` | carries pinned sql-live results from a LIVE deck onto a rebuilt one, matched by SQL text. **Run before any re-upload** — see §11 |
 | `deck-a.md`, `deck-b.md` | **generated — do not edit.** Edit `deck.md` and re-run the split |
 | `assets/` | 34 PNGs, all generated or rasterised here, all under the 4 MiB cap |
 | `mbua512-week-09.css` | the deck stylesheet (course theme + week-09 addendum). One stylesheet per deck; `stylesheet_url` beats front-matter `css:` |
@@ -381,3 +382,37 @@ pinned on prod and **every pinned value equals dev's**.
 To re-upload deck A to prod later, the payload builder and in-pod script are
 tier-agnostic — copy `payload-a.json` + `upload-deck.py` into the prod web pod
 and run the same one-liner. `upload.sh`/`update.sh` deliberately refuse prod.
+
+
+---
+
+## 11. The Appendix, and the pin trap (2026-09-24)
+
+*"let's move the following slides on prod to an appendix: (1) any slides with
+formulae, (2) the log axis slide and marathon example, (3) the beer example."*
+
+Deck A ends with an **Appendix** section of nine slides, each thread in its
+original internal order. Deck A 61 → **64 slides** (52 main + appendix header +
+9 moved + 2 replacement figures). Deck B untouched.
+
+**PINS ARE STORED IN THE DECK SOURCE, AND A REBUILD WIPES THEM.**
+`Pin result` does not keep rows in a side table keyed by slide — it writes them
+into the deck markdown right after the fence, between two invisible
+`[//]: # (…)` lines. The authoring source in this repo has never carried them,
+because pinning happens in a browser against a running tier. So a plain
+`split-deck.py` + PUT **deletes every pinned result**, and on prod that is the
+only data students ever see: a slide with no pin shows them SQL and nothing.
+
+Found the hard way here — prod carried 18 pin blocks, dev carried 0, the local
+source carried 0, and the first dev re-upload duly wiped dev's. Fixed by:
+
+- `carry-pins.py`, which lifts pins from the live deck onto the rebuilt one
+  **matched by SQL text, never by position** (the whole point of an appendix
+  move is that slides move). It refuses to guess: anything ambiguous or
+  unmatched is reported and left alone.
+- `upload.sh` / `update.sh` now do this automatically — they pull the tier's
+  current content and carry its pins before building the payload.
+  `CARRY_PINS=0` opts out for a genuinely new deck.
+
+All 18 pins survived onto both tiers, so no re-pinning was needed after the
+move.

@@ -59,6 +59,34 @@ BASE=$(printf '%s' "$PROBE" | python3 -c 'import json,sys; print(json.load(sys.s
 echo ""
 echo "=== 2/5  building the payload ==="
 python3 split-deck.py
+
+# PINS. `Pin result` writes its rows INTO THE DECK SOURCE on the tier, and the
+# authoring source here has never carried them -- so a plain rebuild+PUT wipes
+# every pinned result. On prod that is the only data students ever see.
+# So: pull the tier's current content first and carry its pins onto the
+# rebuilt deck, matched by SQL text (never by position -- slides move).
+# CARRY_PINS=0 skips this deliberately (e.g. a brand-new deck with no pins).
+if [ "${CARRY_PINS:-1}" = "1" ]; then
+  cat > /tmp/w9-dump.py <<'PYEOF'
+from superset_grading.models import GradingSlideDeck
+from superset.extensions import db
+d = db.session.query(GradingSlideDeck).filter_by(slug="SLUG_HERE").one_or_none()
+open("/tmp/w9-live.md", "w").write((d.content or "") if d else "")
+print("ok")
+PYEOF
+  sed -i "s/SLUG_HERE/${SLUG}/" /tmp/w9-dump.py
+  kubectl --context "$CONTEXT" cp /tmp/w9-dump.py "${NS}/${POD_FOR_PINS:-$(kubectl --context "$CONTEXT" get pods -n "$NS" -l app=superset -o name | head -1 | sed 's|^pod/||')}:/tmp/w9-dump.py" -c superset
+  PODP=$(kubectl --context "$CONTEXT" get pods -n "$NS" -l app=superset -o name | head -1 | sed 's|^pod/||')
+  echo 'exec(open("/tmp/w9-dump.py").read())' \
+    | kubectl --context "$CONTEXT" exec -i -n "$NS" "$PODP" -c superset -- superset shell >/dev/null 2>&1 || true
+  kubectl --context "$CONTEXT" exec -n "$NS" "$PODP" -c superset -- cat /tmp/w9-live.md > /tmp/w9-live.md 2>/dev/null || : > /tmp/w9-live.md
+  if [ -s /tmp/w9-live.md ]; then
+    python3 carry-pins.py --live /tmp/w9-live.md --into "deck-${DECK}.md"
+  else
+    echo "    no live deck content (new deck?) -- nothing to carry"
+  fi
+fi
+
 python3 build-payload.py --deck "$DECK" --slug "$SLUG"
 python3 - "$BASE" "$PAYLOAD" <<'PY'
 import json, sys, pathlib

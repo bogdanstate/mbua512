@@ -83,6 +83,18 @@ FROM   fun_survey
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 20 ms · pinned 2026-09-23)
+
+| person | activity_type | fun_category | fun_during | fun_after |
+| --- | --- | --- | --- | --- |
+| Reese | Cleaning the house | Neutral (Meh during & after) | 3.6 | 5.1 |
+| Morgan | Home renovation project | Type 2 (Miserable during, great after) | 4.6 | 4.8 |
+| Lane | Marathon running | Type 2 (Miserable during, great after) | 3 | 6.5 |
+| Alex | Moving apartments | Type 2 (Miserable during, great after) | 3 | 6.5 |
+| Riley | Overnight backpacking | Type 2 (Miserable during, great after) | 3.6 | 5.6 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Sample of collected data -->
 <!-- Ten rows, so we can see what one response looks like. -->
@@ -98,6 +110,18 @@ FROM   fun_survey
 WHERE  activity_type IN ('Marathon running', 'Cleaning the house')
 LIMIT  10;
 ```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 21 ms · pinned 2026-09-23)
+
+| person | activity_type | fun_during | fun_after |
+| --- | --- | --- | --- |
+| Reese | Cleaning the house | 3.6 | 5.1 |
+| Lane | Marathon running | 3 | 6.5 |
+| Rowan | Cleaning the house | 4.2 | 3.7 |
+| Hayden | Marathon running | 2.2 | 7.8 |
+| Casey | Marathon running | 2.2 | 7.5 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Change one thing -->
@@ -137,6 +161,18 @@ FROM   fire_incidents
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 25 ms · pinned 2026-09-23)
+
+| firefighters | damage_millions |
+| --- | --- |
+| 16 | 0.659931 |
+| 85 | 2.805215 |
+| 40 | 1.423669 |
+| 23 | 1.137954 |
+| 5 | 0.425735 |
+
+[//]: # (end sql-live result)
+
 
 <!-- A column can be a calculation -->
 <!-- A column can be a calculation. Give it a name with AS. -->
@@ -148,6 +184,18 @@ SELECT firefighters,
 FROM   fire_incidents
 LIMIT  10;
 ```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 23 ms · pinned 2026-09-23)
+
+| firefighters | damage_millions |
+| --- | --- |
+| 16 | 0.66 |
+| 85 | 2.81 |
+| 40 | 1.42 |
+| 23 | 1.14 |
+| 5 | 0.43 |
+
+[//]: # (end sql-live result)
 
 
 <!-- ROUND tidies what you see -->
@@ -172,86 +220,21 @@ LIMIT  10;
 
 # Negative (Inverse) Relationship
 ---
-# The further they ran, the dimmer the view
+![Metres run against opinion of running, with a fitted line](asset:marathon-linear.png)
 
-![Metres run against opinion of running, linear scale](asset:marathon-linear.png)
+*Marathon runners: the further they ran, the dimmer their view of running. r = −0.770. Synthetic data, authored for this lecture.*
 
-*r = −0.770. But look at the shape — a straight line is not describing this well.*
----
-```sql-live db=stats_demo layout=rows height=268
-SELECT COUNT(*)                  AS runners,
-       MIN(meters_run)           AS shortest,
-       MAX(meters_run)           AS longest,
-       ROUND(AVG(opinion), 2)    AS mean_opinion
-FROM   marathon_opinion;
-```
-
-
-<!-- How far does the data stretch? -->
-<!-- How far does the data stretch? MIN and MAX are the ends. -->
-<!-- **Run it.** The distances span from about 100 m to a full marathon — more than two orders of magnitude. -->
----
-# Straightening the curve
-
-![Metres run against opinion, log scale](asset:marathon-log.png)
-
-*The same 400 runners. On a log scale, r = −0.948.*
----
-```sql-live db=stats_demo layout=rows limit=5 height=298
-SELECT meters_run,
-       LOG10(meters_run) AS log_meters,
-       opinion
-FROM   marathon_opinion
-LIMIT  10;
-```
-
-
-<!-- LOG10 counts the zeros -->
-<!-- LOG10 counts the zeros: 100 → 2, 10 000 → 4. -->
-<!-- **Change it.** Take `LOG10` away and watch the curve come back. -->
+<!-- The worked example for this type — the SQL, the log transform and why r jumps from -0.770 to -0.948 — is in the Appendix. -->
 ---
 <!-- _class: section -->
 
 # No (Weak) Relationship
 ---
-# Does a dearer beer taste better?
+![Belgian beer price against expert score, with a nearly flat fitted line](asset:beer-scatter.png)
 
-![Belgian beer price against expert score](asset:beer-scatter.png)
+*228 Belgian beers: paying more buys almost nothing. r = +0.127. Real data: Verstrepen et al. (2024), PMC10966102.*
 
-*Real data: Verstrepen et al. (2024), PMC10966102. 228 beers. r = +0.127.*
----
-```sql-live db=stats_demo layout=rows limit=5 height=274
-SELECT avg_price_eur,
-       overall_score
-FROM   belgian_beer
-LIMIT  10;
-```
-
-
-<!-- Look at the beers themselves -->
-<!-- Two columns from a real dataset. Change the y column and look again. -->
-<!-- **Change it.** Try `is_influential` as a third column and see which rows are flagged. -->
----
-# A handful of beers hold the slope up
-
-![The 25 most influential beers highlighted](asset:beer-influential.png)
-
-*The 25 rows with the largest |DFBETA| are flagged in the table as `is_influential = 1`. Drop them and r falls from +0.127 to +0.038.*
-
-<!-- suggestion: DFBETA measures how much the slope moves if you delete one point. Computing it in SQL needs leverage, residuals and a ranked cut-off — three new ideas at once — so the flag was computed when the table was built. Its formula is in the table COMMENT. -->
----
-```sql-live db=stats_demo layout=rows limit=5 height=298
-SELECT avg_price_eur,
-       overall_score
-FROM   belgian_beer
-WHERE  is_influential = 0
-LIMIT  10;
-```
-
-
-<!-- Same query, 25 rows fewer -->
-<!-- Same query, 25 rows fewer. One WHERE changes the answer. -->
-<!-- **Change it.** Later we will compute r for both versions and compare. -->
+<!-- The worked example for this type — the SQL, and what 25 influential beers were doing to that r — is in the Appendix. -->
 ---
 <!-- _class: section -->
 
@@ -271,6 +254,14 @@ FROM   hotel_fun
 WHERE  humidity < 60;
 ```
 
+[//]: # (sql-live result: stats_demo · 1 row · 22 ms · pinned 2026-09-23)
+
+| stays | mean_fun | sd_fun |
+| --- | --- | --- |
+| 150 | 5.93 | 2.26 |
+
+[//]: # (end sql-live result)
+
 
 <!-- The typical distance from the average -->
 <!-- STDDEV_SAMP is the typical distance from the average — the n−1 version, as in week 7. -->
@@ -285,14 +276,6 @@ WHERE  humidity < 60;
 
 <!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function — which is a teaching gift, because it means we have to build it, and building it is the only way to see what it actually measures. -->
 ---
-# The formula
-
-![The Pearson correlation formula](asset:rho-formula.png)
-
-**Top:** for each point, multiply (how far x is from its average) × (how far y is from its average), then add them all up.
-
-**Bottom:** the square root of (sum of squared x-deviations) × (sum of squared y-deviations).
----
 ```sql-live db=stats_demo layout=rows height=337
 WITH d AS (
   SELECT firefighters     AS x,
@@ -303,6 +286,14 @@ SELECT AVG(x) AS mx,
        AVG(y) AS my
 FROM   d;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 27 ms · pinned 2026-09-23)
+
+| mx | my |
+| --- | --- |
+| 28.03 | 1067048.95472 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Step 1 — give a query a name -->
@@ -323,6 +314,18 @@ FROM   d CROSS JOIN stats s
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 26 ms · pinned 2026-09-23)
+
+| dx | dy |
+| --- | --- |
+| -12.03 | -407118.44472 |
+| 56.97 | 1738166.51528 |
+| 11.97 | 356620.39528 |
+| -5.03 | 70904.88528 |
+| -23.03 | -641314.24472 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Step 2 — how far is each row from average? -->
 <!-- CROSS JOIN staples the two averages onto every row. -->
@@ -339,6 +342,14 @@ stats AS (
 SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy
 FROM   d CROSS JOIN stats s;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 33 ms · pinned 2026-09-23)
+
+| sxy |
+| --- |
+| 9935971632.9492 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Step 3 — multiply the deviations and add them up -->
@@ -358,6 +369,14 @@ SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy,
        SUM(POW(d.y - s.my, 2))          AS syy
 FROM   d CROSS JOIN stats s;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 24 ms · pinned 2026-09-23)
+
+| sxy | sxx | syy |
+| --- | --- | --- |
+| 9935971632.9492 | 262422.54999999964 | 402108223076965.94 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Step 4 — square the deviations -->
@@ -381,6 +400,14 @@ sums AS (
 SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS r
 FROM   sums;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 28 ms · pinned 2026-09-23)
+
+| r |
+| --- |
+| 0.967 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Pearson's r, in one query -->
@@ -406,6 +433,14 @@ SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS r
 FROM   sums;
 ```
 
+[//]: # (sql-live result: stats_demo · 1 row · 27 ms · pinned 2026-09-23)
+
+| r |
+| --- |
+| -0.77 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Now point it at anything -->
 <!-- Edit ONLY the first block: the table, the two columns, a WHERE. -->
@@ -425,10 +460,23 @@ FROM   d
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 26 ms · pinned 2026-09-23)
+
+| x | y | rank_x | rank_y |
+| --- | --- | --- | --- |
+| 39488.8 | 0.1 | 397 | 1 |
+| 38219.7 | 0.4 | 393 | 2 |
+| 34667.7 | 0.5 | 388 | 3 |
+| 18805.6 | 0.6 | 352 | 4 |
+| 27961.8 | 0.9 | 377 | 5 |
+
+[//]: # (end sql-live result)
+
 <!-- Ranks -->
 <!-- One new idea: instead of the VALUES, use their positions in order. Shortest run = rank 1, next = rank 2, and so on. -->
 <!-- RANK() OVER (ORDER BY x) is a WINDOW function — the first this deck has used. A plain aggregate collapses the rows into one answer; a window function keeps every row and computes something against the whole table alongside it. Here: "where does this row sit in the sorted order?" -->
 <!-- Watch the two columns come apart: the longest runs carry the LOWEST opinion ranks. That is the relationship, expressed without a single distance in metres. -->
+<!-- The marathon data now lives in the Appendix: the scatter, the log transform and the -0.770 -> -0.948 jump are all there. Worth a 20-second detour before this slide, or say "we will come back to this" and point at it. -->
 <!-- CAUTION, and the next slide fixes it: RANK() gives tied values the SAME rank and then skips (1, 2, 2, 4). Spearman is defined on AVERAGE ranks, so the tied pair should both be 2.5, not 2. The opinion column has a lot of ties — 315 of 400 rows share a value with something — so the next slide does it properly. -->
 ---
 ```sql-live db=stats_demo layout=rows height=549
@@ -451,6 +499,14 @@ sums AS (
 SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS spearman_rho
 FROM   sums;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 32 ms · pinned 2026-09-23)
+
+| spearman_rho |
+| --- |
+| -0.95 |
+
+[//]: # (end sql-live result)
 
 <!-- Spearman's ρ = Pearson's r on the ranks -->
 <!-- There is no new formula here. `stats` and `sums` are byte-identical to the Pearson query; the ONLY change is that `d` has been replaced by `r`, the ranks. Spearman's rho IS Pearson's r computed on ranks. -->
@@ -511,6 +567,14 @@ SELECT ROUND(sxy / SQRT(sxx * syy), 3)        AS r,
        ROUND(POW(sxy / SQRT(sxx * syy), 2), 3) AS r_squared
 FROM   sums;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 29 ms · pinned 2026-09-23)
+
+| r | r_squared |
+| --- | --- |
+| 0.967 | 0.936 |
+
+[//]: # (end sql-live result)
 
 
 <!-- r² in SQL -->
@@ -578,3 +642,136 @@ The **correlation coefficient (ρ)** is **not** a measure of the percent of one 
 The spread of Y should be roughly the **same at every value of X**.
 
 *Example: income varies far more among those with less education than among those with more — so income on education is heteroscedastic.*
+---
+<!-- _class: section -->
+
+# Appendix
+---
+# The formula
+
+![The Pearson correlation formula](asset:rho-formula.png)
+
+**Top:** for each point, multiply (how far x is from its average) × (how far y is from its average), then add them all up.
+
+**Bottom:** the square root of (sum of squared x-deviations) × (sum of squared y-deviations).
+---
+# The further they ran, the dimmer the view
+
+![Metres run against opinion of running, linear scale](asset:marathon-linear.png)
+
+*r = −0.770. But look at the shape — a straight line is not describing this well.*
+---
+```sql-live db=stats_demo layout=rows height=268
+SELECT COUNT(*)                  AS runners,
+       MIN(meters_run)           AS shortest,
+       MAX(meters_run)           AS longest,
+       ROUND(AVG(opinion), 2)    AS mean_opinion
+FROM   marathon_opinion;
+```
+
+[//]: # (sql-live result: stats_demo · 1 row · 21 ms · pinned 2026-09-23)
+
+| runners | shortest | longest | mean_opinion |
+| --- | --- | --- | --- |
+| 400 | 101.6 | 41208.5 | 4.86 |
+
+[//]: # (end sql-live result)
+
+
+<!-- How far does the data stretch? -->
+<!-- How far does the data stretch? MIN and MAX are the ends. -->
+<!-- **Run it.** The distances span from about 100 m to a full marathon — more than two orders of magnitude. -->
+---
+# Straightening the curve
+
+![Metres run against opinion, log scale](asset:marathon-log.png)
+
+*The same 400 runners. On a log scale, r = −0.948.*
+---
+```sql-live db=stats_demo layout=rows limit=5 height=298
+SELECT meters_run,
+       LOG10(meters_run) AS log_meters,
+       opinion
+FROM   marathon_opinion
+LIMIT  10;
+```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 19 ms · pinned 2026-09-23)
+
+| meters_run | log_meters | opinion |
+| --- | --- | --- |
+| 6736.2 | 3.8284149730294397 | 2.2 |
+| 563.9 | 2.7512020945883533 | 6.2 |
+| 394 | 2.595496221825574 | 6.7 |
+| 2801.2 | 3.447344117675954 | 4.8 |
+| 7740.9 | 3.8887914571054716 | 3.1 |
+
+[//]: # (end sql-live result)
+
+
+<!-- LOG10 counts the zeros -->
+<!-- LOG10 counts the zeros: 100 → 2, 10 000 → 4. -->
+<!-- **Change it.** Take `LOG10` away and watch the curve come back. -->
+---
+# Does a dearer beer taste better?
+
+![Belgian beer price against expert score](asset:beer-scatter.png)
+
+*Real data: Verstrepen et al. (2024), PMC10966102. 228 beers. r = +0.127.*
+---
+```sql-live db=stats_demo layout=rows limit=5 height=274
+SELECT avg_price_eur,
+       overall_score
+FROM   belgian_beer
+LIMIT  10;
+```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 19 ms · pinned 2026-09-23)
+
+| avg_price_eur | overall_score |
+| --- | --- |
+| 16.95 | 1.346 |
+| 10.28 | 1.081 |
+| 17.81 | 1.079 |
+| 41.98 | 1.024 |
+| 10.47 | 1.022 |
+
+[//]: # (end sql-live result)
+
+
+<!-- Look at the beers themselves -->
+<!-- Two columns from a real dataset. Change the y column and look again. -->
+<!-- **Change it.** Try `is_influential` as a third column and see which rows are flagged. -->
+---
+# A handful of beers hold the slope up
+
+![The 25 most influential beers highlighted](asset:beer-influential.png)
+
+*The 25 rows with the largest |DFBETA| are flagged in the table as `is_influential = 1`. Drop them and r falls from +0.127 to +0.038.*
+
+<!-- suggestion: DFBETA measures how much the slope moves if you delete one point. Computing it in SQL needs leverage, residuals and a ranked cut-off — three new ideas at once — so the flag was computed when the table was built. Its formula is in the table COMMENT. -->
+---
+```sql-live db=stats_demo layout=rows limit=5 height=298
+SELECT avg_price_eur,
+       overall_score
+FROM   belgian_beer
+WHERE  is_influential = 0
+LIMIT  10;
+```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 25 ms · pinned 2026-09-23)
+
+| avg_price_eur | overall_score |
+| --- | --- |
+| 10.28 | 1.081 |
+| 10.47 | 1.022 |
+| 10.15 | 0.917 |
+| 10.75 | 0.89 |
+| 16.31 | 0.888 |
+
+[//]: # (end sql-live result)
+
+
+<!-- Same query, 25 rows fewer -->
+<!-- Same query, 25 rows fewer. One WHERE changes the answer. -->
+<!-- **Change it.** Later we will compute r for both versions and compare. -->

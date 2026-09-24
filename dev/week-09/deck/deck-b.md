@@ -109,6 +109,7 @@ FROM   sensor_readings;
 <!-- **Run it.** 120 rows, 102 temperatures — the sensor failed 18 times, and every average is over the 102. -->
 <!-- *`sensor_readings` is synthetic, made for this example.* -->
 <!-- This is the only table in the deck with missing values, and it is synthetic for exactly that reason: none of the real or ported datasets has a single gap, and inventing one would have been dishonest. Worth saying "synthetic" out loud here. -->
+<!-- MIN and MAX are incidental here — this slide is about COUNT(*) vs COUNT(temp_c). Since the marathon thread moved to the correlation deck's Appendix, MIN/MAX are no longer formally introduced in the main body; they read on sight, but mention them in passing if anyone asks. -->
 ---
 # Linear regression
 
