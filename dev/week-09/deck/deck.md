@@ -50,7 +50,7 @@ When we want to predict:
 
 ![Tyler Vigen's spurious correlation chart](asset:spurious-correlation.png)
 
-*Source: Tyler Vigen, "Spurious Correlations" (tylervigen.com), used with credit.*
+*Figure: Tyler Vigen, [Spurious Correlations](https://tylervigen.com/spurious/correlation/1248), used with credit.*
 ---
 # Confusing Question ⇒ Confusing Answer
 
@@ -58,13 +58,13 @@ When we want to predict:
 
 If you cannot say plainly what you are asking, no amount of data will answer it.
 
-*Rasinski, K. A. (1989). The effect of question wording on public support for government spending. Public Opinion Quarterly, 53(3), 388–394. Table 2.*
+*Rasinski, K. A. (1989). The effect of question wording on public support for government spending. *Public Opinion Quarterly*, 53(3), 388–394, Table 2. [doi:10.1086/269158](https://doi.org/10.1086/269158)*
 ---
 # Confusing Question ⇒ Confusing Answer (full table)
 
 ![Rasinski 1989 Table 2 in full: crime, drug addiction and welfare spending items](asset:rasinski-1989-table2.png)
 
-*Rasinski, K. A. (1989). The effect of question wording on public support for government spending. Public Opinion Quarterly, 53(3), 388–394. Table 2.*
+*Rasinski, K. A. (1989). The effect of question wording on public support for government spending. *Public Opinion Quarterly*, 53(3), 388–394, Table 2. [doi:10.1086/269158](https://doi.org/10.1086/269158)*
 
 <!-- The full table, for reference. The crime and drug-addiction blocks show the same effect at a smaller size: "halting the rising crime rate" beats "law enforcement" by ~15 points, "drug addiction" beats "drug rehabilitation" by ~15. Welfare is the extreme case, not the only one. -->
 
@@ -144,7 +144,7 @@ LIMIT  10;
 
 ![Firefighters against property damage](asset:fire-firefighters-damage.png)
 
-*Synthetic data, authored for this lecture. r = +0.967.*
+*500 fire incidents. r = +0.967.*
 ---
 ```sql-live db=stats_demo layout=rows limit=5 height=274
 SELECT firefighters,
@@ -190,7 +190,7 @@ LIMIT  10;
 ---
 ![Metres run against opinion of running, with a fitted line](asset:marathon-linear.png)
 
-*Marathon runners: the further they ran, the dimmer their view of running. r = −0.770. Synthetic data, authored for this lecture.*
+*400 marathon runners: the further they ran, the dimmer their view of running. r = −0.770.*
 
 <!-- The worked example for this type — the SQL, the log transform and why r jumps from -0.770 to -0.948 — is in the Appendix. -->
 ---
@@ -200,7 +200,7 @@ LIMIT  10;
 ---
 ![Belgian beer price against expert score, with a nearly flat fitted line](asset:beer-scatter.png)
 
-*228 Belgian beers: paying more buys almost nothing. r = +0.127. Real data: Verstrepen et al. (2024), PMC10966102.*
+*228 Belgian beers: paying more buys almost nothing. r = +0.127. Data: Schreurs et al. (2024), *Nature Communications* 15, 2368. [doi:10.1038/s41467-024-46346-0](https://doi.org/10.1038/s41467-024-46346-0)*
 
 <!-- The worked example for this type — the SQL, and what 25 influential beers were doing to that r — is in the Appendix. -->
 ---
@@ -561,7 +561,7 @@ FROM   sums;
 
 ![Belgian beer price against expert score](asset:beer-scatter.png)
 
-*Real data: Verstrepen et al. (2024), PMC10966102. 228 beers. r = +0.127.*
+*228 Belgian beers: price against expert sensory score. r = +0.127. Data: Schreurs et al. (2024), *Nature Communications* 15, 2368. [doi:10.1038/s41467-024-46346-0](https://doi.org/10.1038/s41467-024-46346-0)*
 ---
 ```sql-live db=stats_demo layout=rows limit=5 height=274
 SELECT avg_price_eur,
@@ -572,7 +572,7 @@ LIMIT  10;
 
 
 <!-- Look at the beers themselves -->
-<!-- Two columns from a real dataset. Change the y column and look again. -->
+<!-- Two columns from the beer data. Change the y column and look again. -->
 <!-- **Change it.** Try `is_influential` as a third column and see which rows are flagged. -->
 ---
 # A handful of beers hold the slope up
@@ -611,7 +611,7 @@ LIMIT  10;
 
 — **Ramsey & Schafer (2002)**
 
-<!-- Gelman, A., & Hill, J. (2007). Data analysis using regression and multilevel/hierarchical models. Cambridge University Press. Ramsey, F. L., & Schafer, D. W. (2002). The statistical sleuth (2nd ed.). Duxbury Press. -->
+<!-- Gelman, A., & Hill, J. (2007). Data analysis using regression and multilevel/hierarchical models. Cambridge University Press. doi:10.1017/CBO9780511790942 — Ramsey, F. L., & Schafer, D. W. (2002). The statistical sleuth (2nd ed.). Duxbury Press. -->
 ---
 # Use regression for: Description
 
@@ -926,7 +926,7 @@ F-statistic: 160.2 on 1 and 23 DF,  p-value: 7.555e-12
 
 "At the country-level, the number of heavy metal bands per capita is positively associated with economic output per capita (.71); level of creativity and entrepreneurship..."
 
-— Florida, R. (2014, May 26). *How heavy metal tracks the wealth of nations.* Bloomberg.
+— Florida, R. (2014, May 26). [How heavy metal tracks the wealth of nations](https://www.bloomberg.com/news/articles/2014-05-26/how-heavy-metal-tracks-the-wealth-of-nations). *Bloomberg*.
 
 🤘
 ---
@@ -967,7 +967,7 @@ Be careful when **predicting the future**, **extrapolating beyond the data**, or
 
 ![Chocolate consumption against Nobel laureates per capita](asset:chocolate-nobel.png)
 
-*r = +0.800. Source: Messerli, F.H. (2012), NEJM 367:1562–1564.*
+*23 countries. r = +0.800. Data: Messerli, F. H. (2012). Chocolate consumption, cognitive function, and Nobel laureates. *New England Journal of Medicine*, 367(16), 1562–1564. [doi:10.1056/NEJMon1211064](https://doi.org/10.1056/NEJMon1211064)*
 ---
 ```sql-live db=stats_demo layout=rows height=500
 WITH d AS (

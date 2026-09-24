@@ -111,7 +111,7 @@ table is the audit trail.
 
 | dataset | status | source | how used |
 |---|---|---|---|
-| `belgian_beer` (228 rows) | **REAL** | Verstrepen et al. (2024), *"The blind men and the elephant: comprehensive chemical and sensory analysis of commercial beers"*, PMC10966102 | price vs sensory score on three slides; cited on each. Extracted from the CSV embedded in the course's own previous deck, not re-downloaded. **Licence not independently verified — see the flag below** |
+| `belgian_beer` (228 rows) | **REAL**, **CC BY 4.0** | Schreurs, M., Piampongsant, S., Roncoroni, M., et al. (2024). Predicting and improving complex beer flavor through machine learning. *Nature Communications*, **15**, 2368. [doi:10.1038/s41467-024-46346-0](https://doi.org/10.1038/s41467-024-46346-0) (PMC10966102) | price vs sensory score, cited on each slide as a clickable DOI. Extracted from the CSV embedded in the course's own previous deck, not re-downloaded. **The title previously recorded here was WRONG** ("The blind men and the elephant…") — corrected 2026-09-25 against Europe PMC and NCBI eutils, which agree. Licence CC BY 4.0 confirmed from the same record |
 | `chocolate_nobel` (23 rows) | **REAL** | Messerli, F.H. (2012), *"Chocolate Consumption, Cognitive Function, and Nobel Laureates"*, NEJM 367:1562–1564 | the closing correlation-is-not-causation slide; cited. Widely reproduced as a teaching dataset (Triola 2018) |
 | `fun_survey`, `fire_incidents`, `marathon_opinion`, `hotel_fun` | synthetic | authored for this lecture; recovered verbatim from the course repo at commit `5049bf2` | unchanged. Slides say "synthetic data, authored for this lecture" |
 | `housing` (50 rows) | synthetic | regenerated from the old deck's own seeded LCG (seed 456) | the regression dataset. Same 50 points the old slides drew |
@@ -139,13 +139,16 @@ Full provenance: `infra/mysql/week09/data/SOURCE.md`.
 own origin — the platform refuses remote images at pin time anyway, and
 hot-linking leaks viewer IPs.
 
-### Still owed
+### Settled
 
-**The beer data's licence is not confirmed.** The article is open access via
-PMC, which usually implies CC BY, but we did not fetch the licence statement
-itself. The slide cites the paper. If the licence turns out to restrict
-redistribution, `belgian_beer` must be pulled from the schema and three slides
-re-pointed. Flagged in the plan (Q6) and in `SOURCE.md`.
+**The beer data is CC BY 4.0** — confirmed 2026-09-25 from the Europe PMC
+record for PMC10966102 (`"license": "cc by"`, `"isOpenAccess": "Y"`). Q6 is
+closed; redistribution with attribution is fine, and every slide that uses the
+data carries the attribution as a clickable DOI.
+
+The same check found the **title recorded against that PMCID was wrong**. See
+`infra/mysql/week09/data/SOURCE.md` for the correction and the two sources that
+agree on the right one.
 
 ---
 

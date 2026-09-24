@@ -842,7 +842,9 @@ section.section .credit { color: #9fb6a8; }
      estimated: at 0.80 the image came out 581px and the slide overran by
      116px, so the real budget is 465px = 0.645 of the stage. 0.63 leaves a
      small margin and fits at all three widths. */
-  max-height: calc(var(--deck-stage-h, 720px) * 0.63);
+  /* 0.61, not 0.63: the citation gained a DOI link on 2026-09-25 and now
+     wraps to a second line, which cost 11px. Measured, not guessed. */
+  max-height: calc(var(--deck-stage-h, 720px) * 0.61);
   max-width: 100%;
   width: auto;
   display: block;

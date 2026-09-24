@@ -208,8 +208,6 @@ def fig_same_r(out):
         ax.set_xticklabels([])
         ax.set_yticklabels([])
         annotate_r(ax, pearson(xx, yy), color=RED)
-    fig.suptitle("Same correlation, different pictures — always plot the data",
-                 fontsize=24, color=INK, y=1.0)
     fig.tight_layout()
     return save(fig, out, "same-r-three-clouds")
 
@@ -242,7 +240,6 @@ def fig_rho_strip(out):
         ax.set_yticklabels([])
         ax.set_xlim(-3.2, 3.2)
         ax.set_ylim(-3.2, 3.2)
-    fig.suptitle("The same points, at five values of ρ", fontsize=23, color=INK, y=1.04)
     fig.tight_layout()
     return save(fig, out, "rho-strip")
 
@@ -299,8 +296,6 @@ def fig_r2_venn(out):
                 transform=ax.transAxes, fontsize=14, color=SOFT, ha="center")
         ax.text(-d / 2 - 0.55, 1.15, "X", fontsize=17, color=BLUE, ha="center")
         ax.text(d / 2 + 0.55, 1.15, "Y", fontsize=17, color=AMBER, ha="center")
-    fig.suptitle("R² is the share of the variation the two variables hold in common",
-                 fontsize=22, color=INK, y=1.02)
     fig.tight_layout()
     return save(fig, out, "r2-overlap")
 
@@ -336,8 +331,6 @@ def fig_fun_scatter(out):
     style_axes(ax)
     d = [float(r["FunDuring"]) for r in rows]
     a = [float(r["FunAfter"]) for r in rows]
-    ax.set_title(f"Type 1 vs Type 2 fun — pooled r = {pearson(d, a):+.2f}",
-                 fontsize=23, color=INK, pad=14)
     ax.legend(fontsize=13, loc="lower right", frameon=False)
     fig.tight_layout()
     return save(fig, out, "fun-scatter")
@@ -356,7 +349,6 @@ def _fire(col_x, col_y, xlabel, ylabel, title, colour, name, out, scale_y=1.0):
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
     style_axes(ax)
-    ax.set_title(title, fontsize=23, color=INK, pad=14)
     annotate_r(ax, pearson(x, y), color=colour)
     fig.tight_layout()
     return save(fig, out, name)
@@ -418,7 +410,6 @@ def fig_marathon(out, logx: bool):
     ax.set_ylabel("Opinion of running (0–9)")
     ax.set_ylim(0, 9)
     style_axes(ax)
-    ax.set_title(title, fontsize=23, color=INK, pad=14)
     annotate_r(ax, r, loc="lower right", color=RED)
     fig.tight_layout()
     return save(fig, out, name)
@@ -461,8 +452,6 @@ def fig_marathon_pair(out):
         ax.set_ylim(0, 9)
         style_axes(ax)
         ax.set_title(f"r = {r:+.3f}", fontsize=20, color=RED, pad=10)
-    fig.suptitle("A straight line only describes one of these",
-                 fontsize=23, color=INK, y=1.01)
     fig.tight_layout()
     return save(fig, out, "marathon-pair")
 
@@ -481,8 +470,6 @@ def fig_beer(out):
     ax.set_xlabel("Average price (EUR)")
     ax.set_ylabel("Overall sensory score (standardised)")
     style_axes(ax)
-    ax.set_title("Belgian beer: price vs expert evaluation", fontsize=23,
-                 color=INK, pad=14)
     annotate_r(ax, pearson(x, y), extra=f"n = {len(rows)}", color=INK)
     fig.tight_layout()
     return save(fig, out, "beer-scatter")
@@ -516,8 +503,6 @@ def fig_beer_influential(out):
     ax.set_xlabel("Average price (EUR)")
     ax.set_ylabel("Overall sensory score (standardised)")
     style_axes(ax)
-    ax.set_title("The 25 points that hold the slope up", fontsize=23,
-                 color=INK, pad=14)
     ax.text(0.03, 0.97,
             f"all 228:  r = {pearson(x, y):+.3f}\nwithout the 25:  r = {pearson(kx, ky):+.3f}",
             transform=ax.transAxes, fontsize=20, color=INK, ha="left", va="top",
@@ -554,8 +539,6 @@ def fig_hotel_pair(out):
                 f"r = {pearson(x, y):+.3f}\nn = {len(grp)}\nSD of fun = {sd:.2f}",
                 transform=ax.transAxes, fontsize=17, color=colour, ha="right",
                 va="bottom", fontweight="bold")
-    fig.suptitle("Same slope, different spread — noise weakens the correlation",
-                 fontsize=23, color=INK, y=1.01)
     fig.tight_layout()
     return save(fig, out, "hotel-pair")
 
@@ -578,8 +561,6 @@ def fig_chocolate(out):
     ax.set_xlim(0, 13.5)
     ax.set_ylim(-2, 35)
     style_axes(ax)
-    ax.set_title("Nobel laureates vs chocolate consumption", fontsize=23,
-                 color=INK, pad=14)
     annotate_r(ax, pearson(ch, nb), color=PURPLE)
     fig.tight_layout()
     return save(fig, out, "chocolate-nobel")
@@ -633,8 +614,6 @@ def fig_scale_types(out):
     ax.set_ylim(-2.1, 1.6)
     ax.axis("off")
 
-    fig.suptitle("Correlation needs both variables on an interval or ratio scale",
-                 fontsize=22, color=INK, y=1.02)
     fig.tight_layout()
     return save(fig, out, "scale-types")
 
@@ -667,8 +646,6 @@ def fig_bivariate_normal(out):
     ax.set_zlim(0, float(Z.max()) * 1.05)
     ax.view_init(elev=32, azim=-56)
     ax.tick_params(colors=SOFT, labelsize=11)
-    ax.set_title(f"A bivariate normal population, ρ = {rho}", fontsize=23,
-                 color=INK, pad=18)
     fig.tight_layout()
     return save(fig, out, "bivariate-normal")
 
@@ -701,8 +678,6 @@ def fig_heteroscedastic(out):
         ax.set_ylabel("Y")
         style_axes(ax)
         ax.set_title(title, fontsize=18, color=INK, pad=10)
-    fig.suptitle("The spread of Y should not depend on X", fontsize=23,
-                 color=INK, y=1.01)
     fig.tight_layout()
     return save(fig, out, "heteroscedasticity")
 
@@ -738,8 +713,6 @@ def fig_two_groups(out):
     ax.set_ylabel("Outcome")
     ax.set_xlim(-0.4, 10.3)
     style_axes(ax)
-    ax.set_title("Description: how much do the groups differ?", fontsize=23,
-                 color=INK, pad=14)
     ax.legend(fontsize=15, loc="upper left", frameon=False)
     fig.tight_layout()
     return save(fig, out, "two-groups")
@@ -774,8 +747,6 @@ def fig_prediction(out):
     ax.set_xlabel("Floor area (m²)")
     ax.set_ylabel("Price (thousands)")
     style_axes(ax)
-    ax.set_title("Prediction: the line gives a value, and a range",
-                 fontsize=23, color=INK, pad=14)
     fig.tight_layout()
     return save(fig, out, "prediction-interval")
 
@@ -794,8 +765,6 @@ def fig_simple_regression(out):
     ax.set_xlim(0, 180)
     ax.set_ylim(0, 650)
     style_axes(ax)
-    ax.set_title("Simple regression: one explanatory variable", fontsize=23,
-                 color=INK, pad=14)
     annotate_r(ax, pearson(xs, ys),
                extra=f"price = {intercept:.2f} + {slope:.3f} × m²", color=RED)
     fig.tight_layout()
@@ -836,8 +805,6 @@ def fig_anatomy(out):
     ax.set_xlim(0, 180)
     ax.set_ylim(0, 650)
     style_axes(ax)
-    ax.set_title("The two numbers a line is made of", fontsize=23, color=INK,
-                 pad=14)
     fig.tight_layout()
     return save(fig, out, "beta-anatomy")
 
@@ -861,8 +828,6 @@ def fig_residuals(out):
     ax.set_xlabel("Floor area (m²)")
     ax.set_ylabel("Price (thousands)")
     style_axes(ax)
-    ax.set_title("Each orange gap is one residual, εᵢ = yᵢ − ŷᵢ", fontsize=23,
-                 color=INK, pad=14)
     ax.legend(fontsize=15, loc="upper left", frameon=False)
     fig.tight_layout()
     return save(fig, out, "residuals")
@@ -897,8 +862,6 @@ def fig_wrong_lines(out):
         style_axes(ax)
         ax.set_xlabel("m²")
         ax.set_ylabel("price (k)")
-    fig.suptitle("Move the line and every residual changes — least squares is the bottom",
-                 fontsize=22, color=INK, y=1.02)
     fig.tight_layout()
     return save(fig, out, "wrong-lines")
 
@@ -930,8 +893,6 @@ def fig_ssr_squares(out):
     ax.set_xlabel("Floor area (m²)")
     ax.set_ylabel("Price (thousands)")
     style_axes(ax)
-    ax.set_title(f"SSR is the total area of these squares — {ssr:,.0f}",
-                 fontsize=23, color=INK, pad=14)
     fig.tight_layout()
     return save(fig, out, "ssr-squares")
 
@@ -968,8 +929,6 @@ def fig_ssr_curve(out):
     ax.set_xlabel("Candidate slope β₁")
     ax.set_ylabel("Sum of squared residuals")
     style_axes(ax)
-    ax.set_title("SSR as the slope moves — one lowest point", fontsize=23,
-                 color=INK, pad=14)
     fig.tight_layout()
     return save(fig, out, "ssr-curve")
 
@@ -1010,9 +969,6 @@ def fig_r2_ssr_tss(out):
     ax.set_xlabel("m²")
     ax.set_ylabel("price (k)")
 
-    fig.suptitle(f"R² = 1 − SSR/TSS = {1 - ssr / tss:.3f}  —  the line removed "
-                 f"{(1 - ssr / tss) * 100:.1f}% of the variation",
-                 fontsize=22, color=INK, y=1.02)
     fig.tight_layout()
     return save(fig, out, "r2-ssr-tss")
 
@@ -1042,8 +998,6 @@ def fig_multiple_regression(out):
         ax.set_zlabel("price (k)", fontsize=12, color=INK, labelpad=6)
         ax.view_init(elev=elev, azim=azim)
         ax.tick_params(colors=SOFT, labelsize=9)
-    fig.suptitle("Two predictors: the line becomes a plane", fontsize=23,
-                 color=INK, y=1.0)
     fig.tight_layout()
     return save(fig, out, "multiple-regression-plane")
 
@@ -1086,8 +1040,6 @@ def fig_r2_inflation(out):
     ax.set_ylabel("Fit")
     ax.set_xticks(ks)
     style_axes(ax)
-    ax.set_title("Add junk predictors: R² only ever goes up", fontsize=23,
-                 color=INK, pad=14)
     ax.legend(fontsize=17, loc="upper left", frameon=False)
     # Headroom for the caption, so it never sits on the curves.
     lo = min(min(adj), min(r2s))
@@ -1138,8 +1090,6 @@ def fig_bands(out):
     ax.set_xlabel("Floor area (m²)")
     ax.set_ylabel("Price (thousands)")
     style_axes(ax)
-    ax.set_title("Confidence bands vs prediction bands", fontsize=23, color=INK,
-                 pad=14)
     ax.legend(fontsize=13, loc="upper left", frameon=False)
     fig.tight_layout()
     return save(fig, out, "confidence-prediction-bands")
@@ -1179,7 +1129,6 @@ def fig_confusion_matrix(out):
             ha="right", va="center")
     ax.plot([2.5, 9.3], [7.1, 7.1], color=SOFT, lw=1.4)
     ax.plot([2.45, 2.45], [0.9, 7.0], color=SOFT, lw=1.4)
-    ax.set_title("The confusion matrix", fontsize=25, color=INK, pad=6)
     fig.tight_layout()
     return save(fig, out, "confusion-matrix")
 
@@ -1241,8 +1190,6 @@ def fig_chihuahua(out):
             "High recall, low precision: the detector says\n"
             "“chihuahua” at almost everything.",
             fontsize=14.5, color=RED, transform=ax.transAxes)
-    fig.suptitle("A detector that finds 90% of chihuahuas — and cries wolf 27 times",
-                 fontsize=21, color=INK, y=1.01)
     fig.tight_layout()
     return save(fig, out, "chihuahua-detector")
 

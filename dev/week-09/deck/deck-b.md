@@ -49,7 +49,7 @@ FROM   sums;
 
 — **Ramsey & Schafer (2002)**
 
-<!-- Gelman, A., & Hill, J. (2007). Data analysis using regression and multilevel/hierarchical models. Cambridge University Press. Ramsey, F. L., & Schafer, D. W. (2002). The statistical sleuth (2nd ed.). Duxbury Press. -->
+<!-- Gelman, A., & Hill, J. (2007). Data analysis using regression and multilevel/hierarchical models. Cambridge University Press. doi:10.1017/CBO9780511790942 — Ramsey, F. L., & Schafer, D. W. (2002). The statistical sleuth (2nd ed.). Duxbury Press. -->
 ---
 # Use regression for: Description
 
@@ -364,7 +364,7 @@ F-statistic: 160.2 on 1 and 23 DF,  p-value: 7.555e-12
 
 "At the country-level, the number of heavy metal bands per capita is positively associated with economic output per capita (.71); level of creativity and entrepreneurship..."
 
-— Florida, R. (2014, May 26). *How heavy metal tracks the wealth of nations.* Bloomberg.
+— Florida, R. (2014, May 26). [How heavy metal tracks the wealth of nations](https://www.bloomberg.com/news/articles/2014-05-26/how-heavy-metal-tracks-the-wealth-of-nations). *Bloomberg*.
 
 🤘
 ---
@@ -405,7 +405,7 @@ Be careful when **predicting the future**, **extrapolating beyond the data**, or
 
 ![Chocolate consumption against Nobel laureates per capita](asset:chocolate-nobel.png)
 
-*r = +0.800. Source: Messerli, F.H. (2012), NEJM 367:1562–1564.*
+*23 countries. r = +0.800. Data: Messerli, F. H. (2012). Chocolate consumption, cognitive function, and Nobel laureates. *New England Journal of Medicine*, 367(16), 1562–1564. [doi:10.1056/NEJMon1211064](https://doi.org/10.1056/NEJMon1211064)*
 ---
 ```sql-live db=stats_demo layout=rows height=500
 WITH d AS (
