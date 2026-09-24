@@ -378,6 +378,88 @@ def fig_fire_structures_damage(out):
                  "fire-structures-damage", out, scale_y=1e6)
 
 
+def fig_fire_distance(out):
+    """Damage against distance from the ignition point to stored flammables.
+
+    The NEGATIVE, LINEAR example (instructor, 2026-09-25), replacing the
+    marathon pair. It needs no transform, which is the point: the marathon
+    example existed partly to motivate LOG10, and this one deliberately does
+    not, so that rung leaves the deck with it.
+    """
+    rows = GEN.fire_rows()
+    x = [r[3] for r in rows]
+    y = [r[2] / 1e6 for r in rows]
+    fig = new_fig((16, 8.2))
+    ax = fig.add_subplot(111)
+    ax.scatter(x, y, s=42, color=BLUE, alpha=0.42, edgecolors="none")
+    slope, intercept = ols(x, y)
+    gx = np.array([min(x), max(x)])
+    ax.plot(gx, intercept + slope * gx, color=BLUE, lw=2.6)
+    ax.set_xlabel("Distance from ignition point to nearest stored flammables (m)")
+    ax.set_ylabel("Property damage ($ millions)")
+    style_axes(ax)
+    annotate_r(ax, pearson(x, y), extra=f"n = {len(rows)}", color=BLUE)
+    fig.tight_layout()
+    return save(fig, out, "fire-distance-damage")
+
+
+def fig_fire_fuel(out):
+    """Damage against the first engine's fuel level: the irrelevant variable."""
+    rows = GEN.fire_rows()
+    x = [r[4] for r in rows]
+    y = [r[2] / 1e6 for r in rows]
+    fig = new_fig((16, 8.2))
+    ax = fig.add_subplot(111)
+    ax.scatter(x, y, s=42, color=SOFT, alpha=0.45, edgecolors="none")
+    slope, intercept = ols(x, y)
+    gx = np.array([min(x), max(x)])
+    ax.plot(gx, intercept + slope * gx, color=SOFT, lw=2.4)
+    ax.set_xlabel("Fuel in the first responding engine at dispatch (%)")
+    ax.set_ylabel("Property damage ($ millions)")
+    style_axes(ax)
+    annotate_r(ax, pearson(x, y), extra=f"n = {len(rows)}", color=INK)
+    fig.tight_layout()
+    return save(fig, out, "fire-fuel-damage")
+
+
+def fig_fire_fuel_influential(out):
+    """The twelve incidents that hold that r up, flagged.
+
+    Same construction as the beer version it replaces: the flagged points are
+    exactly `is_influential = 1`, so the picture and a student's
+    `WHERE is_influential = 0` agree by construction.
+    """
+    rows = GEN.fire_rows()
+    fig = new_fig((16, 8.2))
+    ax = fig.add_subplot(111)
+    keep = [(r[4], r[2] / 1e6) for r in rows if r[5] == 0]
+    flag = [(r[4], r[2] / 1e6) for r in rows if r[5] == 1]
+    ax.scatter([p[0] for p in keep], [p[1] for p in keep], s=42, color=SOFT,
+               alpha=0.40, edgecolors="none", label=f"the other {len(keep)}")
+    ax.scatter([p[0] for p in flag], [p[1] for p in flag], s=130, color=RED,
+               alpha=0.9, edgecolors="none", label="12 highest |DFBETA|")
+    x = [r[4] for r in rows]
+    y = [r[2] / 1e6 for r in rows]
+    slope, intercept = ols(x, y)
+    gx = np.array([min(x), max(x)])
+    ax.plot(gx, intercept + slope * gx, color=SOFT, lw=2.4)
+    kx = [p[0] for p in keep]
+    ky = [p[1] for p in keep]
+    s2, i2 = ols(kx, ky)
+    ax.plot(gx, i2 + s2 * gx, color=GREEN, lw=2.4, ls="--")
+    ax.set_xlabel("Fuel in the first responding engine at dispatch (%)")
+    ax.set_ylabel("Property damage ($ millions)")
+    style_axes(ax)
+    ax.text(0.03, 0.97,
+            f"all {len(rows)}:  r = {pearson(x, y):+.3f}\n"
+            f"without the 12:  r = {pearson(kx, ky):+.3f}",
+            transform=ax.transAxes, fontsize=20, color=INK, ha="left", va="top",
+            fontweight="bold")
+    ax.legend(fontsize=14, loc="lower right", frameon=False)
+    fig.tight_layout()
+    return save(fig, out, "fire-fuel-influential")
+
+
 def fig_marathon(out, logx: bool):
     """Old 23/24: the curve, and the transform that straightens it."""
     rows = read_csv("marathon_opinion.csv")
@@ -1231,6 +1313,9 @@ FIGURES = {
     "fire-firefighters-damage": fig_fire_ff_damage,
     "fire-structures-firefighters": fig_fire_structures_ff,
     "fire-structures-damage": fig_fire_structures_damage,
+    "fire-distance-damage": fig_fire_distance,
+    "fire-fuel-damage": fig_fire_fuel,
+    "fire-fuel-influential": fig_fire_fuel_influential,
     "marathon-linear": fig_marathon_linear,
     "marathon-log": fig_marathon_log,
     "marathon-pair": fig_marathon_pair,

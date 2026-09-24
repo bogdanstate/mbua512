@@ -111,7 +111,6 @@ table is the audit trail.
 
 | dataset | status | source | how used |
 |---|---|---|---|
-| `belgian_beer` (228 rows) | **REAL**, **CC BY 4.0** | Schreurs, M., Piampongsant, S., Roncoroni, M., et al. (2024). Predicting and improving complex beer flavor through machine learning. *Nature Communications*, **15**, 2368. [doi:10.1038/s41467-024-46346-0](https://doi.org/10.1038/s41467-024-46346-0) (PMC10966102) | price vs sensory score, cited on each slide as a clickable DOI. Extracted from the CSV embedded in the course's own previous deck, not re-downloaded. **The title previously recorded here was WRONG** ("The blind men and the elephant…") — corrected 2026-09-25 against Europe PMC and NCBI eutils, which agree. Licence CC BY 4.0 confirmed from the same record |
 | `chocolate_nobel` (23 rows) | **REAL** | Messerli, F.H. (2012), *"Chocolate Consumption, Cognitive Function, and Nobel Laureates"*, NEJM 367:1562–1564 | the closing correlation-is-not-causation slide; cited. Widely reproduced as a teaching dataset (Triola 2018) |
 | `fun_survey`, `fire_incidents`, `marathon_opinion`, `hotel_fun` | synthetic | authored for this lecture; recovered verbatim from the course repo at commit `5049bf2` | unchanged. Slides say "synthetic data, authored for this lecture" |
 | `housing` (50 rows) | synthetic | regenerated from the old deck's own seeded LCG (seed 456) | the regression dataset. Same 50 points the old slides drew |
@@ -141,7 +140,11 @@ hot-linking leaks viewer IPs.
 
 ### Settled
 
-**The beer data is CC BY 4.0** — confirmed 2026-09-25 from the Europe PMC
+**The Belgian beer data is no longer used by any slide** (instructor,
+2026-09-25: the weak-relationship example is now fire engine fuel). The table
+stays in the loader and the database for now, and its provenance is still
+recorded in `infra/mysql/week09/data/SOURCE.md`. Historic note, since it cost a
+verification round: **the beer data is CC BY 4.0** — confirmed 2026-09-25 from the Europe PMC
 record for PMC10966102 (`"license": "cc by"`, `"isOpenAccess": "Y"`). Q6 is
 closed; redistribution with attribution is fine, and every slide that uses the
 data carries the attribution as a clickable DOI.
@@ -455,3 +458,40 @@ once deployed. Key deck CSS off the **alt text** instead. A second rule then
 lost a specificity tie to this stylesheet's own generic figure bound and had to
 be doubled (`:has(...):has(> img)`) to win — both are commented in the
 stylesheet.
+
+
+---
+
+## 13. The fire redesign (instructor, 2026-09-25)
+
+*"generate synthetic data for fire damage as a function of original fire
+ignition point… and instead of Belgian beers, a fire-related example on a
+continuous scale that is otherwise irrelevant to fire damage."*
+
+Both new examples come off the **existing** `fire_incidents` table, which now
+carries three extra columns generated from their own seeded streams — the
+original three are untouched and `r = 0.967` cannot move (tests prove it).
+
+| | replaced | now | r |
+|---|---|---|---:|
+| Negative (Inverse) | marathon: metres run vs opinion | **distance from ignition point to stored flammables** | −0.880 |
+| No (Weak) | Belgian beer price vs score | **engine fuel at dispatch** | +0.119 → −0.015 |
+
+**The LOG10 rung is gone.** The marathon example was curved and needed a
+transform; this one is straight (Pearson −0.880 vs Spearman −0.962, no curve in
+the residuals), so there is nothing to straighten. `LOG10` no longer appears
+anywhere in deck A.
+
+**The r-building chain moved to the Appendix**, first thread, so the appendix
+reads: **r built in SQL → the formula → Spearman → the influential points**.
+
+**A consequence I did not paper over:** with the chain gone from the main body,
+the **r² SQL slide** (which *is* the five-CTE chain) suddenly introduced five
+new ideas at once — `WITH`, `CROSS JOIN`, `SUM`, `POW`, `SQRT`. Rather than
+widen a rung, that slide moved into the appendix beside the chain that teaches
+it. The main-body ladder is now four clean rungs (`WHERE` → `ROUND` →
+`MIN`/`MAX` → `STDDEV_SAMP`) with **zero violations**.
+
+Marathon and beer are gone from the main body entirely. The Spearman thread in
+the appendix still runs on `marathon_opinion` (the table stays loaded) — the
+instructor can retire it separately.

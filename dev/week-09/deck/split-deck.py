@@ -73,7 +73,7 @@ DECKS = {
 # slide, i.e. the last rung of the r ladder. Matched by a distinctive line
 # rather than an index, so inserting a slide in deck A does not silently
 # recap the wrong query.
-RECAP_ANCHOR = "-- <- change only this block"
+RECAP_ANCHOR = "-- <- change only this"
 
 
 def front_matter(title: str) -> str:
@@ -117,11 +117,25 @@ def build_recap(blocks: list[str]) -> str:
     # Point the recap at the dataset the REST of deck B uses (housing), not
     # fire_incidents: deck B is about the regression on floor area and price,
     # and the slope rung two slides later fits exactly these rows.
-    sql = sql.replace(
-        "SELECT meters_run AS x, opinion AS y      -- <- change only this block\n"
-        "  FROM   marathon_opinion",
+    # Re-point the recap at HOUSING, whatever the appendix slide happens to
+    # point at. Deck B's very next rung is `slope = r * sy / sx` on the housing
+    # data, so the recap must put THAT r in the room (0.939) -- not whichever
+    # dataset the correlation deck's payoff slide is currently demonstrating
+    # with. Rewritten 2026-09-25: the payoff moved from marathon to the fire
+    # columns, and a literal marathon->housing replace silently stopped firing,
+    # leaving deck B recapping r on fire data before a housing slope slide.
+    sql = re.sub(
+        r"SELECT .*? AS x, .*? AS y[^\n]*\n\s*FROM\s+\w+",
         "SELECT sqm AS x, price_k AS y\n  FROM   housing",
+        sql,
+        count=1,
+        flags=re.S,
     )
+    if "FROM   housing" not in sql:
+        raise SystemExit(
+            "the recap could not be re-pointed at housing -- check the payoff "
+            "slide's `d` block shape in deck.md"
+        )
     return (
         "```sql-live" + info + "\n" + sql + "```\n\n"
         "<!-- r in SQL — where we got to -->\n"

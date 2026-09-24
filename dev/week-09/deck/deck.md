@@ -188,21 +188,33 @@ LIMIT  10;
 
 # Negative (Inverse) Relationship
 ---
-![Metres run against opinion of running, with a fitted line](asset:marathon-linear.png)
+![Property damage against distance from the ignition point to stored flammables](asset:fire-distance-damage.png)
 
-*400 marathon runners: the further they ran, the dimmer their view of running. r = −0.770.*
+*500 fire incidents. The closer a fire starts to stored flammables, the more it destroys. r = −0.880.*
 
-<!-- The worked example for this type — the SQL, the log transform and why r jumps from -0.770 to -0.948 — is in the Appendix. -->
+<!-- A negative relationship, and a straight one: no transform, no log axis. The SQL is on the next slide. -->
+---
+```sql-live db=stats_demo layout=rows height=344
+SELECT COUNT(*)                            AS incidents,
+       MIN(ignition_to_flammables_m)       AS nearest,
+       MAX(ignition_to_flammables_m)       AS furthest,
+       ROUND(AVG(property_damage), 0)      AS mean_damage
+FROM   fire_incidents;
+```
+
+<!-- How far does the data stretch? -->
+<!-- MIN and MAX are the ends. -->
+<!-- The ignition point ranges from 1 m to 60 m from the nearest flammables. Expect 500 incidents and a mean damage around 1,067,049. -->
 ---
 <!-- _class: section -->
 
 # No (Weak) Relationship
 ---
-![Belgian beer price against expert score, with a nearly flat fitted line](asset:beer-scatter.png)
+![Property damage against the first engine's fuel level at dispatch](asset:fire-fuel-damage.png)
 
-*228 Belgian beers: paying more buys almost nothing. r = +0.127. Data: Schreurs et al. (2024), *Nature Communications* 15, 2368. [doi:10.1038/s41467-024-46346-0](https://doi.org/10.1038/s41467-024-46346-0)*
+*500 fire incidents. Fuel in the first responding engine, against what the fire destroyed. r = +0.119.*
 
-<!-- The worked example for this type — the SQL, and what 25 influential beers were doing to that r — is in the Appendix. -->
+<!-- Fire-related, continuous, carefully recorded — and causally nothing to do with how much burns. A weak correlation that should be zero; the appendix shows why it is not. -->
 ---
 <!-- _class: section -->
 
@@ -235,6 +247,77 @@ WHERE  humidity < 60;
 - Is it **strong** or **weak**?
 
 <!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function — which is a teaching gift, because it means we have to build it, and building it is the only way to see what it actually measures. -->
+---
+# The same points, at five values of ρ
+
+![Five scatters from ρ = −1 to ρ = +1](asset:rho-strip.png)
+
+*The same points in all five panels — only the correlation changes.*
+
+<!-- suggestion: the old deck had a slider here. It resampled on every tick, so the cloud "boiled", and it printed the slider's ρ rather than the sample's r. These panels hold the points fixed and print both. The interactive version returns in a later release. -->
+---
+<!-- _class: callout -->
+
+# ρ = 0.90 is **not** 90%
+
+The correlation coefficient is a **ratio**, not a percent.
+
+<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. That is the next two slides. -->
+---
+# R² is the shared variation
+
+![Two circles overlapping by R²](asset:r2-overlap.png)
+
+*The shared area really is R² — at R² = 0.50 the circles share exactly half their area.*
+---
+<!-- _class: section -->
+
+# Interpreting Correlation Coefficients
+---
+# Reading ρ
+
+- **±1.00** is a perfect relationship, **0.00** none; the closer to ±1, the stronger.
+- One number: how much a person's score on one variable goes with their score on the other.
+- ρ is **not** a share of anything. **R² = ρ²** is — the share of variation in one variable accounted for by the other; the larger, the better one predicts the other.
+
+<!-- The sign tells you the direction; the absolute value tells you the strength. -->
+<!-- "Average amount that a person's score on one variable is related to another" is the careful phrasing: ρ is about how the two move together across people, not about any one person. -->
+<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The R² slides just before this one make the same point with a picture and with SQL. -->
+<!-- Larger R² means more shared variation, so a prediction of one variable from the other is more accurate. That is the whole practical pay-off of the number. -->
+---
+<!-- _class: section -->
+
+# When to use correlations?
+---
+# Both variables on an interval or ratio scale
+
+![Interval and ratio scales compared](asset:scale-types.png)
+
+*An interval scale has equal steps but no true zero. A ratio scale has both.*
+---
+# The traits are normally distributed in the population
+
+![A bivariate normal density surface](asset:bivariate-normal.png)
+
+*Your sample need not look normal. The claim is about the population it came from.*
+---
+# The relationship is best described by a straight line
+
+![Property damage against distance from the ignition point, a straight-line relationship](asset:fire-distance-damage.png)
+
+*This one is straight, so ρ describes it honestly: r = −0.880. If a relationship curves, ρ is the wrong summary for it.*
+---
+# Homoscedasticity
+
+![Constant spread versus fanning spread](asset:heteroscedasticity.png)
+
+The spread of Y should be roughly the **same at every value of X**.
+
+*Example: income varies far more among those with less education than among those with more — so income on education is heteroscedastic.*
+---
+<!-- _class: section -->
+
+# Appendix
 ---
 ```sql-live db=stats_demo layout=rows height=337
 WITH d AS (
@@ -333,8 +416,8 @@ FROM   sums;
 ---
 ```sql-live db=stats_demo layout=rows height=500
 WITH d AS (
-  SELECT meters_run AS x, opinion AS y      -- <- change only this block
-  FROM   marathon_opinion
+  SELECT ignition_to_flammables_m AS x, property_damage AS y   -- <- change only this
+  FROM   fire_incidents
 ),
 stats AS (
   SELECT AVG(x) AS mx, AVG(y) AS my FROM d
@@ -353,29 +436,7 @@ FROM   sums;
 <!-- Now point it at anything -->
 <!-- Edit ONLY the first block: the table, the two columns, a WHERE. -->
 <!-- **Change it.** Go back to any scatter in this deck and check its r yourself. -->
-<!-- Answer key — every one of these is just a different `d`: marathon, raw -0.770 marathon, LOG10(x) -0.948 belgian_beer +0.127 belgian_beer WHERE is_influential = 0 +0.038 hotel_fun WHERE humidity < 60 +0.345 hotel_fun WHERE humidity >= 60 +0.847 chocolate_nobel +0.800 fun_survey (during/after) +0.529 -->
----
-# The same points, at five values of ρ
-
-![Five scatters from ρ = −1 to ρ = +1](asset:rho-strip.png)
-
-*The same points in all five panels — only the correlation changes.*
-
-<!-- suggestion: the old deck had a slider here. It resampled on every tick, so the cloud "boiled", and it printed the slider's ρ rather than the sample's r. These panels hold the points fixed and print both. The interactive version returns in a later release. -->
----
-<!-- _class: callout -->
-
-# ρ = 0.90 is **not** 90%
-
-The correlation coefficient is a **ratio**, not a percent.
-
-<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. That is the next two slides. -->
----
-# R² is the shared variation
-
-![Two circles overlapping by R²](asset:r2-overlap.png)
-
-*The shared area really is R² — at R² = 0.50 the circles share exactly half their area.*
+<!-- Answer key — every one of these is just a different `d`: fire distance/damage -0.880; fire fuel/damage +0.119; fire fuel/damage WHERE is_influential = 0  -0.015; hotel_fun WHERE humidity < 60  +0.345; WHERE humidity >= 60  +0.847; fun_survey (during/after) +0.529. -->
 ---
 ```sql-live db=stats_demo layout=rows height=523
 WITH d AS (
@@ -399,57 +460,7 @@ FROM   sums;
 
 <!-- r² in SQL -->
 <!-- r = 0.90 is not 90 %. r² = 0.81 is the shared share. -->
-<!-- **Change it.** Point `d` at the beer table: r = 0.127, but r² = 0.016. -->
----
-<!-- _class: section -->
-
-# Interpreting Correlation Coefficients
----
-# Reading ρ
-
-- **±1.00** is a perfect relationship, **0.00** none; the closer to ±1, the stronger.
-- One number: how much a person's score on one variable goes with their score on the other.
-- ρ is **not** a share of anything. **R² = ρ²** is — the share of variation in one variable accounted for by the other; the larger, the better one predicts the other.
-
-<!-- The sign tells you the direction; the absolute value tells you the strength. -->
-<!-- "Average amount that a person's score on one variable is related to another" is the careful phrasing: ρ is about how the two move together across people, not about any one person. -->
-<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The R² slides just before this one make the same point with a picture and with SQL. -->
-<!-- Larger R² means more shared variation, so a prediction of one variable from the other is more accurate. That is the whole practical pay-off of the number. -->
-
----
-<!-- _class: section -->
-
-# When to use correlations?
----
-# Both variables on an interval or ratio scale
-
-![Interval and ratio scales compared](asset:scale-types.png)
-
-*An interval scale has equal steps but no true zero. A ratio scale has both.*
----
-# The traits are normally distributed in the population
-
-![A bivariate normal density surface](asset:bivariate-normal.png)
-
-*Your sample need not look normal. The claim is about the population it came from.*
----
-# The relationship is best described by a straight line
-
-![Marathon data on linear and log scales, side by side](asset:marathon-pair.png)
-
-*If the relationship is curved, Pearson's ρ is the wrong summary. Should you use ρ on the left?*
----
-# Homoscedasticity
-
-![Constant spread versus fanning spread](asset:heteroscedasticity.png)
-
-The spread of Y should be roughly the **same at every value of X**.
-
-*Example: income varies far more among those with less education than among those with more — so income on education is heteroscedastic.*
----
-<!-- _class: section -->
-
-# Appendix
+<!-- **Change it.** Point `d` at the engine-fuel column: r = +0.119, but r² = 0.014 — a hundredth of the variation. -->
 ---
 # The formula
 
@@ -458,44 +469,6 @@ The spread of Y should be roughly the **same at every value of X**.
 **Top:** for each point, multiply (how far x is from its average) × (how far y is from its average), then add them all up.
 
 **Bottom:** the square root of (sum of squared x-deviations) × (sum of squared y-deviations).
----
-# The further they ran, the dimmer the view
-
-![Metres run against opinion of running, linear scale](asset:marathon-linear.png)
-
-*r = −0.770. But look at the shape — a straight line is not describing this well.*
----
-```sql-live db=stats_demo layout=rows height=268
-SELECT COUNT(*)                  AS runners,
-       MIN(meters_run)           AS shortest,
-       MAX(meters_run)           AS longest,
-       ROUND(AVG(opinion), 2)    AS mean_opinion
-FROM   marathon_opinion;
-```
-
-
-<!-- How far does the data stretch? -->
-<!-- How far does the data stretch? MIN and MAX are the ends. -->
-<!-- **Run it.** The distances span from about 100 m to a full marathon — more than two orders of magnitude. -->
----
-# Straightening the curve
-
-![Metres run against opinion, log scale](asset:marathon-log.png)
-
-*The same 400 runners. On a log scale, r = −0.948.*
----
-```sql-live db=stats_demo layout=rows limit=5 height=298
-SELECT meters_run,
-       LOG10(meters_run) AS log_meters,
-       opinion
-FROM   marathon_opinion
-LIMIT  10;
-```
-
-
-<!-- LOG10 counts the zeros -->
-<!-- LOG10 counts the zeros: 100 → 2, 10 000 → 4. -->
-<!-- **Change it.** Take `LOG10` away and watch the curve come back. -->
 ---
 ```sql-live db=stats_demo layout=rows height=414 limit=5
 WITH d AS (
@@ -554,47 +527,28 @@ FROM   sums;
 | computed on | the values | the ranks of the values |
 
 <!-- The marathon data made the case twice over. Pearson said -0.770 on the raw distances and -0.948 once we logged them — the SAME data, two different answers, because Pearson was measuring straightness and the raw curve was not straight. Spearman said -0.950 either way: a log is a one-way transform, and rank order is all Spearman looks at. -->
-<!-- The beer slide is the outlier case: 25 points out of 228 held Pearson's r up at 0.127, and dropping them collapsed it to 0.038. Spearman on the same data is 0.106 — it never leaned on those points that hard in the first place. -->
+<!-- The engine-fuel slide is the outlier case: 12 incidents out of 500 hold Pearson's r up at +0.119, and dropping them collapses it to -0.015. Spearman is far less impressed by a handful of extreme points, because it only sees their rank. -->
 <!-- Rule of thumb: if you are about to reach for a transform to "straighten" a relationship before correlating it, ask whether you wanted Spearman all along. -->
 ---
-# Does a dearer beer taste better?
+![The twelve incidents that hold up the fuel correlation](asset:fire-fuel-influential.png)
 
-![Belgian beer price against expert score](asset:beer-scatter.png)
+*The 12 rows flagged `is_influential = 1` are the largest |DFBETA| for the slope. Drop them and r falls from +0.119 to −0.015.*
 
-*228 Belgian beers: price against expert sensory score. r = +0.127. Data: Schreurs et al. (2024), *Nature Communications* 15, 2368. [doi:10.1038/s41467-024-46346-0](https://doi.org/10.1038/s41467-024-46346-0)*
+<!-- A handful of points hold the slope up -->
+<!-- Twelve of 500 incidents produce the entire apparent relationship between engine fuel and damage: the twelve worst fires, which happened to dispatch with near-full tanks. -->
+<!-- Computing DFBETA in SQL needs leverage, residuals and a ranked cut-off — three new ideas at once — so the flag ships with the data. Its formula is in the table COMMENT. -->
 ---
-```sql-live db=stats_demo layout=rows limit=5 height=274
-SELECT avg_price_eur,
-       overall_score
-FROM   belgian_beer
-LIMIT  10;
-```
-
-
-<!-- Look at the beers themselves -->
-<!-- Two columns from the beer data. Change the y column and look again. -->
-<!-- **Change it.** Try `is_influential` as a third column and see which rows are flagged. -->
----
-# A handful of beers hold the slope up
-
-![The 25 most influential beers highlighted](asset:beer-influential.png)
-
-*The 25 rows with the largest |DFBETA| are flagged in the table as `is_influential = 1`. Drop them and r falls from +0.127 to +0.038.*
-
-<!-- suggestion: DFBETA measures how much the slope moves if you delete one point. Computing it in SQL needs leverage, residuals and a ranked cut-off — three new ideas at once — so the flag was computed when the table was built. Its formula is in the table COMMENT. -->
----
-```sql-live db=stats_demo layout=rows limit=5 height=298
-SELECT avg_price_eur,
-       overall_score
-FROM   belgian_beer
+```sql-live db=stats_demo layout=rows height=344 limit=5
+SELECT engine_fuel_pct,
+       property_damage
+FROM   fire_incidents
 WHERE  is_influential = 0
 LIMIT  10;
 ```
 
-
-<!-- Same query, 25 rows fewer -->
-<!-- Same query, 25 rows fewer. One WHERE changes the answer. -->
-<!-- **Change it.** Later we will compute r for both versions and compare. -->
+<!-- Same query, 12 rows fewer -->
+<!-- One WHERE changes the answer. -->
+<!-- Point the r query at this and you get -0.015 instead of +0.119. -->
 ---
 <!-- DECK-SPLIT: b -->
 <!-- _class: section -->

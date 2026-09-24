@@ -64,7 +64,7 @@ ALLOWED_FUNCS = {
 
 # The fence ordinals allowed to use `OVER`: the ranks slide and the Spearman
 # assembly. Keyed by position like EXPECTATIONS, and asserted below.
-SPEARMAN_FENCES = {15, 16}
+SPEARMAN_FENCES = {14, 15}
 # Keywords that can be followed by "(" without being a function call.
 SQL_KEYWORDS = {"as", "in", "select", "from", "where", "and", "or", "not",
                 "on", "by", "values", "join", "with", "union",
@@ -136,12 +136,14 @@ def build_db() -> sqlite3.Connection:
                       float(r["FunDuring"]), float(r["FunAfter"]))
                      for r in read_csv("type1_vs_type2_fun.csv")])
 
+    # Six columns since 2026-09-25: the three from the CSV plus the two new
+    # continuous ones and the influence flag, all from GEN.fire_rows().
     cur.execute("CREATE TABLE fire_incidents (structures_burned REAL, "
-                "firefighters INTEGER, property_damage REAL)")
-    cur.executemany("INSERT INTO fire_incidents VALUES (?,?,?)",
-                    [(float(r["structures_burned"]), int(r["firefighters"]),
-                      float(r["property_damage"]))
-                     for r in read_csv("fire_incidents_synthetic.csv")])
+                "firefighters INTEGER, property_damage REAL, "
+                "ignition_to_flammables_m REAL, engine_fuel_pct REAL, "
+                "is_influential INTEGER)")
+    cur.executemany("INSERT INTO fire_incidents VALUES (?,?,?,?,?,?)",
+                    GEN.fire_rows())
 
     cur.execute("CREATE TABLE marathon_opinion (meters_run REAL, opinion REAL)")
     cur.executemany("INSERT INTO marathon_opinion VALUES (?,?)",
@@ -199,39 +201,39 @@ def parse_params(info: str) -> dict:
 # ladder is defined by (plan SS5.3), so a reordered deck fails here loudly
 # instead of silently checking the wrong slide.
 EXPECTATIONS = {
-    # Re-keyed 2026-09-25: the Spearman thread joined the formula, marathon
-    # and beer threads in deck A's Appendix, so the ordinals shifted again.
-    # The queries and their expected values are unchanged throughout.
+    # Re-keyed 2026-09-25 (fire redesign + the r-chain moved to the appendix).
     1: ("rows", 10),
     2: ("rows_max", 10),
     3: ("rows", 10),
     4: ("rows", 10),
-    5: ("cells", {"stays": 150, "mean_fun": 5.93, "sd_fun": 2.26}),
-    6: ("cells", {"mx": 28.03, "my": 1067048.95}),
-    7: ("rows", 10),
-    8: ("ncols", 1),
-    9: ("ncols", 3),
-    10: ("r_is", 0.967),
-    11: ("r_is", -0.770),
-    12: ("cells", {"r": 0.967, "r_squared": 0.936}),
-    # --- Appendix (deck A) ------------------------------------------------
-    13: ("cell", ("runners", 400)),
+    # 5: the new negative/linear example's MIN/MAX rung.
+    5: ("cells", {"incidents": 500, "nearest": 1.0, "furthest": 60.0}),
+    6: ("cells", {"stays": 150, "mean_fun": 5.93, "sd_fun": 2.26}),
+    # --- Appendix: the r chain, moved here in the same pass ---------------
+    7: ("cells", {"mx": 28.03, "my": 1067048.95}),
+    8: ("rows", 10),
+    9: ("ncols", 1),
+    10: ("ncols", 3),
+    11: ("r_is", 0.967),
+    # 12: "point it at anything", now pointed at the fire distance column.
+    12: ("r_is", -0.880),
+    13: ("cells", {"r": 0.967, "r_squared": 0.936}),
+    # 14/15: Spearman, still on marathon_opinion (the table stays loaded).
     14: ("rows", 10),
-    # 15/16: the Spearman pair, the deck's only `OVER` usage.
-    15: ("rows", 10),
-    16: ("cell", ("spearman_rho", -0.950)),
-    17: ("rows", 10),
-    18: ("rows", 10),
+    15: ("cell", ("spearman_rho", -0.950)),
+    # 16: the influential-points thread, now on engine fuel.
+    16: ("rows", 10),
     # --- deck B -----------------------------------------------------------
-    19: ("cells", {"readings": 120, "with_temperature": 102}),
-    20: ("cells", {"r": 0.939, "slope": 3.0}),
-    21: ("cells", {"mean_sqm": 94.56, "mean_price": 364.61, "intercept": 80.93}),
-    22: ("rows", 10),
-    23: ("cell", ("ssr", 93044)),
-    24: ("cells", {"ssr": 93044, "sst": 791883, "r_squared": 0.883}),
-    25: ("cells", {"r": 0.935, "slope": 3.243}),
-    26: ("r_is", 0.800),
+    17: ("cells", {"readings": 120, "with_temperature": 102}),
+    18: ("cells", {"r": 0.939, "slope": 3.0}),
+    19: ("cells", {"mean_sqm": 94.56, "mean_price": 364.61, "intercept": 80.93}),
+    20: ("rows", 10),
+    21: ("cell", ("ssr", 93044)),
+    22: ("cells", {"ssr": 93044, "sst": 791883, "r_squared": 0.883}),
+    23: ("cells", {"r": 0.935, "slope": 3.243}),
+    24: ("r_is", 0.800),
 }
+
 
 
 
