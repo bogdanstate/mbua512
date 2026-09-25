@@ -24,11 +24,18 @@ title: "MBUA512 — Week 9: Correlation & Regression"
 - Shifting from averages, levels and variances to the **degree of relationships**
 - Key concepts: **correlation** and **covariance**
 ---
-# Same correlation, different pictures
+# The Plan for Today
+
+- Correlation Basics (20 minutes)
+- Correlation Coefficient Interpretation (20 minutes)
+- The R^2 measure (10 minutes)
+- Workshop
+
+---
 
 ![Three point clouds with very different shapes and similar correlation](asset:same-r-three-clouds.png)
 
-*A single number cannot tell you what a relationship looks like. Always plot the data.*
+<!-- A single number cannot tell you what a relationship looks like. Always plot the data. -->
 
 <!-- suggestion: the old deck morphed 2,000 points between these three shapes. The three end states are the teaching point; the animation was decoration. In a later release this becomes an interactive widget. -->
 ---
@@ -46,7 +53,7 @@ When we want to predict:
 
 # 1. Formulate a Clear Question
 ---
-# A confusing question gets a confusing answer
+# Confusing Question ⇒ Confusing Answer
 
 ![Tyler Vigen's spurious correlation chart](asset:spurious-correlation.png)
 
@@ -60,7 +67,7 @@ If you cannot say plainly what you are asking, no amount of data will answer it.
 
 *Rasinski, K. A. (1989). The effect of question wording on public support for government spending. *Public Opinion Quarterly*, 53(3), 388–394, Table 2. [doi:10.1086/269158](https://doi.org/10.1086/269158)*
 ---
-# Confusing Question ⇒ Confusing Answer (full table)
+# Confusing Question ⇒ Confusing Answer
 
 ![Rasinski 1989 Table 2 in full: crime, drug addiction and welfare spending items](asset:rasinski-1989-table2.png)
 
@@ -74,7 +81,7 @@ If you cannot say plainly what you are asking, no amount of data will answer it.
 ---
 <!-- _class: section -->
 
-# 2. Identify Two Variables to Answer Your Question
+# 2. Identify Variables
 ---
 # Fun During, and Fun After
 
@@ -87,7 +94,7 @@ Two measurements on the same person:
 ---
 <!-- _class: section -->
 
-# 3. Get Information from a Random Sample of People
+# 3. Acquire Data
 ---
 ```sql-live db=stats_demo layout=rows limit=5 height=344
 SELECT person,
@@ -122,7 +129,7 @@ LIMIT  10;
 ---
 <!-- _class: section -->
 
-# 4. Graph Responses Using a Scatterplot
+# 4. Explore Data
 ---
 # Type 1 vs Type 2 fun
 
@@ -170,14 +177,10 @@ LIMIT  10;
 <!-- ROUND tidies what you see. The stored value does not change. -->
 <!-- **Change it.** Make the `2` a `0` and run it again. -->
 ---
-# But what is really going on?
-
 ![Structures burned against firefighters](asset:fire-structures-firefighters.png)
 
 *Bigger fires draw more firefighters. r = +0.979.*
 ---
-# And the same cause drives the damage
-
 ![Structures burned against property damage](asset:fire-structures-damage.png)
 
 *Bigger fires do more damage. r = +0.987.*
@@ -220,11 +223,9 @@ FROM   fire_incidents;
 
 # 5. Correlation
 ---
-# One relationship, or two?
-
 ![Hotel cost against fun, split by humidity](asset:hotel-pair.png)
 
-*The same relationship in both panels — but the spread is very different, and so is r.*
+<!-- The same relationship in both panels — but the spread is very different, and so is r. -->
 ---
 ```sql-live db=stats_demo layout=rows height=268
 SELECT COUNT(*)                                AS stays,
@@ -246,7 +247,7 @@ WHERE  humidity < 60;
 - If so, is it **positive** or **negative**?
 - Is it **strong** or **weak**?
 
-<!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function — which is a teaching gift, because it means we have to build it, and building it is the only way to see what it actually measures. -->
+<!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function, so the number has to be built from plain aggregates — which is the only way to see what it actually measures. The finished recipe is a few slides on, after R²; the Appendix builds it one line at a time. -->
 ---
 # The same points, at five values of ρ
 
@@ -262,13 +263,38 @@ WHERE  humidity < 60;
 
 The correlation coefficient is a **ratio**, not a percent.
 
-<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. That is the next two slides. -->
+<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. The next slide shows it as shared area; the one after computes both in SQL. -->
 ---
 # R² is the shared variation
 
 ![Two circles overlapping by R²](asset:r2-overlap.png)
 
 *The shared area really is R² — at R² = 0.50 the circles share exactly half their area.*
+---
+```sql-live db=stats_demo layout=rows height=523
+WITH d AS (
+  SELECT firefighters AS x, property_damage AS y
+  FROM   fire_incidents
+),
+stats AS (
+  SELECT AVG(x) AS mx, AVG(y) AS my FROM d
+),
+sums AS (
+  SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy,
+         SUM(POW(d.x - s.mx, 2))          AS sxx,
+         SUM(POW(d.y - s.my, 2))          AS syy
+  FROM   d CROSS JOIN stats s
+)
+SELECT ROUND(sxy / SQRT(sxx * syy), 3)        AS r,
+       ROUND(POW(sxy / SQRT(sxx * syy), 2), 3) AS r_squared
+FROM   sums;
+```
+
+
+<!-- r² in SQL -->
+<!-- This is the whole recipe on one slide. The Appendix builds it one line at a time — WITH, then the deviations, then the sum of products, then POW, then SQRT — if anyone wants to see where each piece came from. -->
+<!-- r = 0.90 is not 90 %. r² = 0.81 is the shared share. -->
+<!-- **Change it.** Point `d` at the engine-fuel column: r = +0.119, but r² = 0.014 — a hundredth of the variation. -->
 ---
 <!-- _class: section -->
 
@@ -282,7 +308,7 @@ The correlation coefficient is a **ratio**, not a percent.
 
 <!-- The sign tells you the direction; the absolute value tells you the strength. -->
 <!-- "Average amount that a person's score on one variable is related to another" is the careful phrasing: ρ is about how the two move together across people, not about any one person. -->
-<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The R² slides just before this one make the same point with a picture and with SQL. -->
+<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The two slides just before this one make the same point: the shared-area picture, then the same two numbers computed in SQL. -->
 <!-- Larger R² means more shared variation, so a prediction of one variable from the other is more accurate. That is the whole practical pay-off of the number. -->
 ---
 <!-- _class: section -->
@@ -437,30 +463,6 @@ FROM   sums;
 <!-- Edit ONLY the first block: the table, the two columns, a WHERE. -->
 <!-- **Change it.** Go back to any scatter in this deck and check its r yourself. -->
 <!-- Answer key — every one of these is just a different `d`: fire distance/damage -0.880; fire fuel/damage +0.119; fire fuel/damage WHERE is_influential = 0  -0.015; hotel_fun WHERE humidity < 60  +0.345; WHERE humidity >= 60  +0.847; fun_survey (during/after) +0.529. -->
----
-```sql-live db=stats_demo layout=rows height=523
-WITH d AS (
-  SELECT firefighters AS x, property_damage AS y
-  FROM   fire_incidents
-),
-stats AS (
-  SELECT AVG(x) AS mx, AVG(y) AS my FROM d
-),
-sums AS (
-  SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy,
-         SUM(POW(d.x - s.mx, 2))          AS sxx,
-         SUM(POW(d.y - s.my, 2))          AS syy
-  FROM   d CROSS JOIN stats s
-)
-SELECT ROUND(sxy / SQRT(sxx * syy), 3)        AS r,
-       ROUND(POW(sxy / SQRT(sxx * syy), 2), 3) AS r_squared
-FROM   sums;
-```
-
-
-<!-- r² in SQL -->
-<!-- r = 0.90 is not 90 %. r² = 0.81 is the shared share. -->
-<!-- **Change it.** Point `d` at the engine-fuel column: r = +0.119, but r² = 0.014 — a hundredth of the variation. -->
 ---
 # The formula
 

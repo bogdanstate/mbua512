@@ -22,11 +22,16 @@ title: "MBUA512 — Multivariate Relationships and Correlation"
 - Shifting from averages, levels and variances to the **degree of relationships**
 - Key concepts: **correlation** and **covariance**
 ---
-# Same correlation, different pictures
+# The Plan for Today
 
+- Correlation Basics (20 minutes)
+- Correlation Coefficient Interpretation (20 minutes)
+- The R^2 measure (10 minutes)
+- Workshop
+---
 ![Three point clouds with very different shapes and similar correlation](asset:same-r-three-clouds.png)
 
-*A single number cannot tell you what a relationship looks like. Always plot the data.*
+<!-- A single number cannot tell you what a relationship looks like. Always plot the data. -->
 
 <!-- suggestion: the old deck morphed 2,000 points between these three shapes. The three end states are the teaching point; the animation was decoration. In a later release this becomes an interactive widget. -->
 ---
@@ -44,7 +49,7 @@ When we want to predict:
 
 # 1. Formulate a Clear Question
 ---
-# A confusing question gets a confusing answer
+# Confusing Question ⇒ Confusing Answer
 
 ![Tyler Vigen's spurious correlation chart](asset:spurious-correlation.png)
 
@@ -58,7 +63,7 @@ If you cannot say plainly what you are asking, no amount of data will answer it.
 
 *Rasinski, K. A. (1989). The effect of question wording on public support for government spending. *Public Opinion Quarterly*, 53(3), 388–394, Table 2. [doi:10.1086/269158](https://doi.org/10.1086/269158)*
 ---
-# Confusing Question ⇒ Confusing Answer (full table)
+# Confusing Question ⇒ Confusing Answer
 
 ![Rasinski 1989 Table 2 in full: crime, drug addiction and welfare spending items](asset:rasinski-1989-table2.png)
 
@@ -72,7 +77,7 @@ If you cannot say plainly what you are asking, no amount of data will answer it.
 ---
 <!-- _class: section -->
 
-# 2. Identify Two Variables to Answer Your Question
+# 2. Identify Variables
 ---
 # Fun During, and Fun After
 
@@ -85,7 +90,7 @@ Two measurements on the same person:
 ---
 <!-- _class: section -->
 
-# 3. Get Information from a Random Sample of People
+# 3. Acquire Data
 ---
 ```sql-live db=stats_demo layout=rows limit=5 height=344
 SELECT person,
@@ -96,6 +101,18 @@ SELECT person,
 FROM   fun_survey
 LIMIT  10;
 ```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 20 ms · pinned 2026-09-23)
+
+| person | activity_type | fun_category | fun_during | fun_after |
+| --- | --- | --- | --- | --- |
+| Reese | Cleaning the house | Neutral (Meh during & after) | 3.6 | 5.1 |
+| Morgan | Home renovation project | Type 2 (Miserable during, great after) | 4.6 | 4.8 |
+| Lane | Marathon running | Type 2 (Miserable during, great after) | 3 | 6.5 |
+| Alex | Moving apartments | Type 2 (Miserable during, great after) | 3 | 6.5 |
+| Riley | Overnight backpacking | Type 2 (Miserable during, great after) | 3.6 | 5.6 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Sample of collected data -->
@@ -113,6 +130,18 @@ WHERE  activity_type IN ('Marathon running', 'Cleaning the house')
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 21 ms · pinned 2026-09-23)
+
+| person | activity_type | fun_during | fun_after |
+| --- | --- | --- | --- |
+| Reese | Cleaning the house | 3.6 | 5.1 |
+| Lane | Marathon running | 3 | 6.5 |
+| Rowan | Cleaning the house | 4.2 | 3.7 |
+| Hayden | Marathon running | 2.2 | 7.8 |
+| Casey | Marathon running | 2.2 | 7.5 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Change one thing -->
 <!-- WHERE keeps only the rows you ask for. -->
@@ -120,7 +149,7 @@ LIMIT  10;
 ---
 <!-- _class: section -->
 
-# 4. Graph Responses Using a Scatterplot
+# 4. Explore Data
 ---
 # Type 1 vs Type 2 fun
 
@@ -151,6 +180,18 @@ FROM   fire_incidents
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 25 ms · pinned 2026-09-23)
+
+| firefighters | damage_millions |
+| --- | --- |
+| 16 | 0.659931 |
+| 85 | 2.805215 |
+| 40 | 1.423669 |
+| 23 | 1.137954 |
+| 5 | 0.425735 |
+
+[//]: # (end sql-live result)
+
 
 <!-- A column can be a calculation -->
 <!-- A column can be a calculation. Give it a name with AS. -->
@@ -163,19 +204,27 @@ FROM   fire_incidents
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 23 ms · pinned 2026-09-23)
+
+| firefighters | damage_millions |
+| --- | --- |
+| 16 | 0.66 |
+| 85 | 2.81 |
+| 40 | 1.42 |
+| 23 | 1.14 |
+| 5 | 0.43 |
+
+[//]: # (end sql-live result)
+
 
 <!-- ROUND tidies what you see -->
 <!-- ROUND tidies what you see. The stored value does not change. -->
 <!-- **Change it.** Make the `2` a `0` and run it again. -->
 ---
-# But what is really going on?
-
 ![Structures burned against firefighters](asset:fire-structures-firefighters.png)
 
 *Bigger fires draw more firefighters. r = +0.979.*
 ---
-# And the same cause drives the damage
-
 ![Structures burned against property damage](asset:fire-structures-damage.png)
 
 *Bigger fires do more damage. r = +0.987.*
@@ -200,6 +249,14 @@ SELECT COUNT(*)                            AS incidents,
 FROM   fire_incidents;
 ```
 
+[//]: # (sql-live result: stats_demo · 1 row · 15 ms · pinned 2026-09-24)
+
+| incidents | nearest | furthest | mean_damage |
+| --- | --- | --- | --- |
+| 500 | 1 | 60 | 1067049 |
+
+[//]: # (end sql-live result)
+
 <!-- How far does the data stretch? -->
 <!-- MIN and MAX are the ends. -->
 <!-- The ignition point ranges from 1 m to 60 m from the nearest flammables. Expect 500 incidents and a mean damage around 1,067,049. -->
@@ -218,11 +275,9 @@ FROM   fire_incidents;
 
 # 5. Correlation
 ---
-# One relationship, or two?
-
 ![Hotel cost against fun, split by humidity](asset:hotel-pair.png)
 
-*The same relationship in both panels — but the spread is very different, and so is r.*
+<!-- The same relationship in both panels — but the spread is very different, and so is r. -->
 ---
 ```sql-live db=stats_demo layout=rows height=268
 SELECT COUNT(*)                                AS stays,
@@ -231,6 +286,14 @@ SELECT COUNT(*)                                AS stays,
 FROM   hotel_fun
 WHERE  humidity < 60;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 22 ms · pinned 2026-09-23)
+
+| stays | mean_fun | sd_fun |
+| --- | --- | --- |
+| 150 | 5.93 | 2.26 |
+
+[//]: # (end sql-live result)
 
 
 <!-- The typical distance from the average -->
@@ -244,7 +307,7 @@ WHERE  humidity < 60;
 - If so, is it **positive** or **negative**?
 - Is it **strong** or **weak**?
 
-<!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function — which is a teaching gift, because it means we have to build it, and building it is the only way to see what it actually measures. -->
+<!-- The old deck showed R's `cor(v1, v2)` here. MariaDB has no such function, so the number has to be built from plain aggregates — which is the only way to see what it actually measures. The finished recipe is a few slides on, after R²; the Appendix builds it one line at a time. -->
 ---
 # The same points, at five values of ρ
 
@@ -260,13 +323,46 @@ WHERE  humidity < 60;
 
 The correlation coefficient is a **ratio**, not a percent.
 
-<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. That is the next two slides. -->
+<!-- The number that IS a share is R², the coefficient of determination — and it is just r squared. The next slide shows it as shared area; the one after computes both in SQL. -->
 ---
 # R² is the shared variation
 
 ![Two circles overlapping by R²](asset:r2-overlap.png)
 
 *The shared area really is R² — at R² = 0.50 the circles share exactly half their area.*
+---
+```sql-live db=stats_demo layout=rows height=523
+WITH d AS (
+  SELECT firefighters AS x, property_damage AS y
+  FROM   fire_incidents
+),
+stats AS (
+  SELECT AVG(x) AS mx, AVG(y) AS my FROM d
+),
+sums AS (
+  SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy,
+         SUM(POW(d.x - s.mx, 2))          AS sxx,
+         SUM(POW(d.y - s.my, 2))          AS syy
+  FROM   d CROSS JOIN stats s
+)
+SELECT ROUND(sxy / SQRT(sxx * syy), 3)        AS r,
+       ROUND(POW(sxy / SQRT(sxx * syy), 2), 3) AS r_squared
+FROM   sums;
+```
+
+[//]: # (sql-live result: stats_demo · 1 row · 29 ms · pinned 2026-09-23)
+
+| r | r_squared |
+| --- | --- |
+| 0.967 | 0.936 |
+
+[//]: # (end sql-live result)
+
+
+<!-- r² in SQL -->
+<!-- This is the whole recipe on one slide. The Appendix builds it one line at a time — WITH, then the deviations, then the sum of products, then POW, then SQRT — if anyone wants to see where each piece came from. -->
+<!-- r = 0.90 is not 90 %. r² = 0.81 is the shared share. -->
+<!-- **Change it.** Point `d` at the engine-fuel column: r = +0.119, but r² = 0.014 — a hundredth of the variation. -->
 ---
 <!-- _class: section -->
 
@@ -280,7 +376,7 @@ The correlation coefficient is a **ratio**, not a percent.
 
 <!-- The sign tells you the direction; the absolute value tells you the strength. -->
 <!-- "Average amount that a person's score on one variable is related to another" is the careful phrasing: ρ is about how the two move together across people, not about any one person. -->
-<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The R² slides just before this one make the same point with a picture and with SQL. -->
+<!-- The third bullet is the one students get wrong. ρ = 0.90 does not mean 90% of anything; ρ² = 0.81 does — 81% of the variation held in common. The two slides just before this one make the same point: the shared-area picture, then the same two numbers computed in SQL. -->
 <!-- Larger R² means more shared variation, so a prediction of one variable from the other is more accurate. That is the whole practical pay-off of the number. -->
 ---
 <!-- _class: section -->
@@ -328,6 +424,14 @@ SELECT AVG(x) AS mx,
 FROM   d;
 ```
 
+[//]: # (sql-live result: stats_demo · 1 row · 27 ms · pinned 2026-09-23)
+
+| mx | my |
+| --- | --- |
+| 28.03 | 1067048.95472 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Step 1 — give a query a name -->
 <!-- WITH gives a query a name, so the next query can use it. -->
@@ -347,6 +451,18 @@ FROM   d CROSS JOIN stats s
 LIMIT  10;
 ```
 
+[//]: # (sql-live result: stats_demo · 10 rows · 26 ms · pinned 2026-09-23)
+
+| dx | dy |
+| --- | --- |
+| -12.03 | -407118.44472 |
+| 56.97 | 1738166.51528 |
+| 11.97 | 356620.39528 |
+| -5.03 | 70904.88528 |
+| -23.03 | -641314.24472 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Step 2 — how far is each row from average? -->
 <!-- CROSS JOIN staples the two averages onto every row. -->
@@ -363,6 +479,14 @@ stats AS (
 SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy
 FROM   d CROSS JOIN stats s;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 33 ms · pinned 2026-09-23)
+
+| sxy |
+| --- |
+| 9935971632.9492 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Step 3 — multiply the deviations and add them up -->
@@ -382,6 +506,14 @@ SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy,
        SUM(POW(d.y - s.my, 2))          AS syy
 FROM   d CROSS JOIN stats s;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 24 ms · pinned 2026-09-23)
+
+| sxy | sxx | syy |
+| --- | --- | --- |
+| 9935971632.9492 | 262422.54999999964 | 402108223076965.94 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Step 4 — square the deviations -->
@@ -405,6 +537,14 @@ sums AS (
 SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS r
 FROM   sums;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 28 ms · pinned 2026-09-23)
+
+| r |
+| --- |
+| 0.967 |
+
+[//]: # (end sql-live result)
 
 
 <!-- Pearson's r, in one query -->
@@ -430,35 +570,19 @@ SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS r
 FROM   sums;
 ```
 
+[//]: # (sql-live result: stats_demo · 1 row · 18 ms · pinned 2026-09-24)
+
+| r |
+| --- |
+| -0.88 |
+
+[//]: # (end sql-live result)
+
 
 <!-- Now point it at anything -->
 <!-- Edit ONLY the first block: the table, the two columns, a WHERE. -->
 <!-- **Change it.** Go back to any scatter in this deck and check its r yourself. -->
 <!-- Answer key — every one of these is just a different `d`: fire distance/damage -0.880; fire fuel/damage +0.119; fire fuel/damage WHERE is_influential = 0  -0.015; hotel_fun WHERE humidity < 60  +0.345; WHERE humidity >= 60  +0.847; fun_survey (during/after) +0.529. -->
----
-```sql-live db=stats_demo layout=rows height=523
-WITH d AS (
-  SELECT firefighters AS x, property_damage AS y
-  FROM   fire_incidents
-),
-stats AS (
-  SELECT AVG(x) AS mx, AVG(y) AS my FROM d
-),
-sums AS (
-  SELECT SUM((d.x - s.mx) * (d.y - s.my)) AS sxy,
-         SUM(POW(d.x - s.mx, 2))          AS sxx,
-         SUM(POW(d.y - s.my, 2))          AS syy
-  FROM   d CROSS JOIN stats s
-)
-SELECT ROUND(sxy / SQRT(sxx * syy), 3)        AS r,
-       ROUND(POW(sxy / SQRT(sxx * syy), 2), 3) AS r_squared
-FROM   sums;
-```
-
-
-<!-- r² in SQL -->
-<!-- r = 0.90 is not 90 %. r² = 0.81 is the shared share. -->
-<!-- **Change it.** Point `d` at the engine-fuel column: r = +0.119, but r² = 0.014 — a hundredth of the variation. -->
 ---
 # The formula
 
@@ -480,6 +604,18 @@ SELECT x,
 FROM   d
 LIMIT  10;
 ```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 26 ms · pinned 2026-09-23)
+
+| x | y | rank_x | rank_y |
+| --- | --- | --- | --- |
+| 39488.8 | 0.1 | 397 | 1 |
+| 38219.7 | 0.4 | 393 | 2 |
+| 34667.7 | 0.5 | 388 | 3 |
+| 18805.6 | 0.6 | 352 | 4 |
+| 27961.8 | 0.9 | 377 | 5 |
+
+[//]: # (end sql-live result)
 
 <!-- Ranks -->
 <!-- This follows straight on from the marathon slides above: same 400 runners, same two columns. -->
@@ -508,6 +644,14 @@ sums AS (
 SELECT ROUND(sxy / SQRT(sxx * syy), 3) AS spearman_rho
 FROM   sums;
 ```
+
+[//]: # (sql-live result: stats_demo · 1 row · 32 ms · pinned 2026-09-23)
+
+| spearman_rho |
+| --- |
+| -0.95 |
+
+[//]: # (end sql-live result)
 
 <!-- Spearman's ρ = Pearson's r on the ranks -->
 <!-- There is no new formula here. `stats` and `sums` are byte-identical to the Pearson query; the ONLY change is that `d` has been replaced by `r`, the ranks. Spearman's rho IS Pearson's r computed on ranks. -->
@@ -543,6 +687,18 @@ FROM   fire_incidents
 WHERE  is_influential = 0
 LIMIT  10;
 ```
+
+[//]: # (sql-live result: stats_demo · 10 rows · 24 ms · pinned 2026-09-24)
+
+| engine_fuel_pct | property_damage |
+| --- | --- |
+| 23.5 | 659930.51 |
+| 69.2 | 2805215.47 |
+| 96 | 1423669.35 |
+| 45.7 | 1137953.84 |
+| 24.6 | 425734.71 |
+
+[//]: # (end sql-live result)
 
 <!-- Same query, 12 rows fewer -->
 <!-- One WHERE changes the answer. -->

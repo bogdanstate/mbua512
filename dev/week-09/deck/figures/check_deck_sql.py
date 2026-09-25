@@ -201,27 +201,27 @@ def parse_params(info: str) -> dict:
 # ladder is defined by (plan SS5.3), so a reordered deck fails here loudly
 # instead of silently checking the wrong slide.
 EXPECTATIONS = {
-    # Re-keyed 2026-09-25 (fire redesign + the r-chain moved to the appendix).
+    # Re-keyed 2026-09-25 (instructor ruling: the r² SQL slide moved back into
+    # the main body, after "R² is the shared variation"). The chain that
+    # builds r stays in the appendix, so fence 7 is now the main-body recipe
+    # slide and 8-13 are the appendix chain.
     1: ("rows", 10),
     2: ("rows_max", 10),
     3: ("rows", 10),
     4: ("rows", 10),
-    # 5: the new negative/linear example's MIN/MAX rung.
     5: ("cells", {"incidents": 500, "nearest": 1.0, "furthest": 60.0}),
     6: ("cells", {"stays": 150, "mean_fun": 5.93, "sd_fun": 2.26}),
-    # --- Appendix: the r chain, moved here in the same pass ---------------
-    7: ("cells", {"mx": 28.03, "my": 1067048.95}),
-    8: ("rows", 10),
-    9: ("ncols", 1),
-    10: ("ncols", 3),
-    11: ("r_is", 0.967),
-    # 12: "point it at anything", now pointed at the fire distance column.
-    12: ("r_is", -0.880),
-    13: ("cells", {"r": 0.967, "r_squared": 0.936}),
-    # 14/15: Spearman, still on marathon_opinion (the table stays loaded).
+    # 7: MAIN BODY -- r and r² in one query (the "recipe" slide).
+    7: ("cells", {"r": 0.967, "r_squared": 0.936}),
+    # --- Appendix: the chain that builds r, one idea per slide -------------
+    8: ("cells", {"mx": 28.03, "my": 1067048.95}),
+    9: ("rows", 10),
+    10: ("ncols", 1),
+    11: ("ncols", 3),
+    12: ("r_is", 0.967),
+    13: ("r_is", -0.880),
     14: ("rows", 10),
     15: ("cell", ("spearman_rho", -0.950)),
-    # 16: the influential-points thread, now on engine fuel.
     16: ("rows", 10),
     # --- deck B -----------------------------------------------------------
     17: ("cells", {"readings": 120, "with_temperature": 102}),
@@ -233,6 +233,7 @@ EXPECTATIONS = {
     23: ("cells", {"r": 0.935, "slope": 3.243}),
     24: ("r_is", 0.800),
 }
+
 
 
 
